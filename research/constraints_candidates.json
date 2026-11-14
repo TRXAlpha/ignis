@@ -1,0 +1,314 @@
+{
+  "_notes": {
+    "quote_policy": "Quotes are the text returned by WebFetch for the listed URL, not independently byte-checked. Values seen only in WebSearch snippets (no page fetched) are null.",
+    "contradictions": [
+      "Mars mean surface gravity: NSSDC fact sheet gives 3.73 m/s2 (fetched). The prompt's 3.71 was not found in that fetch. Used 3.73 with the fetched quote.",
+      "Saffire-II sample width: eoportal (fetched) says approximately 5 cm wide by 30 cm long. An earlier search snippet said 5 cm x 29 cm. Used the fetched value.",
+      "Saffire-I/III panel size: eoportal (fetched) says 40 cm x 100 cm, ~0.4 m x 1.0 m. A search snippet said 40.6 cm x 94.0 cm. Not resolved."
+    ],
+    "unfetched_leads_not_used_as_values": {
+      "MSG duct velocity 55 cm/s max, 35 cm/s with restrictors; duct 7.6 x 7.6 x 17 cm": "from WebSearch snippet, source not fetched (possible URL: https://issnationallab.org/?p=42222)",
+      "EAWG 8.2 psia (56.5 kPa) / 34% O2": "from WebSearch snippet, NTRS OAF PDF fetch failed (https://ntrs.nasa.gov/api/citations/20220011152/downloads/Exploration%20Atmosphers%20OAF%2020220805.pdf)",
+      "ISS cabin 101.3 kPa / 21% O2": "from WebSearch snippet (Wikipedia infobox), not a NASA source",
+      "ZGRF vacuum 0.005 to 0.05 torr": "from WebSearch snippets, values conflict across sources, not fetched",
+      "2.2 s drop tower ~2.2 s duration, ~$12K/week": "from WebSearch snippet, not fetched",
+      "FM2 14.7 vs 14.4 psi": "from WebSearch snippets, not fetched",
+      "MOC at 8.2 psia: webbing 37% and 35% O2": "from NESC snippet, not fetched; possible URL https://www.nasa.gov/centers-and-facilities/nesc/tb-26-05-webbings-for-use-in-elevated-oxygen-environments/",
+      "ISS 1e-6 g definition": "from WebSearch snippet, NTRS 20100042410 PDF fetch failed",
+      "Gateway 70/30 N2/O2 at ~9.0 psi": "Reddit comment, unverified, not used"
+    },
+    "failed_fetches": [
+      "https://www.nasa.gov/centers-and-facilities/glenn/zero-gravity-research-facility (safety-check error; the non-www URL worked)",
+      "https://issnationallab.org/?p=34104 (404)",
+      "NTRS PDFs for Saffire ICES 2024, Saffire overview, FM2 ICES, NTRS 20100042410, and EAWG OAF returned binary PDF data, not text"
+    ]
+  },
+  "constraint_sets": [
+    {
+      "id": "iss-cir",
+      "name": "ISS Combustion Integrated Rack (CIR) with ACME insert",
+      "platform": "orbital_iss",
+      "facility": "CIR",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "chamber_volume": "100 liter",
+        "chamber_pressure": "not verified (search snippet claimed 0.02 atm to 3 atm, no fetched source)",
+        "oxygen_range": "not verified",
+        "diluents": "not verified",
+        "flow_capability": "not verified (ACME uses mass flow controllers per search snippet, unfetched)"
+      },
+      "refs": [
+        {
+          "url": "https://gipoc.grc.nasa.gov/wp/fcf-cir",
+          "quote": "The CIR’s main feature is a 100-liter combustion chamber",
+          "field": "other_limits.chamber_volume"
+        }
+      ]
+    },
+    {
+      "id": "iss-msg-bass",
+      "name": "ISS Microgravity Science Glovebox (MSG) for BASS/BASS-II",
+      "platform": "orbital_iss",
+      "facility": "MSG",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "duct_velocity": null,
+        "duct_size": null,
+        "sample_size": null,
+        "atmosphere": "not verified (fetched page gives no gas composition)",
+        "work_volume": null
+      },
+      "refs": []
+    },
+    {
+      "id": "saffire-cygnus",
+      "name": "Saffire (Spacecraft Fire Experiment) on Cygnus",
+      "platform": "orbital_iss_cargo",
+      "facility": "Saffire",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "saffire_ii_sample": "approximately 5 cm wide by 30 cm long, nine samples",
+        "saffire_i_iii_panel": "approximately 0.4 m wide by 1.0 m long (one 40 cm x 100 cm SIBAL panel)",
+        "vehicle_o2_expected": "nearly 21% by volume (vehicle expectation, not a test range)",
+        "flow_velocity": "not verified on fetched page (search snippets gave 20 cm/s for Saffire V and VI, unfetched)"
+      },
+      "refs": [
+        {
+          "url": "https://eoportal.org/satellite-missions/saffire",
+          "quote": "Saffire-II uses nine flammability samples, each approximately 5 cm wide by 30 cm long.",
+          "field": "other_limits.saffire_ii_sample"
+        },
+        {
+          "url": "https://eoportal.org/satellite-missions/saffire",
+          "quote": "one large 40 cm x 100 cm piece of SIBAL (Solid Inflammability Boundary at Low Speed) cloth.",
+          "field": "other_limits.saffire_i_iii_panel"
+        },
+        {
+          "url": "https://eoportal.org/satellite-missions/saffire",
+          "quote": "The oxygen concentration in the vehicle is expected to be nearly 21% by volume.",
+          "field": "other_limits.vehicle_o2_expected"
+        }
+      ]
+    },
+    {
+      "id": "fm2-lunar",
+      "name": "FM2 Flammability of Materials on the Moon (planned hardware)",
+      "platform": "lunar_lander_cargo",
+      "facility": "FM2",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "hardware_size": "28.5 x 28.5 x 38.5 cm",
+        "hardware_mass": "25 kg",
+        "gravity": "1/6 reduced gravity level (no numeric value on page)",
+        "samples": "four fuel samples, burned individually",
+        "oxygen": "not stated numerically on page; sensors measure it",
+        "pressure": "not stated numerically on page; 'atmospheric conditions planned for future lunar habitats or vehicles'",
+        "flight": "CLPS CP-21 (per search snippet, unfetched)"
+      },
+      "refs": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "quote": "Images of FM2 engineering hardware that is 28.5 by 28.5 by 38.5 cm tall.",
+          "field": "other_limits.hardware_size"
+        },
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "quote": "Weight is 25 kg.",
+          "field": "other_limits.hardware_mass"
+        },
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "quote": "investigates burning materials on the Moon at its 1/6 reduced gravity level.",
+          "field": "other_limits.gravity"
+        },
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "quote": "The experiment burns four fuel samples individually",
+          "field": "other_limits.samples"
+        }
+      ]
+    },
+    {
+      "id": "zgrf-drop-tower",
+      "name": "NASA Glenn Zero Gravity Research Facility (5.18 s drop tower)",
+      "platform": "ground_drop_tower",
+      "facility": "ZGRF",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": [null, 0.000098]
+      },
+      "other_limits": {
+        "drop_duration": "5.18 seconds",
+        "fall_distance": "432 feet (132 meters), in a vacuum",
+        "g_level": "less than 0.00001 g (converted: <9.8e-5 m/s2, derived by multiplying by 9.80665)",
+        "peak_deceleration": "approaching 65g",
+        "vacuum_level": "not verified (snippets conflict: 0.005 to 0.05 torr)"
+      },
+      "refs": [
+        {
+          "url": "https://nasa.gov/centers-and-facilities/glenn/zero-gravity-research-facility",
+          "quote": "It provides researchers with a near-weightless environment for a duration of 5.18 seconds.",
+          "field": "other_limits.drop_duration"
+        },
+        {
+          "url": "https://nasa.gov/centers-and-facilities/glenn/zero-gravity-research-facility",
+          "quote": "reduces the aerodynamic drag on the freely falling experiment vehicle to less than 0.00001 g.",
+          "field": "gravity_m_s2"
+        },
+        {
+          "url": "https://nasa.gov/centers-and-facilities/glenn/zero-gravity-research-facility",
+          "quote": "experiences a peak deceleration rate approaching 65g.",
+          "field": "other_limits.peak_deceleration"
+        }
+      ]
+    },
+    {
+      "id": "glenn-2.2s-drop-tower",
+      "name": "NASA Glenn 2.2 Second Drop Tower",
+      "platform": "ground_drop_tower",
+      "facility": "2.2s tower",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "drop_duration": null,
+        "g_level": null
+      },
+      "refs": []
+    },
+    {
+      "id": "iss-microgravity",
+      "name": "ISS quasi-steady microgravity environment",
+      "platform": "orbital_iss",
+      "facility": "ISS",
+      "ranges": {
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null,
+        "gravity_m_s2": null
+      },
+      "other_limits": {
+        "quasi_steady_level": null,
+        "note": "NTRS 20100042410 fetch failed. Snippet claims ISS is not one micro-g (1e-6 g). Not used."
+      },
+      "refs": []
+    }
+  ],
+  "habitat_presets": [
+    {
+      "id": "iss",
+      "name": "ISS cabin",
+      "conditions": {
+        "gravity_m_s2": null,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": []
+    },
+    {
+      "id": "nasa-exploration-atmosphere",
+      "name": "NASA Exploration Atmosphere (EAWG, 8.2 psia / 34% O2 option)",
+      "conditions": {
+        "gravity_m_s2": null,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": []
+    },
+    {
+      "id": "gateway",
+      "name": "Gateway cabin atmosphere",
+      "conditions": {
+        "gravity_m_s2": null,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": []
+    },
+    {
+      "id": "artemis-lunar-surface-habitat",
+      "name": "Artemis lunar surface habitat",
+      "conditions": {
+        "gravity_m_s2": 1.62,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": [
+        {
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+          "quote": "| Surface gravity (m/s2) | 1.62 | 9.80 | 0.165 |",
+          "field": "gravity_m_s2"
+        }
+      ]
+    },
+    {
+      "id": "mars-surface-reference",
+      "name": "Mars surface gravity reference (not a transit atmosphere)",
+      "conditions": {
+        "gravity_m_s2": 3.73,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": [
+        {
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+          "quote": "| Surface gravity (mean) (m/s2) | 3.73 | 9.82 | 0.380 |",
+          "field": "gravity_m_s2"
+        }
+      ]
+    },
+    {
+      "id": "mars-transit",
+      "name": "Mars transit atmosphere",
+      "conditions": {
+        "gravity_m_s2": null,
+        "o2_mole_fraction": null,
+        "pressure_pa": null,
+        "flow_velocity_m_s": null
+      },
+      "refs": []
+    }
+  ],
+  "standards": [
+    {
+      "name": "NASA-STD-6001B Test 1 (upward flame propagation)",
+      "summary": "Pass/fail upward flame propagation test. Pass criteria are self-extinguishment within a specified length and no spread by flaming material transfer. Numeric conditions (sample length, pressure, O2 steps) not verified from the standard itself. Sample length reported as 30 cm in a search snippet only.",
+      "refs": []
+    },
+    {
+      "name": "Maximum oxygen concentration (MOC) concept",
+      "summary": "MOC is the highest oxygen concentration at which a set of samples (search snippet says a minimum of five) passes Test 1 at a fixed total pressure. MOC varies roughly linearly with total pressure for some materials per a NASA Glenn study (snippet, not fetched). Verify wording against NASA-STD-6001B.",
+      "refs": []
+    }
+  ]
+}

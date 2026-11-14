@@ -1,0 +1,85 @@
+{
+  "id": 20150008962,
+  "title": "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity",
+  "authorAffiliations": [
+    {
+      "sequence": 0,
+      "submissionId": 20150008962,
+      "meta": {
+        "author": {
+          "name": "Zhao, Xiaoyang"
+        },
+        "organization": {
+          "name": "Case Western Reserve Univ.",
+          "location": "Cleveland, OH, United States"
+        }
+      },
+      "id": "3ad265c7d61f439ca9cdf0f01fb828ed"
+    },
+    {
+      "sequence": 1,
+      "submissionId": 20150008962,
+      "meta": {
+        "author": {
+          "name": "T'ien, James S."
+        },
+        "organization": {
+          "name": "Case Western Reserve Univ.",
+          "location": "Cleveland, OH, United States"
+        }
+      },
+      "id": "0a8001a1f1c74f69a17b8a7188c22b25"
+    },
+    {
+      "sequence": 2,
+      "submissionId": 20150008962,
+      "meta": {
+        "author": {
+          "name": "Ferkul, Paul V."
+        },
+        "organization": {
+          "name": "Universities Space Research Association",
+          "location": "Cleveland, OH, United States"
+        }
+      },
+      "id": "f7150f3cbf37416688dae97fff0b0e43"
+    },
+    {
+      "sequence": 3,
+      "submissionId": 20150008962,
+      "meta": {
+        "author": {
+          "name": "Olson, Sandra L."
+        },
+        "organization": {
+          "name": "NASA Glenn Research Center",
+          "location": "Cleveland, OH, United States"
+        }
+      },
+      "id": "d42506af0cb14611b9ae63cdb9c34c4d"
+    }
+  ],
+  "publications": [
+    {
+      "submissionId": 20150008962,
+      "id": "1f0452959a7b49d5b3c0c22ddd9eeac0",
+      "publicationDate": "2015-05-17T00:00:00.0000000+00:00"
+    }
+  ],
+  "downloads": [
+    {
+      "draft": false,
+      "mimetype": "application/pdf",
+      "name": "20150008962.pdf",
+      "type": "STI",
+      "links": {
+        "original": "/api/citations/20150008962/downloads/20150008962.pdf",
+        "pdf": "/api/citations/20150008962/downloads/20150008962.pdf",
+        "fulltext": "/api/citations/20150008962/downloads/20150008962.txt"
+      }
+    }
+  ],
+  "created": "2015-05-28T08:06:33.7600000+00:00",
+  "distributionDate": "2019-07-12T00:00:00.0000000+00:00",
+  "submittedDate": "2015-05-28T08:06:33.7600000+00:00"
+}

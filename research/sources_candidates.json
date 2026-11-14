@@ -1,0 +1,495 @@
+[
+  {
+    "id": "ntrs:20140011099",
+    "kind": "ntrs",
+    "title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment",
+    "authors": [
+      "Ferkul, Paul V.",
+      "Olson, Sandra L.",
+      "Takahashi, Fumiaki"
+    ],
+    "year": 2014,
+    "url": "https://ntrs.nasa.gov/citations/20140011099",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20140011099/downloads/20140011099.pdf",
+    "ntrs_id": "20140011099",
+    "campaign_ids": [
+      "bass"
+    ],
+    "data_hints": "Abstract only: BASS ISS tests on thin/thick flat samples, acrylic spheres and candles in an MSG wind tunnel up to 40 cm/s; thickness and preheat effects on flammability (no tables/figures read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20140011099"
+  },
+  {
+    "id": "ntrs:20130012832",
+    "kind": "ntrs",
+    "title": "Flammability Aspects of a Cotton-Fiberglass Fabric in Opposed and Concurrent Airflow in Microgravity",
+    "authors": [
+      "Ferkul, Paul V.",
+      "Olson, Sandra",
+      "Johnston, Michael C."
+    ],
+    "year": 2013,
+    "url": "https://ntrs.nasa.gov/citations/20130012832",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20130012832/downloads/20130012832.pdf",
+    "ntrs_id": "20130012832",
+    "campaign_ids": [
+      "bass"
+    ],
+    "data_hints": "Abstract only: ISS MSG wind-tunnel tests to 40 cm/s; flame appearance, flame growth and spread rates vs airflow (no values read). Campaign mapping inferred from BASS hardware description.",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20130012832"
+  },
+  {
+    "id": "ntrs:20160000593",
+    "kind": "ntrs",
+    "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+    "authors": [
+      "Ferkul, Paul V.",
+      "Bhattacharjee, Subrata",
+      "Fernandez-Pello, Carlos",
+      "Miller, Fletcher",
+      "Olson, Sandra L.",
+      "Takahashi, Fumiaki",
+      "T'ien, James S."
+    ],
+    "year": 2016,
+    "url": "https://ntrs.nasa.gov/citations/20160000593",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20160000593/downloads/20160000593.pdf",
+    "ntrs_id": "20160000593",
+    "campaign_ids": [
+      "bass-ii"
+    ],
+    "data_hints": "Abstract only: BASS-II ISS tests on thin/thick slabs, spheres, cylinders at flow to 53 cm/s in MSG; results on flame behavior vs flow (no tables/figures read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20160000593"
+  },
+  {
+    "id": "ntrs:20210011385",
+    "kind": "ntrs",
+    "title": "Burning and Suppression of Solids-II (BASS-II) Summary Report",
+    "authors": [
+      "Olson, Sandra L.",
+      "Ferkul, Paul V.",
+      "Bhattacharjee, Subrata"
+    ],
+    "year": 2021,
+    "url": "https://ntrs.nasa.gov/citations/20210011385",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf",
+    "ntrs_id": "20210011385",
+    "campaign_ids": [
+      "bass",
+      "bass-ii"
+    ],
+    "data_hints": "Abstract only: summary of BASS-II hardware, cameras, controls and test operation; quantitative flame data not seen in abstract (PDF not read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20210011385"
+  },
+  {
+    "id": "ntrs:20150008961",
+    "kind": "ntrs",
+    "title": "Microgravity Flammability of PMMA Rods in Concurrent Flow",
+    "authors": [
+      "Olson, Sandra L.",
+      "Ferkul, Paul V."
+    ],
+    "year": 2015,
+    "url": "https://ntrs.nasa.gov/citations/20150008961",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20150008961/downloads/20150008961.pdf",
+    "ntrs_id": "20150008961",
+    "campaign_ids": [
+      "bass-ii"
+    ],
+    "data_hints": "Abstract only: 24 concurrent-flow PMMA rod tests on ISS; flammability limits as a function of O2 fraction and flow speed (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20150008961"
+  },
+  {
+    "id": "ntrs:20170006615",
+    "kind": "ntrs",
+    "title": "Mixed Convection Blowoff Limits as a Function of Oxygen Concentration and Upward Forced Stretch Rate for Burning PMMA Rods",
+    "authors": [
+      "Marcum, Jeremy W.",
+      "Ferkul, Paul V.",
+      "Olson, Sandra L."
+    ],
+    "year": 2017,
+    "url": "https://ntrs.nasa.gov/citations/20170006615",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20170006615/downloads/20170006615.pdf",
+    "ntrs_id": "20170006615",
+    "campaign_ids": [
+      "bass-ii"
+    ],
+    "data_hints": "Abstract only: normal-gravity blowoff limits for PMMA rods in upward flow compared with BASS-II microgravity blowoff limits vs O2 and flow (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20170006615"
+  },
+  {
+    "id": "ntrs:20160010073",
+    "kind": "ntrs",
+    "title": "A Burning Rate Emulator (BRE) for Study in Microgravity",
+    "authors": [
+      "Markan, A.",
+      "Sunderland, P. B.",
+      "Quintiere, J. G."
+    ],
+    "year": 2016,
+    "url": "https://ntrs.nasa.gov/citations/20160010073",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20160010073/downloads/20160010073.pdf",
+    "ntrs_id": "20160010073",
+    "campaign_ids": [
+      "acme-bre"
+    ],
+    "data_hints": "Abstract only: gas burner emulating condensed-phase flames; burning rate defined by heat of combustion, heat of gasification, surface temperature and laminar smoke point (no data read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20160010073"
+  },
+  {
+    "id": "ntrs:20170009141",
+    "kind": "ntrs",
+    "title": "Emulation of Condensed Fuel Flames Using a Burning Rate Emulator (BRE) in Microgravity",
+    "authors": [
+      "Markan, A.",
+      "Quintiere, J. G.",
+      "Sunderland, P. B."
+    ],
+    "year": 2017,
+    "url": "https://ntrs.nasa.gov/citations/20170009141",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20170009141/downloads/20170009141.pdf",
+    "ntrs_id": "20170009141",
+    "campaign_ids": [
+      "acme-bre"
+    ],
+    "data_hints": "Abstract only: 5-s drop tests with 25 and 50 mm burners, methane and ethylene; varied ambient pressure, O2 and fuel flow rate (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20170009141"
+  },
+  {
+    "id": "ntrs:20220005205",
+    "kind": "ntrs",
+    "title": "Laminar Non-Premixed Flames of Gaseous Fuel Aboard the International Space Station",
+    "authors": [
+      "Stocker, Dennis P."
+    ],
+    "year": 2022,
+    "url": "https://ntrs.nasa.gov/citations/20220005205",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20220005205/downloads/ACME%20CSSCI%20paper%2020220402.pdf",
+    "ntrs_id": "20220005205",
+    "campaign_ids": [
+      "acme-e-field"
+    ],
+    "data_hints": "Abstract only: ACME overview of six ISS gaseous-flame studies 2017-2022; coflow burner at high sooting and high dilution; electric-field effects (no numbers in abstract)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20220005205"
+  },
+  {
+    "id": "ntrs:20210021781",
+    "kind": "ntrs",
+    "title": "Recent Research on Flames of Gaseous Fuel Aboard the International Space Station",
+    "authors": [
+      "Stocker, Dennis P."
+    ],
+    "year": 2021,
+    "url": "https://ntrs.nasa.gov/citations/20210021781",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20210021781/downloads/JASMAC%20ACME%20paper%2020210921.pdf",
+    "ntrs_id": "20210021781",
+    "campaign_ids": [
+      "acme-e-field"
+    ],
+    "data_hints": "Abstract only: objectives and selected findings for six ACME gaseous-flame investigations on ISS (no numbers in abstract)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20210021781"
+  },
+  {
+    "id": "ntrs:20150023456",
+    "kind": "ntrs",
+    "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+    "authors": [
+      "Dietrich, Daniel L.",
+      "Ferkul, Paul V.",
+      "Bryg, Victoria M."
+    ],
+    "year": 2015,
+    "url": "https://ntrs.nasa.gov/citations/20150023456",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.pdf",
+    "ntrs_id": "20150023456",
+    "campaign_ids": [
+      "flex"
+    ],
+    "data_hints": "Abstract only: technical report on FLEX MDCA/CIR hardware, diagnostics, procedures and data methods; droplet results are in body text (tables not read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20150023456"
+  },
+  {
+    "id": "ntrs:20130014061",
+    "kind": "ntrs",
+    "title": "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity",
+    "authors": [
+      "Nayagam, Vedha",
+      "Dietrich, Daniel L.",
+      "Hicks, Michael C."
+    ],
+    "year": 2013,
+    "url": "https://ntrs.nasa.gov/citations/20130014061",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20130014061/downloads/20130014061.pdf",
+    "ntrs_id": "20130014061",
+    "campaign_ids": [
+      "flex"
+    ],
+    "data_hints": "Abstract only: droplets burned in microgravity with varying O2 and inert diluent to determine flammability limits (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20130014061"
+  },
+  {
+    "id": "ntrs:20210022617",
+    "kind": "ntrs",
+    "title": "Isolated Single Droplet Combustion: FLEX Experiments onboard the International Space Station",
+    "authors": [
+      "Vedha Nayagam",
+      "Daniel L. Dietrich",
+      "Forman A. Williams"
+    ],
+    "year": 2021,
+    "url": "https://ntrs.nasa.gov/citations/20210022617",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20210022617/downloads/JASMAC-33%20FLEX%20w%20video.pdf",
+    "ntrs_id": "20210022617",
+    "campaign_ids": [
+      "flex-2"
+    ],
+    "data_hints": "NTRS abstract field is empty; PDF not read. Quantitative content UNVERIFIED.",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20210022617"
+  },
+  {
+    "id": "ntrs:20090014827",
+    "kind": "ntrs",
+    "title": "Smoke Point in Co-flow Experiment",
+    "authors": [
+      "Urban, David L.",
+      "Sunderland, Peter B.",
+      "Yuan, Zeng-Guang"
+    ],
+    "year": 2009,
+    "url": "https://ntrs.nasa.gov/citations/20090014827",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20090014827/downloads/20090014827.pdf",
+    "ntrs_id": "20090014827",
+    "campaign_ids": [
+      "spice"
+    ],
+    "data_hints": "Abstract only: determines the soot-onset smoke point of gas-jet flames in microgravity; numeric smoke point data not seen in abstract (PDF not read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20090014827"
+  },
+  {
+    "id": "ntrs:20130000422",
+    "kind": "ntrs",
+    "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+    "authors": [
+      "Urban, David L.",
+      "Ruff, Gary A.",
+      "Greenberg, Paul S."
+    ],
+    "year": 2013,
+    "url": "https://ntrs.nasa.gov/citations/20130000422",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20130000422/downloads/20130000422.pdf",
+    "ntrs_id": "20130000422",
+    "campaign_ids": [
+      "same"
+    ],
+    "data_hints": "Abstract only: SAME-2 reflight on Expedition 24; five spacecraft materials (Teflon, Kapton, cotton, silicone rubber, Pyrell) heated; particle morphology and size results (no numbers read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20130000422"
+  },
+  {
+    "id": "ntrs:20070031686",
+    "kind": "ntrs",
+    "title": "Particle and Smoke Detection on ISS for Next Generation Smoke Detectors",
+    "authors": [
+      "Urban, David L.",
+      "Ruff, Gary",
+      "Yuan, Zeng-guang"
+    ],
+    "year": 2007,
+    "url": "https://ntrs.nasa.gov/citations/20070031686",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20070031686/downloads/20070031686.pdf",
+    "ntrs_id": "20070031686",
+    "campaign_ids": [
+      "same"
+    ],
+    "data_hints": "Abstract only: motivates microgravity smoke data for detector design; experiment-specific values not seen. Campaign mapping inferred, not confirmed.",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20070031686"
+  },
+  {
+    "id": "ntrs:20210011521",
+    "kind": "ntrs",
+    "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+    "authors": [
+      "Urban, David L.",
+      "Ruff, Gary A.",
+      "Ferkul, Paul"
+    ],
+    "year": 2021,
+    "url": "https://ntrs.nasa.gov/citations/20210011521",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+    "ntrs_id": "20210011521",
+    "campaign_ids": [
+      "saffire-iv",
+      "saffire-v"
+    ],
+    "data_hints": "Abstract only: PMMA, cotton fabric and cotton-fiberglass flame spread and growth inside Cygnus after ISS departure (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20210011521"
+  },
+  {
+    "id": "ntrs:20220002714",
+    "kind": "ntrs",
+    "title": "Model Development of Large-Scale Spacecraft Fires During the Saffire-IV Experiments",
+    "authors": [
+      "Brooker, John",
+      "Niehaus, Justin"
+    ],
+    "year": 2022,
+    "url": "https://ntrs.nasa.gov/citations/20220002714",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20220002714/downloads/Model%20Development%20of%20Large-Scale%20Spacecraft%20Fires%20during%20the%20Saffire-IV%20Experiments.pdf",
+    "ntrs_id": "20220002714",
+    "campaign_ids": [
+      "saffire-iv"
+    ],
+    "data_hints": "Abstract only: Cygnus vehicle fire model for Saffire-IV; model setup described, numeric results not in abstract",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20220002714"
+  },
+  {
+    "id": "ntrs:20240008602",
+    "kind": "ntrs",
+    "title": "Vehicle Modeling During the Burning of Thermally Thick Samples in the Saffire V Experiments",
+    "authors": [
+      "Niehaus, Justin",
+      "Brooker, John",
+      "Urban, David"
+    ],
+    "year": 2024,
+    "url": "https://ntrs.nasa.gov/citations/20240008602",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20240008602/downloads/ICES-2024-310.pdf",
+    "ntrs_id": "20240008602",
+    "campaign_ids": [
+      "saffire-v"
+    ],
+    "data_hints": "Abstract only: thermally thick thermoplastic samples in Cygnus; transport of heat and combustion products; sensor species data used (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20240008602"
+  },
+  {
+    "id": "ntrs:20240002981",
+    "kind": "ntrs",
+    "title": "Preliminary Results from the Saffire VI Experiment",
+    "authors": [
+      "Urban, David L",
+      "Ruff, Gary A",
+      "Ferkul, Paul"
+    ],
+    "year": 2024,
+    "url": "https://ntrs.nasa.gov/citations/20240002981",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20240002981/downloads/Saffire-ICES-2024-ICES-365-accepted%20final.pdf",
+    "ntrs_id": "20240002981",
+    "campaign_ids": [
+      "saffire-vi"
+    ],
+    "data_hints": "Abstract only: preliminary results from one Saffire VI Cygnus test (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20240002981"
+  },
+  {
+    "id": "ntrs:20260001992",
+    "kind": "ntrs",
+    "title": "Heat and Smoke Emission from Tests on the Saffire VI Experiment",
+    "authors": [
+      "Urban, David L",
+      "Ruff, Gary A",
+      "Ferkul, Paul"
+    ],
+    "year": 2026,
+    "url": "https://ntrs.nasa.gov/citations/20260001992",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20260001992/downloads/ICES%20Saffire%202026%2005%2004%20b.pdf",
+    "ntrs_id": "20260001992",
+    "campaign_ids": [
+      "saffire-vi"
+    ],
+    "data_hints": "Abstract only: seven low-gravity tests varying pressure and O2; 40 cm wide PMMA and other samples; hazardous product release results (values not read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20260001992"
+  },
+  {
+    "id": "ntrs:20205004657",
+    "kind": "ntrs",
+    "title": "Effects of Confinement on Flame Spread in Microgravity",
+    "authors": [
+      "Li, Yanjun",
+      "Liao, Ya-Ting T",
+      "Ferkul, Paul V"
+    ],
+    "year": 2020,
+    "url": "https://ntrs.nasa.gov/citations/20205004657",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20205004657/downloads/ICES-2020-407-final.pdf",
+    "ntrs_id": "20205004657",
+    "campaign_ids": [
+      "cce"
+    ],
+    "data_hints": "Abstract only: ISS concurrent forced-flow flame spread over cotton-fiberglass fabric with baffles of differing radiative reflectance (no values read)",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20205004657"
+  },
+  {
+    "id": "ntrs:20250010653",
+    "kind": "ntrs",
+    "title": "Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket",
+    "authors": [
+      "Ferkul, Paul V",
+      "Johnston, Michael C",
+      "Kralik, Nathan"
+    ],
+    "year": 2025,
+    "url": "https://ntrs.nasa.gov/citations/20250010653",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20250010653/downloads/ASGSR%202025-LUCI-Ferkul-Presentation-v2-20250010653.pdf",
+    "ntrs_id": "20250010653",
+    "campaign_ids": [
+      "fm2"
+    ],
+    "data_hints": "Abstract only: LUCI rotating sounding rocket at 11 RPM for >25 s lunar-g combustion tests. Precursor to FM2; campaign link is inferred.",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20250010653"
+  },
+  {
+    "id": "ntrs:20240008623",
+    "kind": "ntrs",
+    "title": "Flammability of Materials on the Moon",
+    "authors": [
+      "Zayac, Jennifer",
+      "Johnston, Michael",
+      "Ruff, Gary"
+    ],
+    "year": 2024,
+    "url": "https://ntrs.nasa.gov/citations/20240008623",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20240008623/downloads/20240008623.pdf",
+    "ntrs_id": "20240008623",
+    "campaign_ids": [
+      "fm2"
+    ],
+    "data_hints": "Abstract only: some materials show increased flammability in lunar gravity; no numeric values in abstract",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20240008623"
+  },
+  {
+    "id": "ntrs:20250010975",
+    "kind": "ntrs",
+    "title": "Characterizing the Flammability of Nomex Fabric for the Preparation of FM2",
+    "authors": [
+      "Schechter, Jocelyn",
+      "Zayac, Jennifer",
+      "Ferkul, Paul"
+    ],
+    "year": 2025,
+    "url": "https://ntrs.nasa.gov/citations/20250010975",
+    "pdf_url": "https://ntrs.nasa.gov/api/citations/20250010975/downloads/ASGSR_FinalPoster%20JSchechter.pdf",
+    "ntrs_id": "20250010975",
+    "campaign_ids": [
+      "fm2"
+    ],
+    "data_hints": "Abstract only: Nomex characterization to prepare FM2 lunar flammability tests; no numeric values read",
+    "verified_by": "https://ntrs.nasa.gov/api/citations/20250010975"
+  },
+  {
+    "id": "doi:10.1038/s41598-017-18398-4",
+    "kind": "doi",
+    "title": "The Effect of Gravity on Flame Spread over PMMA Cylinders",
+    "authors": [
+      "Shmuel Link",
+      "Xinyan Huang",
+      "Paul Ferkul"
+    ],
+    "year": 2018,
+    "url": "https://www.nature.com/articles/s41598-017-18398-4",
+    "doi": "10.1038/s41598-017-18398-4",
+    "campaign_ids": [
+      "bass-ii"
+    ],
+    "data_hints": "Abstract: opposed flame spread rate vs opposed flow 0.4-8 cm/s at 15-21% O2, ISS and Earth; spread rate rises then falls with flow; microgravity spread sustained at 17% O2 vs 18% in normal gravity (figures not read)",
+    "verified_by": "https://www.nature.com/articles/s41598-017-18398-4"
+  }
+]
