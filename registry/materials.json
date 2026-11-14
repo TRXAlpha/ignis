@@ -1,0 +1,10 @@
+[
+  {
+    "id": "pmma",
+    "name": "Polymethylmethacrylate (PMMA)",
+    "aliases": ["PMMA", "acrylic", "Plexiglas", "cast PMMA"],
+    "phase": "solid",
+    "material_class": "polymer",
+    "formula": "(C5O2H8)n"
+  }
+]

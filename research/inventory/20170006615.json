@@ -1,0 +1,53 @@
+{
+ "source_id": "ntrs:20170006615",
+ "pdf": "data/raw/ntrs/20170006615.pdf",
+ "pages": 8,
+ "text_chars": 25110,
+ "captions_total": 9,
+ "in_scope": [
+  {
+   "kind": "figure",
+   "label": "2",
+   "page": 3,
+   "caption": "Sequence of 16% O2 by volume flame images showing top: a small stagnation hole that heals and bottom: a hole that causes blowoff.",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4",
+   "page": 5,
+   "caption": "shows the flames just as blowoff begins at each limiting flow condition.  Note that at 18% oxygen, blowoff limits are found at only three radii due to flow rate limitations.  Most of the flames at blowoff are primarily blue, but more sooting is observed for the smallest rod radii and higher oxygen concentrations.  The larger the radius, the larger the flame hole needs to be to destabilize the flam",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7",
+   "page": 6,
+   "caption": "Forced stretch rate at blowoff plotted against rod radius at each oxygen concentration.  The inset shows the constant of each power law curve fit, which varies linearly with oxygen.",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "8",
+   "page": 6,
+   "caption": "Blowoff boundary correlation that accounts for the flow acceleration due to rod blockage in the quartz tube, and normalizes all the radii to the smallest radius ro using the gas phase length scale δ.  To account for buoyant stretch, a shift of 80 s-1 aligns the normal gravity data with BASS-II data [13]",
+   "score": 4,
+   "keywords": [
+    "extinction",
+    "microgravity"
+   ]
+  }
+ ]
+}

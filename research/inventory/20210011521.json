@@ -1,0 +1,57 @@
+{
+ "source_id": "ntrs:20210011521",
+ "pdf": "data/raw/ntrs/20210011521.pdf",
+ "pages": 12,
+ "text_chars": 40564,
+ "captions_total": 14,
+ "in_scope": [
+  {
+   "kind": "figure",
+   "label": "10",
+   "page": 8,
+   "caption": "Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity.1 Concurrent flames are shown on the left of the origin and opposed to the right. Saffire I-III were in a 46 cm duct and Saffire IV was in a 30 cm duct. BASS concurrent 2 cm wide",
+   "score": 7,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity",
+    "pmma",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "11",
+   "page": 9,
+   "caption": "Opposed flame spread on ribbed PMMA. Images are top view. Flow is form left to right at 20 cm/s. Sample rib centerlines (red lines) are indicated. Ribs are 3 mm high with widths increasing from 1 mm to 10 mm by 1 mm increments from the top to the bottom red line. There is 2 cm between adjoining rib faces. Flow is from the left to the right. Images are 100 seconds apart. On the wider ribs, the flam",
+   "score": 6,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity",
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6",
+   "page": 6,
+   "caption": "Radiant flux and flow speed for Saffire V-4 Evident is the rapid extinction after 300 seconds of cooling at low air flow (5 cm/s) before the flow was stopped completely. 0 20",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "8",
+   "page": 7,
+   "caption": "Saffire V-4 deflagration during initial ignition of sample Images are edge view, the red lines denote the approximate middle of the sample edge. Air flow is from left to right at 20 cm/s. Ignition occurred after a planned 10 minutes of preheating (top image) within 100 ms (bottom image) the flame has bloomed to fill the field of view. Images correspond to the sharp peak at 645 s in figure 6.",
+   "score": 4,
+   "keywords": [
+    "flow (?:velocity",
+    "thin",
+    "flame length"
+   ]
+  }
+ ]
+}

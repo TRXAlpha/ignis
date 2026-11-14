@@ -2,6 +2,10 @@
 
 NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combustion results into one cited, queryable model.
 
+## Scope (decided 2026-11-14)
+
+Data push is narrowed to **solid thin fuels**: opposed/concurrent **flame spread rate** and the **O2 x flow flammability boundary** (`flame_state`, `extinction_flow_velocity`, `limiting_oxygen_fraction`). Campaign cluster: BASS, BASS-II, Saffire IV-VI, plus drop-tower and 1g ground tests from the same papers. Reason: it is the only outcome where enough campaigns overlap to run leave-one-campaign-out validation. The contract still covers droplets, gas jets and smoke; they are just not being ingested.
+
 ## Setup (one path)
 
 ```bash

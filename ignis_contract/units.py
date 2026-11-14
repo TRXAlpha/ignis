@@ -15,6 +15,7 @@ CONTRACT_DIR = Path(__file__).resolve().parent.parent / "contract"
 
 UREG = pint.UnitRegistry()
 UREG.define("psia = psi")
+UREG.define("micro_g0 = 1e-6 * standard_gravity")
 UREG.define("psig_abs_not_supported = [unsupported_gauge]")  # placeholder dimension: psig needs ambient, refuse it
 
 # Spellings seen in combustion papers -> pint expressions. Lowercase keys, exact match after strip().
@@ -24,6 +25,9 @@ _ALIASES = {
     "": "dimensionless", "-": "dimensionless", "1": "dimensionless", "mole fraction": "dimensionless",
     "mass fraction": "dimensionless", "fraction": "dimensionless", "ppm": "ppm",
     "g": "g0", "g0": "g0", "g_0": "g0", "g-level": "g0", "xg": "g0", "earth g": "g0",
+    # micro-g as written in microgravity papers. Exact whole-string match only, so 'µg/s' (micrograms/s)
+    # is untouched; a stray mass 'µg' in a non-gravity field fails on dimensionality instead of passing.
+    "µg": "micro_g0", "μg": "micro_g0", "ug": "micro_g0", "micro-g": "micro_g0", "micro g": "micro_g0",
     "psig": "psig_abs_not_supported",
     "torr": "torr", "mmhg": "mmHg", "atm": "atm", "bar": "bar", "kpa": "kPa", "pa": "Pa", "mpa": "MPa",
     "cm/s": "cm/s", "mm/s": "mm/s", "m/s": "m/s",

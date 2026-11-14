@@ -1,0 +1,22 @@
+{
+ "source_id": "ntrs:20150008961",
+ "pdf": "data/raw/ntrs/20150008961.pdf",
+ "pages": 10,
+ "text_chars": 31520,
+ "captions_total": 6,
+ "in_scope": [
+  {
+   "kind": "figure",
+   "label": "4",
+   "page": 6,
+   "caption": "Flammability boundary obtained in BASS-II tests with concurrent rods of different sizes. Complementary drop tower test results are also shown.  Extinction points (X’s) are color-coded to indicate rod diameter.",
+   "score": 9,
+   "keywords": [
+    "extinction",
+    "flammab",
+    "flow (?:velocity",
+    "microgravity"
+   ]
+  }
+ ]
+}

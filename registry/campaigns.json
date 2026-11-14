@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bass-ii",
+    "name": "Burning and Suppression of Solids-II (BASS-II)",
+    "agency": "NASA",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "refs": [
+      {
+        "source_id": "ntrs:20210011385",
+        "page": 9,
+        "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+      }
+    ]
+  }
+]

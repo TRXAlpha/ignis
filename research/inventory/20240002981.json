@@ -1,0 +1,33 @@
+{
+ "source_id": "ntrs:20240002981",
+ "pdf": "data/raw/ntrs/20240002981.pdf",
+ "pages": 7,
+ "text_chars": 24204,
+ "captions_total": 9,
+ "in_scope": [
+  {
+   "kind": "figure",
+   "label": "5",
+   "page": 5,
+   "caption": "Inlet and outlet oxygen concentrations for Saffire VI-3 (two-sided PMMA) with the calculated heat release based on the oxygen consumption. The flow was changed from 20 cm/s",
+   "score": 5,
+   "keywords": [
+    "limiting oxygen",
+    "flow (?:velocity",
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6",
+   "page": 5,
+   "caption": "CO and CO2 concentrations for Saffire VI-3 (two-sided PMMA) The duct flow terminated at 1420 s so the outlet traces end. The flow was changed from 20 cm/s to 5 cm/s at 1120 s. At this",
+   "score": 5,
+   "keywords": [
+    "limiting oxygen",
+    "flow (?:velocity",
+    "pmma"
+   ]
+  }
+ ]
+}

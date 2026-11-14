@@ -2,7 +2,7 @@
 name = "ignis"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = ["jsonschema>=4.18", "pint>=0.23"]
+dependencies = ["jsonschema>=4.18", "pint>=0.23", "pymupdf>=1.24"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
@@ -12,7 +12,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["ignis_contract", "ingest"]
+packages = ["ignis_contract", "ingest", "ingest.curated"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

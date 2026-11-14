@@ -1,0 +1,879 @@
+{
+ "source_id": "ntrs:20210011385",
+ "pdf": "data/raw/ntrs/20210011385.pdf",
+ "pages": 144,
+ "text_chars": 343563,
+ "captions_total": 83,
+ "in_scope": [
+  {
+   "kind": "figure",
+   "label": "6.10",
+   "page": 84,
+   "caption": "Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map. International Space Station (ISS). Stretch rate (a). Final O2 concentration (XO2). Forced-flow velocity (U). Rod radius (r).",
+   "score": 10,
+   "keywords": [
+    "extinction",
+    "flammab",
+    "limiting oxygen",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.7",
+   "page": 108,
+   "caption": "Flammability map for Solid Inflammability Boundary at Low Speeds (SIBAL) fabric in concurrent flow in microgravity. Dotted line marks experimental quenching boundary for 2.2-cm-wide sample. Flow speed (U0).",
+   "score": 10,
+   "keywords": [
+    "extinction",
+    "flammab",
+    "flow (?:velocity",
+    "pmma",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.11",
+   "page": 33,
+   "caption": "Computational spread rate for flame spread over thin polymethylmethacrylate. Although spread rate can be seen to be function of fuel thickness, extinction velocity is same at 1.5 cm/s for each thickness. Spread rates for downward spread configuration are indicated by empty symbols.",
+   "score": 9,
+   "keywords": [
+    "spread rate",
+    "extinction",
+    "flow (?:velocity",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.15",
+   "page": 45,
+   "caption": "Downward flame spread over polymethylmethacrylate sheets of 50-µm thickness in presence of forced opposed flow of air. Filled symbols represent blowoff extinction.",
+   "score": 9,
+   "keywords": [
+    "spread rate",
+    "extinction",
+    "flow (?:velocity",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.12",
+   "page": 34,
+   "caption": "Computational spread rate for flame spread over 100-µm-thick sheet of polymethylmethacrylate at two different O2 levels. Extinction velocity increases from 1.5 cm/s at 21 percent O2 to 3.5 cm/s at 16 percent, closely matching experimental results.",
+   "score": 8,
+   "keywords": [
+    "spread rate",
+    "extinction",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4.1",
+   "page": 57,
+   "caption": "Flame spread rate versus opposed-flow velocity and O2 concentration for three diameters of black polymethylmethacrylate rods in microgravity. (a) Opposed-flow velocity. (b) O2 concentration.",
+   "score": 8,
+   "keywords": [
+    "spread rate",
+    "limiting oxygen",
+    "flow (?:velocity",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4.2",
+   "page": 58,
+   "caption": "Flame spread rate versus opposed-flow velocity and O2 concentration for three diameters of black polymethylmethacrylate rods in microgravity where independent variable not on abscissa is represented as color of data point. (a) Opposed-flow velocity. (b) O2 concentration.",
+   "score": 8,
+   "keywords": [
+    "spread rate",
+    "limiting oxygen",
+    "flow (?:velocity",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.8",
+   "page": 82,
+   "caption": "Sequence of still flame images from two local blowoffs. Images in each set are 1 s apart. Yellow horizontal lines reflect position of rod tip. (a) Blowoff 1. (b) Blowoff 2. 6.1.4.4 Flammability Boundary For each test, the flow speed at which the flames extinguished and the last flow speed at which a",
+   "score": 8,
+   "keywords": [
+    "extinction",
+    "flammab",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.9",
+   "page": 83,
+   "caption": "Flammability boundary obtained in Burning and Suppression of Solids—II (BASS–II) tests with linear axis. Complementary drop tower test results are also shown. International Space Station (ISS). Stretch rate (a). Final O2 concentration (XO2). Forced- flow velocity (U). Rod radius (r).",
+   "score": 8,
+   "keywords": [
+    "flammab",
+    "limiting oxygen",
+    "flow (?:velocity",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4.3",
+   "page": 59,
+   "caption": "Comparison of flame spread rates for black cast polymethylmethacrylate (PMMA) rods as function of gravity, O2 concentration, and rod diameter. All data are for experiments carried out in absence of external radiant heating. All O2 concentrations and flow velocities for microgravity",
+   "score": 7,
+   "keywords": [
+    "spread rate",
+    "limiting oxygen",
+    "pmma",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.22",
+   "page": 96,
+   "caption": "Flammability boundary (Eq. (6.1)) using forced-flow velocity U divided by diffusive velocity UD in lieu of stretch rate a. XO2 is O2 concentration in vol%. Normal-gravity flammability limit (Ref. 23) is graphed for comparison.",
+   "score": 7,
+   "keywords": [
+    "flammab",
+    "limiting oxygen",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.13",
+   "page": 35,
+   "caption": "Different modes of heat transfer and length scales (L) at leading edge of flame. For thermally thin fuel, Lsy ≤ τ. Solid (s). Gas phase (g). Absolute spread rate (Vf). Opposed-flow velocity (Vg). Velocity relative to flame (Vr). Fuel half thickness (τ).",
+   "score": 6,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.20",
+   "page": 49,
+   "caption": "Image array comparing microgravity and downward flame spread for different thicknesses of polymethylmethacrylate (PMMA). Velocity of oxidizer (Vg). Absolute spread rate (Vf). PMMA (NASA) in 0g on International Space Station, 2-cm sample with 10.x cm in 20.7 percent O2 and 79 percent N2 at 1 atm. (a) Burning and",
+   "score": 6,
+   "keywords": [
+    "spread rate",
+    "pmma",
+    "thin",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4",
+   "page": 59,
+   "caption": "4(f). The flame survived under the low-O2 conditions until the initially hemispherical rod tip regressed to a flat surface. It never spread along the outer surface of the rod. It is hypothesized that the flame quenched when the local flow velocity in the flame zone decreased as the flame transitioned to a wake flame, and the sample thickness that needed heating exceeded the ability of the weakened",
+   "score": 6,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5",
+   "page": 66,
+   "caption": "4(c) and (d) are of a higher O2 level, showing how the flame spread across the material, leaving behind a very long bubbled sample. The two sides of the flame extinguished separately on each side of the sample, within a few seconds of each other. Figure 5.4(e) and (f) is a single-sided sample whose flame was quite weak despite the high flow rate and the high O2 concentration. Heat loss to the",
+   "score": 6,
+   "keywords": [
+    "spread rate",
+    "limiting oxygen",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.4",
+   "page": 67,
+   "caption": "Polymethylmethacrylate (PMMA) slab tests. 2-mm-thick by 2.2-cm-wide PMMA slab tests. (a) Preextinction flame, two sided, 18.8 percent O2, 3 cm/s. (b) Postburn sample from (a). (c) Preextinction flame, two sided, 21.7 percent O2, <1 cm/s. (d) Postburn sample from (c). (e) Preextinction flame, two sided, 22.2 percent O2, 11 cm/s. (f) Postburn sample from (e).",
+   "score": 6,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity",
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.11",
+   "page": 85,
+   "caption": "Flame standoff distance as function of oxygen, showing both quenching and blowoff branches. O2 concentration (XO2).",
+   "score": 6,
+   "keywords": [
+    "extinction",
+    "limiting oxygen",
+    "flame length"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.1",
+   "page": 22,
+   "caption": "Flame images as function of opposed- flow velocity Vg during radiative extinction. (a) Time (t) = 27 s; Vg = 3.0 cm/s. (b) t = 28 s; Vg = 1.5 cm/s. (c) t = 29 s; Vg = 1.1 cm/s.",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.6",
+   "page": 29,
+   "caption": "Schematic of Burning and Suppression of Solids—II (BASS–II) combustion tunnel. Absolute spread rate (Vf). Opposed-flow velocity (Vg).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.9",
+   "page": 32,
+   "caption": "Flame images as function of opposed- flow velocity (Vg) during radiative extinction. (a) Time (t) = 27 s; Vg = 3.0 cm/s. (b) t = 28 s; Vg = 1.5 cm/s. (c) t = 29 s; Vg = 1.1 cm/s.",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.16",
+   "page": 46,
+   "caption": "Experimental setup aboard International Space Station used for opposed-flow flame spread research. Absolute spread rate (Vf). Velocity of the oxidizer (Vg).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.21",
+   "page": 50,
+   "caption": "Comparison of microgravity and downward flame spread at different thicknesses of polymethylmethacrylate. Absolute spread rate (Vf). Specific heat (cs). Flame constant for Burning and Suppression of Solids (FBASS). Gas-phase conductivity (λg). Solid density (ρs). Fuel half-thickness (τ).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "thin",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.22",
+   "page": 51,
+   "caption": "Comparison of microgravity, downward flame spread, and Fernandez-Pello and Williams experimental data at different thicknesses of polymethylmethacrylate. Also showing thin and thick fuel theoretical thermal limits.",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "thin",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.1",
+   "page": 64,
+   "caption": "BASS–II duct (Ref. 4). Absolute spread rate (Vf). Opposed-flow velocity (Vg).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.3",
+   "page": 66,
+   "caption": "shows flame still images taken by the Nikon camera during one experiment as the flow is turned down incrementally. O2 is also decreasing slightly during the experiment. Soot decreases as flow decreases, and flame is all blue prior to extinction. Flat PMMA samples have been burned in the narrow channel apparatus (NCA) to simulate microgravity",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "pmma",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.8",
+   "page": 70,
+   "caption": "Flame spread rate versus opposed-flow velocity (two-sided tests).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.9",
+   "page": 70,
+   "caption": "Flame spread rate versus opposed-flow speed (one-sided tests).",
+   "score": 5,
+   "keywords": [
+    "spread rate",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.2",
+   "page": 77,
+   "caption": "Ignition delay time (left axis) and nondimensional ignition delay time τ (right axis) as function of initial O2 concentration. Successful ignitions occur in nondimensional ignitable region, and with ignition delay times as long as 230 s. NASA Test 1 25-s ignition time may be too short for flammability test and so may",
+   "score": 5,
+   "keywords": [
+    "flammab",
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.5",
+   "page": 107,
+   "caption": "Top view of flame quenching sequence. 2.2-cm-wide sample in 18.7 percent O2. Ignited at 10-cm/s flow, reduced to 2.2 cm/s. Flow is from right to left. (a) Time t is 6.7 s, velocity V is 8 cm/s. (b) t = 32.6 s. V = 2.2 cm/s. (c) t = 15.7 s. V = 4 cm/s. (d) t = 45.0 s. V = 2.2 cm/s. (e) t = 25.8 s. V = 2.2 cm/s. (f) t = 54.0 s. V = 2.2 cm/s. (g) t = 29.2 s. V = 2.2 cm/s. (h) Postburn.",
+   "score": 5,
+   "keywords": [
+    "extinction",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.2",
+   "page": 13,
+   "caption": "Flame geometries tested in Burning and Suppression of Solids—II (BASS–II). Sample images from different geometries: (a) opposed thin slab, (b) spherical section, (c) opposed rod higher flow, (d) flat fabric sample at higher flow, (e) opposed thick slab, (f) concurrent rod, (g) opposed rod at low",
+   "score": 4,
+   "keywords": [
+    "flow (?:velocity",
+    "pmma",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.5",
+   "page": 17,
+   "caption": "CO to CO2 ratio as function of initial O2 concentration for each test. There is some clustering apparent in data, which shows that lower O2 concentrations produce higher levels of CO per CO2 for concurrent rods, especially when compared to opposed rods,",
+   "score": 4,
+   "keywords": [
+    "limiting oxygen",
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "2.1",
+   "page": 36,
+   "caption": "COMPARISON OF EXTINCTION VELOCITY Vg,cr FOR THIN POLYMETHYLMETHACRYLATE AT 1 atm Vg,cr, mm/s O2,",
+   "score": 4,
+   "keywords": [
+    "extinction",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.14",
+   "page": 42,
+   "caption": "Various time t and length scales L at leading edge. In thermal regime, fuel preheating rad and transverse conduction cond through gas g and solid s are of same order. Chemical (chem). Absolute spread rate (Vf). Velocity of the oxidizer (Vg).",
+   "score": 4,
+   "keywords": [
+    "spread rate",
+    "flame length"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2",
+   "page": 47,
+   "caption": "19(b). The uncertainty in the spread rate calculations by tracking the leading edge in this manner has been shown to be less than 5 percent except near ignition time when the flame bursts into its spreading form (Ref. 4). Once away from the ignition zone, averaging over 5 s of propagation have been found to produce spread rates that are reproducible within 5 percent variability. The error bar rema",
+   "score": 4,
+   "keywords": [
+    "spread rate",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.19",
+   "page": 48,
+   "caption": "Microgravity and downward configuration results. (a) Leading edge location versus time in microgravity (solid line) and downward configurations. (b) Spread rate versus time in microgravity (solid line) and downward configurations.",
+   "score": 4,
+   "keywords": [
+    "spread rate",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.5",
+   "page": 67,
+   "caption": "Extinction limits for Miller and Wichman tests. Symbol sizes and numbers reflect fuel thickness, and other geometry variations are noted in legend.",
+   "score": 4,
+   "keywords": [
+    "extinction",
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.3",
+   "page": 23,
+   "caption": "Flame spread rate obtained by tracking leading edge and location of peak intensity.",
+   "score": 3,
+   "keywords": [
+    "spread rate"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.8",
+   "page": 31,
+   "caption": "Flame spread rate obtained by tracking leading edge and location of peak intensity.",
+   "score": 3,
+   "keywords": [
+    "spread rate"
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "4.2",
+   "page": 56,
+   "caption": "exhibits the range of oxidizer and flow conditions employed in these tests. The focus of these experiments was on low O2 concentrations and characteristic flow velocities below those achievable in 1g environments due to the effects of buoyancy. The low-flow velocities in microgravity environments allow for the investigation of conditions unachievable in a 1g environment. As a means of comparison,",
+   "score": 3,
+   "keywords": [
+    "limiting oxygen",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4.4",
+   "page": 60,
+   "caption": "Two flame sequences showing very different burning behavior. Black polymethylmethacrylate (PMMA) rod, 4.76 mm, 18.5 percent O2, with decreasing flow at (a) 1.9 cm/s, (b) 1.7 cm/s, (c) 1.6 cm/s, and (d) 1.5 cm/s. (e) Posttest rod, showing general conical burn shape except blunt melted tip of the rod. (f) Black PMMA rod, 3.18 mm, 16.3 percent O2, at 5 cm/s. Cap-shaped flame burned away initial hemis",
+   "score": 3,
+   "keywords": [
+    "flow (?:velocity",
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.3",
+   "page": 78,
+   "caption": "Representative limit flames for three rod sizes tested. Near-quenching limit flame (a) Radius r = 0.318 cm. (b) r = 0.476 cm. (c) r = 0.635 cm. Blowoff after stagnation tip opens up. (d) r = 0.318 cm. (e) r = 0.476 cm. (f) r = 0.635 cm.",
+   "score": 3,
+   "keywords": [
+    "extinction"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.6",
+   "page": 80,
+   "caption": "Flame oscillations prior to quenching extinction, detected by radiometer. Data is from same test as",
+   "score": 3,
+   "keywords": [
+    "extinction"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.7",
+   "page": 82,
+   "caption": "Time history of stretch rate a and radiometer signal for two local blowoffs for 0.318 cm rod.",
+   "score": 3,
+   "keywords": [
+    "extinction"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.12",
+   "page": 86,
+   "caption": "Flame standoff distance as function of stretch rate a with power law fit. Forced-flow velocity (U). Rod radius (r).",
+   "score": 3,
+   "keywords": [
+    "flow (?:velocity",
+    "flame length"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.17",
+   "page": 90,
+   "caption": "Predicted temperature along extinction boundary Tcrit (Eq. (6.2)), Nusselt number Nu (Eq. (6.3)), decay of heating rate q′′with stretch rate a (Eq. (6.4)), and radiative heat qrad and total heat qtot from Equation (6.5). Solid temperature (Ts). Convective heating rate",
+   "score": 3,
+   "keywords": [
+    "extinction"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.20",
+   "page": 95,
+   "caption": "Surface energy balance terms as function of stretch rate a along flammability boundary from Equation (6.5) using the convective heating rate (Eq. (6.4)) and solid conduction (Eq. (6.8)) as input.",
+   "score": 3,
+   "keywords": [
+    "flammab"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.21",
+   "page": 95,
+   "caption": "Ratio of energy balance terms to total heat flux from flame to surface, to show relative importance of each term along flammability boundary. Stretch rate (a).",
+   "score": 3,
+   "keywords": [
+    "flammab"
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "7.1",
+   "page": 104,
+   "caption": "TEST SUMMARY OF FLAT SIBALa FABRICS IN CONCURRENT FLOW IN BURNING AND SUPPRSSION SOLIDS (BASS AND BASS–II) Test number",
+   "score": 3,
+   "keywords": [
+    "flow (?:velocity",
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.4",
+   "page": 106,
+   "caption": "Steady flame spread rate for both 2.2- and 1.2-cm-wide samples.",
+   "score": 3,
+   "keywords": [
+    "spread rate"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.3",
+   "page": 15,
+   "caption": "O2 depletion and CO2 production during Burning and Suppression of Solids—II (BASS–II) tests with polymethylmethacrylate fuel. Data from different geometries, flows, and initial O2 concentrations all agree with expected stoichiometric trend (shown by dashed line).",
+   "score": 2,
+   "keywords": [
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.4",
+   "page": 16,
+   "caption": "CO generated compared to CO2 generated in each test. CO generated appears to be clustered by geometric and flow configurations. Concurrent rod geometry produced most CO per CO2, and opposed rods showed very nonlinear trend of CO versus CO2 production. Thick opposed-flow",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "3.1",
+   "page": 54,
+   "caption": "Candle wick burning with opposed flow (upward flow). (a) Postignition at 3 cm/s (potentiometer or pot 0.6); (b) Pot 0.4, wick ejects droplet of wax directly upstream; (c) Pot 0.35; (d) Pot 0.32; and (e) Pot 0.31.",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "4.5",
+   "page": 61,
+   "caption": "Polymethylmethacrylate rod bubble layers (a) opposed and (b) concurrent. 4.1.3 References",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.1",
+   "page": 75,
+   "caption": "Hardware used for Burning and Suppression of Solids—II (BASS–II) tests. Gas sensors are not shown. Polymethylmethacrylate (PMMA). Microgravity Science Glovebox (MSG).",
+   "score": 2,
+   "keywords": [
+    "pmma",
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.15",
+   "page": 88,
+   "caption": "CO to CO2 ratio as function of final O2 concentration.",
+   "score": 2,
+   "keywords": [
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.16",
+   "page": 88,
+   "caption": "Global equivalence ratio as function of initial O2 concentration.",
+   "score": 2,
+   "keywords": [
+    "limiting oxygen"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7",
+   "page": 103,
+   "caption": "3(b). In the top-view images, we can find bright spots behind the flame base when the flame passes. The spots come from the smoldering of a small amount of fuel that is not completely consumed by the flaming combustion. Compared with the 10-cm/s case, the 5-cm/s case has a shorter flame and spreads more slowly.",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.2",
+   "page": 105,
+   "caption": "Flame development on 2.2-cm sample in 10-cm/s concurrent flow, 21 percent O2. (a) Side-view flame tracking. (b) Side-view image sequence over time t. Flow is from right to left.",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.3",
+   "page": 105,
+   "caption": "Flame development on 2.2-cm sample in 5-cm/s flow, 21 percent O2. (a) Top-view flame tracking. (b) Top-view image sequence over time t. Flow is from right to left.",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "7.6",
+   "page": 107,
+   "caption": "Flame tracking and flow speed U0 versus time for 2.2-cm-wide sample in 18.7 percent O2, ignited at 10-cm/s flow, then reduced to 2.2 cm/s.",
+   "score": 2,
+   "keywords": [
+    "flow (?:velocity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.1",
+   "page": 12,
+   "caption": "Microgravity Science Glovebox Facility (MSG) working volume aboard the International Space Station (ISS) with the Burning and Suppression of Solids—II (BASS– II) experiment hardware installed. Working volume of MSG was diluted using ISS N2 gas. Compound Specific Analyzer-Combustion Products (O2 and CO) and Carbon Dioxide",
+   "score": 1,
+   "keywords": [
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.7",
+   "page": 18,
+   "caption": "O2 consumed, CO2 and CO generated per gram of fuel mass loss for two different fuels tested (cellulose (small circles) and polymethylmethacrylate (large circles)).",
+   "score": 1,
+   "keywords": [
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "2.17",
+   "page": 47,
+   "caption": "Sample holder used for downward (left) and microgravity Burning and Suppression of Solids (BASS) (right) experiments. 2.3.6 Data Analysis",
+   "score": 1,
+   "keywords": [
+    "microgravity"
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "4.1",
+   "page": 55,
+   "caption": "ROD DIAMETERS TESTED FOR BOTH CLEAR AND BLACK POLYMETHYLMETHACRYLATE (PMMA) ABOARD INTERNATIONAL SPACE STATION AS PART OF BURNING AND SUPPRESSION SOLIDS—II (BASS–II) CAMPAIGN Size, m",
+   "score": 1,
+   "keywords": [
+    "pmma"
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "5.1",
+   "page": 65,
+   "caption": "TWENTY BURNING AND SUPPRESSION OF SOLIDS—II (BASS–II) TESTS Test no. Thickness,",
+   "score": 1,
+   "keywords": [
+    "thin"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "5.6",
+   "page": 68,
+   "caption": "Geometry setup for two-dimensional model. Polymethylmethacrylate (PMMA).",
+   "score": 1,
+   "keywords": [
+    "pmma"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "6.5",
+   "page": 79,
+   "caption": "Flame length compared to clear bubble layer length. Inset flame image shows bubble layer length. Data is from same test as Figure 6.4.",
+   "score": 1,
+   "keywords": [
+    "flame length"
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "1.6",
+   "page": 17,
+   "caption": "Heat release rate (HRR) during each test using O2 consumption calorimetry. Data from Figure 1.3 is converted to watts using burn time and Huggett’s constant, plotted against initial O2, showing HRR generally increases with increasing ambient O2",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.2",
+   "page": 22,
+   "caption": "Radiometer signal for entire duration of test. Discontinuity at time (t) = 30 s coincides with disappearance of visible flame.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.4",
+   "page": 24,
+   "caption": "San Diego State University flame tunnel has same dimensions as Hirano tunnel.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.5",
+   "page": 24,
+   "caption": "San Diego State University flame tunnel can be turned to different angles to alter effect of buoyancy- induced flow.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.7",
+   "page": 30,
+   "caption": "Image processing of top view. (a) Color image. (b) Image averaged over central section between white lines. (c) Variation of intensity along dotted line. Leading edge is located at x = 887 pixel for a threshold intensity of 30.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.10",
+   "page": 32,
+   "caption": "Radiometer signal for entire duration of test. Discontinuity at time t = 30 s coincides with disappearance of visible flame.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "2.18",
+   "page": 48,
+   "caption": "Flame data. (a) Top view of flame 18 s into video, (b) two-dimensional representation of flame from averaged intensity values, and (c) variation of width-averaged intensity in x direction.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "5.2",
+   "page": 65,
+   "caption": "Position versus time graph for test M8. Red, green, and purple symbols at constant flow are overlaid on overall test sequence blue symbols.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "5.7",
+   "page": 69,
+   "caption": "shows the heat release rate (HRR) per unit area profile for this case. The maximum HRR obtained in the two-dimensional simulation was 225 kW/m2. Smokeview can also be used to obtain quantities like temperature, mass flux, net heat flux, etc. 5.6",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6.4",
+   "page": 80,
+   "caption": "Inset graph shows oscillation frequency to be steady at 1.1 Hz.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6.13",
+   "page": 86,
+   "caption": "O2 consumed compared to CO2 generated.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6.14",
+   "page": 87,
+   "caption": "CO generated compared to CO2 generated.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6.18",
+   "page": 91,
+   "caption": "Two-zone surface energy balance.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6.19",
+   "page": 94,
+   "caption": "Predicted regression rates from two-zone and one- dimensional (1D) models as function of stretch rate a compared with measured rod regression rates and published pseudo-1D experimental data.",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "6",
+   "page": 96,
+   "caption": "10), the surface radiative loss is comparable to the flame radiative feedback, and so radiative exchange in general can be neglected. Interestingly, the flame radiative feedback increases from an insignificant 1 percent (in agreement with Ref. 26) to over 13 percent of the total flame to surface feedback, and thus becomes a significant fraction of the total flame to surface feedback at low a, in",
+   "score": 0,
+   "keywords": []
+  },
+  {
+   "kind": "figure",
+   "label": "7.1",
+   "page": 102,
+   "caption": "Experimental setup. (a) Small flow duct. (b) Fuel sample, sample holder, and igniter.",
+   "score": 0,
+   "keywords": []
+  }
+ ]
+}
