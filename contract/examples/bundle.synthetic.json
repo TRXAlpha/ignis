@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-14T12:00:00Z",
+  "sources": [
+    {
+      "id": "test:synthetic-paper",
+      "kind": "synthetic_test",
+      "title": "SYNTHETIC TEST FIXTURE - not NASA data",
+      "url": "https://example.invalid/synthetic",
+      "year": 2021
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "test-campaign",
+      "name": "Synthetic campaign",
+      "agency": "other",
+      "platform": "orbital_iss",
+      "refs": [
+        {
+          "source_id": "test:synthetic-paper",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "test-sheet",
+      "name": "Synthetic sheet",
+      "phase": "solid",
+      "material_class": "cellulosic",
+      "properties": {
+        "density": {
+          "value": 0.6,
+          "unit": "g/cm^3",
+          "basis": "reported",
+          "si_value": 599.9999999999999,
+          "si_unit": "kg/m^3",
+          "basis_ref": {
+            "locator": {
+              "source_id": "test:synthetic-paper",
+              "page": 2,
+              "quote": "SYNTHETIC: all tests in air at 1 atm"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "observations": [
+    {
+      "schema_version": "1.0.0",
+      "id": "obs_9fba0aef12c9927c",
+      "locator": {
+        "source_id": "test:synthetic-paper",
+        "figure": "4",
+        "series": "21% O2",
+        "point_index": 0,
+        "page": 5
+      },
+      "experiment": {
+        "campaign_id": "test-campaign",
+        "platform": "orbital_iss",
+        "facility": "MSG",
+        "test_year": 2020
+      },
+      "fuel": {
+        "material_id": "test-sheet",
+        "phase": "solid",
+        "geometry": "sheet",
+        "thickness": {
+          "value": 0.08,
+          "unit": "mm",
+          "basis": "reported",
+          "si_value": 8e-05,
+          "si_unit": "m"
+        }
+      },
+      "conditions": {
+        "gravity": {
+          "value": 1e-06,
+          "unit": "g0",
+          "basis": "campaign_nominal",
+          "si_value": 9.806649999999999e-06,
+          "si_unit": "m/s^2",
+          "basis_ref": {
+            "locator": {
+              "source_id": "test:synthetic-paper",
+              "page": 2,
+              "quote": "SYNTHETIC: all tests in air at 1 atm"
+            }
+          }
+        },
+        "o2_mole_fraction": {
+          "value": 21.0,
+          "unit": "%",
+          "basis": "reported",
+          "si_value": 0.21,
+          "si_unit": "dimensionless"
+        },
+        "pressure": {
+          "value": 14.7,
+          "unit": "psia",
+          "basis": "reported",
+          "si_value": 101352.93220957494,
+          "si_unit": "Pa"
+        },
+        "diluent": "N2",
+        "flow_velocity": {
+          "value": 5.0,
+          "unit": "cm/s",
+          "basis": "reported",
+          "si_value": 0.05,
+          "si_unit": "m/s"
+        },
+        "flow_direction": "opposed",
+        "buoyancy_orientation": "not_applicable"
+      },
+      "outcome": {
+        "quantity": "flame_spread_rate",
+        "value": {
+          "value": 1.5,
+          "unit": "mm/s",
+          "basis": "reported",
+          "si_value": 0.0015,
+          "si_unit": "m/s",
+          "uncertainty": {
+            "kind": "relative",
+            "relative": 0.1
+          }
+        },
+        "time_basis": "steady"
+      },
+      "extraction": {
+        "method": "plot_digitized",
+        "tool": "test-digitizer@0",
+        "extracted_at": "2026-11-14T12:00:00Z",
+        "confidence": 0.9,
+        "flags": [
+          "condition_from_campaign_nominal"
+        ],
+        "digitization": {
+          "image_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "x_axis": {
+            "scale": "linear",
+            "unit": "cm/s",
+            "points": [
+              {
+                "pixel": 100,
+                "value": 0
+              },
+              {
+                "pixel": 500,
+                "value": 20
+              }
+            ]
+          },
+          "y_axis": {
+            "scale": "log10",
+            "unit": "mm/s",
+            "points": [
+              {
+                "pixel": 400,
+                "value": 0.1
+              },
+              {
+                "pixel": 50,
+                "value": 10
+              }
+            ]
+          },
+          "pixel": [
+            200,
+            180
+          ],
+          "calibration_residual_px": 0.8,
+          "x_field": "conditions.flow_velocity"
+        }
+      },
+      "qa": {
+        "status": "accepted"
+      }
+    }
+  ]
+}

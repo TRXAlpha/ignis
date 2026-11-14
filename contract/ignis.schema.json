@@ -1,0 +1,554 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignis.local/contract/ignis.schema.json",
+  "title": "IGNIS data contract",
+  "description": "v1.0.0. Single source of truth between ingestion, model, recommender and frontend. Top level = Bundle. Every number carries its reported value+unit, its SI value, and where it came from. Canonical SI units per field live in quantities.json. Absent field = not reported. Never fill a field with a guess.",
+  "$ref": "#/$defs/Bundle",
+
+  "$defs": {
+    "SchemaVersion": {"const": "1.0.0"},
+    "Slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]*$", "maxLength": 80},
+    "SourceId": {
+      "type": "string",
+      "pattern": "^(ntrs|doi|psi|web|challenge|test):\\S+$",
+      "description": "ntrs:<NTRS id>, doi:<doi>, psi:<PSI dataset id>, web:<slug>, challenge:<dataset slug>, test:<fixture slug> (test: is rejected in production builds)."
+    },
+    "ObservationId": {"type": "string", "pattern": "^obs_[0-9a-f]{16}$"},
+
+    "Platform": {
+      "description": "Gravity environment class. Doubles as the fidelity level for multi-fidelity modeling.",
+      "enum": [
+        "ground_1g",
+        "ground_buoyancy_suppressed",
+        "drop_tower",
+        "parabolic_flight",
+        "sounding_rocket",
+        "orbital_short",
+        "orbital_iss",
+        "orbital_spacecraft",
+        "lunar_surface",
+        "planetary_other"
+      ]
+    },
+    "Agency": {"enum": ["NASA", "JAXA", "ESA", "CSA", "DLR", "CNES", "ROSCOSMOS", "academic", "other"]},
+    "Phase": {"enum": ["solid", "liquid", "gas"]},
+    "Geometry": {
+      "enum": ["sheet", "slab", "rod", "cylinder", "tube", "wire", "droplet", "pool", "jet", "porous_burner", "candle", "fabric", "foam", "other"]
+    },
+    "MaterialClass": {
+      "enum": ["polymer", "cellulosic", "fabric", "composite", "wire_insulation", "hydrocarbon_liquid", "alcohol", "hydrocarbon_gas", "hydrogen", "other"]
+    },
+    "Diluent": {"enum": ["N2", "He", "Ar", "CO2", "air", "mixed"]},
+    "FlowDirection": {
+      "description": "Forced/induced flow relative to the flame spread direction.",
+      "enum": ["opposed", "concurrent", "quiescent", "transverse", "mixed"]
+    },
+    "BuoyancyOrientation": {
+      "description": "Spread direction relative to the gravity vector. not_applicable for microgravity.",
+      "enum": ["upward", "downward", "horizontal", "not_applicable"]
+    },
+    "OutcomeQuantity": {
+      "enum": [
+        "flame_spread_rate", "regression_rate", "mass_burning_rate", "mass_burning_flux", "burning_rate_constant",
+        "flame_length", "flame_standoff", "flame_width", "extinction_diameter",
+        "extinction_flow_velocity", "limiting_oxygen_fraction", "limiting_pressure",
+        "smoke_point_length", "smoke_point_fuel_flow",
+        "flame_temperature", "ignition_delay", "flame_lifetime", "soot_volume_fraction", "radiant_fraction",
+        "flame_state", "other"
+      ]
+    },
+    "FlameState": {
+      "description": "Categorical outcome. Extinction mechanism matters: blowoff (too much flow) vs radiative/quench (too little) are the two branches of the U-shaped flammability boundary.",
+      "enum": ["burns_sustained", "self_extinguished", "no_ignition", "blowoff_extinction", "radiative_extinction", "quench_extinction", "oscillating"]
+    },
+    "TimeBasis": {"enum": ["steady", "time_averaged", "instantaneous", "initial", "at_extinction"]},
+
+    "Locator": {
+      "description": "Where exactly a value lives. Must identify one datum: plot points need figure+point_index, table cells need table+row(+column).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id"],
+      "properties": {
+        "source_id": {"$ref": "#/$defs/SourceId"},
+        "page": {"type": "integer", "minimum": 1},
+        "figure": {"type": "string", "minLength": 1},
+        "panel": {"type": "string"},
+        "series": {"type": "string", "description": "Legend label of the plotted series, verbatim."},
+        "point_index": {"type": "integer", "minimum": 0},
+        "table": {"type": "string", "minLength": 1},
+        "row": {"type": "string"},
+        "column": {"type": "string"},
+        "dataset_path": {"type": "string", "description": "Path inside a dataset archive, e.g. 'bass2/run12/summary.csv'."},
+        "quote": {"type": "string", "maxLength": 400, "description": "Verbatim snippet containing the value (text extraction)."}
+      },
+      "anyOf": [
+        {"required": ["page"]}, {"required": ["figure"]}, {"required": ["table"]}, {"required": ["dataset_path"]}
+      ]
+    },
+
+    "BasisRef": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["locator"],
+          "properties": {"locator": {"$ref": "#/$defs/Locator"}}
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["formula", "inputs"],
+          "properties": {
+            "formula": {"type": "string", "minLength": 1, "description": "Formula id implemented in ignis_contract.units."},
+            "inputs": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Dotted field paths used, e.g. 'conditions.pressure'."}
+          }
+        }
+      ]
+    },
+
+    "Uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["sd", "se", "ci95", "range", "half_width", "relative", "unspecified"]},
+        "lower_si": {"type": "number"},
+        "upper_si": {"type": "number"},
+        "sd_si": {"type": "number", "minimum": 0},
+        "relative": {"type": "number", "minimum": 0, "description": "Fraction, e.g. 0.1 for +/-10%."},
+        "reported_text": {"type": "string", "maxLength": 200}
+      }
+    },
+
+    "Quantity": {
+      "description": "A reported number. value+unit are verbatim from the source; si_value is computed by the normalizer and re-checked by the validator.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "si_value", "si_unit", "basis"],
+      "properties": {
+        "value": {"type": "number"},
+        "unit": {"type": "string", "minLength": 1, "description": "As reported, pint-parsable after alias mapping (e.g. 'psia', 'vol%', 'cm/s')."},
+        "si_value": {"type": "number"},
+        "si_unit": {"type": "string"},
+        "basis": {
+          "description": "reported: stated at this observation's locator. reported_elsewhere: same or other source, different locator. campaign_nominal: facility/campaign default from its own doc. derived: computed by a named formula.",
+          "enum": ["reported", "reported_elsewhere", "campaign_nominal", "derived"]
+        },
+        "basis_ref": {"$ref": "#/$defs/BasisRef"},
+        "transform": {
+          "description": "Non-unit conversion applied after unit conversion (requires basis=derived).",
+          "enum": ["o2_mass_to_mole_fraction", "o2_partial_pressure_to_mole_fraction"]
+        },
+        "uncertainty": {"$ref": "#/$defs/Uncertainty"},
+        "note": {"type": "string", "maxLength": 500}
+      },
+      "if": {"properties": {"basis": {"const": "reported"}}},
+      "then": {},
+      "else": {"required": ["basis_ref"]}
+    },
+
+    "AxisCalibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scale", "unit", "points"],
+      "properties": {
+        "scale": {"enum": ["linear", "log10"]},
+        "unit": {"type": "string"},
+        "points": {
+          "type": "array", "minItems": 2,
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["pixel", "value"],
+            "properties": {"pixel": {"type": "number"}, "value": {"type": "number"}}
+          }
+        }
+      }
+    },
+    "Digitization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["image_sha256", "x_axis", "y_axis", "pixel"],
+      "properties": {
+        "image_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "Hash of the cropped figure image that was digitized."},
+        "x_axis": {"$ref": "#/$defs/AxisCalibration"},
+        "y_axis": {"$ref": "#/$defs/AxisCalibration"},
+        "pixel": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "marker": {"type": "string"},
+        "calibration_residual_px": {"type": "number", "minimum": 0},
+        "x_field": {"type": "string", "description": "Which observation field the x value fed, e.g. 'conditions.flow_velocity'."}
+      }
+    },
+
+    "ExtractionFlag": {
+      "enum": [
+        "low_confidence", "unit_inferred", "condition_from_campaign_nominal", "value_from_log_axis",
+        "overlapping_markers", "ocr_uncertain", "axis_calibration_residual_high", "transcription_unverified",
+        "out_of_plausible_range", "duplicate_suspect", "conflicting_source", "transient_not_steady"
+      ]
+    },
+    "Extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "tool", "extracted_at", "confidence"],
+      "properties": {
+        "method": {"enum": ["table", "text", "plot_digitized", "dataset_file", "manual_entry"]},
+        "tool": {"type": "string", "description": "e.g. 'ignis-digitizer@0.3', 'pdfplumber@0.11', 'human'."},
+        "model": {"type": "string", "description": "LLM/VLM id if one was involved."},
+        "extracted_at": {"type": "string", "format": "date-time"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "flags": {"type": "array", "items": {"$ref": "#/$defs/ExtractionFlag"}, "uniqueItems": true},
+        "reviewer": {"type": "string"},
+        "digitization": {"$ref": "#/$defs/Digitization"}
+      }
+    },
+    "QA": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["accepted", "flagged", "rejected", "human_verified"]},
+        "reasons": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+
+    "Experiment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["campaign_id", "platform"],
+      "properties": {
+        "campaign_id": {"$ref": "#/$defs/Slug"},
+        "platform": {"$ref": "#/$defs/Platform"},
+        "facility": {"type": "string"},
+        "run_id": {"type": "string"},
+        "test_year": {"type": "integer", "minimum": 1950, "maximum": 2100}
+      }
+    },
+    "Fuel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["material_id", "phase", "geometry"],
+      "properties": {
+        "material_id": {"$ref": "#/$defs/Slug"},
+        "phase": {"$ref": "#/$defs/Phase"},
+        "geometry": {"$ref": "#/$defs/Geometry"},
+        "thickness": {"$ref": "#/$defs/Quantity"},
+        "width": {"$ref": "#/$defs/Quantity"},
+        "length": {"$ref": "#/$defs/Quantity"},
+        "diameter": {"$ref": "#/$defs/Quantity"},
+        "area_density": {"$ref": "#/$defs/Quantity"}
+      }
+    },
+    "Conditions": {
+      "description": "gravity is mandatory (this is a gravity-aware model). Everything else: absent = not reported.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gravity"],
+      "properties": {
+        "gravity": {"$ref": "#/$defs/Quantity"},
+        "o2_mole_fraction": {"$ref": "#/$defs/Quantity"},
+        "pressure": {"$ref": "#/$defs/Quantity"},
+        "diluent": {"$ref": "#/$defs/Diluent"},
+        "flow_velocity": {"$ref": "#/$defs/Quantity"},
+        "flow_direction": {"$ref": "#/$defs/FlowDirection"},
+        "buoyancy_orientation": {"$ref": "#/$defs/BuoyancyOrientation"},
+        "external_heat_flux": {"$ref": "#/$defs/Quantity"},
+        "ambient_temperature": {"$ref": "#/$defs/Quantity"},
+        "extra": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["name", "quantity"],
+            "properties": {"name": {"$ref": "#/$defs/Slug"}, "quantity": {"$ref": "#/$defs/Quantity"}}
+          }
+        }
+      }
+    },
+    "Outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quantity"],
+      "properties": {
+        "quantity": {"$ref": "#/$defs/OutcomeQuantity"},
+        "quantity_label": {"type": "string", "minLength": 1},
+        "value": {"$ref": "#/$defs/Quantity"},
+        "state": {"$ref": "#/$defs/FlameState"},
+        "time_basis": {"$ref": "#/$defs/TimeBasis"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"quantity": {"const": "flame_state"}}},
+          "then": {"required": ["state"], "not": {"required": ["value"]}},
+          "else": {"required": ["value"], "not": {"required": ["state"]}}
+        },
+        {
+          "if": {"properties": {"quantity": {"const": "other"}}},
+          "then": {"required": ["quantity_label"]}
+        }
+      ]
+    },
+
+    "Observation": {
+      "description": "One outcome under one condition set from one locator. Tidy/long format.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "id", "locator", "experiment", "fuel", "conditions", "outcome", "extraction", "qa"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/SchemaVersion"},
+        "id": {"$ref": "#/$defs/ObservationId"},
+        "locator": {"$ref": "#/$defs/Locator"},
+        "experiment": {"$ref": "#/$defs/Experiment"},
+        "fuel": {"$ref": "#/$defs/Fuel"},
+        "conditions": {"$ref": "#/$defs/Conditions"},
+        "outcome": {"$ref": "#/$defs/Outcome"},
+        "extraction": {"$ref": "#/$defs/Extraction"},
+        "qa": {"$ref": "#/$defs/QA"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"extraction": {"properties": {"method": {"const": "plot_digitized"}}}}},
+          "then": {
+            "properties": {
+              "extraction": {"required": ["digitization"]},
+              "locator": {"required": ["figure", "point_index"]}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"extraction": {"properties": {"method": {"const": "table"}}}}},
+          "then": {"properties": {"locator": {"required": ["table", "row"]}}}
+        },
+        {
+          "if": {"properties": {"extraction": {"properties": {"method": {"const": "text"}}}}},
+          "then": {"properties": {"locator": {"required": ["page", "quote"]}}}
+        },
+        {
+          "if": {"properties": {"extraction": {"properties": {"method": {"const": "dataset_file"}}}}},
+          "then": {"properties": {"locator": {"required": ["dataset_path"]}}}
+        },
+        {
+          "if": {"properties": {"extraction": {"properties": {"method": {"const": "manual_entry"}}}}},
+          "then": {"properties": {"extraction": {"required": ["reviewer"]}, "locator": {"required": ["page"]}}}
+        }
+      ]
+    },
+
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "url"],
+      "properties": {
+        "id": {"$ref": "#/$defs/SourceId"},
+        "kind": {"enum": ["ntrs", "doi", "psi_dataset", "web_page", "challenge_dataset", "synthetic_test"]},
+        "title": {"type": "string", "minLength": 1},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "year": {"type": "integer", "minimum": 1950, "maximum": 2100},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "pdf_url": {"type": "string", "pattern": "^https?://"},
+        "ntrs_id": {"type": "string"},
+        "doi": {"type": "string"},
+        "campaign_ids": {"type": "array", "items": {"$ref": "#/$defs/Slug"}},
+        "retrieved_at": {"type": "string", "format": "date-time"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "Hash of the exact file extracted from."},
+        "license": {"type": "string"}
+      }
+    },
+    "Campaign": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "agency", "platform", "refs"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Slug"},
+        "name": {"type": "string"},
+        "agency": {"$ref": "#/$defs/Agency"},
+        "platform": {"$ref": "#/$defs/Platform"},
+        "facility": {"type": "string"},
+        "years": {"type": "array", "items": {"type": "integer", "minimum": 1950, "maximum": 2100}},
+        "parent_id": {"$ref": "#/$defs/Slug", "description": "e.g. acme-s-flames -> acme."},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "refs": {"type": "array", "items": {"$ref": "#/$defs/Locator"}, "minItems": 1}
+      }
+    },
+    "Material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "phase", "material_class"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Slug"},
+        "name": {"type": "string"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "phase": {"$ref": "#/$defs/Phase"},
+        "material_class": {"$ref": "#/$defs/MaterialClass"},
+        "formula": {"type": "string"},
+        "properties": {
+          "type": "object",
+          "additionalProperties": false,
+          "propertyNames": {"enum": ["density", "thermal_conductivity", "specific_heat", "heat_of_combustion", "heat_of_gasification", "pyrolysis_temperature", "emissivity", "molar_mass"]},
+          "patternProperties": {"^.*$": {"$ref": "#/$defs/SourcedQuantity"}}
+        }
+      }
+    },
+    "SourcedQuantity": {
+      "description": "Quantity that must point at a source even when basis=reported (material properties, presets).",
+      "allOf": [{"$ref": "#/$defs/Quantity"}, {"required": ["basis_ref"]}]
+    },
+
+    "Bundle": {
+      "description": "What ingestion publishes (data/bundle.json) and model/graph/frontend consume.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "generated_at", "sources", "campaigns", "materials", "observations"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/SchemaVersion"},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "sources": {"type": "array", "items": {"$ref": "#/$defs/Source"}},
+        "campaigns": {"type": "array", "items": {"$ref": "#/$defs/Campaign"}},
+        "materials": {"type": "array", "items": {"$ref": "#/$defs/Material"}},
+        "observations": {"type": "array", "items": {"$ref": "#/$defs/Observation"}}
+      }
+    },
+
+    "SiConditions": {
+      "description": "Plain-SI condition point used by queries, predictions, recommendations and presets.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gravity_m_s2"],
+      "properties": {
+        "gravity_m_s2": {"type": "number", "minimum": 0},
+        "o2_mole_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+        "pressure_pa": {"type": "number", "exclusiveMinimum": 0},
+        "flow_velocity_m_s": {"type": "number", "minimum": 0},
+        "flow_direction": {"$ref": "#/$defs/FlowDirection"},
+        "diluent": {"$ref": "#/$defs/Diluent"},
+        "thickness_m": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "Range": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+
+    "Prediction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_id", "model_version", "material_id", "outcome_quantity", "conditions", "status", "ood", "evidence_observation_ids"],
+      "properties": {
+        "model_id": {"type": "string"},
+        "model_version": {"type": "string"},
+        "material_id": {"$ref": "#/$defs/Slug"},
+        "outcome_quantity": {"$ref": "#/$defs/OutcomeQuantity"},
+        "conditions": {"$ref": "#/$defs/SiConditions"},
+        "status": {"enum": ["ok", "extrapolation", "insufficient_data"]},
+        "mean_si": {"type": ["number", "null"]},
+        "interval": {
+          "type": "object", "additionalProperties": false, "required": ["level", "lower_si", "upper_si"],
+          "properties": {"level": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1}, "lower_si": {"type": "number"}, "upper_si": {"type": "number"}}
+        },
+        "p_burns": {"type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "P(sustained burning) for flame_state queries."},
+        "ood": {
+          "type": "object", "additionalProperties": false, "required": ["in_domain", "score", "method"],
+          "properties": {
+            "in_domain": {"type": "boolean"},
+            "score": {"type": "number"},
+            "method": {"type": "string"},
+            "nearest_observation_ids": {"type": "array", "items": {"$ref": "#/$defs/ObservationId"}},
+            "reason": {"type": "string"}
+          }
+        },
+        "evidence_observation_ids": {"type": "array", "items": {"$ref": "#/$defs/ObservationId"}}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"const": "insufficient_data"}}},
+          "then": {"properties": {"mean_si": {"const": null}, "p_burns": {"const": null}}, "not": {"required": ["interval"]}},
+          "else": {"anyOf": [{"required": ["mean_si", "interval"]}, {"required": ["p_burns"]}]}
+        }
+      ]
+    },
+    "ConstraintSet": {
+      "description": "What a flight/ground facility can physically do. Every range must be sourced.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "platform", "ranges", "refs"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Slug"},
+        "name": {"type": "string"},
+        "platform": {"$ref": "#/$defs/Platform"},
+        "facility": {"type": "string"},
+        "ranges": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "gravity_m_s2": {"$ref": "#/$defs/Range"},
+            "o2_mole_fraction": {"$ref": "#/$defs/Range"},
+            "pressure_pa": {"$ref": "#/$defs/Range"},
+            "flow_velocity_m_s": {"$ref": "#/$defs/Range"},
+            "thickness_m": {"$ref": "#/$defs/Range"}
+          }
+        },
+        "max_burns": {"type": "integer", "minimum": 1},
+        "materials": {"type": "array", "items": {"$ref": "#/$defs/Slug"}},
+        "refs": {"type": "array", "items": {"$ref": "#/$defs/Locator"}, "minItems": 1}
+      }
+    },
+    "Recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank", "constraint_set_id", "material_id", "conditions", "outcome_quantity", "expected_information_gain_nats", "gap"],
+      "properties": {
+        "rank": {"type": "integer", "minimum": 1},
+        "constraint_set_id": {"$ref": "#/$defs/Slug"},
+        "material_id": {"$ref": "#/$defs/Slug"},
+        "conditions": {"$ref": "#/$defs/SiConditions"},
+        "outcome_quantity": {"$ref": "#/$defs/OutcomeQuantity"},
+        "expected_information_gain_nats": {"type": "number", "minimum": 0},
+        "n_burns": {"type": "integer", "minimum": 1},
+        "gap": {
+          "type": "object", "additionalProperties": false, "required": ["description"],
+          "properties": {
+            "description": {"type": "string"},
+            "predictive_sd_before": {"type": "number", "minimum": 0},
+            "predictive_sd_after": {"type": "number", "minimum": 0},
+            "nearest_observation_ids": {"type": "array", "items": {"$ref": "#/$defs/ObservationId"}}
+          }
+        },
+        "model_version": {"type": "string"}
+      }
+    },
+    "ValidationFold": {
+      "description": "One leave-one-campaign-out fold. Rendered on the validation page as-is.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_id", "model_version", "fold_id", "held_out_campaign_id", "outcome_quantity", "n_train", "n_test", "metrics"],
+      "properties": {
+        "model_id": {"type": "string"},
+        "model_version": {"type": "string"},
+        "fold_id": {"type": "string"},
+        "held_out_campaign_id": {"$ref": "#/$defs/Slug"},
+        "outcome_quantity": {"$ref": "#/$defs/OutcomeQuantity"},
+        "n_train": {"type": "integer", "minimum": 0},
+        "n_test": {"type": "integer", "minimum": 0},
+        "metrics": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "rmse_log10": {"type": "number", "minimum": 0},
+            "mae_log10": {"type": "number", "minimum": 0},
+            "median_abs_rel_error": {"type": "number", "minimum": 0},
+            "nlpd": {"type": "number"},
+            "brier": {"type": "number", "minimum": 0, "maximum": 1},
+            "coverage": {
+              "type": "array",
+              "items": {
+                "type": "object", "additionalProperties": false, "required": ["nominal", "empirical"],
+                "properties": {"nominal": {"type": "number", "minimum": 0, "maximum": 1}, "empirical": {"type": "number", "minimum": 0, "maximum": 1}}
+              }
+            }
+          }
+        },
+        "baseline": {"type": "object", "additionalProperties": {"type": "number"}, "description": "Same metrics for the scaling-law-only mean, so the GP has to beat physics."}
+      }
+    },
+    "HabitatPreset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "conditions", "refs"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Slug"},
+        "name": {"type": "string"},
+        "conditions": {"$ref": "#/$defs/SiConditions"},
+        "materials": {"type": "array", "items": {"$ref": "#/$defs/Slug"}},
+        "notes": {"type": "string"},
+        "refs": {"type": "array", "items": {"$ref": "#/$defs/Locator"}, "minItems": 1}
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_doc": "Canonical SI unit per field. si_unit strings in records must match these exactly. 'hard' = physically impossible outside (error). 'plausible' = outside requires the out_of_plausible_range flag. null bound = unbounded.",
+  "conditions": {
+    "gravity":            {"si_unit": "m/s^2",         "hard": [0, null], "plausible": [0, 30]},
+    "o2_mole_fraction":   {"si_unit": "dimensionless", "hard": [0, 1],    "plausible": [0.05, 1]},
+    "pressure":           {"si_unit": "Pa",            "hard": [0, null], "plausible": [1000, 500000]},
+    "flow_velocity":      {"si_unit": "m/s",           "hard": [0, null], "plausible": [0, 5]},
+    "external_heat_flux": {"si_unit": "W/m^2",         "hard": [0, null], "plausible": [0, 200000]},
+    "ambient_temperature":{"si_unit": "K",             "hard": [0, null], "plausible": [200, 600]}
+  },
+  "fuel": {
+    "thickness":    {"si_unit": "m",       "hard": [0, null], "plausible": [1e-6, 0.1]},
+    "width":        {"si_unit": "m",       "hard": [0, null], "plausible": [1e-4, 2]},
+    "length":       {"si_unit": "m",       "hard": [0, null], "plausible": [1e-4, 5]},
+    "diameter":     {"si_unit": "m",       "hard": [0, null], "plausible": [1e-5, 0.5]},
+    "area_density": {"si_unit": "kg/m^2",  "hard": [0, null], "plausible": [1e-3, 50]}
+  },
+  "outcomes": {
+    "flame_spread_rate":        {"si_unit": "m/s",           "hard": [0, null], "plausible": [1e-6, 0.5]},
+    "regression_rate":          {"si_unit": "m/s",           "hard": [0, null], "plausible": [1e-8, 1e-2]},
+    "mass_burning_rate":        {"si_unit": "kg/s",          "hard": [0, null], "plausible": [1e-9, 1]},
+    "mass_burning_flux":        {"si_unit": "kg/(m^2*s)",    "hard": [0, null], "plausible": [1e-5, 1]},
+    "burning_rate_constant":    {"si_unit": "m^2/s",         "hard": [0, null], "plausible": [1e-9, 1e-5]},
+    "flame_length":             {"si_unit": "m",             "hard": [0, null], "plausible": [1e-4, 2]},
+    "flame_standoff":           {"si_unit": "m",             "hard": [0, null], "plausible": [1e-5, 0.2]},
+    "flame_width":              {"si_unit": "m",             "hard": [0, null], "plausible": [1e-4, 1]},
+    "extinction_diameter":      {"si_unit": "m",             "hard": [0, null], "plausible": [1e-5, 0.05]},
+    "extinction_flow_velocity": {"si_unit": "m/s",           "hard": [0, null], "plausible": [0, 5]},
+    "limiting_oxygen_fraction": {"si_unit": "dimensionless", "hard": [0, 1],    "plausible": [0.05, 1]},
+    "limiting_pressure":        {"si_unit": "Pa",            "hard": [0, null], "plausible": [100, 500000]},
+    "smoke_point_length":       {"si_unit": "m",             "hard": [0, null], "plausible": [1e-3, 1]},
+    "smoke_point_fuel_flow":    {"si_unit": "kg/s",          "hard": [0, null], "plausible": [1e-8, 1e-3]},
+    "flame_temperature":        {"si_unit": "K",             "hard": [0, null], "plausible": [500, 3500]},
+    "ignition_delay":           {"si_unit": "s",             "hard": [0, null], "plausible": [0, 600]},
+    "flame_lifetime":           {"si_unit": "s",             "hard": [0, null], "plausible": [0, 7200]},
+    "soot_volume_fraction":     {"si_unit": "dimensionless", "hard": [0, 1],    "plausible": [0, 1e-4]},
+    "radiant_fraction":         {"si_unit": "dimensionless", "hard": [0, 1],    "plausible": [0, 1]},
+    "flame_state":              {"si_unit": null},
+    "other":                    {"si_unit": null}
+  },
+  "material_properties": {
+    "density":               {"si_unit": "kg/m^3",     "hard": [0, null], "plausible": [1, 25000]},
+    "thermal_conductivity":  {"si_unit": "W/(m*K)",    "hard": [0, null], "plausible": [0.005, 500]},
+    "specific_heat":         {"si_unit": "J/(kg*K)",   "hard": [0, null], "plausible": [100, 10000]},
+    "heat_of_combustion":    {"si_unit": "J/kg",       "hard": [0, null], "plausible": [1e6, 1.5e8]},
+    "heat_of_gasification":  {"si_unit": "J/kg",       "hard": [0, null], "plausible": [1e5, 2e7]},
+    "pyrolysis_temperature": {"si_unit": "K",          "hard": [0, null], "plausible": [400, 1200]},
+    "emissivity":            {"si_unit": "dimensionless","hard": [0, 1],  "plausible": [0, 1]},
+    "molar_mass":            {"si_unit": "kg/mol",     "hard": [0, null], "plausible": [0.002, 1]}
+  },
+  "diluent_molar_mass_kg_mol": {"N2": 0.0280134, "He": 0.0040026, "Ar": 0.039948, "CO2": 0.044009, "air": 0.0289647},
+  "o2_molar_mass_kg_mol": 0.031998
+}
