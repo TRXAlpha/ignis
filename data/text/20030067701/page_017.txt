@@ -1,0 +1,59 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+2 
+International Space Station  
+2.1 
+Configuration at Assembly Complete  
+The ISS represents a global partnership of many nations.  This project is an engineering, 
+scientific and technological marvel ushering in a new era of human space exploration.  
+Assembly of the ISS began in late 1998 [2] and is ongoing.  During its assembly and over its 
+nominal 10-year lifetime, the ISS will serve as an orbital platform for the United States and 
+its International Partners to make advances in life science, microgravity science, space 
+science, earth science, commercial product development, and engineering research and 
+technology.  The completed space station will have six fully equipped laboratories, nearly 40 
+payload racks [3] or experiment storage facilities in a pressurized environment, and more 
+than 15 external payload locations for conducting experiments in the vacuum of space.  The 
+six main laboratories, which will house research facilities, are: the Destiny Module (US), the 
+Centrifuge Accommodations Module (CAM-US), Columbus (European Space Agency 
+(ESA)), Kibo (National Space Development Agency of Japan (NASDA)) and two Russian 
+Research Modules (yet to be named).  The pressurized living and working space aboard the 
+completed ISS will be approximately 43,000 ft3 [4] (Table 2-1).  Its giant solar arrays will 
+generate the electricity required to power the laboratories and their complement of 
+experiments.  An initial crew of three, possibly increasing to seven when assembly is 
+complete (Figure 2-1), is living aboard the ISS.  The space station represents a quantum leap 
+in our ability to conduct research on orbit and explore basic questions in a variety of 
+disciplines [4] such as biomedical, fundamental biology, biotechnology, fluid physics, 
+advanced human support technology, material science, combustion science, fundamental 
+physics, earth science, and space science. 
+ 
+TABLE 2-1 ISS SPECIFICATION AT ASSEMBLY COMPLETE 
+Wingspan Width 
+ 
+356 feet (108.5 m) 
+Length 
+290 feet (88.4 m) 
+Mass (weight) 
+About 1 million pounds (453,592 kg) 
+Operating Altitude 
+220 nautical miles average (407 km) 
+Inclination 
+51.6 degrees to the Equator 
+Atmosphere inside 
+14.7 psi (101.36 kilopascals) 
+Pressurized Volume 
+43,000 ft3 (1,218 m3) in 6 laboratories 
+Crew Size 
+3, increasing to 7 
+  
+2.2 
+ISS Coordinate Systems 
+There are a multitude of coordinate frames in use on the station to coordinate activities such 
+as robotics operations, payload operations, and the station’s United States (U.S.) Guidance, 
+Navigation, and Control (GNC) software processing.  In addition, both U.S. and Russian 
+GNC software use different frames.  For the purpose of providing a common standard 
+reference frame, PIMS archives and reports acceleration data to the microgravity scientific 
+community using the ISS United States Orbital Segment (USOS) Analysis, USOS-ISS, 
+3
+NASA/TM—2003-212460

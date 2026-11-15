@@ -1,0 +1,34 @@
+ 
+NASA/TM-20210011385 
+83 
+The Tcrit from Figure 6.17 are used with the measured s power law fit from Figure 6.12 to solve for 
+the 
+conv
+q
+ to the stagnation region. The convective heating rate is linear with a, as shown in Figure 6.17. 
+This is an interesting combination of a terms in Equation (6.4): the square root Nu flow dependence 
+(Eq. (6.3)), the approximate minus cube root s dependence (0.334 power from Figure 6.12), and the 
+approximate seventh root temperature difference (Tcrit – Ts) dependence on a (0.16 power from  
+Figure 6.17). The sum of the powers is thus 0.5 + 0.33 + 0.16 = 0.99 ~ 1, which means that 
+conv
+q
+ depends 
+linearly on a.  
+6.1.5.3 Surface Energy Balance 
+To examine the role of radiation- and solid-phase conductive losses on the flame, a surface energy 
+balance is developed. A two-zone surface energy balance schematic for the rod tip is formulated and 
+shown in Figure 6.18 to account for the three-dimensional (3D) nature of the flame over the nearly 
+spherical tip of the rod. Zone 1 is the area defined by the hemispherical tip of the rod. The entire zone is 
+assumed to be at the pyrolysis temperature Ts, consistent with the observed bubble layer length from 
+Figure 6.5, and consistent with the Biot number Bi << 1 from Equation (6.4) heat flux levels. Zone 2 is 
+the cylindrical rod, with an interface to Zone 1 at the base of the hemisphere. Only solid conduction loss 
+out of Zone 1 into Zone 2 is considered, using the rod cross-sectional area while the other terms use the 
+tip hemispherical surface area, which is twice as large.     
+ 
+ 
+ 
+Figure 6.18.—Two-zone surface energy balance. 
+ 
+ 
+ 
+ 

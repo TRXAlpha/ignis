@@ -1,0 +1,30 @@
+ 
+NASA/TM-20210011385 
+7 
+The data, taken over a wide range of initial O2 concentrations, forced opposed or concurrent flow 
+velocities, and using various sample geometries, is compared with this 6:5 stoichiometric ratio of O2 to 
+CO2 in Figure 1.3. As shown, the data agrees very well with stoichiometric ratios for the wide range of 
+test conditions.  
+Other than unburned fuel (primarily methylmethacrylate vapor), which does contain some O2 as 
+shown in Equation (1.4), the only other (nontrace quantity) potential species with O2 is CO, which was 
+also measured, as shown in Figure 1.4 to Figure 1.6. Figure 1.4 shows that the concurrent rods produced 
+on average 550 ppm of CO for every 1 percent of CO2. The opposed rods had a very nonlinear response, 
+which may be indicative of a flow effect.   
+The longer the burn, the more CO2 was formed, and the nominal test procedure for most samples was 
+to turn the flow down in increments. At very low velocities, the tail region of the opposed-flow flames 
+opened up, which presumably allowed incomplete combustion products to escape the flame zone. 
+Interestingly, the concurrent procedure was very similar, but the concurrent flame always had an open 
+tail, allowing incomplete combustion products to exit throughout the burn. The opposed thick slabs fall 
+somewhere in between, producing on average 370 ppm of CO for every 1 percent of CO2.   
+The one outlier point from Figure 1.3 at 2.8 percent CO2 is not included in Figure 1.4 since the CO 
+sensor was over-ranged for this test (>1,000 ppm full scale), so we have no quantitative value for CO for 
+this test. During this test, the long burn of the relatively strong flame caused overheat damage to the 
+downstream lower corner of the front window in the area where a flow duct leak was occurring. The leak 
+was repaired on orbit, and operations proceeded without further incident. 
+ 
+ 
+Figure 1.3.—O2 depletion and CO2 production during Burning and 
+Suppression of Solids—II (BASS–II) tests with polymethylmethacrylate 
+fuel. Data from different geometries, flows, and initial O2 concentrations 
+all agree with expected stoichiometric trend (shown by dashed line).    
+ 

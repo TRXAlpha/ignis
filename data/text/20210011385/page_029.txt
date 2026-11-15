@@ -1,0 +1,30 @@
+ 
+NASA/TM-20210011385 
+21 
+dimensional (2D) steady-state flame spread model. A predictive formula for the critical velocity is 
+proposed in this work. 
+2.2.3 
+Experimental Setup 
+The Burning and Suppression of Solids—II (BASS–II) apparatus (Ref. 12) in the ISS is depicted in 
+Figure 2.6. It is a combustion tunnel, a 76-mm square duct, where the PMMA fuel samples, 20 mm wide 
+and about 95 mm long with the thickness ranging from 100 to 400 µm, are burned in an opposed-flow 
+configuration. A fan forces a flow of an O2-N2 mixture through flow straighteners from the right to the 
+left and the sample is ignited at the left end. Depending on the flow velocity and O2 concentration, a 
+steady flame is established that spreads from the left end of the sample towards the right end. The O2 level 
+can be adjusted to 21 percent or below and the flow velocity can range from 0 to 50 cm/s. A hot wire 
+anemometer is used to calibrate the flow velocity with fan voltage, which is used to determine the flow 
+velocity.  
+Experiments were conducted in the Microgravity Science Glovebox of the ISS by two crew members. 
+Operation instructions were communicated from NASA Glenn Operations Center in realtime as the 
+experiment progressed. Each test starts by creating a desired opposing flow by adjusting the fan voltage. 
+After the flow stabilizes, the igniter is turned on until a visible flame is observed. The igniter is then 
+turned off and the flame is photographed with a high-resolution digital still camera with a frame rate of 
+1 per second. A radiometer is used to confirm flame extinction when the visible flame goes out. In some 
+of the tests, the flow velocity is changed during the spread to maximize the test matrix without having to 
+burn additional samples.  
+ 
+ 
+ 
+Figure 2.6.—Schematic of Burning and Suppression of Solids—II (BASS–II) combustion tunnel. 
+Absolute spread rate (Vf). Opposed-flow velocity (Vg). 
+ 

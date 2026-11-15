@@ -1,0 +1,45 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+coordinate system (which PIMS refers to as SSA) beginning with the ISS Increment-3 report.  
+This analysis coordinate system is the one used by crew/ground communications on attitudes 
+and is based on the standard Euler angle sequence for station of yaw, then pitch, then roll 
+from a 0,0,0 Local Vertical/Local Horizontal (LVLH) coordinate system. 
+ 
+2.2.1 
+Integrated Truss Segment S0 Coordinate System 
+This coordinate system defines the origin, orientation, and sense of the ISS analysis 
+coordinate system. The YZ plane nominally contains the centerline of all four trunnion pins. 
+The origin is defined as the intersection of two diagonal lines connecting the centers of the 
+bases of opposite trunnion pins, running T1 to T3 and from T2 to T4 (Figure 2-3). The X-
+axis (XS0) is parallel to the vector cross product of the Y-axis with the line from the center of 
+the base trunnion pin T2 to the center of the base trunnion pin T3, and is positive forward. 
+The Y-axis (YS0) is parallel with the line from the center of the base of trunnion pin T2 to the 
+center of the base of trunnion pin T1. The positive Y-axis is toward starboard. The Z-axis 
+(ZS0) completes the right-handed Cartesian system (RHCS). 
+ 
+2.2.2 
+USOS Space Station Analysis Coordinate System 
+The USOS-ISS analysis system (SSA) [5] is derived using the LVLH flight orientation.  
+When defining the relationship between this coordinate system and another, the Euler angle 
+sequence to be used is a yaw, pitch, roll sequence around the ZA, YA, and XA axes, 
+respectively (Figure 2-2).  The Space Station Analysis (SSA) frame is aligned with the 
+Integrated Truss Segment Zero (S0) Coordinate frame, and the origin (Figure 2-3) is located 
+at the geometric center of the Integrated Truss Structure (ITS) S0.  The XA-axis is parallel to 
+the longitudinal axis of the module cluster.  The positive XA-axis is in the forward (flight) 
+direction.  The YA-axis is identical to the S0 YA-axis.  The positive YA-axis is in the 
+starboard direction.  The positive ZA-axis is in the direction of Nadir (toward earth) and 
+completes the RHCS.  This analysis coordinate system is used by PIMS in its analysis and 
+reporting of the acceleration data measured on ISS [5].   
+ 
+2.2.3 
+Russian Orbital Segment Analysis Coordinate System 
+The Russian Orbital Segment (ROS) ISS analysis coordinate system is shown in Figure 2-4 
+[6].  The origin is located at the aft end of the Service Module’s widest section.  The positive 
+X-axis (XR) points aft out of the “long” station axis, the positive Y-axis (YR) points out the 
+top of the station (zenith), and the positive Z-axis (ZR) points out of the port truss, as defined 
+by completing the right-handed coordinate system [6].  The ROS Mission Control System 
+(MCS) reports station attitude in this Space Station Analysis Coordinate System. 
+ 
+4
+NASA/TM—2003-212460

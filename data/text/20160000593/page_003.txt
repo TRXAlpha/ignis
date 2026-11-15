@@ -1,0 +1,11 @@
+Approach
+― Microgravity combustion tests were performed aboard the International Space Station.  
+Active crew support for real-time “lab partner” operations.
+― The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, 
+imaging, and a level of containment. 
+― Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds 
+up to 40 cm/s.
+― Main variables are airflow speed and oxygen concentration (oxygen varied below 21% by 
+adding nitrogen).
+― Flame appearance, flame growth, and spread rates were determined in both the opposed 
+and concurrent flow. 

@@ -1,0 +1,42 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+−12
+−11
+−10
+−9
+−8
+−7
+−6
+Σ PSD Magnitude [log 10(g2/Hz)]
+hh:mm
+Frequency (Hz)
+Start GMT 24−May−2002,08:00:00
+from: t:\pub\pad\, $Name: pop2_04−25−2002 $, 28−May−2002,06:59:49.668
+SAMS 121f03
+Span = 8.01 hours
+Hanning, k = 568
+Sum
+Increment: 4, Flight: 8A
+Temp. Res. = 32.768 sec, No = 0
+∆f = 0.031 Hz,  Nfft = 2048
+62.5 sa/sec (25.00 Hz)
+sams2, 121f03 at LAB1O1, ER2, Lower Z Panel:[191.54 −40.54 135.25]
+08:00
+09:00
+10:00
+11:00
+12:00
+13:00
+14:00
+15:00
+16:00
+0
+5
+10
+15
+20
+25
+Figure 6-208 Spectrogram of TVIS Exercise Period (121f03) 
+276
+NASA/TM—2003-212460

@@ -1,0 +1,72 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE 3-3 INCREMENT-5 MISSIONS 
+Mission 
+Date 
+Mission Objective 
+UF-2 – STS-111 
+June 7-15, 2002 
+STS-111 docked with ISS and swapped crew: arrival of 
+Expedition Five to ISS; delivery and installation of the Mobile 
+Remote Servicer Base System (MBS); replacement of a wrist roll 
+joint on the station’s robotic arm 
+7P – Progress  
+June 25, 2002 
+Undocking of Progress supply craft 
+8P – Progress  
+June 29, 2002 
+Docking of Progress supply craft  
+8P – Progress 
+September 24, 2002 
+Undocking of Progress supply craft 
+9P – Progress 
+September 29, 2002 
+Docking of Progress supply craft 
+9A – STS-112 
+October 9-16, 2002 
+Delivery of the First right-side Truss segment (ITS S1) with 
+radiators; Crew and Equipment Translation Aid (CETA) Cart A 
+Soyuz 5S 
+November 1, 2002 
+“New” Soyuz taxi vehicle docked with ISS  
+Soyuz 4S 
+November 9, 2002 
+“Old” Soyuz taxi vehicle undocked 
+11A – STS-113 
+Nov. 25-Dec. 2, 2002 
+STS-113 docked with ISS and swapped crew: arrival of 
+Expedition Six to ISS; delivery of First left-side Truss segment 
+(ITS P1) and cooling radiators; Crew and Equipment Translation 
+Aid (CETA) Cart B 
+ 
+3.4 
+Increment-5 Science and Crew Members 
+During Increment-5 (Expedition Five), the crew worked with several experiments.  The 
+Increment-5 primary focus was on using space to prove the forces that structure our world.  
+Additional experiments during Expedition Five were intended to contribute to human 
+knowledge in the fields of materials, plant science, commercial biotechnology, and the long-
+term effects of spaceflight on humans.  Several experiments begun on earlier expeditions 
+were returned to earth, while several others continued operating during the Expedition Five’s 
+stay aboard ISS [15].  When Expedition Five arrived to the station, more than 70,000 hours 
+of scientific experiments had been logged by research facilities aboard ISS [15].  The three 
+Expedition Five crewmembers devoted approximately 420 hours to research during their stay 
+aboard ISS.  Those 420 or so hours brought the total of crew research time to about 1150 
+hours since continuous human presence began on the orbiting laboratory in November 2000 
+[15].  Increment-5 commander was cosmonaut Valery Korzun, assisted by flight engineers 
+Astronaut Peggy Whitson and cosmonaut Sergei Treschev.  The crew was launched to ISS on 
+June 5, 2002 aboard the Space Shuttle Endeavour STS-111 and returned to KSC on 
+December 7, 2002 aboard STS-113. 
+ 
+3.5 
+Increment-4/5 Coordinate Systems 
+The coordinate systems [16] shown in Figure 3-2 were used in performing the data analysis 
+presented in this report.  Figure 3-2 shows MAMS OSS and MAMS HiRAP positive 
+acceleration axes alignment relative to the ISS analysis coordinate system (for SAMS, see 
+section 4.4).  However, the origin of the coordinate systems shown is not exactly at the 
+location shown (except for the ISS analysis coordinate system).  They are shown here for 
+relative alignment only, not their origin.  For their location relative to the ISS analysis 
+coordinate system, the reader should refer to section 4.2.  In Figure 3-2, XYZA refers to the 
+ISS analysis coordinate system, XYZH refers to the MAMS HiRAP coordinate system, 
+12
+NASA/TM—2003-212460

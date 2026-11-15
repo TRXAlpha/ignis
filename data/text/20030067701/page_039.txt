@@ -1,0 +1,162 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Table 5-3, Continued from previous page 
+TEX-15 “izgib” (Bending-
+SDTO 13002-R) 
+Study of the effect of 
+onboard system operating 
+modes on ISS flight 
+conditions by measuring 
+vibration disturbances, 
+sources, and vibration 
+fields in the ISS modules 
+ISS RS accelerometers 
+and rotational speed 
+sensors 
+Existing on-orbit 
+Technical studies 
+TEX-16 “Privyazka” 
+(Alignment-SDTO 12003-
+R) 
+Determination of science 
+instruments orientation in 
+space with allowance for 
+deformation of the ISS 
+hull 
+ISS RS sensors 
+Existing on-orbit 
+Technical studies 
+TEX-17 “Iskazhenie” 
+(Distorsion-SDTO 16001-
+R) 
+Determine the factors 
+affecting the accuracy of 
+ISS attitude determination 
+using a magnetometer 
+ISS RS SM attitude 
+control sensors and control 
+loop magnetometers 
+Existing on-orbit 
+Technical studies 
+TEX-22 “Identifikatsiya” 
+(Identification) (SDTO 
+13001-R) 
+Identification of sources of 
+perturbations in the ISS 
+microgravity environment 
+by measuring disturbances 
+during vehicle 
+dockings/undockings, 
+cosmonaut exercises, and 
+operations of onboard 
+systems … 
+Linear optical 
+accelerometer with cables; 
+micro acceleration 
+measurement device with 
+cables. 
+Existing on-orbit 
+Technical Studies 
+TEX-3 “Skorpion” 
+Monitoring of 
+environmental parameters 
+inside the station 
+compartments at various 
+places 
+Skorpion equipment 
+(CKP-1) 
+TBD 
+Technical studies 
+TEX-32 “Kolibri” 
+Educational project 
+ 
+Existing on-orbit 
+Technical studies 
+ИКЛ-1B “Platan” 
+Search for low energy 
+heavy nuclei of solar and 
+galactic origin 
+Platan-M equipment 
+Existing on-orbit 
+Technical studies 
+ПКЕ-1B “Kromba” 
+Study of the dynamics of 
+contaminating particles 
+from the control jets 
+during pulse activations 
+Cassette with exposed 
+samples with packing 
+(passive hardware) 
+Existing on-orbit 
+Technical studies 
+Д33-2 “Diatomea” 
+Study of stability of 
+geographic location and 
+frontiers configuration of 
+the biologically productive 
+oceanic waters observed 
+by the crew 
+Photo camera Nikon; 
+Video camera; 
+Dictaphone; 
+Laptop # 3; 
+“Diatomea” kit 
+Existing on-orbit 
+Study of Earth natural 
+resources and ecological 
+monitoring 
+KHT-15 “Spika-S” 
+Investigation of 
+spaceflight factors impact 
+on electronic components 
+tolerance to radiation 
+“Spika-S” equipment 
+Existing on-orbit 
+Technical studies 
+БИО-1 “Пοлиген” 
+Detection of genotype 
+properties that determine 
+individual differences in 
+the tolerance of biological 
+objects to long duration 
+space flight factors. 
+“Drosophila” kit 
+ 
+Biomedical 
+ 
+TABLE 5-4 USOS-ISS INCREMENT-5 PAYLOAD COMPLEMENT 
+Experiment 
+Mission information 
+Duration 
+Location on ISS 
+Research Area 
+Advanced Astroculture-GC-03 
+(ADVASC) 
+Up on UF-2; 
+Down on 9A 
+75 days 
+EXPRESS Rack 4 
+Commercial plant 
+biotechnology 
+Commercial Generic Bioprocessing 
+Apparatus (CGBA) 
+Up on 9A; 
+Down on 11A 
+35 days 
+EXPRESS Rack 4 
+Commercial plant 
+biotechnology 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25
+ 
+NASA/TM—2003-212460

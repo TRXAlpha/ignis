@@ -1,0 +1,11 @@
+ 
+NASA/TM-20210011385 
+87 
+Figure 6.20.—Surface energy balance terms as function of stretch rate a along flammability 
+boundary from Equation (6.5) using the convective heating rate (Eq. (6.4)) and solid 
+conduction (Eq. (6.8)) as input.     
+ 
+ 
+Figure 6.21.—Ratio of energy balance terms to total heat flux from flame to 
+surface, to show relative importance of each term along flammability boundary. 
+Stretch rate (a). 

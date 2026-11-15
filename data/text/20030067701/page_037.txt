@@ -1,0 +1,200 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Table 5-2, Continued from previous page 
+Astronauts in EVA Radiation Study 
+(EVARM) 
+Up on UF-1 
+Down on ULF-1 
+Expedition Four  
+Through Six 
+U.S spacesuits during 
+EVA operation 
+Human life sciences 
+Protein Crystal Growth-Enhanced 
+Gaseous Nitrogen (PCG-EGN) Dewar 
+Up on 8A 
+Down on UF-2 
+2 months 
+FGB 
+Microgravity 
+biotechnology 
+Protein Crystal Growth-single Thermal 
+Enclosure (PCG-STES) 007 Diffusion-
+controlled Crystallization Apparatus 
+for Microgravity (DCAM) and PCG-
+STES 008 Protein Crystallization 
+Apparatus for Microgravity (PCAM) 
+Up on UF-1 
+Down on 8A 
+4 months 
+EXPRESS Rack 4 / 
+Destiny module 
+Microgravity 
+biotechnology 
+Cellular Biotechnology Operations 
+Support System 
+Up on 7A.1 & UF-1 
+Down on UF-1 & 8A 
+3 months 
+BTR1-EXPRESS Rack 
+4 / Destiny 
+Cell Science 
+Cell Biotechnology Operations 
+Support Systems (CBOSS) 
+ 
+ 
+EXPRESS Rack 4 / 
+Destiny 
+ 
+Advanced Astroculture (ADVASC) 02 
+Up on UF-1 
+Down on UF-2 
+4 months 
+EXPRESS Rack 4 / 
+Destiny module 
+Space product 
+development 
+Commercial Generic Bioprocessing 
+Apparatus (CGBA) 
+Up on 8A 
+Down on UF-2 
+2 months 
+EXPRESS Rack 4 / 
+Destiny module 
+Space product 
+development 
+Commercial Biomedical Testing 
+Module (CBTM) 
+Up and down on UF-1 
+No expedition ops 
+Shuttle middeck 
+Space product 
+development  
+Commercial Protein Crystal Growth 
+(CPCG) 
+Up on 8A 
+Down on UF-2 
+2 months 
+EXPRESS Rack 4 / 
+Destiny module 
+Space product 
+development 
+Zeolite Crystal Growth Furnace (ZCG) 
+Up on UF-1 
+ 
+Permanent 
+EXPRESS Rack 2 / 
+Destiny module 
+Space product 
+development 
+Microencapsulation Electrostatic 
+Processing System (MEPS) 
+Up on UF-1 
+Expedition four 
+through Six 
+EXPRESS Rack 4 / 
+Destiny module 
+Space product 
+development 
+ 
+ 
+TABLE 5-3 ROS-ISS INCREMENT-4 PAYLOAD COMPLEMENT 
+Experiment Name 
+Research Objective 
+Hardware Used 
+Up/Down Flight or 
+Vehicle 
+Research Area 
+KHT-1 “GTS”—Global 
+Timing System 
+Verification of Global 
+timing System 
+Electronic unit; Antenna 
+unit with attachment 
+mechanism 
+Existing on orbit 
+Commercial 
+KHT-2 “MPAC & SEED” 
+(NASDA) 
+Recording meteoroid and 
+man-made particle impact 
+on ISS-RS SM 
+Micro particles collection 
+device and material 
+exposure array MPAC & 
+SEED 
+Existing on orbit 
+Commercial 
+KHT-3 “HDTV” 
+(NASDA) 
+Experiment in receiving 
+HDTV images 
+Video camera HDTV & 
+Interface unit 
+Existing on orbit 
+Commercial 
+KHT-4 “Vzgliad” 
+(Glance) 
+Photo and video material 
+acquisition inside & 
+outside of ISS 
+Kodak photo camera, 
+Digital video camcorder 
+Existing on orbit; Progress 
+M 8 
+Commercial 
+ГФИ-1 “Relaksatsiya” 
+(Relaxation 
+Study of the 
+chemiluminescent 
+chemical reactions and 
+atmospheric light  
+phenomena  
+“Fialka-MV Kosmos” 
+spectral-zonal ultraviolet 
+system 
+Existing on orbit 
+Geophysical 
+ГФИ-8 “Uragan” 
+Experimental testing and 
+verification of the ground-
+space system for 
+eliminating the impact of 
+man-made catastrophes 
+Binocular telescopic 
+device Rubinar; Photo 
+camera Hasselblad; Video 
+complex LIV 
+Existing on orbit 
+Geophysical 
+ГФИ-10 “Molnia-SM 
+Study of atmosphere, 
+ionosphere and 
+magnetosphere 
+electromagnetic 
+interaction related to 
+storms & seismic activities 
+BFS-3M video-
+photometric system 
+Existing on-orbit; Progress 
+M-8 
+Geophysical 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+23
+ 
+NASA/TM—2003-212460

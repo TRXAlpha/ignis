@@ -1,0 +1,129 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+8.2 
+Vibratory Environment 
+This section highlights the significant findings for the vibratory acceleration analysis.  The 
+column labeled “Effect” in the following table is an attempt to encapsulate the impact of the 
+corresponding “Source” acceleration event on the vibratory regime, and in most cases does not 
+completely characterize the event under consideration.  For more detail, the technical narrative 
+sections of this report should be referenced.  Also, if this report does not include specific analysis 
+for a particular event that would aid in correlation with science or other data of interest, then 
+please contact PIMS at pimsops@grc.nasa.gov> for further assistance.  The quantities referred to 
+in the “Effect” column below are one of the following: 
+ 
+• PEAK, the peak acceleration vector magnitude 
+• RMS, the acceleration root-mean-square value for the frequency range shown 
+• 95th, the approximately 95th percentile acceleration vector magnitude 
+ 
+TABLE 8-2 SUMMARY OF FINDINGS FOR INCREMENT INCREMENT-4/5 VIBRATORY ANALYSIS 
+SOURCE 
+STATE 
+EFFECT 
+FREQUENCY 
+RANGE (HZ) 
+SENSOR 
+GMT 
+Progress Reboost 
+ 
+PEAK:  769 µg 
+0 - 25 
+SAMS 121f03 
+06-Mar-2002, 065/03:37:23 - 
+06-Mar-2002, 065/03:40:03 
+GASMAP Sample 
+Pump 
+OFF 
+RMS: 24 µg 
+SAMS 121f02 
+GASMAP Sample 
+Pump 
+ON 
+RMS: 200 µg 
+58.2 - 61.2 
+SAMS 121f02 
+GASMAP Fan 
+OFF 
+RMS: 8 µg 
+SAMS 121f02 
+GASMAP Fan 
+ON 
+RMS: 19 µg 
+57.2 - 57.6 
+SAMS 121f02 
+26-Jan-2002, 026/16:00:00 - 
+27-Jan-2002, 027/00:00:00 
+MEPS PCM 
+Insertion 
+ 
+PEAK:  103 mg 
+0 - 100 
+SAMS 121f02 
+18-July-2002, 199/15:12:29 
+OFF 
+RMS: 14 µg 
+ON 
+RMS: 24 µg 
+45.85 - 47.39 
+OFF 
+RMS: 9 µg 
+MEPS Sample 
+Run 
+ON 
+RMS: 54 µg 
+52.63 - 53.07 
+SAMS 121f02 
+18-July-2002, 199/08:00:00 - 
+18-July-2002, 199/22:00:00 
+CEVIS Exercise 
+ON 
+RMS: 267 µg 
+RMS: 250 µg 
+RMS: 220 µg 
+RMS: 245 µg 
+0  - 10 
+SAMS 121f02 
+SAMS 121f03 
+SAMS 121f04 
+SAMS 121f05 
+01-Jan-2002, 001/11:17:12 - 
+01-Jan-2002, 001/11:18:12 
+CEVIS Exercise 
+ON 
+RMS: 63 µg  
+RMS: 46 µg 
+RMS: 43 µg 
+RMS: 47 µg 
+RMS: 16 µg 
+0 - 10 
+SAMS 121f02 
+SAMS 121f03 
+SAMS 121f04 
+SAMS 121f05 
+SAMS 121f06 
+03-Jan-2002, 001/10:18:30 - 
+03-Jan-2002, 001/10:19:30 
+CEVIS Exercise 
+ON 
+RMS: 86 µg  
+RMS: 55 µg 
+RMS: 52 µg 
+RMS: 54 µg 
+RMS: 40 µg 
+0  – 10 
+SAMS 121f02 
+SAMS 121f03 
+SAMS 121f04 
+SAMS 121f05 
+SAMS 121f06 
+03-Jan-2002, 001/10:28:50 - 
+03-Jan-2002, 001/10:29:50 
+ 
+ 
+ 
+ 
+ 
+ 
+326
+NASA/TM—2003-212460

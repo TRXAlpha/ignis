@@ -1,0 +1,85 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE 6-3 QUASI-STEADY EFFECTS OF DOCKING AND UNDOCKING ACTIVITIES  
+Event 
+Event Time GMT 
+Major Quasi-steady Effect 
+STS-108 Docking 
+07-December-2001, 341/20:03 
+-87.3 µg peak in XA-axis 
+6P  Progress Undocking 
+19-March-2002, 078/17:43 
+17.0 µg peak in YA-axis 
+7P  Progress Docking 
+24-March-2002, 083/20:58 
+-36.0 µg peak in ZA-axis 
+STS-110 Docking 
+10-April-2002, 100/16:05 
+-83.1 µg peak in XA-axis 
+Soyuz 3S Relocation 
+20-April-2002, 110/07:00 
+24-25 µg peaks in YA, ZA -axes 
+Soyuz 4S Docking 
+27-April-2002, 117/07:57 
+40.1 µg peak in ZA-axis 
+Soyuz 3S Undocking 
+05-May-2002, 125/00:28 
+-24.8 µg peak in XA-axis 
+STS-111 Docking 
+07-June-2002, 158/16:25 
+-82.9 µg peak in XA-axis 
+STS-111 Undocking 
+15- June -2002, 166/14:32 
+-83.4 µg peak in XA-axis 
+7P Progress Undocking 
+25-Jun-2002, 176/08:23 
+-24.5 µg peak in XA-axis 
+8P Progress Docking 
+29-Jun-2002, 180/06:25 
+-44.1 µg peak in ZA-axis 
+8P Progress Undocking 
+24-September-2002, 
+267/11:00:03.418 
+-29.0 µg peak in XA-axis 
+9P Progress 
+29-September-2002, 272/17:05 
+-23.7 µg peak in XA-axis 
+STS-112 Docking 
+09-October-02, 282/15:16 
+-77.1 µg peak in XA-axis 
+Soyuz 4S Undocking 
+09-November-2002, 313/20:44 
+-22.9 µg peak in XA-axis 
+Soyuz 5S Docking 
+01-November-2002, 305/04:56 
+-10.7 µg peak in XA-axis 
+STS-113 Docking 
+25-November-2002, 329/21:59 
+-71.7 µg peak in XA-axis 
+ 
+6.1.4 
+Venting 
+6.1.4.1 
+US Lab Water Dump 
+Figure 6-31 shows the quasi-steady effects of a condensate water dump that occurred during 
+Increment 4, beginning at GMT 012/15:30 and ending at GMT 012/16:50. Prior to venting, 
+the ISS was maneuvered to an attitude, YPR= (273.3, 356.7, 307.0), that placed the vent in 
+retrograde (opposite the direction of travel) to minimize contamination.  The effects of the 
+attitude maneuvers are out of the time range of this plot. The procedure for this water dump 
+uses a Collapsible Water Container (CWC) that is used for storing waste water.  During the 
+dump it appeared to the crew that the venting had stalled as recorded in PIMS console log at 
+GMT 012/ 15:41.   At this point, a crew member put a “bear hug” on the CWC to increase 
+pressure and the venting was observed to continue.   The major disturbance occurs roughly 
+about this time in the ZA-axis, peaking in magnitude at approximately -6.4 µg at the 0.8 hour 
+mark in the plot or GMT 012/ 15:52.  Table 6-4 is an excerpt from the PIMS console log 
+book. (Source: pimslog_2002_01_07_13_17_22.xls). 
+ 
+ 
+ 
+ 
+ 
+ 
+37
+ 
+NASA/TM—2003-212460

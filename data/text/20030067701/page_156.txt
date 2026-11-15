@@ -1,0 +1,56 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+-4
+-3
+-2
+-1
+0
+1
+2
+Z–Axis Acceleration (µg)
+RMS = 1.2363 µg
+Mean = –1.0514 µg
+Time (hours)
+from: t:\pub\pad\, $Name: pop2_04-25-2002 $, 07-May-2002,09:28:11.420
+-4
+-3
+-2
+-1
+0
+1
+2
+Y–Axis Acceleration (µg)
+RMS = 0.6461 µg
+Mean = –0.5514µg
+-4
+-3
+-2
+-1
+0
+1
+2
+X–Axis Acceleration (µg)
+RMS = 0.4298 µg
+Mean = –0.3198 µg
+Start GMT 11–February–2002, 042/00:00:09.716
+Loss of Primary GNC MDM
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 4, Flight: UF1
+0.0625 sa/sec (1.00 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 –10.68 132.12]
+ 
+ 
+Figure 6-69 Time Series of Loss of Primary GNC MDM, GMT 042 (OSSBTMF)  
+142
+NASA/TM—2003-212460

@@ -1,0 +1,33 @@
+ 
+NASA/TM-20210011385 
+60 
+5.4 
+Oxygen Concentration Analysis  
+The BASS hardware does not have a provision to measure O2 concentration throughout the entire 
+experiment. We have O2 data available at only the start and end of the test. Assuming a linear profile 
+between these two points; we made O2 concentration graphs for each test (see Figure 5.2 for an example). 
+This helps us estimate the O2 concentration at any given time during the experiment. Next, the average O2 
+concentration was calculated for each flow speed. Plots were created summarizing the average O2 
+concentration (vol%) versus opposed-flow speed (cm/s) for the one-sided and two-sided tests separately. 
+The data points on these graphs are characterized according to the flame spread rate. Additionally, the 
+data points at which the flame extinguishes are also added to the summary graphs to see the effects of 
+varying O2 concentration through the duration of test. This analysis will serve as a reference point when 
+more BASS operations are conducted in the future.  
+5.5 
+Numerical Modeling  
+We are modeling combustion of flat PMMA samples in microgravity using Fire Dynamics Simulator 
+(FDS; v5.5.3; National Institute of Standards and Technology (NIST)) (Ref. 12), which is a 
+computational fluid dynamics model of fire-driven fluid flow. The entire modeling for BASS–II is done 
+in Direct Numerical Simulation (DNS) mode because of the laminar conditions and small domain. The 
+model employs the same test sample and approximate BASS flow duct geometry as the experiment. The 
+results are viewed in Smokeview (NIST), which is a visualization package that goes with FDS. The 
+experimental data gave upstream velocity at several points using an anemometer. A flow profile for the 
+inlet velocity is obtained using MATLAB® (The MathWorks, Inc.) and input into the model (note that the 
+measured flow profile for the BASS–II duct is quite irregular). Figure 5.6 shows the geometry setup for 
+the model.   
+ 
+ 
+Figure 5.6.—Geometry setup for two-dimensional model. Polymethylmethacrylate (PMMA). 
+  
+  
+  

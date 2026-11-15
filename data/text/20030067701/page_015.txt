@@ -1,0 +1,51 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+1 
+Introduction  
+The National Aeronautics and Space Administration (NASA) Office of Biological and 
+Physical Research sponsors science experiments on various reduced-gravity 
+carriers/platforms and facilities such as the Space Transportation System (STS), parabolic 
+flight-path aircraft, sounding rockets, drop towers, and the International Space Station (ISS).  
+To provide support for the science experiments which require acceleration data measurement 
+on the ISS, the Physical Science Division sponsors two microgravity accelerometer systems, 
+the Space Acceleration Measurement System (SAMS) and the Microgravity Acceleration 
+Measurement System (MAMS).  SAMS measures vibratory acceleration data in the range of 
+0.01 to 400 Hz for payloads requiring such measurement.  SAMS has multiple, remotely 
+located sensor heads.  MAMS consists of two sensors, the Orbital Acceleration Research 
+Experiment (OARE) Sensor Subsystem (OSS) and the High Resolution Accelerometer 
+Package (HiRAP).  The OSS is a low frequency range sensor used to characterize the quasi-
+steady environment for payloads and the ISS vehicle.  The OSS measures up to 1 Hz, but is 
+routinely trimmean filtered to yield much lower frequency acceleration data up to 0.01 Hz.  
+The HiRAP is used to characterize the ISS vibratory environment from 0.01 Hz to 100 Hz.  
+Both MAMS and SAMS were flown to the ISS on STS-100, which was launched April 19, 
+2001 from the Kennedy Space Center (KSC). 
+ 
+The residual acceleration environment of an orbiting spacecraft in a low earth orbit is a 
+complex phenomenon [1].  Many factors, such as experiment operation, life-support systems, 
+crew activities, aerodynamic drag, gravity gradient, rotational effects and the vehicle 
+structural resonance frequencies (structural modes) contribute to form the overall reduced 
+gravity environment.  Zero gravity is an ideal state, which cannot be achieved in practice 
+because of the various sources of acceleration present in an orbiting spacecraft.  As a result, 
+the environment in which experiments are conducted is not zero gravity.  Most experiments 
+can be adversely affected by the residual acceleration because of their dependency on 
+acceleration magnitude, frequency, orientation and duration.  Therefore, experimenters must 
+know what the environment was when their experiments were performed in order to analyze 
+and correctly interpret the result of their experimental data.  In a terrestrial laboratory, where 
+gravity is assumed a constant, researchers are expected to know and record certain 
+parameters such as pressure, temperature, and humidity levels in their laboratory prior to and 
+possibly throughout their experiment.  The same holds true in space, where acceleration 
+effects emerge as an important consideration. 
+ 
+The NASA Glenn Research Center (GRC) Principal Investigator Microgravity Services 
+(PIMS) project has the responsibility for processing and archiving acceleration 
+measurements, analyzing these measurements, characterizing the reduced gravity 
+environment in which the measurements were taken, and providing expertise in reduced 
+gravity environment assessment for a variety of carriers/platforms and facilities (such as the 
+Space Shuttle, parabolic flight-path aircraft, sounding rockets, drop towers, and the ISS) in 
+support of the NASA’s Physical Science Division Principal Investigators (PIs).  The PIMS 
+project supports PIs from the microgravity science disciplines of biotechnology, combustion 
+science, fluid physics, material science and fundamental physics.  The PIMS project is 
+funded by the NASA Headquarters and is part of the NASA GRC’s Microgravity 
+Environment Program (MEP), which integrates the analysis and interpretation component of 
+1
+NASA/TM—2003-212460

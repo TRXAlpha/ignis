@@ -1,0 +1,52 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+9 
+References 
+1. Hamacher, H., Fluid Sciences and Materials Science in Space, Springer-Verlag, 1987. 
+ 
+2. International Space Station User's Guide Release 2.0, NASA. 
+ 
+3. Expedition Three Press Kit: Expanding Space Station Scientific Research, 
+Boeing/NASA/United Space Alliance, July 25, 2001  
+ 
+4. The International Space Station Fact Book, NASA, October 2000. 
+ 
+5. International Space Station Coordinate Systems, SSP-30219, Revision F. 
+ 
+6. International Space Station Familiarization, ISS FAM C21109, July 31, 1998 
+ 
+7. International Space Station Flight Attitudes, D-684-10198-06 DCN-002, December 1, 
+1999. 
+ 
+8. International Space Station Research Plan—Office of Biological and Physical Research, 
+NASA, August 2000. 
+ 
+9. http://spaceflight.nasa.gov/shuttle/archives/STS-110/index.html 
+ 
+10. Expedition Four International Space Station: Science, Assembly and Spacewalks, 
+Boeing/USA/NASA, November 9, 2001 
+ 
+11. Steelman, April, “Flight 6A Microgravity Analysis”, Microgravity AIT, August 1999. 
+ 
+12. Increment-4A and 4B As Flown ISS Attitude Timeline (ATL), ADCO, May 31, 2002 
+ 
+13. Continuing the Human Presence in Space, STS-111, Boeing/USA/NASA, May 16, 2001 
+ 
+14. Increment-5 As Flown ISS Attitude Timeline (ATL), ADCO, December, 2002 
+ 
+15. International Space Station—Expedition 5: Building Scientific Momentum, 
+Boeing/USA/NASA, May 16, 2002 
+ 
+16. On-Orbit Vehicle Configuration Data Book for Mission 6A, Shuttle-ISS NSTS-37324-
+6A, Rev. 001, NASA, March 01. 
+ 
+17. Microgravity Environment Interpretation Tutorial (MEIT), NASA Glenn Research 
+Center, March 2001. 
+ 
+18. http://spaceresearch.nasa.gov/Research_Projects/ros/arctic.html 
+ 
+ 
+328
+NASA/TM—2003-212460

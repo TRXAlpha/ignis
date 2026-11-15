@@ -1,0 +1,83 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Start GMT 07−August−2002, 219/17:24:05.135
+SUBSA−04
+Resolution = 0.05 µg
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+Time Span = 14.2485 hours
+0.0625 sa/sec (0.01 Hz)
+mams, ossbtmf  mapped to SUBSA:[106.65 56.48 181.12]
+from: t:\pub\pad\, $Name:  $, 14−Dec−2002,14:37:56.840
+Centroid:                    
+   Xct =  +1.621 (µg)      
+   Yct =  −0.093 (µg)      
+   Zct =  −0.457 (µg)      
+   Magnitude =  +1.686 (µg)
+Percentage of Data Visible:
+   XY−Plane: 100.00%       
+   XZ−Plane: 99.84%        
+   YZ−Plane: 99.84%        
+X−Axis Accel. (µg)
+Z−Axis Accel. (µg)
+−4
+−2
+0
+2
+4
+−4
+−3
+−2
+−1
+0
+1
+2
+3
+4
+Y−Axis Accel. (µg)
+Z−Axis Accel. (µg)
+−4
+−2
+0
+2
+4
+−4
+−3
+−2
+−1
+0
+1
+2
+3
+4
+X−Axis Accel. (µg)
+Y−Axis Accel. (µg)
+−4
+−2
+0
+2
+4
+−4
+−3
+−2
+−1
+0
+1
+2
+3
+4
+Percentage of Time
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+Figure 6-42 QTH of SUBSA-04 Sample Run (OSSBTMF) 
+115
+NASA/TM—2003-212460

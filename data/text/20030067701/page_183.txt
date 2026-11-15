@@ -1,0 +1,41 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+5
+10
+15
+20
+25
+30
+Acceleration Vector Magnitude  (mg)
+Overall Max  = 2.6485 mg
+Mean = 0.9278 mg
+Time (seconds)
+from: t:\pub\pad\, $Name:  $, 05−Nov−2002,09:24:07.214
+Start GMT 16−October−2002, 289/15:13:20.003
+STS−112 Undocking
+Size: 0.01,  Step: 0.01 sec.
+Interval Max
+Vector Magnitude
+Increment: 5, Flight: 9A
+250.0 sa/sec (100.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+ 
+ 
+Figure 6-96 Interval Maximum of STS-112 Undocking (121f05) 
+ 
+Figure 6-96 Interval Maximum of STS-112 Undocking (121f05) 
+169
+NASA/TM—2003-212460

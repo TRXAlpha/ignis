@@ -1,0 +1,20 @@
+Spacecraft Materials Microgravity Research on Flammability
+PMMA flammability boundary.  The minimum in the flammability boundary is at 
+very low flows, on the order of diffusive flows. This minimum occurs where the flow 
+still permits enough heat release to sustain the flame but not so strong that it 
+sweeps the fuel out of the hot flame zone before it can react.  As ambient O2 is 
+reduced, flame temperatures are reduced, which slows down the reaction time.  
+Thus the flow needed to blow off the flame becomes slower as oxygen decreases 
+and the flame temperature is reduced. (Stretch rate = 3/2 U/R)
+Flame image very near the 
+bottom of the flammability 
+curve. Near the rod tip the 
+flame is strongest.  The rod is 
+blackened at the tip, and there 
+is a clear bubble layer that 
+extends along the rod to the 
+downstream edge of the flame.  
+Beyond that, there are a few 
+bubbles, but not the dense 
+bubbles in the layer beneath 
+the flame.

@@ -1,0 +1,21 @@
+ 
+NASA/TM-20210011385 
+117 
+ 
+Figure B.2.—Dilution model compared to fast, slow, and average dilution rates 
+during Burning and Suppression of Solids—II (BASS–II) operations. Data from 
+three BASS–II tests and continuously stirred tank reactor (CSTR) model  
+(Eq. (B.2)) results show range of dilution times and O2 levels obtained. Control 
+of both flow rate and dilution time allowed us to work around crew schedules 
+while still obtaining desired working volume O2 concentration for test. 
+Compound Specific Analyzer-Combustion Products (CSA-CP). 
+ 
+B.3 
+References 
+1 
+Spivey, Reggie A., et al.: An Overview of the Microgravity Science Glovebox (MSG) Facility, and 
+the Gravity-Dependent Phenomena Research Performed in the MSG on the International Space 
+Station (ISS). AIAA 2008–812, 2008. 
+ 
+ 
+ 

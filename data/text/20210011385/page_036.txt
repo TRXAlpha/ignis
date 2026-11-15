@@ -1,0 +1,126 @@
+ 
+NASA/TM-20210011385 
+28 
+TABLE 2.1.—COMPARISON OF EXTINCTION VELOCITY Vg,cr  
+FOR THIN POLYMETHYLMETHACRYLATE AT 1 atm 
+Vg,cr, mm/s 
+O2,  
+percent 
+Experiment 
+Computation 
+Theory,  
+Equation (2.5) 
+21 
+10±5 
+15 
+7.5 
+16 
+30±5 
+35 
+10 
+ 
+ 
+Equation (2.3) establishes that the spread rate in the radiative regime decreases with an increase in the 
+radiation number 
+0
+ℜ and a decrease in the nondimensional flow velocity ηg. Note that the fuel thickness 
+does not affect the ratio
+0
+g
+ℜ
+η ; therefore, the inverse relation between flame spread rate and fuel 
+thickness, a typical thermal regime behavior, also extends to the radiative regime. Setting the 
+nondimensional spread rate ηf to zero in Equation (2.3), we obtain the condition for radiative extinction as 
+(
+)
+(
+)
+4
+4
+0
+,
+,
+;  
+~
+     where 
+v
+g
+g
+g cr
+g cr
+g
+g
+f
+v
+T
+T
+V
+V
+V
+c
+T
+T
+∞
+−
+εσ
+η ≤ℜ
+⇒
+≡
+ρ
+−
+  
+(2.5)
+As found in the experiments and computations, Equation (2.3) confirms that the extinction velocity is 
+not a function of fuel thickness. Using the properties used in the numerical simulation (which produces a 
+linearized flame temperature of 2,199 K) and a vaporization temperature of 673 K, the critical extinction 
+velocity Vg,cr can be evaluated at different O2 levels. Table 2.1 compares the prediction from this formula 
+with computational and experimental results. Given the uncertainties associated with the experiments, 
+simplified nature of the mathematical model, and errors associated with scale analysis, the agreement 
+seems reasonable. 
+2.2.8 
+Conclusions 
+Recently conducted space-based experimental results on flame extinction at low opposing flow 
+velocity are presented in this report. A critical flow velocity below which steady spread cannot be 
+sustained is experimentally determined for various fuel thicknesses and two O2 levels. Results from four 
+different fuel thicknesses indicate that fuel thickness does not affect the critical velocity, which increases 
+if the O2 level is decreased. A two-dimensional computation model confirms this finding. A simplified 
+scale analysis produces a closed-form expression 
+(
+) (
+) (
+)
+[
+]
+4
+4
+,
+g cr
+g
+g
+v
+f
+v
+V
+c
+T
+T
+T
+T
+∞
+≡εσ
+ρ
+−
+−
+ for the critical 
+velocity, where ε is surface emissivity, σ is Stefan-Boltzmann constant, cg is the specific heat of gas, ρg is 
+gas density evaluated at Tv, Tv is the vaporization temperature, T∞ is ambient temperature, and Tf is 
+adiabatic flame temperature. It establishes that even though the flame spread rate is inversely proportional 
+to the fuel thickness, the critical velocity is independent of the fuel thickness. Prediction from this formula 
+agrees remarkably well with the experimental and computational results. 
+2.2.9 
+Acknowledgment 
+This work was funded by the NASA International Space Station Research Project Office with Dr. 
+David Urban serving as the contract monitor. We want to acknowledge the invaluable assistance of 
+astronauts Reid Wiseman and Alex Gerst, who ran these Burning and Suppression of Solids—II (BASS–
+II) experiments. This work could not have been done without the intense efforts of the BASS operations 
+team (Jay Owens, Chuck Bunnell, Tibor Lorik, and Carol Reynolds). We also want to acknowledge the 

@@ -1,0 +1,63 @@
+4 
+International Conference on Environmental Systems 
+ 
+On each flight, the samples were installed on a single flat frame (Fig. 3) and were ignited individually in separate 
+tests. The flames were imaged by 4 video cameras position to observe the top and edge of the samples. The back side 
+was not imaged. During the burn sequence, the sample surface was briefly illuminated every 2 seconds for 
+approximately 0.1 s by green LEDs. This enabled determination of the length of the pyrolysis zone. The parameters 
+for each test were preprogramed but each test was triggered by ground command to assure continuous telemetry and 
+free drift (not thruster firings) of the spacecraft. Once all of the tests were completed, the data download process began. 
+Due to bandwidth limitations, the video data was compressed and only a reduced number of uncompressed images 
+were downlinked. The spacecraft was initially at the pressure and oxygen concentration of the ISS but on each flight 
+the Cygnus controllers vented the spacecraft to a predetermined pressure and the SFU released oxygen to bring the 
+spacecraft to a targeted level.  
+The FFD (Fig. 4) contained a series of gas sensors as described in more detail by Fortenberry et al. [7]. These 
+included gas sensors to measure CO, CO2, and O2; an ionization sensor from a commercial smoke detector; and a TSI 
+DustTrak DRX 8533 which uses light scattering to measure aerosol mass concentration. The location of the FFD was 
+near the inlet of the Cygnus air circulation system so the FFD provided a good assessment of the habitability of the 
+spacecraft, and it could be used to assess when a smoke detector would trigger as the air circulation system sweeps 
+the air toward the intake. This is similar to the ISS where the smoke detectors are in front of air intakes [12]. 
+The flames were tracked from the camera images using a thresholding analysis and using the average flame 
+position over the central third of the flame (neglecting the edge effects). The images were adjusted for the automatic 
+gain of the camera and averaged over 2 second intervals to reduce noise. In general, the trailing edge was very bright 
+(soot) while the leading edge could be dim blue. The flame length was the difference between the average positions 
+of the leading and trailing edges.  
+ 
+Figure 3: Sample Layouts for SAFFIRE IV-VI. Front view of the sample cards for each flight.  The 1-sided 
+PMMA samples were 0.5 cm thick, and the 2-sided samples were 1.0 cm thick.  All samples were 40 cm wide. 
+Test numbers account for other test sequences that did not include sample burning. 
+SIBAL Fabric
+Test 5
+Air and Normoxic 
+O2 with forced 
+flow
+SAFFIRE IV
+Test 4
+Test 8
+2-sided PMMA 
+1-sided PMMA
+Nomex Fabric
+Test 7
+Cotton 
+Fabric
+Test 6
+Normoxic O2 with 
+forced flow
+SAFFIRE V
+Test 5
+Test 4
+1-sided PMMA
+Structured PMMA
+Test 8
+SIBAL Fabric
+Test 6
+Air and Normoxic 
+O2 with forced 
+flow
+SAFFIRE VI
+Test 5
+Test 8
+2-sided PMMA 
+1-sided PMMA
+Nomex Fabric
+Test 4

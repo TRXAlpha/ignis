@@ -1,0 +1,59 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+72
+200
+300
+400
+500
+600
+700
+836
+900
+−3
+−2
+−1
+0
+1
+2
+3
+Z−Axis Acceleration (mg)
+RMS = 0.0914 mg
+Original Mean = 0.0823 mg
+Time (seconds)
+from: t:\pub\pad\, $Name:  $, 07−Nov−2002,09:54:58.195
+−3
+−2
+−1
+0
+1
+2
+3
+Y−Axis Acceleration (mg)
+RMS = 0.1173 mg
+Original Mean = 0.0151 mg
+−3
+−2
+−1
+0
+1
+2
+3
+X−Axis Acceleration (mg)
+RMS = 0.2341 mg
+Original Mean = −0.4935 mg
+Start GMT 01−August−2002, 213/17:23:00.001
+8 Progress +X Thrusters, Off−Pulsing
+Size: 0.51,  Step: 0.51 sec.
+Interval Average
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+62.5 sa/sec (25.00 Hz)
+sams2, 121f08 at LAB1S3, MSG, Ceiling Plate A2−A3:[118.14 53.32 160.52]
+ 
+ 
+Figure 6-84 Interval Average of Progress Reboost With Off Pulsing (121f08) 
+ 
+157
+NASA/TM—2003-212460

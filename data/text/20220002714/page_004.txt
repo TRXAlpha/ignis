@@ -1,0 +1,77 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+4
+trash configuration were determined from crew photos. The free gas volume obtained from the model was 10.9 m3.  
+This compared favorably with NG’s estimate of 11.1 m3 based on the dimensions of the packed bags.  
+RS1 is located in the nadir bulkhead section of Cygnus while RS2 is in the forward starboard (FS) standoff. RS3 
+can be found in the forward port (FP) standoff, which is most directly in the flow path of Saffire. RS4 is in the aft port 
+(AP), RS5 is in the aft starboard (AS), and RS6 is in the far zenith end cone of Cygnus. Figure 2 highlights four of the 
+RS locations in Cygnus, as well as Saffire, the FFD, and the Cygnus ECLSS system that circulates the air. Not shown 
+is RS2, which is approximately in the same location as RS3 but in the FS standoff, and RS5 which is approximately 
+in the same location as RS4 but in the AS standoff.  
+ 
+Table 2 gives flow rates of interest within the model. The flow in the Saffire duct gives a nominal velocity of 20 
+cm/s, but is ramped down at certain times in the burn. The initial cabin air temperature was set to 25 °C for the SIBAL 
+burn and 26 °C for the PMMA burn, while a constant temperature boundary condition for the surfaces were set at       
+25 °C for both burns. The heat transfer into the vehicle from Saffire was determined by the experimental Saffire inlet 
+and outlet temperatures. Equation 1 gives the expression for the heat addition rate (HAR) out of Saffire where ρair is 
+the air density (1.12 kg/m3), Cp is the isobaric specific heat of the air (1.02 kJ/kg-K), and V̇air is the volumetric flow 
+rate of the air through Saffire, which for the vast majority of the burn is 0.028 m3/s, as given by Table 2. This method 
+is the sensible enthalpy rise method highlighted by the Society of Fire Protection Engineering Handbook14. The 
+specific heat at constant pressure was used due to the vehicle being pressure controlled. The maximum Saffire outlet 
+temperature was 44.9 °C, which gave a ΔT of 15.4 °C for the SIBAL burn and the maximum outlet temperature for 
+the PMMA burn was 87 °C for a ΔT of 57 °C. 
+ 
+Table 2. Model flow rates 
+Cygnus Location 
+Flow Rate (m3/s) 
+Vehicle 
+0.062 
+Saffire Flow Duct 
+0.028 
+Saffire Avionics 
+0.013 
+FFD 
+0.017 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         (1) 
+ 
+Figures 3 and 4 give the input parameters for the SIBAL and PMMA burn events respectively.  The HAR and SFU 
+flow rate are given on the right axis, and the H2O and CO2 generation rates given on the left axis. The flow rate was 
+taken from experimental output and divided into linear segments. The peak generation rate of the products is higher 
+ 
+Figure 3. Model inputs for the SIBAL burn event. 
+The CO2 and H2O Mass Generation Rates correspond 
+to the left axis in blue, and the heat release rate coming 
+out of Saffire, as well as the Saffire Flow Rate 
+correspond to the right axis in red and black 
+respectively. 
+ 
+Figure 4. Model inputs for the PMMA burn event. 
+The CO2 and H2O Mass Generation Rates correspond 
+to the left axis in blue, and the heat release rate coming 
+out of Saffire, as well as the Saffire Flow Rate 
+correspond to the right axis in red and black 
+respectively. 

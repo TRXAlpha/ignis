@@ -1,0 +1,63 @@
+47th International Conference on Environmental Systems 
+ICES-2017-370 
+16-20 July 2017, Charleston, South Carolina 
+ 
+ 
+ 
+Mixed convection blowoff limits as a function of oxygen 
+concentration and upward forced stretch rate for burning 
+pmma rods of various sizes 
+Jeremy W. Marcum1  
+Purdue University,  West Lafayette, IN 47907-2040 
+Paul V. Ferkul2 
+USRA, Cleveland, OH 44135 
+and 
+Sandra L. Olson3 
+NASA Glenn Research Center,  Cleveland, OH 44135 
+ 
+Normal gravity flame blowoff limits in an axisymmetric pmma rod geometry in upward 
+axial stagnation flow are compared with microgravity Burning and Suppression of Solids – II 
+(BASS-II) results recently obtained aboard the International Space Station.  This testing 
+utilized the same BASS-II concurrent rod geometry, but with the addition of normal gravity 
+buoyant flow.   Cast polymethylmethacrylate (pmma) rods of diameters ranging from 0.635 
+cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume.  The 
+forced flow velocity where blowoff occurred was determined for each rod size and oxygen 
+concentration. These blowoff limits compare favorably with the BASS-II results when the 
+buoyant stretch is included and the flow is corrected by considering the blockage factor of the 
+fuel.  From these results, the normal gravity blowoff boundary for this axisymmetric rod 
+geometry is determined to be linear, with oxygen concentration directly proportional to flow 
+speed.  We describe a new normal gravity ‘upward flame spread test’ method which 
+extrapolates the linear blowoff boundary to the zero stretch limit to resolve microgravity 
+flammability limits—something current methods cannot do.  This new test method can 
+improve spacecraft fire safety for future exploration missions by providing a tractable way to 
+obtain good estimates of material flammability in low gravity.  
+ 
+Nomenclature 
+ 
+a stretch rate (s-1) 
+A area (cm2) 
+B blockage factor, Eq. 3, Table 1 
+g gravity (cm/s2) 
+K constant, Eq. 5 
+r 
+radius (cm) 
+U velocity (cm/s) 
+ 
+ 
+ 
+                                                          
+1 Graduate Student,   Aerospace Engineering, Purdue University,  West Lafayette, IN. 
+2 Spacecraft Fire Safety Scientist,  USRA,   NASA Glenn Research Center, Cleveland, OH. 
+3 Spacecraft Fire Safety Scientist,  NASA Glenn Research Center, Cleveland, OH.  
+Greek  
+α   thermal diffusivity (cm2/s) 
+δ  gas phase length scale (cm) 
+ 
+Subscripts 
+accel accelerated 
+b buoyant 
+o base size 
+r 
+rod 
+tube 
+tube 

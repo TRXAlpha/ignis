@@ -1,0 +1,29 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+7
+surface temperature of cargo and the spacecraft, 
+decreasing the rate at which heat decreases from 
+the gas phase, as opposed to the constant 
+temperature boundary condition currently use 
+which allows for the maximum heat loss. RS2 
+seemed unresponsive to the burn event, likely due 
+to the reasons given for the CO2 response of RS2. 
+As expected, the largest temperature response is 
+given by RS3 and RS6 since they are directly in  
+the flow path, whereas heat response is more a 
+function of mixing and diffusion at the other 
+locations.   
+A counter intuitive result shows that in many 
+instances, especially for the RS locations in the 
+direct flow path  (RS3, RS6), that the data is more 
+noisy in the model results as opposed to the 
+experimental results. There are two possible 
+reasons for this phenomenon. Since the RS uses a 
+ 
+Figure 9. Normalized temperature RS responses during SIBAL burn event. 
+ 
+Figure 8. Normalized temperature response from FFD 
+and mass mean vehicle temperature during SIBAL burn 
+event. 

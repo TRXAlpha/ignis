@@ -1,0 +1,47 @@
+ 
+NASA/TM-20210011385 
+29 
+NASA ground support teams at Glenn Research Center, Johnson Space Center, and Marshall Space Flight 
+Center that supported the BASS–II operations. 
+2.2.10 References 
+1. De Ris, J.N.: Spread of a Laminar Diffusion Flame. Proc. Combust. Inst., vol. 12, no. 1, 1969, pp. 
+241–252. 
+2. Delichatsios, Michael A.: Flame Heights in Turbulent Wall Fires With Significant Flame Radiation. 
+Combust. Sci. Technol., vol. 39, nos. 1–6, 1984, pp. 195–214.  
+3. Fernandez-Pello, A.C.; Ray, S.R.; and Glassman, I.: Flame Spread in an Opposed Forced Flow: The 
+Effect of Ambient Oxygen Concentration. Proc. Combust. Inst., vol. 18, no. 1, 1981, pp. 579–589. 
+4. West, Jeffrey S.: Forced Opposed-Flow Flame Spread Over Flat Solid Fuels in the Thermal, Near-
+Quiescent and Chemical Kinetic Regimes. Ph.D. Dissertation, Univ. of California, San Diego, 1998. 
+5. Bhattacharjee, Subrata, et al.: Downward Flame Spread Over Poly(methyl)methacrylate. Proc. 
+Combust. Inst., vol. 28, no. 2, 2000, pp. 2891–2897.  
+6. Bhattacharjee, Subrata; and Altenkirch, Robert A.: Radiation-Controlled, Opposed-Flow Flame 
+Spread in a Microgravity Environment. Proc. Combust. Inst., vol. 23, no. 1, 1991, pp. 1627–1633.  
+7. Kumar, Chenthil; and Kumar, Amit: On the Role of Radiation and Dimensionality in Predicting Flow 
+Opposed Flame Spread Over Thin Fuels. Combust. Theory Model., vol. 16, no. 3, 2012, pp. 537–569.  
+8. Takahashi, Shuhei, et al.: Effect of Radiation Loss on Flame Spread Over a Thin PMMA Sheet in 
+Microgravity. Proc. Combust. Inst., vol. 29, no. 2, 2002, pp. 2579–2586.  
+9. Olson, S.L.: Mechanisms of Microgravity Flame Spread Over a Thin Solid Fuel: Oxygen and 
+Opposed Flow Effects. Combust. Sci. Technol., vol. 76, nos. 4–6, 1991, pp. 233–249.  
+10. Olson, Sandra; Ferkul, Paul V.; and T’ien, James S.: Near-Limit Flame Spread Over a Thin Solid 
+Fuel in Microgravity. Proc. Combust. Inst., vol. 22, no. 1, 1989, pp. 1213–1222.  
+11. Bhattacharjee, Subrata; Altenkirch, Robert A.; and Sacksteder, Kurt: Implications of Spread Rate and 
+Temperature Measurements in Flame Spread Over a Thin Fuel in a Quiescent, Microgravity, Space-
+Based Environment. Combust. Sci. Technol., vol. 91, 1993, pp. 225–231. 
+12. Reckart, T.A.: Space Flight System at GRC: Burning and Suppression of Solids (BASS). National 
+Aeronautics and Space Administration, 2014. https://www1.grc.nasa.gov/space/iss-
+research/msg/bass/ Accessed June 21, 2021. 
+13. Bhattacharjee, S., et al.: Opposed-Flow Flame Spread: A Comparison of Microgravity and Normal 
+Gravity Experiments to Establish the Thermal Regime. Fire Saf. J., vol. 79, 2016, pp. 111–118. DOI: 
+10.1016/j.firesaf.2015.11.011 Accessed June 18, 2021. 
+14. Patankar, Suhas V.: Numerical Heat Transfer and Fluid Flow. McGraw Hill, New York, NY, 1980. 
+15. Bhattacharjee, Subrata; King, Matthew D.; and Paolini, Chris: Structure of Downward Spreading 
+Flames: A Comparison of Numerical Simulation, Experimental Results and a Simplified Parabolic 
+Theory. Combust. Theory Model., vol. 8, no. 1, 2004, pp. 23–39. 
+16. Grosshandler, W.: Radcal: A Narrow-Band Model for Radiation Calculations in a Combustion 
+Environment. NIST Technical Note 1402, 1993.  
+17. Ivisic, Ivan: Application of a Validated Radiation Model in Flame Spread Rate Over Solid Fuels. 
+M.S. Thesis, San Diego State Univ., 2016.  
+18. Son, Youngjin; and Ronney, Paul D.: Radiation-Driven Flame Spread Over Thermally Thick Fuels in 
+Quiescent Microgravity Environments. Proc. Combust. Inst., vol. 29, no. 2, 2002, pp. 2587–2594.  
+19. Bhattacharjee, S., et al.: The Critical Flow Velocity for Radiative Extinction in Opposed-Flow Flame 
+Spread in a Microgravity Environment: A Comparison of Experimental, Computational, and 

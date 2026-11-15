@@ -1,0 +1,56 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+2
+I. Introduction 
+IFFUSION flames in stagnation flow have long been studied due to their ease of control, amenability to 
+diagnostic measurement and modeling, and reproducibility of results.  Early work [1] on flammability limits has 
+demonstrated that a hemispherical stagnation flow geometry is a reliable method to obtain the flammability limits of 
+various fuels as a function of upward flowing oxidizer gas.  Many heavier hydrocarbons were found to have similar 
+limiting oxygen concentrations (13%-14%) and flame temperatures (1450-1500°C). Spalding [2] used the spherical 
+stagnation geometry to help define his Transfer Number versus critical stretch rate U/2r for extinction.  Tsuji and 
+coworkers utilized the 2D stagnation geometry for many years to quantify both diffusion flames and premixed flame 
+structure and extinction limits [3, 4].  
+Linan [5] utilized the stagnation geometry to develop his large activation energy asymptotic analysis for steady 
+flame structure and derivation of a critical Damkohler number for extinction.  Sohrab et al. [6] expanded Linan’s 
+asymptotic work on extinction limits to include gas-phase radiant loss.  Krishnamurthy [7] experimentally studied 
+pmma rod tip blowoff at various oxygen and pressure ambient atmospheres and applied the critical Damkohler number 
+for extinction [5].   
+T’ien and coworkers [8-9] have developed detailed numerical models of stagnation flames over solid surfaces, 
+including surface radiation, and subsequently gas phase radiation as well [10, 11].  The models were used to outline a 
+complete flammability boundary in terms of oxygen and forced stretch rate.  Some experiments with pmma rods [12] 
+outlined a similar flammability boundary. 
+Recent testing completed on the International Space Station investigated the oxygen-flow flammability boundary 
+for three different cast PMMA rod sizes [13].  This paper describes normal gravity forced flow blowoff tests conducted 
+to complement these flight results.  
+II. Experiment Description 
+The test setup depicted in Fig. 1 was used to determine the blowoff limits for cast PMMA rods having different radii.  
+Five radii of  cast clear PMMA rods were tested;  0.318 cm, 0.476 cm, 0.635 cm, 1.270 cm, and 1.905 cm, spanning 
+a factor of six in radius.  The apparatus consists of a flow system with two sources of gas; shop air and calibrated 
+premixed bottles of 14% to 18% oxygen by volume in balance nitrogen.  A manual valve is used to switch the gas 
+source.  The gas flows through a 200 SLPM MKS mass flow controller and into a flow straightener, which provides 
+a uniform exiting flow profile, verified by hot wire anemometer profiling.  The flow then enters the quartz tube, which 
+has a 7.6 cm inside diameter (nearly identical in size to the LOI test standard tube size [14]) and is 25.4 cm long. Matte 
+black foil eliminates reflections from the back of the tube. A color video 
+camera records each experiment through the clear tube.  An exhaust 
+snorkel above the tube removes combustion products from the lab.  
+Each experiment begins by imaging a scale inside the tube next to the 
+rod along with a card noting the test conditions.  Shop air dried using 
+an O’Keefe air dryer is set to the desired test flow rate on the mass flow 
+controller.  Each of the cast PMMA rods, hanging from a metal 
+crossbar, was ignited with a small lighter outside of the apparatus and 
+then suspended in the flow tube.  Each initially flat-ended rod was 
+allowed to burn to a rounded tip which is more representative of the 
+steady-state shape of a burning sample. 
+Once the flame stabilized inside the tube, the gas source was switched 
+from dry shop air to the premixed bottle test gas at the same flow rate 
+to determine if the flame would blow off at that flow and oxygen 
+combination.  The lowest flow rate where blowoff occurs was 
+determined iteratively for each oxygen concentration.  Due to 
+limitations in system pressures, the maximum flow rate was 165 SLPM 
+(60.3 cm/s average tube speed).  This limited the range of oxygen 
+concentrations where blowoff could be obtained.  
+D
+Fig. 1. Test apparatus schematic 
+used for blowoff testing. 

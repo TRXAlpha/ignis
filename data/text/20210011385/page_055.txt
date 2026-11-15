@@ -1,0 +1,70 @@
+ 
+NASA/TM-20210011385 
+47 
+4.0 
+Individual Principal Investigator Report: Fernandez-Pello 
+4.1 
+Opposed-Flame Spread Task 
+The scientific objective of the Burning and Suppression Solids—II (BASS–II) opposed-flow flame 
+spread test is to further understand the mechanisms controlling the spread of flames over the surface of 
+solid combustible materials, particularly in a spacecraft environment. For this purpose, experiments were 
+conducted aboard the International Space Station (ISS) to determine the effects of microgravity on the 
+spread of flames over polymethylmethacrylate (PMMA) rods of different diameters subjected to different 
+O2 concentrations and low flow velocities. These are parameters that in addition to low pressure are 
+expected in spacecraft environments. By conducting these tests aboard the ISS and then comparing the 
+results to ground-based data, it is expected that a better understanding of the governing mechanisms of 
+flame spread in microgravity can be obtained. In addition, by conducting the tests with cylindrical 
+samples, the effect on the flame spread process of geometrical factors such as the transverse curvature of 
+the surface can be better studied.  
+4.1.1 
+Experiment and Test Matrix 
+The tests were conducted in the BASS–II hardware placed inside the Microgravity Science Glovebox 
+(MSG) in the Destiny Lab of the ISS. The BASS–II hardware consists of a flow duct, still camera, video 
+camera, external control box, and associated plumbing and mounting systems along with the fuel samples 
+for the BASS–II experiments.  
+The tests for the present task were conducted with rods of cast PMMA with diameters of 6.35, 9.525, 
+and 12.7 mm (1/4, 3/8, and 1/2 in., respectively) and were 57.15 mm in length. All cylindrical rods tested 
+started with rounded (hemispherical) ends in order to minimize the flow disturbance associated with the 
+abrupt bluff body transition at the sample’s downstream edge. Ignition of the PMMA was accomplished 
+by using a hot wire placed to heat the PMMA surface in the downstream edge of the rods.   
+Table 4.1 and Table 4.2 present the test conditions for the opposed-flow flame spread tests conducted 
+in this task. The majority of the tests were conducted with black PMMA, because rods of black PMMA 
+are also used in the Material Ignition and Suppression Test (MIST) project to reduce effects of in-depth 
+absorption of thermal radiation. For this reason, the results presented in this report are limited to those for 
+black PMMA. A few tests were conducted with clear PMMA for comparison purposes, but the data is too 
+limited to present it here.  
+ 
+ 
+TABLE 4.1.—ROD DIAMETERS TESTED FOR BOTH CLEAR AND BLACK POLYMETHYLMETHACRYLATE (PMMA) 
+ABOARD INTERNATIONAL SPACE STATION AS PART OF BURNING AND  
+SUPPRESSION SOLIDS—II (BASS–II) CAMPAIGN 
+Size, m 
+0.00635 
+0.009525 
+0.0127 
+Total 
+Black PMMA 
+Test conditions 
+23 
+12 
+12 
+47 
+Samples burnt 
+9 
+4 
+4 
+17 
+Clear PMMA 
+Test conditions 
+4 
+3 
+0 
+7 
+Samples burnt 
+2 
+1 
+0 
+3 
+ 
+ 
+ 

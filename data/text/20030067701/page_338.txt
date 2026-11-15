@@ -1,0 +1,49 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+0.5
+1
+1.5
+ Percentage of Time
+Frequency (Hz)
+PSD Magnitude [log 10(g2/Hz)]
+from: t:\pub\pad\, $Name: pop3_06−17−2002 $, 29−Jul−2002,14:23:26.646
+SAMS 121f08
+GMT 19−Sep−02 through 21−Nov−02
+Only PFMI Days
+Total of 150.1 hours
+hanning, 16491 PSDs
+Sum
+Increment: 5, Flight: UF2
+Temp. Res. = 32.768 sec, No = 0
+∆f = 0.031 Hz,  Nfft = 2048
+62.5 sa/sec (25.00 Hz)
+sams2, 121f08 at LAB1S3, MSG, Ceiling Plate A2−A3:[118.14 53.32 160.52]
+23.4 Hz
+22.5 Hz
+5.2 Hz
+6.0 Hz
+7.8 Hz
+7.0 Hz
+0
+5
+10
+15
+20
+25
+−14
+−13
+−12
+−11
+−10
+−9
+−8
+−7
+−6
+−5
+−4
+−3
+Figure 7-10 PCSA PFMI Experiment Days (121f08) 
+324
+NASA/TM—2003-212460

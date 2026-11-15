@@ -1,0 +1,41 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+2
+I. Introduction 
+spacecraft fire poses one of the greatest risks to the crew and mission success. There is a need to predict the 
+consequences of a fire event to reduce the risk for long-duration missions. Most flame spread testing has been 
+executed in 1-g or has not been large-scale1,2,3. The Saffire project has provided valuable data on large flame spread 
+in a microgravity environment while acting as a test bed for novel gas species sensor technology3,4. These series of 
+experiments have taken place during the end of a resupply mission to the to the International Space Station (ISS) on 
+Northrop Grumman’s (NG) Cygnus vehicle. After Cygnus undocks from the ISS, the experiments take place and the 
+data is downlinked before destructive re-entry into the earth’s atmosphere. The data collected will help designers and 
+modelers predict the effects of a large-scale fire in a microgravity environment in order to design a safer spacecraft. 
+ 
+The focus of the first three Saffire missions was on flame spread5,6,7,8, while the Saffire IV and V expanded the 
+experiment to include gas release events and sensors throughout the vehicle. These sensors include diagnostic tools to 
+determine the temperature increase due to the fire and transport of combustion products such as CO2. The data 
+collected from these far-field gas and particle sensors will provide insight into smoke plume and combustion product 
+transport within the vehicle9,10,11. The test events include flow visualization at the beginning and end of the campaign, 
+CO2 scrubs, gas releases, and burn events. Both Saffire IV and V experiments utilized six remote sensors (RS) spread 
+throughout Cygnus that measure temperature and product concentration, such as CO2, as well as a Far Field Device 
+(FFD) that is representative of average temperature and species concentration in the cabin. Both Saffire experiments 
+had cotton based and Polymethyl (Methacrylate) (PMMA) samples as fuel for the burn events.  
+The focus of this paper is on the two PMMA burn events in Saffire V. Similar to previous work12,13, the effect of 
+burning the PMMA samples on the vehicle temperature and combustion product spread are predicted. The geometry 
+and cargo configuration for Saffire V is the same that was used in previous work that explored the cotton sample in 
+Saffire V13. The effective convective heat transfer between the cargo and the cabin air that was calibrated in that same 
+work is also used in this work, which was calibrated to fit the closest RS to the Saffire outlet. The development of this 
+model will aid in the prediction of heat and mass transfer throughout a spacecraft after a fire. 
+ 
+II. Saffire Experiment 
+Saffire I – V have all taken place on the NG Cygnus vehicle. The experimental data collection and downlinking 
+happened after the cargo from the resupply mission was unloaded onto the ISS and the trash was packed into Cygnus. 
+A schematic of a nearly empty Cygnus vehicle is provided in Figure 1 before the cargo is loaded, highlighting the 
+Saffire payload and instruments used to collect data. The pressure vessel is approximately 4 meters in length and 3 
+meters in diameter. The Environmental Control and Life Support System (ECLSS) recirculated flow throughout the 
+vehicle by taking air from the zenith side, near the (FFD), and expelling it on the nadir side where Saffire is located. 
+ 
+Figure 1. Schematic of Cygnus vehicle with FFD and Saffire payload. 
+A

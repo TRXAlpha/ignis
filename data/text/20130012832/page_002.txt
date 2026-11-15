@@ -1,0 +1,42 @@
+Science Background: 
+ 
+♦Combustion of solid fuels in 
+microgravity has been an active area 
+of research 
+ 
+♦Numerical models predict that 1-g 
+buoyant flows profoundly affect fuel 
+flammability 
+ 
+♦Microgravity experiments burning 
+thin fuels have verified this 
+prediction, but ground-based facilities 
+are too short to examine the burning 
+of thicker fuels 
+ 
+♦Flow in range < 30 cm/s is of interest 
+  
+ 
+ 
+ 
+300 
+Flow speed (cm/s) 
+O2 Mole 
+Fraction 
+0.23 
+0.22 
+0.21 
+0.20 
+0.19 
+0.18 
+0.17 
+0.16 
+0.15 
+  1 
+    10 
+ 100 
+Flammable 
+Not Flammable 
+1-g buoyant 
+flow limit 
+Typical Flammability Boundary for a Solid Fuel 

@@ -1,0 +1,10 @@
+Residence Time Driven Flame Spread 
+Subrata Bhattacharjee, San Diego State University
+Objective
+Examine how thermal and species fields can diverge and lead to microgravity flame 
+extinguishment by varying fuel thickness.
+Status
+― 22 test points obtained with BASS-II experiments. 
+― The wealth of data has been catalogued at http://flame.sdsu.edu.
+― Samples were 1-cm and 2-cm wide sheets of plastic (PMMA; polymethyl methacrylate).
+― Thicknesses were between 0.1 and 0.4 mm.

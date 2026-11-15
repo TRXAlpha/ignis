@@ -1,0 +1,43 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+3
+III. Results 
+Over 280 experiments were conducted to determine the blowoff limits for each oxygen concentration and rod 
+radius, and the bracketing flow conditions were repeated at least once.  From the test images, some general trends 
+are noted.  Flame blowoff always occurs at the stagnation region.  The triggering event appears to be the 
+development of a flame hole [15] at the stagnation region of sufficient size to destabilize the flame base.  Small 
+flame holes might disappear or be “healed,” but a subsequent larger hole can destabilize the flame and lead to 
+blowoff.   
+This is shown in Fig. 2.  In the top sequence of images (at 120 f/s), a small hole forms at the stagnation region, and 
+moves up the side of the flame.  The stagnation region heals, but the hole persists for a number of frames as it is 
+convected up the side of the flame.  A sooty region forms around the hole.  It may be that a vapor jet from a bubble 
+rupture from the surface is the triggering event.  The vapor jet increases the local strain rate, causing local flame 
+extinction.  The excess fuel from the jet exits the flame sheet and creates a locally fuel rich region outside the hole 
+which then reacts, causing the sooty region. 
+In the bottom sequence of images (at 80 f/s) from later in the same test and under the same test conditions, a small 
+hole again forms but quickly grows to the scale of 
+the 0.476 cm rod diameter.  The stagnation region 
+destabilizes.  Due to the destabilization, the flame 
+quickly blows downstream.  The sequence ends as 
+the flame develops a bright blue flame base that 
+anchors briefly to the sides of the cylinder.  The 
+downstream section of the flame becomes sooty, 
+which seems to correspond with the formation of the 
+anchor ring (flame base of the side-stabilized 
+flame).  This ring is interpreted as the outer lip of 
+the triple flame at the flame leading edge. 
+The positions of the left and right sides of the 
+flame hole during the lower blowoff  sequence are 
+tracked in Fig. 3 with time.  The flame is initially 
+stabilized less than 1 mm below the rod.  Once the 
+hole forms (set to be time zero), the flame quickly 
+moves downstream.  The right side of the flame 
+anchors at -0.4 cm and the left side at -0.6 cm, and the anchor ring starts to move back upstream.  The anchor ring 
+then settles at approximately -0.35 mm for over half a second.  The anchor ring then begins to oscillate up and down 
+with increasing amplitude until the side-stabilized flame blows off completely.  The side stabilized flame at oxygen 
+concentrations less than the downward Limiting Oxygen Index (LOI) is not expected to be stable. 
+Fig. 3.  Flame hole edge positions during blowoff 
+Fig. 2.  Sequence of 16% O2 by volume flame images showing top: a small stagnation hole that heals and 
+bottom: a hole that causes blowoff. 

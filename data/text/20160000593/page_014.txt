@@ -1,0 +1,10 @@
+Material Ignition and Suppression Test
+Carlos Fernandez-Pello, University of California, Berkeley
+Objective
+Understand the effect of space exploration atmospheres (SEA) on the piloted ignition under an 
+external radiant flux of a representative combustible material, as well as on its fire suppression 
+characteristics.
+Status
+― Three different diameters (0.25”, 0.375”, 0.5”) of black and clear PMMA rods were tested.
+― Oxygen concentrations between 16% to 21% and flow velocity between 0.4 cm/sec to 4 
+cm/sec were tested. The total set of experiments yielded 54 unique flame spread rates.

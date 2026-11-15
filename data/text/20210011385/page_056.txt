@@ -1,0 +1,55 @@
+ 
+NASA/TM-20210011385 
+48 
+TABLE 4.2.—RANGE OF OXIDIZER AND ESTIMATED MIXED (FORCED AND FREE) FLOW CONDITIONS BY 
+DIAMETER EMPLOYED ABOARD INTERNATIONAL SPACE STATION AS PART OF BURNING  
+AND SUPPRESSION SOLIDS—II (BASS–II) CAMPAIGN 
+Sample diameter, m 
+0.00635 
+0.009525 
+0.0127 
+O2 concentration, vol% 
+16.8 to 18.9 
+17.5 to 20.9 
+17.6 to 20.7 
+Flow velocity, m/s 
+0.0041 to 0.075 
+0.043 to 0.02 
+0.0137 to 0.0164 
+ 
+Table 4.2 exhibits the range of oxidizer and flow conditions employed in these tests. The focus of 
+these experiments was on low O2 concentrations and characteristic flow velocities below those achievable 
+in 1g environments due to the effects of buoyancy. The low-flow velocities in microgravity environments 
+allow for the investigation of conditions unachievable in a 1g environment. As a means of comparison, 
+from standard Grashof number arguments one can derive a characteristic buoyant velocity induced by the 
+heated sample (Ref. 1), and at the point of ignition it is approximately 0.50 m/s, which is an order of 
+magnitude greater than the largest forced-flow velocity tested in the BASS–II experiments, as can be seen 
+in Table 4.2.  
+4.1.2 
+Results 
+Multiple test conditions were accomplished for each PMMA sample by igniting the sample at a high 
+opposed-flow velocity and then subsequently reducing the opposed-flow velocity until extinction was 
+observed, pausing along the way to allow steady-state flame spread. The results presented herein 
+comprise the effects of O2 concentration and flow velocity on the rate of microgravity opposed-flame 
+spread over black PMMA rods in microgravity. Figure 4.1(a) presents a summary of the results of the 
+effect of flow velocity on the opposed-flow flame spread rate for 0.00635-, 0.009525-, and 0.0127-m-
+diameter rods of black cast PMMA. The data points are at different O2 concentrations, which explains 
+some of the scatter in the data. Figure 4.1(b) presents the effect of O2 concentration at different flow 
+velocities.  
+As can be seen in Figure 4.1(a), the average flame spread rate increases with opposed-flow velocity, 
+even within the small range of flow velocities tested. Sustained flame spread for the conditions tested was 
+not observed for opposed-flow velocities below approximately 4 mm/s for the 0.00635- and 0.009525-m-
+diameter rods. Visually it was observed that at very low flow velocities the flames appear to be very 
+small, blue, faint, and open at their downstream ends. As the flow velocity rises towards 20 mm/s and 
+above, the flames become much more luminous, with bright yellow flames, and a closed downstream tip.  
+In Figure 4.1(b), the data exhibits an upward trend in spread rate with increasing O2 concentration, 
+which is especially marked in the results of the 6.35-mm-diameter rods. Both of these sets of 
+observations are similar to those of previous work on flame spread in microgravity. Near the quenching 
+limit, not only is diffusion playing a bigger role in providing the oxidizer flow to the flame, but also, the 
+flame becomes very faint and the reradiation from the sample surface becomes increasingly important 
+(Refs. 2 and 3).  
+To facilitate the comparison of the data for the different conditions, all the data points are presented in 
+Figure 4.2. Figure 4.2 presents the same data as Figure 4.1, but presents all three rod diameters in one 
+plot, and colors the data points by their respective O2 concentration (Figure 4.2(a)) or flow velocity 
+(Figure 4.2(b)). 
+ 

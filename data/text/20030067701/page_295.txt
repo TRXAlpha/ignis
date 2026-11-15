@@ -1,0 +1,46 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+10
+15
+20
+25
+30
+35
+40
+45
+50
+−3
+−2
+−1
+0
+1
+2
+3
+Z−Axis Acceleration (mg)
+Time (seconds)
+−3
+−2
+−1
+0
+1
+2
+3
+Y−Axis Acceleration (mg)
+−3
+−2
+−1
+0
+1
+2
+3
+X−Axis Acceleration (mg)
+Start GMT 02−September−2002, 245/08:58:00.001
+RED Exercise
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+250.0 sa/sec (LPF 5 Hz)
+sams2, 121f02 at LAB1O2, ER1, Drawer 1:[128.73 −23.53 144.15]
+Figure 6-213 Lowpass Filtered Time Series Zoom of RED Exercise Period (121f02) 
+281
+NASA/TM—2003-212460

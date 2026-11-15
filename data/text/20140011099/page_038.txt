@@ -1,0 +1,6 @@
+Flame spread (60sec.) 
+Igniter:  ON 
+Gas phase Reaction rate [kg mol/m3/s] 
+JET velocity:  20 cm/s 
+Solid 
+Temperature [K] 

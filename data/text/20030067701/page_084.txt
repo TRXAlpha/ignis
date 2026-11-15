@@ -1,0 +1,54 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+The position of the buckle at the beginning of the test looked to be 1/16" to 
+1/8" away.  Right now, it looks like it's just resting on the electrical 
+connector of the sensor head. 
+Paycom: OK, Dan, we copy that and we'd like to leave it "as is" at the moment. 
+Dan: OK.  Copy.  Leave it as is. 
+Paycom: We appreciate your help, Dan.  Thanks a bunch! 
+Dan: As always, it is my pleasure.  
+ 
+The spectrogram of Figure 6-234 qualifies the nature of the impulsive interference caused by 
+entry/exit.  Note the series of 8 closely-spaced vertical streaks centered at around GMT 08:12:12.  
+These correspond to the 4 pairs of entry/exit times of the test cited in the e-mail excerpt above. 
+ 
+In order to quantify the impact of the TeSS entry/exit test, the 0.5-second XYZ interval min/max 
+plot shown in Figure 6-235 was produced.  It shows that the YF05-axis (ZA-axis) registered the 
+largest accelerations overall.  The largest acceleration for this axis was over 37 mg, but this 
+occurred at about GMT 091/08:08, which is about 3 minutes before first documented entry/exit 
+event.  The largest acceleration magnitude during the test span was the second exit at over 32 mg 
+(see the 0.5-second interval acceleration vector magnitudes in Figure 6-236).  According to the 
+SAMS 121f05 data, this second exit took place at a little after GMT 091/08:12:30 and this lags 
+the time called down by about 22 seconds. 
+  
+To more fully quantify the impact of TeSS entry/exit, a cumulative percentage of occurrences for 
+acceleration vector magnitudes was computed and shown in Figure 6-237.  Computational 
+intensity was such that only hours 02, 08, and 10 on the day of test were selected for 
+consideration – one-third sleep, two-thirds wake including test hour to put the TeSS impact into 
+some statistical context.  This analysis shows that of the over 5.5 million measurements (per 
+axis) made in these 3 non-contiguous hours, the 95th percentile was at about 2.4 mg.  That is, the 
+red crosshair indicates that 95% of the data that were considered fell at or below 2.4 mg.  
+Meanwhile the TeSS impact magnitudes were at least 6 times larger than this ranging somewhere 
+between 15-35 mg. 
+ 
+6.2.4.3 
+Extravehicular Activity (EVA) 
+As explained at http://www.pbs.org/spacestation/station/walks.htm, about 160 spacewalks 
+totaling 960 clock-hours, or 1,920 man-hours, will be performed during assembly of the ISS.  
+Extravehicular Mobility Units (EMUs) based EVAs are normally planned for 7 hours, including 
+15 minutes to egress the airlock, 6 hours of useful tasks, 15 minutes to ingress the airlock, and 30 
+minutes of reserved unplanned time.  The Crew Lock (C/L) is the portion of the airlock that is 
+depressed to vacuum for the crew to go EVA.  It provides the egress point to vacuum via the 
+EVA hatch.  As the C/L is depressed down to 3 psi, the depress pump in the airlock is used to 
+reclaim 70-80 percent of the cabin atmosphere.  The rest of the atmosphere (3 psi down to 
+vacuum) is vented to space through the Manual Pressure Equalization Valve (MPEV) on the 
+EVA hatch [6].   
+ 
+There are many operations that must be done before and after an EVA to ensure a successful 
+EVA.  The basic sequence is described here.  Airlock preparation is performed usually the day 
+before EVA to configure and activate the airlock.  EMU checkout is performed to check suits 
+integrity.  Campout (to prevent decompression sickness) is performed the night before an EVA 
+70
+ 
+NASA/TM—2003-212460

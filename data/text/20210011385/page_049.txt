@@ -1,0 +1,83 @@
+ 
+NASA/TM-20210011385 
+41 
+about 40 cm/s to about 1 cm/s. At very high flow velocity, kinetically driven blowoff extinction was 
+observed and at very low velocity (at about 1 cm/s) radiative extinction was observed. The highest spread 
+rate in the microgravity environment, 2.2 mm/s, is about the same as the downward spread rate. The 
+overall flame shapes are also quite similar as shown in Figure 2.20(a) and (b) where flame images for 
+spread over samples of different thicknesses are compared. The leading edges in the downward spread 
+show slight dripping effect and the flame is sootier, but the overall shape and size are quite similar as are 
+the spread rates. This indicates that at 21 percent O2 level, downward spread over PMMA can be 
+considered thermally controlled with minimal kinetic effect.  
+Because gas-phase kinetics (or precisely, the Damköhler number, the ratio of the residence time to the 
+gas-phase combustion time) is independent of fuel thickness, downward or microgravity spread over 
+different fuel thicknesses should follow Equation (2.9). Using properties as listed in the nomenclature, de 
+Ris formula for the thin limit, Equation (2.9) modified with a factor of π/4, can be expressed as 
+8
+2
+5
+2
+,thin
+,thick
+m
+2.34 10
+;     and 
+9.72 10
+  
+4
+s
+g
+g
+g
+g
+f
+f
+g
+g
+s s
+s s
+s
+c
+F
+V
+F
+V
+V F
+V F
+c
+c
+−
+−
+λ
+ρ
+λ
+π
+
+
+=
+=
+×
+=
+=
+×
+
+
+ρ
+τ
+τ
+ρ
+λ
+
+
+ 
+(2.11)
+Figure 2.20.—Image array comparing microgravity and downward flame spread for 
+different thicknesses of polymethylmethacrylate (PMMA). Velocity of oxidizer (Vg). 
+Absolute spread rate (Vf). PMMA (NASA) in 0g on International Space Station, 2-cm 
+sample with 10.x cm in 20.7 percent O2 and 79 percent N2 at 1 atm. (a) Burning and 
+Suppression of Solids—II (BASS–II) B03 sample; 100 µm thick. (b) BASS–II B11; 
+200 µm thick. (c) BASS–II B4; 300 µm thick. (d) BASS–II B13; 400 µm thick. PMMA 
+(NASA and Astra) in 1g at San Diego State University, 2-cm sample with 10.x cm in 
+20.7 percent O2 and 79 percent N2 at 1 atm. (e) PMMA at NASA; 100 µm thick. 
+(f) PMMA at Astra; 200 µm thick. (g) PMMA at NASA; 300 µm thick. (h) PMMA at 
+NASA; 400 µm thick. 

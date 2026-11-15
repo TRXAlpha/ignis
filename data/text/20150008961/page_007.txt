@@ -1,0 +1,67 @@
+Sub Topic: Fire Research 
+ 
+7 
+time to react.  The critical temperature for ignition is a well-known concept that can be applied to 
+blowoff if one considers the fuel and oxidizer to be in a state of continual ignition in the flame zone.  
+Once the temperature in the flame zone drops below the critical temperature for ignition, the flame 
+blows off.    
+The drop tower blowoff data linear curve fit is plotted for comparison, and agrees very well with 
+the ISS data.  This further implies that the different levels of preheating of the rod do not affect 
+blowoff extinction.  The linear blowoff boundary has interesting implications in that it may be 
+possible to linearly extrapolate blowoff data down to zero stretch rate and use that oxygen value as a 
+conservative estimate of the minimum oxygen concentration where the material will burn.  This will 
+allow us to de-rate materials based on normal gravity flammability tests to ensure the material will 
+not burn in space.    Using the y-intercept of the linear fit (13.3 % O2 in the Figure 4 fit, versus the 
+minimum test point of 13.6 % O2) would add a slight level of conservatism. 
+On the other hand, the quenching branch is captured with a red dashed exponential fit.  This 
+suggests the Arrhenius temperature exponential term is dominant in the quenching region.   This is 
+expected at quenching, where the temperature drops off dramatically while flow time is plentiful.  
+Heat losses dominate to cool the flame to extinction, as was modeled by [20, 21].  This boundary is 
+very steep when plotted on a linear x axis as shown in Figure 4.  To get the “U”-shaped flammability 
+boundary, a logarithmic x axis is often used, which expands the quenching branch while making the 
+linear blowoff branch have a curved shape.   
+We recognize that the appropriate flow parameter to use to compare data for the different rod 
+sizes is the flame stretch, which is defined here as sum of the combined flow-induced stretch and the 
+curvature-induced stretch, or  a=af + acurv. The effect of curvature-induced stretch is not negligible 
+for these small diameter rods at low speed flows, and we combine them in this way following the 
+example for mixed convection [21].  The initial rod tip is hemispherical, but as it burns it takes on a 
+slightly more tapered round-nosed shape, as can be seen in Figures 2 and 3. The flow-induced stretch 
+around the approximately spherical rod tip is af = 3/2 U/R.     The curvature-induced stretch around 
+the hemispherical flames is estimated for the small samples as acurv = [3 U/R] × [(Rflame-R)/R]. 
+The analysis of all the data for flame radius at each limit condition is not yet complete, so Figure 
+4 currently shows the flammability boundary data plotted as forced stretch rate, with the data points 
+also marked by rod size.  The data points will shift to the right once the curvature-induced stretch is 
+accounted for.    Table 1 gives estimates of the curvature-induced stretch for each radius, based on the 
+flame radii measured from Figure 2, to give an idea of the magnitude of the shift.   
+Table 1:  Stretch rate estimates for specific tests shown in Figure 2 
+Rod radius, 
+cm 
+af = 3/2 U/R, 
+s-1 
+acurv = [3 U/R] × [(Rflame-R)/R], 
+s-1 
+a=af + acurv, s-1 
+0.318 
+2.36 
+3.63 
+5.99 
+0.476 
+3.46 
+4.62 
+8.08 
+0.635 
+3.31 
+5.38 
+8.68 
+ 
+3.5   Surface Energy Balance  
+If we assume for long burn times that the solid phase thermal profile away from the flame tip has 
+reached an approximate steady state, we can approximate the 1D temperature profile along the rod 
+axis.    
+  Away from the regressing tip of the rod, there is a balance of heat transfer through the rod 
+via conduction and convection:  
+0 = ρscsVr 
+wTs
+wy + λs 
+w 2Ts
+wy2 

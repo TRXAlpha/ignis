@@ -1,0 +1,33 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+   
+When acceleration data are transmitted to the ground, either real time data downlink or data 
+transmitted from a dump of the MCOR memory, the resultant acceleration data packets are 
+routed through the White Sands Facility, through Johnson Space Center (JSC), through the 
+Marshall Space Flight Center (MSFC), Huntsville Operation Support Center (HOSC), and 
+ultimately to PIMS Ground Support Equipment (GSE) located at the TSC.  The PIMS GSE 
+writes each received packet into a database table dedicated to each accelerometer supported by 
+PIMS.  Therefore, a separate database table exists for MAMS OSS, MAMS HiRAP, and for each 
+of the five SAMS sensor heads. 
+ 
+The primary function of the database tables is to automatically merge AOS and LOS data 
+packets for each accelerometer.  As there exists overlap between the AOS and LOS acceleration 
+data packets received, each sensor's dedicated database table discards any redundant data 
+packets, resulting in a table containing a contiguous set of acceleration data packets.   
+ 
+Data are accessed from the database table to serve two separate purposes.  The first purpose 
+involves obtaining the most recent acceleration data from the table to generate real time plots of 
+the acceleration data in a variety of plot formats supported by PIMS [27].  These real time plots 
+are updated during AOS intervals and electronic snapshots of the data are routed to the PIMS ISS 
+web page (http://pims.grc.nasa.gov).  
+ 
+The second purpose involves obtaining the oldest acceleration data from the “bottom” of the 
+table.  These acceleration data are used to generate the PIMS acceleration data archives used by 
+the PIMS data analysts to generate the plots described in this report.  Since the data are processed 
+from the “bottom” of the table, MCOR dumps will have had time to be downlinked, received, 
+and merged by the database table.  PIMS currently waits 24 hours before generating any 
+acceleration data archives.  Like the electronic snapshots of the real time acceleration data plots, 
+the acceleration data archives are available for download via the PIMS ISS web page. 
+340
+NASA/TM—2003-212460

@@ -1,0 +1,20 @@
+Summary (continued)  
+ 
+♦At moderate flow speeds (between about 1 and 5 cm/s) the flame continually 
+heats the solid fuel resulting in an increasing fuel temperature, higher rate of 
+fuel vaporization, and a stronger, more luminous flame as time progresses.  
+ 
+♦Thicker solids can store a great deal of heat even with only a small flame.  One 
+result is that extinction with the nitrogen jet was not possible for the given flow 
+rate. 
+ 
+♦Only the smallest flames burning acrylic slabs appeared to be adversely 
+influenced by solid conductive heat loss, but even these burned for over 5 
+minutes before self-extinguishing.   
+•
+This has implications for spacecraft fire safety since a tiny flame might be 
+undetected for a long time.   
+•
+While the small flame is not particularly hazardous if it remains small, the 
+danger is that it might flare up if the air convection is suddenly increased 
+or if the flame spreads into another fuel source. 

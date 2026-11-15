@@ -1,0 +1,84 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+
+
+
+
+
+−
++
+=
+4.0
+25
+.0
+)
+75
+.1
+(
+*
+35
+.0
+05
+.0
+05
+.0
+)
+(
+Q
+Q
+α
+0.2
+0.2
+75
+.1
+75
+.1
+>=
+<
+<
+<=
+Q
+Q
+Q
+ 
+Equation E.2-2 
+ 
+The quasi-steady acceleration level is computed to be the arithmetic mean of the trimmed set. 
+Trimmean filtered data is stored in the PAD archive under “ossbtmf”.  Further information 
+concerning the trimmean filter can be found in [28-30]. 
+ 
+E.2.2. Mapping of Quasi-Steady Data  
+During the life of the station, PIMS is required to “map” quasi-steady data to locations other than 
+that of MAMS OSS.  Mapping is a prediction of what the quasi-steady environment would be at 
+an alternate location, knowing the acceleration levels at MAMS.   
+ 
+E.2.2.1 Background and Assumptions  
+The methods used by PIMS in offline and real-time algorithms make the assumption that the ISS 
+vehicle can be considered a rigid body in regards to the quasi-steady regime.  The three main 
+contributions to the quasi-steady acceleration environment are aerodynamic drag, rotational and 
+gravity gradient effects.   Drag effect is the same for any point attached to the vehicle and is 
+considered to act opposite to the direction of flight. Rotational effects are the tangential and 
+radial acceleration contributions due to the rotation of the vehicle.  It is assumed that the 
+accelerations in the tangential direction are negligible.     
+ 
+The gravity gradient effect refers to accelerations acting on any point in a rigid body away from 
+the center of mass.  An independent particle will tend to gravitate towards the ISS center of mass 
+(CM) if it is in front or behind the CM along the x-axis of LVLH.  This is a positive acceleration 
+in the vehicle frame of reference. The particle will also gravitate towards the CM if it is to the 
+left or right of the CM (aligned with the y-axis of LVLH). The gravity gradient will tend to 
+gravitate a particle away from the CM if it is above or below the CM (along the z-axis of 
+LVLH).  [26]  
+ 
+E.2.2.2 Mapping Algorithm  
+The following is a list of required parameters that are necessary to map data to any given 
+location onboard the ISS. 
+ 
+• Location of MAMS sensor in Space Station Analysis (A) Coordinates 
+• Alternate locations to be mapped to in Space Station Analysis Coordinates 
+• Location of ISS center of mass in Space Station Analysis Coordinates 
+• Position of ISS in J2000 coordinate system. 
+• Quaternion representations for a yaw-pitch-roll sequence describing the orientation of the 
+LVLH coordinate system relative to the Space Station Analysis coordinate system. 
+• ISS body angular rates about the XA, YA and ZA-axes.  
+344

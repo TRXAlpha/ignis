@@ -1,0 +1,23 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+8
+IV. Results and Discussion 
+  
+ The initial experimental CO2 values for burn event 6 ranged from 7,375 to 7,973 ppm, giving an average of 7,597 
+ppm as given by Table 3. This average value was used for the initial value for the event 6 simulation, and then the 
+prediction curves were increased or decreased to match the initial experimental values. Figure 7 shows the model 
+prediction with the experimental results for the CO2 response of the six remote sensors. An excellent agreement is 
+realized in each case. There is slight over prediction during the increasing part of the curve in RS3 and a moderate 
+overprediction of this part of the curve in RS6, which are in the direct path of the flow from Saffire from the FP 
+standoff. While the model has solid trash and cargo lining the edges of the FP standoff, these solids are porous in 
+reality, allowing for more mixing of air and combustion products on the way to RS3 and RS6, which would bring the 
+peak of the combustion product response down.  
+ 
+ 
+Figure 7. Saffire V RS CO2 responses during one-sided PMMA burn test (event 6). 
+ 
+Figure 8 provides the temperature prediction during the one-sided PMMA burn. A convective heat transfer 
+coefficient of 150 W/m2-K was used for the surfaces, calibrated at RS3 from the cotton burn in the previous work13. 
+The model initial condition used the RS3 initial condition (24.1 °C) since that was the RS that had the largest response.  

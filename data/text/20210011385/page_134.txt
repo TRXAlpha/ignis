@@ -1,0 +1,37 @@
+ 
+NASA/TM-20210011385 
+126 
+The maximum burn time is assumed to be the 2.5-min growth phase plus the 28-min sample 
+regression phase, for a total of 30.5 min, as plotted in Figure D.5. The maximum temperatures reported in 
+the following information are for this maximum burn time. 
+The heat release in the early phase is dominated by the ignition energy. Once the combustion heat 
+release approaches steady state, the igniter is turned off and the flame is sustained. 
+The maximum temperature will occur in the exhaust hardware. This metal (primarily copper) 
+hardware is built to take the hot combustion gases and cool via conduction to the other hardware. The 
+maximum temperature if all of the combustion energy is only deposited in this heat sink under these 
+worst-case assumptions, is 434 °C, which is below the melting point of the lowest melting material 
+(aluminum at 660 °C) so this absolute worst-case maximum temperature will not cause damage to the 
+hardware. This maximum temperature will not be realized in actuality because the heat will quickly 
+dissipate to the main housing, which reaches a maximum temperature of 110 °C if all of the heat is 
+distributed only there. The experiment assembly dissipates the heat further, and the maximum 
+temperature of the entire experiment assembly is 62 °C.   
+During the 10-min cooldown for these thick samples, both the flow through the BASS duct and the 
+MSG air circulation fans help dissipate the heat. The MSG air cooling loop has a 125-W capacity, which 
+would dissipate the energy in 18 min, assuming no dissipation via conduction to the MSG hardware. 
+Based on this worst-case analysis, it is not expected that the hardware will suffer any damage from 
+the worst-case, largest flames that could be achieved with the BASS–II samples.     
+D.6 
+References 
+1. Ananth, Ramagopal; Ndubizu, Chuka C.; and Tatem, P.A.: Burning Rate Distributions for Boundary 
+Layer Flow Combustion of a PMMA Plate in Forced Flow. Combust. Flame, vol. 135, nos. 1–2, 
+2003, pp. 35–55. 
+2. Olson, S., et al.: Sounding Rocket Microgravity Experiments Elucidating Diffusive and Radiative 
+Transport Effects on Flame Spread Over Thermally Thick Solids. Combust. Sci. Technol., vol. 176, 
+2004, pp. 557–584.  
+3. Olson, Sandra, et al.: Pressure Response in Enclosures During and After Large-Scale Flame Spread:  
+Testing and Modeling. AIAA 2013–3412, 2013.   
+4. Olson, S.: Convective Heat Transfer Scaling of Ignition Delay and Burning Rate With Heat Flux and 
+Stretch Rate in the Equivalent Low Stretch Apparatus. Fire Saf. Sci., vol. 10, 2011, pp. 959–970. 
+ 
+ 
+ 

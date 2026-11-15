@@ -1,0 +1,22 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+11 
+ 
+ 
+Figure 10. Saffire V RS Temperature responses during structured PMMA burn test (event 8). 
+V. Conclusions 
+ 
+A FDS code was developed to determine the effects of the Saffire V PMMA burn events on the Cygnus vehicle. 
+Measurements of CO2 and temperature were taken throughout the vehicle, specifically at six RS locations. The 
+combustion product generation rates were calculated based on the scaled difference of RS3 and the SFU inlet CO2 
+readings and the stoichiometry of PMMA combustion, while the heat addition rate was calculated based on the inlet 
+and outlet Saffire temperatures. Parts of the model cargo were hollowed out in order for the model volume to match 
+the volume calculated from the CO2 release events. The convective heat transfer coefficient that was calibrated at RS3 
+for the Saffire V cotton burn in previous work was determined to be 150 W/m2-K and gave and excellent prediction 
+for both Saffire V  PMMA burn events. The model did an excellent job of predicting the CO2 and a reasonable job of 
+predicting temperature data. The effect a spacecraft fire has on a vehicle was highlighted by the Saffire data and model, 
+such as product mixing and heat transfer. These results demonstrate the feasibility of predicting the impact of a fire 
+on the habitability of an orbiting spacecraft. 
+ 

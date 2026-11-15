@@ -1,0 +1,79 @@
+ 
+NASA/TM-20210011385 
+125 
+The air carries 
+air
+Q
+T
+∆
+
+ = 121.5 J/min Δ°C. The heat exchanger components the hot exhaust gas 
+passes through can be found in Table D.1. These are connected to the main housing of the experiment 
+assembly, which is about 1,580 g of aluminum, and more remotely, the total mass of the Experiment 
+Assembly is 6.94 kg. 
+To determine the hardware temperature with time (t), we simply sum the mass (m) times the heat 
+capacity (cp) of each hardware component times a temperature change: 
+ 
+(
+)
+exhaust
+air
+p
+p
+Qt
+c UHW
+mc
+T
+
+
+=
+ρ
++
+∆
+
+
+∑
+
+ 
+where Q is the total heat release rate in watts and Texhaust is the temperature of the exhaust gas after 
+passing through each component and solve for ΔT. This is shown in Figure D.5 for just the exhaust 
+hardware, the main housing, and the total experiment assembly. 
+ 
+ 
+TABLE D.1.—HEAT EXCHANGER COMPONENTS 
+Hardware 
+Mass, 
+g 
+Material 
+Heat capacity,  
+kJ/kg°C 
+Melting temperature,  
+°C 
+Heat sink 
+250 
+Copper 
+0.4 
+1,085 
+Soot housing 
+58 
+Aluminum 
+0.9 
+660 
+Soot cover 
+32 
+Aluminum 
+0.9 
+660 
+Screens 
+50 
+Bronze 
+0.4 
+950 
+ 
+ 
+ 
+Figure D.5.—Estimated heat release rate and associated temperature 
+rise with time for various total mass quantities. 
+ 
+ 
+ 

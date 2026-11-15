@@ -1,0 +1,53 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+6 
+ISS Increment-4/5 Reduced Gravity Environment Description 
+The reduced gravity environment for Increment-4/5 was measured by the SAMS 
+accelerometer, the MAMS HiRAP accelerometer, and the MAMS OSS accelerometer.  In 
+order to readily observe the availability of acceleration data for a particular sensor for a 
+particular time period, Figure 6-1 through Figure 6-13 were created.  These figures show the 
+available acceleration data for the active SAMS SEs, the MAMS OSS sensor, and the 
+MAMS HiRAP sensor for the Increment-4/5 time span analyzed in this report.  They can be 
+accessed via the PIMS ftp site at:  
+ 
+ftp://pims.grc.nasa.gov/pad/ 
+ 
+6.1 
+Quasi-steady Microgravity Environment 
+The quasi-steady regime is comprised of accelerations with frequency content below 0.01 Hz 
+and magnitudes expected to be on the order of 2 µg or less.  These low-frequency 
+accelerations are associated with phenomena related to the orbital rate, primarily 
+aerodynamic drag.  However, gravity gradient and rotational effects may dominate in this 
+regime, depending on various conditions and an experiment’s location relative to the 
+vehicle's center of mass (CM).  Another source of acceleration to consider in this regime is 
+venting of air or water from the spacecraft.  This action results in a steady, low-level 
+propulsive force.  The different quasi-steady environment characteristics seen on the ISS for 
+Increment-4/5 are primarily related to altitude and attitude of the station.  Variation in 
+atmospheric density with time and altitude contribute to the differences in the aerodynamic 
+drag component.  Different attitudes will affect the drag component due to the variation of 
+the frontal cross-sectional area of the station with respect to the velocity vector. 
+ 
+6.1.1 
+Guidance, Navigation, and Control 
+The station’s GNC system includes both the United States (US) GNC System and the 
+functionally equivalent Russian Orbital Segment Motion Control System (ROS MCS) [6].  
+GNC performs six functions: guidance, state determination, attitude determination, pointing 
+and support, translational control, and attitude control.  Guidance tells the station which path 
+to follow, say, from point A to point B.  Navigation deals with state determination, attitude 
+determination, and pointing and support.  In brief, it provides answers to: where the station 
+is, how it is oriented, and where everything else is.  Control implements the path determined 
+by guidance.  Control of the station consists of translational control and attitude (or 
+rotational) control.  Translational maneuvers are used by the station to achieve a desired orbit 
+and to perform orbital debris avoidance maneuvers, whereas attitude control is used to 
+maintain the orientation of the station within a selected reference frame [6].  The US non-
+propulsive Attitude Control System (ACS) controls four CMGs located on the Z1 truss.  The 
+CMGs weigh about 300 kg. each [6] and are two degree-of freedom gyroscopes.  The 
+gimbals allow the US GNC software to reposition the direction of the rotor spin axis.  By 
+repositioning the axes of the four gyroscopes, the GNC software directs the CMGs to 
+generate torques that counter some of the station’s attitude disturbances.  Each CMG can 
+generate 256.9 Newton-meters (Nm) [6] of torque to counteract the disturbances due to 
+gravity gradient forces, aerodynamic drag, and so on. 
+31
+ 
+NASA/TM—2003-212460

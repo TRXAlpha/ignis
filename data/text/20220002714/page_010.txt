@@ -1,0 +1,59 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+10 
+11 shows the RS CO2 data for the PMMA burn. Similar to the SIBAL burn, the FFD mirrors RS1, RS4, and RS5 with 
+a steady climb and no overshoot.  
+Figure 12 gives the FFD temperature data for the PMMA burn. Very similar to the FFD temperature data for 
+SIBAL, there is a very weak response. Figure 13 displays the RS temperature data for the PMMA burn. Being a more 
+energetic fuel, the temperature increases are expectedly higher than the SIBAL burn. The PMMA model seemed to 
+make better predictions of the temperature, especially in the RS1 location. Similar to the SIBAL test, the FFD 
+temperature data shown in Figure 12 was very slow to respond. Since there was good response in other locations 
+where heat and species had to get transported, it is likely that the FFD temperature sensor was surrounded by material 
+that conducted a lot of heat away from the sensor.  
+In the SIBAL cases, when the SFU fan was turned down around the 200 s mark, the fire was nearly out, and hence 
+no change in the response for the CO2 or temperature was observed. However, in the PMMA case, turning down the 
+fan did not fully extinguish the fire, and a decrease in CO2 response can be seen in RS3, RS6 and RS1. While the 
+PMMA flame was put out by the reduced flow, the temperature was still hot enough to vaporize the fuel. Hence, when 
+the fan was turned back on, a deflagration wave ignited the flame again. RS3 and RS6 are in the flow path, therefore 
+changes in Saffire flow will affect those locations disproportionately. RS1 is likely the closest sensor location, so even 
+though it is out of the flow path, there is still some effect. The model predicted a larger dip than was realized by the 
+sensors.  
+ 
+The CO2 prediction in both burn events over-predicted the steady state CO2 value. A reason for the difference 
+could be the assumption of stoichiometric combustion. There is a region of the microgravity flame under an oxygen 
+shadow, cast by the upstream part of the flame, which prevents combustion from continuing9,15. Soot, CO, unburned 
+hydrocarbons could contribute to the differences between model and experiment.  Another reason for the discrepancy 
+is the free volume could be different than what the model and NG predicted. Calculations were performed after the 
+event 2 CO2 release that predicted a higher free volume10. Pressure, temperature, and concentration data from event 2 
+were used in two independent models, which applied different assumptions to the equations of state. The secondary 
+constant mass (SCM) model divides the total vehicle volume into the free volume, where the released gasses can mix, 
+and a sub-volume of constant mass that does not exchange with the free volume. This model was developed to reflect 
+cargo and trash that approximates sealed volumes where gas cannot escape. Similarly, the secondary constant volume 
+(SCV) model divides the total vehicle volume into two sub-volumes, but instead assumes that the two sub-volumes 
+do exchange gas such that both volumes remain constant. This model can be used to predict gases trapped between 
+bags. In the case of Saffire IV, the SCM and SCV model predicted the same volume of 18.7m3. 
+ 
+These SCM and SCV models were developed to reflect the potential behavior of trash within Cygnus: the SCM 
+model approximates sealed volumes where gases cannot escape from trash bags, and the SCV model approximates 
+gases trapped between bags. Because these models represent different potential trash packing scenarios, O2 release 
+conditions are considered based on both models and knowledge of how the vehicle trash was packed. While the model 
+in this work uses perfect rectangular boxes to represent cargo and trash, the real trash bags are amorphous in shape, 
+and the cargo is wrapped in a porous Nomex fabric that could also provide more air for mixing. This increase in 
+volume would explain why the CO2 in the experiment would reach a smaller steady state value than in the model. 
+ 
+V. Conclusions 
+ 
+A model using NIST’s FDS code was developed to determine the effects of the Saffire IV flame events on the 
+Cygnus vehicle. Measurements of CO2 and temperature were taken at six locations throughout the vehicle, in addition 
+to the FFD. The heat addition rate was calculated based on the inlet and outlet Saffire temperatures, and the product 
+generation rates were calculated based on the flame spread rate and the stoichiometry of combustion of the sample. 
+The model did a reasonable job of predicting the CO2 data, while over-predicting in some cases. This could be due to 
+a wide range of reasons, with one prevalent reason being the uncertainty in the vehicle free air volume. The model 
+predicted the temperature behavior well on the increasing part of the curve but also over-predicted the peak and 
+decreased faster than the experimental measurement curve. Both the model and the experimental data highlighted the 
+effect a spacecraft fire has on the vehicle, such as product mixing and heat transfer. Better capturing the free volume 
+of the vehicle could provide improvements to the predictive capabilities of the model, as well as changing the surface 
+boundary conditions to allow the participation of surface materials in the adsorption of heat.  
+ 

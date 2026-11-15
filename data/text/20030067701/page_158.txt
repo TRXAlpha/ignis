@@ -1,0 +1,36 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+−2
+−1.5
+−1
+−0.5
+0
+0.5
+1
+1.5
+2
+Y−Axis Acceleration (ûg)
+RMS = 0.7358 ûg
+Mean = −0.6006 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 17−Dec−2002,12:53:42.902
+Start GMT 16−September−2002, 259/16:00:01.018
+Step in YA−Axis
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+0.0625 sa/sec (0.01 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+Duration of 100 Hz Signal 
+Figure 6-71 Time Series of Step in YA-axis during 100 Hz Signal (OSSBTMF) 
+144
+NASA/TM—2003-212460

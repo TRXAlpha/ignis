@@ -1,0 +1,55 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+−3
+−2
+−1
+0
+1
+2
+3
+Z−Axis Acceleration (ûg)
+Mean = −0.2980 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 02−Dec−2002,10:52:57.419
+−3
+−2
+−1
+0
+1
+2
+3
+Y−Axis Acceleration (ûg)
+Mean = 0.0760 ûg
+−3
+−2
+−1
+0
+1
+2
+3
+X−Axis Acceleration (ûg)
+Mean = 1.9025 ûg
+Start GMT 22−February−2002, 053/22:30:02.183
++XPH +ZNN XPOP Attitude, á Angle = −54
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 4, Flight: UF1
+0.0625 sa/sec (1.00 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+CM Mean = −0.1990 ûg
+CM Mean = 0.0270 ûg
+CM Mean = 0.0476 ûg
+ 
+Figure 6-20 Time Series of XPOP Attitude during Crew Sleep, GMT 053 (OSSBTMF) 
+93
+ 
+NASA/TM—2003-212460

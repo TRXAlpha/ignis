@@ -1,0 +1,45 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+4.3 
+Space Acceleration Measurement System (SAMS) 
+SAMS measures accelerations caused by vehicle, crew, and experiment disturbances.  SAMS 
+measures the vibratory/transient accelerations which occur in the frequency range of 0.01 to 
+400 Hz.  For Increment-4, there were five SAMS sensor heads located in the EXPRESS 
+Racks 1 and 2.  However, prior to the visit of STS-110 to ISS, one head (121f06) was 
+deactivated and stowed.  For Increment-5, another head was deployed, 121f08, in support of 
+the Microgravity Science Glovebox (MSG) rack.  During Increment-5, 121f08 supported the 
+Solidification Using a Baffle in Sealed Ampoules (SUBSA) experiment, the Pore Formation 
+and Mobility During Controlled Directional Solidification in a Microgravity Environment 
+Investigation (PFMI), as well as preliminary characterization of the MSG rack.   
+ 
+The sensors measure the accelerations electronically and transmit the data to the Interim 
+Control Unit (ICU) located in the EXPRESS Rack drawer.  Data is collected from all the 
+sensors and downlinked to the Telescience Support Center (TSC) at GRC.  Additional SAMS 
+data flow details are provided in Appendix D.  The PIMS project processes, and displays the 
+data on the PIMS Web site for easy access by the microgravity scientific community at:  
+ 
+http://pims.grc.nasa.gov 
+ 
+4.4 
+SAMS Coordinate Systems 
+During Increment-4/5, SAMS Sensor Enclosure (SE) heads 121f02 through 121f06 and SE 
+121f08 were active (121f06 was deactivated and stowed prior to STS-110 visit to ISS during 
+Increment-4 and 121f08 was activated during Increment-5 – see section 4.3).  Each sensor 
+head has a defined coordinate system whose location and orientation is with respect to 
+USOS-ISS analysis coordinate system.  The origin is defined as the triaxial center point of 
+the three accelerometers that comprise the sensor head.  
+ 
+SAMS SE 121f02 was mounted in the SAMS ISIS drawer 1 in EXPRESS Rack 1.  SAMS 
+SE heads 121f03, 121f04 and 121f05 were installed in support of Active Rack Isolation 
+System ISS Characterization Experiment (ARIS-ICE) activities.  Head 121f03 was mounted 
+on the lower Z Panel assembly below EXPRESS Rack 2, head 121f04 was mounted on the 
+lower Z Panel assembly below EXPRESS Rack 1, and head 121f05 was mounted on a 
+bracket around the upper Z Panel light assembly of EXPRESS Rack 2.  SAMS SE 121f06 
+was mounted on the front panel of the EXPeriment of Physics of Colloids in Space 
+(EXPPCS) test section on EXPRESS Rack 2 and SAMS SE 121f08 was mounted inside the 
+MSG rack on the left back side of the ceiling plate. Table 4-2 summarizes the SAMS SE 
+coordinate systems. 
+18
+NASA/TM—2003-212460

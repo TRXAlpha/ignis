@@ -1,0 +1,43 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+x 10
+−4
+Σ Cumulative RMS (g RMS )
+Frequency (Hz)
+from: t:\pub\pad\, $Name:  $, 09−Aug−2002,13:06:49.064
+Start GMT 31−July−2002, 212/12:50:00.002
+Velo Exercise Period
+Span = 600.00 sec.
+Hanning, k = 18
+Sum
+Increment: 5, Flight: UF2
+sams2, 121f04 at LAB1O2, ER1, Lower Z Panel:[149.54 −40.54 135.25]
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+sams2, 121f03 at LAB1O1, ER2, Lower Z Panel:[191.54 −40.54 135.25]
+sams2, 121f02 at LAB1O2, ER1, Drawer 1:[128.73 −23.53 144.15]
+Figure 6-224 Cumulative RMS of VELO Exercise Period (121f02, 121f03, 121f04, 121f05) 
+292
+NASA/TM—2003-212460

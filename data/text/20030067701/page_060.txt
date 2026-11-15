@@ -1,0 +1,163 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE 6-10 EXCERPT OF "INC 4A AS-FLOWN ISS ATTITUDE TIMELINE (ATL)" 
+# 
+MANEUVER 
+START-STOP 
+GMT 
+BETA 
+ANGLE 
+ATTITUDE 
+NAME 
+REF 
+FRAME
+YAW 
+PITCH
+ROLL 
+EVENT 
+REMARKS 
+194 
+065/01:34 - 
+01:36 
+-38 
++ZLV 
++XVV 
+LVLH 
+359.5 
+357.9 
+0.0 
+Mnvr to UF1 Stage 
+Reboost 3 Attitude 
+Burn Start 03:37:12.00 
+Burn Stop 03:39:50.20 
+195 
+065/03:42 -  
+03:43 
+-37 
++ZLV 
++XVV 
+LVLH 
+359.5 
+357.9 
+0.0 
+Mnvr to UF1 Stage 
+Reboost 4 Attitude 
+Burn Start 04:29:07.00 
+Burn Stop 04:35:42.10 
+201 
+071/22:04 - 
+22:06 
+-5 
++ZLV 
++XVV 
+LVLH 
+359.5 
+357.9   
+0.0 
+Mnvr to UF1 Stage 
+Reboost 5 Attitude 
+Burn start: 00:04:10.00 
+Burn stop: 00:09:29.00 
+202 
+072/00:12 - 
+00:13 
+-4 
++ZLV 
++XVV 
+LVLH 
+359.5 
+357.9   
+0.0 
+Mnvr to UF1 Stage 
+Reboost 6 Attitude 
+Burn start: 00:52:49.00 
+Burn stop: 01:03:25.10 
+ 
+Considering the 1-hour period starting at GMT 06-March-2002, 065/03:08:30 for reboost 3, we 
+see a noticeable upward step of the acceleration vector magnitude in Figure 6-75 around the 30-
+minute mark.  The timestamps affiliated with the acceleration measurements indicate the reboost 
+3 burn went from GMT 06-March-2002, 065/03:37:23 to 03:40:03.  This lags the ATL time by 
+about 21 seconds.  A full accounting of this timing discrepancy is not presently known.  
+Likewise, around the 30-minute mark of Figure 6-76, the step up in acceleration magnitude for 
+reboost 4 is apparent.  The SAMS timestamps for this event show it lasted from GMT 06-March-
+2002, 065/04:29:36 to 04:36:22.  This time the start lags the ATL by 29 seconds and the duration 
+is nearly 9 seconds longer according to SAMS data.  The previous 2 figures show the 1-hour 
+span under consideration for SAMS sensor 121f03.  If we consider the same span for SAMS 
+sensor 121f02 and 121f04, then we can compare the median acceleration vector magnitudes for 
+times before/after the burn to those during the burn and get the results shown in Table 6-11. 
+ 
+TABLE 6-11 PROGRESS REBOOST MEDIAN ACCELERATION MAGNITUDE COMPARISON 
+Sensor 
+Cutoff 
+Frequency (Hz) 
+Location 
+State 
+Median Acceleration  
+Vector Magnitude (µg) 
+Delta Vector 
+Magnitude (µg) 
+Not During Burn 3 
+284 
+----- 
+121f02 
+25 
+LAB1O2, ER1, 
+Drawer 1 
+During Burn 3 
+745 
+461 
+Not During Burn 3 
+155 
+----- 
+121f03 
+25 
+LAB1O1, ER2, 
+Lower Z Panel 
+During Burn 3 
+769 
+614 
+Not During Burn 3 
+181 
+----- 
+121f04 
+25 
+LAB1O2, ER1, 
+Lower Z Panel 
+During Burn 3 
+747 
+566 
+Not During Burn 4 
+313 
+----- 
+121f02 
+25 
+LAB1O2, ER1, 
+Drawer 1 
+During Burn 4 
+770 
+457 
+Not During Burn 4 
+159 
+----- 
+121f03 
+25 
+LAB1O1, ER2, 
+Lower Z Panel 
+During Burn 4 
+758 
+599 
+Not During Burn 4 
+179 
+----- 
+121f04 
+25 
+LAB1O2, ER1, 
+Lower Z Panel 
+During Burn 4 
+737 
+558 
+ 
+46
+ 
+NASA/TM—2003-212460

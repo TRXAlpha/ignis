@@ -1,0 +1,182 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+
+
+
+
+
+
+
+
+
+
++
+−
++
+−
++
+−
+=
+)
+(
+)
+(
+)
+(
+2
+2
+2
+2
+2
+2
+y
+x
+z
+y
+z
+x
+z
+y
+z
+x
+y
+x
+z
+x
+y
+x
+z
+y
+A
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ω
+ 
+Equation E.2-15 
+ 
+8. Calculate rotational components in SSA coordinates (in micro-g): 
+ 
+Rotational component at MAMS location: 
+ 
+
+
+
+
+
+⋅
+⋅
+=
+e
+A
+MAMS
+A
+MAMS
+g
+x
+r
+A
+rot
+6
+10
+1
+v
+ 
+Equation E.2-16 
+ 
+ 
+Rotational component at NEW location: 
+ 
+
+
+
+
+
+⋅
+⋅
+=
+e
+A
+NEW
+A
+NEW
+g
+x
+r
+A
+rot
+6
+10
+1
+v
+ 
+Equation E.2-17 
+ 
+9. Complete acceleration mapping by subtracting MAMS components and adding NEW components: 
+ 
+A
+NEW
+A
+NEW
+A
+MAMS
+A
+MAMS
+A
+MAMS
+A
+NEW
+rot
+gg
+rot
+gg
+A
+A
++
++
+−
+−
+=
+ 
+Equation E.2-18 
+ 
+E.2.3. OSS Bias Measurements 
+MAMS OSS triaxial sensor bias is measured by a sequence of Bias Calibration Table Assembly 
+(BCTA) rotations.  A complete bias measurement for a given axis consists of 50 seconds of data 
+recorded in a normal orientation and 50 seconds of data recorded when the axis has been rotated 
+180 degrees to its opposite orientation.  The 50 seconds of data are processed by the MAMS 
+GSE with TMF algorithm applied to the resulting 500 points.  Four measurements are made, 
+corresponding with normal Xoss and Yoss, opposite Xoss and Yoss, opposite Xoss and normal Zoss, 
+and normal Xoss opposite Zoss.  The outputs for each axis and its opposite are summed and 
+divided by two to obtain the bias value.  The value is evaluated in relation to the collection of 
+past bias measurements for a given power cycle and is included in the new mean bias calculation 
+or ignored if determined to be out of range.  A disturbance in the microgravity environment is 
+sufficient to cause an up ranging in the OSS sensor, which, in turn, will automatically cause the 
+bias to fail.  Failed bias calibrations are not repeated. One of the initial goals during Increment-
+4/5 operations for MAMS was the characterization of the OSS sensor bias. To accomplish this, 
+bias measurements were initially performed once per hour, but have since been set to one every 
+six hours.   
+ 
+In the past, MAMS predecessor, the Orbital Acceleration Research Experiment (OARE), showed 
+a significant initial transient in the bias measurements that would take one to two days to settle 
+out.  This phenomenon was not observed in the MAMS OSS data suggesting that the transient 
+was an effect of launch.  However, there is a bias temperature dependency.  Ground testing 
+indicates a temperature bias coefficient of 0.05 µg / °C [31].  At power up, the MAMS 
+instrument takes roughly 4-6 hours to reach the nominal operating temperature of 40 °C, at 
+347
+NASA/TM—2003-212460

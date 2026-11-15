@@ -1,0 +1,45 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+10
+−11
+10
+−10
+10
+−9
+10
+−8
+10
+−7
+10
+−6
+10
+−5
+Σ PSD (g2/Hz)
+Frequency (Hz)
+from: t:\pub\pad\, $Name:  $, 10−Dec−2002,07:24:09.895
+Start GMT 28−October−2002, 301/10:51:02.146 (ARIS in HOLD Mode)
+Start GMT 28−October−2002, 301/15:02:55.904 (ARIS in ACTIVE Mode)
+Start GMT 29−October−2002, 302/09:54:05.964 (ARIS in IDLE Mode)
+Span = 600.00 sec.
+Hanning
+Sum
+Increment: 5, Flight: UF2
+P = 0.0%,  No = 0
+∆f = 0.122 Hz,  Nfft = 4096
+500.0 sa/sec (200.00 Hz)
+sams2, 121f03 at LAB1O1, ER2, Lower Z Panel:[191.54 −40.54 135.25]
+Figure 6-115 PSD of ARIS HOLD, ACTIVE, and IDLE Modes (121f03) 
+188
+NASA/TM—2003-212460

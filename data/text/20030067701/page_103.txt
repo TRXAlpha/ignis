@@ -1,0 +1,60 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+1
+2
+3
+4
+5
+6
+−2
+−1.5
+−1
+−0.5
+0
+0.5
+1
+1.5
+2
+Z−Axis Acceleration (ûg)
+Mean = −0.9278 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 02−Dec−2002,11:05:47.367
+−2
+−1.5
+−1
+−0.5
+0
+0.5
+1
+1.5
+2
+Y−Axis Acceleration (ûg)
+Mean = −0.3637 ûg
+−2
+−1.5
+−1
+−0.5
+0
+0.5
+1
+1.5
+2
+X−Axis Acceleration (ûg)
+Mean = −0.4315 ûg
+Start GMT 06−February−2002, 037/23:00:06.266
++ZLV +XVV Torque Equilibrium Attitude, á Angle = +15.6
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 4, Flight: UF1
+0.0625 sa/sec (1.00 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+CM Mean = −0.3474 ûg
+CM Mean = 0.0576 ûg
+CM Mean = 0.1136 ûg
+ 
+Figure 6-16 Time Series of TEA during Crew Sleep, GMT 037 (OSSBTMF) 
+89
+ 
+NASA/TM—2003-212460

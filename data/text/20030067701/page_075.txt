@@ -1,0 +1,112 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+The dates and times in Table 6-26 indicate when the software program controlling the PFMI 
+hardware and acquiring the data was started and stopped.  Actual sample processing (i.e., melting 
+and resolidification) is enveloped by these times with the exception of PFMI-11. For that 
+experiment the MSG power failed during the run, and so the sample solidified after the stop time 
+listed for that experiment.  PFMI activities outside these times include sample installation and 
+removal, hardware setup and takedown, and data transfers. The times below are for those PFMI 
+samples processed during Increment 5.  Other samples onboard are planned for processing 
+during either Increment 6 or 7. 
+ 
+TABLE 6-26 PFMI PROCESSING TIMELINE IN 2002 
+Sample 
+GMT Start 
+GMT Stop 
+Water Dopant 
+Nitrogen Bubbles 
+PFMI-12 
+262:14:02 
+263:10:59 
+No 
+No 
+PFMI-01 
+266:09:00 
+267:00:46 
+No 
+Yes 
+PFMI-07 
+273:11:50 
+273:23:22 
+Yes 
+No 
+PFMI-08 
+274:17:20 
+275:05:28 
+Yes 
+Yes 
+PFMI-05 
+279:12:11 
+280:00:03 
+Yes 
+No 
+PFMI-02 
+280:11:15 
+280:22:38 
+No 
+Yes 
+PFMI-10 
+300:11:55 
+301:00:12 
+Yes 
+No 
+PFMI-11 
+324:22:28 
+325:03:39 
+Yes 
+No 
+ 
+TABLE 6-27 PFMI SPECTRAL CHARACTERIZATION 
+Sample 
+GMT Start 
+GMT Stop 
+See 
+PFMI-12 
+19-Sep-02 14:02 
+20-Sep-02 10:59 
+Figure 6-186 through Figure 6-189 
+PFMI-01 
+23-Sep-02 09:00 
+24-Sep-02 00:46 
+Figure 6-190 through Figure 6-192 
+PFMI-07 
+30-Sep-02 11:50 
+30-Sep-02 23:22 
+Figure 6-193 through Figure 6-194 
+PFMI-08 
+01-Oct-02 17:20 
+02-Oct-02 05:281 
+Figure 6-195 
+PFMI-05 
+06-Oct-02 12:11 
+07-Oct-02 00:03 
+Figure 6-196 through Figure 6-198 
+PFMI-02 
+07-Oct-02 11:15 
+07-Oct-02 22:38 
+Figure 6-199 through Figure 6-200 
+PFMI-10 
+27-Oct-02 11:55 
+28-Oct-02 00:12 
+Figure 6-201 through Figure 6-203 
+PFMI-11 
+20-Nov-02 22:28 
+21-Nov-02 03:39 
+Figure 6-204 through Figure 6-205 
+ 
+Figure 6-206 shows cumulative percentage of occurrence for acceleration magnitudes on days 
+that PFMI was operating (for which there was SAMS data).  From this figure, note that the 
+median acceleration vector magnitude was about 0.19 mg, while over 95% of the recorded 
+acceleration magnitudes were below 0.64 mg. 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                 
+1 no SAMS data on GMT 02-Oct-02 
+61
+ 
+NASA/TM—2003-212460

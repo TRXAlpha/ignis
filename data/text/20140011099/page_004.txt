@@ -1,0 +1,13 @@
+Science Applications:  
+ 
+Understanding of long-duration microgravity solid material burning and extinction  
+Improved strategies for NASA spacecraft materials selection; link actual burn 
+behavior in microgravity to Earth-based selection methods 
+Improved combustion computational models used in the design of fire detection 
+and suppression systems in microgravity and on Earth  
+Validated detailed combustion models in the simpler flow environment of 
+microgravity build more complex combustion models needed to capture the 
+important details of flames burning in normal gravity; models have wide 
+applicability to the general understanding of many terrestrial combustion 
+problems. 
+ 

@@ -1,0 +1,86 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+disturbance above 80 Hz and two strong narrowband signals at about 94.8 and about 178.3 Hz 
+that accompany the HOLD mode draw particular attention.  This can be seen most clearly when 
+comparing the Power Spectral Density (PSD) traces shown in Figure 6-115.  These PSD traces 
+highlight key differences between the modes in a relative way, but to quantify the comparison in 
+an absolute sense, OTO quartile plots are more suitable.  Table 6-20 lists references to the plots 
+where the five markers in each OTO band are quartile statistics as follows: 
+ 
+1. top triangle: maximum value ("100th" percentile) 
+2. top of vertical line: 75th percentile  
+3. circle: 50th percentile (median) 
+4. bottom of vertical line: 25th percentile  
+5. bottom triangle: minimum value ("0th" percentile) 
+ 
+TABLE 6-20 OTO QUARTILE PLOTS OF ARIS MODES 
+Sensor 
+ARIS Mode 
+See 
+121f03 
+HOLD 
+Figure 6-116 
+121f04 
+HOLD 
+Figure 6-117 
+121f03 
+ACTIVE 
+Figure 6-118 
+121f04 
+ACTIVE 
+Figure 6-119 
+121f03 
+HOLD 
+Figure 6-120 
+121f04 
+HOLD 
+Figure 6-121 
+121f03 
+IDLE 
+Figure 6-122 
+121f04 
+IDLE 
+Figure 6-123 
+ 
+As another means of quantifying the effects of the ARIS mode transitions cited earlier in this 
+section, the peak acceleration, or maximum acceleration vector magnitude, was extracted from 
+the measurements made by SAMS sensors 121f03 and 121f04 for each of 3 transitions.  The 
+results are shown in Table 6-21. 
+ 
+TABLE 6-21 ARIS TRANSIENTS DURING MODE SWITCHES 
+Sensor 
+Mode Transition 
+Peak Acceleration (mg) 
+See 
+121f03 
+HOLD to ACTIVE 
+37.7 
+Figure 6-124 
+121f04 
+HOLD to ACTIVE 
+25.5 
+Figure 6-125 
+121f03 
+ACTIVE to HOLD 
+48.5 
+Figure 6-126 
+121f04 
+ACTIVE to HOLD 
+30.1 
+Figure 6-127 
+121f03 
+HOLD to IDLE 
+40.8 
+Figure 6-128 
+121f04 
+HOLD to IDLE 
+17.1 
+Figure 6-129 
+ 
+Since the SAMS 121f03 sensor was mounted on the Z-panel of the ARIS rack (ER2) it was 
+expected to register larger acceleration magnitudes compared to the 121f04 sensor mounted on 
+the adjacent ER1 during ARIS mode transitions. 
+51
+ 
+NASA/TM—2003-212460

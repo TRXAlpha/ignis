@@ -15,6 +15,22 @@ python -m venv .venv
 .venv/Scripts/python -m ignis_contract validate contract/examples/bundle.synthetic.json
 ```
 
+## Digitizing plots (WebPlotDigitizer 4)
+
+Most in-scope data is only in figures. A human clicks points; code does the rest and refuses anything it can't verify.
+
+1. Open https://apps.automeris.io/wpd4/ and load the pinned render, e.g. `data/figures/bass2_fig6_10.png`
+   (made by `python -m ingest.figures render <source_id> <pdf_page> --name <name> --clip x0,y0,x1,y1`).
+2. 2D (X-Y) plot. Calibrate X1, X2 on the x-axis and Y1, Y2 on the y-axis at labelled ticks; tick "log scale"
+   if the axis is log. Leave "assume axes are perfectly aligned" unticked. For a split axis (Saffire V Fig 10),
+   add one axes per side, named as in the spec (`concurrent`, `opposed`).
+3. One dataset per legend entry, named exactly as the series keys in `digitized/<name>.spec.json`.
+   Click marker centres. Series marked `skip` in the spec can be left out.
+4. File > Save Project > save as `digitized/<name>.tar` (keeps the image, so the hash is checked).
+5. `python -m ingest.build_bundle` converts and validates. It fails on: wrong image, values that don't match
+   WPD's own calibration, unmapped datasets, caption not on the cited page. Tilted calibration (> 3 px)
+   flags the points and keeps them out of the model.
+
 ## Data contract v1.0.0 (LOCKED)
 
 | File | What |

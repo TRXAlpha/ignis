@@ -1,0 +1,59 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+0.5
+1
+1.5
+2
+2.5
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+Z−Axis Acceleration (ûg)
+RMS = 1.5001 ûg
+Mean = −0.8008 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 01−Nov−2002,14:56:03.011
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+Y−Axis Acceleration (ûg)
+RMS = 1.2303 ûg
+Mean = −0.7762 ûg
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+X−Axis Acceleration (ûg)
+RMS = 0.8000 ûg
+Mean = −0.3261 ûg
+Start GMT 16−August−2002, 228/07:00:11.651
+Dual De−pressurizations for Russian EVA 7
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+0.0625 sa/sec (0.01 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+ 
+Figure 6-32 Time Series of DC-1 Dual-Depressurization (OSSBTMF) 
+105
+ 
+NASA/TM—2003-212460

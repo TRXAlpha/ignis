@@ -1,0 +1,208 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Appendix E. Data Analysis Techniques and Processing 
+E. Data Analysis Techniques and Processing 
+This section briefly describes some assumptions, considerations, and procedures used to acquire 
+and analyze the acceleration data measurements made by the two accelerometer systems: MAMS 
+and SAMS.   
+ 
+E.1. 
+Acceleration Data Coordinate Conversion 
+During the life of the Space Station, PIMS will frequently be asked to present acceleration data 
+in a coordinate system other than that of the sensor. The purpose of this section is to provide the 
+mathematical definitions and conventions PIMS will use when performing coordinate 
+transformations.   
+ 
+PIMS maintains a coordinate system database for use in PIMS real-time and offline software that 
+contains the information necessary to describe the location and orientation of various coordinate 
+systems relative to the Space Station Analysis Coordinate System.   Each entry for a coordinate 
+system contains the location of the origin in SSA coordinates (x,y,z) and the Euler angles (Y, P, 
+R) describing the orientation in a yaw-pitch-roll sequence of rotations with respect to the SSA 
+frame.   A positive rotation follows the right hand rule.  So, an observer standing at positive 
+infinity on the axis of rotation, looking towards the origin would see a counterclockwise rotation 
+of the other two axes. 
+ 
+Transformation of acceleration data from the SSA coordinate system to a NEW coordinate 
+system is accomplished by the formulation of a transformation matrix, M. 
+ 
+NEW
+NEW
+A
+P
+R
+Y
+R
+Y
+P
+R
+Y
+R
+Y
+P
+R
+P
+R
+Y
+R
+Y
+P
+R
+Y
+R
+Y
+P
+R
+P
+Y
+P
+Y
+P
+M
+
+
+
+
+
+
+
+
+
+
+⋅
+⋅
+−
+⋅
+⋅
+⋅
++
+⋅
+⋅
+⋅
+⋅
++
+⋅
+⋅
+⋅
+−
+⋅
+⋅
+−
+⋅
+⋅
+=
+cos
+cos
+cos
+sin
+sin
+sin
+cos
+sin
+sin
+cos
+sin
+cos
+cos
+sin
+cos
+cos
+sin
+sin
+sin
+sin
+cos
+cos
+sin
+sin
+sin
+sin
+cos
+cos
+cos
+ 
+Equation E.1-1 
+ 
+
+
+
+
+
+
+
+
+
+
+=
+33
+32
+31
+23
+22
+21
+13
+12
+11
+m
+m
+m
+m
+m
+m
+m
+m
+m
+M NEW
+A
+ 
+Equation E.1-2 
+ 
+A
+z
+y
+x
+NEW
+A
+NEW
+z
+y
+x
+a
+a
+a
+M
+a
+a
+a
+
+
+
+
+
+
+
+
+
+
+⋅
+=
+
+
+
+
+
+
+
+
+
+
+ 
+Equation E.1-3 
+ 
+Transformation of acceleration data from the NEW coordinate system to the SSA coordinate 
+system is accomplished by multiplying the vector by the transpose of matrix M**.  The transpose 
+of M,  MT, can be calculated by  swapping the rows and columns as depicted in Equation E.1-4. 
+                                                 
+** For orthogonal matrices, MT = M-1. 
+341
+NASA/TM—2003-212460

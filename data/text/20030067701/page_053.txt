@@ -1,0 +1,101 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+6.1.5 
+SUBSA and PFMI 
+Both the SUBSA and PFMI experiments operated in the MSG during the time frame covered by 
+this report.  More details about the PFMI and SUBSA investigations are provided in sections 
+6.2.3.3.1 and 6.2.3.3.2.  This section is a general characterization of the quasi-steady 
+environment for times when these experiments were operating.  The figures listed in Table 6-5 
+summarize the quasi-steady vector during time periods indicated by the SUBSA and PFMI 
+project teams. 
+ 
+TABLE 6-5 PLOTS FOR SUBSA AND PFMI RUNS 
+Sample 
+Start 
+Stop 
+Reference 
+SUBSA-06 
+192:08:49 
+193:01:16 
+Figure 6-34, Figure 6-35 
+SUBSA-10 
+204:10:16 
+205:08:21 
+Figure 6-36, Figure 6-37 
+SUBSA-02 
+213:17:33 
+214:08:04 
+Figure 6-38, Figure 6-39, Figure 6-40 
+SUBSA-04 
+219:17:24 
+220:07:39 
+Figure 6-41, Figure 6-42 
+SUBSA-07 
+222:08:36 
+223:00:04 
+Figure 6-43,Figure 6-44 ,Figure 6-45 
+SUBSA-08 
+247:08:45 
+248:08:32 
+Figure 6-46, Figure 6-47 
+SUBSA-09 
+250:08:30 
+251:07:54 
+Figure 6-48, Figure 6-49 
+SUBSA-01 
+253:10:30 
+254:02:30 
+Figure 6-50, Figure 6-51 
+PFMI-12 
+262:14:02 
+263:10:59 
+Figure 6-52, Figure 6-53 
+PFMI-01 
+266:09:00 
+267:00:46 
+Figure 6-54, Figure 6-55 
+PFMI-07 
+273:11:50 
+273:23:22 
+Figure 6-56, Figure 6-57 
+PFMI-08 
+274:17:20 
+275:05:28 
+Figure 6-58, Figure 6-59 
+PFMI-05 
+279:12:11 
+280:00:03 
+Figure 6-60, Figure 6-61 
+PFMI-02 
+280:11:15 
+280:22:38 
+Figure 6-62, Figure 6-63 
+PFMI-10 
+300:11:55 
+301:00:12 
+Figure 6-64, Figure 6-65 
+PFMI-11 
+324:22:28 
+325:03:39 
+Figure 6-66, Figure 6-67 
+ 
+The run of SUBSA-02, seen in Figure 6-38, is of particular note.  The run began at GMT 01-
+August-2002, 213/17:33, which was in the middle of a station reboost, which began at GMT 01-
+August-2002, 213/17:24. Figure 6-40 shows a close up of the entire reboost, with peaks as large 
+as 583 µg on the XA-axis and -44.8 µg on the ZA-axis. Note that the bounds of the Quasi-Steady 
+Three-dimensional Histogram (QTH) plot for this run (Figure 6-40.) are -4 µg to 4 µg, therefore 
+the effects of the reboost do not appear in the plot. 
+ 
+The QTH plot for SUBSA-07, Figure 6-45, also is of interest.  The X-Y panel shows that the 
+quasi-steady vector was concentrated in two spots, [XA, YA] = [-0.22, -0.24] µg and [XA, YA] = 
+[-0.22, -0.62] µg, as indicated by the red arrows.  This 0.38 µg difference in the YA-axis is due to 
+the unknown source described in 6.1.6.2. Figure 6-44 is a time series plot of the last few hours of 
+the run.  The stepping on the YA-axis is very apparent in this plot. 
+    
+ Table 6-6 and Table 6-7 contain mean values and magnitudes of the quasi-steady vector 
+obtained from QTH plots and significant effects seen from acceleration vs. time plots.  In 
+analysis of the quasi-steady data, MAMS OSS data was mathematically mapped to the SUBSA 
+39
+ 
+NASA/TM—2003-212460

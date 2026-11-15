@@ -1,0 +1,39 @@
+Sub Topic: Fire Research 
+ 
+4 
+the Mass Constituents Analyzer data to determine the oxygen sensor offset on a daily basis.  The 
+resolution of the CSA-CO was 0.1% O2.  Oxygen concentrations in the MSG working volume were 
+varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~14% O2 for very near-
+limit flames. The CO sensor is zero calibrated every 60 days, with a range of 0-1000 ppm and a 
+resolution of 1 ppm.    The CO2 sensor was within its calibration window, and had a range of 0-5% and 
+a resolution of 0.1% by volume of CO2.     The sensor data provided initial and final conditions for 
+repeated tests in a sealed working volume, and allowed us to determine when the working volume 
+needed to be purged.   
+To obtain the desired vitiated atmosphere, the MSG working volume was diluted using ISS nitrogen 
+(hose connecting BASS-II duct to back wall of MSG in Figure 1).  The nitrogen was regulated with a 
+small (< 0.5 LPM) MKS™ 179A mass flow meter and entered the flow duct through a small nozzle 
+just downstream of the fan in the test section.  The fan in the flow duct was turned to maximum (> 100 
+LPM) during the nitrogen flow to mix and blow the gas into the working volume and circulate it 
+continuously throughout the hours-long vitiation.    We developed a vitiation model [16] based on a 
+Continuously Stirred Tank Reactor (CSTR) model.  This perfect mixing approximation is valid as long 
+as the residence time (V/r = 500 min) is 5 to 10 times as long as the mixing time, which is easily the 
+case for the 100 LPM mixing rate  (250 L/100 LPM = 2.5 min mixing time).   The model was verified 
+using intermittent on-board oxygen sensor readings during an initial vitiation.   This model was then 
+used to determine the nitrogen flow rate and flow time to achieve the desired oxygen concentration of 
+the test based upon the initial oxygen concentration reading and operational crew time constraints.   
+3. Results and Discussion 
+To start each experiment, the astronaut ignited the rod at the stagnation tip and allowed the flame 
+to develop and heat the rod axially at a sufficient flow to sustain burning. The time needed to 
+adequately develop the solid-phase thermal profile is estimated to be when the Fourier number is 
+approximately equal to 0.3 (Fo= αt/R2~0.3) [17].  For a thermal diffusivity of PMMA=1.2x10-3 
+cm2/s, the times range from 25 s to 100 s for the different rod radii tested.   
+3.1 Quenching Extinction 
+For quenching tests, the flow was incrementally turned down and the flame allowed to stabilize at 
+the new flow condition for at least the solid-phase response time before changing it again.   
+Quenching was observed when the levels of forced flow and/or oxygen concentration became 
+sufficiently weak that the flame could no longer provide adequate heat flux to compensate for the 
+heat losses (conduction into the rod and radiation).  Quench test burns lasted up to 28 minutes.  Near 
+–quenching flames for each rod size are shown in Figure 2. 
+Figure 2:  Representative near-limit flames for each of the three rod sizes tested:  left to right R= 
+1/8” (0.318 cm), 3/16” (0.476 cm), and ¼” (0.635 cm).  Flow and oxygen are not the same, but each 
+represents the lowest oxygen test for that rod size. 

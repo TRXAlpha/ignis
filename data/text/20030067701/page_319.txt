@@ -1,0 +1,29 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+Acceleration Magnitude (mg)
+Cumulative Percentage of Occurrence
+TeSS Test, SAMS 121f05, GMT 091, Hours 02, 08, 10 (over 5.5 million pts considered)
+Figure 6-237 Cumulative Occurrence of Magnitudes of TeSS Impact Test (121f05) 
+305
+NASA/TM—2003-212460

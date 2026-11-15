@@ -1,0 +1,52 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+video data, an intake and an exhaust fans at the rear of the hardware to cool the 
+payload, and a process control module housing.  A photograph of the front of the 
+Baseline Chassis unit with the EXPRESS rack locker door open is shown in Figure 
+6-151.  Note the door on the left hand side of the unit.  The door is the opening 
+through which a PCM is inserted for a particular experiment to be conducted.  A close 
+up of the door is shown in Figure 6-152.  Note that there are two latches that require 
+opening for the door to unlatch, but these should not provide any significant vibrations 
+when they are unlatched.  A photograph of the interior of the PCM housing is shown 
+in Figure 6-153 and a 50-pin connector can be observed at the rear of the housing.  
+This connector mates with a connector at the end of the PCM (see Figure 6-154), 
+which supplies power and commands for the PCM to conduct experiments.  The 
+mating of this connector in some cases is a tight fit, particularly for new connectors.  
+This is a potential source of an acceleration pulse.    
+ 
+The right of the front panel of the chassis unit contains a slot for a PCMCIA card (see 
+Figure 6-155), which is inserted to run a specific program for a specific experiment.  I 
+don’t believe insertion of the card would produce a measurable acceleration.  There is 
+a video camera contained in the baseline chassis that is wired to a commercial tape 
+recorder (see the front view of the hardware in Figure 6-151) that records the 
+microcapsules being made.  In addition, the hardware has three fans to circulate air 
+from the EXPRESS Rack and to provide cooling air.  Figure 6-156 shows the rear of 
+the hardware.  The exhaust fans are shown on the left side of the hardware.  It should 
+be noted that only one of the exhaust fans is operating on ISS at the present time, the 
+second exhaust fan is a back up.  Any and/or all of the above elements represent 
+possible vibration sources that the SAMS could possibly have picked up during the 
+UF-2 mission. 
+ 
+Process Control Module 
+A photograph of the PCM hardware inside of the Aluminum outer shell is shown in 
+Figure 6-150.  A top-level assembly of the PCM is shown in Figure 6-157.  The 
+possible vibration sources within the PCM are two solenoid valves, which control the 
+flow of fluids to make the microcapsule samples, and two stepper motors, which are 
+geared to two plungers that move to complete the process of pumping the samples and 
+making the microcapsules.  Figure 6-158 shows a photograph of the inside hardware 
+showing the plungers and one of the solenoid valves.  Figure 6-159 shows a blow up 
+of the plunger area. 
+ 
+ 
+The MEPS located in locker #8 of ER1 (LAB1O2) is in close proximity to the SAMS 121f02 
+sensor in RTS drawer 1.  On GMT 18-July-2002 (day 199), the MEPS processed 5 samples and 
+on GMT 19-July-2002 (day 200), another 3 samples were processed.  The interval maximum plot 
+of Figure 6-160 shows transients including one that extends above 103 mg from a baseline of 
+about 3 mg for PCM insertion.  The SAMS 121f02 timestamps show this large pulse occurred at 
+GMT 18-July-2002, 199/15:12:29.  For a broader perspective, a 24-hour spectrogram that readily 
+shows these impulsive disturbances from PCM insertion was computed and displayed in Figure 
+6-161.  This figure shows clear indication of the 5 runs with the start/stop delimited by 2 
+58
+ 
+NASA/TM—2003-212460

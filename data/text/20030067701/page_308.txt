@@ -1,0 +1,47 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+−12
+−11
+−10
+−9
+−8
+−7
+−6
+Σ PSD Magnitude [log 10(g2/Hz)]
+hh:mm
+Frequency (Hz)
+Start GMT 06−Aug−2002,16:00:00
+from: t:\pub\pad\, $Name: pop3_06−17−2002 $, 24−Jun−2002,06:22:03.930
+SAMS 121f05
+Span = 8.00 hours
+Hanning, k = 2861
+Sum
+Increment: 5, Flight: UF2
+Temp. Res. = 8.192 sec, No = 0
+∆f = 0.122 Hz,  Nfft = 2048
+250.0 sa/sec (100.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+16:00
+17:00
+18:00
+19:00
+20:00
+21:00
+22:00
+23:00
+00:00
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+Figure 6-226 Spectrogram of VELO Exercise Period (121f05) 
+294
+NASA/TM—2003-212460

@@ -1,0 +1,198 @@
+NASA/TM-20210011385 
+105 
+A.2 
+Ferkul Test Matrix
+TABLE A.2.—FERKUL TEST MATRIX 
+Actual date (for video display date, 
+add 1 for Leap Year)a 
+Approximate start time and end time 
+(video display time) 
+As-run test number 
+Test number 
+Sample number 
+Material 
+Igniter 
+Flow restrictor 
+Sample distance 
+Fan display 
+Air display 
+Radiometer gain  
+(1,000; 250; 50; and 10) 
+Radiometer display 
+Gaseous nitrogen (GN2) 
+potentiometer 
+GN2 display 
+Filter (Y/N) 
+Release mode (CH/CL)b 
+Exposure mode (M/A)c 
+Exposure compensation (–#EV)d 
+Bracket frames and exposure bracket 
+(#F/1.0)e 
+Shutter speed, s 
+F stop 
+ISO 
+Shutter hold (s/cont)f 
+Secure digital (SD) card serial 
+number (S/N) 
+Total frames shot 
+Calibrated initial O2, vol%  
+Calibrated final O2, vol% 
+Initial O2, vol% 
+Final O2, vol% 
+Initial CO2, vol% 
+Final CO2, vol% 
+Initial CO, ppm 
+Final CO, ppm 
+Test observations and anomalies (ignited, spread, 
+extinguished, burn time, color, etc.) 
+2/19/2014 
+GMT 2014 
+050 
+13:59 to 
+14:00 
+14 
+F1 
+227 
+Nomex® 
+(DuPontTM) 
+natural 
+(Nomex III) 
+Integral 
+2 
+Concurrent 
+82 
+9.5 
+250 
+8 
+NA 
+N CL M 
+NA 
+off 
+1/10 
+F2 
+1,000 
+Cont 
+4 
+208 
+22.2 
+22.2 
+20.6 
+20.6 
+0.46 
+0.45 
+0 
+2 
+Ignited briefly but did not spread at all and extinguished 
+while the igniter was still on 
+7/28/2014 
+GMT 209 
+-------- 
+103 
+F2 
+228m 
+Nomex® 
+natural 
+(Nomex III) 
+Integral 
+2 
+Concurrent 
+92 
+15 
+250 
+NA 
+NA 
+N CL M 
+NA 
+NA 
+1/10 
+F2 
+1,000 
+Cont 
+8 
+72 
+21 
+21.0 
+21 
+21.0 
+0.37 
+0.39 
+105 
+82 
+Tried to ignite, flame would not sustain 
+8/1/14 GMT 
+213 
+8:58:25 
+115 
+F3 
+229m 
+Nomex® 
+natural 
+(Nomex III) 
+Integral 
+1 
+Concurrent 
+61 
+8 
+50 
+NA 
+NA 
+N CL 
+A 
+–3
+NA 
+------ 
+F2 
+1,000 
+Cont 
+13 
+46 
+21.7 
+0.9 
+20.8 
+------ 
+0.36 
+------ 
+2 
+--- 
+Brief ignition flash, no sustained flame; no postburn sensor 
+readings taken 
+6/24/2018 
+-------- 
+36 
+F4 
+39M 
+Japan Wax 
+candle 
+Integral 
+2 
+Stagnation 
+See notes 
+3 ignition 
+250 
+NA 
+NA 
+N CH A 
+–5
+9F 1.0 ------ 
+F2 
+1,600 
+7 s 
+3 
+270 
+17.4 
+17.4 
+16.2 
+16.2 
+0.38 
+0.48 
+22 
+56 
+Long ignition, but blue flame established at 3 cm/s, reduced 
+flow in increments: potentiometers 0.6, 0.4, 0.35, 0.32, 0.31, 
+0.305 flame extinguished 
+aGreenwich Mean Time. 
+bContinuous high (CH). Continuous low (CL). Shutter 
+cManual (M). Automatic (A). 
+dExposure value (#EV). 
+eNumber of frames and exposure increment (#F/1.0). 
+fContinuous (cont). Seconds (s). 

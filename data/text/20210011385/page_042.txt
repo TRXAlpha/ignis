@@ -1,0 +1,76 @@
+ 
+NASA/TM-20210011385 
+34 
+solid phase. The heat transfer to the virgin fuel, the driving mechanism of any flame spread (Ref. 5), 
+involves conduction through the gas (gy,cond), conduction through the solid (sx,cond), surface radiation 
+(s,rad), and gas radiation feedback (g,rad). Of these, forward conduction through the solid has been 
+shown to be relatively unimportant theoretically (Ref. 9) and experimentally (Ref. 13). It should be 
+mentioned that high lateral (perpendicular to spread rate) thermal conductivity, which can be different 
+from the forward conductivity in composite materials, has been experimentally (Ref. 14) shown to 
+influence the spread process strongly. In this analysis, however, the focus will be on homogeneous fuel 
+such as polymethylmethacrylate (PMMA) (C2H8O2). The radiative effects are also neglected (the rational 
+to be discussed later), leaving gas to solid conduction as the dominant heat transfer mode.   
+By comparing the forward heat conduction to the advection term at the flame leading edge, the 
+diffusion length scale can be established as Lg ≈ αg/Vg, where αg is the thermal diffusivity and Vg is the 
+opposing flow velocity. Therefore, the gas residence time, time spent by the oxidizer at the leading edge, 
+is given as 
+2
+,
+/
+/
+g res
+g
+g
+g
+g
+t
+L
+V
+V
+≈
+≈α
+. Assuming gas-phase conduction is the primary heating mechanism 
+of the preheat zone, Lg must also be the solid-phase heating length. The fuel residence time, time spent by 
+the fuel at the leading edge, is then given by ts,res ≈ Lg/Vf ≈ αg/(VgVf), where Vf is the flame spread rate, the 
+desired unknown.  
+The first assumption of the thermal regime is that 
+f
+g
+V
+V
+
+ so that 
+,
+,
+s res
+g res
+t
+t
+
+. The combustion 
+timescale in the gas phase, tg,chem, can be defined as the time necessary for the combustion reaction to be 
+complete at the flame leading edge raising the gas temperature to Tf,adb, the adiabatic flame temperature. 
+Similarly, the chemical timescale in the solid phase for the pyrolysis of fuel, ts,chem, can be defined as the 
+time necessary for the fuel temperature to reach a vaporization temperature Tv. By assuming 
+,
+,
+g res
+g chem
+t
+t
+
+ 
+and 
+,
+,
+,
+s res
+g chem
+t
+t
+
+ finite-rate kinetics (Ref. 12) in the gas and solid phases can be  
+ 
+Figure 2.14.—Various time t and length scales L at leading edge. In thermal regime, fuel preheating rad 
+and transverse conduction cond through gas g and solid s are of same order. Chemical (chem). Absolute 
+spread rate (Vf). Velocity of the oxidizer (Vg). 

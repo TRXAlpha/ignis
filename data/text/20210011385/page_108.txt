@@ -1,0 +1,26 @@
+ 
+NASA/TM-20210011385 
+100 
+For this thin fabric fuel in concurrent flow, flame spread rate is relatively large and the sample is not 
+long enough to fine tune the flow speed during the 1 to 2 min of experimental run time. It is difficult to 
+get to the desired near-quenching-limit state every time. Six quenching cases were achieved during 
+BASS–II for the SIBAL sample, four of them were for the 2.2-cm-width samples. Along with the near-
+limit stable flame data, we were able to draw part of the quenching branch of the flammability boundary 
+as shown in Figure 7.7 for 2.2-cm-wide SIBAL fabric. Quenching flow velocities were found to be 
+between 1 and 5 cm/s with higher velocity at lower O2 percentage. This trend of the quenching boundary 
+supports the prediction by earlier theoretical models (Refs. 1 and 8). Recently, a 3D transient numerical 
+model has been published (Ref. 6) that is suitable to simulate the present experiment. The model contains 
+many material properties including kinetic rate constants. The bottom part of the flammability boundary 
+that supports combustion in the lowest O2 environment is expected to be flat in this figure and cannot be 
+determined accurately by this velocity-varying procedure. Very near the boundary, ignition of the sample 
+is sporadic. A procedure with gradually decreasing O2 is needed. In addition, because of the limited 
+number of tests, the quenching limit for the 1.2-cm-wide sample was not resolved. But it can be seen that 
+the narrow sample has a smaller flammable domain, as expected.  
+ 
+ 
+ 
+Figure 7.7.—Flammability map for Solid Inflammability Boundary at Low Speeds (SIBAL) 
+fabric in concurrent flow in microgravity. Dotted line marks experimental quenching 
+boundary for 2.2-cm-wide sample. Flow speed (U0). 
+ 
+ 

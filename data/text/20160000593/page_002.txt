@@ -1,0 +1,15 @@
+Objectives
+― Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in 
+low-velocity forced flows in microgravity.
+― Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method, 
+ground-based microgravity tests, and actual material flammability in microgravity. 
+― Provide SoFIE PIs with preliminary data to refine Science Requirements.
+― Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs, 
+cylinders, and spherical sections.  
+― The primary variables include:
+•
+Forced flow velocity (speed and direction)
+•
+Ambient oxygen concentration  (via working volume nitrogen vitiation)
+•
+Sample geometry (rods, spherical section, slabs, films, and fabric sheets)

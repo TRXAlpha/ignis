@@ -1,0 +1,29 @@
+ 
+NASA/TM-20210011385 
+79 
+6.1.4.6 Gas Sensor Results  
+The initial and final O2, CO2, and CO readings were recorded for each test. Although flow and O2 
+concentrations do change within each test, the averages still provide insight into the overall processes. 
+The O2 consumed can be compared to the CO2 generated, as shown in Figure 6.13. While there is scatter 
+in the data, the linear trend agrees very well with the stoichiometric ratio for PMMA (6 O2 to 5 CO2). This 
+indicates that the O2 was burning primarily to the expected CO2 and water. 
+The CO produced is plotted against CO2 in Figure 6.14. There is a fairly linear relationship between 
+the two, with approximately 600 ppm of CO produced for every 1 vol% of CO2 produced. The CO to CO2 
+ratio is plotted against the initial O2 concentration in Figure 6.15, and shows that as the initial O2 
+concentration decreases, the CO to CO2 ratio increases. These values are an order of magnitude greater 
+than the 1g values found in the cone calorimeter for PMMA (Ref. 24), indicating very inefficient burning 
+at low ambient O2 levels in microgravity. 
+The O2 consumed and the fuel burned were used to estimate the global stoichiometry for each test. 
+The amount of rod burned away was measured from the still images in each test. The bubble layer effect 
+on density was not accounted for, so there is scatter in the data most likely due to this factor. The O2 
+consumed was calculated by using the MSG free work volume of 250 L (Ref. 14) and the ideal gas law. 
+The fuel to oxidizer molar ratio is divided by the stoichiometric ratio (1 monomer unit per 6 O2). The 
+resulting global stoichiometric ratios for each test are shown in Figure 6.16. At higher O2 concentrations, 
+the flames are nearly stoichiometric. At lower O2 concentrations, the global equivalence ratio increases. 
+This indicates that the limiting reactant is the O2 rather than the fuel. It is likely that at the low O2 levels 
+(and low flow rates) that there is significant fuel leakage out the open back of the flame. This is consistent 
+with the near-extinction oscillation mechanism of fuel leakage downstream, mixing, and flame flashback 
+through the premixed region. This is also consistent with the CO to CO2 ratio trend of inefficient burning.  
+ 
+Figure 6.14.—CO generated compared to CO2 generated. 
+ 

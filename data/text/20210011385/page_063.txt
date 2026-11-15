@@ -1,0 +1,47 @@
+ 
+NASA/TM-20210011385 
+55 
+5.0 
+Individual Principal Investigator Report: Miller and Wichman 
+5.1 
+Narrow Channel Apparatus as Microgravity Flame Spread Surrogate   
+Combustion of clear cast polymethylmethacrylate (PMMA) samples 10 cm long by either 1 or 2 cm 
+wide with thicknesses ranging from 1 to 5 mm was investigated in opposed flow. Tests included both 
+one-sided and two-sided burns. The samples were burned in a flow duct within the Microgravity Science 
+Glovebox (MSG) on the International Space Station (ISS) to ensure true microgravity conditions. The 
+experiment took place in opposed flow with a varying O2 concentration (uncontrolled) and varying flow 
+velocities (controlled). Flames are recorded on two cameras and later tracked to determine spread rate.  
+Assuming a linear profile between O2 concentration at the start and the end of each test, we made 
+graphs of O2 concentration versus time for each test. From these, we created flammability maps showing 
+the flame behavior at different O2 concentrations and flow velocities. Additionally, we have conducted an 
+extinction analysis, plotting the O2 concentration against the flow velocity at the time of extinction with 
+respect to type of test (one sided or two sided). Currently we are modeling combustion of flat PMMA 
+samples in microgravity using Fire Dynamic Simulator (FDS; v5.5.3; National Institute of Standards and 
+Technology (NIST)). The entire modeling for Burning and Suppression of Solids—II (BASS–II) is 
+performed in Direct Numerical Simulation (DNS) mode because of the laminar conditions and small 
+domain. The model employs the same test sample and MSG geometry as the experiment. The model 
+predicts a higher flame spread rate than that observed in experiments. So, we look to modify the chemical 
+kinetics and materials properties to improve the model. Also, we plan to do a domain study and grid 
+sensitivity analysis in future.   
+5.2 
+Introduction  
+The NASA Burning and Suppression of Solids—II (BASS–II) tests examine the combustion of 
+different solid materials and geometries in microgravity. While flames in microgravity are driven by 
+diffusion and weak advection due to ventilation systems and crew movement, the current NASA 
+spacecraft material selection test method (NASA–STD–6001 Test 1) (Ref. 1) is driven by buoyant forces 
+since gravity is present. So, the BASS–II results will be used in comparison with ground-based 
+experimental setups aimed at replacing NASA’s current test method for screening materials used onboard 
+spacecraft. The data gathered will also help us understand and know more about behavior of fires in space 
+so that space travel can be made safer in the future. The BASS–II experiments have provided us with an 
+extensive thick fuel microgravity database that did not exist previously. Previously, thick-fuel true 
+microgravity data was obtained by Olson and others in a study involving Sounding Rocket experiments 
+(Ref. 2). The study comprised a series of combustion experiments on polymethylmethacrylate (PMMA) at 
+very low velocity opposed flow and external radiant flux.   
+The institutions taking part in BASS–II operations are Case Western Reserve University; University 
+of California, Berkeley; NASA Glenn Research Center; San Diego State University; and Michigan State 
+University (Ref. 3). There are three categories of samples: flat samples, rod samples, and a section of a 
+large solid sphere. The flat sample materials will include acrylic films and sheets of different thicknesses, 
+and a cotton-fiberglass fabric blend Solid Inflammability Boundary at Low-Speeds (SIBAL) fuel. The rod 
+samples are made of black or clear acrylic and will provide solid fuel regression rates and extinction 
+limits for both opposed and concurrent flow. The large solid spherical section, also made of acrylic, will 
+be used to study ignition of thick materials and flame growth over the thick material.    

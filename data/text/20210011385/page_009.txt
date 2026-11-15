@@ -1,0 +1,39 @@
+NASA/TM-20210011385 
+1 
+Burning and Suppression of Solids—II (BASS–II) 
+Summary Report 
+Sandra L. Olson 
+National Aeronautics and Space Administration 
+Glenn Research Center 
+Cleveland, Ohio 44135 
+Paul V. Ferkul 
+Universities Space Research Association 
+Cleveland, Ohio 44135 
+Subrata Bhattacharjee and Fletcher J. Miller 
+San Diego State University 
+San Diego, California 92182 
+Carlos Fernandez-Pello and Shmuel Link 
+University of California, Berkeley 
+Berkeley, California 94720 
+James S. T’ien 
+Case Western Reserve University 
+Cleveland, Ohio 44106 
+Indrek Wichman 
+Michigan State University 
+East Lansing, Michigan 48824 
+Summary 
+The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that 
+provides containment for small scale burning of solid samples within the Microgravity Science Glovebox 
+(MSG) aboard the International Space Station (ISS). A video camera with a data overlay and a 35-mm 
+still camera record the combustion events. The controls (ignition, fan speed, etc.) are operated by an 
+astronaut while the principal investigator team monitors the experiment from the ground and 
+communicates directly with the astronaut. For the first time on ISS, BASS–II utilized MSG working 
+volume dilution with gaseous N2. We developed a perfectly stirred reactor model to determine the N2 flow 
+time and flow rate to obtain the desired reduced O2 concentration in the working volume for each test. We 
+calibrated the model with the Compound Specific Analyzer-Combustion Products (CSA-CP) O2 readings 
+offset using the Major Constituents Analyzer reading of the ISS ambient atmosphere data for that day. 
+This worked out extremely well for operations, and added a new vital variable, ambient O2 level, to our 
+test matrices. The main variables tested in BASS–II were ambient O2 concentration, ventilation flow 
+velocity, and fuel type, thickness, and geometry. BASS–II also utilized the onboard CSA-CP for O2 and 
+CO readings, and the Carbon Dioxide Monitor for CO2 readings before and after each test. Readings from 
+these sensors allow us to evaluate the completeness of the combustion. The O2 and CO2 readings before 

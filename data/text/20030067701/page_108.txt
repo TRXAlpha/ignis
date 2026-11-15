@@ -1,0 +1,42 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+Acceleration Vector Magnitude  (µg)
+RMS = 2.0464 µg
+Mean = 2.0435 µg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 25−Apr−2002,12:41:01.750
+Start GMT 22−February−2002, 053/22:30:02.183
++XPH +ZNN XPOP Attitude, β Angle = −54
+Vector Magnitude
+Increment: 4, Flight: UF1
+0.0625 sa/sec (1.00 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+CM Mean = 0.4213 µg
+CM RMS = 0.4483 µg
+ 
+Figure 6-21 Acceleration Magnitude of XPOP Attitude during Crew Sleep, GMT 053 
+(OSSBTMF) 
+Figure 6-21 Acceleration Magnitude of XPOP Attitude during Crew Sleep, GMT 053 (OSSBTMF) 
+94
+ 
+NASA/TM—2003-212460

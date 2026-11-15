@@ -1,0 +1,96 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE 6-30 RMS ACCELERATION COMPARISON BELOW 5 HZ FOR SLEEP/PAO EVENT/WAKE 
+PERIODS 
+SAMS 
+Crew Activity Mean RMS 
+Acceleration (µg)  /  Duration (minutes) 
+GMT Date 
+Sensor 
+Location 
+Sleep 
+PAO Event 
+Wake 
+08-Jul-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+9.0 / 230 
+17.8 / 18 
+42.2 / 951 
+08-Jul-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+4.6 / 230 
+16.4 / 18 
+34.9 / 951 
+09-Jul-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+6.3 / 335 
+19.0 / 13 
+39.0 / 1060 
+09-Jul-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+5.2 / 335 
+16.1 / 13 
+30.2 / 1060 
+16-Jul-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+5.3 / 359 
+25.0 / 10 
+40.7 / 941 
+16-Jul-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+5.0 / 359 
+23.2 / 10 
+34.5 / 941 
+08-Sep-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+6.9 / 280 
+17.7 / 12 
+38.2 / 1006 
+08-Sep-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+5.0 / 280 
+14.4 / 12 
+32.0 / 1006 
+10-Sep-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+6.8 / 315 
+17.6 / 20 
+44.5 / 850 
+10-Sep-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+5.3 / 315 
+15.9 / 20 
+37.1 / 850 
+07-Oct-02 
+121f02 
+LAB1O2, ER1, Drawer 1 
+8.7 / 357 
+21.3 / 10 
+60.0 / 902 
+07-Oct-02 
+121f04 
+LAB1O2, ER1, Lower Z Panel 
+6.4 / 357 
+20.3 / 10 
+37.3 / 902 
+ 
+This table shows that the mean RMS acceleration values during PAO events are roughly midway 
+between the crew sleep and crew wake categories.  Note the PAO durations may be enough time 
+for investigators to be opportunistic about scheduling certain autonomous or ground-commanded 
+aspects of their experiment to be performed during this time, particularly for those sensitive 
+below 5 Hz.  
+ 
+73
+ 
+NASA/TM—2003-212460

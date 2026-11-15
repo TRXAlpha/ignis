@@ -1,0 +1,50 @@
+3 
+International Conference on Environmental Systems 
+ 
+unknown, the first test sequence on each flight involved the release of a known quantity of CO2. By measuring the 
+pressure change and tracking the concentration on the remote sensors, the free volume of the spacecraft could be 
+determined. A schematic of the SFU is presented in Figure 2. The flow was driven by a fan at the inlet controlled by 
+the output of a rotary anemometer. In this manner the flow velocity at the entrance of the duct was held constant 
+throughout the test. The CO2, CO, and O2 concentrations were measured in the inlet and outlet ducts. Flow 
+straighteners at each end of the 30 cm high, 45 cm wide and 109 cm long duct assured flat, straight, flow profiles. The 
+flow uniformity was verified by smoke traces produced by rosin beads on a heated wire at the beginning and the end 
+of the test sequence.  
+  
+ 
+ 
+                       
+ 
+Figure 1. Depiction of the Cygnus spacecraft with SAFFIRE installed. The SAFFIRE Flow Unit (A) and 
+the Far Field Diagnostics (B) are depicted in the vehicle. On the left, there is no cargo installed, and the right 
+has a representation of the descent configuration with the spacecraft loaded with trash. The green dots on the 
+left are the zenith and nadir remote sensors, and the red dots are the remote sensors in the standoffs (the 
+triangular spaces running the length of the spacecraft at the ends of each row of cargo bags). 
+A
+B
+Nadir/End Cone
+Hatch/Zenith
+ 
+Figure 2. Schematic of SAFFIRE Flow Unit (SFU). Flow enters at the bottom right and is distributed by a 
+plenum on the left before it enters the test section. At the outlet of the test section, (on the right) it enters the outlet 
+duct where gas species measurements are taken that are compared to the inlet.  
+Fan
+Inlet
+Outlet
+Cameras (4)
+In Situ Temperature (6)
+Temperature
+Temperature
+O2 Injection
+Humidity 
+Sensor
+CO CO2
+O2
+Rotary 
+Anemometer
+CO
+CO2 O2
+CO2 & 
+Acid Gas 
+Injection
+Temperature
+Radiometers (4)

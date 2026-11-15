@@ -1,0 +1,69 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE 6-4 PIMS CONSOLE LOG DURING US LAB WATER DUMP  
+12-Jan-2002 14:55:22 
+In dump attitude 
+EK
+12-Jan-2002 15:07:42 
+Higher dump rate than anticipated (higher than last time) 
+EK
+12-Jan-2002 15:08:12 
+Good flow out the PORT vent. 
+EK
+12-Jan-2002 15:10:45 
+ECLSS says dump rate within spec 
+EK
+12-Jan-2002 15:19:52 
+Rate 3 times faster than what they expected 
+EK
+12-Jan-2002 15:40:56 
+One of the crew (Dan?), is doing a "bear hug" on the CWC(?) to help venting.  
+Sounds like he basically squeezes the water bottle. 
+EK
+12-Jan-2002 15:52:10 
+At one point it looked as though the tank was not venting (volume holding 
+steady). Thought to be because of backflow into the tank. They now see the tank 
+quantity decreasing.   
+EK
+12-Jan-2002 16:00:17 
+CWC is almost empty 
+EK
+12-Jan-2002 16:08:40 
+Dump is being stopped 
+EK
+ 
+6.1.4.2 
+DC-1 Depressurization 
+Beginning at GMT 16-August-2002, 228/07:20, the Pirs docking compartment (DC-1) was 
+depressurized in preparation for Russian Extravehicular Activity-7 (EVA-7).  An event 
+occurred that allowed for definitive identification of the effects of the DC-1 depressurization 
+on the quasi-steady environment.  The following excerpt is from the “ISS On-Orbit Status” 
+for August 16, 2002 found on the Microgravity Research Program Office’s website (times 
+changed to GMT): 
+ 
+After Valery Korzun and Peggy Whitson (on her first EVA), on the original schedule, had donned their 
+Orlans (at 6:00 am GMT), started DC-1 airlock depressurization, completed the 30-min. O2 prebreathe 
+for denitrogenation (to prevent "bends"), and disconnected umbilicals, going to internal power (at 
+07:41 GMT) and Orlan-stored oxygen, Caution & Warning (C&W) alarms in both suits indicated that 
+the crucial flow control valves of the primary O2 tanks in both Orlan backpacks were inadvertently 
+misconfigured. DC-1 had to be repressed (partially, to 550 mmHg; nominal being 760 mmHg), to 
+allow Korzun to egress his Orlan, configure the O2 bottle valves in both suit backpacks, and then 
+repeat the process of suit ingress, depress, prebreathe, etc. 
+ 
+The effects of the dual-depressurization can be seen in Figure 6-32 and Figure 6-33, 
+predominantly on the XA-axis.  A final correlation is achieved in Figure 6-33 by overlaying 
+the XA-axis accelerations with the compartment pressure data obtained from ODRC.  The 
+first venting from 760 mmHg to approximately 570 mmHg is seen at the 0.45 hour mark in 
+Figure 6-33 as a –3.59 µg spike.  Another peak of -4.04 µg is apparent at the 0.95 hour mark.  
+The compartment pressure data here is missing, but a slight drop can be seen, suggesting that 
+a repressurization had taken place during the data outage. The first large drop in pressure 
+from 570 mmHg to 28 mmHg occurs 1.4 hours into the plot and is accompanied by a -4.48 
+µg peak.  The second large depressurization occurs at 1 hour and 36 minutes later at the 2.0 
+hour mark on the plot as a –5.2 µg peak on the XA-axis.  The YA and ZA-axes show peaks 
+during the two depressurizations varying between –4 µg and 2 µg.  One item of interest is 
+that the DC-1 valve (RSA-10) is T-shaped, which is a designed to eliminate propulsive 
+effects.  The quasi-steady data shows that some propulsive effect is seen.
+38
+ 
+NASA/TM—2003-212460

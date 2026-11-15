@@ -1,0 +1,86 @@
+8 
+International Conference on Environmental Systems 
+ 
+ 
+The SAFFIRE configuration in the spacecraft had no method to remove CO and only limited capacity to remove 
+CO2. As a result, for all but the first test, there was an existing baseline level of these gases. The data are reported in 
+Table 1 as the increase in CO and CO2 for each test rather than the absolute value.  The  1-hour limit for CO2 and the 
+24-hour SMAC for CO were exceeded by the maximum increase for both PMMA tests on SAFFIRE VI. In addition, 
+the 24-hour SMAC for CO was exceeded on SAFFIRE IV for PMMA and for SIBAL on SAFFIRE VI. The high 
+levels for the SAFFIRE VI PMMA and SIBAL cases were likely due to the higher oxygen concentrations for those 
+tests. 
+Instead of the peak value, the more important measure is the concentration of hazardous products at the time the 
+fire is detected. Ideally, the fire detection threshold should be determined  such that, for the expected possible fires in 
+the spacecraft, the detection system will detect the fire in time for the crew to effectively respond to the fire. To 
+ 
+Figure 7. Flame length, FFD Ionization smoke detector signal and the total particulate matter  (PM total) 
+measured by the DustTrak DRX for the SAFFIRE VI 2-sided sample.  The ionization chamber voltage 
+decreases as aerosol concentration increases. 
+0
+1
+2
+3
+4
+5
+6
+7
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+500
+700
+900
+1100
+1300
+1500
+Ion voltage (V) and PM (mg/m3)
+Flame Length (mm)
+Time (s)
+Flame Length
+Ion
+PM total
+ 
+Figure 8. Heat release rate and species production/consumption during SAFFIRE VI 2-sided PMMA 
+sample. 
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+0.45
+0.50
+500
+700
+900
+1100
+1300
+1500
+Heat Release Rate(W) and Radiometer (x10) 
+(mW/cm2)
+O2 and CO2 mass change rate (mg/s)
+Time (s)
+O₂ consumed (mg/s)
+CO₂ produced (mg/s)
+Radiometer #4 (x10)
+Heat Release Rate

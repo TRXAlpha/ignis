@@ -1,0 +1,49 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+5 
+ISS Facilities during Increment-4/5 
+5.1 
+Increment-4 Facilities 
+For Increment-4, one facility was added to the ISS: the Advanced Thermoelectric 
+Refrigerator/Freezer (ARCTIC).  ARCTIC-1 is the first permanent sample 
+refrigerator/freezer installed on ISS and is the main cold storage facility until larger, more 
+complex facilities, such as the Minus Eighty-degree-Celsius Freezer for ISS (MELFI) and the 
+Refrigerator/Freezer Rack, become available.  The unit provides cold storage for a range of 
+perishable biomaterials and reagents [18].  ARCTIC-1 is installed in EXPRESS Rack 4. 
+Research facilities that were launched to the ISS during prior increments, such as EXPRESS 
+Racks 1, 2, 4 and 5, the Cellular Biotechnology Operations Support System (CBOSS), and 
+Human Research Facility (HRF) continue to support existing and new experiments. Utilities 
+provided to experiments by the four EXPRESS racks currently on the ISS include power, 
+fluids, gasses, cooling, and data management support.  Over the life of the Space Station, 
+these facilities will support a wide range of experiments [19].  During Increment-4, the PIMS 
+project supported EXPRESS Racks 1 and 2.  
+ 
+The EXPRESS Rack [20] is a standardized payload rack system that transports, stores, and 
+supports experiments aboard ISS.  The EXPRESS Rack system supports science payloads in 
+several disciplines, including biology, chemistry, physics, ecology, and medicine.  The 
+EXPRESS Rack with its standardized interfaces enables quick, simple integration of multiple 
+payloads aboard the station.  Each EXPRESS Rack is housed in an International Standard 
+Payload Rack – a refrigerator-size container that acts as the EXPRESS Rack’s exterior 
+shell—and can be divided into segments.  The EXPRESS Racks [21] have eight middeck 
+locker locations and two drawer locations each (Figure 5-1, Figure 5-2).  Figure 5-3 
+illustrates the relative locations of each EXPRESS rack within the US laboratory volume. 
+ 
+5.2 
+Increment-5 Facilities 
+For Increment-5, three facilities were added to the growing list of facilities on ISS: ARCTIC-
+2, EXPRESS Rack 3, and MSG.  With the arrival of ARCTIC-2 to the ISS, the two units 
+(ARCTIC 1 and 2) provide a total of 38 liters of minus 20-degree cold aboard stowage [22].  
+Like EXPRESS Rack 2, EXPRESS Rack 3 is equipped with the Active Rack Isolation 
+System (ARIS)--- a system that isolates the entire rack (and all the experiments being 
+performed inside that specific rack) within a certain frequency band from vibrational 
+disturbances present within the ISS microgravity environment.  EXPRESS Rack 3 weighs 
+1,345 pounds. The empty weight of each EXPRESS rack is about 785 pounds [13].  The 
+MSG—a sealed container with built-in gloves—provides an enclosed work space for 
+investigations conducted in the unique, low-gravity environment created as ISS orbits earth 
+[23].  MSG is designed to accommodate small and medium-sized investigations from many 
+disciplines including biotechnology, combustion science, fluid physics, fundamental physics 
+and materials science.  The part of the unit that holds experiment equipment is called the 
+work volume and has a usable volume of about 67 gallons (255 liters) [23].  An airlock under 
+20
+NASA/TM—2003-212460

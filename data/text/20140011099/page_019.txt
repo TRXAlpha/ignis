@@ -1,0 +1,13 @@
+Digital still camera images showing a flame burning a 2-cm wide cotton-fiberglass 
+fabric in opposed flow.  Images are taken every 1.25 sec (starting at top and moving 
+from left to right). The flow is decreased in discrete steps from 10 cm/s all the way 
+down to about 1 cm/s.  The flame response to flow changes is very rapid, and the flow 
+effects on the flame and its spread rate are dramatic.  Total burn time is 90 sec.  Flow 
+changes are indicated by numbers. 
+ Flow 
+6 cm/s 
+4 cm/s 
+2 cm/s 
+10 cm/s 
+1.5 cm/s 
+1 cm/s 

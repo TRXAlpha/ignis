@@ -1,0 +1,43 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+10
+20
+30
+40
+50
+60
+70
+Acceleration Vector Magnitude  (mg)
+Overall Max  = 25.9989 mg
+Mean = 2.1583 mg
+Time (seconds)
+from: t:\pub\pad\, $Name:  $, 15−Oct−2002,06:30:44.033
+Start GMT 09−October−2002, 282/15:16:20.003
+STS−112 Flight 9A Dock Softmate
+Size: 0.01,  Step: 0.01 sec.
+Interval Max
+Vector Magnitude
+Increment: 5, Flight: UF2
+250.0 sa/sec (100.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+ 
+ 
+ 
+Figure 6-89 Interval Maximum of STS-112 Docking Softmate (121f05) 
+ 
+Figure 6-89 Interval Maximum of STS-112 Docking Softmate (121f05) 
+162
+NASA/TM—2003-212460

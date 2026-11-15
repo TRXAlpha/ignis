@@ -1,0 +1,22 @@
+Approach: 
+ 
+♦Microgravity combustion tests were performed 
+aboard the International Space Station using the 
+BASS (Burning and Suppression of Solids) 
+hardware. 
+ 
+♦The wind tunnel was installed in the Microgravity 
+Science Glovebox which supplied power, imaging, 
+and a level of containment.  
+ 
+♦Fuel samples were mounted inside a small wind 
+tunnel which could impose airflow speeds up to 
+40 cm/s. 
+ 
+♦The effects of airflow speed on flame appearance, 
+flame growth, and extinction were determined in 
+both the opposed and concurrent flow.  
+ 
+♦Ambient oxygen atmospheres 17% to 21.5% 
+(cabin air). 
+ 

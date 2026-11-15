@@ -1,0 +1,31 @@
+ 
+NASA/TM-20210011385 
+8 
+Figure 1.4.—CO generated compared to CO2 generated in each test. CO 
+generated appears to be clustered by geometric and flow configurations. 
+Concurrent rod geometry produced most CO per CO2, and opposed rods 
+showed very nonlinear trend of CO versus CO2 production. Thick opposed-flow 
+slabs fell in between the two.  
+ 
+Of interest to the combustion community is the ratio of CO to CO2, a measure of completeness of 
+combustion, which is plotted in Figure 1.5 as a function of the initial O2 concentration in the working 
+volume. For efficiently burned flue gases (boilers, furnaces, etc.), this ratio is typically less than 0.004. As 
+can be seen, most of our data is well above that, indicating that microgravity flames are comparatively 
+inefficient. A similarly sized smoldering event would produce significantly more CO. On the Mir space 
+station, a smoldering carbon bed in the Trace Contaminant Control System caused very high CO levels 
+throughout the space station before it was detected. 
+Although the absolute values of CO are very high in the 250-L MSG free working volume, the MSG 
+contained and converted the CO to CO2 during the posttest work volume purge. Since the ISS is quite 
+large, the combustion products from a fire of the scale of a BASS–II test would quickly be diluted, so that 
+even within just the U.S. Lab (106-m3 pressurized volume), the CO levels in the lab would only be 
+1.5 ppm, well below spacecraft maximum allowable concentration (SMAC) values for even long-term 
+exposure (10 ppm), let alone the 1 hour SMAC of 55 ppm (Ref. 12).  
+Lastly, the HRRs from these small microgravity fires can be estimated using Huggett’s O2 
+consumption calorimetry (Ref. 13) and the burn time for each test. Using his constant of 13.1 kJ/g O2, we 
+estimate the HRRs to be typically well below 100 W, as shown in Figure 1.6. There is a trend of 
+increasing HRR with increasing ambient O2 concentration, and the scatter is attributed to the different 
+duct flows between and even within the tests.   
+The one long opposed thick slab test that caused the lower downstream corner of the front window 
+damage released close to 100 W. A prior relatively brief concurrent rod test that released almost 110 W 
+did not cause any damage. 
+ 

@@ -1,0 +1,49 @@
+ 
+NASA/TM-20210011385 
+66 
+1,500 °C) have been noted for many heavier hydrocarbons. The stagnation flow geometry is amenable to 
+asymptotic analyses (Refs. 3 and 4), numerical modeling (Refs. 5 to 7), and experimental blowoff extinction 
+work for both axisymmetric and two-dimensional geometries (Refs. 8 to 11).   
+The importance of radiative heat loss was examined (Refs. 4 and 5) and found to primarily reduce the 
+flame temperature. The flammability map in terms of O2 and stretch rate a (Ref. 5) was shown to consist 
+of a blowoff and new quenching branch where the low power flame (due to the reduced temperature) is 
+too weak to compensate for the surface radiative heat loss. It was pointed out that this is likely only 
+observable in microgravity. Experimentally, the first observed solid fuel quenching extinction limits were 
+observed in microgravity opposed-flow flame spread tests over thermally thin cellulose fuel (Ref. 12).  
+Very few solid fuel stagnation flow extinction studies have been performed in reduced gravity to 
+eliminate buoyant flow effects. Concurrent-flow flame spread with plastic rods was tested aboard the Mir 
+Space Station in the Skorost hardware (Ref. 13). The extruded polymethylmethacrylate (PMMA), 
+polyoxymethylene (POM), and high-density polyethylene (HDPE) rods all showed the same tendency to 
+melt beneath the flame and form accumulating molten balls on the stagnation end of the rod, with the 
+flame wrapped around the molten ball. At low flows, the small hemispherical flame at the stagnation tip 
+of the rod propagated simply through rod regression (bulk burning) rather than through a concurrent 
+flame spread along the rod. Flames survived at airflow less than 1 cm/s. 
+This stagnation geometry was selected for this work to study material flammability in microgravity. 
+Concurrent-flow flame spread tests burned an axisymmetric cylindrical PMMA rod having low heat 
+losses to the downstream sample support pin. Other intrinsic heat losses (surface radiation loss and 
+conduction along the rod axis) will be estimated in Section 6.1.5.5. The objective of these tests was to 
+obtain the lower portion of the concurrent microgravity flammability map as a function of ventilation 
+flow and ambient O2 concentration. 
+6.1.3 
+Experimental Setup  
+The BASS–II hardware used for these tests has been described in detail in Reference 14. It consists of 
+a black-anodized flow duct that provides a low-reflection backdrop for imaging flames with a color video 
+camera at 30 frames per second and an orthogonal digital still camera (4,320 by 2,968 pixel images) at  
+~1 frame per second. The tests were performed in the 250-L free volume Microgravity Science Glovebox 
+(MSG) in the Destiny Lab of the International Space Station (ISS). The hardware setup is shown in 
+Figure 6.1. The flow duct measured 7.6 by 7.6 by 17 cm with rounded internal corners for smooth laminar 
+flow through the duct. The front window opened to install samples and igniters. A top window allowed 
+still camera imaging. A noncalibrated radiometer in the downstream top back corner of the flow duct 
+provided a relative flame strength reading at 5 Hz. The three primary variables were flow velocity 
+through the duct, PMMA rod radius, and O2 concentration of the working volume.   
+The flow was generated using a small variable-speed fan at the upstream end of the duct. The voltage 
+to the fan was displayed and could be set. Up to two flow restrictors could be used at the fan inlet to 
+increase the pressure drop and thus change the output flow range. With no restrictors, the maximum flow 
+velocity was ~55 cm/s, and with two restrictors this was reduced to a maximum of ~35 cm/s. The flow 
+then passed through a honeycomb flow straightener and an inlet screen to reduce swirl. An 
+omnidirectional spherical air velocity transducer (TSI Incorporated 8475) was positioned between the 
+honeycomb and the screen and was used to measure the steady-state flow through the duct. The air 
+velocity transducer probe had a response time of approximately 1 min and its digital display only read out 
+to the units place (no decimals) yielding an effective resolution of ±0.5 cm/s. A fan calibration was 
+performed at the end of each operational day to associate the fan voltage with the flow velocity for each 
+flow restrictor, after the fan had adequate time for warmup.   

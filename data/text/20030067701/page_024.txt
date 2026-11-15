@@ -1,0 +1,70 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+3 
+ISS Increment-4/5 
+An increment should average about 4 months (sometimes more--- Increment-4 lasted about 6 
+months) and is determined by crew rotations and flights to/from ISS.  Each increment has a 
+theme that focuses on the primary science or activities to be performed. 
+ 
+3.1 
+Increment-4 Configuration 
+This increment is called Increment-4 or Expedition Four and its theme is: Plants in Space [8].  
+The 3-member crew for Increment-4 was launched to ISS on December 5, 2001 on STS-108 
+from KSC and returned to earth on STS-111 on June 19, 2002 after a 196-day stay in space.  
+During Increment-4, the Starboard Truss Segment 0 (S0) (13.2 meter-long, 4.6 meter-high, 
+1.83 meter-wide and weight of 12624 kg.) was delivered by STS-110 on April 10, 2002 to 
+ISS.  Two crewmembers of STS-110 performed four spacewalks and used the Shuttle and 
+station robotic arms to install and outfit the S0 to the station.  The S0 truss is the first of 11 
+such truss structures that will make up the station’s external framework that will expand the 
+ISS to 109 meters [9].  The S0 truss will support, among other things, four virtually identical 
+solar wing assemblies [10].  The following modules are now on-orbit [11]: Unity (Node), 
+Zarya (Functional Cargo Block), Zvezda (Service Module), Destiny, the Russian Docking 
+Compartment (DC-1 (Pirs)) and the Joint Airlock (Quest) (Figure 3-1). 
+ 
+Table 3-1 is a list of missions to the ISS during Increment-4 [12]: 
+ 
+TABLE 3-1 INCREMENT-4 MISSIONS 
+Mission 
+Date 
+Mission Objective 
+UF-1 – STS-108 
+December 7-15, 2001 
+STS-108 docked with ISS and swapped crew: arrival of 
+Expedition Four to ISS 
+6P – Progress  
+March 19, 2002 
+Undocking of Progress supply craft 
+7P – Progress  
+March 24, 2002 
+Docking of Progress supply craft  
+8A – STS-110 
+April 10-17, 2002 
+Space Shuttle Atlantis delivered the 43-foot-long S0 (S-zero) 
+Truss to ISS 
+Soyuz 3S 
+April 20, 2002 
+“Old” Soyuz taxi vehicle at ISS is relocated  
+Soyuz 4S 
+April 27, 2002 
+“New” Soyuz taxi vehicle docked with ISS  
+Soyuz 3S 
+May 5, 2002 
+“Old” Soyuz taxi vehicle undocked 
+UF-2 – STS-111 
+June 7-15, 2002 
+STS-111 docked with ISS and swapped crew: arrival of 
+Expedition Five to ISS 
+ 
+3.2 
+Increment-4 Science and Crew Members 
+During Increment-4 (Expedition Four), the crew worked with several experiments.  The 
+Increment-4 primary focus was the effects of plant growth during extended stays in space and 
+how such phenomenon may relate to similar conditions on earth.  Additional experiments 
+during Expedition Four were intended to lead to new insights in the fields of embryo 
+development, the long-term effects of spaceflight on humans, biotechnology, medicine, 
+agriculture, electronics and pharmaceutical manufacturing.  Several experiments begun on 
+earlier expeditions were returned to earth, while several others continued operating during 
+the Expedition Four’s stay aboard ISS [10].  The three Expedition Four crewmembers 
+10
+NASA/TM—2003-212460

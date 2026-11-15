@@ -1,0 +1,51 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Figure 6-101 One-Third Octave RMS of ARIS HOLD (121f03)......................................... 174 
+Figure 6-102 One-Third Octave RMS of ARIS HOLD (121f04)......................................... 175 
+Figure 6-103 One-Third Octave RMS of ARIS ACTIVE (121f03)..................................... 176 
+Figure 6-104 One-Third Octave RMS of ARIS ACTIVE (121f04)..................................... 177 
+Figure 6-105 One-Third Octave RMS of ARIS REST (121f03).......................................... 178 
+Figure 6-106 One-Third Octave RMS of ARIS REST (121f04).......................................... 179 
+Figure 6-107 One-Third Octave RMS of ARIS IDLE (121f03)........................................... 180 
+Figure 6-108 One-Third Octave RMS of ARIS IDLE (121f04)........................................... 181 
+Figure 6-109 Spectrogram of ARIS Transition from HOLD to ACTIVE Mode (121f03) .. 182 
+Figure 6-110 Spectrogram of ARIS Transition from ACTIVE to HOLD Mode (121f03) .. 183 
+Figure 6-111 Spectrogram of ARIS Transition from HOLD to IDLE Mode (121f03)........ 184 
+Figure 6-112 Spectrogram of ARIS Transition from HOLD to ACTIVE Mode (121f04) .. 185 
+Figure 6-113 Spectrogram of ARIS Transition from ACTIVE to HOLD Mode (121f04) .. 186 
+Figure 6-114 Spectrogram of ARIS Transition from HOLD to IDLE Mode (121f04)........ 187 
+Figure 6-115 PSD of ARIS HOLD, ACTIVE, and IDLE Modes (121f03) ......................... 188 
+Figure 6-116 One-Third Octave Quartile of ARIS HOLD (121f03).................................... 189 
+Figure 6-117 One-Third Octave Quartile of ARIS HOLD (121f04).................................... 190 
+Figure 6-118 One-Third Octave Quartile of ARIS ACTIVE (121f03) ................................ 191 
+Figure 6-119 One-Third Octave Quartile of ARIS ACTIVE (121f04) ................................ 192 
+Figure 6-120 One-Third Octave Quartile of ARIS HOLD (121f03).................................... 193 
+Figure 6-121 One-Third Octave Quartile of ARIS HOLD (121f04).................................... 194 
+Figure 6-122 One-Third Octave Quartile of ARIS IDLE (121f03)...................................... 195 
+Figure 6-123 One-Third Octave Quartile of ARIS IDLE (121f04)...................................... 196 
+Figure 6-124 Interval Maximum of ARIS Transient from HOLD to ACTIVE (121f03) .... 197 
+Figure 6-125 Interval Maximum of ARIS Transient from HOLD to ACTIVE (121f04) .... 198 
+Figure 6-126 Interval Maximum of ARIS Transient from ACTIVE to HOLD (121f03) .... 199 
+Figure 6-127 Interval Maximum of ARIS Transient from ACTIVE to HOLD (121f04) .... 200 
+Figure 6-128 Interval Maximum of ARIS Transient from HOLD to IDLE (121f03).......... 201 
+Figure 6-129 Interval Maximum of ARIS Transient from HOLD to IDLE (121f04).......... 202 
+Figure 6-130 PSD of SKVs (121f08) ................................................................................... 203 
+Figure 6-131 Interval RMS of SKV (121f08)....................................................................... 204 
+Figure 6-132 Spectrogram of SKV-1 (121f02)..................................................................... 205 
+Figure 6-133 Spectrogram of SKV-1 (121f05)..................................................................... 206 
+Figure 6-134 Interval RMS of SKV-1 (121f02) ................................................................... 207 
+Figure 6-135 Interval RMS of SKV-1 (121f05) ................................................................... 208 
+Figure 6-136 Interval RMS of SKV-1 Second Harmonic (121f02) ..................................... 209 
+Figure 6-137 Interval RMS of SKV-1 Second Harmonic (121f05) ..................................... 210 
+Figure 6-138 Spectrogram of CMGs Operating (121f03) .................................................... 211 
+Figure 6-139 Spectrogram of CMGs Zoom Around Rotational Rate (121f03).................... 212 
+Figure 6-140 Interval RMS of CMGs Operating (121f03)................................................... 213 
+Figure 6-141 Interval RMS of CMGs Operating (121f03)................................................... 214 
+Figure 6-142 Spectrogram of GASMAP Equipment Operations (121f02) .......................... 215 
+Figure 6-143 Spectrogram of GASMAP Equipment Operations (121f03) .......................... 216 
+Figure 6-144 Spectrogram of GASMAP Equipment Operations (121f04) .......................... 217 
+Figure 6-145 Spectrogram Zoom of GASMAP Equipment Operations (121f02)................ 218 
+Figure 6-146 Interval RMS of GASMAP Sample Pump (121f02)....................................... 219 
+viii
+NASA/TM—2003-212460

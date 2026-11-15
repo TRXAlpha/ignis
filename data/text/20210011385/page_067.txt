@@ -1,0 +1,11 @@
+ 
+NASA/TM-20210011385 
+59 
+Figure 5.4.—Polymethylmethacrylate (PMMA) slab tests. 2-mm-thick by 2.2-cm-wide PMMA slab tests. 
+(a) Preextinction flame, two sided, 18.8 percent O2, 3 cm/s. (b) Postburn sample from (a). (c) Preextinction flame, 
+two sided, 21.7 percent O2, <1 cm/s. (d) Postburn sample from (c). (e) Preextinction flame, two sided, 22.2 percent 
+O2, 11 cm/s. (f) Postburn sample from (e). 
+ 
+ 
+Figure 5.5.—Extinction limits for Miller and Wichman tests. Symbol sizes and numbers 
+reflect fuel thickness, and other geometry variations are noted in legend.   

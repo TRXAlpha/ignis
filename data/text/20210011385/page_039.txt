@@ -1,0 +1,68 @@
+ 
+NASA/TM-20210011385 
+31 
+2.3 
+Opposed-Flow Flame Spread: Comparison of Microgravity and Normal-Gravity 
+Experiments to Establish Thermal Regime2 
+2.3.1 
+Abstract 
+The thermal regime of flame spread over solid fuels constitutes the reference condition for all other 
+flame spread research. Although the theory of flame spread in the thermal regime is well understood, the 
+well-known closed-form formulas for flame spread do not compare well with available experimental data. 
+The comparison is further complicated by the fact that establishing a thermal regime in a normal-gravity 
+environment is difficult because of the buoyancy-induced flow, which may usher in finite-rate kinetics 
+effect. As a result, even the transition thickness, when a fuel can be considered a thermally thick fuel, still 
+lacks a widely accepted formula.  
+This work presents opposed-flow flame spread data over varying thicknesses of 
+polymethylmethacrylate obtained in the International Space Station where the opposing flow velocity can 
+be reduced arbitrarily without any interference from the gravity-induced flow. It also presents a larger set 
+of spread rate data for the downward spreading configuration at normal gravity. A comparison between 
+the two datasets allow us to establish the thermal limit for thin fuel for which the spread rate is 
+independent of the opposing flow velocity. The classical thin fuel spread rate formula is shown to fit well 
+with the experimental results provided the adiabatic flame temperature is used in the flame coefficient 
+that appears in the formula. The experimentally determined flame coefficient along with downward flame 
+spread data for thick fuels are used to develop a closed-form expression for the transition thickness 
+between thermally thin and thick fuels for downward spread in the thermal regime.  
+Symbols 
+aP 
+Planck mean absorption coefficient 
+c 
+specific heat, kJ/kg.K 
+F 
+flame constant, Equation (2.12) 
+f 
+radiation view factor for the gas to the solid preheat region 
+g 
+gravity 
+g,rad 
+gas radiation feedback 
+gy,cond 
+conduction through gas 
+Lg 
+gas-phase diffusion length scale, m 
+Lsy 
+fuel thickness 
+s,rad 
+surface radiation 
+sx,cond 
+conduction through solid 
+T 
+temperature, K 
+t 
+time 
+Vf 
+absolute spread rate, m/s 
+Vg 
+velocity of the oxidizer, m/s 
+Vr 
+velocity relative to the flame, Vr = Vg + Vf 
+αg 
+thermal diffusivity of gas, evaluated at Tv, m2/s 
+αs 
+thermal diffusivity of solid 
+ε 
+surface emissivity 
+ 
+2Previously published as: Bhattacharjee, S., et al.: Opposed-Flow Flame Spread: A Comparison of Microgravity and 
+Normal Gravity Experiments to Establish the Thermal Regime. Fire Saf. J., vol. 79, 2016, pp. 111–118. DOI: 
+10.1016/j.firesaf.2015.11.011 

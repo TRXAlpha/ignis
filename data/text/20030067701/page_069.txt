@@ -1,0 +1,61 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+and PC data downlink did not yield discernible acceleration signatures in the SAMS 
+measurements.  However, an e-mail sent by Janelle Fine from the Department of Medicine 
+Physiology at the University of California San Diego did lead to some conclusive results.  Below 
+is an excerpt of that e-mail: 
+ 
+Here are selections from my console log of the PuFF session (with relevant 
+GASMAP activities and modes noted), for the day 1/26/2002.  The times might be 
+off by a couple of minutes on either side, due to Loss of Signal (LOS) periods 
+and things, but I think they'll be close enough to make correlations.  Unless 
+otherwise noted, the GASMAP is in operate mode. 
+ 
+16:20  Rack is on, laptop is on (not sure if GASMAP was powered at this point) 
+ 
+16:30  GASMAP put into operate mode 
+ 
+16:35  PuFF software started on HRF PC 
+ 
+17:45  GASMAP calibration started, it lasts 6 minutes. GASMAP is put into 
+calibration mode for these 6 minutes, then returned to operate mode at the end. 
+ 
+17:51  Volume calibration started. GASMAP is put into standby mode for one to 
+two minutes, the returned to operate mode. 
+ 
+18:10  [Crew’s] PuFF run starts 
+ 
+18:40  [Crew’s] PuFF run complete 
+ 
+18:40  [Crew’s] PuFF run starts 
+ 
+19:00  [Crew’s] PuFF [2nd] run complete 
+ 
+19:55  Volume calibration, 1-2 minutes (see notes above) 
+ 
+19:58  GASMAP calibration, 6 minutes (see notes above) 
+ 
+20:25  GASMAP and laptop are powered off 
+ 
+20:30  Shutting down the rack 
+ 
+20:40  Rack is off 
+ 
+The spectrograms of Figure 6-142, Figure 6-143, and Figure 6-144 show the acceleration spectra 
+for SAMS Sensor Enclosure (SE) 121f02 in RTS drawer 1 of LAB1O2, 121f03 on Z-panel of 
+ER2 in LAB1O1, and 121f04 on Z-panel of ER1 in LABO2, respectively.  For comparison with 
+the highlighted entries in the timeline from the e-mail excerpt above, an annotated zoom of 
+Figure 6-142 is shown in Figure 6-145.  The white vertical dashed lines correspond to each of the 
+7 highlighted timeline entries.  From these annotations, we note about a 4.6-minute lag of 
+acceleration measurement times behind the e-mail times from early in the record and diminishing 
+difference toward the end of the record.  A caveat that may explain much of the time discrepancy 
+prefaces the timeline in the excerpt above.  As discussed with GASMAP payload developers, the 
+frequency changes away from nominal operation are likely a function of varying loads on the 
+sample pump.  The pump frequency ranges from 54 Hz (for brief calibrations) up to 62 Hz after 
+the second PuFF run.  The fan is tightly controlled in frequency but also transitions from baseline 
+of about 57.4 Hz up to 58.1 Hz noted during calibrations. 
+ 
+55
+ 
+NASA/TM—2003-212460

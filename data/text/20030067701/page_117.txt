@@ -1,0 +1,72 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+−30
+−20
+−10
+0
+10
+20
+Z−Axis Acceleration (ûg)
+RMS = 1.8407 ûg
+Mean = −0.5490 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 07−Nov−2002,13:37:57.720
+ SEE Y−SCALES
+−30
+−20
+−10
+0
+10
+20
+30
+40
+Y−Axis Acceleration (ûg)
+RMS = 1.8189 ûg
+Mean = −0.2574 ûg
+ SEE Y−SCALES
+−30
+−25
+−20
+−15
+−10
+−5
+0
+5
+10
+X−Axis Acceleration (ûg)
+RMS = 5.1739 ûg
+Mean = −1.8839 ûg
+Start GMT 24−September−2002, 267/11:00:03.418 SEE Y−SCALES
+Progress 8P Undocking
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+0.0625 sa/sec (0.01 Hz)
+mams, ossbtmf at LAB1O2, ER1, Lockers 3,4:[135.28 −10.68 132.12]
+Maneuver to 
+Undock
+Attitude
+Maneuver to 
+Relaxation
+Attitude
+Maneuver to 
+Duty
+Attitude
+Maneuver
+ to Relaxation
+Attitude
+ 
+Figure 6-30 Time Series of Progress 8P Undocking (OSSBTMF) 
+103
+ 
+NASA/TM—2003-212460

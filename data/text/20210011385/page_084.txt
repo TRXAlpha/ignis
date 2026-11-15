@@ -1,0 +1,25 @@
+ 
+NASA/TM-20210011385 
+76 
+The quenching branch is fitted using an exponential decay (red dashed curve). In this region, heat 
+losses dominate to cool the flame to extinction through the strong dependence of reaction rate in the 
+Arrhenius term, as was modeled by References 6, 7, 20, and 21, and will be evaluated in Section 6.1.4.3. 
+This boundary is very steep for small a when plotted on a linear x-axis as shown in Figure 6.9.   
+Figure 6.10 replots the same data as Figure 6.9 but with a logarithmic x-axis. Note that the classic U-
+shaped flammability boundary is evident when a logarithmic x-axis is used. This expands the quenching 
+branch while making the linear blowoff branch appear curved. It also emphasizes the uncertainty in the 
+flow at the very low velocities (<1 cm/s) along the quenching branch. The minimum O2 concentration of 
+13.5 percent O2 at a of 8 to 12 s–1 is significantly lower than the observed upward flame spread limit of 
+15.4 percent O2 (in normal gravity with an additional 4-cm/s forced flow (Ref. 23)), indicating the 
+material remains flammable under the weak ventilation only obtainable in microgravity. This 
+“Goldilocks” zone of flow is unfortunately typical of spacecraft ventilation flows near surfaces. 
+Earthbound flammability tests need a reliable method to account for this extension of flammability in 
+microgravity environments. Extrapolation of the normal-gravity blowoff boundary to zero stretch may be 
+a viable method to estimate this enhanced flammability if a buoyant stretch can be included. 
+ 
+ 
+Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands 
+quenching region and exhibits classic U-shaped flammability map. International Space 
+Station (ISS). Stretch rate (a). Final O2 concentration (XO2). Forced-flow velocity (U). 
+Rod radius (r). 
+ 

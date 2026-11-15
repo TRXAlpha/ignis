@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-14T21:15:02+00:00",
+ "generated_at": "2026-11-15T08:33:39+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -43,12 +43,64 @@
    "pdf_url": "https://ntrs.nasa.gov/api/citations/20030067701/downloads/20030067701.pdf",
    "sha256": "eac01b78e4df65f61e822df62e642606d5d7fec19ac8e95400f55feeee381d6c",
    "retrieved_at": "2026-11-14T21:12:55.607683+00:00"
+  },
+  {
+   "id": "ntrs:20210011521",
+   "kind": "ntrs",
+   "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+   "authors": [
+    "David L. Urban",
+    "Gary A. Ruff",
+    "Paul Ferkul",
+    "John Easton",
+    "Jay Owens",
+    "Sandra Olson",
+    "Marit Meyer",
+    "Claire Fortenberry",
+    "John Brooker",
+    "John Graf",
+    "Michael Casteel",
+    "Balazs Toth",
+    "Florian Meyer",
+    "Christian Eigenbrod",
+    "James S. T’ien",
+    "Ya-Ting T. Liao",
+    "A. Carlos Fernandez-Pello",
+    "Guillaume Legros",
+    "Augustin Guibaud",
+    "Nickolay Smirnov",
+    "Osamu Fujita",
+    "Grunde Jomaas"
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20210011521",
+   "ntrs_id": "20210011521",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+   "sha256": "d25b394f43774ee79a3223b53e90571be299c8996d1cff2512c76e3308e107f5",
+   "retrieved_at": "2026-11-14T21:12:07.471900+00:00",
+   "year": 2021,
+   "campaign_ids": [
+    "bass"
+   ]
   }
  ],
  "campaigns": [
   {
    "id": "bass-ii",
    "name": "Burning and Suppression of Solids-II (BASS-II)",
+   "agency": "NASA",
+   "platform": "orbital_iss",
+   "facility": "Microgravity Science Glovebox (MSG)",
+   "refs": [
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 9,
+     "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+    }
+   ]
+  },
+  {
+   "id": "bass",
+   "name": "Burning and Suppression of Solids (BASS)",
    "agency": "NASA",
    "platform": "orbital_iss",
    "facility": "Microgravity Science Glovebox (MSG)",
@@ -74,6 +126,16 @@
    "phase": "solid",
    "material_class": "polymer",
    "formula": "(C5O2H8)n"
+  },
+  {
+   "id": "sibal",
+   "name": "SIBAL cotton-fiberglass fabric",
+   "aliases": [
+    "SIBAL",
+    "Solid Inflammability Boundary at Low Speeds fabric"
+   ],
+   "phase": "solid",
+   "material_class": "fabric"
   }
  ],
  "observations": [
@@ -152,7 +214,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-14T21:15:02+00:00",
+    "extracted_at": "2026-11-15T08:33:39+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -240,7 +302,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-14T21:15:02+00:00",
+    "extracted_at": "2026-11-15T08:33:39+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"

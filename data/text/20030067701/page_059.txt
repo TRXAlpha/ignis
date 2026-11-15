@@ -1,0 +1,55 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+6.2.1 
+Vehicle Operations 
+All the Progress dockings are automated with little or no crew action required [6], but the station 
+crew can fly the vehicle remotely from the SM, if needed.  The sequence of events mandates that 
+the Photovoltaic Arrays (PVAs) be “feathered” (oriented parallel to the velocity vector of the 
+docking vehicle) to prevent the impingement of jet plumes of the approaching vehicle.  Because 
+the ISS arrays are feathered, they no longer track the sun, therefore, are no longer able to 
+generate sufficient power outputs.  As a result, all non-essential operations are suspended (i.e., 
+payloads operations).  The station is subsequently maneuvered to docking attitude.  After 
+docking, the station is maneuvered to its nominal attitude and the arrays resume sun tracking.  
+The Progress vehicle undocks just before the arrival of the next one. 
+ 
+Shuttle docking is not that different from a Progress docking.  For a Shuttle docking, the Shuttle 
+crew has insight into ISS status and can command the ISS because of the data interface between 
+the Shuttle and station.  About 300 feet directly in front of the station, the Shuttle slowly moves 
+toward the station’s Shuttle docking port—moving at a speed of about a tenth of a mile per hour.  
+Using a view from a camera mounted in the center of the Shuttle’s docking mechanism as a key 
+alignment aid, the docking ports of the two spacecraft are precisely aligned.  For the actual 
+docking, the Shuttle’s relative speed to the station is maintained at about one-tenth of a foot per 
+second (when the two spacecraft are about 30 feet apart), and the docking mechanism is aligned 
+to within three inches of one another.  When Shuttle makes contact with the station (soft mate), 
+preliminary latches automatically attach the two spacecraft together.  Immediately after the 
+Shuttle docks, the Shuttle’s steering jets are deactivated to reduce the forces acting at the docking 
+interface.  Shock absorber-type springs in the docking mechanism dampen any relative motion 
+between the two spacecrafts.  Once relative motion between the two spacecraft stops, the 
+docking mechanism is secured and the Shuttle’s mechanism retracts and closes a final set of 
+latches between the Shuttle and station (hard mate) [13].  Typical mated operations involve 6-9 
+days docked. 
+ 
+Once the Shuttle is ready to undock, the docking mechanism is commanded for release.  The 
+initial separation of the spacecraft is performed by springs in the docking mechanism that gently 
+pushes the Shuttle away from the station.  The Shuttle’s steering jets are shut off to avoid any 
+inadvertent firings during initial separation.  Once the docking mechanism’s springs pushed the 
+Shuttle away to a distance of about two feet, when the docking devices are clear of one another, 
+the steering jets are turned back on and fire to begin very slowly moving away [13]. 
+ 
+6.2.1.1 
+Progress Reboost 
+To assess the impact of burns for a couple of Progress reboost events (UF-1 stage reboost 3 and 
+UF-1 stage reboost 4), consider an hour period around the times shown in the first 2 rows of 
+Table 6-10.  This table is an excerpt of the ATL using Greenwich Mean Time (GMT) found at: 
+ 
+http://mod.jsc.nasa.gov/df/df64/ADCO-Flight-Info/As Flown Info/Increment 4/As Flown ISS ATL Inc 4A.doc 
+ 
+ 
+ 
+ 
+ 
+ 
+45
+ 
+NASA/TM—2003-212460

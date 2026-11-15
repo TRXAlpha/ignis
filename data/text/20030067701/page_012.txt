@@ -1,0 +1,51 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Figure 6-192 Spectrogram of PFMI-01 (121f08) ................................................................. 260 
+Figure 6-193 Spectrogram of PFMI-07 (121f08) ................................................................. 261 
+Figure 6-194 Spectrogram of PFMI-07 (121f08) ................................................................. 262 
+Figure 6-195 Spectrogram of PFMI-08 (121f08) ................................................................. 263 
+Figure 6-196 Spectrogram of PFMI-05 (121f08) ................................................................. 264 
+Figure 6-197 Spectrogram of PFMI-05 (121f08) ................................................................. 265 
+Figure 6-198 Spectrogram of PFMI-05 (121f08) ................................................................. 266 
+Figure 6-199 Spectrogram of PFMI-02 (121f08) ................................................................. 267 
+Figure 6-200 Spectrogram of PFMI-02 (121f08) ................................................................. 268 
+Figure 6-201 Spectrogram of PFMI-10 (121f08) ................................................................. 269 
+Figure 6-202 Spectrogram of PFMI-10 (121f08) ................................................................. 270 
+Figure 6-203 Spectrogram of PFMI-10 (121f08) ................................................................. 271 
+Figure 6-204 Spectrogram of PFMI-11 (121f08) ................................................................. 272 
+Figure 6-205 Spectrogram of PFMI-11 (121f08) ................................................................. 273 
+Figure 6-206 Magnitude Cumulative Percentage of PFMI (121f08).................................... 274 
+Figure 6-207 Spectrogram of TVIS Exercise Period (121f03)............................................. 275 
+Figure 6-208 Spectrogram of TVIS Exercise Period (121f03)............................................. 276 
+Figure 6-209 Spectrogram of RED Exercise Period (121f02).............................................. 277 
+Figure 6-210 Interval RMS of RED Exercise Period (121f02) ............................................ 278 
+Figure 6-211 Time Series of RED Exercise Period (121f02)............................................... 279 
+Figure 6-212 Lowpass Filtered Time Series of RED Exercise Period (121f02) .................. 280 
+Figure 6-213 Lowpass Filtered Time Series Zoom of RED Exercise Period (121f02)........ 281 
+Figure 6-214 Digital Image of CEVIS Exercise................................................................... 282 
+Figure 6-215 Spectrogram of CEVIS Exercise Period (121f05) .......................................... 283 
+Figure 6-216 Cumulative RMS of CEVIS Exercise Period (121f02, 121f03, 121f04, 121f05)
+....................................................................................................................................... 284 
+Figure 6-217 Spectrogram of CEVIS Exercise Period (121f05) .......................................... 285 
+Figure 6-218 Cumulative RMS of CEVIS Exercise Period (121f02, 121f03, 121f04, 121f05)
+....................................................................................................................................... 286 
+Figure 6-219 Cumulative RMS of CEVIS Exercise Period (121f02, 121f03, 121f04, 121f05)
+....................................................................................................................................... 287 
+Figure 6-220 Spectrogram of VELO Exercise Periods (121f02).......................................... 288 
+Figure 6-221 Spectrogram of VELO Exercise Periods (121f02).......................................... 289 
+Figure 6-222 Short-Term Plan Excerpt for GMT 31-Jul-2002, 06:00 - 14:00..................... 290 
+Figure 6-223 Short-Term Plan Excerpt for GMT 31-Jul-2002, 14:00 - 22:00..................... 291 
+Figure 6-224 Cumulative RMS of VELO Exercise Period (121f02, 121f03, 121f04, 121f05)
+....................................................................................................................................... 292 
+Figure 6-225 Interval RMS of VELO Exercise Periods (121f02)........................................ 293 
+Figure 6-226 Spectrogram of VELO Exercise Period (121f05)........................................... 294 
+Figure 6-227 Interval RMS of VELO Exercise Period (121f02).......................................... 295 
+Figure 6-228 Interval RMS of VELO Exercise Period (121f03).......................................... 296 
+Figure 6-229 Interval RMS of VELO Exercise Period (121f04).......................................... 297 
+Figure 6-230 Interval RMS of VELO Exercise Period (121f05).......................................... 298 
+Figure 6-231 Cumulative RMS of VELO Exercise Period (121f03, 121f04, 121f05)......... 299 
+Figure 6-232 Cumulative RMS of CEVIS, VELO, & RED Exercise Comparison (121f03)300 
+Figure 6-233 Photos of SAMS Sensor Located Near TeSS (121f05) .................................. 301 
+x
+NASA/TM—2003-212460

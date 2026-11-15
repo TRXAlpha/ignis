@@ -1,0 +1,45 @@
+ 
+NASA/TM-20210011385 
+73 
+mixture. The flame flashes downstream through this mixture and consumes the reactants. This larger 
+flame locally depletes the O2 concentration, weakening the flame briefly. For a large amplitude 
+oscillation, the local O2 depletion becomes low enough to destabilize the flame anchor at the stagnation 
+region, and the flame extinguishes entirely. The oscillation frequency is controlled by the diffusive 
+transport (mixing) rates of the reactants and the inherent heat losses (Ref. 17). The radiative loss has been 
+shown to have the same effect as changing the thermal-diffusivity of the reactants (Ref. 18) resulting in 
+oscillations with thermodiffusive characteristics even for unity Lewis number.  
+6.1.4.3 Blowoff Extinction 
+Blowoff limits were typically determined after a stable rod regression was established at a modest 
+flow speed. The astronaut would then turn up the flow to obtain blowoff. Blowoff was defined as the 
+instant when the stagnation region developed a hole (Ref. 19) as shown in the lower row of flame images 
+in Figure 6.3. The center blowoff image is of a 5.18-s Zero Gravity Research Facility drop test since no 
+ISS blowoff tests were obtained with the intermediate rod size. A green light-emitting diode (LED) 
+illuminates the drop test rod. The flames in the drop tower blowoff tests are significantly smaller than the 
+ISS flames, as can be seen in Figure 6.3, due to the reduced level of fuel preheating resulting from the 
+short burn time prior to blowoff. Previous research (Refs. 6, 7, 20, and 21) and Section 6.1.5.5 indicate 
+that blowoff extinction is not sensitive to heat losses. 
+After the stagnation region blows off, the subsequent annular flame leading edge would oscillate 
+upstream and downstream multiple times before completely blowing off. During one test, we attempted to 
+reestablish the envelope flame after local blowoff. Only once could we successfully reestablish the 
+stagnation region after local blowoff by quickly reducing the flow to a value below the blowoff velocity. 
+A second attempt was not successful.    
+The a and radiometer data from these blowoffs are shown in Figure 6.7. In each blowoff, the 
+astronaut quickly turns up the flow from a low a to a high a and the flame blows downstream. The 
+astronaut then quickly turns the flow down to a near the minimum flammability (discussed in 
+Section 6.1.4.4). Figure 6.7 shows that the two attempts were quite similar, but the results were not. For 
+the first blowoff, the flame hole is initially about 9 mm in diameter, but within 2 s moves back forward of 
+the rod tip position (yellow line in Figure 6.8) and closes up in 7 s after the flow is turned down, as shown 
+in Figure 6.8(a). The radiometer signal is higher since the flow is slightly higher and the flame is visibly 
+longer than the preblowoff flame.   
+A subsequent attempt 55 s later resulted in a slightly larger initial flame hole of 10 mm that was not 
+able to move forward of the flame tip and reestablish the stagnation region, as shown in Figure 6.8(b). 
+This 10-mm flame hole persisted for over a minute even after the flow was turned down again to the 
+initial flow before the flame destabilized and blew off completely.   
+While the flow profile was quite similar for the two blowoffs, the O2 had depleted more by the second 
+blowoff. This is apparent in the reduced sooting for the second preblowoff flame. This second blowoff is 
+interpreted as indicating that once the flame is stabilized farther than the thermal length downstream of 
+the stagnation region (ℓ = 2 mm), the flame is unable to repropagate upstream for the low O2 levels tested 
+(XO2 final = 14.5 percent for this test) even though the fuel is already preheated. This is consistent with 
+tests for opposed-flow flame spread over rods that were also done as part of BASS–II (Ref. 14), where 
+opposed-flow flame spread was not observed below 16.4 percent O2 at any flow.   
+ 

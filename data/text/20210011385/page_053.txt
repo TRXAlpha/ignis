@@ -1,0 +1,33 @@
+ 
+NASA/TM-20210011385 
+45 
+13. Ito, Akihik; and Kashiwagi, Takashi: Measurement Technique for Determining the Temperature 
+Distribution in a Transparent Solid Using Holographic Interferometry. Appl. Optics, vol. 26, no. 5, 
+1987, pp. 954–958. 
+14. Di Blasi, C.; and Wichman, I.S.: Effects of Solid-Phase Properties on Flames Spreading Over 
+Composite Materials. Combust. Flame, vol. 102, no. 3, 1995, pp. 229–240. 
+15. Bhattacharjee, Subrata; and Altenkirch, Robert A.: Radiation-Controlled, Opposed-Flow Flame 
+Spread in a Microgravity Environment. Symposium (International) on Combustion, vol. 23, no. 1, 
+1991, pp. 1627–1633. 
+16. Bhattacharjee, S.; Bhaskaran, K.K.; and Altenkirch, R.A.: Effects of Pyrolysis Kinetics on Opposed-
+Flow Flame Spread Modeling. Combust. Sci. Technol., vol. 100, nos. 1–6, 1994, pp. 163–182.  
+17. Bhattacharjee, Subrata, et al.: Downward Flame Spread Over Poly(methyl)methacrylate. Proc. 
+Combust. Inst., vol. 28, no. 2, 2000, pp. 2891–2897. 
+18. Carmignani, Luca: Flame Spread Over Solid Fuels Facing an Opposing Flow: Experimental 
+Investigation of the Aerodynamic Effects on Spread Rate and Extinction. M.S. Thesis, Univ. of Pisa, 
+2015. 
+19. Ross, H.D.: Microgravity Combustion: Fire in Free Fall. Appl. Mech. Rev., vol. 55, no. 6, 2002, pp. 
+B116–B117. 
+20. Reckart, T.A.: Space Flight System at GRC: Burning and Suppression of Solids (BASS). National 
+Aeronautics and Space Administration, 2014. https://www1.grc.nasa.gov/space/iss-
+research/msg/bass/ Accessed June 21, 2021. 
+21. Klimek, Robert; and Wright, Ted: Spotlight–8 Image Analysis Software. NASA/TM—2006-214084, 
+2006. https://ntrs.nasa.gov  
+22. Audoin, L., et al.: Average Centreline Temperatures of a Buoyant Pool Fire Obtained by Image 
+Processing of Video Recordings. Fire Saf. J., vol. 24, no. 2, 1995, pp. 167–187.  
+23. Fernandez-Pello, A.C.; and Williams, F.A.: Laminar Flame Spread Over PMMA Surfaces. Proc. 
+Combust. Inst., vol. 15, no. 1, 1975, pp. 217–231.  
+ 
+ 
+ 
+ 

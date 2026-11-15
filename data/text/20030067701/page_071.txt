@@ -1,0 +1,53 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+Microgravity investigations in the US Lab that are sensitive to vibrations around 60 Hz should 
+take GASMAP operations into consideration when planning sensitive run times. 
+ 
+6.2.3.2 
+MEPS PCM Insertion and Runs 
+Enclosing a drug in a tiny liquid-filled microballoon, a process called microencapsulation, has 
+been shown [15] to provide better drug delivery and new medical treatments for solid tumors and 
+resistant infections.  During Increment-5, investigators encapsulated two different 
+complementary drugs in the same microcapsule.  The experiment included encapsulation of 
+drugs and magnetic trigger particles that will enable physicians to break open the microcapsules 
+with diagnostic levels of magnetic fields.  These are applied externally to deliver a burst of drug 
+into the tissues in which the microcapsules are deposited [15].  Hardware for the MEPS 
+experiment consisted of a chamber housing that held self-contained process chamber modules, a 
+video monitor/ recorder, an internal process control computer, which controls the opening and 
+closing of valves, fluid pumping, and a front control panel.  Up to 10 experiments—each in a 
+separate Process Chamber Module—is flown on each mission.  The built-in video microscope 
+monitors and records the critical stages of the process. 
+ 
+John Cassanto of Instrumentation Technology Associates (ITA) relayed background information 
+on the MEPS and PCM on December 11, 2002.  An excerpt of the memo he sent follows: 
+ 
+The MEPS hardware performs electrical, mechanical, and pneumatic functions.  The 
+potential MEPS sources of vibration are: insertion of the PCM into the PCM housing, 
+insertion of the Personal Computer Memory Card International Association 
+(PCMCIA) card into the computer, opening the door to the PCM housing, operation of 
+the intake and exhaust fans, activation of solenoid valves that control the flow of 
+samples into the processing chamber, operation of stepper motors, initiation of the 
+stepper motors that are geared to push pistons that provide a pressure differential to 
+transport fluid samples, intake and exhaust fans to cool the payload, initiation of a 
+video camera to record the manufacture of the microcapsules.  
+ 
+Hardware description 
+The MEPS hardware consists of two separate elements: the base chassis unit, and the 
+PCMs, which actually perform the microencapsulation of drugs.  The base chassis unit 
+resides on the ISS and the PCMs are transported up to ISS to bring specific samples in 
+eight PCMs to be activated in the microgravity environment of space and are then 
+transported back to Earth for harvesting the samples.  The PCMs are then loaded again 
+with new samples and transported to ISS to process a new batch of experiments.   
+Figure 6-149 shows the base line chassis configuration in an EXPRESS rack locker 
+with the door closed.   Figure 6-150 shows a PCM outside of its housing.  
+ 
+Baseline Chassis Unit 
+The baseline chassis unit contains high and low voltage power supplies, a PC-104 
+computer to provide commands for the various operations which accepts PCMCIA 
+cards to run the specific experiments for specific PCMs, a video camera to observe the 
+microcapsules being made, and a commercial video tape recorder for recording the 
+57
+ 
+NASA/TM—2003-212460

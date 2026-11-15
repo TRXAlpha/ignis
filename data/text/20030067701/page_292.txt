@@ -1,0 +1,51 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+08:58:09
+09:02:42
+09:05:59
+09:10:46
+09:14:28
+09:18:15
+09:26:02
+09:33:12
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+GMT 02−September−2002, 245/hh:mm:ss
+RMS Acceleration ( mgRMS )
+sams2, 121f02 at LAB1O2, ER1, Drawer 1:[128.73 −23.53 144.15]
+250.0 sa/sec (100.00 Hz)
+∆f = 0.061 Hz,  Nfft = 4096
+Temp. Res. = 0.820 sec, No = 3891
+Increment: 5, Flight: UF2
+Sum
+Hanning
+Span = 45 minutes
+RED Exercise, 0 < f < 30 Hz
+from: t:\pub\pad\, $Name:  $, 27−Sep−2002,10:32:35.418
+Start GMT 02−September−2002, 245/08:55:00.003
+squats&
+heel raises 
+deep
+heel
+raises
+one-leg
+squats
+deadlifts       shoulder
+shrugs &
+situps
+benchpress&
+bentrows
+militarypress&
+forearmpulls
+quickmove
+outofnode
+Figure 6-210 Interval RMS of RED Exercise Period (121f02) 
+278
+NASA/TM—2003-212460

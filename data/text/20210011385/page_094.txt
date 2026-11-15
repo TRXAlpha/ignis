@@ -1,0 +1,22 @@
+ 
+NASA/TM-20210011385 
+86 
+Figure 6.19.—Predicted regression rates from two-zone and one-
+dimensional (1D) models as function of stretch rate a compared with 
+measured rod regression rates and published pseudo-1D experimental 
+data. 
+ 
+ 
+6.1.5.5 Estimate of Heat Loss Along Flammability Boundary 
+The terms of Equation (6.5) are plotted in Figure 6.20 as a function of a. The graph is plotted with 
+logarithmic axes to expand the quenching region (a < 10 s–1) where the heat losses become important. The 
+total flame heating rate to the surface drops linearly with decreasing a as was shown in Figure 6.17. The 
+minimum heat flux at unity a is 1 W/Ah = 1.57 W/cm2, which is in the range of literature values for the 
+critical heat flux for ignition of PMMA (Ref. 31). Along the blowoff branch (a > 10 s–1), fuel vaporization 
+parallels the total flame to surface heat flux. Heat loss is relatively small, with the solid conduction from 
+the surface in depth being most significant, but it decreases with decreasing a, mirroring the Peclet 
+number. Flame radiative feedback to the surface is comparable to surface radiative loss at high a but 
+decreases with decreasing a as the flame temperature decreases. Along the quenching branch, fuel 
+vaporization drops precipitously as the total heat flux to the surface drops and the losses become a 
+significant fraction of the total heat flux to the surface. 
+ 

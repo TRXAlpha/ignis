@@ -1,0 +1,11 @@
+Summary  
+ 
+♦Microgravity flames were found to be especially sensitive to air flow speed in 
+the range 0 to 5 cm/s.   
+ 
+♦The gas phase response is much faster compared to the solid and so as the 
+flow speed is changed, the flame responds with almost no delay.   
+ 
+♦At the lowest speeds examined (less than 1 cm/s) all the flames tended to 
+become dim blue and very stable.  However, heat loss at these very low 
+convective rates is small so the flames can burn for a long time.   

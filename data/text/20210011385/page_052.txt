@@ -1,0 +1,47 @@
+ 
+NASA/TM-20210011385 
+44 
+formula for the thermal regime was used to determine the de Ris coefficient F as 4.76 for an oxidizing 
+mixture of 21 percent O2 and 79 percent N2. Based on adiabatic flame temperature, F is only about 
+3 percent greater. Data from downward spread in ambient air is shown to correlate well (within the 
+experimental uncertainty) with the microgravity data, establishing that the thermal limit is extended to 
+downward spreading configuration in atmospheric condition on Earth. With F evaluated, experimental 
+data for flame spread over thick PMMA is used to determine the effective velocity induced by buoyancy 
+as 1.9 cm/s. Equating the thermal regime spread rate expressions for thin and thick limits, a formula for 
+the transition between thin and thick fuels for downward spread in ambient atmosphere is obtained. For 
+PMMA in ambient air, this transition thickness is evaluated to be 5.2 mm.   
+2.3.9 
+Acknowledgment 
+This work was funded by the NASA International Space Station Research Project Office with 
+Dr. Sandra Olson serving as the contract monitor. We want to acknowledge the invaluable assistance of 
+astronauts Reid Wiseman and Alex Gerst, who ran these Burning and Suppression of Solids—II (BASS–
+II) experiments. This work could not have been done without the intense efforts of the BASS operations 
+team (Jay Owens, Chuck Bunnell, Tibor Lorik, and Carol Reynolds). We also want to acknowledge the 
+NASA ground support teams at Glenn Research Center, Johnson Space Center, and Marshall Space Flight 
+Center that supported the BASS–II operations.    
+2.3.10 References 
+1. Wichman, Indrek S.: Theory of Opposed-Flow Flame Spread. Prog. Energy Combust. Sci., vol. 18, 
+no. 6, 1992, pp. 553–593. 
+2. Blasi, C.D.: Modeling and Simulation of Combustion Processes of Charring and Non-Charring Solid 
+Fuels. Prog. Energy. Combust. Sci., vol. 19, 1993, pp. 71–104. 
+3. Fernandez-Pello, A.C.; and Hirano, T.: Controlling Mechanisms of Flame Spread. Combust. Sci. 
+Technol., vol. 32, nos. 1–4, 1983, pp. 1–31. 
+4. Bhattacharjee, S., et al.: A Novel Apparatus for Flame Spread Study. Proc. Combust. Inst., vol. 34, 
+no. 2, 2013, pp. 2513–2521. 
+5. Williams, F.A.: Mechanism of Fire Spread. Proc. Combust. Inst., vol. 16, no. 1, 1977, pp. 1281–1294. 
+6. Torero, J.L., et al.: The Effect of Gravity on a Laminar Diffusion Flame Established Over a 
+Horizontal Flat Plate. Proc. Combust. Inst., vol. 25, no. 1, 1994, pp. 1701–1709. 
+7. Altenkirch, R.A.; Eichron, R.; and Shang, P.C.: Buoyancy Effects on Flames Spreading Down 
+Thermally Thin Fuels. Combust. Flame, vol. 37, 1980, pp. 71–83. 
+8. Bhattacharjee, Subrata, et al.: Opposed-Flow Flame Spread in Microgravity-Theoretical Prediction of 
+Spread Rate and Flammability Map. Proc. Combust. Inst., vol. 30, no. 2, 2005, pp. 2279–2286.  
+9. De Ris, J.N.: Spread of a Laminar Diffusion Flame. Proc. Combust. Inst., vol. 12, no. 1, 1969, pp. 
+241–252. 
+10. Delichatsios, M.A.: Exact Solution for the Rate of Creeping Flame Spread Over Thermally Thin 
+Materials. Combust. Sci. Technol., vol. 44, nos. 5–6, 1986, pp. 257–267. 
+11. Hirano, Toshisuke; and Sato, Kenji: Effects of Radiation and Convection on Gas Velocity and 
+Temperature Profiles of Flames Spreading Over Paper. Proc. Combust. Inst., vol. 15, no. 1, 1975, pp. 
+233–241. 
+12. Bhattacharjee, Subrata; Nagarkar, Rohit; and Nakamura, Yuji: A Correlation for an Effective Flow 
+Velocity for Capturing the Boundary Layer Effect in Opposed-Flow Flame Spread Over Thin Fuels. 
+Combust. Sci. Technol., vol. 186, no. 8, 2014, pp. 975–987. 

@@ -1,0 +1,52 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+This shows the ISS before impact of a Shuttle for a docking event.  At Shuttle impact during 
+docking, the ISS rigid body accelerates in the –XA direction.  This is depicted in the right side 
+graphic above.  MAMS OSS data show this as a brief –XA-axis acceleration, while SAMS data 
+show this as a +XA-axis acceleration event.  Another telltale acceleration event that bears this 
+fact is that of a Progress vehicle reboost.  Orbital dynamics dictate that in order to boost the 
+altitude of the ISS, its velocity must be increased (it must be accelerated) in the direction of 
+flight.  The Progress vehicle shown in the graphics above is at the far right side of the stack.  Its 
+thrusters are pointed primarily in the –XA direction, so that by Newton’s third law of 
+action/reaction, when these are fired, the ISS accelerates in the +XA (flight) direction.  For this 
+event, the MAMS OSS would report primarily a +XA-axis acceleration, while SAMS would 
+report a –XA-axis acceleration.  Since there is sometimes confusion when referencing 
+acceleration data collected on Earth, another point to consider is this scenario:  Let's say there is 
+an accelerometer at rest on a table on Earth.  This is nice because we can unambiguously 
+reference the sensor's top (farthest from center of Earth) and its bottom (slightly closer to the 
+Earth's center).  Aligned this way, we should expect the accelerometer to sense acceleration in 
+the direction from its bottom toward its top, or upward, while it's sitting there at rest in Earth's 1g 
+gravitational field.  This is Einstein's equivalence principle.  It helps to imagine this same setup 
+as being sufficiently far from a large mass like Earth so as to be able to neglect gravity.  Take 
+this same configuration, a table with the accelerometer snug down flush on its top and 
+sufficiently far away from any massive body so as to neglect gravity.  Now put thrusters pointing 
+"down" out the bottom of each table leg and fire them (all at same time with same force and 
+direction).  If the thrusters' force is such that the acceleration magnitude is 1g and the table is 
+now pushing (accelerating) the accelerometer in the direction from the "bottom" of the sensor 
+toward its "top" (as suggested by thrust out bottom of table legs), then the accelerometer reading 
+should be the same as while it was sitting there at rest in Earth's 1g gravitational field. 
+ 
+The vibratory acceleration regime consists of the acceleration spectrum from 0.01 to 400 Hz, 
+with magnitudes expected to vary greatly depending on the nature of the disturbance and on the 
+transmissibility path from the source to locations of interest.  The relatively high frequency 
+accelerations that shape the vibratory environment of the ISS are usually associated with vehicle 
+operations, vehicle systems, experiment-related equipment, and crew activity. 
+ 
+Section 6.2.1 of this report discusses the impact of vehicle operations such as Progress vehicle 
+reboost, Shuttle docking and undocking.  In section 6.2.2, we examine vehicle subsystems 
+including the ARIS, Russian segment air conditioners, and control moment gyroscopes.  
+Equipment used for Gas Analysis System for Metabolic Analysis of Physiology (GASMAP) and 
+Microencapsulation Electrostatic Processing System (MEPS) are the focus of section 6.2.3.  The 
+last major category of vibratory disturbances considered for this report is crew activity.  Activity 
+such as exercise, Temporary Sleep Station (TeSS) entry/exit, EVA, and Public Affairs Office 
+(PAO) events are the subject of section 6.2.4.  Finally, section 8.2 serves to summarize the 
+vibratory analysis results for Increment-4/5. 
+ 
+ 
+ 
+  
+44
+ 
+NASA/TM—2003-212460

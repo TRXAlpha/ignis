@@ -1,0 +1,44 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+5
+10
+15
+20
+25
+10
+−12
+10
+−11
+10
+−10
+10
+−9
+10
+−8
+10
+−7
+10
+−6
+ PSD (g2/Hz)
+Frequency (Hz)
+from: t:\pub\pad\, $Name: pop3_06−17−2002 $, 29−Jul−2002,14:23:26.646
+SKV−2: Start GMT 04−September−2002, 247/08:00:00
+SKV−1: Start GMT 23−September−2002, 266/08:00:00
+Hanning
+Sum
+Increment: 5, Flight: UF2
+Temp. Res. = 32.768 sec, No = 0
+∆f = 0.031 Hz,  Nfft = 2048
+62.5 sa/sec (25.00 Hz)
+sams2, 121f08 at LAB1S3, MSG, Ceiling Plate A2−A3:[118.14 53.32 160.52]
+23.2 Hz, SKV−2
+23.4 Hz, SKV−1
+ 
+ 
+Figure 6-130 PSD of SKVs (121f08) 
+ 
+Figure 6-130 PSD of SKVs (121f08) 
+203
+NASA/TM—2003-212460

@@ -1,0 +1,44 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+Acceleration Vector Magnitude  (mg)
+Overall Max = 42.465 mg
+Time (minutes)
+from: t:\pub\pad\, $Name:  $, 02−Apr−2002,08:08:36.797
+Start GMT 01−April−2002, 091/08:05:00.001
+TeSS Test
+Size: 0.50,  Step: 0.50 sec.
+Interval Minmax
+Vector Magnitude
+Increment: 4, Flight: UF1
+500.0 sa/sec (200.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+Figure 6-236 Interval Magnitude of TeSS Impact Test (121f05) 
+304
+NASA/TM—2003-212460

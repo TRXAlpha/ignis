@@ -1,0 +1,53 @@
+ 
+NASA/TM-20210011385 
+17 
+To establish the boundary layer effect on flame spread rate, experiments were carried out with ashless 
+filter paper with the opposing flow velocity as the control variable. While the blowoff extinction velocity 
+is assumed to be only a function of chemical kinetics, these experiments clearly establish the boundary 
+layer development as an important parameter. The experiments are quite repeatable, and a correlation has 
+been obtained for cellulosic fuel.  
+2.1.3 
+Concluding Remarks 
+The Residence Time Driven Flame Spread (RTDFS) experiment of Burning and Suppression of 
+Solids—II (BASS–II) resulted in the publication of two archival journal articles, several conference 
+papers, and two manuscripts submitted to the 36th International Symposium on Combustion. RTDFS 
+vindicated the theoretical and computational findings that the critical opposed-flow velocity at which 
+radiative extinction occurs in a microgravity environment is independent of fuel thickness, the manuscript 
+published in Combustion and Flame is included in its entirety in Section 2.2. 
+2.1.4 
+References 
+1. Fernandez-Pello, A.C.; and Hirano, T.: Controlling Mechanisms of Flame Spread. Combust. Sci. 
+Technol., vol. 32, nos. 1–4, 1983, pp. 1–31. 
+2. Bhattacharjee, Subrata, et al.: A Novel Apparatus for Flame Spread Study. Proc. Combust. Inst., vol. 
+34, no. 2, 2013, pp. 2513–2521. 
+3. Paolini, Christopher, et al.: Flame Tower: A Novel Apparatus to Study Flame Spread at Low 
+Concurrent or Opposed Flow Velocity. Presented at the 8th U.S. National Combustion Meeting, 
+paper 070FR–0141, 2013. https://sutherland.che.utah.edu/USCI2013/PAPERS/2H04-070FR-
+0141.pdf Accessed June 18, 2021. 
+4. Hirano, T.: Flame Spread. Fire Safety Science. Proceeding, 5th AOSFST, Newcastle, Australia, 2001, 
+pp. 40–54.  
+2.1.5 
+Publications Resulting from This Work 
+Journal Articles 
+• 
+Bhattacharjee, S., et al.: Opposed-Flow Flame Spread: A Comparison of Microgravity and 
+Normal Gravity Experiments to Establish the Thermal Regime. Fire Saf. J., vol. 79, 2016, pp. 
+111–118. DOI: 10.1016/j.firesaf.2015.11.011 Accessed June 18, 2021. 
+• 
+Bhattacharjee, S., et al.: The Critical Flow Velocity for Radiative Extinction in Opposed-Flow 
+Flame Spread in a Microgravity Environment: A Comparison of Experimental, Computational, 
+and Theoretical Results. Combust. Flame, vol. 163, 2016, pp. 472–477. DOI: 
+10.1016/j.combustflame.2015.10.023 Accessed June 18, 2021. 
+Conference Articles and Presentations 
+• 
+Bhattacharjee, S., et al.: The Critical Flow Velocity for Radiative Extinction in Opposed-Flow 
+Flame Spread in a Microgravity Environment: A Comparison of Experimental, Computational, 
+and Theoretical Results. Presented at the 9th Mediterranean Combustion Symposium, Rhodes, 
+Greece, 2015. 
+• 
+Olson, Sandra L., et al.: Results From On-Board CSA–CP and CDM Sensor Readings During the 
+Burning and Suppression of Solids—II (BASS–II) Experiment in the Microgravity Science 
+Glovebox (MSG). ICES–2015–196, 2015. 
+• 
+Bhattacharjee, S.; and Carmignani, L.I.: The Effect of Boundary Layer on Blow-Off Extinction in 
+Opposed-Flow Flame Spread: Results of Experiments and Simplified Analysis. ATEM’15: 

@@ -1,0 +1,156 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+TABLE 5-5 ROS-ISS INCREMENT-5 PAYLOAD COMPLEMENT 
+Experiment Name 
+Research Objective 
+Hardware Used 
+Up/Down Flight or 
+Vehicle 
+Research Area 
+МБИ-1 “Sprut-MBI” 
+Study of human bodily 
+fluids under condition of 
+long duration of flight 
+TSENTR power unit; 
+Laptop 
+Existing on orbit 
+Biomedical 
+МБИ-9 “Pulse” 
+Study of the autonomic 
+regulation of the human 
+cardiorespiratory  system 
+in weightlessness 
+Computer 
+Existing on orbit 
+Biomedical 
+БИО-2 “Biorisk” 
+Study of space flight 
+impact on micro-
+organisms-substrates 
+systems 
+Biorisk-KM set; 
+Biorisk-MSV containers; 
+Biorisk-MSN set 
+Existing on orbit 
+Biomedical 
+БИО-5 “Rasteniya-2” 
+Study of the space flight 
+effect on the growth and 
+development of higher 
+plants 
+BVP-70P video camera; 
+computer 
+Existing on orbit 
+Biomedical 
+ГФИ-1 “Relaksatsiya” 
+(Relaxation 
+Study of the 
+chemiluminescent 
+chemical reactions and 
+atmospheric light  
+phenomena  
+“Fialka-MV Kosmos” 
+spectral-zonal ultraviolet 
+system 
+Existing on orbit 
+Geophysical 
+ГФИ-8 “Uragan” 
+Experimental testing and 
+verification of the ground-
+space system for 
+eliminating the impact of 
+man-made catastrophes 
+Binocular telescopic 
+device Rubinar; Photo 
+camera Hasselblad; Video 
+complex LIV 
+Existing on orbit 
+Geophysical 
+ГФИ-10 “Molnia-SM 
+Study of atmosphere, 
+ionosphere and 
+magnetosphere 
+electromagnetic 
+interaction related to 
+storms & seismic activities 
+BFS-3M video-
+photometric system 
+Existing on-orbit; Progress 
+M-8 
+Geophysical 
+TEX-20 “Plasma Kristall” 
+Study of the plasma 
+crystals and fluids under 
+microgravity condition 
+Plazmennyi kristall 
+equipment; Telescience 
+flight equipment 
+Existing on-orbit 
+Technical studies 
+МБИ-3 “Parodont” 
+Study of periodontal tissue 
+condition under space 
+flight conditions 
+Kriogem-03/1 refrigerator 
+Progress M-8 
+Biomedical 
+МБИ-4 “Farma” 
+Study of the specificities 
+of pharmacological effects 
+under long duration space 
+flight 
+Reflotron-4 kit 
+Progress M-8 
+Biomedical 
+МБИ-5 “Kardio-ODNT” 
+Integrated study of the 
+dynamics of the primary 
+parameters of cardiac 
+activity and blood 
+circulation 
+“Gamma-1M” equipment, 
+“Chibis” LBNP device 
+Existing on-orbit 
+Biomedical 
+TEX-25 “Skorpion” 
+Development and testing 
+multifunctional control 
+equipment for conditions 
+verification of scientific 
+researches 
+Skorpion equipment 
+Progress M-8 
+Technical studies 
+МБИ-8 Profilaktika 
+(Countermeasure 
+Study of mechanisms and 
+efficiency of 
+countermeasures for 
+preventing muscular 
+skeletal apparatus 
+degradation in 
+microgravity 
+Reflotron-4 complex; 
+TVIS treadmill; VB-3 
+bicycle ergometer; Bungee 
+cords set; Gamma-1M 
+equipment; Laptop; 
+Kardiokasseta; power unit 
+Tsentr 
+Existing on-orbit 
+Biomedical 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+27
+ 
+NASA/TM—2003-212460

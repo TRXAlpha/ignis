@@ -1,0 +1,44 @@
+ 
+NASA/TM-20210011385 
+58 
+Figure 5.3.—M17 still images at different flow velocities. Last image is just before extinction as flow is turned off. 
+ 
+Figure 5.3 shows flame still images taken by the Nikon camera during one experiment as the flow is 
+turned down incrementally. O2 is also decreasing slightly during the experiment. Soot decreases as flow 
+decreases, and flame is all blue prior to extinction.   
+Flat PMMA samples have been burned in the narrow channel apparatus (NCA) to simulate microgravity 
+conditions (Refs. 7 and 8). In the flight experiment, five thicknesses of PMMA slab (1 to 5 mm), in two 
+widths (1.2 and 2.2 cm), and one-sided versus two-sided burning were studied in various O2 concentrations 
+(Refs. 9 to 11). Flow velocity was varied to obtain spread rates at different flow conditions. Some tests 
+lasted more than 30 min. The goal of these experiments is to begin gathering data for sample materials of 
+finite thickness, in which case the sample regression and consumption plays a more important role than 
+when the sample is extremely thin (Refs. 7 and 8). The objective was to obtain microgravity data for flame 
+spread over a thick fuel and compare the results to data from the normal-gravity NCA that uses a small-
+height flow duct to suppress buoyant flow. Quenching extinction data was also obtained at finite flow rates 
+for most of the tests. Preliminary comparisons have been published (Refs. 7 and 10). 
+There was a clear difference in how the material burned as ambient O2 concentration was decreased. 
+At near-air O2 concentrations, the flames spread over the fuel surface without burning through for both 
+one-sided and two-sided samples. As O2 concentrations were reduced to approximately 19 percent 
+however, the flames could no longer spread across the surface of the two-sided fuel, but rather completely 
+consumed the fuel from the trailing edge. This is shown in Figure 5.4 for 2-mm-thick by 2.2-cm-wide 
+samples. Note that the velocities listed are the quenching velocities. 
+Figure 5.4(a) and (b) show regression behavior that is similar to what is found in normal-gravity 
+downward flame spread experiments. The fuel is completely consumed a few millimeters downstream of 
+the leading edge of the flame. The curved shape of the melt layer occurs because of heat losses to the 
+holder sides. There is a similarity to the last image in Figure 5.3 for a much thinner material, down to the 
+ring-shaped tail. The flame shape in Figure 5.4 also shows curvature due to heat losses to the sample 
+holder, increasing as the forced-flow velocity decreases.   
+Figure 5.4(c) and (d) are of a higher O2 level, showing how the flame spread across the material, 
+leaving behind a very long bubbled sample. The two sides of the flame extinguished separately on each 
+side of the sample, within a few seconds of each other. Figure 5.4(e) and (f) is a single-sided sample 
+whose flame was quite weak despite the high flow rate and the high O2 concentration. Heat loss to the 
+metal substrate clearly weakened this flame. It too left behind a long bubbled sample. 
+Spread rates decrease as thickness increases, and also decrease as forced-flow velocity decreases 
+(Ref. 10). Figure 5.5 shows that, for the one-sided samples, there was a clear trend that as thickness 
+increased, the O2 concentration for extinction decreased but the forced-flow velocity for extinction 
+increased. For the two-sided samples that spread across the surface, there was not a clear trend with 
+thickness, but the extinction velocities were significantly lower than for the one-sided samples, indicating 
+that heat loss to the substrate for the one-sided flame was significantly greater than the two-sided flame 
+without a substrate. There was no clear dependence on thickness for the extinction limits for both the 1- and 
+2.2-cm-wide regressing samples, but the 1.2-cm-wide samples did extinguish approximately 1 percent O2 
+higher than the 2.2-cm-wide samples, most likely due to increased relative heat losses to the sample holder. 

@@ -1,0 +1,77 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+7
+To 
+check 
+this 
+correlation 
+with 
+previous 
+experiments, the blowoff data from Halli and T’ien 
+[12] is plotted in Fig. 9 using the same buoyant flow 
+shift for their rod radius of 0.635 cm.  It is seen that 
+the blowoff branch data shifts into the BASS-II 
+boundary for most of the blowoff branch (a>~ab) 
+The linear trend in blowoff data with oxygen is 
+noteworthy and potentially useful for developing an 
+improved test method that can be performed in normal 
+gravity to determine flammability in microgravity.  
+The idea is that the actual flammability boundary as 
+given by the BASS-II data can be approximated 
+simply by the extrapolating the linear blowoff 
+boundary to zero stretch, which estimates that 13.4% 
+O2 is the limiting oxygen concentration below which 
+the fuel cannot burn at any stretch rate.  From a fire 
+safety perspective, it is a conservative estimate but still 
+quite close to the observed 13.6% O2 minimum 
+concentration needed to get stable flames in BASS-II 
+[12].  The estimate is good because the microgravity 
+quenching boundary turns upward away from the 
+blowoff line only for very low-speed flows, a very 
+narrow region compared to the overall boundary. 
+The use of an empirical shift to determine the buoyant stretch predicates knowledge of the microgravity boundary, 
+which is not generally the case.  Using another way to account for the shift, consider the formulation from [19] where 
+the buoyant stretch takes the form 
+𝑎𝑏= 𝐾√
+𝑔
+𝑟 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         (5) 
+Using values ab = 80 s-1, g=981 cm/s2, and ro = 0.318 cm, the constant K in Eq. 5 is estimated to be 1.44.  Further 
+research is needed to determine the applicability of the buoyant stretch constant K for different materials.  Since K is 
+a density ratio [19], and gas-phase chemistry at the blowoff limit may have the same limiting reaction rate for a given 
+flow rate (critical Damkohler number), the critical temperatures may be similar for different materials with the same 
+basic gas phase chemistry [1] at each oxygen concentration.  Thus for common C-H-O fuels one would expect the 
+density ratio to also be similar at blowoff.  Differences in flammability limits may be attributed to differences in solid 
+phase degradation kinetics [20].  On the other hand, fuels with other chemical additives (N, Br, Cl, P, etc.) that impact 
+the gas phase chemistry may not follow the same trends to complement these flight results.  
+IV. Conclusions 
+Normal gravity blowoff limits were measured for the axisymmetric cast PMMA rod geometry in upward axial 
+stagnation flow.  Five radii (0.318 cm to 1.905 cm) at five oxygen concentrations (14 to 18% by volume) were tested.  
+The blowoff velocities were converted to forced stretch rates.  By using a normalized thermal length ratio δ/δo = (r 
+/ro)1/2 to account for the stretch rate at the flame standoff distance and normalizing the results to the base rod size as 
+well as adjusting the flow due to rod blockage in the tube, all the data was correlated onto a single curve. 
+The blowoff boundary in normal gravity was compared to the complete microgravity extinction boundary from 
+the Burning and Suppression of Solids – II (BASS-II) experiments performed aboard the International Space Station.  
+The normal gravity blowoff boundary was parallel to the BASS-II boundary, but shifted to lower stretch rates.  To 
+account for the additional inherent buoyant stretch, the normal gravity boundary was empirically shifted to the right 
+by a value ab =80 s-1, which for the base rod size corresponds to a forced flow velocity of 17 cm/s, in good agreement 
+with buoyant flow velocity estimates.  
+We suggest an improved normal gravity ‘upward flame spread test’ method to estimate material flammability in 
+microgravity.  The first step is to determine the normal gravity blowoff boundary for an axisymmetric rod geometry 
+burning in a forced flow tube.  Then, the buoyant stretch contribution is corrected for to predict the microgravity 
+Fig. 9.   Data from Halli & T’ien [12] shifted to account 
+for buoyant stretch compared to the BASS-II boundary.

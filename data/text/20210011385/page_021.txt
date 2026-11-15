@@ -1,0 +1,49 @@
+ 
+NASA/TM-20210011385 
+13 
+2.0 
+Individual Principal Investigator Report: Bhattacharjee 
+2.1 
+Residence Time Driven Flame Spread 
+The objective of the Residence Time Driven Flame Spread (RTDFS) experiment of Burning and 
+Suppression of Solids—II (BASS–II) was to examine how thermal and species fields can diverge and lead 
+to microgravity flame extinguishment by varying fuel thickness.  
+Symbols 
+t 
+time, s 
+Vg 
+opposed-flow velocity 
+2.1.1 
+Test Matrix 
+Samples were 1- and 2-cm-wide thin films of plastic (PMMA (polymethylmethacrylate)). 
+Thicknesses were between 0.1 and 0.4 mm. The test matrix is listed in Appendix A. 
+2.1.2 
+Results 
+Twenty-two test points were obtained with the BASS–II experiments. The wealth of data has been 
+catalogued at http://flame.sdsu.edu.    
+2.1.2.1 Extinction Velocity 
+Each test is started by establishing a steady flame spread in the presence of a forced flow and then 
+reducing the flow velocity in a gradual manner, as shown in Figure 2.1. In the first test, a steady flame 
+was established over a 100-μm sample. After the flame propagated across half the sample length at a 
+steady spread rate of 2.2 mm/s, the flow was abruptly cut off and the flame was observed to extinguish 
+within 2 s, as shown by the radiometer signal drop in Figure 2.2. To pin down the extinction flow 
+velocity, a second test was done under the same conditions except the flow velocity was set at 3 cm/s and 
+after the flame propagated about half the sample length, the flow was gradually reduced. The flame 
+spread rate of the leading edge, as plotted in Figure 2.3, shows that the flame extinguishes at about 30 s 
+after ignition. The fan voltage at that time indicates a flow velocity of about 1.1 cm/s. The sequence of 
+images in Figure 2.1 shows the pathway to radiative extinction. As the flow speed is gradually reduced 
+from about t = 27 s, the flame size starts shrinking and the orange color disappears and the flame becomes 
+completely blue, most possibly because of the temperature drop brought about by radiative losses, which 
+is enhanced by the increased residence time at low flow velocity. The signal from the radiometer, shown 
+in Figure 2.2, is also consistent with a cooling and shrinking flame as the signal starts decreasing from 
+right about t = 27 s. After t = 30 s, there is no visible flame and the radiometer data (Figure 2.2) indicate a 
+sudden change in slope at that time, possibly because the radiation is emitted mostly by the sample holder 
+with the combustion products swept away by the flow. 
+When tests are repeated with samples of different thicknesses, the extinction velocities are found to 
+be about 1 cm/s for 100, 200, and 300 μm and about 1.5 cm/s for 400 μm. At all these thicknesses, the 
+fuel can be considered thermally thin because the maximum spread rate was found to be inversely 
+proportional to fuel thickness (Ref. 1), a hallmark of a thermally thin regime. However, it must be 
+mentioned that there are significant uncertainties in these values as the calibration at such low velocity 
+has high error bars. The boundary layer formed by the fuel and the tunnel walls would influence the flow 
+velocity seen by the flame. Also, there is a time lag between when the velocity is reduced and when the 
+reduced velocity reaches the flame. However, we assume that the time lag works the same way when the 

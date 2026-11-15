@@ -1,0 +1,40 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+10
+−2
+10
+−1
+10
+0
+10
+1
+10
+2
+10
+−7
+10
+−6
+10
+−5
+10
+−4
+10
+−3
+10
+−2
+ RMS Acceleration (g RMS )
+One−Third Octave Frequency Bands (Hz)
+from: t:\pub\pad\, $Name:  $, 17−Dec−2002,07:37:37.906
+Start GMT 20−November−2002, 324/23:03:00.001
+ARIS IDLE
+Span = 360.00 sec.
+Hanning, k = 8
+Sum
+Increment: 5, Flight: UF2
+∆f = 0.008 Hz,  Nfft = 65536
+500.0 sa/sec (200.00 Hz)
+sams2, 121f04 at LAB1O2, ER1, Lower Z Panel:[149.54 −40.54 135.25]
+Figure 6-108 One-Third Octave RMS of ARIS IDLE (121f04) 
+181
+NASA/TM—2003-212460

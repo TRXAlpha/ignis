@@ -1,0 +1,12 @@
+ 
+NASA/TM-20210011385 
+74 
+Figure 6.7.—Time history of stretch rate a and radiometer signal for two local blowoffs for 
+0.318 cm rod.   
+ 
+ 
+Figure 6.8.—Sequence of still flame images from two local blowoffs. Images in each set are 1 s apart. Yellow 
+horizontal lines reflect position of rod tip. (a) Blowoff 1. (b) Blowoff 2.  
+6.1.4.4 Flammability Boundary 
+For each test, the flow speed at which the flames extinguished and the last flow speed at which a 
+stable flame was observed (or the flow at which the flame did not blow out in the drop time for drop 

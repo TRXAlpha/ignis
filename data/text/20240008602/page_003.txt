@@ -1,0 +1,40 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+3
+Trash and cargo were placed by the crew in a manner which constructed interconnected channels of approximately 
+triangular shape form, as shown in Figure 2. These channels, referred to as standoffs, transported species, smoke, and 
+heat from the outlet of the Saffire payload during a gas release or burn event. The heat addition rate (HAR) and the 
+mass generation rate (MGR), which supply the heat and combustion products from the Saffire payload to the Cygnus 
+cabin, are applied to the Saffire outlet, which has a surface area of 50 cm2. The flow of gas generally went towards 
+the zenith section of Cygnus from the Saffire outlet through the forward port (FP) standoff. From there, heat and 
+species would either diffuse towards the other three standoffs, or flow back to the nadir section through the ECLSS 
+system.  
+ 
+ 
+Figure 2. Saffire Experiment Model. A) This view shows the forward side of the Cygnus vehicle where the outlet 
+of the Saffire payload can be viewed. This highlights the most direct path of the flow through the FP standoff, where 
+RS is positioned, to the zenith section where RS6 and the FFD are located. B) This view shows the aft side of the 
+Cygnus vehicle where the inlet of Saffire takes in air from the aft port standoff, where RS4 is located, and the ECLSS 
+outlet, where RS1 is located. 
+  
+ 
+Table 1 presents the experimental events completed in the Saffire V campaign. Similar to Saffire IV, Saffire V 
+started with a CO2 scrub by pulling cabin air through the FFD. Event 2 released CO2 in the cabin to help determine 
+the free volume used to calculate the amount of oxygen that needed to be added between burns. In addition to CO2, 
+HF was released to study its decay in the atmosphere since it tends to adsorb to surfaces more than other combustion 
+products such as CO2. A flow visualization test was performed to determine any major differences in the Saffire Flow 
+Unit (SFU) after all the planned burns were completed in event 3 and 9. Event 6 burned a one-sided PMMA, while 
+event 8 burned a thicker structured PMMA with grooves and ridges of increasing dimension or separation9. The 
+atmosphere for the experimental campaign was approximately 0.71 atm and 29% oxygen, with an initial temperature 
+of approximately 24.1°C. 
+ 
+III. Modeling 
+By using Fire Dynamics Simulator (FDS), a code developed by the National Institute of Standards and Technology 
+(NIST), a model was constructed that predicted the effect of the PMMA burn events from Saffire V on the Cygnus 
+Vehicle. The focus of this large-eddy turbulent simulation code is the low-speed flow created by a compartment fire 
+as well as smoke and heat transfer14. PyrosimTM 15  is the graphical interface that was used to run the FDS simulations 
+and develop the vehicle model. A picture of this model highlighting the FFD, SFU, ECLSS system and RS locations 
+is provided by Figure 2. A cargo placement map and photographs provided by NG were used to construct the geometry 
+in Pyrosim, as was discussed in a previous paper discussing the cotton burning sample (event 5)13. 

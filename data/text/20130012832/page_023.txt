@@ -1,0 +1,46 @@
+xbase = 1.68 t - 13.81 
+xtip = 1.71 t + 2.25 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+0
+10
+20
+30
+40
+50
+60
+Flame Length, mm 
+Flame Tip and Base  Position, mm  
+Time, s 
+Still image analysis; 1 cm-wide fuel, 10 cm/s airflow  
+ Flame Tip Position
+ Flame Base Position
+ Flame Length

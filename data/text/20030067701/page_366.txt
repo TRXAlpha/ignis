@@ -1,0 +1,76 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+TABLE E - 7 ANCILLARY PLOT INFORMATION FOR RMS ACCELERATION VERSUS TIME PLOT 
+TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+Frequency Resolution, Frequency 
+Range 
+∆f=0.061 Hz, Range: 0-5 Hz 
+Optional Field 2 
+Temporal Resolution 
+Temp. Resolution: 16.384 sec. 
+Optional Field 3 
+Window Type, #PSDs 
+Hanning, k=1 
+Optional Field 4 
+ 
+ 
+ 
+E.3.2.7 RMS Acceleration Versus One-Third Octave Frequency Bands 
+This type of plot quantifies the spectral content in proportional bandwidth frequency bands for a 
+given time interval of interest (nominally 100 seconds).  The (nearly) one-third octave bands are 
+those defined by the ISS microgravity requirements; see Table 4 [32].  The results of this 
+analysis are typically plotted along with a bold stair step curve representing the ISS combined 
+vibratory limits in order to compare the acceleration environment to these prescribed limits.  
+These plots are not particularly useful for identifying the source of a disturbance for a band that 
+exceeds the desired limits. 
+ 
+TABLE E - 8 ANCILLARY PLOT INFORMATION FOR ONE-THIRD OCTAVE BANDS PLOT TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+Frequency Resolution, NFFT 
+∆f=0.010 Hz, Nfft=50568 
+Optional Field 2 
+Mode 
+Mode: 100 sec 
+Optional Field 3 
+Window Type, # PSD’s Averaged 
+Hanning, k=1 
+Optional Field 4 
+Timespan 
+Span = 101.00 secs 
+ 
+E.3.2.8 Cumulative RMS Acceleration Versus Frequency 
+A plot of cumulative RMS acceleration versus frequency quantifies, in cumulative fashion, the 
+contributions of spectral components to the overall measured RMS acceleration level for the time 
+frame of interest.  This plot is also derived from the PSD using Parseval's theorem.  It 
+quantitatively highlights key spectral regions - steep slopes indicate strong narrowband 
+disturbances that contribute significantly to the acceleration environment, while shallow slopes 
+indicate relatively quiet portions of the spectrum. 
+ 
+TABLE E - 9  ANCILLARY PLOT INFORMATION FOR CUMULATIVE RMS ACCELERATION VERSUS 
+FREQUENCY PLOT TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+Frequency Resolution, NFFT 
+∆f=0.061 Hz, Nfft=8192 
+Optional Field 2 
+ 
+ 
+Optional Field 3 
+Window Type, # PSD’s Averaged 
+Hanning, k=2 
+Optional Field 4 
+Timespan 
+Span = 25.00 sec. 
+ 
+352
+NASA/TM—2003-212460

@@ -1,0 +1,61 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+carbon dioxide and other atmospheric contaminants, and monitoring the atmosphere for the 
+presence of combustion products, and major constituent proportions.  Additionally, the ECLSS 
+collects, processes, and stores water and waste used and produced by the crewmembers, and 
+provides fire detection, suppression, and crew safety equipment. 
+ 
+This section includes analysis of vibratory disturbance sources such as ARIS, Russian segment 
+air conditioners (part of ECLSS), and control moment gyroscopes. 
+ 
+6.2.2.1 
+Active Rack Isolation System (ARIS) 
+The following information was obtained from the ARIS-ICE team: 
+ 
+no SAMS Nov 14th in SLOW HOLD 
+    data 
+GMT 318:17:14 thru 318:18:52, with a small rack command at 17:56  
+ 
+Nov 20th 
+GMT 324:21:13 Transition to HOLD.......................see Figure 6-99 
+GMT 324:21:21 Transition to ACTIVE...................see Figure 6-99 
+GMT 324:22:49 Transition to REST.......................see Figure 6-100 
+GMT 324:23:02 Transition to IDLE.......................see Figure 6-100 
+ 
+While the spectrograms of Figure 6-99 and Figure 6-100 show no discernible effects at the 
+transition times cited, the spectrograms of Figure 6-97 and Figure 6-98 show an 8-hour period 
+around these transitions for SAMS sensors 121f03 and 121f04, respectively.  The SAMS 121f03 
+sensor was located on the Z-panel of the ARIS rack (ER2) for the transition times cited above, 
+while the SAMS 121f04 sensor was attached to the Z-panel of the adjacent rack (ER1). 
+ 
+To quantify the effect of ARIS in various modes from locations on the Z-panel of the ARIS rack 
+and from the Z-panel of an adjacent rack, SAMS sensor 121f03 and 121f04 data were analyzed 
+for the times shown above.  The results are presented in the form of one-third octave (OTO) root-
+mean-square (RMS) values and are overlaid by the vibratory requirements curve.  Figure 6-101 
+and Figure 6-102 show results for ARIS in hold mode.  Figure 6-103 and Figure 6-104 show 
+results for ARIS in active mode.  Figure 6-105 and Figure 6-106 show results for ARIS in rest 
+mode.  Figure 6-107 and Figure 6-108 show results for ARIS in idle mode. 
+ 
+TABLE 6-19 ARIS MODE TRANSITION TIMES 
+ARIS Mode Transition 
+GMT  
+Reference Figure 
+HOLD to ACTIVE 
+28-Oct-2002, 301/14:38 
+Figure 6-109, Figure 6-112 
+ACTIVE to HOLD 
+28-Oct-2002, 301/18:55 
+Figure 6-110, Figure 6-113 
+HOLD to IDLE 
+29-Oct-2002, 302/09:53 
+Figure 6-111, Figure 6-114 
+ 
+Spectrograms for SAMS 121f03 sensor located on the Z-panel of the ARIS rack (ER2) for the 
+transition times cited above are shown in Figure 6-109, Figure 6-110, and Figure 6-111; while 
+Figure 6-112, Figure 6-113, and Figure 6-114 are spectrograms of the corresponding time frames 
+for the SAMS 121f04 sensor attached to the Z-panel of the adjacent rack (ER1).  Table 6-19 
+provides the GMT references for these ARIS mode transitions.  The relatively strong broadband 
+50
+ 
+NASA/TM—2003-212460

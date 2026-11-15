@@ -1,0 +1,66 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+6
+actual SFU outlet sensor proved to not sample well-mixed flow and RS3 is the sensor closest to the outlet. Since 
+significant diffusion happens from the outlet to RS3, the difference in the inlet and RS3 was scaled up to provide the 
+total amount of combustion products that entered the cabin. For example, in event 6, the six remote sensors increased 
+on average 2230 ppm of CO2 at steady state (~1500 s), which gives a total mass production from the SFU of 54.4 g. 
+However, when integrating the MGR curve with RS3 acting as the outlet sensor, it only provided 29.9 g of CO2. 
+Hence, a scaling factor (SF) of 1.82 was utilized in the MGR curve. Once CO2 flux out of the SFU is known, H2O 
+flux is determined by assuming stoichiometric conversion of PMMA into CO2 and H2O, as is given by Eq. 3. and 
+highlighted in Table 4. Video of the flame events were used to determine for how long products were being transferred 
+into the cabin from Saffire. Once the main flame went out, the creation of combustion products was assumed to be 
+finished, which was 500 s for event 6 and 400 s for event 8. 
+ 
+ 
+                                                    𝑀𝐺𝑅 =SF(𝑌𝑅𝑆3-𝑌𝑖𝑛)𝑉̇𝑎𝑖𝑟 𝜌𝑎𝑖𝑟                                                (2) 
+ 
+   
+                                                          𝐶5𝐻8𝑂2(v)+6𝑂2→5𝐶𝑂2+4𝐻2𝑂(v)                                                        (3)  
+ 
+ 
+Table 4. PMMA Fuel Properties 
+Event 6 
+Event 8 
+Sample Length (cm) 
+18 
+20 
+Sample Width (cm) 
+41 
+41 
+Sample thickness (cm) 
+0.5 
+1.0 
+Density of Combustible Material (kg/m3) 
+1180 
+1180 
+CO2 Stoichiometric Yield (kgCO2/kgFuel) 
+1.76 
+1.76 
+H2O Stoichiometric Yield (kgH2O/kgFuel) 
+0.58 
+0.58 
+ 
+ 
+ 
+The MGR and HAR for the Saffire V PMMA burning events are shown in Figures 4 and 5. On the right axis, the 
+SFU flow rate and HAR are presented while the CO2 and H2O generation rates are on the left. About the same amount 
+of  CO2 is created by the one-sided sample (0.054 kg of CO2) as by the structured sample (0.0601 kg of CO2). While 
+the structured PMMA is twice as thick, it does have grooves cut out of it, making it similar in combustible material as 
+the one-sided PMMA. 
+ 
+Figure 4. Mass, heat and flow inputs for the Saffire 
+V one-sided PMMA burn event. The left axis in blue 
+corresponds CO2 and H2O mass generation rates 
+while the red axis on the right corresponds to the heat 
+release rate coming out of Saffire, as well as the 
+Saffire flow rate.  
+ 
+Figure 5. Mass, heat and flow inputs for the Saffire 
+V structured PMMA burn event.  The left axis in 
+blue corresponds CO2 and H2O mass generation rates 
+while the red axis on the right corresponds to the heat 
+release rate coming out of Saffire, as well as the Saffire 
+flow rate.  

@@ -1,0 +1,60 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+2
+4
+6
+8
+10
+12
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+Z−Axis Acceleration (ûg)
+RMS = 1.5992 ûg
+Mean = −1.4648 ûg
+Time (hours)
+from: t:\pub\pad\, $Name:  $, 16−Dec−2002,12:27:50.284
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+Y−Axis Acceleration (ûg)
+RMS = 0.4869 ûg
+Mean = −0.2713 ûg
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+X−Axis Acceleration (ûg)
+RMS = 0.5091 ûg
+Mean = −0.3618 ûg
+Start GMT 30−September−2002, 273/11:30:12.354
+PFMI−07
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 5, Flight: UF2
+0.0625 sa/sec (0.01 Hz)
+mams, ossbtmf  mapped to SUBSA:[106.65 56.48 181.12]
+ 
+ 
+Figure 6-56 Time Series of PFMI-07 Sample Run (OSSBTMF) 
+129
+NASA/TM—2003-212460

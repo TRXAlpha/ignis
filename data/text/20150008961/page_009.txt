@@ -1,0 +1,32 @@
+Sub Topic: Fire Research 
+ 
+9 
+We can compare the importance of the different losses by normalizing them with the net 
+flame heat flux (left side of energy balance, which includes gas-phase conduction and gas radiation).   
+In Figure 5, the solid conduction, surface radiation, and the combined solid conduction and surface 
+radiative loss are normalized by the net flame heat flux and are plotted on the right axis.   As Peclet 
+number decreases (rod regression rate decreases as forced stretch rate decreases), the radiative loss 
+ratio increases dramatically since surface radiative loss is a constant while flame heat flux decreases 
+linearly with Peclet number.  The solid conduction ratio actually falls off as Peclet number is 
+reduced.  The combined radiative and conductive loss ratio increases at low Peclet number, and one 
+would expect the flame to quench when the combined losses exceed approximately 70% of the net 
+flame heat flux [24, 25]. The primary reason for quenching is the reduced net heat flux from the 
+flame compared to the ongoing losses. 
+ 
+Figure 5:    Surface Energy Balance terms.    As the rod regression rate decreases (Pe decreases, a 
+decreases), the relative importance of heat losses increases, eventually causing quenching.   At 
+quenching, surface radiation is higher than solid conduction loss, but the primary reason for 
+quenching is the reduced net heat flux from the flame compared to the ongoing losses. 
+ 
+4. Conclusions 
+Twenty-four concurrent axial flow flammability tests with three diameters of cast PMMA 
+cylindrical rods were performed in the MSG on the ISS.   Oxygen concentrations in the MSG 
+working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to 
+~14% O2, and oxygen concentrations before and after each test were measured with an on-board 
+CSA-CP sensor.  Flow velocity through the duct was also varied by changing the fan voltage, and 
+measured with a hot-wire anemometer.  
+In quenching limit tests, the flow was incrementally turned down and the flame allowed to 
+stabilize at the new flow condition for at least the solid-phase response time before changing it again.  
+For blowoff limit tests, the astronaut quickly turned up the flow to obtain extinction.  Complementary 
+5.18 second Zero Gravity Facility drop tests were conducted to compare blowoff limits in short and 
+long duration microgravity.    

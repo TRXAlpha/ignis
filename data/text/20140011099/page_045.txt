@@ -1,0 +1,6 @@
+Flame spread graph 
+90 [s] 
+q 
+q=51.68 [deg.] 
+(c) 
+Burning angle q is defined by the solid surface temperature (570K). 

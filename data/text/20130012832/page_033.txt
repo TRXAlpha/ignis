@@ -1,0 +1,22 @@
+Summary 
+ 
+♦For the opposed flow configuration, the flame quickly reached steady 
+spread for each flow speed, and the spread rate was fastest at an 
+intermediate value of flow speed.  
+ 
+♦These tests show the enhanced flammability in microgravity for this 
+geometry, since, in normal gravity air, a flame self-extinguishes in 
+the opposed flow geometry (downward flame spread).  
+ 
+♦For the concurrent flow configuration, a limiting length and steady 
+spread rate were obtained only in low flow speeds. For these 
+conditions, flame spread rate increased linearly with increasing flow.  
+ 
+♦This is the first time that detailed transient flame growth data was 
+obtained in purely forced flows in microgravity. In addition, by 
+decreasing concurrent flow speed to a very low value (around 1 
+cm/s), quenching extinction was observed.  
+ 
+♦The valuable results from these long-duration experiments validate a 
+number of theoretical predictions and also provide the data for a 
+transient flame growth model under development. 

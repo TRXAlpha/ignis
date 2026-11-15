@@ -1,0 +1,63 @@
+ 
+NASA/TM-20210011385 
+81 
+6.1.5 
+Analyses 
+In this section, the experimental flammability boundary (Eq. (6.1)) is applied to a constant critical 
+Damköhler number formulation (Section 6.1.5.1) to estimate the critical flame temperatures along the 
+extinction boundary. The critical temperatures and measured flame standoff distances are then used in a 
+Nusselt number correlation (Section 6.1.5.2) to estimate the convective heat flux to the rod from the flame 
+along the flammability boundary. A surface energy balance (Section 6.1.5.3) utilizes the deduced 
+convective heat flux to evaluate the importance of radiative exchange and heat losses on the blowoff 
+versus quenching sides of the extinction boundary. A comparison of measured versus predicted rod 
+regression rates is presented (Section 6.1.5.4). Lastly, the relative heat losses across the flammability 
+boundary are examined to understand the physics of the transition from blowoff to quenching. It should 
+be noted that a constant base rod size is used in all subsequent analysis so the correction factor for radius 
+in the a expression is unity.   
+6.1.5.1 Damköhler Number Analysis 
+The critical Damköhler number (Dacrit) analysis presented here is applied to both blowoff and 
+quenching sides of the flammability boundary since finite rate chemistry applies along the entire 
+flammability boundary. For both blowoff and quenching, the Dacrit becomes too small. At blowoff, the 
+flow rate is too large to allow the relatively fast reactions to occur, while at quenching, the reaction rate 
+becomes too small due to slow mixing of the reactants.   
+A critical Damköhler number (Dacrit) is defined as  
+(
+)(
+) (
+)
+2
+O
+flow time
+reaction rate
+Da
+reaction time
+flow rate
+E RTcrit
+f
+crit
+X
+X
+e
+a
+−
+βρ
+=
+=
+
+  
+(6.2)
+where β is the preexponential factor, ρ is the gas density at the mean temperature, Xf and XO2 are the fuel 
+and oxidizer concentrations, E is the activation energy, R is the ideal gas constant, and Tcrit is the critical 
+temperature. 
+The Dacrit is assumed to be constant along the entire flammability boundary (Ref. 1), and equal to 
+unity to reflect a critical balance in the flow and reaction times. The reaction constants are close to those 
+for extinction conditions given by Reference 8 and their β is normalized with a reported blowoff Da from 
+Reference 1 to obtain the unity Da. The fuel concentration is assumed to be unity at the fuel surface. 
+Equation (6.2) is solved for the temperature along the extinction boundary, Tcrit  (not a constant) by using 
+the O2 and stretch dependence from Equation (6.1).    
+The resultant critical flame temperature along the flammability boundary is shown in Figure 6.17 as a 
+function of a. The critical temperature drops as a decreases. For quenching extinction (a < ~10 s–1), the 
+critical flame temperature drops more precipitously. This is due to the reduction in heat flux from the 
+flame relative to the intrinsic heat losses, as will be shown in Section 6.1.5.3. Critical flame temperature is 
+used in the next section to estimate heat flux from the flame to the fuel. 
+ 

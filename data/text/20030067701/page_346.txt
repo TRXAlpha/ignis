@@ -1,0 +1,39 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+ 
+A fictitious file listing is shown in Figure A - 2 depicting the PIMS Acceleration Data (PAD) file 
+system hierarchy. 
+ 
+ 
+ 
+Figure A - 2 Screenshot of Sample PAD File Listing 
+ 
+For the directory highlighted on the left of this sample listing, the measurement system is 
+“sams2” and the sensor identifier is “121f01”.  On the right, there is a partial listing of the 
+acceleration header and data files available for this sensor collected on the day indicated (day 3).  
+These files are named according to the PIMS-ISS-001 document [27]. 
+ 
+If you encounter difficulty in accessing the data using this procedure, then send an electronic 
+mail message to pimsops@grc.nasa.gov.  Please describe the nature of the difficulty, and give a 
+description of the hardware and software you are using to access the file server, including the 
+domain name and/or IP address from which you are connecting. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+332
+NASA/TM—2003-212460

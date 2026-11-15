@@ -1,0 +1,56 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+21
+60
+90
+120
+150
+180
+209
+240
+−30
+−20
+−10
+0
+10
+20
+30
+Z−Axis Acceleration (mg)
+RMS = 0.8863 mg
+Original Mean = 0.0294 mg
+Time (seconds)
+from: t:\pub\pad\, $Name:  $, 07−Nov−2002,11:46:55.461
+−30
+−20
+−10
+0
+10
+20
+30
+Y−Axis Acceleration (mg)
+RMS = 0.7395 mg
+Original Mean = −0.0319 mg
+−30
+−20
+−10
+0
+10
+20
+30
+X−Axis Acceleration (mg)
+RMS = 1.1016 mg
+Original Mean = −0.4207 mg
+Start GMT 15−May−2002, 135/22:29:30.001
+Progress Reboost
+SSAnalysis[ 0.0  0.0  0.0]
+Increment: 4, Flight: 8A
+500.0 sa/sec (200.00 Hz)
+sams2, 121f02 at LAB1O2, ER1, Drawer 1:[128.73 −23.53 144.15]
+ 
+ 
+Figure 6-77 Time Series of Progress Reboost (121f02) 
+ 
+150
+NASA/TM—2003-212460

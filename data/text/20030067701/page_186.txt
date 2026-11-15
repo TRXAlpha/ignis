@@ -1,0 +1,45 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+−12
+−11
+−10
+−9
+−8
+−7
+−6
+Σ PSD Magnitude [log 10(g2/Hz)]
+GMT 20−November−2002, 324/hh:mm
+Frequency (Hz)
+Start GMT 20−November−2002, 324/21:07:00.000
+from: t:\pub\pad\, $Name:  $, 16−Dec−2002,08:27:21.396
+ARIS Transitions
+Span = 19.93 minutes
+Hanning, k = 585
+Sum
+Increment: 5, Flight: UF2
+Temp. Res. = 2.048 sec, No = 1024
+∆f = 0.244 Hz,  Nfft = 2048
+500.0 sa/sec (200.00 Hz)
+sams2, 121f03 at LAB1O1, ER2, Lower Z Panel:[191.54 −40.54 135.25]
+21:07
+21:10
+21:13
+21:16
+21:21
+21:24
+21:27
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Figure 6-99 Spectrogram of ARIS HOLD and ACTIVE Transitions (121f03) 
+172
+NASA/TM—2003-212460

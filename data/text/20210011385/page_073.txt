@@ -1,0 +1,86 @@
+ 
+NASA/TM-20210011385 
+65 
+q 
+heating rate, W, Equation (6.4) 
+r 
+radius, cm 
+R 
+ideal gas constant, 8.314 J/(gmol K) 
+Re 
+Reynolds number, UD/ν 
+s 
+flame standoff distance, measured to outer bright cyan zone of flame, cm 
+T 
+temperature, Tm = 800 °C  
+t 
+time, s 
+ts 
+solid-phase response time, 0.7 r2/αs, s 
+∆T 
+Tcrit – Ts 
+U 
+forced-flow velocity, cm/s 
+UD 
+diffusion velocity, 2 cm/s 
+Vr 
+measured rod tip regression velocity, cm/s 
+X 
+percent by volume (mole percent) 
+Y 
+nondimensional y = y/L 
+y 
+distance along the rod, cm 
+α 
+thermal diffusivity of air at Tm, 1.19 cm2/s, of PMMA 1.2×10–3 cm2/s  
+β 
+preexponential constant, 1.3×1016 cm3/ gmol s  
+ε  
+surface emissivity, 0.8 surface, 0.02 gas, also surface absorptivity via Kirchhoff’s law 
+λ 
+thermal conductivity of air at Tm, 0.000577 W/cm K, or of solid at T∞, 2.09×10–3 W/cm K  
+ν 
+kinematic viscosity at Tm, 0.822 cm2/s 
+ρ 
+gas density of air at Tm, 0.0441 g/cc, solid density 1.19 g/cc 
+θ 
+nondimensional temperature 
+σ  
+Stefan-Boltzmann constant, experimental, 5.729×10–12 W/cm2 K4 
+ℓ  
+thermal length scale, cm, (αg/a)1/2  
+τ 
+nondimensional solid phase response time, = t/ts  
+Subscripts 
+conv convective 
+crit 
+flame extinction condition 
+D 
+diffusion 
+f 
+fuel, assumed unity at the fuel surface 
+g 
+gas 
+ign 
+ignition 
+m 
+mean, at 800 K 
+o 
+base size of rod, 0.318 cm  
+O2 
+oxygen 
+rad 
+radiative 
+s 
+surface, at 675 K, or solid 
+tot 
+total feedback to surface 
+vap 
+vaporization 
+∞ 
+ambient, at 300 K 
+6.1.2 
+Introduction 
+Early work (Ref. 2) on flammability limits has demonstrated that using a hemispherical stagnation flow 
+geometry provides a good way to obtain the flammability limits of various fuels as a function of upward 
+flowing oxidizer gas. Similar limiting O2 concentrations (13 to 14 percent) and flame temperatures (1,450 to 

@@ -1,0 +1,24 @@
+ 
+NASA/TM-20210011385 
+98 
+Figure 7.4.—Steady flame spread rate for both 2.2- and 1.2-cm-wide samples.  
+ 
+ 
+ 
+Figure 7.5 shows a typical flame quenching sequence in the BASS–II experiment. A 2.2-cm-wide 
+sample in 18.7 percent O2 was first ignited at 10-cm/s flow. Flow speed was decreased to 2.2 cm/s 
+incrementally after ignition. Figure 7.6 shows flame tracking and flow speed versus time. After ignition, 
+the flame started to grow. As the flow speed was reduced, both flame length and flame width dropped 
+accordingly with flow. After 25 s, flow velocity was reduced to 2.2 cm/s and held there for the remainder 
+of the test. As shown in Figure 7.5, both the flame length and flame width continued to decrease 
+approaching a circular-shaped blue flame seen from the top. The size of the flame continues to shrink 
+until extinction is reached. This is typical in a quenching extinction sequence. As the quenching limit is 
+approached (in this case by turning down the flow velocity), the fuel pyrolysis rate and combustion heat 
+release rate (HRR) are reduced, and radiation loss becomes a significant fraction of the HRR from the 
+shrinking flame. When the flame becomes small enough, conduction becomes the additional heat loss. 
+The postburn photo of the sample in Figure 7.5 shows the narrowing of the burnt region as the flame 
+shrinks toward extinction with a substantial part of the fuel left unburnt along the two sides of the sample 
+holder. Although this is a concurrently spreading flame, the quenching sequence shows similar 
+characteristics in opposed flow (Ref. 2); the flame becomes circular, indicating the importance of three-
+dimensional (3D) heat and mass transfer near the limit. 
+ 

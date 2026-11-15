@@ -1,0 +1,69 @@
+ 
+NASA/TM-20210011385 
+64 
+6.0 
+Individual Principal Investigator Report: Olson 
+6.1 
+Microgravity Flammability Boundary for Polymethylmethacrylate Rods in Axial 
+Stagnation Flow: Experimental Results and Energy Balance Analyses 
+6.1.1 
+Abstract  
+For the first time, a series of concurrent rod flammability tests were conducted in microgravity aboard 
+the International Space Station. A small flow duct was used to create 0- to 55-cm/s flows past the three sizes 
+of clear and black polymethylmethacrylate rods. The ambient O2 concentration in the Microgravity Science 
+Glovebox was varied from 13.6 to 22.2 percent. O2, CO2, and CO gas sensors provided initial and final 
+readings for each test and indicate that the flames are globally stoichiometric at higher O2 concentrations, 
+but become more globally fuel rich as the minimum O2 concentration is approached due to excess 
+pyrolyzate leakage out of the open tail of the hemispherical flames. Quenching extinction occurs at very low 
+forced flows, where the flame shrinks to a hemispherical blue flame and oscillates with increasing amplitude 
+just before going out. Blowoff extinction is initiated by the formation of a hole in the flame sheet in the 
+stagnation region of the flame. A critical Damköhler number formulation is applied across the flammability 
+boundary, and the critical flame temperature is derived. This critical flame temperature is then used in a 
+Nusselt number correlation to estimate the convective heat flux to the stagnation region of the rod. A model 
+of surface energy balance is formulated that uses the critical flame temperature and convective heat flux to 
+derive the mass burning rate along the boundary. The rod regression rates calculated from this model 
+compare favorably with the experimental measurements. The surface energy balance reveals that along the 
+blowoff branch, heat losses are negligible whereas in the quenching region, surface radiative loss dominates. 
+At the bottom of the flammability map, the transition from blowoff to quenching occurs when the 
+convective flows become the same order of magnitude as diffusive flows, shifting the critical Damköhler 
+number from residence time limitations to diffusive time limitations.  
+Symbols 
+a 
+stretch rate, 3/2 U/r (r/ro)1/2, s–1 
+as 
+absorptivity of the PMMA surface 
+A 
+area, cm2 
+Ar 
+cross section of rod 
+Ah 
+hemispherical rod tip surface area = 2 Ar  
+Bi 
+Biot number, h r/ λs 
+D 
+diameter 
+Da 
+Damköhler number, Equation (6.2), normalized by 7.35×107 (Ref. 1) 
+E 
+activation energy, 1.45×105 J/mol  
+F 
+surface to flame hemispherical radiative view factor, = 0.93 
+h 
+heat transfer coefficient   
+L 
+length of the flame, stagnation standoff to flame tails, cm, or rod initial length  
+Lo 
+rod initial length, 5.9 cm 
+Lv  
+latent heat of vaporization, 1700 J/g  
+m′′
+ 
+hemispherical surface average burning rate, g/cm2 s, =Vr ρs∙Ar/Ah  
+Nu 
+Nusselt number, convective heat flux and conductive heat flux, Equation (6.3) 
+Pe 
+Peclet number, LoV/αs 
+Pr 
+Prandtl number of air at Tm, 0.69 
+q′′ 
+heat flux, W/cm2, Equation (6.4) 

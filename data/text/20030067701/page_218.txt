@@ -1,0 +1,40 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+08:00
+10:00
+12:00
+14:00
+16:00
+18:00
+20:00
+22:00
+00:00
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+Time (hh:mm)
+RMS Acceleration ( µgRMS )
+sams2, 121f08 at LAB1S3, MSG, Ceiling Plate A2−A3:[118.14 53.32 160.52]
+62.5 sa/sec (25.00 Hz)
+∆f = 0.031 Hz,  Nfft = 2048
+Temp. Res. = 32.768 sec, No = 0
+Increment: 5, Flight: UF2
+Sum
+Hanning
+Span = 16 hours
+from: t:\pub\pad\, $Name: pop3_06−17−2002 $, 29−Jul−2002,14:23:26.646
+SAMS 121f08, 23 < f < 24 Hz
+SKV−2: Start GMT 04−September−2002, 247/08:00:00
+SKV−1: Start GMT 23−September−2002, 266/08:00:00
+Figure 6-131 Interval RMS of SKV (121f08) 
+204
+NASA/TM—2003-212460

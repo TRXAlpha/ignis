@@ -1,0 +1,43 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+0
+20
+40
+60
+80
+100
+120
+Acceleration Vector Magnitude  (mg)
+Overall Max  = 103.2919 mg
+Mean = 3.6854 mg
+Time (minutes)
+from: t:\pub\pad\, $Name:  $, 23−Aug−2002,09:24:54.915
+Start GMT 18−July−2002, 199/15:05:00.002
+MEPS PCM Insertion
+Size: 1.00,  Step: 1.00 sec.
+Interval Max
+Vector Magnitude
+Increment: 5, Flight: UF2
+250.0 sa/sec (100.00 Hz)
+sams2, 121f02 at LAB1O2, ER1, Drawer 1:[128.73 −23.53 144.15]
+Figure 6-160 Interval Maximum of MEPS PCM Insertion (121f02) 
+228
+NASA/TM—2003-212460

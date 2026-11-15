@@ -1,0 +1,73 @@
+ 
+NASA/TM-20210011385 
+82 
+Figure 6.17.—Predicted temperature along extinction boundary Tcrit (Eq. (6.2)), Nusselt 
+number Nu (Eq. (6.3)), decay of heating rate q′′with stretch rate a (Eq. (6.4)), and 
+radiative heat qrad and total heat qtot from Equation (6.5). Solid temperature (Ts). 
+Convective heating rate 
+conv
+q
+. 
+ 
+6.1.5.2 Heat Transfer Estimates 
+To estimate the heat transfer rates to the stagnation region of the rod, the Nusselt number Nu 
+correlation developed by Sibulkin (Ref. 25) is used, which evaluates the convective heat transfer near the 
+forward stagnation point of a hemispherically tipped body of revolution as a function of Reynolds (Re) 
+and Prandtl (Pr) numbers.   
+0.5
+0.4
+Nu
+1.32Re
+Pr
+=
+  
+(6.3)
+This correlation neglects dissociation (thermochemical heat release) for the low temperatures and high 
+nitrogen dilution levels along the flammability boundary (Ref. 26), and neglects gas radiation for the 
+nonluminous flames per Reference 27. The Re is based on the diameter. The convective heat flux 
+conv
+q
+ to 
+the stagnation region is thus: 
+(
+)
+(
+)
+     so, 
+crit
+s
+conv
+conv
+conv
+h
+crit
+s
+h
+T
+T
+q
+Nu
+q
+q
+A
+h T
+T
+A
+s
+λ
+−
+′′
+′′
+=
+=
+=
+−
+
+
+
+  
+(6.4)
+Where λ is the thermal diffusivity at the mean gas temperature, Ts is the surface temperature, s is the 
+flame standoff distance, h is the convective heat transfer coefficient, and Ah is the hemispherical rod tip 
+surface area. 
+ 

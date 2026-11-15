@@ -1,0 +1,105 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+MAMS OSSBTMF data for several reboost events during Increments 4 and 5 (and one from 
+Increment 3) were analyzed to compare average acceleration with the expected results.  The 
+mean of the XA-axis acceleration component was calculated for the burn and compared to the 
+expected result obtained from information given to PIMS by the Boeing Company.  Figure 6-74 
+is an example of a reboost burn starting at GMT 06-March-2002, 065/04:29.  Two types of burns 
+were studied. In the "4 Progress +X Thrusters" in which four thrusters are pointed in the -XA 
+direction and four other YZ thrusters are used for attitude control.  For "8 Progress +X Thrusters, 
+Off-Pulsing", all thrusters are in the -XA–axis direction; four on continuously, other four pulse 
+on/off. The blue lines in the plot represent the start and stop times of the burn, and the red dots 
+are the points included in calculation of the mean.   
+ 
+Table 6-8 and Table 6-9 summarize the comparison of 12 different reboost events.  All the 
+calculated results using MAMS measurements for the "4 Progress +X Thrusters" reboosts fall 
+within ± 0.02 mg (compare last column of Table 6-8 to 2nd column of Table 6-9).  However, the 
+results for the "8 Progress +X Thrusters, Off-Pulsing" are low with respect to the expected 
+values, with the exception of the burn at 13-March-2002, 072/00:52, which falls within 0.02 mg.  
+The probable cause of this is in the nature of the MAMS OSS instrument.  The MAMS sensor 
+can be in one of three ranges: A, B or C, with A used to measure the highest acceleration and C 
+used for the lowest.  The MAMS instrument will not switch to a higher range unless an out-of-
+range acceleration is experienced for a specific time.  During the non-microgravity like 
+accelerations of reboosts, the MAMS sensor will saturate for a brief time until the sensor is 
+switched to the higher range, which may result in a measured value lower than the actual.  In 
+addition, the A-range does not undergo periodic calibration and MAMS OSSBTMF data would 
+be inaccurate. In a normal microgravity environment, A-range data is rarely seen and would be 
+tossed out in the trimmean filter process. All data sets used were scanned for A-range data and 
+results are included in Table 6-8 and Table 6-9. 
+ 
+TABLE 6-8 REBOOST DETAILS 
+Info from Donald.H.Sargent@Boeing.com, ISS Propulsion, via Rex Delventhal 
+GMT Time of Ignition 
+Duration 
+(sec) 
+∆ V 
+(m/sec) 
+Comments 
+∆V/T 
+(mg) 
+11-October-2001, 284/10:31 
+1560 
+4.7 
+4 Progress +X Thrusters 
+0.31 
+11-October-2001, 284/15:54 
+1560 
+4.5 
+4 Progress +X Thrusters 
+0.29 
+10-January-2002, 010/01:35:15 
+1877 
+5.4 
+4 Progress +X Thrusters 
+0.29 
+10-January-2002, 010/03:43:26 
+1654 
+4.8 
+4 Progress +X Thrusters 
+0.30 
+21-February-2002, 052/08:27 
+239 
+1.35 
+8 Progress +X Thrusters, Off-Pulsing 
+0.58 
+21-February-2002, 052/09:59 
+243 
+1.35 
+8 Progress +X Thrusters, Off-Pulsing 
+0.57 
+06-March-2002, 065/03:37:12 
+158.2 
+1 
+8 Progress +X Thrusters, Off-Pulsing 
+0.65 
+06-March-2002,065/04:29:07 
+395.1 
+2.5 
+8 Progress +X Thrusters, Off-Pulsing 
+0.65 
+13-March-2002,072/00:04:10 
+319 
+2.2 
+8 Progress +X Thrusters, Off-Pulsing 
+0.70 
+13-March-2002,072/00:52:49 
+636.1 
+4 
+8 Progress +X Thrusters, Off-Pulsing 
+0.64 
+19-April-2002, 109/07:59 
+118 
+0.73 
+8 Progress +X Thrusters, Off-Pulsing 
+0.63 
+01-August-2002, 213/17:24:23 
+760 
+4.3 
+8 Progress +X Thrusters, Off-Pulsing 
+0.58 
+ 
+ 
+42
+ 
+NASA/TM—2003-212460

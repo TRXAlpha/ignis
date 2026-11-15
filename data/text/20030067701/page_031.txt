@@ -1,0 +1,95 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+4 
+Acceleration Measurement System Descriptions: Increment-4/5 
+One of the major goals of the ISS is to provide a quiescent reduced gravity environment to 
+perform fundamental scientific research.  However, small disturbances aboard the Space 
+Station impact the overall environment in which experiments are being performed.  Such 
+small disturbances need to be measured in order to assess their potential impact on 
+experiments.  Two accelerometer systems, SAMS and MAMS, developed by NASA’s GRC 
+in Cleveland, Ohio, are being used aboard the station to acquire such measurements.   
+ 
+4.1 
+Microgravity Acceleration Measurement System (MAMS) 
+MAMS consists of two sensors.  MAMS OSS, a low frequency sensor, is used to characterize 
+the quasi-steady environment for payloads and the vehicle.  MAMS OSS measures 
+acceleration caused by aerodynamic drag, vehicle rotations, and vents of air and water.  The 
+raw MAMS OSS data are typically trimmean filtered to extract the quasi-steady acceleration 
+data content.  PIMS reports to the microgravity scientific community only the results of the 
+MAMS-OSS trimmean filter data (0.01 Hz and below) for the quasi-steady regime.  Details 
+of the trimmean filter process and the exact implementation of it relative to MAMS OSS data 
+are described in Appendix E.2.  MAMS HiRAP [17] is used to characterize the ISS vibratory 
+environment up to 100 Hz.  For Increment-4/5, MAMS was located in a double middeck 
+locker in the US Laboratory Module (Destiny) in the Expedite the Processing of Experiments 
+to the Space Station (EXPRESS) Rack 1. 
+ 
+4.2 
+MAMS Coordinate Systems 
+MAMS was located in middeck lockers 3 and 4 of EXPRESS Rack 1, in overhead bay 2 of 
+the US Laboratory Module (LAB1O2).  The origin of the OSS coordinate system is located 
+at the center of gravity of the OSS proof mass. Table 4-1 gives the orientation and location of 
+the OSS and HiRAP coordinate systems with respect to USOS-ISS analysis coordinate 
+system. 
+ 
+TABLE 4-1 MAMS SENSOR COORDINATE SYSTEM 
+Location (inches) 
+Orientation (degrees) 
+Unit Vector in Analysis Coordinates 
+MAMS  
+Sensor 
+XA 
+YA 
+ZA 
+Roll 
+Pitch 
+Yaw 
+Axes 
+XA 
+YA 
+ZA 
+XOSS 
+1 
+0 
+0 
+YOSS 
+0 
+0 
+1 
+OSS 
+135.28 
+-10.68 
+132.12 
+90 
+0 
+0 
+ZOSS 
+0 
+-1 
+0 
+XH 
+1 
+0 
+0 
+YH 
+0 
+-1 
+0 
+HiRAP 
+138.68 
+-16.18 
+142.35 
+180 
+0 
+0 
+ZH 
+0 
+0 
+-1 
+ 
+ 
+ 
+ 
+ 
+17
+NASA/TM—2003-212460

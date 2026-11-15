@@ -1,0 +1,118 @@
+{
+ "name": "saffire5_fig10",
+ "source_id": "ntrs:20210011521",
+ "page": 8,
+ "figure": "10",
+ "image": "data/figures/saffire5_fig10.png",
+ "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+ "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right.",
+ "require_text": [
+  "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity",
+  "Concurrent flames are shown on the left of the origin and opposed to the right",
+  "BASS concurrent 2 cm wide",
+  "BASS concurrent 1 cm wide",
+  "BASS opposed 2 cm wide"
+ ],
+ "axes": {
+  "concurrent": {
+   "x": {
+    "field": "conditions.flow_velocity",
+    "unit": "cm/s"
+   },
+   "y": {
+    "field": "outcomes.flame_spread_rate",
+    "unit": "cm/s"
+   },
+   "base": {
+    "conditions": {
+     "flow_direction": "concurrent"
+    }
+   }
+  },
+  "opposed": {
+   "x": {
+    "field": "conditions.flow_velocity",
+    "unit": "cm/s"
+   },
+   "y": {
+    "field": "outcomes.flame_spread_rate",
+    "unit": "cm/s"
+   },
+   "base": {
+    "conditions": {
+     "flow_direction": "opposed"
+    }
+   }
+  }
+ },
+ "base": {
+  "experiment": {
+   "campaign_id": "bass",
+   "platform": "orbital_iss",
+   "facility": "Microgravity Science Glovebox (MSG)"
+  },
+  "fuel": {
+   "material_id": "sibal",
+   "phase": "solid",
+   "geometry": "fabric"
+  },
+  "conditions": {
+   "gravity": "@iss_nominal",
+   "buoyancy_orientation": "not_applicable"
+  },
+  "outcome": {
+   "quantity": "flame_spread_rate",
+   "time_basis": "steady"
+  },
+  "flags": [
+   "condition_from_campaign_nominal"
+  ]
+ },
+ "series": {
+  "BASS concurrent 2 cm wide": {
+   "fuel_quantities": {
+    "width": {
+     "value": 2,
+     "unit": "cm"
+    }
+   }
+  },
+  "BASS concurrent 1 cm wide": {
+   "fuel_quantities": {
+    "width": {
+     "value": 1,
+     "unit": "cm"
+    }
+   }
+  },
+  "BASS opposed 2 cm wide": {
+   "fuel_quantities": {
+    "width": {
+     "value": 2,
+     "unit": "cm"
+    }
+   }
+  },
+  "Saffire I& III: 40 cm wide (concurrent)": {
+   "skip": "Cygnus g-level and Saffire campaigns not registered yet"
+  },
+  "Saffire I& III: 40 cm wide (opposed)": {
+   "skip": "Cygnus g-level and Saffire campaigns not registered yet"
+  },
+  "Saffire II: 5 cm wide": {
+   "skip": "Cygnus g-level and Saffire campaigns not registered yet"
+  },
+  "Saffire IV: 40 cm wide": {
+   "skip": "Cygnus g-level and Saffire campaigns not registered yet"
+  }
+ },
+ "require_text_elsewhere": [
+  {
+   "page": 8,
+   "snippets": [
+    "Material",
+    "SIBAL"
+   ]
+  }
+ ]
+}

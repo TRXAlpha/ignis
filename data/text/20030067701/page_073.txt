@@ -1,0 +1,53 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+narrowband signals.  The weaker of these was centered at 47.1 Hz and the stronger at 52.8 Hz.  
+Note that each of the 5 runs is preceded by the impulsive events of PCM insertion. 
+ 
+The interval RMS versus time plot of Figure 6-162 corresponds to the same time frame as that of 
+Figure 6-161.  This RMS plot shows the contribution of the 2 narrowband signals that 
+accompany the MEPS runs.  The red trace gives the RMS acceleration for the fainter, low-
+frequency signal centered at 47.1 Hz.  This signal steps from about 14 to 24 µgRMS in the 
+frequency range from 45.85 to 47.39 Hz.  Likewise, the blue trace for the stronger signal 
+centered at 52.8 Hz steps from about 9 to 54 µgRMS in the frequency range from 52.63 to 53.07 
+Hz. 
+ 
+6.2.3.3 
+Microgravity Science Glovebox (MSG) Environment 
+Both the SUBSA and PFMI experiments operated in the MSG during the time frame covered by 
+this report.  This section is a general characterization of the vibratory environment for times 
+when these experiments were operating. 
+ 
+6.2.3.3.1 
+Solidification Using a Baffle in Sealed Ampoules (SUBSA) 
+Material scientists want to make better semiconductor crystals to be able to further reduce the 
+size of high-tech devices.  To control the opto-electronic properties of the crystals, a small 
+amount of an impurity—named a dopant—has to be added to the pure semiconductor.  Uniform 
+distribution of the dopant in the semiconductor crystal is essential for production of opto-
+electronic devices [15].  For this experiment, tellurium and zinc are added to molten indium 
+antimonide specimens that are then cooled to form a solid single crystal by a process called 
+directional solidification. 
+ 
+The goals of this experiment are to identify what causes the motion in melts processed inside 
+space laboratories and to reduce the magnitude of the melt motion so that it does not interfere 
+with semiconductor production [15].  SUBSA processed 10 samples with two spares available.  
+Ten growth runs were conducted during Increment-4. SUBSA tested the performance of the 
+automatically moving baffle in microgravity in order to show that the expansion of the melt is 
+keeping the baffle at a constant distance from the interface; demonstrated the behavior and 
+possible advantages of liquid encapsulation in microgravity conditions; demonstrated that the 
+baffle reduces sensitivity to residual micro-acceleration in two systems with different segregation 
+coefficients and achieve reproducible growth.  
+ 
+SUBSA was located in the MSG, which has fans for recirculating the air through the glovebox.  
+The SUBSA experiment itself also has moving parts, which induce some disturbance.  The PCM 
+contains two small fans and there is a Cohu 3812 video camera, which has an integrated zoom 
+and focus lens.   
+ 
+The dates and times in Table 6-24 indicate when the software program controlling the SUBSA 
+hardware and acquiring the data was started and stopped.  Actual sample processing (i.e., melting 
+and resolidification) is enveloped by these times.  SUBSA activities outside these times include 
+sample installation and removal, hardware setup and takedown, and data transfers.   
+ 
+59
+ 
+NASA/TM—2003-212460

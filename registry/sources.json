@@ -40,5 +40,43 @@
   "pdf_url": "https://ntrs.nasa.gov/api/citations/20030067701/downloads/20030067701.pdf",
   "sha256": "eac01b78e4df65f61e822df62e642606d5d7fec19ac8e95400f55feeee381d6c",
   "retrieved_at": "2026-11-14T21:12:55.607683+00:00"
+ },
+ {
+  "id": "ntrs:20210011521",
+  "kind": "ntrs",
+  "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+  "authors": [
+   "David L. Urban",
+   "Gary A. Ruff",
+   "Paul Ferkul",
+   "John Easton",
+   "Jay Owens",
+   "Sandra Olson",
+   "Marit Meyer",
+   "Claire Fortenberry",
+   "John Brooker",
+   "John Graf",
+   "Michael Casteel",
+   "Balazs Toth",
+   "Florian Meyer",
+   "Christian Eigenbrod",
+   "James S. T’ien",
+   "Ya-Ting T. Liao",
+   "A. Carlos Fernandez-Pello",
+   "Guillaume Legros",
+   "Augustin Guibaud",
+   "Nickolay Smirnov",
+   "Osamu Fujita",
+   "Grunde Jomaas"
+  ],
+  "url": "https://ntrs.nasa.gov/citations/20210011521",
+  "ntrs_id": "20210011521",
+  "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+  "sha256": "d25b394f43774ee79a3223b53e90571be299c8996d1cff2512c76e3308e107f5",
+  "retrieved_at": "2026-11-14T21:12:07.471900+00:00",
+  "year": 2021,
+  "campaign_ids": [
+   "bass"
+  ]
  }
 ]

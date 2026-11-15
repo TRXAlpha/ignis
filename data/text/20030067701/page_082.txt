@@ -1,0 +1,53 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Figure 6-217 produced the curves in Figure 6-219.  Again only minimal impact was registered at 
+the pedaling frequency near 2.8 Hz.  Also, note for the cyan curves of Figure 6-218 and Figure 
+6-219, the 121f06 sensor was mounted inside the ARIS ER2. 
+ 
+6.2.4.1.4 
+Russian Velosiped (VELO) 
+Perusal of roadmap spectrograms for GMT 25-July-2002 to 31-July-2002 shows what is most 
+certainly the signature of daily VELO exercise for a couple of hours around noon and again 
+around 18:00 (see below 5 Hz on and Figure 6-220 and Figure 6-221 and compare with 
+highlighted times in excerpts of the short-term plan for that day shown in Figure 6-222 and 
+Figure 6-223, respectively). 
+ 
+To quantify the impact of VELO exercise, consider the 10-minute span starting at GMT 31-July-
+2002, 212/12:50:00.  A cumulative RMS acceleration versus frequency curve for 4 different 
+SAMS sensors were computed and the results shown in Figure 6-224.  A sharp step up at the 
+pedal rate of about 2.2 Hz is evident in these curves along with smaller step at shoulder sway 
+frequency.  This marks a difference for VELO from CEVIS.  The shoulder sway frequency is 
+pronounced for VELO exercise.  A more complete quantification for this pedal rate frequency 
+can be seen in the 8-second interval RMS acceleration plot of Figure 6-225.  The RMS 
+acceleration was computed for the frequency range from 2.1 to 2.3 Hz.  To the right of the 12:00 
+time tick, just before 13:00, there is the 10-minute period referenced above.  This shows a step 
+up from a baseline of about 2 µgRMS without VELO to between 50 and 100 µgRMS when VELO is 
+being used.  This step up from baseline occurs again around the 18:00 mark, which is when we 
+see the VELO signature again below 5 Hz in Figure 6-221. 
+ 
+Short-term plans and roadmap spectrograms agree that more VELO exercise occurred around 
+GMT 06-August-2002, 218/17:00:00 and lasted until about 18:45 (see Figure 6-226 for 
+example).  To measure the impact of this VELO exercise, Figure 6-227, Figure 6-228, Figure 
+6-229, and Figure 6-230 were generated to show the 8-second interval RMS accelerations below 
+5 Hz.  For all these SAMS sensor locations, the sub 5 Hz RMS level was well below 100 µgRMS 
+when no VELO exercise took place, but often was in excess of 150 µgRMS during the exercise. 
+ 
+A final VELO exercise period for analysis took place at around GMT 07-August-2002, 
+219/11:00.  For comparison to the results for CEVIS exercise in Section 6.2.4.1.3, consider a 1-
+minute snapshot of the VELO period starting at GMT 07-August-2002, 219/11:12:45.  
+Computation of cumulative RMS acceleration versus frequency curves for SAMS sensors in ER1 
+and ER2 yields the plot in Figure 6-231.  From this figure, first note that the RMS scale for these 
+curves is an order of magnitude greater than similar plots discussed earlier for CEVIS exercise.  
+Also, note the pedal spectral peak for this snapshot was at about 2.3 Hz and produced a step of 
+nearly 200 µgRMS.  Meanwhile, at the shoulder sway spectral peak (about 1.15 Hz), there was a 
+step of over 50 µgRMS.  The data for the 121f02 SAMS sensor was considered for inclusion in 
+this analysis, but rejected because of a transient during the 1-minute span of interest.  CEVIS and 
+VELO are similar devices, with exception of the vibration isolation afforded by the CEVIS.  It is 
+seen from this final comparison between CEVIS (located in the US Lab, relatively close to 
+SAMS sensors) and VELO (located in the Service Module) exercise that the isolation provided 
+by CEVIS results in far less of a vibratory acceleration impact. 
+ 
+68
+ 
+NASA/TM—2003-212460

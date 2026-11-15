@@ -1,0 +1,28 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+6
+This could be due to a malfunction in the sensor or 
+poor placement within Cygnus, such as being 
+obstructed by too much trash. 
+Figure 8 gives the temperature at the FFD. A 
+very weak experimental response is shown, while 
+the model response is closest to RS1, RS2, and 
+RS5 that are not directly in the flow path. Also 
+shown in Figure 8 is the mass mean temperature of 
+the model, which analogous to the CO2 response, 
+compares well with the FFD temperature. Figure 9 
+gives the RS behavior for the SIBAL burn 
+temperature. Similar to the CO2 response, the 
+model has a higher temperature response than the 
+experiment. This is most prevalent in RS1, for 
+which the experimental response is slow and does 
+not reach steady state. This could be due to the 
+nadir bulkhead, and other items in that section of 
+Cygnus that absorb heat. This would increase the 
+ 
+Figure 6. Normalized CO2 response from FFD and mean 
+vehicle CO2 concentration during SIBAL burn event. 
+ 
+Figure 7. Normalized CO2 RS responses during SIBAL burn event. 

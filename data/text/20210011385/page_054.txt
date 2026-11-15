@@ -1,0 +1,29 @@
+ 
+NASA/TM-20210011385 
+46 
+3.0 
+Project Scientist Report: Ferkul 
+3.1 
+Nomex® Flammability 
+The objective of the Nomex® (DuPontTM) sample tests was to evaluate the flammability of Nomex®, 
+since it is heavily used aboard the International Space Station (ISS) as a fire barrier. A secondary 
+objective was to burn any unused Burning and Suppression Solids—I (BASS–I) samples, of which there 
+was a single wax candle. The test matrix is in Appendix A. 
+3.1.1 
+Results 
+The three Nomex® samples did not ignite, which is an excellent result for fire safety aboard the ISS. 
+The wax candle test successfully ignited in an opposed flow (akin to holding a candle upside down) 
+and burned at five different flow velocities corresponding to the test matrix potentiometer settings as 
+shown in Figure 3.1. At the initial 3 cm/s, the sooty flame has an aspect ratio that is longer rather than 
+wide. As the flow reduced, the flame became hemispherical. At the lowest pot setting, the flame becomes 
+short rather than wide and turns mostly blue.   
+The ejected wax droplet shown in Figure 3.1(b) typifies the flame spread hazard associated with 
+melting plastics in microgravity. If the melt viscosity is low enough, burning droplets can be ejected and 
+possibly ignite other materials. 
+ 
+Figure 3.1.—Candle wick burning with opposed flow (upward flow). (a) Postignition at 3 cm/s (potentiometer or pot 
+0.6); (b) Pot 0.4, wick ejects droplet of wax directly upstream; (c) Pot 0.35; (d) Pot 0.32; and (e) Pot 0.31. 
+ 
+ 
+ 
+ 

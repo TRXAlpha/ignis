@@ -1,0 +1,88 @@
+51st International Conference on Environmental Systems 
+ICES-2022-278 
+10-14 July 2022, St. Paul, Minnesota 
+Model Development of Large-Scale Spacecraft Fires during 
+the Saffire-IV Experiments  
+ 
+John Brooker1 and Justin Niehaus2 
+NASA Glenn Research Center, Cleveland, OH 44135, USA 
+ 
+An accidental fire can pose dire consequences to crew safety and mission success. The Saffire Project aims 
+to investigate large-scale fire behavior in microgravity in order to aid in the prediction of spacecraft fires. These 
+series of experiments ignite solid materials within the Northrop Grumman Cygnus vehicle after it departs from 
+a resupply mission to the International Space Station. A model of the Cygnus vehicle during the Saffire-IV 
+experiment was developed using the commercial software PyroSim. The cargo arranged during the descent 
+phase was used for the geometry of the model. In the model, cabin air flows into the Saffire payload while heat 
+and combustion species flow out of the Saffire downstream through a standoff to a bed of sensors called the 
+Far Field Diagnostic. The temperature sensors near the Saffire payload were used to determine the heat 
+addition rate at the outlet of Saffire, while the details of the combustion and stoichiometry are used to determine 
+the species flow at the outlet. Gas measurements previously reported for the Saffire-IV experiments are 
+compared against the simulation results and sources of error are discussed. 
+Nomenclature 
+A 
+= 
+Sample Area 
+AP 
+= 
+Aft Port 
+AS 
+= 
+Aft Starboard 
+ECLSS = 
+Environmental Control and Life Support System 
+FDS 
+= 
+Fire Dynamics Simulator  
+FP 
+= 
+Forward Port 
+FS 
+= 
+Forward Starboard 
+HAR 
+= 
+Heat Addition Rate 
+ISS 
+= 
+International Space Station 
+MLR 
+= 
+Mass Loss Rate 
+NG 
+= 
+Northrop Grumman 
+NIST 
+= 
+National Institute of Standards and Technology 
+PMMA = 
+Polymethyl Methacrylate 
+SCM 
+= 
+Secondary Constant Mass 
+SCV 
+= 
+Secondary Constant Volume 
+RS 
+= 
+Remote Sensor 
+SFU 
+= 
+Saffire Flow Unit 
+SR 
+= 
+Spread Rate 
+SIBAL = 
+Solid Inflammatory Boundary at Low-Speed fabric 
+ 
+I. Introduction 
+fire inside of a spacecraft poses a catastrophic threat to crew health and mission success. Most of the fire testing 
+that has been performed to design vehicles and determine material flammability limits has been performed on 
+earth in 1-g or has been small in scale1,2,3,. The Saffire project aims to fill knowledge gaps of large-scale flame spread 
+in microgravity. Saffire experiments have also provided opportunities to test novel gas species sensor technology in a 
+realistic flight configuration, as well as a way to obtain data on the length of time to detection and detector signal level 
+for a species release event in a spacecraft cabin. Five Saffire experiments have been conducted so far with one more, 
+Saffire-VI, scheduled to fly in 2023. All will take place on Northrop Grumman’s (NG) Cygnus vehicle following the 
+ 
+1 Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+2 Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+A

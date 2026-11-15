@@ -1,0 +1,94 @@
+ 
+NASA/TM-20210011385 
+43 
+Figure 2.22.—Comparison of microgravity, downward flame spread, and Fernandez-Pello 
+and Williams experimental data at different thicknesses of polymethylmethacrylate. Also 
+showing thin and thick fuel theoretical thermal limits.  
+ 
+ 
+Using the experimental value of Vf,thick = 0.044 mm/s, the effective value of the opposing flow created by 
+natural convection can be calculated from Equation (2.11) as 
+,thick,expt
+,
+2
+m
+cm
+0.019  
+1.9  
+s
+s
+f
+g eff
+adb
+V
+V
+F
+=
+=
+=
+Ω
+ 
+(2.13)
+where Ω is the ratio (ρcpλ)g/(ρcpλ)s. 
+In earlier computation work (Ref. 17), the effective velocity was calculated as 6 cm/s based on a more 
+complex definition of the flame coefficient. The current experimental result, on the other hand, is based 
+on F defined in terms of adiabatic flame temperature. The characteristic buoyancy-driven natural 
+convection flow can be shown to scale with 
+(
+)
+[
+]
+13
+NC
+g
+g
+V
+g T
+T
+T
+∞
+∞
+≈α
+−
+. Using Tv as the characteristic 
+gas temperature near the flame leading edge, we calculate VNC = 10.2 cm/s, which is about the same order 
+as the effective velocity.  
+The transition thickness between the thermally thin and thick fuels can be obtained by equating the 
+experimentally verified thin and thick fuel spread rate expressions.  
+(
+)
+transition
+,thin,expt
+,thick,expt
+,
+;  
+  m
+4
+s
+f
+f
+g
+g
+g eff
+adb
+V
+V
+c V
+F
+π
+λ
+=
+⇒τ
+=
+ρ
+ 
+(2.14)
+The transition thickness (2τtransition) can be calculated from this expression as 5.19 mm for downward 
+flame spread in ambient air. In a general opposed-flow environment, the transition thickness will vary 
+with the opposing flow velocity and the boundary layer development length through its dependence on 
+Vg,eff, with pressure through its dependence on ρg, and O2 level through its dependence on Fadb. 
+2.3.8 
+Conclusion 
+In this work, results of experiments on flame spread over thin sheets of polymethylmethacrylate 
+(PMMA) in the quiescent downward configuration and opposed-flow configuration in the microgravity 
+environment are compared. A curve fit of maximum spread rate against fuel thickness using de Ris 

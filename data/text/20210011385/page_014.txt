@@ -1,0 +1,47 @@
+ 
+NASA/TM-20210011385 
+6 
+ 
+The O2, CO2, and CO measurements required two portable, battery powered instruments in the 
+working volume during testing: Carbon Dioxide Monitor (CDM), and Compound Specific Analyzer-
+Combustion Products (CSA-CP) (Refs. 3 to 5). The O2 sensor (CSA-CP) is not recalibrated on orbit, so 
+we also used the Major Constituents Analyzer (MCA) (Refs. 6 and 7) data to determine the O2 sensor 
+offset on a daily basis. The resolution of the O2 sensor in the CSA-CP was 0.1 percent O2. O2 
+concentrations in the MSG working volume were varied during the testing from ambient ISS O2 levels 
+(~21 percent O2) down to ~14 percent O2 for very near limit flames. The CO sensor in the CSA-CP is 
+zero calibrated every 60 days, with a range of 0 to 1,000 ppm and a resolution of 1 ppm. The CO2 sensor 
+was within its calibration window and had a range of 0 to 5 percent and a resolution of 0.1 percent by 
+volume of CO2. The sensor data provided initial and final conditions for repeated tests in a sealed working 
+volume and allowed us to determine when the working volume needed to be purged. The O2 decreased 
+during each burn and the CO and CO2 increased accordingly.   
+Many of the BASS–II tests required a diluted atmosphere, which typically took 1 to 3 h to achieve by 
+dilution of the MSG working volume using ISS N2 (from the hose connecting the BASS–II duct to the 
+back wall of MSG in Figure 1.1). The N2 was regulated with a small (<0.5 liters per minute (LPM)) MKS 
+Instruments 179A mass flowmeter and entered the flow duct through a small nozzle just downstream of 
+the fan. The fan in the flow duct was turned to maximum (>100 LPM) during the N2 flow to mix and 
+blow the gas into the working volume and circulate it continuously throughout the hours-long dilution.   
+1.3 
+Validation of Microgravity Science Glovebox Dilution—Continuously Stirred Tank 
+Reactor Model 
+To utilize the capabilities of MSG to reduce the O2 in the working volume in a controlled manner, a 
+dilution model based on a continuously stirred tank reactor (CSTR) model was developed. In this model, 
+the mixing in the working volume (via the BASS–II duct fan) is assumed to be “instantaneous,” so that 
+the outflow “leak” concentration from the MSG work volume to the ISS cabin is the perfectly mixed 
+instantaneous concentration. This perfect mixing approximation is valid as long as the residence time 
+(volume per flow rate or V/R) is at least 5 to 10 times as long as the mixing time, which is met by the 
+100 LPM N2 flow rate during dilution (250 liters/100 LPM ~ 2.5 min mixing time). For the MSG volume 
+and N2 flow rates, the working volume residence time is V/R = 500+ min, and the mixing time is shorter 
+than 50 min, so the assumption is valid. The model assumes the work volume is at constant pressure and 
+temperature and constant volume. Thus, the leak rate out of the work volume is equal to the rate of N2 
+supplied (r). The details of the model and the on-orbit validation testing using the Major Constituents 
+Analyzer (MCA) (Ref. 11) are provided in Appendix B. 
+1.4 
+Combustion Products  
+Sensor readings were taken before and after each BASS–II test. The sensor data is used to measure 
+the O2 depletion and the completeness of combustion (CO and CO2) for each microgravity combustion 
+test under spacecraft ventilation flow rates. 
+The O2 depletion data is compared to the CO2 production for each BASS–II test that used PMMA as 
+the fuel.   
+The PMMA stoichiometric equation is  
+C5H8O2 + 6 O2 > 5 CO2 + 4 H2O 
+(1.1)

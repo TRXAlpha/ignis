@@ -1,0 +1,175 @@
+ 
+NASA/TM-20210011385 
+36 
+A thermally thin fuel, by definition, is heated across its thickness so that Lsy ≈ τ, where τ is the half-
+thickness of the fuel (only the symmetric half of the leading edge is depicted in Figure 2.14). The familiar 
+expression of thin-limit spread rate (Ref. 10) (except for the factor of π/4) is obtained by substituting Lsy ≈ 
+τ in Equation (2.7). For a thick fuel, the last two timescales in Equation (2.6) are equated to produce 
+ 
+(
+)
+(
+)
+(
+)
+(
+)
+;  
+/
+/
+s
+sy
+g s
+v
+s
+sy
+g s
+v
+s
+g
+s
+sy
+g
+f
+v
+g
+g
+s
+v
+g
+sy
+g
+g g
+g
+L L c
+T
+T
+L L c
+T
+T
+L
+L
+T
+T
+L
+L
+T
+T
+L
+L
+F
+c V F
+∞
+∞
+∞
+ρ
+−
+ρ
+−
+λ
+λ
+≈
+⇒
+≈
+≈
+λ
+−
+λ
+−
+λ
+ρ
+ 
+(2.8)
+Substituting this expression in Equation (2.7) produces the familiar de Ris thick limit (Ref. 9): 
+2
+,thin
+,thick
+;   and 
+g
+g
+g
+g
+f
+f
+g
+s s
+s s
+s
+c
+V
+F
+V
+V F
+c
+c
+λ
+ρ
+λ
+≈
+≈
+ρ
+τ
+ρ
+λ
+ 
+(2.9)
+One of the remarkable aspects of these expressions is that the spread rate is independent of opposing 
+flow velocity Vg for thin fuels while it is proportional to Vg for thick fuels. An increase in Vg obviously 
+raises the heat flux (W/m2) from the gas to the solid, but it also shortens the preheat zone length, making 
+the heat flow (W) independent of flow velocity. This heat is used to raise the temperature of the heated 
+layer, which is the physical half-thickness of a thin fuel sample. For a thick fuel, on the other hand, the 
+heated layer thickness depends on the heat flux: a higher temperature gradient in the solid (in the y 
+direction) and, hence, a thinner heated layer, is necessary to sustain a higher heat flux from the gas and 
+hence the flow velocity. That is how the velocity dependence is introduced for a thermally thick fuel. 
+Equation (2.8) also provides a simple criterion for transition thickness. A fuel can be considered 
+thermally thin when 
+cr
+cr
+;   where 
+s
+g g
+g
+c V F
+λ
+τ < τ
+τ
+≈
+ρ
+ 
+(2.10)
+Although Equations (2.9) and (2.10) are remarkable in their simplicity, there is no universally 
+accepted procedure for evaluating various parameters. The temperature at which gas properties are 
+evaluated, the value of Tf and Tv to be used in determining F, and how to include the effect of the 
+boundary layer on Vg are all subject to differing interpretation (Refs. 1, 10, and 12).  
+2.3.4 
+Onset of Kinetic Effect 
+One of the major challenges in acquiring data in the thermal regime is the onset of gas-phase kinetic 
+effect when tg,res decreases to the level of the combustion time tg,chem. Their ratio, called the Damköhler 
+number, decreases the same as the opposed-flow velocity is increased (at a given O2 level), leading to 
+blowoff extinction. In the downward spreading configuration in a normal-gravity environment, buoyancy-
+generated flow, which scales with 
+(
+)
+[
+]
+13
+NC
+g
+g
+V
+g T
+T
+T
+∞
+∞
+≈α
+−
+ (Ref. 17) creates a constant opposing flow 
+for a given O2 level. When a forced opposing flow is superposed, the forced flow cannot have much 
+impact on the flame spread until the strength of forced convection becomes comparable to that of natural 
+convection due to gravity.  
+To illustrate this, average spread rate data acquired in a vertical combustion tunnel (Ref. 18) for 
+various opposing airflow velocity for spread over a thin sheet of PMMA (50-µm-thick, 2-cm-wide) is 
+plotted in Figure 2.15. The spread rate can be seen to remain relatively independent of the forced 
+opposing flow velocity until it reaches a value of 40 cm/s. Similar behavior has been observed in flame 
+spread over thin cellulosic fuel (Ref. 12). For thermally thin fuel in the thermal regime, the spread rate is  

@@ -1,0 +1,38 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+Acceleration Vector Magnitude  (mg)
+Time (minutes)
+from: t:\pub\pad\, $Name:  $, 29−Aug−2002,10:07:25.658
+Start GMT 16−August−2002, 228/09:13:30.000
+EVA−7
+Size: 1.00,  Step: 1.00 sec.
+Interval Max
+Vector Magnitude
+Increment: 5, Flight: UF2
+250.0 sa/sec (100.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+Figure 6-240 Interval Maximum of EVA-7 (121f05) 
+308
+NASA/TM—2003-212460

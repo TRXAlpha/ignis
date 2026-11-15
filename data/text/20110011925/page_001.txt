@@ -1,0 +1,20 @@
+ISS Microgravity Environment 
+ 
+Michael R. Laible 
+Boeing, International Space Station, Loads and Dynamics 
+13100 Space Center Blvd 
+Houston, TX 77059 
+ 
+The Microgravity performance assessment of the International Space Station (ISS) is 
+comprised of a quasi-steady, structural dynamic and a vibro-acoustic analysis of the ISS 
+assembly-complete vehicle configuration.  The Boeing Houston (BHOU) Loads and 
+Dynamics Team is responsible to verify compliance with the ISS System Specification 
+(SSP 41000) and USOS Segment (SSP 41162) microgravity requirements.  To verify the 
+ISS environment, a series of accelerometers are on-board to monitor the current 
+environment. 
+ 
+This paper summarizes the results of the analysis that was performed for the Verification 
+Analysis Cycle (VAC)-Assembly Complete (AC) and compares it to on-orbit 
+acceleration values currently being reported.  The analysis will include the predicted 
+maximum and average environment on-board ISS during multiple activity scenarios. 
+ 

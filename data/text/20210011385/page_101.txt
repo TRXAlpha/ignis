@@ -1,0 +1,50 @@
+ 
+NASA/TM-20210011385 
+93 
+7.0 
+Individual Principal Investigator Report: T’ien 
+7.1 
+Concurrent Flame Growth, Spread, and Extinction Over Composite Fabric Samples 
+in Low-Speed Purely Forced Flow in Microgravity3 
+7.1.1 
+Abstract 
+As a part of the NASA Burning and Suppression of Solids (BASS) and BASS–II experimental 
+projects aboard the International Space Station, flame growth, spread, and extinction over a composite 
+cotton-fiberglass fabric blend (referred to as the SIBAL (Solid Inflammability Boundary at Low Speed) 
+fabric) were studied in low-speed concurrent forced flows. The tests were conducted in a small flow duct 
+within the Microgravity Science Glovebox. The fuel samples measured 1.2 and 2.2 cm wide and 10 cm 
+long. Ambient O2 was varied from 21 percent down to 16 percent and flow speed from 40 cm/s down to 
+1 cm/s. A small flame resulted at low flow, enabling us to observe the entire history of flame development 
+including ignition, flame growth, steady spread (in some cases), and decay at the end of the sample. In 
+addition, by decreasing flow velocity during some of the tests, low-speed flame quenching extinction 
+limits were found as a function of O2 percentage. The quenching speeds were found to be between 1 and 
+5 cm/s with higher speed in lower O2 atmosphere. The shape of the quenching boundary supports the 
+prediction by earlier theoretical models. These long-duration microgravity experiments provide a rare 
+opportunity for solid fuel combustion since microgravity time in ground-based facilities is generally not 
+sufficient. This is the first time that a low-speed quenching boundary in concurrent spread is determined 
+in a clean and unambiguous manner. 
+7.1.2 
+Introduction 
+Flame spread and extinction over condensed fuels in a microgravity environment has been the subject 
+of extensive theoretical and experimental studies due to the importance of fire safety in human space 
+missions (Refs. 1 to 4). Compared with burning in normal gravity, diffusion flames in microgravity are 
+not affected by buoyancy-induced flow, thus providing a chance to study the fundamental mechanism(s) 
+of low-speed flame quenching (Ref. 5). Transition from solid diffusion flame spreading to quenching 
+extinction is a slow heat loss process characterized by a relative increase in the rates of radiative and 
+conductive heat losses compared to the rate of heat generation (Ref. 3). Long-duration microgravity time 
+is desired for such studies, which in general cannot be achieved by ground-based facilities.  
+Recently, NASA’s Burning and Suppression of Solids (BASS and BASS–II) project examined the 
+burning and extinction characteristics of a variety of solid fuel samples aboard the International Space 
+Station (ISS). Different thermally thin and thermally thick solid fuels were burned in concurrent, opposed, 
+or stagnation flow configurations in a small flow duct. Each experimental run took tens of seconds to 
+minutes, depending on the sample type and flow conditions. The challenge with thin solid samples in 
+concurrent flow, compared with other configurations, is that flame spreads much faster, and flames can 
+become quite long. Because of size limitations, the fuel sample is relatively short and so a concurrent 
+spreading flame may not reach fully steady spread within the sample length. The transient ignition and 
+flame growth process, however, provides a flame spread history that can be useful for the development of 
+transient flame models (Ref. 6). In BASS–II, a N2 dilution scheme is used whereby the O2 percentage in 
+the Microgravity Science Glovebox (MSG) can be decreased to a preset value so that flame spread can be 
+ 
+3Previously published by: Zhao, Xiaoyang; and T’ien, James S.: A Three-Dimensional Transient Model for Flame 
+Growth and Extinction in Concurrent Flows. Combust. Flame, vol. 162, no. 5, 2015, pp. 1829–1839.  
+http://dx.doi.org/10.1016/j.combustflame.2014.12.003 

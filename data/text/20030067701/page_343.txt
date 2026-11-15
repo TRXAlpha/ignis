@@ -1,0 +1,44 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+19. Expedition Three Overview Fact Sheet, NASA, July 2001. 
+ 
+20. EXPRESS RACKS 1-2 /4-5 Fact Sheet, NASA, February and July 2001. 
+ 
+21. EXPRESS Rack, Flight 6A On-Orbit Configuration, Teledyne Brown Engineering DL 
+5221003, Nov. 99. 
+ 
+22. NASA Fact Sheets: FS-2002-03-59-MSFC- Release date April 2002 
+ 
+23. NASA Fact Sheets: FS-2002-04-80-MSFC- Release date April 2002 
+ 
+24. NASA Fact Sheets: FS-2002-03-58-MSFC- Release date March 18, 2002 
+ 
+25. http://lsda.jsc.nasa.gov/scripts/cf/hardw.cfm?hardware_id=175 
+ 
+26. Matisak, B.P., Rogers, M.J.B & Alexander J.I.D., “Analysis of the Passive Accelerometer 
+System (PAS) Measurements During USML-1”, AIAA 94-0434, December 1994. 
+ 
+27. Software Requirements for Processing Microgravity Acceleration Data from the 
+International Space Station, PIMS-ISS-001, May 2000. 
+ 
+28. Canopus Systems, Inc., OARE Technical Report 149, STS-78 (LMS-1) Final Report, 
+CSI-9604, September 1996. 
+ 
+29. Canopus Systems, Inc., OARE Technical Report 151, STS-94 (MSL-1) Final Report, 
+CSI-9704, August 1997. 
+ 
+30. Hogg, Robert V., “Adaptive Robust Procedures: A Partial Review and Some Suggestions 
+for Future Applications and Theory”, Journal of the American Statistical Association, 
+Vol. 69, December 1974. 
+ 
+31. Canopus System, Inc., Microgravity Environment Interpretation Tutorial 2001 
+Presentation, Section 5, James Fox, March 2001. 
+ 
+32. Microgravity Analysis Integration Team, “Microgravity Control Plan (Revision B)”, 
+Report No: SSP-50036 B, the Boeing Company, Houston, TX, NASA Contract No. 
+NAS15-1000 (DRIVE-16), February 1999. 
+ 
+ 
+329
+NASA/TM—2003-212460

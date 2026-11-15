@@ -1,0 +1,75 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+be detected with this type of plot; however, the exact timing and magnitude of specific 
+acceleration events cannot be extracted.  This type of display is useful for identifying overall 
+effects of extended thruster firings and other activities that tend to cause the mean acceleration 
+levels to shift.  This display type is rarely used for vibratory data. 
+ 
+TABLE E - 2 ANCILLARY PLOT INFORMATION FOR INTERVAL AVERAGE PLOT TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+ 
+ 
+Optional Field 2 
+ 
+ 
+Optional Field 3 
+Interval Statistic Plot Type 
+Interval Average 
+Optional Field 4 
+Size: X, Step: Y 
+Size: 0.25, Step: 0.25 sec. 
+ 
+E.3.2.2 Interval Root-Mean-Square 
+Interval root-mean-square (RMS) plots show oscillatory content in the acceleration data.  For the 
+period of time considered, this quantity gives a measure of the variance of the acceleration 
+signal.  This data representation is useful for identifying gross changes in acceleration levels 
+usually caused by the initiation or cessation of activities such as crew exercise or equipment 
+operations. 
+ 
+TABLE E - 3 ANCILLARY PLOT INFORMATION FOR INTERVAL ROOT-MEAN-SQUARE PLOT TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+ 
+ 
+Optional Field 2 
+ 
+ 
+Optional Field 3 
+Interval Statistic Plot Type 
+Interval Root Mean Square 
+Optional Field 4 
+Size: X, Step: Y 
+Size: 0.25, Step: 0.25 sec. 
+ 
+E.3.2.3 Interval Minimum/Maximum 
+An interval minimum/maximum plot shows the peak-to-peak variations of the acceleration data.  
+For each interval, this plot type shows both the minimum and maximum values, and thereby 
+shows the acceleration data envelope.  This type of display is another way to track gross changes 
+in acceleration. 
+ 
+TABLE E - 4 ANCILLARY PLOT INFORMATION FOR INTERVAL MINIMUM/MAXIMUM PLOT TYPE 
+Ancillary Information Field 
+Generic Description 
+Specific Example 
+Optional Field 1 
+ 
+ 
+Optional Field 2 
+ 
+ 
+Optional Field 3 
+Interval Statistic Plot Type 
+Interval Minmax 
+Optional Field 4 
+Size: X, Step: Y 
+Size: 0.25, Step: 0.25 sec. 
+ 
+ 
+350
+NASA/TM—2003-212460

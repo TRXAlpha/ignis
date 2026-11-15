@@ -1,0 +1,57 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+−13
+−12.5
+−12
+−11.5
+−11
+−10.5
+−10
+−9.5
+−9
+−8.5
+−8
+Σ PSD Magnitude [log 10(g2/Hz)]
+hh:mm:ss
+Frequency (Hz)
+Start GMT 03−January−2002, 003/10:00:00.007
+from: t:\pub\pad\, $Name: pop1_06−13−2001 $, 25−Jan−2002,06:17:29.596
+CEVIS Exercise
+INNOERGO, 10:24:41−10:30:26, File: Wzc01030.xls
+Span = 59.48 minutes
+Hanning, k = 1089
+Sum
+Increment: 4, Flight: UF1
+Temp. Res. = 3.280 sec, No = 1843
+∆f = 0.031 Hz,  Nfft = 2048
+62.5 sa/sec (25.00 Hz)
+sams2, 121f05 at LAB1O1, ER2, Upper Z Panel:[185.17 38.55 149.93]
+10:00:00
+10:07:12
+10:14:24
+10:21:36
+10:28:48
+10:36:00
+10:43:12
+10:50:24
+10:57:36
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+Figure 6-217 Spectrogram of CEVIS Exercise Period (121f05) 
+285
+NASA/TM—2003-212460

@@ -1,0 +1,89 @@
+ 
+NASA/TM-20210011385 
+20 
+Subscripts 
+cr 
+critical 
+f 
+adiabatic flame 
+g 
+gas phase 
+radiative 
+res 
+residence 
+s 
+solid phase 
+thermal 
+v 
+vaporization 
+x, y coordinates 
+∞ 
+ambient 
+2.2.2 
+Introduction 
+Opposed-flow flame spread over thermally thin fuels is one of the most fundamental topics in the 
+study of fire spread. The physics of flame spread is considerably simplified in this configuration because 
+the flame spreads steadily and the fuel can be assumed to be uniformly heated across its thickness. 
+Moreover, in the thermal regime, gas-phase and pyrolysis chemistry can be considered infinitely fast 
+compared to the resident time 
+2
+g
+res
+g
+g
+g
+t
+L
+V
+V
+≈
+≈α
+, the time spent by the oxidizer as it passes through 
+the length 
+g
+g
+g
+L
+V
+≈α
+ of the flame leading edge for thermal diffusivity αg, producing a simplified 
+closed-form expression for the thermal limit (Refs. 1 and 2) of the flame spread rate. The spread rate is 
+independent of flow velocity Vg, inversely proportional to the fuel thickness, and directly proportional to a 
+nondimensional coefficient known as the de Ris coefficient 
+(
+) (
+)
+f
+v
+v
+F
+T
+T
+T
+T∞
+=
+−
+−
+, where Tf is the 
+adiabatic flame temperature, Tv is the fuel vaporization temperature, and T∞ is the ambient and virgin fuel 
+temperature. As the opposed-flow velocity is increased, the residence time being inversely proportional to 
+the square of velocity, finite-rate kinetics in the gas phase becomes important leading ultimately to the 
+blowoff extinction. This kinetic regime has been experimentally (Ref. 3) and computationally (Ref. 4) 
+studied and the spread rate, normalized by its thermal limit, has been correlated to the nondimensional 
+Damköhler number, the ratio of the chemical and residence time. The downward spread in a quiescent 1g 
+environment can be considered a special case of opposed-flow flame spread with buoyancy-induced flow 
+providing the opposing flow velocity (Ref. 5). 
+In a microgravity environment, the opposing flow can be very mild and even completely absent in the 
+perfectly quiescent situation of zero gravity. Numerical (Refs. 6 and 7) and experimental (Refs. 8 and 9) 
+studies have established the radiative regime in the mild opposed-flow environment in which the flame 
+spread rate decreases as the opposed-flow velocity is reduced leading to flame extinguishment (Ref. 10) if 
+the flow velocity is sufficiently low. This result is also dependent on other ambient conditions as steady 
+spread over thin fuels in a perfectly quiescent environment has been established at higher O2 levels 
+(Ref. 11). The critical velocity, defined as the opposed-flow velocity below which steady spread rate is 
+not observed in a microgravity environment, has been shown to depend on O2 level, but its dependence on 
+other parameters such as fuel thickness are still not well known. There is no closed-form formula, verified 
+by experimental results that can be used to predict the critical velocity. 
+In this work, recent experimental work for flame spread over thin sheets of polymethylmethacrylate 
+(PMMA) performed in the International Space Station (ISS) is reported. The experimental results are 
+analyzed to determine the critical velocity for different fuel thicknesses and ambient O2 levels. The results 
+are compared with predictions from a simplified analysis and computational results from a two-

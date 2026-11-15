@@ -1,0 +1,182 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+the ISS reduced gravity environment on their experiments based on the analysis performed 
+and distributed by PIMS using the two set of accelerometers aboard the ISS.  It is hoped that 
+future investigators will take such potential impact into account when designing their 
+experiment scheduled to be performed aboard ISS.  Table 5-2 shows the experiments that 
+were performed by the Increment-4 crew [10] in the USOS-ISS, while Table 5-3 shows the 
+ones performed in the ROS-ISS [10].  Table 5-4 shows the experiments performed by 
+Increment-5 crew in the USOS-ISS [15], while Table 5-5 shows the ones performed in the 
+ROS-ISS by the same crew [15]. 
+ 
+TABLE 5-2 USOS ISS INCREMENT-4 PAYLOAD COMPLEMENT 
+Facility/Experiment 
+Mission information 
+Duration 
+Location on ISS 
+Research Area 
+Active Rack Isolation System 
+Mission 6A STS-100 
+and UF-2, STS-111 
+15 years 
+EXPRESS Racks 2 and 
+3; Destiny module 
+ 
+EXPRESS Racks 1, 2, 3, 4, 5 
+Mission 6A STS-100; 
+7A.1 STS-105; UF-2, 
+STS-111 
+15 years 
+Destiny module 
+Multidisciplinary 
+Human Research Facility 
+Mission 5A.1 STS-102 
+15 years 
+Destiny module 
+Human Life sciences 
+Payload Equipment Restraint System 
+Mission 5A.1 STS-102 
+15 years 
+Destiny module 
+ 
+Bonner Ball Neutron Detector 
+Radiation 
+Mission 5A.1 STS-102 
+8 months 
+Destiny module 
+Human Life Sciences 
+—Radiation 
+Crew Earth Observation 
+Mission 4A STS-97 
+15 years 
+Destiny and Zvezda 
+modules 
+Space Flight Utilization 
+Earth observation 
+Earth Knowledge Acquired by Middle 
+Schools (EarthKAM) 
+Mission 5A STS-98 
+15 years 
+Russian Service 
+Module window 
+Space Flight 
+Utilization—Earth 
+observation and 
+outreach 
+Hoffman-Reflex 
+Mission 5A.1 STS-102 
+Approx. 1 year 
+(Expeditions 2-4)  
+Human Research 
+Facility Rack Destiny 
+module 
+Human Life Sciences--- 
+Neurovestibular 
+Crew Interactions 
+Mission 7A.1 STS-105 
+28 months (Expeditions 
+2-6) 
+Human Research 
+Facility Rack Destiny 
+module 
+Human Life Sciences—
+Psychosocial 
+ARIS-ISS Characterization 
+Mission 6A STS-100 
+Approx. 10 months 
+Active Rack Isolation 
+Space Flight Utilization 
+Microgravity Acceleration 
+Measurement System (MAMS) 
+Mission 6A STS-100 
+15 years 
+EXPRESS Rack 1 
+Destiny module 
+Physical Sciences—
+Environmental 
+Physics of Colloids in Space 
+(EXPPCS) 
+Mission 6A STS-100 
+1 year (return on 
+mission UF2 STS-111) 
+EXPRESS Rack 2 
+Destiny module 
+Physical Sciences—
+Fluids science 
+Space Acceleration Measurement 
+System II (SAMS-II) 
+Mission 6A STS-100 
+15 years 
+Destiny module 
+Physical Sciences—
+Environmental 
+Sub-regional Assessment of Bone Loss 
+in Axial Skeleton (Sub-regional Bone 
+Mission 5A.1 STS-102 
+2 years, 4 months 
+(assigned to Exp. 2-6) 
+N/A—Preflight and 
+post-flight data 
+collection only 
+Human Life Sciences—
+Bone and muscle 
+Cellular Biotechnology Operations 
+Support System 
+Mission 7A.1 STS-105 
+4 months (returns on 
+STS-108, UF-1) 
+Mid-deck locker in 
+EXPRESS Rack 4 
+Cell & tissue growth, 
+cellular biotech 
+research 
+Dynamically Controlled Protein 
+Crystal Growth 
+Mission 7A.1 STS-105 
+4 months (return on 
+STS-108, UF-1) 
+EXPRESS Rack 1 
+Destiny module 
+Physical Sciences—
+Protein crystallization 
+Renal Stone Investigation 
+Mission 7A.1 STS-105 
+40 months (Expeditions 
+3-12) 
+N/A—pre and post 
+mission only 
+Human Life Sciences 
+Materials International Space Station 
+Experiment 
+Mission 7A.1 STS-105 
+Approx. 1 year 
+Outside airlock 
+between PMA1 and 
+Destiny 
+Physical Sciences 
+Xenon 1 
+Mission 7A.1 STS-105 
+Approx. 16 months 
+(Expeditions 3-6) 
+N/A pre-and post-flight 
+Human Life Sciences 
+Pulmonary Function in Flight 
+Mission 7A.1 STS-105 
+Approx. 1 year 
+(Expeditions 3-6) 
+Human Rack Facility, 
+Destiny module 
+Human Life Sciences 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+22
+NASA/TM—2003-212460

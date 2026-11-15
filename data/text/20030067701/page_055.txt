@@ -1,0 +1,52 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+6.1.6.2 
+Unknown Disturbance 
+During Increments 4 and 5, an unidentified source caused disturbances in both the vibratory and 
+quasi-steady regime.  The focus of this section is on the effects in the quasi-steady regime.  A 
+brief vibratory background will be given to correlate with quasi-steady data, but a more detailed 
+analysis on the vibratory component may appear in a future report as more information on the 
+source is determined. 
+ 
+ The nature of the signal in the vibratory regime can be seen in Figure 6-70, a spectrogram of 
+SAMS 121F04 data starting at GMT 16-September-2002, 259/16:00.  It is manifested as a 
+broadband “fuzzy” signal centered on 120-130 Hz, a narrower 100 Hz signal, or a thin 158 Hz 
+signal. In the spectrogram, the signal is at 120 Hz until the 17:20 mark, at which point it 
+disappears and the 100 Hz signal is seen. This signal continues until approximately 20:30, where 
+it again changes, this time to the narrow 158 Hz signal. It is the time that the 100 Hz signal is 
+seen in SAMS data that the effects on the quasi-steady environment are seen.  Figure 6-71 is a 
+YA-axis time series plot of MAMS OSSBTMF data for the same time period of Figure 6-70.  At 
+the point at which the 100 Hz signal appears the YA-axis acceleration component in the quasi-
+steady data drops down approximately 0.50 µg.  The mean YA-axis for the time period when the 
+100 Hz component was active is -0.41 µg. For time period when the 100 Hz was not active the 
+mean was -0.91 µg. 
+  
+A repeated switch from 100 Hz to 120 Hz and back gives the appearance of a “square wave” in 
+the YA-axis of MAMS data.  A good example of this type of behavior is shown in Figure 6-72, a 
+time series plot of MAMS OSS data from GMT 15-August-2002, 227/22:00.  The YA-axis of the 
+plot shows the “square wave” phenomenon, especially in the early part of the plot when the crew 
+was asleep.  Figure 6-73 is a 1.5 hour spectrogram beginning at GMT 15-August-2002, 
+227/22:00 with the MAMS OSS YA-axis acceleration overlaid for correlation with the 
+appearance of the 100 Hz signal.  (Note: The MAMS OSS data was adjusted by -1.96 minutes 
+due to a known discrepancy between SAMS and MAMS timing.)  
+ 
+6.1.6.3 
+Reboosts 
+The primary method for conducting a reboost is using the main engine of a docked cargo vehicle, 
+typically a Progress M1.  Progress’ main engine is limited to burning only the amount of fuel 
+contained within the Progress propulsion system propellant tanks.  If necessary, the Service 
+Module (SM) and the Functional Cargo Block (FGB) can transfer fuel to the docked Progress 
+during a reboost.  In that case, the Progress’ rendezvous and docking thrusters are used, instead 
+of the main engine, due to fuel flow limitations [6].  If a reboost is needed and there is no docked 
+Progress, the SM engines can also be used to conduct such reboost. 
+ 
+Station reboosts are open loop burns, where the firing is initiated at a prescribed time and place 
+in orbit.  The basic sequence of events requires that the station maneuver to the reboost attitude.  
+Then, at the appropriate time, commands are issued for the jets to fire for a specific length of 
+time.  A reboost usually requires two burns [6].  At the end of the second burn, the station is 
+maneuvered to its nominal attitude. 
+ 
+41
+ 
+NASA/TM—2003-212460

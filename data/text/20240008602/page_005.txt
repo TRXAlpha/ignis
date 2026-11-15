@@ -1,0 +1,65 @@
+ 
+International Conference on Environmental Systems 
+ 
+ 
+5
+Table 2. Flow Rates used in Saffire V Simulations 
+Cygnus Location 
+Flow Rate (m3/s) 
+Vehicle 
+0.062 
+Saffire Flow Duct 
+0.028 
+Saffire Avionics 
+0.013 
+FFD 
+0.017 
+ 
+ 
+ 
+Figure 3. Calculation of Heat Addition Rate (HAR) from Saffire to Cygnus. 
+ 
+                                                           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         (1) 
+ 
+Table 3. Initial Atmospheric Conditions in for Saffire V Simulations 
+ 
+Event 6 
+Event 8 
+Pressure (Pa) 
+7.17x104 
+7.25x104 
+Volume (m3) 
+19.2 
+19.2 
+Density (kg/m3) 
+0.83 
+0.83 
+Cp (kJ/kg-K) 
+1.01 
+1.01 
+Temperature (K) 
+297.25 
+297.57 
+CO2 (ppm) 
+7597 
+6807 
+O2 (%) 
+29.5 
+29.8 
+ 
+ 
+The MGR of the combustion products is calculated in a similar fashion as the HAR and applied to the exit of the 
+Saffire payload, utilizing a difference in combustion product mass fraction across the SFU, volume flow rate through 
+the SFU and initial air density. This is provided by Eq. 2. Unlike the cotton-based samples, a constant flame spread 
+was not realized in the PMMA burn events. In order to determine the combustion products that entered into the cabin 
+from the Saffire payload, the data from the experimental sensors were used. RS3 acted as the outlet sensor, since the 

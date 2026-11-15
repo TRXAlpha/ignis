@@ -1,0 +1,136 @@
+ 
+NASA/TM-20210011385 
+84 
+A surface energy balance is defined as 
+(
+)
+solid
+4
+4
+4
+0
+tot
+conv
+h
+g
+s
+h
+vap
+h
+s
+s
+h
+s
+r
+crit
+T
+q
+q
+A
+a
+FT
+A
+m L
+A
+T
+T
+A
+A
+y
+∞
+∂
+′′
+′′
+=
++ ε
+σ
+=
++ ε σ
+−
++ λ
+∂
+
+
+
+  
+(6.5)
+The total energy 
+tot
+q
+ transferred from the flame to Ah includes convection 
+conv
+q
+′′
+
+ from Equation 
+(6.4) along with an estimate of the gas-phase radiative feedback to the surface. In the gas-phase radiation 
+term, εg is the gas-phase emissivity, αs is the surface absorptivity, σ is the Stefan-Boltzmann constant, and 
+F is the view factor. Gas-phase flame radiation is included in the surface energy balance because it 
+becomes an important source of energy in the quenching region, as will be shown. Kirchhoff’s law is 
+applied to the surface where absorptivity equals emissivity (as = εs), and εg is estimated to be 0.02, 
+primarily from CO2 and H2O.     
+The energy from the flame to the surface goes into vaporizing the fuel, where m′′
+ is the burning rate 
+and Lvap is the latent heat of vaporization, surface radiative loss is estimated using the surface and ambient 
+temperatures Ts and T∞, and conduction into the rod (Zone 2) for a solid-phase thermal diffusivity λs and 
+the solid-phase temperature gradient Tsolid at the surface through the cross-sectional area of the rod Ar. To 
+estimate surface radiative loss, we assume a constant surface pyrolysis temperature, but this assumption 
+may break down very near quenching.     
+To solve for the conductive loss to Zone 2, for long burn times with slow convective flow, the solid-
+phase thermal profile is assumed to have reached an approximate steady state, and we can approximate a 
+one-dimensional (1D) temperature profile along the rod axis. It is assumed that no vaporization occurs in 
+this zone. We also assume for simplicity that the surface radiative loss is counteracted by a convective 
+heat flux from the hot gases flowing slowly past the rod.   
+There is a balance of heat transfer through the rod via conduction and convection. The convective 
+term is due to the steady surface regression of the rod (measured from the experiment), Vr. It is assumed 
+in this steady analysis that Vr is so small that the length of the sample does not change significantly over 
+the timeframe of interest ts, over which ΔL << L, where L is the characteristic length of the rod. For 
+example, using the regression rate measured in Figure 6.4 for the 0.476-cm radius rod, ts = 132 s and thus 
+∆L = Vrts = 0.5 cm << Lo = 5.9 cm. This means that changes in the temperature profiles are quasi-steady 
+for a slowly changing L. However, as the rod shortens significantly, this assumption breaks down.   
+The 1D steady conduction-convection energy balance in the solid can be nondimensionalized with 
+Y = y/L, θ = (T – T∞)/(Ts – T∞), and the solid-phase Peclet number Pe = LVr/αs. 
+2
+2
+0
+s
+s
+Pe Y
+Y
+∂θ
+∂θ
+=
++
+∂
+∂
+  
+(6.6)
+Boundary conditions for the solid model include the surface temperature T = Ts at y = 0 (circular 
+interface between Zone 1 and Zone 2) and T = T∞ at y = L. Boundary conditions become θ(0) = 1 and 
+θ(1) = 0. This equation is a linear, homogeneous, second-order ordinary differential equation with 
+constant coefficients, with roots 0 and –Pe for the general solution. Using the boundary conditions to 
+evaluate the constants of integration, the solution is  
+( )
+(
+)
+(
+)
+(
+)
+exp
+exp
+1
+exp
+PeY
+Pe
+Y
+Pe
+−
+−
+−
+θ
+=
+−
+−
+  
+(6.7)

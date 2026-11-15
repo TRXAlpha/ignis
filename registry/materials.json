@@ -2,9 +2,24 @@
   {
     "id": "pmma",
     "name": "Polymethylmethacrylate (PMMA)",
-    "aliases": ["PMMA", "acrylic", "Plexiglas", "cast PMMA"],
+    "aliases": [
+      "PMMA",
+      "acrylic",
+      "Plexiglas",
+      "cast PMMA"
+    ],
     "phase": "solid",
     "material_class": "polymer",
     "formula": "(C5O2H8)n"
+  },
+  {
+    "id": "sibal",
+    "name": "SIBAL cotton-fiberglass fabric",
+    "aliases": [
+      "SIBAL",
+      "Solid Inflammability Boundary at Low Speeds fabric"
+    ],
+    "phase": "solid",
+    "material_class": "fabric"
   }
 ]

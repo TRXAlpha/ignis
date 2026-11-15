@@ -1,0 +1,53 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+6.2.3 
+Experiment Equipment 
+This section assesses the impact on the microgravity environment of different equipment used by 
+the experiments.  The help received from the science teams in charge of these experiments 
+enabled characterization of these experiments on the overall microgravity environment during 
+their operations.   
+ 
+Equipment used for the Pulmonary Function in Flight (PuFF) investigation in the HRF is the 
+focus of section 6.2.3.1.  In particular, the GASMAP device, which is used to monitor and 
+analyze inhaled and exhaled breath streams to determine their gas concentrations.  The Process 
+Chamber Module (PCM) installation and operation of the MEPS hardware are analyzed as well. 
+   
+6.2.3.1 
+GASMAP Sample Catheter Pump and Fan 
+Little is known about how human lungs are affected by long-term exposure to the reduced 
+pressure in spacesuits during spacewalks (EVA) or long-term exposure to microgravity. Changes 
+in respiratory muscle strength may result.  The PuFF experiment focuses on the lung functions of 
+astronauts both while they are aboard the ISS and following spacewalks [10].  PuFF is performed 
+on the crew two weeks into their mission, then once monthly thereafter.  Crewmembers also 
+perform a PuFF session at least one week before each spacewalk.  Following each spacewalk, the 
+crewmembers perform another PuFF session, either on the day of the spacewalk or on the 
+following day [10].  PuFF uses the GASMAP instrument located in the HRF rack, along with a 
+variety of other equipment.  Data is stored in a personal computer located in the HRF rack and 
+then transmitted to the ground.   
+ 
+The GASMAP device is used to monitor and analyze inhaled and exhaled breath streams to 
+determine their gas concentrations. The primary gases of interest are nitrogen (N2), oxygen (O2), 
+carbon dioxide (CO2), argon (Ar), acetylene (C2H2), sulfur hexafluoride (SF6), helium (He), and 
+carbon monoxide (C18O). 
+ 
+The GASMAP flight hardware consists of two components: an analyzer module and a calibration 
+module, both of which are housed in drawers inside the US Lab. The analyzer module contains 
+all the sensor and electronic hardware of the GASMAP. The major sub-assemblies of the 
+analyzer module are the Random Access Mass Spectrometer (RAMS), the Roughing system, the 
+Gas Delivery system, the Interface Shell (IS) computer and the power connection. The module is 
+controlled via the keypad and liquid crystal display (LCD) of the front panel, or via a laptop 
+computer [25].  
+ 
+In an effort to correlate accelerations measured in the US Lab to nearby operating equipment, 
+correspondence with HRF and GASMAP teams was pursued to track down timeline information 
+as well as equipment operational characteristics.  The correspondence that ensued along with 
+some data analysis resulted in the identification of two narrowband signatures near 60 Hz that 
+were positively attributed to GASMAP equipment.  This equipment was located in the HRF rack 
+#1 (US LAB Starboard 2 (LAB1S2)).  The first and stronger of the two signatures identified was 
+that of a sample catheter pump.  The nominal operating range of this pump is 52-60 Hz.  The 
+second, weaker signature belonged to the GASMAP fan, which typically operates at 58.3 Hz or 
+3500 RPM.  Timeline information from HRF activities such as rack (de)activation, ultrasound, 
+54
+ 
+NASA/TM—2003-212460

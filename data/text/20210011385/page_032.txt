@@ -1,0 +1,11 @@
+ 
+NASA/TM-20210011385 
+24 
+Figure 2.9.—Flame images as function of opposed-
+flow velocity (Vg) during radiative extinction. (a) 
+Time (t) = 27 s; Vg = 3.0 cm/s. (b) t = 28 s; Vg = 
+1.5 cm/s. (c) t = 29 s; Vg = 1.1 cm/s.  
+(d) t = 30 s; Vg = 1.1 cm/s. 
+ 
+Figure 2.10.—Radiometer signal for entire duration of test. Discontinuity at time 
+t = 30 s coincides with disappearance of visible flame. 

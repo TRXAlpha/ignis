@@ -1,0 +1,48 @@
+ 
+NASA/TM-20210011385 
+130 
+17. Chan, Ryan Lesley: Effect of Oxygen Concentration on Flame Spread Over Thin Fuels in Different 
+Regimes: A Numerical Investigation. M.S. Thesis, San Diego State Univ., 2018. 
+18. Link, Shmuel, et al.: The Effect of Gravity on Flame Spread Over PMMA Cylinders. Sci. Rep., vol. 
+8, no. 120, 2018. 
+19. Carmignani, L.; Sato, S.; and Bhattacharjee, S.: Flame Spread Over Acrylic Cylinders in 
+Microgravity: Effect of Surface Radiation on Flame Spread and Extinction. ICES–2018–311, 2018. 
+20. Johnston, Michael C.: Growth and Extinction Limits: Ground Based Testing of Solid Fuel 
+Combustion in Low Stretch Conditions in Support of Space Flight Experiments. Ph.D. Dissertation, 
+Case Western Reserve Univ., 2018. 
+21. Johnston, Michael C.; and T’ien, James S.: Gravimetric Measurement of Solid and Liquid Fuel 
+Burning Rate Near and at the Low Oxygen Extinction Limit. Fire Saf. J., vol. 91, 2017, pp. 140–146. 
+22. Marcum, Jeremy; Olson, Sandra; and Ferkul, Paul: Mixed Convection Blowoff Limits as a Function 
+of Oxygen Concentration and Upward Forced Stretch Rate for Burning PMMA Rods of Various 
+Sizes. ICES–2017–370, 2017. 
+23. Olson, Sandra; and Ferkul, Paul V.: Microgravity Flammability Boundary for PMMA Rods in Axial 
+Stagnation Flow: Experimental Results and Energy Balance Analyses. Combust. Flame, vol. 180, 
+2017, pp. 217–229. 
+24. Bhattacharjee, Subrata, et al.: Measurement of Instantaneous Flame Spread Rate Over Solid Fuels 
+Using Image Analysis, Fire Saf. J., vol. 91, 2017, pp. 123–129.   
+25. Bhattacharjee, Subrata, et al.: Radiative, Thermal, and Kinetic Regimes of Opposed-Flow Flame 
+Spread: A Comparison Between Experiment and Theory, Proc. Comb. Inst., vol. 36, no. 2, 2017, pp. 
+2963–2969. 
+26. Zhao, Xiaoyang, et al.: Concurrent Flame Growth, Spread, and Quenching Over Composite Fabric 
+Samples in Low Speed Purely Forced Flow in Microgravity. Proc. Comb. Inst., vol. 36, no. 2, 2017, 
+pp. 2971–2978. 
+27. Link, Shmuel, et al.: The Effect of Gravity on Flame Spread Over PMMA Cylinders in Opposed 
+Flow With Variable Oxygen Concentration. ICES–2016–79, 2016. 
+28. Shah, Tirthesh Jayesh: Flame Spread Over Thick Polymethylmethacrylate Samples in a Simulated 
+and Actual Microgravity Environment. M.S. Thesis, San Diego State Univ., 2016. 
+29. Pham, Thao; and Miller, Fletcher: A Narrow Channel Apparatus to Study Radiative Heat Loss of 
+Solid Fuel in Microgravity Combustion. Poster presented at the 32nd Annual Meeting of the 
+American Society for Gravitational and Space Research (ASGSR), Cleveland, OH, 2016. 
+30. Endo, Makoto: Numerical Modeling of Flame Spread Over Spherical Solid Fuel Under Low Speed 
+Flow in Microgravity: Model Development and Comparison to Space Flight Experiments. Ph.D. 
+Dissertation, Case Western Reserve Univ., 2016. 
+31. Marcum, Jeremy; Olson, Sandra; and Ferkul, Paul: BASS–II Microgravity Forced Flow Rod Blowoff 
+Limits Compared to Normal Gravity Mixed Convective Blowoff Limits. Presented at the 32nd 
+Annual Meeting of the American Society for Gravitational and Space Research (ASGSR), Cleveland, 
+OH, 2016. 
+32. Endo, Makoto, et al.: Experimental Data Analysis and Numerical Modeling of Flame Spread on a 
+PMMA Sphere in Microgravity. Presented at the 32nd Annual Meeting of the American Society for 
+Gravitational and Space Research (ASGSR), Cleveland, OH, 2016. 
+33. Carmignani, Luca; and Bhattacharjee, Subrata: Flame Spread Over PMMA Samples and Blow-Off 
+Extinction for Different Angles. Presented at the 32nd Annual Meeting of the American Society for 
+Gravitational and Space Research (ASGSR), Cleveland, OH, 2016. 

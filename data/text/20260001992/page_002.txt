@@ -1,0 +1,61 @@
+2 
+International Conference on Environmental Systems 
+ 
+oxygen consumption and the production of CO and CO2. These data were correlated with 
+distributed temperature measurements in the spacecraft and the pressure rise. Overall, the 
+pressure rise and temperature change were small but the smoke particulate rose to substantial 
+levels and the gaseous products also achieved hazardous levels.  
+Acronyms and Nomenclature 
+FFD 
+= Far Field Diagnostics 
+HRR 
+= Heat Release Rate  
+PMMA  = polymethyl methacrylate 
+SAFFIRE  = Spacecraft Fire Safety Demonstration Project 
+SFU 
+= SAFFIRE Flow Unit 
+SIBAL 
+=  Solid Inflammation Boundary at Low Speed 
+SMAC 
+= Spacecraft Maximum Allowed Concentration   
+ 
+ 
+I. Introduction 
+EVELOPMENT of systems and processes to ensure spacecraft fire safety requires an understanding of the 
+behavior of fires in low-gravity and their impact on the habitability of the spacecraft. Prior to the SAFFIRE 
+(Spacecraft Fire Safety Demonstration Project) experiment series, no tests of practical scale fires had been conducted 
+in low gravity. The SAFFIRE series began in 2017 with SAFFIRE I through III occurring between 2017 and 2019 [1] 
+[2]. This series focused primarily on observation of flame spread and growth for large samples of thin materials in 
+flights I and III and a series of smaller samples for flight II [3]. The impact on the spacecraft was deliberately 
+minimized. Subsequently, flights IV-VI studied large, thick, samples that were allowed to burn for longer durations, 
+releasing heat and smoke into the spacecraft cabin. To evaluate the impact of the smoke and heat, a remote diagnostics 
+and filtration system, referred to as the Far Field Diagnostics (FFD) was positioned at the other end of the spacecraft 
+and 6 sensors were distributed across the open volume. Through these tests, it was possible to observe the growth rate 
+of fires on large thick samples and to assess the impact of these fires on the spacecraft. The tests revealed important 
+features of flame spread and growth on both thick [4] [5] and thin [6] materials. These results included delayed 
+extinguishment and reignition of both thick and thin materials [6]; further evidence of the effect of the duct size on 
+spread rate of thin materials; [6] the strong effect of surface structures (ribs) when aligned with the flow direction; [4] 
+and concurrent flame spread on thick materials is suppressed at low flow rates due to the “oxygen shadow.” [6] 
+Understanding the impact of the fire on the spacecraft habitability was a major objective of SAFFIRE IV-VI. The 
+aerosol and gaseous species levels were measured for SAFFIRE IV-V [7] and their transport in the spacecraft was 
+effectively modeled [8]. However, the fire heat release rate (HRR) was not successfully determined for SAFFIRE IV 
+and V, so it was difficult to correlate the products with the fire size. For SAFFIRE VI, the HRR was successfully 
+measured and preliminary analysis showed that, like terrestrial fires, the smoke products can be more hazardous than 
+the heat produced by the fire [9]. This paper extends earlier analysis by considering the time to alarm for a smoke 
+detector and the state of the spacecraft habitability when the alarm is triggered. The primary hazardous products from 
+fires are heat, smoke, HCN, CO and CO2. NASA requirements limit CO exposure in the Spacecraft Maximum 
+Allowable Concentrations (SMAC) document [10]. For CO the 1-hour SMAC is 425 ppm, and the 24-hour SMAC is 
+100 ppm. For CO2, which is a metabolic product that is prevalent in crewed spacecraft, NASA-STD-3001 [11] 
+establishes the  limit based on the partial pressure to no more than 3 mm Hg for a 1-hour average. Planning fire 
+response depends on understanding which are the most important hazards. This paper seeks to address that question 
+by examining the CO and CO2 concentration changes caused by the fire events compared to NASA exposure standards 
+at the time of  alarm. These results demonstrate the importance of the hazard from fire smoke projects compared to 
+the heat and pressure rise. 
+II. Experimental Hardware and Operations 
+The SAFFIRE flight hardware was installed in the Cygnus spacecraft before launch but was not supplied power 
+until after the Cygnus had departed the International Space Station (ISS). As shown in Figure 1, the SAFFIRE Flow 
+Unit (SFU) was located at the end cone (nadir). The FFD was installed at a middeck locker accommodation area near 
+the hatch(zenith). The 6 remote sensors which measured CO2 and temperature were located with one in each standoff 
+and one in the end cone (nadir) and one by the hatch (zenith).The vehicle was launched full of cargo which was 
+removed by the ISS crew and replaced with material for disposal. Since the free volume in this configuration was 
+D

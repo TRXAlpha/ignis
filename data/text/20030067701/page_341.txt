@@ -1,0 +1,141 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Table 8-2, continued from previous page 
+Velo Exercise 
+OFF 
+RMS: <50 µg 
+Velo Exercise 
+ON 
+RMS: >150 µg 
+0  – 5 
+SAMS 121f02 
+SAMS 121f03 
+SAMS 121f04 
+SAMS 121f05 
+06-Aug-2002, 218/16:00 - 
+07-Aug-2002, 219/00:00 
+Velo Exercise 
+ON 
+RMS: 406 µg 
+RMS: 369 µg 
+RMS: 387 µg 
+0  – 10 
+SAMS 121f03 
+SAMS 121f04 
+SAMS 121f05 
+07-Aug-2002, 219/11:12:45 - 
+07-Aug-2002, 219/11:13:45 
+RED Exercise 
+OFF 
+RMS: 60 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/08:10 - 40 
+RED Exercise 
+squats 
+RMS: 301 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/08:58:09 
+RED Exercise 
+heel raises 
+RMS: 691 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/08:58:26 
+RED Exercise 
+deep heel 
+raises 
+RMS: 336 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/09:02:42 
+RED Exercise 
+deadlifts 
+RMS: 206 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/09:10:46 
+RED Exercise 
+bench 
+press/bent 
+rows 
+RMS: 222 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/09:20:21 
+RED Exercise 
+one-leq 
+squats 
+RMS: 255 µg 
+0  – 10 
+SAMS 121f02 
+02-Sep-2002, 245/09:05:59 
+RED Exercise 
+hab soar 
+PEAK: 9.67 mg 
+0 – 100 
+SAMS 121f02 
+02-Sep-2002, 245/09:33:12 
+SKV-1 & SKV-2 
+OFF 
+RMS: <10 µg 
+23 – 24 
+SAMS 121f08 
+04-Sep-2002 
+SKV-2 
+ON 
+RMS: 30 µg 
+23 – 24 
+SAMS 121f08 
+04-Sep-2002 
+SKV-1 
+ON 
+RMS: 10 µg 
+23 – 24 
+SAMS 121f08 
+23-Sep-2002 
+CMGs 
+3 operational 
+RMS8: 48 µg 
+109.983 -110.017 
+SAMS 121f03 
+26-Aug-2002, 238/00:00:00 - 
+28-Aug-2002, 240/00:00:00 
+TeSS Impact Test 
+entry/exit 
+PEAK: >15 mg 
+0 – 200 
+SAMS 121f05 
+01-Apr-2002, 091/08:11:05 - 
+01-Apr-2002, 091/08:13:30 
+EVA-7 
+NOT During 
+95th: 1.35 mg 
+0 – 100 
+SAMS 121f05 
+16-Aug-2002, hours 08 & 14 
+EVA-7 
+During 
+95th: 1.43 mg 
+0 – 100 
+SAMS 121f05 
+16-Aug-2002, hours 09 & 10 
+EVA-8 
+NOT During 
+95th: 1.93 mg 
+0 – 100 
+SAMS 121f05 
+16-Aug-2002, hours 04 & 11 
+EVA-8 
+During 
+95th: 1.98 mg 
+0 – 100 
+SAMS 121f05 
+16-Aug-2002, hours 06 & 07 
+ 
+                                                 
+8 Mean RMS value over the 48-hour span indicated. 
+327
+NASA/TM—2003-212460

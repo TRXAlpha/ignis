@@ -1,0 +1,82 @@
+This publication is available from the NASA Center for AeroSpace Information, 301–621–0390.
+REPORT DOCUMENTATION PAGE
+2. REPORT DATE
+19. SECURITY CLASSIFICATION
+ OF ABSTRACT
+18. SECURITY CLASSIFICATION
+ OF THIS PAGE
+Public reporting burden for this collection of information is estimated to average 1 hour per response, including the time for reviewing instructions, searching existing data sources,
+gathering and maintaining the data needed, and completing and reviewing the collection of information.  Send comments regarding this burden estimate or any other aspect of this
+collection of information, including suggestions for reducing this burden, to Washington Headquarters Services, Directorate for Information Operations and Reports, 1215 Jefferson
+Davis Highway, Suite 1204, Arlington, VA  22202-4302, and to the Office of Management and Budget, Paperwork Reduction Project (0704-0188), Washington, DC  20503.
+NSN 7540-01-280-5500
+Standard Form 298 (Rev. 2-89)
+Prescribed by ANSI Std. Z39-18
+298-102
+Form Approved
+OMB No. 0704-0188
+12b. DISTRIBUTION CODE
+8. PERFORMING ORGANIZATION
+ REPORT NUMBER
+5. FUNDING NUMBERS
+3. REPORT TYPE AND DATES COVERED
+4. TITLE AND SUBTITLE
+6. AUTHOR(S)
+7. PERFORMING ORGANIZATION NAME(S) AND ADDRESS(ES)
+11. SUPPLEMENTARY NOTES
+12a. DISTRIBUTION/AVAILABILITY STATEMENT
+13. ABSTRACT (Maximum 200 words)
+14. SUBJECT TERMS
+17. SECURITY CLASSIFICATION
+ OF REPORT
+16. PRICE CODE
+15. NUMBER OF PAGES
+20. LIMITATION OF ABSTRACT
+Unclassified
+Unclassified
+Technical Memorandum
+Unclassified
+National Aeronautics and Space Administration
+John H. Glenn Research Center at Lewis Field
+Cleveland, Ohio  44135–3191
+1. AGENCY USE ONLY (Leave blank)
+10. SPONSORING/MONITORING
+ AGENCY REPORT NUMBER
+9. SPONSORING/MONITORING AGENCY NAME(S) AND ADDRESS(ES)
+National Aeronautics and Space Administration
+Washington, DC  20546–0001
+Available electronically at http://gltrs.grc.nasa.gov
+July 2003
+NASA TM—2003-212460
+E–13999
+WBS–22–400–35–40–05
+366
+International Space Station Increment-4/5 Microgravity Environment
+Summary Report
+Kenol Jules, Kenneth Hrovat, Eric Kelly, Kevin McPherson, and Timothy Reckart
+MAMS; SAMS; NASA; International Space Station; PIMS; Quasi-steady; Vibratory;
+Microgravity environment; Acceleration measurements
+Unclassified -Unlimited
+Subject Categories: 18, 20, and 35
+Distribution:   Nonstandard
+Kenol Jules and Kevin McPherson, NASA Glenn Research Center; Kenneth Hrovat, Eric Kelly, and Timothy
+Reckart, ZIN Technologies, Inc., Cleveland, Ohio 44142. Responsible person, Timothy Reckart, organization
+code 6727, 216–433–8147.
+This summary report presents the results of some of the processed acceleration data measured aboard the International Space Station during the period
+of December 2001 to December 2002. Unlike the past two ISS Increment reports, which were increment specific, this summary report covers two
+increments: Increments 4 and 5, hereafter referred to as Increment-4/5. Two accelerometer systems were used to measure the acceleration levels for the
+activities that took place during Increment-4/5. Due to time constraint and lack of precise timeline information regarding some payload operations and
+station activities, not all of the activities were analyzed for this report. The National Aeronautics and Space Administration sponsors the Microgravity
+Acceleration Measurement System and the Space Acceleration Microgravity System to support microgravity science experiments which require
+microgravity acceleration measurements. On April 19, 2001, both the Microgravity Acceleration Measurement System and the Space Acceleration
+Measurement System units were launched on STS-100 from the Kennedy Space Center for installation on the International Space Station. The
+Microgravity Acceleration Measurement System supports science experiments requiring quasi-steady acceleration measurements, while the Space
+Acceleration Measurement System unit supports experiments requiring vibratory acceleration measurement. The International Space Station
+Increment-4/5 reduced gravity environment analysis presented in this report uses acceleration data collected by both sets of accelerometer systems:
+The Microgravity Acceleration Measurement System, which consists of two sensors: the low-frequency Orbital Acceleration Research Experiment
+Sensor Subsystem and the higher frequency High Resolution Accelerometer Package. The low frequency sensor measures up to 1 Hz, but is routinely
+trimmean filtered to yield much lower frequency acceleration data up to 0.01 Hz. This filtered data can be mapped to arbitrary locations for characteriz-
+ing the quasi-steady environment for payloads and the vehicle. The high frequency sensor is used to characterize the vibratory environment up to
+100 Hz at a single measurement location. The Space Acceleration Measurement System, which deploys high frequency sensors, measures vibratory
+acceleration data in the range of 0.01 to 400 Hz at multiple measurement locations. This summary report presents analysis of some selected quasi-
+steady and vibratory activities measured by these accelerometers during Increment-4/5 from December 2001 to December 2002.

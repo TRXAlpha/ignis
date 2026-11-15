@@ -1,0 +1,192 @@
+6 
+International Conference on Environmental Systems 
+ 
+impractical, 2-sided burn results can be used as a conservative upper-bound estimate of the growth rate for 1-sided 
+applications. 
+ 
+This linear growth rate is an important finding as it suggests that even in high oxygen conditions, low-gravity 
+flame spread and growth will not be acceleratory. Figure 6 shows very close agreement, in the later portion of the test, 
+between the flame length and the radiometer signal for the 2-sided PMMA sample in SAFFIRE VI-3. Flame tracking 
+was halted when the flow was reduced to 5 cm/s at 480 s, as the flame had weakened dramatically. The primary 
+purpose of this low-flow interval was to cool the sample material and ensure extinguishment upon flow termination, 
+thereby avoiding the issues seen in SAFFIRE IV-2 [6]. Rather than dropping immediately, the radiometer 
+measurements continued to rise steadily for an additional 50s. This behavior can be attributed to two simultaneous 
+effects: the thermal expansion of the weakened flame at reduced flow, which shortened the distance between the flame 
+front and the radiometers, and the accumulation of hot combustion products within the chamber resulting from the 
+lower flow rate.  
+Combined with the absence of spread discussed above, flame growth on thick materials in low-gravity is very 
+different from normal-gravity. The growth rate trends for the 2-sided samples show a 73% increase in the spread rate 
+from an oxygen concentration increase of 0.08 mol fraction despite the overall pressure decrease of 45%. For the 1-
+sided samples growth rate was unchanged for an oxygen increase of 0.03 mol fraction with a pressure decrease of 
+27%.  
+Table 1: Sample materials and test data. 
+ All samples were 40 cm wide in 20 cm/s opposed flow. All PMMA samples  were 18 cm long. 1-sided 
+samples were 5 mm thick and 2- sided samples were 10 mm thick. All PMMA samples were preheated for 
+10 minutes at low ignitor power.  SIBAL and Cotton samples were 50 cm long. The Heat Release Rate 
+(HRR) was not successfully measured for flights IV and V. Reported gas concentrations and temperatures 
+were at the FFD. Items in red exceed allowed concentrations. 
+Flight/Sample 
+IV-2 
+V-3 
+VI-3 
+VI-4 
+IV-1 
+V-2 
+VI-2 
+Material 
+PMMA PMMA 
+PMMA PMMA 
+SIBAL 
+Cotton 
+SIBAL 
+# of sides burning 
+2 
+1 
+2 
+1 
+2 
+2 
+2 
+Pressure (mbar) 
+1000 
+745 
+544 
+550 
+980 
+741 
+541 
+Oxygen mol fraction 
+0.22 
+0.26 
+0.30 
+0.29 
+0.23 
+0.28 
+0.31 
+Free volume (m3) 
+17.9 
+19 
+16.7 
+16.7 
+17.9 
+19 
+16.7 
+Ignition duration (s) 
+60 
+120 
+60 
+120 
+8 
+8 
+8 
+Duration of initial flow (s) 
+535 
+480 
+480 
+900 
+200 
+200 
+300 
+Flame length growth rate (mm/s) 
+0.22 
+0.26 
+0.38 
+0.27 
+NA 
+NA 
+NA 
+Flame spread rate (mm/s) 
+NA 
+NA 
+NA 
+NA 
+3.6 
+3.4 
+4.05 
+Max flame length (mm) 
+90.8 
+118 
+89.9 
+93.3 
+NA 
+NA 
+NA 
+Peak HRR (W) 
+NA 
+NA 
+3240 
+1487 
+NA 
+NA 
+3376 
+Max CO2 increase (mm Hg)  
+1.78 
+0.78 
+3.66 
+3.39 
+0.97 
+0.81 
+1.46 
+Max CO increase (ppm) 
+110 
+55.5 
+338 
+309 
+77.4 
+74.3 
+122 
+Pressure increase (mbar) 
+1.31 
+0.25 
+0.34 
+0.25 
+0.33 
+0.30 
+0.31 
+Max temperature increase  (°C) 
+0.23 
+0.04 
+0.50 
+0.25 
+0.25 
+0.25 
+0.29 
+Time to alarm (s) [aerosol = 2 mg/m3] 1083 
+1117 
+1037 
+1603 
+92 
+146 
+201 
+Flame length at alarm (mm) 
+74 
+114 
+73.95 
+66.9 
+NA 
+NA 
+NA 
+HRR at alarm (W) 
+NA 
+NA 
+2500 
+623 
+NA 
+NA 
+3180 
+CO2 increase (mm Hg) at alarm 
+1.28 
+0.49 
+1.43 
+3.09 
+0.00 
+0.00 
+0.04 
+CO increase (ppm) at alarm 
+63.2 
+28.1 
+105 
+283 
+7.9 
+11.9 
+57.1 

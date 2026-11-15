@@ -1,0 +1,198 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+sample location, [XA, YA, ZA] = [106.65, 56.48, 181.12] inches, using the methods found in 
+Appendix E.2.2.2. 
+ 
+TABLE 6-6 QUASI-STEADY SUMMARY DURING SUBSA SAMPLE RUNS AT SUBSA LOCATION 
+* Values are without reboost. Mean with reboost [XA, YA, ZA] = [6.63, 0.10, -0.67]. 
+** Missing ODRC Data for last 9 hours of this time period. Quasi-steady mapping was not 
+calculated for that time span. 
+TABLE 6-7 QUASI-STEADY SUMMARY DURING PFMI SAMPLE RUNS AT SUBSA LOCATION  
+Mean (µg) 
+Magnitude 
+(µg) 
+Notes 
+Attitude 
+Sample 
+Start 
+Stop 
+XA 
+YA 
+ZA 
+ 
+ 
+ 
+PFMI-12 
+262:14:02 
+263:10:59 
+-0.30 
+-0.17 
+-1.36 
+1.40 
+7.78 µg spike on ZA-axis 
+LVLH 
+PFMI-01 
+266:09:00 
+267:00:46 
+-0.28 
+-0.08 
+-1.35 
+1.38 
+-15.9 µg spike on ZA-axis 
+LVLH 
+PFMI-07 
+273:11:50 
+273:23:22 
+-0.37 
+-0.27 
+-1.48 
+1.55 
+6.61 µg spike on ZA-axis 
+LVLH 
+PFMI-08 
+274:17:20 
+275:05:28* 
+-0.42 
+-0.31 
+-1.50 
+1.59 
+4.13 µg spike on YA-axis 
+LVLH 
+PFMI-05 
+279:12:11 
+280:00:03 
+-0.42 
+-0.38 
+-1.48 
+1.58 
+-9.67 µg spike on the YA-axis 
+LVLH 
+PFMI-02 
+280:11:15 
+280:22:38 
+-0.44 
+-0.37 
+-1.49 
+1.60 
+-12.3 µg spike on the YA-axis 
+LVLH 
+PFMI-10 
+300:11:55 
+301:00:12 
+1.57 
+0.16 
+-0.58 
+1.68 
+-24.8 µg spike on the YA-axis 
+XPOP 
+PFMI-11 
+324:22:28 
+325:03:39 
+-0.53 
+-0.31 
+-1.58 
+1.70 
+-4.66 µg spike on the YA-axis 
+LVLH 
+* MAMS Powered off at GMT 274/23:35 due to hurricane Lili at JSC. 
+ 
+6.1.6 
+Miscellaneous  
+6.1.6.1 
+Loss of GNC MDM 
+Figure 6-68 shows quasi-steady data for a failure of the primary GNC MDM (guidance, 
+navigation and control computer) on GMT 31-March-2002, 090/10:37. In response there was an 
+automatic handover to Russian GNC and an attitude snap and hold.  This is seen as peaks up to -
+8.3 µg on the Z-axis.  Figure 6-69 shows quasi-steady data for another GNC MDM failure event 
+on GMT 11-February-2002, 042/08:00.  The failure occurred at GMT 042/00:08, for which there 
+is a data gap (probably as a result of the failure).  Attitude control was handed over to the 
+Russian segment.  The US regained control at GMT 042/04:30 at which point some maneuvering 
+was performed to return to nominal attitude.  The red box highlights the impact on the quasi-
+steady environment, with the peak disturbance near -3.6 µg on the YA and ZA-axes. 
+Mean (µg) 
+Sample 
+Start 
+Stop 
+XA 
+YA 
+ZA 
+Magnitude 
+(µg) 
+Notes 
+Attitude 
+SUBSA-06 
+192:08:49 
+193:01:16 
+-0.22 
+-0.27 
+-1.30 
+1.34 
+13.1 µg spike ZA-axis 
+LVLH 
+SUBSA-10 
+204:10:16 
+205:08:21 
+1.63 
+0.04 
+-0.21 
+1.64 
+8.2 µg spikes on ZA-axis 
+XPOP 
+SUBSA-02 
+213:17:33 
+214:08:04 
+1.54 
+0.06 
+-0.44 
+1.54 
+583 µg on XA-axis (Reboost)* 
+XPOP 
+SUBSA-04 
+219:17:24 
+220:07:39 
+1.62 
+-0.09 
+-0.46 
+1.69 
+6.2 µg peak on ZA-axis 
+XPOP 
+SUBSA-07 
+222:08:36 
+223:00:04 
+-0.20 
+-0.42 
+-1.42 
+1.50 
+-9.5,12.6 µg peaks on ZA-axis 
+LVLH 
+SUBSA-08 
+247:08:45 
+248:08:32 
+1.66 
+-0.15 
+-0.48 
+1.74 
+12.2 µg spike on ZA-axis 
+XPOP 
+SUBSA-09 
+250:08:30 
+251:07:54 
+-0.28 
+-0.29 
+-1.46 
+1.52 
+-10.5 µg spikes YA-axis** 
+LVLH 
+SUBSA-01 
+253:10:30 
+254:02:30 
+-0.36 
+-0.28 
+-1.48 
+1.55 
+-8.76 µg spike on ZA-axis 
+LVLH 
+40
+ 
+NASA/TM—2003-212460

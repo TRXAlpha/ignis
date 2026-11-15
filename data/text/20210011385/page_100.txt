@@ -1,0 +1,27 @@
+ 
+NASA/TM-20210011385 
+92 
+32. Hirano, Toshisuke; Noreikis, Stanley E.; and Waterman, Thomas E.: Measured Velocity and 
+Temperature Profiles Near Flames Spreading Over a Thin Combustible Solid. Combust. Flame, vol. 
+23, no. 1, 1974, pp. 83–96. 
+6.1.9 
+Primary Microgravity and Normal-Gravity Research Citations for This Project 
+• 
+Olson, Sandra; and Ferkul, Paul V.: Microgravity Flammability Boundary for PMMA Rods in 
+Axial Stagnation Flow: Experimental Results and Energy Balance Analyses. Combust. Flame, 
+vol. 180, 2017, pp. 217–229. 
+• 
+Marcum, Jeremy W.; Ferkul, Paul V.; and Olson, Sandra L.: PMMA Rod Stagnation Region 
+Flame Blowoff Limits at Various Radii, Oxygen Concentrations, and Mixed Convection Stretch 
+Rates. Proc. Comb. Inst., vol. 37, no. 3, 2019, pp. 4001–4008. 
+• 
+Olson, Sandra L.; Ferkul, Paul V.; and Marcum, Jeremy W.: High-Speed Video Analysis of 
+Flame Oscillations Along a PMMA Rod After Stagnation Region Blowoff. Proc. Comb. Inst., 
+vol. 37, no. 2, 2019, pp. 1555–1562 
+• 
+Marcum, J.W., et al.: Low Pressure Flame Blowoff of the Stagnation Region of Cast PMMA 
+Cylinder in Axial Mixed Convective Flow. Combust. Flame, vol. 216, 2020, pp. 385–397. 
+ 
+ 
+ 
+ 

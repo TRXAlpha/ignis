@@ -1,0 +1,13 @@
+PMMA sphere burning in wake 
+configuration in air. 
+ 
+Flow is from right to left 
+ 
+Nitrogen flow of 500 cc/min 
+weakens but does not 
+extinguish the flame 
+Nitrogen on  
+Flame Minimum 
+Nitrogen off 
+Flame extinguishes 
+Flow 

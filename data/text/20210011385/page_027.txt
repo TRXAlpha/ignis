@@ -1,0 +1,64 @@
+ 
+NASA/TM-20210011385 
+19 
+2.2 
+Critical Flow Velocity for Radiative Extinction in Opposed-Flow Flame Spread in 
+Microgravity Environment: Comparison of Experimental, Computational, and 
+Theoretical Results1  
+2.2.1 
+Abstract 
+The effect of opposing flow on flame spread rate over thin solid fuel is investigated with the help of 
+scaling theory, a comprehensive computational model, and experiments conducted aboard the 
+International Space Station. While spread rate over thin fuels is independent of the opposing flow velocity 
+in the thermal regime, in the microgravity regime, where the opposing flow can be very mild or even 
+completely absent in the absence of buoyancy-induced flow, the spread rate is known to decrease as the 
+opposed flow is reduced. Under certain conditions, this can lead to flame extinguishment at a low enough 
+flow velocity. This report combines scaling arguments with computational results to predict a critical flow 
+velocity for such flame extinction. Results from the recently conducted limited number of space-based 
+tests, presented in this report, seem to confirm the prediction validating the closed-form formula for the 
+critical extinction velocity.  
+Symbols 
+c 
+specific heat at constant pressure, kJ/kg.K 
+F 
+de Ris flame coefficient 
+L 
+length scale, m 
+T 
+temperature, K 
+t 
+time, s 
+Vf 
+absolute spread rate 
+Vg 
+opposed-flow velocity 
+Vr 
+velocity relative to the flame, Vr = Vg + Vf  
+W 
+width 
+αg 
+thermal diffusivity of gas, evaluated at Tv, m2/s 
+ε 
+surface emissivity 
+λg 
+gas-phase conductivity evaluated at Tv, kW/m∙K 
+ηf 
+nondimensional spread rate 
+ηg 
+nondimensional flow velocity 
+ρg 
+gas density evaluated at Tv, kg/m3 
+ρs 
+solid density, kg/m3 
+τ 
+fuel half-thickness, m 
+σ 
+Stefan-Boltzmann constant, kW/(m2K4) 
+0
+ℜ 
+nondimensional radiation number 
+ 
+ 
+1Previously published as: Bhattacharjee, S., et al.: The Critical Flow Velocity for Radiative Extinction in Opposed-
+Flow Flame Spread in a Microgravity Environment: A Comparison of Experimental, Computational, and 
+Theoretical Results. Combust. Flame, vol. 163, 2016, pp. 472–477. DOI: 10.1016/j.combustflame.2015.10.023 

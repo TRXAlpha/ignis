@@ -1,0 +1,178 @@
+PIMS ISS Increment-4/5 Microgravity Environment Summary Report:  
+December 2001 to December 2002 
+ 
+Table 5-5, Continued from previous page 
+РБО-1 “Prognoz” 
+Development of a method 
+for real-time prediction of 
+dose loads on the crews of 
+manned space stations 
+P-16 radiometer; 
+ДБ-8 dosimeters (4 units) 
+Existing on-orbit (Progress 
+M-4) 
+Biomedical 
+РБО-2 “Bradoz”. 
+Bioradiation dosimetry 
+during spaceflight 
+“Bradoz” kit 
+Progress M-8 
+Biomedical 
+ПКЭ-1B “Kromka” 
+Study of the dynamics of 
+extracting contaminating 
+particles from the control 
+jets during pulse 
+activations 
+Cassette with exposed 
+samples with packing 
+(passive hardware) 
+Progress M-8 
+Space energy systems 
+KHT-1 “GTS” 
+Verification of Global 
+Timing System 
+Electronic unit; Antenna 
+unit with attachment 
+mechanism 
+Existing on-orbit 
+Commercial 
+KHT-2 “MPAC & SEED” 
+Recording meteoroid and 
+man-made particle impacts 
+and exposure of material 
+specimens on ISS RS SM 
+Microparticles collection 
+device and materials 
+exposure array MPAC & 
+SEED 
+Progress M-8 
+Commercial 
+KHT-3 “HDTV” 
+Experiment in receiving 
+HDTV images 
+Video camera HDTV; 
+interface units 
+Existing on-orbit 
+Commercial 
+KHT-4 “Vzgliad” 
+Photo and video material 
+acquisition inside and 
+outside of ISS-RS 
+Kodak photo camera; 
+Digital video camcorder 
+Existing on-orbit 
+Commercial 
+TEX-5 “Meteoroid” (SDT 
+16002-R) 
+Recording meteoroid and 
+man-made particle impacts 
+on the exterior of ISS RS 
+SM 
+MMK-2 electronic unit; 
+stationary capacitor 
+sensors 
+Existing on-orbit 
+Technical studies 
+TEX-13 “Tenzor” (SDTO 
+12001-R) 
+Determining ISS dynamic 
+properties 
+ISS RS motion control 
+system; sensors; star 
+tracker; GPS GLONAS 
+satellite system 
+Existing on-orbit 
+Technical studies 
+TEX-14 “Vektor-T” 
+(SDTO 12002-R) 
+Study of the ISS system 
+for high-accuracy motion 
+prediction using GPS 
+ISS RS sensors; ISS RS 
+orbit radio tracking 
+system; GPS 
+Existing on-orbit 
+Technical studies 
+TEX-15 “izgib” (Bending-
+SDTO 13002-R) 
+Study of the effect of 
+onboard system operating 
+modes on ISS flight 
+conditions by measuring 
+vibration disturbances, 
+sources, and vibration 
+fields in the ISS modules 
+ISS RS accelerometers 
+and rotational speed 
+sensors 
+Existing on-orbit 
+Technical studies 
+TEX-16 “Privyazka” 
+(Alignment-SDTO 12003-
+R) 
+Determination of science 
+instruments orientation in 
+space with allowance for 
+deformation of the ISS 
+hull 
+ISS RS sensors 
+Existing on-orbit 
+Technical studies 
+TEX-17 “Iskazhenie” 
+(Distorsion-SDTO 16001-
+R) 
+Determine the factors 
+affecting the accuracy of 
+ISS attitude determination 
+using a magnetometer 
+ISS RS SM attitude 
+control sensors and control 
+loop magnetometers 
+Existing on-orbit 
+Technical studies 
+TEX-22 “Identifikatsiya” 
+(Identification) (SDTO 
+13001-R) 
+Identification of sources of 
+perturbations in the ISS 
+microgravity environment 
+by measuring disturbances 
+during vehicle 
+dockings/undockings, 
+cosmonaut exercises, and 
+operations of onboard 
+systems … 
+Linear optical 
+accelerometer with cables; 
+micro acceleration 
+measurement device with 
+cables. 
+Existing on-orbit 
+Technical Studies 
+ИКЛ-1B “Platan” 
+Search for low energy 
+heavy nuclei of solar and 
+galactic origin 
+Platan-M equipment 
+Existing on-orbit 
+Technical studies 
+Д33-2 “Diatomea” 
+Study of stability of 
+geographic location and 
+frontiers configuration of 
+the biologically productive 
+oceanic waters observed 
+by the crew 
+Photo camera Nikon; 
+Video camera; 
+Dictaphone; 
+Laptop # 3; 
+“Diatomea” kit 
+Existing on-orbit 
+Study of Earth natural 
+resources and ecological 
+monitoring 
+28
+ 
+NASA/TM—2003-212460
