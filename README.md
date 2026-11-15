@@ -38,7 +38,7 @@ python -m venv .venv
 .venv/Scripts/python -m pip install -e ".[dev]"     # Linux/macOS: .venv/bin/python
 .venv/Scripts/python -m pytest -q                   # first-run check
 .venv/Scripts/python -m ignis_contract validate contract/examples/bundle.synthetic.json
-.venv/Scripts/python -m ingest.ntrs fetch 20210011385 --download   # + 20030067701 20210011521 20150021491 20150010425
+.venv/Scripts/python -m ingest.fetch_sources                       # every NTRS PDF in registry/, sha256-checked
 .venv/Scripts/python -m ingest.build_bundle                        # data/bundle.json (production-validated)
 .venv/Scripts/python -m model.export                               # web/public/data/*.json
 .venv/Scripts/python -m http.server 8000 --directory web/public    # open http://localhost:8000
