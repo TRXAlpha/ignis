@@ -356,37 +356,34 @@ function provHTML(o) {
 function renderValidation() {
   const v = D.validation;
   const el = $('validationBody');
-  if (!v || !(v.folds || []).length) {
-    el.innerHTML = noData('No validation folds yet.', ERR.validation);
+  const folds = (v && v.folds) || [];
+  const cv = (v && v.cv) || [];
+  if (!v || (!folds.length && !cv.length)) {
+    el.innerHTML = noData('No validation results yet.', ERR.validation);
     return;
   }
-  const metricKeys = ['rmse_log10', 'mae_log10', 'median_abs_rel_error', 'nlpd', 'brier'];
-  const head = metricKeys.map((k) => `<th>${esc(k)}</th>`).join('');
-  const rows = v.folds.map((f) => {
-    const m = f.metrics || {};
-    const b = f.baseline || {};
-    const cells = metricKeys.map((k) => {
-      if (m[k] == null && b[k] == null) return '<td>-</td>';
-      return `<td><div>${fmt(m[k], 3)}</div><span class="sub">baseline ${fmt(b[k], 3)}</span></td>`;
-    }).join('');
-    const cov = (m.coverage || []).map((c) => `${pct(c.nominal, 0)} → ${pct(c.empirical, 0)}`).join(', ') || '-';
-    return `<tr>
-      <td class="mono">${esc(f.fold_id)}</td>
-      <td>${esc(CAMP.get(f.held_out_campaign_id)?.name || f.held_out_campaign_id)}</td>
-      <td>${esc(f.n_train)}</td><td>${esc(f.n_test)}</td>
-      ${cells}
-      <td>${esc(cov)}</td>
-    </tr>`;
-  }).join('');
+  const label = {
+    rmse_o2_pct: 'Boundary error, held-out extinctions (RMSE, O2 % points)',
+    median_abs_rel_error: 'Boundary error, median relative',
+    coverage90_ext: 'Held-out extinctions inside 90 % interval',
+    acc_stable: 'Held-out stable flames predicted burning',
+    brier: 'Brier score, held-out stable flames (lower is better)',
+  };
+  const isPct = (k) => k === 'coverage90_ext' || k === 'acc_stable';
+  const val = (k, x) => (x == null ? '-' : isPct(k) ? pct(x, 0) : fmt(x, 3));
+  const block = (title, m, b, n) => {
+    const keys = Object.keys(label).filter((k) => m[k] != null || b[k] != null);
+    const rows = keys.map((k) => `<tr><td>${esc(label[k])}</td><td><strong>${val(k, m[k])}</strong></td><td>${val(k, b[k])}</td></tr>`).join('');
+    return `<h3 class="sub-h">${esc(title)}${n ? ` (n = ${esc(n)})` : ''}</h3>
+      <div class="table-wrap"><table><thead><tr><th>Metric</th><th>IGNIS model</th><th>1g rule (burns iff O2 &ge; 15.4 %)</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>`;
+  };
   const lims = (v.limitations || []).map((l) => `<li>${esc(l)}</li>`).join('');
   el.innerHTML = `
     <p>${esc(v.summary || '')}</p>
-    <div class="warn"><strong>Limitations</strong>${lims ? `<ul>${lims}</ul>` : ' none listed'}</div>
-    <div class="table-wrap"><table>
-      <thead><tr><th>Fold</th><th>Held-out campaign</th><th>n train</th><th>n test</th>${head}<th>Coverage (nominal → empirical)</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table></div>
-    <p class="caption">Each metric shows the GP model value with the scaling-law-only baseline underneath. Leave-one-campaign-out folds.</p>`;
+    ${folds.map((f) => block(`Leave-one-campaign-out: held out ${CAMP.get(f.held_out_campaign_id)?.name || f.held_out_campaign_id}`, f.metrics || {}, f.baseline || {}, f.n_test)).join('')}
+    ${cv.map((c) => block(c.kind, c.metrics || {}, c.baseline || {}, c.n)).join('')}
+    <div class="warn"><strong>Limitations</strong>${lims ? `<ul>${lims}</ul>` : ' none listed'}</div>`;
 }
 
 // ---------- 5. next experiments ----------

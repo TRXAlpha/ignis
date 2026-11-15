@@ -211,6 +211,12 @@ def observations_from(spec: dict, project: dict, images: dict[str, bytes], sourc
     axes = {a["name"]: XYAxes(a) for a in project.get("axesColl", [])}
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     series_specs = spec["series"]
+    auto = (project.get("ignis") or {}).get("tool")  # set by ingest.autodigitize: machine detection, no clicks
+    tool = f"{auto} + ingest.wpd@1" if auto else TOOL
+    how = ("machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; "
+           "values recomputed from calibration; caption verbatim on page") if auto else (
+           "human-clicked in WPD on hash-pinned figure render; values recomputed from WPD "
+           "calibration and matched WPD's export; caption verbatim on page")
     out: list[dict] = []
 
     for ds in project.get("datasetColl", []):
@@ -268,8 +274,8 @@ def observations_from(spec: dict, project: dict, images: dict[str, bytes], sourc
             blocking = flags & {"axis_calibration_residual_high", "low_confidence", "overlapping_markers"}
             obs["id"] = observation_id(locator, obs["outcome"]["quantity"], obs["fuel"]["material_id"])
             obs["extraction"] = {
-                "method": "plot_digitized", "tool": TOOL, "extracted_at": now,
-                "confidence": float(tmpl.get("confidence", DEFAULT_CONFIDENCE)),
+                "method": "plot_digitized", "tool": tool, "extracted_at": now,
+                "confidence": float(tmpl.get("confidence", 0.75 if auto else DEFAULT_CONFIDENCE)),
                 "flags": sorted(flags),
                 "digitization": {
                     "image_sha256": spec["image_sha256"],
@@ -282,9 +288,7 @@ def observations_from(spec: dict, project: dict, images: dict[str, bytes], sourc
                 },
             }
             obs["qa"] = ({"status": "flagged", "reasons": [f"blocking flags: {sorted(blocking)}"]} if blocking else
-                         {"status": "accepted", "reasons": [
-                             "human-clicked in WPD on hash-pinned figure render; values recomputed from WPD "
-                             "calibration and matched WPD's export; caption verbatim on page"]})
+                         {"status": "accepted", "reasons": [how]})
             out.append(obs)
     return out
 

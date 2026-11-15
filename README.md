@@ -12,6 +12,21 @@ NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combusti
 | Analyst (local LLM, tool calls only, numeric guard) | `analyst/` |
 | Frontend (static, reads `web/public/data/*.json`) | `web/` |
 
+## In plain terms
+
+- **What:** IGNIS turns the results of NASA's fire experiments on the International Space Station into a map that answers
+  "will this material keep burning at this much oxygen and airflow, in weightlessness?", with how sure we are, and a link
+  from every data point back to the page of the NASA report it came from.
+- **Why:** flames behave differently without gravity. Hot air does not rise, so a flame only gets oxygen from fans and air
+  currents. Gentle airflow keeps flames alive at oxygen levels where they would go out on Earth. Spacecraft materials are
+  still screened with Earth tests, and planned Moon/Mars vehicles use air (lower pressure, more oxygen) where nobody has
+  flown fire tests yet.
+- **How:** read numbers from report tables and points from report graphs, check every value against the PDF, fit the
+  known shape of the burn / goes-out boundary to the flight data with an uncertainty band, score it against the Earth rule
+  of thumb, suggest the most informative next experiments, and say "not enough data" for habitats outside what was tested.
+- **Result so far:** from 49 ISS points the lowest oxygen level at which acrylic (PMMA) keeps burning is 13.7 % (90 % band
+  13.5-14.0 %), well below the 15.4 % the Earth test implies. The report itself says ~13.5 %.
+
 ## Scope (decided 2026-11-14)
 
 Data push is narrowed to **solid thin fuels**: opposed/concurrent **flame spread rate** and the **O2 x flow flammability boundary** (`flame_state`, `extinction_flow_velocity`, `limiting_oxygen_fraction`). Campaign cluster: BASS, BASS-II, Saffire IV-VI, plus drop-tower and 1g ground tests from the same papers. Reason: it is the only outcome where enough campaigns overlap to run leave-one-campaign-out validation. The contract still covers droplets, gas jets and smoke; they are just not being ingested.
@@ -38,7 +53,14 @@ Analyst (needs a local Ollama model with tool calling, default `gemmaclaude:late
 
 Any number in the analyst's answer that is not in a tool result gets the answer refused (`analyst/__main__.py: unsupported_numbers`).
 
-## Digitizing plots (WebPlotDigitizer 4)
+## Digitizing plots
+
+**Automatic (used for BASS-II Fig 6.10):** `python -m ingest.autodigitize bass2_fig6_10` finds the labelled axis ticks and
+the markers by colour/shape, writes a WPD 4 project (`digitized/<name>.wpd.json`) plus an overlay PNG for review, and the
+same converter guards apply. Known miss: X markers drawn almost entirely behind a diamond (at least 2 in Fig 6.10) are
+not recoverable and are left out rather than guessed.
+
+**By hand (WebPlotDigitizer 4)**, to correct or for figures the detector can't handle:
 
 Most in-scope data is only in figures. A human clicks points; code does the rest and refuses anything it can't verify.
 

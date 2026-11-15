@@ -1,6 +1,9 @@
 """Physics-form Bayesian flammability boundary (numpy only).
 
-Latent burn propensity f(a, X) = (X - B(a)) / s, P(burns) = sigmoid(f), with the boundary
+Boundary B(a) with two kinds of evidence:
+  - extinction points (blowoff / quench) are *measurements of the boundary*: X_i ~ Normal(B(a_i), sigma)
+  - stable flames say the condition is on the burning side: P(burns) = sigmoid((X - B(a)) / s)
+with the boundary
     B(a) = D + A exp(-k a) + c a        (X = O2 vol%, a = stretch rate 1/s)
 i.e. a quenching branch (radiative loss dominates at low stretch, exponential) plus a blowoff branch
 (finite-rate kinetics at high stretch, linear). That functional form is the one BASS-II used (NASA/TM-20210011385
@@ -17,10 +20,13 @@ from dataclasses import dataclass
 
 import numpy as np
 
-PARAMS = ("log_A", "log_k", "c", "D", "log_s")
+np.seterr(over="ignore", invalid="ignore", divide="ignore")  # wild optimizer starts; guarded below
+
+PARAMS = ("log_A", "log_k", "c", "D", "log_s", "log_sigma")
 # Weak priors (mean, sd) on unconstrained params. Wide on purpose: the data must decide.
-PRIOR_MEAN = np.array([np.log(3.0), np.log(1.0), 0.0, 15.0, np.log(0.5)])
-PRIOR_SD = np.array([1.5, 1.5, 0.05, 5.0, 1.0])
+PRIOR_MEAN = np.array([np.log(3.0), np.log(1.0), 0.0, 15.0, np.log(0.5), np.log(0.5)])
+PRIOR_SD = np.array([1.5, 1.5, 0.05, 5.0, 1.0, 1.0])
+NP = len(PRIOR_MEAN)
 
 
 def boundary(a: np.ndarray, th: np.ndarray) -> np.ndarray:
@@ -37,10 +43,14 @@ def _log_sigmoid(z):
 
 
 def neg_log_post(th: np.ndarray, a: np.ndarray, x: np.ndarray, y: np.ndarray) -> float:
+    """y = 1: stable flame (burning side). y = 0: extinction observed here (boundary measurement)."""
     f = latent(a, x, th[None, :])[0]
-    ll = np.sum(y * _log_sigmoid(f) + (1 - y) * _log_sigmoid(-f))
+    sig = np.exp(th[5])
+    r = (x - boundary(a, th[None, :])[0]) / sig
+    ll = np.sum(y * _log_sigmoid(f)) + np.sum((1 - y) * (-0.5 * r ** 2 - th[5]))
     lp = -0.5 * np.sum(((th - PRIOR_MEAN) / PRIOR_SD) ** 2)
-    return float(-(ll + lp))
+    v = float(-(ll + lp))
+    return v if np.isfinite(v) else 1e12
 
 
 def _grad_hess(fun, th, h=1e-4):
@@ -78,7 +88,7 @@ def fit(a, x, y, starts: int = 12, seed: int = 0) -> Fit:
     fun = lambda th: neg_log_post(th, a, x, y)  # noqa: E731
     rng = np.random.default_rng(seed)
     best, best_v = None, np.inf
-    inits = [PRIOR_MEAN] + [PRIOR_MEAN + PRIOR_SD * rng.standard_normal(5) * 0.5 for _ in range(starts - 1)]
+    inits = [PRIOR_MEAN] + [PRIOR_MEAN + PRIOR_SD * rng.standard_normal(NP) * 0.5 for _ in range(starts - 1)]
     for th in inits:
         th = th.copy()
         lam = 1e-2
@@ -86,7 +96,7 @@ def fit(a, x, y, starts: int = 12, seed: int = 0) -> Fit:
         for _ in range(200):
             g, H = _grad_hess(fun, th)
             try:
-                step = np.linalg.solve(H + lam * np.eye(5), g)
+                step = np.linalg.solve(H + lam * np.eye(NP), g)
             except np.linalg.LinAlgError:
                 lam *= 10
                 continue

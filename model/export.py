@@ -64,15 +64,33 @@ def _arr(rows, k):
     return np.array([r[k] for r in rows], float)
 
 
-def _metrics(p, y):
-    p = np.clip(p, 1e-3, 1 - 1e-3)
-    return {"brier": float(np.mean((p - y) ** 2)),
-            "nlpd": float(-np.mean(y * np.log(p) + (1 - y) * np.log(1 - p)))}
+def _scores(f, te):
+    """Held-out scores. Extinction points: where is the boundary (O2 %)? Stable flames: is the point on the burning side?"""
+    a, x, y = _arr(te, "a"), _arr(te, "x") * 100, _arr(te, "y")
+    out, base = {}, {}
+    ext, st = y == 0, y == 1
+    if ext.any():
+        B = bm.boundary(a[ext][None, :], f.samples(1000))
+        pred = np.median(B, 0)
+        lo, hi = np.percentile(B, 5, 0), np.percentile(B, 95, 0)
+        sig = np.exp(f.theta[5])
+        out["median_abs_rel_error"] = float(np.median(np.abs(pred - x[ext]) / x[ext]))
+        out["rmse_o2_pct"] = float(np.sqrt(np.mean((pred - x[ext]) ** 2)))
+        # predictive interval for a new extinction measurement = boundary band widened by measurement scatter
+        out["coverage90_ext"] = float(np.mean((x[ext] >= lo - 1.645 * sig) & (x[ext] <= hi + 1.645 * sig)))
+        base["median_abs_rel_error"] = float(np.median(np.abs(15.4 - x[ext]) / x[ext]))
+        base["rmse_o2_pct"] = float(np.sqrt(np.mean((15.4 - x[ext]) ** 2)))
+    if st.any():
+        p = np.clip(bm.predict(f, a[st], x[st])[0], 1e-3, 1 - 1e-3)
+        out["brier"] = float(np.mean((p - 1) ** 2))
+        out["acc_stable"] = float(np.mean(p > 0.5))
+        pb = np.where(x[st] >= 15.4, 0.98, 0.02)
+        base["brier"] = float(np.mean((pb - 1) ** 2))
+        base["acc_stable"] = float(np.mean(pb > 0.5))
+    return out, base, int(ext.sum()), int(st.sum())
 
 
-def baseline_1g(x_frac):
-    """1g practice: 'burns iff O2 >= upward limit'. Soft 0.02/0.98 so NLPD stays finite."""
-    return np.where(x_frac * 100 >= 15.4, 0.98, 0.02)
+SCHEMA_METRICS = ("median_abs_rel_error", "brier")
 
 
 def validate(rows, sources):
@@ -83,26 +101,31 @@ def validate(rows, sources):
         if len(tr) < 8 or not te:
             continue
         f = bm.fit(_arr(tr, "a"), _arr(tr, "x") * 100, _arr(tr, "y"))
-        p = bm.predict(f, _arr(te, "a"), _arr(te, "x") * 100)[0]
-        y = _arr(te, "y")
+        m, b, _, _ = _scores(f, te)
         folds.append({"model_id": MODEL_ID, "model_version": VERSION, "fold_id": f"loco-{c}",
                       "held_out_campaign_id": c, "outcome_quantity": "flame_state", "n_train": len(tr),
-                      "n_test": len(te), "metrics": _metrics(p, y), "baseline": _metrics(baseline_1g(_arr(te, "x")), y)})
+                      "n_test": len(te), "metrics": {k: m[k] for k in SCHEMA_METRICS if k in m},
+                      "baseline": {k: b[k] for k in SCHEMA_METRICS if k in b}})
     # within-data 5-fold CV (not leave-one-campaign-out; reported separately, never as a ValidationFold)
     if len(rows) >= 15:
         rng = np.random.default_rng(0)
         idx = rng.permutation(len(rows))
-        P, Y, X = [], [], []
+        M, Bs, W = [], [], []
         for k in range(5):
             te_i = set(idx[k::5].tolist())
             tr = [r for i, r in enumerate(rows) if i not in te_i]
             te = [r for i, r in enumerate(rows) if i in te_i]
             f = bm.fit(_arr(tr, "a"), _arr(tr, "x") * 100, _arr(tr, "y"))
-            P.append(bm.predict(f, _arr(te, "a"), _arr(te, "x") * 100)[0]); Y.append(_arr(te, "y")); X.append(_arr(te, "x"))
-        P, Y, X = map(np.concatenate, (P, Y, X))
-        cv = [{"kind": "5-fold random CV (same campaign)", "n": int(len(Y)), "metrics": _metrics(P, Y),
-               "baseline": _metrics(baseline_1g(X), Y), "accuracy": float(np.mean((P > 0.5) == Y)),
-               "baseline_accuracy": float(np.mean((baseline_1g(X) > 0.5) == Y))}]
+            m, b, ne, ns = _scores(f, te)
+            M.append(m); Bs.append(b); W.append({"median_abs_rel_error": ne, "rmse_o2_pct": ne, "coverage90_ext": ne,
+                                                 "brier": ns, "acc_stable": ns})
+        avg = lambda D: {k: float(np.average([d[k] for d in D if k in d], weights=[w[k] for d, w in zip(D, W) if k in d]))
+                         for k in sorted({k for d in D for k in d})}  # noqa: E731
+        cv = [{"kind": "5-fold random CV (same campaign)", "n": len(rows), "metrics": avg(M), "baseline": avg(Bs),
+               "notes": {"rmse_o2_pct": "held-out extinction points: predicted vs observed boundary O2 (% points)",
+                         "coverage90_ext": "share of held-out extinction points inside the 90 % predictive interval",
+                         "brier": "held-out stable flames, P(burns) vs 1",
+                         "acc_stable": "held-out stable flames predicted burning (p > 0.5)"}}]
     lim = []
     if len(camps) < 2:
         lim.append("Only one campaign has flame-state data, so leave-one-campaign-out validation is not possible yet. "
@@ -118,7 +141,7 @@ def recommend(f, rows, top=5):
           "platform": "orbital_iss", "facility": "Microgravity Science Glovebox (MSG)",
           "ranges": {"o2_mole_fraction": [0.136, 0.222], "flow_velocity_m_s": [0.0, 0.55]},
           "materials": ["pmma"], "refs": [loc("flow"), loc("o2")]}
-    a_c = np.logspace(np.log10(0.3), np.log10(0.55 / U_PER_A), 90)
+    a_c = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(0.55 / U_PER_A), 90)  # no extrapolation below data
     x_c = np.linspace(13.6, 22.2, 87)
     A, X = np.meshgrid(a_c, x_c)
     _, sd, ps = bm.predict(f, A.ravel(), X.ravel())
@@ -128,7 +151,7 @@ def recommend(f, rows, top=5):
     items, taken = [], []
     for i in np.argsort(-mi):
         a, x = A.ravel()[i], X.ravel()[i]
-        if any(abs(np.log10(a) - np.log10(ta)) < 0.25 and abs(x - tx) < 0.8 for ta, tx in taken):
+        if any(abs(np.log10(a) - np.log10(ta)) < 0.25 for ta, tx in taken):  # spread across flow
             continue
         taken.append((a, x))
         d = np.hypot((la - np.log10(a)) / 0.5, (xs - x) / 1.0)

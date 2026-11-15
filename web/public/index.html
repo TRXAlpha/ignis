@@ -17,6 +17,7 @@
       <h1>IGNIS: microgravity flammability from NASA flight data</h1>
       <p class="lede">Every point links back to its source page in the NASA report.</p>
       <nav aria-label="Sections">
+        <a href="#plain">In plain terms</a>
         <a href="#envelope">Envelope</a>
         <a href="#provenance">Provenance</a>
         <a href="#validation">Validation</a>
@@ -27,6 +28,45 @@
   </header>
 
   <main class="wrap">
+    <section id="plain" class="panel plain">
+      <h2>In plain terms</h2>
+      <h3>What it does</h3>
+      <p>IGNIS takes the results of real fire experiments NASA ran on the International Space Station and turns them
+        into a map that answers one question: <strong>will this material keep burning at this much oxygen and this much
+        airflow, in weightlessness?</strong> Every answer comes with how sure we are, and every data point links back to
+        the exact page of the NASA report it came from.</p>
+      <h3>Why it matters</h3>
+      <ul>
+        <li><strong>Flames behave differently in space.</strong> Without gravity, hot air does not rise, so a flame only
+          gets fresh oxygen from fans and air currents. Gentle airflow can keep a flame alive at oxygen levels where it
+          would go out on Earth. Too much airflow blows it out. No airflow starves it.</li>
+        <li><strong>Spacecraft materials are still screened with Earth tests.</strong> An Earth test can say a material
+          is safe at an oxygen level where it would actually burn in orbit.</li>
+        <li><strong>Future Moon and Mars vehicles plan different air</strong> (lower pressure, more oxygen). Nobody has
+          flown fire tests in that air yet. IGNIS shows that gap instead of guessing.</li>
+      </ul>
+      <h3>How it works</h3>
+      <ol>
+        <li><strong>Collect.</strong> Numbers come from tables in NASA reports. Points are read off the reports' graphs
+          after pinning the exact image, so anyone can re-check them.</li>
+        <li><strong>Check.</strong> Each value is matched against the PDF text, converted to standard units, and anything
+          doubtful is flagged and kept out of the model.</li>
+        <li><strong>Learn the boundary.</strong> The model knows the general shape of the line between "burns" and "goes
+          out" (starved at low airflow, blown out at high airflow) and learns the exact curve from the flight data. It
+          reports a band, not a single line.</li>
+        <li><strong>Test it.</strong> It is scored against the Earth-based rule of thumb, so you can see whether it
+          actually does better.</li>
+        <li><strong>Suggest the next experiments</strong> that would shrink the uncertainty most, using only conditions
+          the real ISS hardware can produce.</li>
+        <li><strong>Check habitats.</strong> For the ISS and planned Moon and Mars atmospheres it gives a risk, or says
+          plainly that there is not enough data.</li>
+      </ol>
+      <h3>Limits</h3>
+      <p>So far: one material (PMMA, acrylic plastic), one ISS experiment series, and only the cabin pressure those tests
+        ran at. Graph points are read by software from the published figures, then checked; they are as good as the
+        figures they come from.</p>
+    </section>
+
     <section id="envelope" class="panel">
       <h2>Flammability envelope</h2>
       <div id="envelopeStatus"></div>

@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T08:53:18+00:00",
+ "generated_at": "2026-11-15T09:23:38+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -260,7 +260,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T08:53:18+00:00",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -348,7 +348,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T08:53:18+00:00",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -358,6 +358,5935 @@
     "status": "accepted",
     "reasons": [
      "value, row label and caption matched verbatim in PDF text layer"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 0,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.0955573617861436,
+       "unit": "1/s",
+       "si_value": 1.0955573617861436,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.601327513146769,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1560132751314677,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_2e2d8526392c53c2",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      165.0,
+      739.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 1,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.552815287179479,
+       "unit": "1/s",
+       "si_value": 1.552815287179479,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.748268792213103,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16748268792213103,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_c983f9ac0d70601d",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      253.5,
+      550.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 2,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.577489811609238,
+       "unit": "1/s",
+       "si_value": 1.577489811609238,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 17.701018955247044,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.17701018955247044,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_92a84e6c98ee0c1b",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      257.5,
+      393.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 3,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.8108219786497568,
+       "unit": "1/s",
+       "si_value": 1.8108219786497568,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.001846689963585,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16001846689963586,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_828b05c8783e2448",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      292.5,
+      673.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 4,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.8143940068271642,
+       "unit": "1/s",
+       "si_value": 1.8143940068271642,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.49816348275456,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1549816348275456,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_02872431ae000051",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      293.0,
+      756.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 5,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 2.0909925622386116,
+       "unit": "1/s",
+       "si_value": 2.0909925622386116,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 17.99837410167165,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.17998374101671652,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_a1c52b6e48c8788f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      329.0,
+      344.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 6,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 2.1368143419609016,
+       "unit": "1/s",
+       "si_value": 2.1368143419609016,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.200808336329953,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15200808336329952,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_b1657cde9e7fda00",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      334.5,
+      805.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 7,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 2.1368143419609016,
+       "unit": "1/s",
+       "si_value": 2.1368143419609016,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.800289159513138,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1480028915951314,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_8669f407106b4e9a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      334.5,
+      871.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 8,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 2.141029422807813,
+       "unit": "1/s",
+       "si_value": 2.141029422807813,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.303972366722164,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15303972366722163,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_360477eec45a3af9",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      335.0,
+      788.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 9,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.829103419580241,
+       "unit": "1/s",
+       "si_value": 3.829103419580241,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.300938130534156,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15300938130534156,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_cb1deddb980c614c",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      482.5,
+      788.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 10,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.829103419580241,
+       "unit": "1/s",
+       "si_value": 3.829103419580241,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.800289159513138,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1480028915951314,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_cdc42fb1d8d77d14",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      482.5,
+      871.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 11,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.8366567105553955,
+       "unit": "1/s",
+       "si_value": 3.8366567105553955,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.606098043480742,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14606098043480742,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_1cc286c30140a66b",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      483.0,
+      903.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 12,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 4.352382567992753,
+       "unit": "1/s",
+       "si_value": 4.352382567992753,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.59873162906269,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1359873162906269,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_e5d896b1943fcbd4",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      515.0,
+      1069.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 13,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 4.62656083089877,
+       "unit": "1/s",
+       "si_value": 4.62656083089877,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.199510394287914,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14199510394287915,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_69ce1e66018b79ce",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      530.5,
+      970.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 14,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 5.135918164590797,
+       "unit": "1/s",
+       "si_value": 5.135918164590797,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.09894224797978,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16098942247979783,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_21d913f43387653d",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      557.0,
+      657.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 15,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 6.084442892332293,
+       "unit": "1/s",
+       "si_value": 6.084442892332293,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.299640188492118,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1429964018849212,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_79b60ac2c9cd057c",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      600.0,
+      953.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 16,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 6.391708494617713,
+       "unit": "1/s",
+       "si_value": 6.391708494617713,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.60002957110473,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1460002957110473,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_f63f1d30a1f45263",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      612.5,
+      904.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 17,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 10.817520902927136,
+       "unit": "1/s",
+       "si_value": 10.817520902927136,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.499899776900527,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14499899776900527,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_a4546f58b7706c7a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      746.0,
+      920.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 18,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 25.392701105408417,
+       "unit": "1/s",
+       "si_value": 25.392701105408417,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.199510394287914,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14199510394287915,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_9e64f1127c9782d4",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      962.5,
+      970.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 19,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 33.65850527579168,
+       "unit": "1/s",
+       "si_value": 33.65850527579168,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.499899776900527,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14499899776900527,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_ec33b11c0442dcbd",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1034.0,
+      920.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 20,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 37.43781463878506,
+       "unit": "1/s",
+       "si_value": 37.43781463878506,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.499899776900527,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14499899776900527,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_2b3260176513e4d4",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1061.0,
+      920.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 21,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 51.315172176618816,
+       "unit": "1/s",
+       "si_value": 51.315172176618816,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.299640188492118,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1429964018849212,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_1a72b33a3b155df8",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1141.0,
+      953.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 22,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 60.79229158506512,
+       "unit": "1/s",
+       "si_value": 60.79229158506512,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.800289159513138,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1480028915951314,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_0377d631294eca9c",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1184.0,
+      871.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 23,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 67.0873745275555,
+       "unit": "1/s",
+       "si_value": 67.0873745275555,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.10197648416779,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1610197648416779,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_54452c77e0cc1d53",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1209.0,
+      656.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 24,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 71.87790213402911,
+       "unit": "1/s",
+       "si_value": 71.87790213402911,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.800289159513138,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1480028915951314,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_c42fc8b1f5d4333a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1226.5,
+      871.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 25,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 80.89955465212647,
+       "unit": "1/s",
+       "si_value": 80.89955465212647,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.200808336329953,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15200808336329952,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_710235d087b63897",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1256.5,
+      805.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS stable flame",
+    "point_index": 26,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 111.76474050171218,
+       "unit": "1/s",
+       "si_value": 111.76474050171218,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.49816348275456,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1549816348275456,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_2fd6f9079fe096e1",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1338.5,
+      756.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 0,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.2526583114869654,
+       "unit": "1/s",
+       "si_value": 1.2526583114869654,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.001846689963585,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16001846689963586,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_7d68e3d8a997bc9a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      199.0,
+      673.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 1,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.552815287179479,
+       "unit": "1/s",
+       "si_value": 1.552815287179479,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.699721013205007,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16699721013205007,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_9023de49c2c57afa",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      253.5,
+      558.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 2,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 1.947789612161928,
+       "unit": "1/s",
+       "si_value": 1.947789612161928,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.29790389434615,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15297903894346151,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_d1a82853cd76e072",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      311.0,
+      789.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 3,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.504160928840188,
+       "unit": "1/s",
+       "si_value": 3.504160928840188,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.29790389434615,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15297903894346151,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_83def2f1ac0b0a7f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      460.0,
+      789.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 4,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.637852698492675,
+       "unit": "1/s",
+       "si_value": 3.637852698492675,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.60002957110473,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1460002957110473,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_7e6d05f702140504",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      469.5,
+      904.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 5,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 3.8518080207713328,
+       "unit": "1/s",
+       "si_value": 3.8518080207713328,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.59873162906269,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1359873162906269,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_b9a57acc92f66d05",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      484.0,
+      1069.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 6,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 6.291731704759743,
+       "unit": "1/s",
+       "si_value": 6.291731704759743,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.60002957110473,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1460002957110473,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_2cb5fb8384fff7ea",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      608.5,
+      904.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS quench",
+    "point_index": 7,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 7.64713773133037,
+       "unit": "1/s",
+       "si_value": 7.64713773133037,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.501636071046494,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.13501636071046494,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_cadd159e89a5c5ca",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      658.0,
+      1085.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS quench"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 0,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 11.498970440917068,
+       "unit": "1/s",
+       "si_value": 11.498970440917068,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.499899776900527,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14499899776900527,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_b90aa9d2a580141d",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      761.5,
+      920.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 1,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 12.320080757592402,
+       "unit": "1/s",
+       "si_value": 12.320080757592402,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.399769982696323,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14399769982696323,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_eff30dd092daaabf",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      779.0,
+      937.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 2,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 15.376051934401413,
+       "unit": "1/s",
+       "si_value": 15.376051934401413,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.50030100712377,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.13500301007123772,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_54c312da81852e85",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      835.22,
+      1085.22
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 3,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 18.32811493826447,
+       "unit": "1/s",
+       "si_value": 18.32811493826447,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.097681427818427,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1409768142781843,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_2979e9f8a60a0422",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      879.78,
+      986.78
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 4,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 25.044823837725186,
+       "unit": "1/s",
+       "si_value": 25.044823837725186,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.199510394287914,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14199510394287915,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_c17c8f9592b14201",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      959.0,
+      970.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 5,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 26.78037984758409,
+       "unit": "1/s",
+       "si_value": 26.78037984758409,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.199510394287914,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14199510394287915,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_e27ca8d741e3ef35",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      976.0,
+      970.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 6,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 36.562875373055654,
+       "unit": "1/s",
+       "si_value": 36.562875373055654,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.499899776900527,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14499899776900527,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_5de4803163101239",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1055.0,
+      920.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 7,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 38.71327079371629,
+       "unit": "1/s",
+       "si_value": 38.71327079371629,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.498601834858487,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.13498601834858487,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_566f9f9d041ddee4",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1069.5,
+      1085.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 8,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 53.04668276749632,
+       "unit": "1/s",
+       "si_value": 53.04668276749632,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.292661445259704,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14292661445259705,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_feecbfcbfbf0841a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1149.42,
+      954.65
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 9,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 65.57634705917823,
+       "unit": "1/s",
+       "si_value": 65.57634705917823,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.798954095590414,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14798954095590414,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_5fd93cf5ae0724c8",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1203.22,
+      871.22
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 10,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 74.26226596147022,
+       "unit": "1/s",
+       "si_value": 74.26226596147022,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.798954095590414,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14798954095590414,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_dad32e351417051e",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1234.78,
+      871.22
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 11,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 87.59331114060272,
+       "unit": "1/s",
+       "si_value": 87.59331114060272,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.198016839036988,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15198016839036987,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_02557cd900d3447e",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1276.67,
+      805.46
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 12,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 127.93270729344182,
+       "unit": "1/s",
+       "si_value": 127.93270729344182,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.499498546677282,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15499498546677282,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_c7cb20f7977fd041",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1372.78,
+      755.78
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "ISS blowoff",
+    "point_index": 13,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 149.9260722869871,
+       "unit": "1/s",
+       "si_value": 149.9260722869871,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.098881563256022,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16098881563256023,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_7036486910584ddb",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1413.03,
+      657.01
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
     ]
    }
   }

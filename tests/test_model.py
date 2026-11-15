@@ -3,15 +3,17 @@ import numpy as np
 
 from model.boundary import boundary, fit, min_o2, mutual_information, predict
 
-TRUE = np.array([np.log(5.0), np.log(0.4), 0.02, 13.5, np.log(0.25)])
+TRUE = np.array([np.log(5.0), np.log(0.4), 0.02, 13.5, np.log(0.25), np.log(0.2)])
 
 
 def _synth(n=120, seed=1):
+    """Half extinction points measured on the true boundary (+noise), half stable flames on the burning side."""
     rng = np.random.default_rng(seed)
     a = 10 ** rng.uniform(0, 2.2, n)
-    x = rng.uniform(13, 19, n)
-    p = 1 / (1 + np.exp(-(x - boundary(a[None], TRUE[None])[0]) / np.exp(TRUE[4])))
-    return a, x, (rng.uniform(size=n) < p).astype(float)
+    B = boundary(a[None], TRUE[None])[0]
+    y = (np.arange(n) % 2).astype(float)
+    x = np.where(y == 0, B + rng.normal(0, np.exp(TRUE[5]), n), B + rng.uniform(0.1, 3.0, n))
+    return a, x, y
 
 
 def test_recovers_boundary_and_min_o2():
