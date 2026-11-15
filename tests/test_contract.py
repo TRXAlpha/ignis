@@ -281,3 +281,17 @@ def test_cli(tmp_path, bundle, capsys):
 def test_example_bundle_in_repo_validates():
     p = Path(__file__).resolve().parent.parent / "contract" / "examples" / "bundle.synthetic.json"
     assert is_valid(check_bundle(json.loads(p.read_text(encoding="utf-8"))))
+
+
+def test_extra_quantity_si_is_rechecked(bundle):
+    """conditions.extra (e.g. stretch rate, the model's x axis) has no canonical field but must still be consistent."""
+    from ignis_contract.units import extra_si
+    si, unit = extra_si(12.0, "1/s")
+    o = bundle["observations"][0]
+    o["conditions"]["extra"] = [{"name": "stretch_rate", "quantity": {"value": 12.0, "unit": "1/s", "si_value": si,
+                                                                       "si_unit": unit, "basis": "reported"}}]
+    assert not errors(bundle), [str(e) for e in errors(bundle)]
+    o["conditions"]["extra"][0]["quantity"]["si_value"] = si * 10
+    assert any("recomputed" in e.msg for e in errors(bundle))
+    o["conditions"]["extra"][0]["quantity"].update(si_value=si, si_unit="kg")
+    assert any("si_unit" in e.msg for e in errors(bundle))

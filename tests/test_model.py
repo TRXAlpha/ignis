@@ -65,3 +65,24 @@ def test_export_pieces_schema_valid_and_honest_about_single_campaign():
         assert not schema_errors({k: v for k, v in it.items() if k not in ("x", "p_burns")}, "Recommendation")
         assert 0.136 <= it["conditions"]["o2_mole_fraction"] <= 0.222
         assert 0 < it["conditions"]["flow_velocity_m_s"] <= 0.55
+
+
+def test_habitat_domain_is_the_tested_o2_range(monkeypatch, tmp_path):
+    """ISS cabin air (21 % O2) is inside what BASS-II tested (13.6-22.2 %), even though the plotted limit points stop lower."""
+    import json
+    from model import export as ex
+    rows = _rows()
+    f = fit(np.array([r["a"] for r in rows]), np.array([r["x"] for r in rows]) * 100, np.array([r["y"] for r in rows]))
+    ref = [{"source_id": "web:x", "quote": "q"}]
+    presets = [{"id": "cabin", "name": "Cabin", "refs": ref,
+                "conditions": {"gravity_m_s2": 2e-5, "o2_mole_fraction": 0.21, "pressure_pa": 101325.0}},
+               {"id": "rich", "name": "Rich", "refs": ref,
+                "conditions": {"gravity_m_s2": 2e-5, "o2_mole_fraction": 0.30, "pressure_pa": 101325.0}},
+               {"id": "moon", "name": "Moon", "refs": ref,
+                "conditions": {"gravity_m_s2": 1.62, "o2_mole_fraction": 0.21, "pressure_pa": 101325.0}}]
+    p = tmp_path / "habitats.json"
+    p.write_text(json.dumps(presets), encoding="utf-8")
+    monkeypatch.setattr(ex, "HABITATS", p)
+    monkeypatch.setattr(ex, "schema_errors", lambda *a, **k: [])
+    got = {h["id"]: h["prediction"]["status"] for h in ex.habitats(f, rows)["presets"]}
+    assert got == {"cabin": "ok", "rich": "extrapolation", "moon": "insufficient_data"}

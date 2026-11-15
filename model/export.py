@@ -39,6 +39,7 @@ REFS = {
     "o2": (72, "was varied from 13.6 to 22.2 percent"),
 }
 RO_M = 0.00318
+O2_TESTED = (0.136, 0.222)  # REFS["o2"]: "was varied from 13.6 to 22.2 percent" (BASS-II report p72)
 U_PER_A = RO_M / 1.5  # a = (3/2) U / r at r = ro  ->  U = a ro / 1.5
 
 
@@ -215,7 +216,7 @@ def validate(rows, sources):
 def recommend(f, rows, top=5):
     cs = {"id": "bass-ii-msg-rods", "name": "BASS-II flow duct in the ISS Microgravity Science Glovebox (rods)",
           "platform": "orbital_iss", "facility": "Microgravity Science Glovebox (MSG)",
-          "ranges": {"o2_mole_fraction": [0.136, 0.222], "flow_velocity_m_s": [0.0, 0.55]},
+          "ranges": {"o2_mole_fraction": list(O2_TESTED), "flow_velocity_m_s": [0.0, 0.55]},
           "materials": ["pmma"], "refs": [loc("flow"), loc("o2")]}
     a_hi = min(0.55 / U_PER_A, 1.2 * _arr(rows, "a").max())  # facility limit, but no far extrapolation past the data
     a_c = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(a_hi), 90)
@@ -286,12 +287,15 @@ def habitats(f, rows, sources=None):
         else:
             pb = bm.predict(f, a_grid, np.full_like(a_grid, x * 100))[0]
             worst = float(pb.max())
-            inside = xs.min() <= x <= xs.max()
+            inside = O2_TESTED[0] <= x <= O2_TESTED[1]  # the tested range, not just where the plotted points sit
             pred = {**base, "status": "ok" if inside else "extrapolation", "p_burns": round(worst, 4),
                     "ood": {"in_domain": bool(inside), "score": 0.0 if inside else 1.0, "method": "O2 range of data",
                             "reason": ("Worst case over the tested ventilation range (stretch "
-                                       f"{a_grid.min():.2g}-{a_grid.max():.3g} 1/s). Assumes ~101 kPa as in the rod tests.")
-                            if inside else f"O2 {x * 100:.1f} % is outside the tested {xs.min() * 100:.1f}-{xs.max() * 100:.1f} %."}}
+                                       f"{a_grid.min():.2g}-{a_grid.max():.3g} 1/s). Assumes ~101 kPa as in the rod tests. "
+                                       f"BASS-II tested {O2_TESTED[0] * 100:.1f}-{O2_TESTED[1] * 100:.1f} % O2; the plotted "
+                                       f"limit points span {xs.min() * 100:.1f}-{xs.max() * 100:.1f} %.")
+                            if inside else (f"O2 {x * 100:.1f} % is outside the tested "
+                                            f"{O2_TESTED[0] * 100:.1f}-{O2_TESTED[1] * 100:.1f} %.")}}
         out.append({**h, "prediction": pred})
     return {"presets": out}
 

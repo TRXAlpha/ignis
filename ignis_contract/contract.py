@@ -12,7 +12,7 @@ from functools import lru_cache
 
 from jsonschema import Draft202012Validator
 
-from .units import CONTRACT_DIR, UnitError, expected_si, field_spec
+from .units import CONTRACT_DIR, UnitError, expected_si, extra_si, field_spec
 
 SCHEMA_VERSION = "1.0.0"
 CONFIDENCE_FLOOR = 0.7  # below this a row cannot be 'accepted'
@@ -93,7 +93,16 @@ def _close(a: float, b: float) -> bool:
 def _check_quantity(q: dict, field: str | None, path: str, ctx: dict, flags: set, issues: list):
     if q.get("transform") and q["basis"] != "derived":
         issues.append(Issue("error", path, "transform requires basis='derived'"))
-    if field is None:  # free-form extra condition: we can only check that the unit parses
+    if field is None:  # free-form extra condition (e.g. stretch rate): no canonical field, so recompute base SI
+        try:
+            exp, unit = extra_si(q["value"], q["unit"])
+        except UnitError as e:
+            issues.append(Issue("error", path, str(e)))
+            return
+        if q["si_unit"] != unit:
+            issues.append(Issue("error", path, f"si_unit {q['si_unit']!r} != {unit!r} recomputed from {q['unit']!r}"))
+        elif not _close(exp, q["si_value"]):
+            issues.append(Issue("error", path, f"si_value {q['si_value']} != {exp} recomputed from {q['value']} {q['unit']}"))
         return
     spec = field_spec(field)
     if q["si_unit"] != spec["si_unit"]:

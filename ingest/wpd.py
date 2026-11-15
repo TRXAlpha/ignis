@@ -25,10 +25,8 @@ import tarfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-import pint
-
 from ignis_contract import make_quantity, observation_id
-from ignis_contract.units import UREG, _pint_unit
+from ignis_contract.units import UnitError, extra_si
 
 from .curated import require_text
 
@@ -148,11 +146,10 @@ def extra_quantity(value: float, unit: str, basis: str = "reported", basis_ref: 
                    note: str | None = None) -> dict:
     """Quantity for a free-form conditions.extra entry (no canonical field): SI = pint base units."""
     try:
-        q = UREG.Quantity(float(value), _pint_unit(unit)).to_base_units()
-    except (pint.errors.UndefinedUnitError, pint.errors.DimensionalityError, ValueError) as e:
-        raise DigitizationError(f"cannot parse unit {unit!r}") from e
-    out = {"value": float(value), "unit": unit, "si_value": float(q.magnitude),
-           "si_unit": f"{q.units:~}".replace(" ", "") or "1", "basis": basis}
+        si, si_unit = extra_si(value, unit)
+    except UnitError as e:
+        raise DigitizationError(str(e)) from e
+    out = {"value": float(value), "unit": unit, "si_value": si, "si_unit": si_unit, "basis": basis}
     if basis_ref:
         out["basis_ref"] = basis_ref
     if note:

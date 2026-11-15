@@ -518,7 +518,7 @@ function habitatCard(p) {
     pred = '<span class="badge">NO PREDICTION</span>';
   } else if (pr.status === 'ok') {
     pred = pr.p_burns != null
-      ? `<div class="big">${pct(pr.p_burns, 0)}</div><div class="muted">P(sustained burning)</div>`
+      ? `<div class="big">${pct(pr.p_burns, 0)}</div><div class="muted">P(sustained burning)</div>${pr.ood?.reason ? `<p class="caption">${esc(pr.ood.reason)}</p>` : ''}`
       : '<span class="badge">NO VALUE</span>';
   } else {
     const label = pr.status === 'insufficient_data' ? 'INSUFFICIENT DATA' : pr.status === 'extrapolation' ? 'EXTRAPOLATION' : esc(String(pr.status).toUpperCase());

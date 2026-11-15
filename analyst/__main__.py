@@ -26,6 +26,8 @@ SYSTEM = ("You are the IGNIS analyst for microgravity fire safety. You know NOTH
           "If a tool says insufficient_data or extrapolation, say so plainly. Cite sources (title + page) from tool "
           "results when you give a number. Be brief.")
 NUM = re.compile(r"(?<![\w.])-?\d+(?:\.\d+)?")
+# a number followed by one of these is a measurement, never a list rank or a count
+UNIT = re.compile(r"\s*(?:%|percent\b|°|1/s|(?:mm|cm|m|kpa|pa|psia?|atm|s|k|g|nats?)\b)", re.I)
 
 
 def _numbers(text: str) -> set[float]:
@@ -33,14 +35,23 @@ def _numbers(text: str) -> set[float]:
 
 
 def unsupported_numbers(answer: str, evidence: list[str]) -> list[float]:
-    """Numbers in the answer not found (to 2 significant rounding) in any tool output or the question."""
+    """Numbers in the answer not found (to 2 significant rounding) in any tool output or the question.
+
+    Known limit: it matches values, not meaning, so a number that appears in the evidence for another reason
+    (a page number, a count) still passes. That is why recorded answers also carry a human review note."""
     pool = set()
     for e in evidence:
         for v in _numbers(e):
-            pool |= {v, round(v, 1), round(v, 2), round(v), round(v * 100, 1), round(v * 100), round(v * 100, 2)}
+            pool |= {v, round(v, 1), round(v, 2), round(v)}
+            if abs(v) <= 1:  # fractions are shown as percent (0.136 -> 13.6); never scale anything else
+                pool |= {round(v * 100, 1), round(v * 100), round(v * 100, 2)}
     bad = []
-    for v in _numbers(answer):
-        if v in pool or round(v, 1) in pool or (v.is_integer() and v <= 10):  # small ints: list ranks, "2 tools"
+    for m in NUM.finditer(answer):
+        v = float(m.group())
+        if v in pool or round(v, 1) in pool:
+            continue
+        # small counts and list ranks ("2 tools", "1." ) are fine; a small number with a unit is a claim
+        if v.is_integer() and 0 <= v <= 10 and not UNIT.match(answer, m.end()):
             continue
         bad.append(v)
     return bad

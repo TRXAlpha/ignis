@@ -85,6 +85,15 @@ def si_of(value: float, unit: str, field: str) -> float:
     return v
 
 
+def extra_si(value: float, unit: str) -> tuple[float, str]:
+    """(SI value, SI unit) for a free-form conditions.extra quantity: pint base units, no canonical field."""
+    try:
+        q = UREG.Quantity(float(value), _pint_unit(unit)).to_base_units()
+    except (pint.errors.UndefinedUnitError, pint.errors.DimensionalityError, AttributeError, TypeError, ValueError) as e:
+        raise UnitError(f"cannot parse unit {unit!r}") from e
+    return float(q.magnitude), f"{q.units:~}".replace(" ", "") or "1"
+
+
 # ---- transforms (non-unit conversions, basis must be 'derived') -------------------------------
 
 def o2_mass_to_mole_fraction(y: float, diluent: str = "N2") -> float:

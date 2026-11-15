@@ -147,4 +147,5 @@ SCHEMAS = [
         "type": "object", "properties": {"obs_id": {"type": "string"}}, "required": ["obs_id"]}}},
 ] + [{"type": "function", "function": {"name": n, "description": TOOLS[n].__doc__,
                                        "parameters": {"type": "object", "properties": {}}}}
-     for n in ("min_o2", "habitats", "recommendations", "validation", "contradictions", "material_screen", "test_outcomes", "data_summary")]
+     for n in ("min_o2", "habitats", "recommendations", "validation", "contradictions", "video_spread", "material_screen",
+               "test_outcomes", "data_summary")]
