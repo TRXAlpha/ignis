@@ -33,6 +33,8 @@ CONFIG = {
             "ISS stable flame": {"kind": "filled", "rgb": "blue"},
             "ISS quench": {"kind": "filled", "rgb": "bright_red"},
             "ISS blowoff": {"kind": "x", "half": 13, "min_vis": 0.25, "hidden_behind": "ISS stable flame"},
+            "Drop Tower blowoff": {"kind": "plus", "rgb": "plus_purple"},
+            "Drop Tower stable flame": {"kind": "filled", "rgb": "tri_green"},
         },
         "occluders": ["blue", "bright_red", "dark_red", "green", "purple"],
     }
@@ -47,6 +49,8 @@ def colour_mask(a: np.ndarray, name: str) -> np.ndarray:
         "dark_red": (R > 110) & (R <= 215) & (G < 60) & (B < 60),
         "green": (G > 120) & (G - B > 40) & (R < 160),
         "purple": (B > 160) & (R > 100) & (G < 120),
+        "tri_green": (abs(R - 112) < 30) & (abs(G - 173) < 30) & (abs(B - 70) < 35),
+        "plus_purple": (R > 80) & (R < 140) & (G > 20) & (G < 80) & (B > 130) & (B < 195),
     }[name]
 
 
@@ -152,6 +156,39 @@ def x_markers(a: np.ndarray, box, occluders: list[str], half: int, thr: float = 
     return peaks
 
 
+def plus_markers(mask: np.ndarray, min_run: int = 15, half: int = 18) -> list[tuple[float, float]]:
+    """'+' markers: each vertical stroke (a run of >= min_run px, a few columns wide) is one marker; the centre row is
+    where the horizontal arm through that stroke is widest. Overlapping pluses share arms but not vertical strokes."""
+    H, W = mask.shape
+    runs = []
+    for x in range(W):
+        col = mask[:, x]
+        ys = np.flatnonzero(np.diff(np.concatenate([[0], col.astype(np.int8), [0]])))
+        for y0, y1 in zip(ys[::2], ys[1::2]):
+            if y1 - y0 >= min_run:
+                runs.append((x, y0, y1 - 1))
+    groups: list[list[tuple[int, int, int]]] = []
+    for x, y0, y1 in runs:
+        for g in groups:
+            gx, gy0, gy1 = g[-1]
+            if x - gx <= 1 and min(y1, gy1) - max(y0, gy0) > 10:
+                g.append((x, y0, y1))
+                break
+        else:
+            groups.append([(x, y0, y1)])
+    out = []
+    for g in groups:
+        cx = float(np.mean([r[0] for r in g]))
+        y0, y1 = min(r[1] for r in g), max(r[2] for r in g)
+        xi = int(round(cx))
+        rows = range(max(0, y0 - 5), min(H, y1 + 6))
+        widths = [mask[y, max(0, xi - half):xi + half + 1].sum() for y in rows]
+        best = max(widths)
+        cy = float(np.mean([y for y, w in zip(rows, widths) if w >= best - 1]))
+        out.append((cx, cy))
+    return out
+
+
 def x_behind(a: np.ndarray, centres, r0: int = 11, r1: int = 18, need: int = 3) -> list[tuple[float, float]]:
     """An 'x' drawn exactly under a filled marker only shows its 4 arm tips beyond the marker's diagonal edges.
     Count a hidden 'x' at a marker centre when >= `need` of the 4 diagonal arms are dark between r0 and r1 px."""
@@ -209,6 +246,8 @@ def run(name: str) -> dict:
     for sname, s in cfg["series"].items():
         if s["kind"] == "filled":
             pts = filled_markers(colour_mask(a, s["rgb"]) & inside)
+        elif s["kind"] == "plus":
+            pts = plus_markers(colour_mask(a, s["rgb"]) & inside)
         else:
             pts = x_markers(a, cfg["plot_box"], cfg["occluders"], s["half"], min_vis=s.get("min_vis", 0.5))
             for c in x_behind(a, found.get(s.get("hidden_behind"), [])):
@@ -228,12 +267,13 @@ def overlay(name: str, project: dict) -> Path:
     pix = pymupdf.Pixmap(str(img))
     page = doc.new_page(width=pix.width, height=pix.height)
     page.insert_image(page.rect, filename=str(img))
-    colours = {"ISS stable flame": (0, 0.8, 1), "ISS quench": (1, 0.5, 0), "ISS blowoff": (1, 0, 1)}
+    colours = {"ISS stable flame": (0, 0.8, 1), "ISS quench": (1, 0.5, 0), "ISS blowoff": (1, 0, 1),
+               "Drop Tower blowoff": (0.9, 0.7, 0), "Drop Tower stable flame": (0, 0.6, 0)}
     for ds in project["datasetColl"]:
         for i, p in enumerate(ds["data"]):
             c = colours.get(ds["name"], (0, 1, 0))
             page.draw_circle((p["x"], p["y"]), 16, color=c, width=2.5)
-            page.insert_text((p["x"] + 15, p["y"] - 12), f"{ds['name'].split()[-1][0].upper()}{i}", fontsize=13, color=c)
+            page.insert_text((p["x"] + 15, p["y"] - 12), f"{''.join(w[0] for w in ds['name'].split()).upper()}{i}", fontsize=13, color=c)
     for ax in project["axesColl"]:
         for cp in ax["calibrationPoints"]:
             page.draw_circle((cp["px"], cp["py"]), 6, color=(0, 0.7, 0), width=3)

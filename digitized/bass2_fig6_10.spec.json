@@ -6,32 +6,162 @@
  "image": "data/figures/bass2_fig6_10.png",
  "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
  "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map.",
- "require_text": ["Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands",
-                  "Figure 6.10 replots the same data as Figure 6.9 but with a logarithmic x-axis"],
+ "require_text": [
+  "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands",
+  "Figure 6.10 replots the same data as Figure 6.9 but with a logarithmic x-axis"
+ ],
  "require_text_elsewhere": [
-  {"page": 72, "snippets": ["a series of concurrent rod flammability tests were conducted in microgravity aboard",
-                            "of clear and black polymethylmethacrylate rods"]},
-  {"page": 83, "snippets": ["All a are", "normalized to the base rod radius (ro = 0.318 cm)"]}
+  {
+   "page": 72,
+   "snippets": [
+    "a series of concurrent rod flammability tests were conducted in microgravity aboard",
+    "of clear and black polymethylmethacrylate rods"
+   ]
+  },
+  {
+   "page": 83,
+   "snippets": [
+    "All a are",
+    "normalized to the base rod radius (ro = 0.318 cm)"
+   ]
+  },
+  {
+   "page": 76,
+   "snippets": [
+    "Complementary 5.18-s Zero Gravity Research Facility blowoff drop tests were conducted"
+   ]
+  },
+  {
+   "source_id": "ntrs:20180006517",
+   "page": 6,
+   "snippets": [
+    "to less than 0.00001g"
+   ]
+  },
+  {
+   "source_id": "ntrs:20000017932",
+   "page": 8,
+   "snippets": [
+    "achieves a gravity level of 10 -6 Gs"
+   ]
+  }
  ],
  "axes": {
   "XY": {
-   "x": {"field": "conditions.extra.stretch_rate", "unit": "1/s",
-         "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."},
-   "y": {"field": "conditions.o2_mole_fraction", "unit": "vol%",
-         "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."}
+   "x": {
+    "field": "conditions.extra.stretch_rate",
+    "unit": "1/s",
+    "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+   },
+   "y": {
+    "field": "conditions.o2_mole_fraction",
+    "unit": "vol%",
+    "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+   }
   }
  },
  "base": {
-  "experiment": {"campaign_id": "bass-ii", "platform": "orbital_iss", "facility": "Microgravity Science Glovebox (MSG)"},
-  "fuel": {"material_id": "pmma", "phase": "solid", "geometry": "rod"},
-  "conditions": {"gravity": "@iss_nominal", "flow_direction": "concurrent", "buoyancy_orientation": "not_applicable"},
-  "flags": ["condition_from_campaign_nominal"]
+  "experiment": {
+   "campaign_id": "bass-ii",
+   "platform": "orbital_iss",
+   "facility": "Microgravity Science Glovebox (MSG)"
+  },
+  "fuel": {
+   "material_id": "pmma",
+   "phase": "solid",
+   "geometry": "rod"
+  },
+  "conditions": {
+   "gravity": "@iss_nominal",
+   "flow_direction": "concurrent",
+   "buoyancy_orientation": "not_applicable"
+  },
+  "flags": [
+   "condition_from_campaign_nominal"
+  ]
  },
  "series": {
-  "ISS blowoff":       {"outcome": {"quantity": "flame_state", "state": "blowoff_extinction", "time_basis": "at_extinction"}},
-  "ISS stable flame":  {"outcome": {"quantity": "flame_state", "state": "burns_sustained", "time_basis": "steady"}},
-  "ISS quench":        {"outcome": {"quantity": "flame_state", "state": "quench_extinction", "time_basis": "at_extinction"}},
-  "Drop Tower blowoff":      {"skip": "5.18-s drop tower g-level not sourced yet (p76)"},
-  "Drop Tower stable flame": {"skip": "5.18-s drop tower g-level not sourced yet (p76)"}
+  "ISS blowoff": {
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   }
+  },
+  "ISS stable flame": {
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   }
+  },
+  "ISS quench": {
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   }
+  },
+  "Drop Tower blowoff": {
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "flags": [
+    "condition_from_campaign_nominal"
+   ]
+  },
+  "Drop Tower stable flame": {
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "flags": [
+    "condition_from_campaign_nominal",
+    "transient_not_steady"
+   ]
+  }
  }
 }

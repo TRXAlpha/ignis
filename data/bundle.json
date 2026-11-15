@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T09:23:38+00:00",
+ "generated_at": "2026-11-15T09:30:39+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -127,6 +127,33 @@
    "title": "Planetary Fact Sheet (NASA NSSDCA)",
    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
    "retrieved_at": "2026-11-15T09:30:00+00:00"
+  },
+  {
+   "id": "ntrs:20180006517",
+   "kind": "ntrs",
+   "title": "Next-Generation Fluids-Related Biology Research Utilizing the Zero Gravity Research Facility at NASA Glenn Research Center",
+   "authors": [
+    "Bomani, Bilal M. M.",
+    "Neumann, Eric S."
+   ],
+   "year": 2018,
+   "url": "https://ntrs.nasa.gov/citations/20180006517",
+   "ntrs_id": "20180006517",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20180006517/downloads/20180006517.pdf",
+   "sha256": "c2ab2de565d665267595b9e6514ec0535331ab44fe4b67fb4bc1bb70d2b9ae26"
+  },
+  {
+   "id": "ntrs:20000017932",
+   "kind": "ntrs",
+   "title": "Zero Gravity Research Facility User's Guide",
+   "authors": [
+    "Thompson, Dennis M."
+   ],
+   "year": 1999,
+   "url": "https://ntrs.nasa.gov/citations/20000017932",
+   "ntrs_id": "20000017932",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20000017932/downloads/20000017932.pdf",
+   "sha256": "0277ec326ebfb6309114dfefaa294f3ca3402364266a83bcc671802337df47f6"
   }
  ],
  "campaigns": [
@@ -155,6 +182,21 @@
      "source_id": "ntrs:20210011385",
      "page": 9,
      "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+    }
+   ]
+  },
+  {
+   "id": "bass-ii-zgrf",
+   "name": "BASS-II complementary drop tests (NASA GRC Zero Gravity Research Facility, 5.18 s)",
+   "agency": "NASA",
+   "platform": "drop_tower",
+   "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)",
+   "parent_id": "bass-ii",
+   "refs": [
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 76,
+     "quote": "Complementary 5.18-s Zero Gravity Research Facility blowoff drop tests were conducted to compare with long-duration microgravity"
     }
    ]
   }
@@ -260,7 +302,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -348,7 +390,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -430,7 +472,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -551,7 +593,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -672,7 +714,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -793,7 +835,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -914,7 +956,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1035,7 +1077,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1156,7 +1198,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1277,7 +1319,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1398,7 +1440,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1519,7 +1561,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1640,7 +1682,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1761,7 +1803,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1882,7 +1924,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2003,7 +2045,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2124,7 +2166,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2245,7 +2287,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2366,7 +2408,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2487,7 +2529,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2608,7 +2650,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2729,7 +2771,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2850,7 +2892,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2971,7 +3013,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3092,7 +3134,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3213,7 +3255,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3334,7 +3376,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3455,7 +3497,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3576,7 +3618,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3697,7 +3739,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3818,7 +3860,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3939,7 +3981,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4060,7 +4102,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4181,7 +4223,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4302,7 +4344,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4423,7 +4465,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4544,7 +4586,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4665,7 +4707,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4786,7 +4828,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4907,7 +4949,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5028,7 +5070,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5149,7 +5191,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5270,7 +5312,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5391,7 +5433,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5512,7 +5554,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5633,7 +5675,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5754,7 +5796,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5875,7 +5917,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5996,7 +6038,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6117,7 +6159,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6238,7 +6280,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:23:38+00:00",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6281,6 +6323,2681 @@
      "calibration_residual_px": 0.0,
      "x_field": "conditions.extra.stretch_rate",
      "marker": "ISS blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 0,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 47.42550512721824,
+       "unit": "1/s",
+       "si_value": 47.42550512721824,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.798991217471098,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.137989912174711,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_35be840bf3c9ff7b",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1121.0,
+      1036.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 1,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 50.31382491241801,
+       "unit": "1/s",
+       "si_value": 50.31382491241801,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.798991217471098,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.137989912174711,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_90ea37eaaa635cd2",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1136.0,
+      1036.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 2,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 67.21971111005011,
+       "unit": "1/s",
+       "si_value": 67.21971111005011,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_ad2d5618dafd7d92",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1209.5,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 3,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 85.48891564931928,
+       "unit": "1/s",
+       "si_value": 85.48891564931928,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_cf263c9d6e389ab5",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1270.5,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 4,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 91.41312586907755,
+       "unit": "1/s",
+       "si_value": 91.41312586907755,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_e79bf3cdb987e51f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1287.5,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 5,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 95.08794735611338,
+       "unit": "1/s",
+       "si_value": 95.08794735611338,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_f6857fb3ca33bd29",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1297.5,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 6,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 104.7277826007199,
+       "unit": "1/s",
+       "si_value": 104.7277826007199,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_ccf6eefa3630868e",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1322.0,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 7,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 120.93127709943872,
+       "unit": "1/s",
+       "si_value": 120.93127709943872,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.000548747921545,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15000548747921547,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_d203b0c015ad38f1",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1358.5,
+      838.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower blowoff",
+    "point_index": 8,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 143.54802083623565,
+       "unit": "1/s",
+       "si_value": 143.54802083623565,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.995778217587572,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.15995778217587572,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "id": "obs_c0154c533945a4ca",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1402.0,
+      674.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower blowoff"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 0,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 4.672372991859476,
+       "unit": "1/s",
+       "si_value": 4.672372991859476,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 17.000110395817618,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1700011039581762,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_4ba045d1e1e18a33",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      533.0,
+      508.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 1,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 9.386568584436134,
+       "unit": "1/s",
+       "si_value": 9.386568584436134,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 17.000110395817618,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1700011039581762,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_36064dc352bc8c8c",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      710.0,
+      508.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 2,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 9.386568584436134,
+       "unit": "1/s",
+       "si_value": 9.386568584436134,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 16.001846689963585,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.16001846689963586,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_6689463f1eb0696a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      710.0,
+      673.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 3,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 16.688364681154052,
+       "unit": "1/s",
+       "si_value": 16.688364681154052,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.798991217471098,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.137989912174711,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_139fb43324cfcb2f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      856.0,
+      1036.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 4,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 23.653665886260175,
+       "unit": "1/s",
+       "si_value": 23.653665886260175,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.998812453775578,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1599881245377558,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_e5b22fe972c95276",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      944.5,
+      673.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 5,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 23.653665886260175,
+       "unit": "1/s",
+       "si_value": 23.653665886260175,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 13.798991217471098,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.137989912174711,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_256279729071382e",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      944.5,
+      1036.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 6,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 47.42550512721824,
+       "unit": "1/s",
+       "si_value": 47.42550512721824,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.99751451173354,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1499751451173354,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_2c95e58edd68314f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1121.0,
+      838.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 7,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 58.0983856558273,
+       "unit": "1/s",
+       "si_value": 58.0983856558273,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.994480275545534,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14994480275545535,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_fd4c4afff0879f1f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1172.5,
+      839.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 8,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 63.862314661744136,
+       "unit": "1/s",
+       "si_value": 63.862314661744136,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.994480275545534,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14994480275545535,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_3fdf68253abc75f3",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1196.5,
+      839.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 9,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 71.45421562275833,
+       "unit": "1/s",
+       "si_value": 71.45421562275833,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.998812453775578,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1599881245377558,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_4c7698749443eecf",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1225.0,
+      673.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 10,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 77.61995249900201,
+       "unit": "1/s",
+       "si_value": 77.61995249900201,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 14.994480275545534,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.14994480275545535,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_ffe6bb789a0128d3",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1246.0,
+      839.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 11,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 104.52160324331493,
+       "unit": "1/s",
+       "si_value": 104.52160324331493,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.998812453775578,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1599881245377558,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_624e0b5307ea1903",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1321.5,
+      673.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 84,
+    "figure": "6.10",
+    "series": "Drop Tower stable flame",
+    "point_index": 12,
+    "quote": "Figure 6.10.—Flammability boundary shown with logarithmic x-axis, which expands quenching region and exhibits classic U-shaped flammability map."
+   },
+   "experiment": {
+    "campaign_id": "bass-ii-zgrf",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1e-05,
+     "unit": "g",
+     "basis": "campaign_nominal",
+     "si_value": 9.80665e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20180006517",
+       "page": 6,
+       "quote": "to less than 0.00001g"
+      }
+     },
+     "note": "Upper bound from the 2018 GRC paper. The 1999 ZGRF user's guide states 10^-6 g (NASA/TM-1999-209641 p8); the larger value is used."
+    },
+    "flow_direction": "concurrent",
+    "buoyancy_orientation": "not_applicable",
+    "extra": [
+     {
+      "name": "stretch_rate",
+      "quantity": {
+       "value": 122.85289763972335,
+       "unit": "1/s",
+       "si_value": 122.85289763972335,
+       "si_unit": "1/s",
+       "basis": "reported",
+       "note": "Forced stretch rate a = (3/2)(U/r)(r/ro)^1/2, normalized to ro = 0.318 cm (p83)."
+      }
+     }
+    ],
+    "o2_mole_fraction": {
+     "value": 15.998812453775578,
+     "unit": "vol%",
+     "basis": "reported",
+     "si_value": 0.1599881245377558,
+     "si_unit": "dimensionless",
+     "note": "Final (post-burn) O2 sensor reading, XO2 final (p83)."
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "steady"
+   },
+   "id": "obs_8962f80133e8be2f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal",
+     "transient_not_steady",
+     "value_from_log_axis"
+    ],
+    "digitization": {
+     "image_sha256": "0bf14d055517c5855e152ce87fba56360fdafcbf4708ba9377a0eb25d3885a8c",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 726.0619750283769,
+        "value": 10.0
+       },
+       {
+        "pixel": 1310.2794819359237,
+        "value": 100.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "vol%",
+      "points": [
+       {
+        "pixel": 178.94595735697698,
+        "value": 19.0
+       },
+       {
+        "pixel": 1002.8765432098766,
+        "value": 14.0
+       }
+      ]
+     },
+     "pixel": [
+      1362.5,
+      673.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.extra.stretch_rate",
+     "marker": "Drop Tower stable flame"
     }
    },
    "qa": {

@@ -18,6 +18,7 @@ def test_fig6_10_counts_and_calibration():
     n = {d["name"]: len(d["data"]) for d in p["datasetColl"]}
     assert n["ISS stable flame"] == 27 and n["ISS quench"] == 8
     assert 14 <= n["ISS blowoff"] <= 17          # >= 2 X's hidden behind diamonds are not recoverable
+    assert n["Drop Tower blowoff"] == 9 and n["Drop Tower stable flame"] == 13
     ax = XYAxes(p["axesColl"][0])
     assert ax.residual_px < 1
     # minor tick at a = 2 and major y tick 16 % must land on their values (independent of calibration ticks used)

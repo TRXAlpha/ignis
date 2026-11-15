@@ -124,5 +124,32 @@
   "title": "Planetary Fact Sheet (NASA NSSDCA)",
   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
   "retrieved_at": "2026-11-15T09:30:00+00:00"
+ },
+ {
+  "id": "ntrs:20180006517",
+  "kind": "ntrs",
+  "title": "Next-Generation Fluids-Related Biology Research Utilizing the Zero Gravity Research Facility at NASA Glenn Research Center",
+  "authors": [
+   "Bomani, Bilal M. M.",
+   "Neumann, Eric S."
+  ],
+  "year": 2018,
+  "url": "https://ntrs.nasa.gov/citations/20180006517",
+  "ntrs_id": "20180006517",
+  "pdf_url": "https://ntrs.nasa.gov/api/citations/20180006517/downloads/20180006517.pdf",
+  "sha256": "c2ab2de565d665267595b9e6514ec0535331ab44fe4b67fb4bc1bb70d2b9ae26"
+ },
+ {
+  "id": "ntrs:20000017932",
+  "kind": "ntrs",
+  "title": "Zero Gravity Research Facility User's Guide",
+  "authors": [
+   "Thompson, Dennis M."
+  ],
+  "year": 1999,
+  "url": "https://ntrs.nasa.gov/citations/20000017932",
+  "ntrs_id": "20000017932",
+  "pdf_url": "https://ntrs.nasa.gov/api/citations/20000017932/downloads/20000017932.pdf",
+  "sha256": "0277ec326ebfb6309114dfefaa294f3ca3402364266a83bcc671802337df47f6"
  }
 ]

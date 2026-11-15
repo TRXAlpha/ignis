@@ -259,7 +259,12 @@ def main() -> int:
                      boundary={"x": gx.tolist(), **{f"o2_{k}": (v / 100).round(5).tolist() for k, v in band.items()}},
                      min_o2={k: (v / 100 if k != "at_x" else v) for k, v in mo.items()})
         val = validate(rows, sources)
-        val["summary"] = (f"Fitted on {len(rows)} ISS flame-state points. Minimum O2 for burning: "
+        by = {}
+        for r in rows:
+            by[r["campaign"]] = by.get(r["campaign"], 0) + 1
+        camps = {c["id"]: c["name"] for c in bundle["campaigns"]}
+        val["summary"] = (f"Fitted on {len(rows)} flame-state points ("
+                          + ", ".join(f"{n} from {camps.get(c, c)}" for c, n in sorted(by.items())) + "). Minimum O2 for burning: "
                           f"{mo['p50']:.1f} % (90 % band {mo['p05']:.1f}-{mo['p95']:.1f} %) at a = {mo['at_x']:.2g} 1/s; "
                           "the BASS-II report states ~13.5 % at a = 8-12 1/s. Normal-gravity practice uses 15.4 %.")
         rec = recommend(f, rows)

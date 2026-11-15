@@ -68,11 +68,12 @@ def test_wpd_value_disagreement_rejected():
         _convert(_project([(600, 500)], value=[12.0, 16.0]))
 
 
-def test_unmapped_dataset_rejected_and_skips_emit_nothing():
+def test_unmapped_dataset_rejected_and_series_overrides_apply():
     from ingest.wpd import DigitizationError
     with pytest.raises(DigitizationError, match="not in spec series"):
         _convert(_project([(600, 500)], name="Default Dataset"))
-    assert _convert(_project([(600, 500)], name="Drop Tower blowoff")) == []
+    dt = _convert(_project([(600, 500)], name="Drop Tower blowoff"))[0]
+    assert dt["experiment"]["platform"] == "drop_tower" and dt["conditions"]["gravity"]["basis"] == "campaign_nominal"
 
 
 def test_tilted_calibration_flags_point():

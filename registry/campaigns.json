@@ -26,5 +26,20 @@
         "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
       }
     ]
+  },
+  {
+    "id": "bass-ii-zgrf",
+    "name": "BASS-II complementary drop tests (NASA GRC Zero Gravity Research Facility, 5.18 s)",
+    "agency": "NASA",
+    "platform": "drop_tower",
+    "facility": "NASA GRC Zero Gravity Research Facility (5.18 s)",
+    "parent_id": "bass-ii",
+    "refs": [
+      {
+        "source_id": "ntrs:20210011385",
+        "page": 76,
+        "quote": "Complementary 5.18-s Zero Gravity Research Facility blowoff drop tests were conducted to compare with long-duration microgravity"
+      }
+    ]
   }
 ]
