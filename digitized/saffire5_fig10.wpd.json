@@ -1,0 +1,198 @@
+{
+ "version": [
+  4,
+  2
+ ],
+ "axesColl": [
+  {
+   "name": "concurrent",
+   "type": "XYAxes",
+   "isLogX": false,
+   "isLogY": false,
+   "noRotation": false,
+   "calibrationPoints": [
+    {
+     "px": 208.70592130155126,
+     "py": 777,
+     "dx": "30",
+     "dy": "0",
+     "dz": null
+    },
+    {
+     "px": 412.34061313076506,
+     "py": 777,
+     "dx": "10",
+     "dy": "0",
+     "dz": null
+    },
+    {
+     "px": 209,
+     "py": 199.48131170662904,
+     "dx": "0",
+     "dy": "0.5",
+     "dz": null
+    },
+    {
+     "px": 209,
+     "py": 660.67455858748,
+     "dx": "0",
+     "dy": "0.1",
+     "dz": null
+    }
+   ],
+   "metadata": {
+    "calibrated_by": "ingest.autodigitize tick detection"
+   }
+  },
+  {
+   "name": "opposed",
+   "type": "XYAxes",
+   "isLogX": false,
+   "isLogY": false,
+   "noRotation": false,
+   "calibrationPoints": [
+    {
+     "px": 615.0804716117216,
+     "py": 777,
+     "dx": "10",
+     "dy": "0",
+     "dz": null
+    },
+    {
+     "px": 1022.914745308311,
+     "py": 777,
+     "dx": "50",
+     "dy": "0",
+     "dz": null
+    },
+    {
+     "px": 209,
+     "py": 199.48131170662904,
+     "dx": "0",
+     "dy": "0.5",
+     "dz": null
+    },
+    {
+     "px": 209,
+     "py": 660.67455858748,
+     "dx": "0",
+     "dy": "0.1",
+     "dz": null
+    }
+   ],
+   "metadata": {
+    "calibrated_by": "ingest.autodigitize tick detection"
+   }
+  }
+ ],
+ "datasetColl": [
+  {
+   "name": "BASS concurrent 2 cm wide",
+   "axesName": "concurrent",
+   "colorRGB": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "metadataKeys": [],
+   "data": [
+    {
+     "x": 276.25,
+     "y": 166.25
+    },
+    {
+     "x": 415.75,
+     "y": 445.5
+    },
+    {
+     "x": 466.75,
+     "y": 555.25
+    },
+    {
+     "x": 471.25,
+     "y": 617.25
+    },
+    {
+     "x": 496.75,
+     "y": 648.0
+    }
+   ]
+  },
+  {
+   "name": "BASS concurrent 1 cm wide",
+   "axesName": "concurrent",
+   "colorRGB": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "metadataKeys": [],
+   "data": [
+    {
+     "x": 321.0,
+     "y": 414.5
+    },
+    {
+     "x": 402.5,
+     "y": 535.0
+    }
+   ]
+  },
+  {
+   "name": "BASS opposed 2 cm wide",
+   "axesName": "opposed",
+   "colorRGB": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "metadataKeys": [],
+   "data": [
+    {
+     "x": 524.0,
+     "y": 708.5
+    },
+    {
+     "x": 531.5,
+     "y": 676.0
+    },
+    {
+     "x": 548.0,
+     "y": 661.0
+    },
+    {
+     "x": 576.5,
+     "y": 645.0
+    },
+    {
+     "x": 605.0,
+     "y": 612.0
+    },
+    {
+     "x": 610.0,
+     "y": 645.0
+    },
+    {
+     "x": 615.0,
+     "y": 602.5
+    },
+    {
+     "x": 713.5,
+     "y": 594.5
+    },
+    {
+     "x": 991.5,
+     "y": 643.0
+    }
+   ]
+  }
+ ],
+ "measurementColl": [],
+ "ignis": {
+  "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks)",
+  "image": "data\\figures\\saffire5_fig10.png"
+ }
+}

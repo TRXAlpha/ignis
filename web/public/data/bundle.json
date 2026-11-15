@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T09:30:39+00:00",
+ "generated_at": "2026-11-15T09:37:07+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -168,7 +168,27 @@
      "source_id": "ntrs:20210011385",
      "page": 9,
      "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+    },
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 123,
+     "quote": "Astronaut Chris Cassidy conducted a calibration test on the morning of GMT (Greenwich Mean Time) 2013-095 in the Microgravity Science Glovebox (MSG)"
+    },
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 111,
+     "quote": "2/19/2014 GMT 2014 050 10:09:50 to 10:10:16 7 B1 147 100-µm PMMA film, 2 cm wide"
+    },
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 113,
+     "quote": "6/24/2018 -------- 36 F4 39M Japan Wax candle"
     }
+   ],
+   "years": [
+    2013,
+    2014,
+    2018
    ]
   },
   {
@@ -302,7 +322,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -390,7 +410,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -472,7 +492,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -593,7 +613,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -714,7 +734,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -835,7 +855,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -956,7 +976,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1077,7 +1097,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1198,7 +1218,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1319,7 +1339,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1440,7 +1460,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1561,7 +1581,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1682,7 +1702,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1803,7 +1823,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1924,7 +1944,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2045,7 +2065,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2166,7 +2186,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2287,7 +2307,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2408,7 +2428,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2529,7 +2549,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2650,7 +2670,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2771,7 +2791,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2892,7 +2912,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3013,7 +3033,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3134,7 +3154,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3255,7 +3275,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3376,7 +3396,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3497,7 +3517,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3618,7 +3638,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3739,7 +3759,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3860,7 +3880,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3981,7 +4001,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4102,7 +4122,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4223,7 +4243,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4344,7 +4364,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4465,7 +4485,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4586,7 +4606,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4707,7 +4727,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4828,7 +4848,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4949,7 +4969,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5070,7 +5090,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5191,7 +5211,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5312,7 +5332,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5433,7 +5453,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5554,7 +5574,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5675,7 +5695,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5796,7 +5816,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5917,7 +5937,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6038,7 +6058,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6159,7 +6179,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6280,7 +6300,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6401,7 +6421,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6522,7 +6542,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6643,7 +6663,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6764,7 +6784,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6885,7 +6905,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7006,7 +7026,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7127,7 +7147,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7248,7 +7268,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7369,7 +7389,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7490,7 +7510,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7612,7 +7632,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7734,7 +7754,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7856,7 +7876,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7978,7 +7998,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8100,7 +8120,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8222,7 +8242,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8344,7 +8364,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8466,7 +8486,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8588,7 +8608,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8710,7 +8730,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8832,7 +8852,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8954,7 +8974,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:30:39+00:00",
+    "extracted_at": "2026-11-15T09:37:05+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8998,6 +9018,1910 @@
      "calibration_residual_px": 0.0,
      "x_field": "conditions.extra.stretch_rate",
      "marker": "Drop Tower stable flame"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 2 cm wide",
+    "point_index": 0,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 23.36615209405505,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.2336615209405505,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.5288220280165675,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.005288220280165675,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_0318f8580ae7bd6f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      276.25,
+      166.25
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 2 cm wide",
+    "point_index": 1,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 9.665146754847214,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.09665146754847215,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.2866242058336732,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0028662420583367323,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_59c8d68c3344fc5e",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      415.75,
+      445.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 2 cm wide",
+    "point_index": 2,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 4.656177060943278,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.046561770609432784,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.19143634196770126,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0019143634196770126,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_89709c1e208d4e91",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      466.75,
+      555.25
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 2 cm wide",
+    "point_index": 3,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 4.214209146775282,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.04214209146775282,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.13766278789307473,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0013766278789307475,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_40af6b287bb9f884",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      471.25,
+      617.25
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 2 cm wide",
+    "point_index": 4,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 1.7097242998233142,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.017097242998233144,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.11099283970283658,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0011099283970283657,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_7d207a634757ce7d",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      496.75,
+      648.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 1 cm wide",
+    "point_index": 0,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.01,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 18.971026725384437,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.18971026725384438,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.31351098287098644,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0031351098287098647,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_8234e04ccd875914",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      321.0,
+      414.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 1 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS concurrent 1 cm wide",
+    "point_index": 1,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.01,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 10.966496724341866,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.10966496724341866,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.20899947858078494,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0020899947858078493,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_06704fa9c4773783",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 208.70592130155126,
+        "value": 30.0
+       },
+       {
+        "pixel": 412.34061313076506,
+        "value": 10.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      402.5,
+      535.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS concurrent 1 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 0,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 1.06691345127296,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.010669134512729599,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.0585202587106608,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.000585202587106608,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_c367a41e6dd869cb",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      524.0,
+      708.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 1,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 1.8025063608163805,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.018025063608163805,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.08670800883042462,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0008670800883042462,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_bc95f7c925c6b859",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      531.5,
+      676.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 2,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 3.420810761811893,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.03420810761811893,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.09971773965493103,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0009971773965493102,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_1dc7b305fa9e0fc9",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      548.0,
+      661.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 3,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 6.216063818076876,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.06216063818076876,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.11359478586773786,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0011359478586773785,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_7871818b8b2c230f",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      576.5,
+      645.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 4,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 9.011316874341851,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.09011316874341851,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.14221619368165206,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0014221619368165205,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_90b9d5c0ff88c292",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      605.0,
+      612.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 5,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 9.501712147370796,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.09501712147370796,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.11359478586773786,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0011359478586773785,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_62e4cb1ad38846a0",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      610.0,
+      645.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 6,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 9.99210742039974,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.09992107420399741,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.15045568987050606,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0015045568987050607,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_837b542ef532ba3a",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      615.0,
+      602.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 7,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 19.652894299069942,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.19652894299069942,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.15739421297690948,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.0015739421297690948,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_7e3dab2d3d8dcc01",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      713.5,
+      594.5
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "machine-detected (tick + marker detection) on hash-pinned figure render, overlay reviewed; values recomputed from calibration; caption verbatim on page"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "locator": {
+    "source_id": "ntrs:20210011521",
+    "page": 8,
+    "figure": "10",
+    "series": "BASS opposed 2 cm wide",
+    "point_index": 8,
+    "quote": "Figure 10: Steady spread rate summary for the cotton-fiberglass fabric burning in microgravity. Concurrent flames are shown on the left of the origin and opposed to the right."
+   },
+   "experiment": {
+    "campaign_id": "bass",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric",
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported",
+     "si_value": 0.02,
+     "si_unit": "m"
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "buoyancy_orientation": "not_applicable",
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 46.91887147947922,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.46918871479479224,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_spread_rate",
+    "time_basis": "steady",
+    "value": {
+     "value": 0.11532941664433871,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.001153294166443387,
+     "si_unit": "m/s"
+    }
+   },
+   "id": "obs_75d798bb99e55b20",
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
+    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ],
+    "digitization": {
+     "image_sha256": "48135faef733f07c0230119df486b888b96d1692ac16ce52e5ae8bfe89adda64",
+     "x_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 615.0804716117216,
+        "value": 10.0
+       },
+       {
+        "pixel": 1022.914745308311,
+        "value": 50.0
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "cm/s",
+      "points": [
+       {
+        "pixel": 199.48131170662904,
+        "value": 0.5
+       },
+       {
+        "pixel": 660.67455858748,
+        "value": 0.1
+       }
+      ]
+     },
+     "pixel": [
+      991.5,
+      643.0
+     ],
+     "calibration_residual_px": 0.0,
+     "x_field": "conditions.flow_velocity",
+     "marker": "BASS opposed 2 cm wide"
     }
    },
    "qa": {

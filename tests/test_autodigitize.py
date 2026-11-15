@@ -24,3 +24,15 @@ def test_fig6_10_counts_and_calibration():
     # minor tick at a = 2 and major y tick 16 % must land on their values (independent of calibration ticks used)
     assert ax.pixel_to_data(317.87, 673.38)[0] == pytest.approx(2.0, rel=0.01)
     assert ax.pixel_to_data(317.87, 673.38)[1] == pytest.approx(16.0, abs=0.02)
+
+
+def test_saffire5_fig10_counts_and_split_axis():
+    from ingest.autodigitize import run
+    from ingest.wpd import XYAxes
+    p = run("saffire5_fig10")
+    n = {d["name"]: len(d["data"]) for d in p["datasetColl"]}
+    assert n == {"BASS concurrent 2 cm wide": 5, "BASS concurrent 1 cm wide": 2, "BASS opposed 2 cm wide": 9}
+    ax = {a["name"]: XYAxes(a) for a in p["axesColl"]}
+    # 20 cm/s ticks on each side (not used for calibration) land on +20
+    assert ax["concurrent"].pixel_to_data(311, 430)[0] == pytest.approx(20, abs=0.2)
+    assert ax["opposed"].pixel_to_data(718, 546)[0] == pytest.approx(20, abs=0.2)

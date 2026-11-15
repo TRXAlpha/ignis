@@ -93,6 +93,12 @@ def observation(obs_id: str) -> dict:
     return {"error": f"no observation {obs_id}"}
 
 
+def contradictions() -> dict:
+    """Consistency checks: literature claims vs data, claims vs claims, conflicting observations (verdict + sources)."""
+    return {"items": [{k: c[k] for k in ("verdict", "kind", "title", "detail", "numbers", "refs")}
+                      for c in _load("contradictions").get("items", [])]}
+
+
 def data_summary() -> dict:
     """What data the model is built on: counts by campaign, outcome and QA status."""
     b = _load("bundle")
@@ -104,7 +110,8 @@ def data_summary() -> dict:
     return out
 
 
-TOOLS = {f.__name__: f for f in (p_burns, min_o2, habitats, recommendations, validation, observation, data_summary)}
+TOOLS = {f.__name__: f for f in (p_burns, min_o2, habitats, recommendations, validation, observation, contradictions,
+                                  data_summary)}
 
 SCHEMAS = [
     {"type": "function", "function": {"name": "p_burns", "description": p_burns.__doc__, "parameters": {
@@ -114,4 +121,4 @@ SCHEMAS = [
         "type": "object", "properties": {"obs_id": {"type": "string"}}, "required": ["obs_id"]}}},
 ] + [{"type": "function", "function": {"name": n, "description": TOOLS[n].__doc__,
                                        "parameters": {"type": "object", "properties": {}}}}
-     for n in ("min_o2", "habitats", "recommendations", "validation", "data_summary")]
+     for n in ("min_o2", "habitats", "recommendations", "validation", "contradictions", "data_summary")]

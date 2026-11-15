@@ -134,3 +134,15 @@ blockquote {
 .plain ul, .plain ol { padding-left: 1.3em; }
 .plain li { margin: 0.35em 0; }
 .sub-h { font-size: 0.95rem; margin: 14px 0 6px; }
+
+.verdict { display: inline-block; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.05em; padding: 3px 7px; border-radius: 6px; color: #000; }
+.verdict.conflict { background: var(--bad, #ff5d5d); }
+.verdict.tension { background: var(--amber); }
+.verdict.consistent { background: var(--ok); }
+.check h3 { margin: 8px 0 4px; font-size: 1rem; }
+.check p { line-height: 1.5; font-size: 0.92rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.chip { background: transparent; color: var(--text, #dfe5ee); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 0.75rem; cursor: pointer; font-family: ui-monospace, monospace; }
+.chip:hover { border-color: var(--ok); }
+.plot-short { height: auto; min-height: 140px; }
+.src-list { padding-left: 18px; line-height: 1.6; font-size: 0.92rem; }

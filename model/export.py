@@ -18,6 +18,7 @@ from ignis_contract import check_bundle, is_valid, schema_errors
 from ingest.curated import require_text
 
 from . import boundary as bm
+from . import contradictions as cx
 
 BUNDLE = Path("data/bundle.json")
 OUT = Path("web/public/data")
@@ -243,6 +244,7 @@ def main() -> int:
     if len(rows) < 8 or len({r["y"] for r in rows}) < 2:
         print(f"only {len(rows)} usable flame-state points: writing no-data model files", file=sys.stderr)
         val = {"folds": [], "cv": [], "summary": "No flame-state data digitized yet.", "limitations": []}
+        con = []
         rec, hab = {"constraint_set": None, "items": []}, habitats(None, rows, sources)
     else:
         f = bm.fit(_arr(rows, "a"), _arr(rows, "x") * 100, _arr(rows, "y"))
@@ -267,6 +269,7 @@ def main() -> int:
                           + ", ".join(f"{n} from {camps.get(c, c)}" for c, n in sorted(by.items())) + "). Minimum O2 for burning: "
                           f"{mo['p50']:.1f} % (90 % band {mo['p05']:.1f}-{mo['p95']:.1f} %) at a = {mo['at_x']:.2g} 1/s; "
                           "the BASS-II report states ~13.5 % at a = 8-12 1/s. Normal-gravity practice uses 15.4 %.")
+        con = cx.run(rows, f, sources)
         rec = recommend(f, rows)
         hab = habitats(f, rows, sources)
         for fold in val["folds"]:
@@ -277,7 +280,8 @@ def main() -> int:
         assert not schema_errors(rec["constraint_set"], "ConstraintSet")
         for h in hab["presets"]:
             assert not schema_errors(h["prediction"], "Prediction"), schema_errors(h["prediction"], "Prediction")
-    for name, obj in (("model", model), ("validation", val), ("recommendations", rec), ("habitats", hab)):
+    for name, obj in (("model", model), ("validation", val), ("recommendations", rec), ("habitats", hab),
+                      ("contradictions", {"items": con})):
         (OUT / f"{name}.json").write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
     print(f"wrote {OUT}: {len(rows)} boundary points, status={model['status']}", file=sys.stderr)
     return 0

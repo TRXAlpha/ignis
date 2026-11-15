@@ -37,7 +37,26 @@ CONFIG = {
             "Drop Tower stable flame": {"kind": "filled", "rgb": "tri_green"},
         },
         "occluders": ["blue", "bright_red", "dark_red", "green", "purple"],
-    }
+    },
+    "saffire5_fig10": {
+        # one continuous x axis: concurrent flow increases to the LEFT of 0, opposed to the right -> two WPD axes
+        "axes": {
+            "concurrent": {"log_x": False, "x_ticks": [(209, 30), (413, 10)], "y_ticks": [(199, 0.5), (661, 0.1)],
+                           "x_tick_band": (781, 795), "y_tick_band": (197, 206), "x_axis_row": 777, "y_axis_col": 209},
+            "opposed": {"log_x": False, "x_ticks": [(615, 10), (1023, 50)], "y_ticks": [(199, 0.5), (661, 0.1)],
+                        "x_tick_band": (781, 795), "y_tick_band": (197, 206), "x_axis_row": 777, "y_axis_col": 209},
+        },
+        "plot_box": (88, 772, 212, 1020),
+        "series": {
+            "BASS concurrent 2 cm wide": {"kind": "filled", "rgb": "blue", "axes": "concurrent", "box": (88, 690, 212, 505),
+                                          "min_px": 150},
+            "BASS concurrent 1 cm wide": {"kind": "filled", "rgb": "navy", "axes": "concurrent", "box": (88, 772, 212, 505),
+                                          "min_px": 80},
+            "BASS opposed 2 cm wide": {"kind": "filled", "rgb": "plus_purple", "axes": "opposed", "box": (350, 772, 512, 1020),
+                                       "min_px": 150},
+        },
+        "occluders": [],
+    },
 }
 
 
@@ -49,6 +68,7 @@ def colour_mask(a: np.ndarray, name: str) -> np.ndarray:
         "dark_red": (R > 110) & (R <= 215) & (G < 60) & (B < 60),
         "green": (G > 120) & (G - B > 40) & (R < 160),
         "purple": (B > 160) & (R > 100) & (G < 120),
+        "navy": (R < 45) & (G < 70) & (B > 65) & (B < 140),
         "tri_green": (abs(R - 112) < 30) & (abs(G - 173) < 30) & (abs(B - 70) < 35),
         "plus_purple": (R > 80) & (R < 140) & (G > 20) & (G < 80) & (B > 130) & (B < 195),
     }[name]
@@ -244,10 +264,15 @@ def run(name: str) -> dict:
     inside[y0:y1, x0:x1] = True
     datasets, found = [], {}
     for sname, s in cfg["series"].items():
+        box_m = inside
+        if "box" in s:
+            by0, by1, bx0, bx1 = s["box"]
+            box_m = np.zeros(a.shape[:2], bool)
+            box_m[by0:by1, bx0:bx1] = True
         if s["kind"] == "filled":
-            pts = filled_markers(colour_mask(a, s["rgb"]) & inside)
+            pts = filled_markers(colour_mask(a, s["rgb"]) & box_m, min_px=s.get("min_px", 15))
         elif s["kind"] == "plus":
-            pts = plus_markers(colour_mask(a, s["rgb"]) & inside)
+            pts = plus_markers(colour_mask(a, s["rgb"]) & box_m)
         else:
             pts = x_markers(a, cfg["plot_box"], cfg["occluders"], s["half"], min_vis=s.get("min_vis", 0.5))
             for c in x_behind(a, found.get(s.get("hidden_behind"), [])):
@@ -255,7 +280,7 @@ def run(name: str) -> dict:
                     pts.append(c)
         found[sname] = list(pts)
         pts.sort()
-        datasets.append({"name": sname, "axesName": "XY", "colorRGB": [0, 0, 0, 255], "metadataKeys": [],
+        datasets.append({"name": sname, "axesName": s.get("axes", "XY"), "colorRGB": [0, 0, 0, 255], "metadataKeys": [],
                          "data": [{"x": round(x, 2), "y": round(y, 2)} for x, y in pts]})
     return {"version": [4, 2], "axesColl": axes_out, "datasetColl": datasets, "measurementColl": [],
             "ignis": {"tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks)", "image": str(img)}}

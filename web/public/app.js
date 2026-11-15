@@ -3,7 +3,7 @@
 
 const FIXTURES = new URLSearchParams(location.search).get('fixtures') === '1';
 const BASE = FIXTURES ? '../dev-fixtures/' : 'data/';
-const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats'];
+const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions'];
 
 const $ = (id) => document.getElementById(id);
 
@@ -98,12 +98,14 @@ async function boot() {
     ['validation', renderValidation],
     ['experiments', renderExperiments],
     ['habitats', renderHabitats],
+    ['data', renderData],
+    ['checks', renderChecks],
     ['footer', renderFooter],
   ];
   for (const [label, fn] of steps) {
     try { fn(); } catch (e) {
       console.error(`[ignis] ${label} failed`, e);
-      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', footer: null }[label];
+      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', data: 'dataBody', checks: 'checksBody', footer: null }[label];
       if (target) $(target).innerHTML = `<div class="empty"><strong>Render error</strong>${esc(e.message)}</div>`;
     }
   }
@@ -476,6 +478,66 @@ function refHTML(loc) {
   const page = loc.page ? ` · PDF page ${esc(loc.page)}` : '';
   const where = [loc.figure && `Figure ${loc.figure}`, loc.table && `Table ${loc.table}`].filter(Boolean).join(', ');
   return `<div style="margin-top:6px"><div>${srcLink(loc.source_id)}${page}${where ? ` · ${esc(where)}` : ''}</div>${loc.quote ? `<blockquote>${esc(loc.quote)}</blockquote>` : ''}</div>`;
+}
+
+// ---------- data sources + timeline ----------
+function renderData() {
+  const b = D.bundle;
+  const el = $('dataBody');
+  if (!b) { el.innerHTML = noData('No bundle.', ERR.bundle); return; }
+  const byCamp = new Map();
+  (b.observations || []).forEach((o) => {
+    const k = o.experiment.campaign_id;
+    const e = byCamp.get(k) || { n: 0, outcomes: new Set(), methods: new Set() };
+    e.n += 1; e.outcomes.add(o.outcome.quantity); e.methods.add(o.extraction.method);
+    byCamp.set(k, e);
+  });
+  const rows = (b.campaigns || []).map((c) => {
+    const e = byCamp.get(c.id) || { n: 0, outcomes: new Set(), methods: new Set() };
+    const yrs = (c.years || []).join(', ') || '<span class="muted">not sourced</span>';
+    return `<tr><td>${esc(c.name)}</td><td>${esc(c.platform)}</td><td>${yrs}</td><td>${e.n}</td>
+      <td>${esc([...e.outcomes].join(', ') || '-')}</td><td>${esc([...e.methods].join(', ') || '-')}</td></tr>`;
+  }).join('');
+  const srcRows = (b.sources || []).map((s) => `<li>${srcLink(s.id)}${s.year ? ` (${esc(s.year)})` : ''} <span class="muted mono">${esc(s.id)}</span></li>`).join('');
+  el.innerHTML = `
+    <div class="table-wrap"><table><thead><tr><th>Campaign</th><th>Platform</th><th>Test years</th><th>Observations</th><th>Outcomes</th><th>Extraction</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>
+    <div id="timelinePlot" class="plot plot-short"></div>
+    <p class="caption">Test years come from the campaign's own documents (e.g. BASS-II test matrices); campaigns without a sourced year are not placed on the timeline.</p>
+    <h3 class="sub-h">Sources (${(b.sources || []).length})</h3><ul class="src-list">${srcRows}</ul>`;
+  const pts = (b.campaigns || []).filter((c) => (c.years || []).length);
+  if (window.Plotly && pts.length) {
+    const traces = pts.map((c) => ({
+      type: 'scatter', mode: 'markers+lines', name: c.name, x: c.years, y: c.years.map(() => c.name),
+      marker: { size: 10 + Math.min(20, (byCamp.get(c.id)?.n || 0) / 3) }, hovertemplate: `%{x}<br>${esc(c.name)}<extra></extra>`,
+    }));
+    Plotly.newPlot('timelinePlot', traces, {
+      paper_bgcolor: COL.paper, plot_bgcolor: COL.paper, font: { color: COL.text }, showlegend: false,
+      margin: { l: 10, r: 10, t: 10, b: 40 }, xaxis: { gridcolor: COL.grid, dtick: 1 },
+      yaxis: { automargin: true, gridcolor: COL.grid }, height: 140 + 30 * pts.length,
+    }, PLOT_CFG);
+  } else { $('timelinePlot').hidden = true; }
+}
+
+// ---------- consistency checks ----------
+function renderChecks() {
+  const c = D.contradictions;
+  const el = $('checksBody');
+  const items = (c && c.items) || [];
+  if (!items.length) { el.innerHTML = noData('No consistency checks yet.', ERR.contradictions); return; }
+  const order = { conflict: 0, tension: 1, consistent: 2 };
+  items.sort((a, b) => order[a.verdict] - order[b.verdict]);
+  el.innerHTML = `<div class="grid-cards">${items.map((it) => {
+    const obs = (it.observation_ids || []).slice(0, 30).map((id) => `<button type="button" class="chip" data-obs="${esc(id)}">${esc(shortId(id))}</button>`).join(' ');
+    const more = (it.observation_ids || []).length > 30 ? ` <span class="muted">+${it.observation_ids.length - 30} more</span>` : '';
+    return `<article class="card check ${esc(it.verdict)}">
+      <span class="verdict ${esc(it.verdict)}">${esc(it.verdict.toUpperCase())}</span> <span class="muted">${esc(it.kind.replace(/_/g, ' '))}</span>
+      <h3>${esc(it.title)}</h3><p>${esc(it.detail)}</p>
+      ${(it.refs || []).length ? `<div class="refs-title">Sources</div>${it.refs.map(refHTML).join('')}` : ''}
+      ${obs ? `<div class="refs-title">Observations</div><div class="chips">${obs}${more}</div>` : ''}
+    </article>`;
+  }).join('')}</div>`;
+  el.querySelectorAll('button[data-obs]').forEach((btn) => btn.addEventListener('click', () => openProvenance(btn.dataset.obs)));
 }
 
 // ---------- footer ----------
