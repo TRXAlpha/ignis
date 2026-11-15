@@ -1,7 +1,7 @@
 # IGNIS: submission deliverables
 
 NASA Space Apps 2026, challenge "Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data".
-**Live:** https://ignis-flame-one.vercel.app · **Code:** https://github.com/TRXAlpha/ignis
+**Live:** https://ignis-ai.study · **Code:** https://github.com/TRXAlpha/ignis
 
 All numbers below come from `web/public/data/*.json` (model `ignis-boundary` 0.1.0, export of 2026-11-15) or from a
 quoted NASA PDF page. Re-check after any re-export.

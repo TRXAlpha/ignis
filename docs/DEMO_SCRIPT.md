@@ -1,7 +1,7 @@
 # IGNIS presentation video (30 s, talking + live site)
 
 Challenge: **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**
-Live site: https://ignis-flame-one.vercel.app · Code: https://github.com/TRXAlpha/ignis
+Live site: https://ignis-ai.study · Code: https://github.com/TRXAlpha/ignis
 
 Format: you on camera in a corner, the live website in the middle, scrolling while you talk.
 Structure follows the official Space Apps tips (intro, challenge + why, name + tagline, how it works + key insight,
@@ -11,7 +11,7 @@ impact + future). One tweak: the challenge beat states the problem in plain word
 
 ## 1. What you say, and what you press
 
-Open **https://ignis-flame-one.vercel.app/?demo=1**. In demo mode the number keys glide the page to each talking point
+Open **https://ignis-ai.study/?demo=1**. In demo mode the number keys glide the page to each talking point
 (and key 4 switches the chart to the 2D view). Nothing about demo mode is visible on screen.
 
 Speak at a natural, slightly brisk pace and smile at the start.

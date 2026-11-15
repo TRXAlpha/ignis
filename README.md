@@ -5,7 +5,9 @@ IGNIS is an AI system: language-model agents read NASA's reports and raw data, m
 burning in orbit, computer vision re-measures flames from flight imagery, and a tool-calling AI analyst answers questions
 without being able to invent numbers. Every claim traces back to its NASA source page.
 
-**Live:** https://ignis-flame-one.vercel.app · **Code:** https://github.com/TRXAlpha/ignis
+**Live site:** https://ignis-ai.study · **Demo video (27 s):** https://youtu.be/V2qWEVosrpI · **Code:** https://github.com/TRXAlpha/ignis
+
+[![IGNIS demo video: 13.6% O2 in orbit vs 15.4% on Earth](docs/img/demo-thumb.jpg)](https://youtu.be/V2qWEVosrpI)
 
 | Piece | Where |
 |---|---|
@@ -78,11 +80,22 @@ Demo video script: [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md). Deck outline, p
 | Habitat risk engine | Done: ISS, exploration 8.2/34, lunar and Mars landers, all sourced; out-of-domain -> INSUFFICIENT DATA |
 | LLM analyst, tool calls only | Done as local CLI (`analyst/`, Ollama), numeric guard refuses numbers not in tool output. Not on the static site (no server, no keys) |
 | Flight-imagery re-measurement (beta) | `model/video_spread.py`: tracks the flame front in NASA's public top-view stills (PSI-25, 1 still/s per the report), tests the report's 'about 2.2 mm/s'. B1 2.71 +/- 0.10 mm/s, B3 4.23 +/- 0.31 mm/s -> TENSION; length scale (flame width = 2 cm sample) is the dominant, unresolved uncertainty |
-| Frontend + deploy | Done: https://ignis-flame-one.vercel.app (envelope 3D/2D with material selector, provenance, validation, experiments, habitats, Earth-vs-orbit by material, per-test outcomes, checks, timeline) |
+| Frontend + deploy | Done: https://ignis-ai.study (envelope 3D/2D with material selector, provenance, validation, experiments, habitats, Earth-vs-orbit by material, per-test outcomes, checks, timeline) |
 
 ## Scope (decided 2026-11-14)
 
 Data push is narrowed to **solid thin fuels**: opposed/concurrent **flame spread rate** and the **O2 x flow flammability boundary** (`flame_state`, `extinction_flow_velocity`, `limiting_oxygen_fraction`). Campaign cluster: BASS, BASS-II, Saffire IV-VI, plus drop-tower and 1g ground tests from the same papers. Reason: it is the only outcome where enough campaigns overlap to run leave-one-campaign-out validation. The contract still covers droplets, gas jets and smoke; they are just not being ingested.
+
+## Use of SI (AI) tools
+
+Disclosed per the Space Apps rules:
+- **Code:** written with AI coding assistants (LLM chat and agent tools), reviewed and tested by the team (143 automated tests).
+- **Data extraction:** LLM agents read NASA report text and classified per-test outcomes. Every extracted value is verified
+  word for word against its source page before use, and each observation records the model that extracted it in its
+  metadata (`bundle.json` → `extraction.model`).
+- **Analyst:** a local open-weight model (Ollama) answers questions through tool calls only; numbers not in a tool result are refused.
+- **Text and design:** README, site copy, demo script and site styling were drafted with AI help and edited by the team.
+- **Not SI-generated:** the flight images and video stills are real NASA PSI data (CC0); the demo video footage and voice are the team's own. No NASA logos or branding are used.
 
 ## Setup (one path)
 
