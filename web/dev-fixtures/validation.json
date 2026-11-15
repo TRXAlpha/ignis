@@ -1,0 +1,67 @@
+{
+ "folds": [
+  {
+   "model_id": "ignis-boundary",
+   "model_version": "0.0.0-fixture",
+   "fold_id": "fixture-fold-1",
+   "held_out_campaign_id": "fixture-campaign",
+   "outcome_quantity": "flame_state",
+   "n_train": 10,
+   "n_test": 4,
+   "metrics": {
+    "rmse_log10": 0.31,
+    "mae_log10": 0.24,
+    "median_abs_rel_error": 0.18,
+    "nlpd": 0.9,
+    "brier": 0.14,
+    "coverage": [
+     {
+      "nominal": 0.9,
+      "empirical": 0.85
+     }
+    ]
+   },
+   "baseline": {
+    "rmse_log10": 0.42,
+    "mae_log10": 0.33,
+    "median_abs_rel_error": 0.27,
+    "nlpd": 1.2,
+    "brier": 0.2
+   }
+  },
+  {
+   "model_id": "ignis-boundary",
+   "model_version": "0.0.0-fixture",
+   "fold_id": "fixture-fold-2",
+   "held_out_campaign_id": "fixture-campaign",
+   "outcome_quantity": "flame_state",
+   "n_train": 12,
+   "n_test": 2,
+   "metrics": {
+    "rmse_log10": 0.5,
+    "mae_log10": 0.4,
+    "median_abs_rel_error": 0.3,
+    "nlpd": 1.1,
+    "brier": 0.22,
+    "coverage": [
+     {
+      "nominal": 0.9,
+      "empirical": 0.5
+     }
+    ]
+   },
+   "baseline": {
+    "rmse_log10": 0.6,
+    "mae_log10": 0.45,
+    "median_abs_rel_error": 0.35,
+    "nlpd": 1.3,
+    "brier": 0.25
+   }
+  }
+ ],
+ "summary": "FIXTURE summary. Layout test only, numbers are invented.",
+ "limitations": [
+  "FIXTURE limitation one.",
+  "FIXTURE limitation two: n is tiny."
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "constraint_set": {
+  "id": "fixture-set",
+  "name": "FIXTURE constraint set",
+  "platform": "orbital_iss",
+  "facility": "fixture facility",
+  "max_burns": 4,
+  "materials": [
+   "pmma"
+  ],
+  "ranges": {
+   "gravity_m_s2": [
+    1e-06,
+    0.0001
+   ],
+   "o2_mole_fraction": [
+    0.1,
+    0.3
+   ],
+   "pressure_pa": [
+    50000,
+    101325
+   ],
+   "flow_velocity_m_s": [
+    0.0,
+    0.2
+   ],
+   "thickness_m": [
+    0.0005,
+    0.003
+   ]
+  },
+  "refs": [
+   {
+    "source_id": "test:fixture",
+    "page": 5,
+    "quote": "fixture range quote"
+   }
+  ]
+ },
+ "items": [
+  {
+   "rank": 1,
+   "constraint_set_id": "fixture-set",
+   "material_id": "pmma",
+   "conditions": {
+    "gravity_m_s2": 9.8e-06,
+    "o2_mole_fraction": 0.15,
+    "pressure_pa": 101325,
+    "flow_velocity_m_s": 0.05,
+    "flow_direction": "opposed"
+   },
+   "outcome_quantity": "flame_state",
+   "expected_information_gain_nats": 0.42,
+   "n_burns": 2,
+   "gap": {
+    "description": "FIXTURE gap A"
+   },
+   "x": 4.0,
+   "p_burns": 0.5
+  },
+  {
+   "rank": 2,
+   "constraint_set_id": "fixture-set",
+   "material_id": "pmma",
+   "conditions": {
+    "gravity_m_s2": 9.8e-06,
+    "o2_mole_fraction": 0.18,
+    "pressure_pa": 101325,
+    "flow_velocity_m_s": 0.12,
+    "flow_direction": "opposed"
+   },
+   "outcome_quantity": "flame_state",
+   "expected_information_gain_nats": 0.25,
+   "n_burns": 1,
+   "gap": {
+    "description": "FIXTURE gap B"
+   },
+   "x": 15.0,
+   "p_burns": 0.8
+  }
+ ]
+}

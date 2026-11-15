@@ -1,0 +1,133 @@
+{
+ "presets": [
+  {
+   "id": "fixture-ok",
+   "name": "FIXTURE ok preset",
+   "conditions": {
+    "gravity_m_s2": 9.8e-06,
+    "o2_mole_fraction": 0.21,
+    "pressure_pa": 101325,
+    "flow_direction": "opposed"
+   },
+   "materials": [
+    "pmma"
+   ],
+   "notes": "FIXTURE",
+   "refs": [
+    {
+     "source_id": "test:fixture",
+     "page": 8,
+     "table": "fixture-table",
+     "row": "1",
+     "quote": "fixture habitat quote"
+    }
+   ],
+   "prediction": {
+    "model_id": "ignis-boundary",
+    "model_version": "0.0.0-fixture",
+    "material_id": "pmma",
+    "outcome_quantity": "flame_state",
+    "conditions": {
+     "gravity_m_s2": 9.8e-06,
+     "o2_mole_fraction": 0.21,
+     "pressure_pa": 101325
+    },
+    "status": "ok",
+    "mean_si": null,
+    "p_burns": 0.37,
+    "ood": {
+     "in_domain": true,
+     "score": 0.1,
+     "method": "fixture"
+    },
+    "evidence_observation_ids": [
+     "obs_fix_0001"
+    ]
+   }
+  },
+  {
+   "id": "fixture-insufficient",
+   "name": "FIXTURE insufficient preset",
+   "conditions": {
+    "gravity_m_s2": 0.16,
+    "o2_mole_fraction": 0.3,
+    "pressure_pa": 50000
+   },
+   "materials": [
+    "pmma"
+   ],
+   "refs": [
+    {
+     "source_id": "test:fixture",
+     "page": 9,
+     "table": "fixture-table",
+     "row": "1",
+     "quote": "fixture habitat quote 2"
+    }
+   ],
+   "prediction": {
+    "model_id": "ignis-boundary",
+    "model_version": "0.0.0-fixture",
+    "material_id": "pmma",
+    "outcome_quantity": "flame_state",
+    "conditions": {
+     "gravity_m_s2": 0.16,
+     "o2_mole_fraction": 0.3,
+     "pressure_pa": 50000
+    },
+    "status": "insufficient_data",
+    "mean_si": null,
+    "p_burns": null,
+    "ood": {
+     "in_domain": false,
+     "score": 1.0,
+     "method": "fixture",
+     "reason": "FIXTURE: no digitized points near 0.16 m/s^2."
+    },
+    "evidence_observation_ids": []
+   }
+  },
+  {
+   "id": "fixture-extrap",
+   "name": "FIXTURE extrapolation preset",
+   "conditions": {
+    "gravity_m_s2": 9.8e-06,
+    "o2_mole_fraction": 0.5,
+    "pressure_pa": 200000
+   },
+   "materials": [
+    "pmma"
+   ],
+   "refs": [
+    {
+     "source_id": "test:fixture",
+     "page": 10,
+     "table": "fixture-table",
+     "row": "1",
+     "quote": "fixture habitat quote 3"
+    }
+   ],
+   "prediction": {
+    "model_id": "ignis-boundary",
+    "model_version": "0.0.0-fixture",
+    "material_id": "pmma",
+    "outcome_quantity": "flame_state",
+    "conditions": {
+     "gravity_m_s2": 9.8e-06,
+     "o2_mole_fraction": 0.5,
+     "pressure_pa": 200000
+    },
+    "status": "extrapolation",
+    "mean_si": null,
+    "p_burns": null,
+    "ood": {
+     "in_domain": false,
+     "score": 3.2,
+     "method": "fixture",
+     "reason": "FIXTURE: O2 50% and 2 atm are outside the tested envelope."
+    },
+    "evidence_observation_ids": []
+   }
+  }
+ ]
+}

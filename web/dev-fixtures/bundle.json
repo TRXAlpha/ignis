@@ -1,0 +1,395 @@
+{
+ "schema_version": "1.0.0",
+ "generated_at": "2026-01-01T00:00:00+00:00",
+ "sources": [
+  {
+   "id": "test:fixture",
+   "kind": "synthetic_test",
+   "title": "FIXTURE source (not NASA data)",
+   "url": "https://example.invalid/fixture-source",
+   "pdf_url": "https://example.invalid/fixture.pdf",
+   "campaign_ids": [
+    "fixture-campaign"
+   ]
+  }
+ ],
+ "campaigns": [
+  {
+   "id": "fixture-campaign",
+   "name": "FIXTURE campaign",
+   "agency": "NASA",
+   "platform": "orbital_iss",
+   "facility": "fixture facility",
+   "refs": [
+    {
+     "source_id": "test:fixture",
+     "page": 2,
+     "quote": "fixture quote campaign"
+    }
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "id": "pmma",
+   "name": "PMMA (fixture)",
+   "aliases": [
+    "PMMA"
+   ],
+   "phase": "solid",
+   "material_class": "polymer"
+  }
+ ],
+ "observations": [
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fix_0001",
+   "locator": {
+    "source_id": "test:fixture",
+    "page": 7,
+    "quote": "fixture quote value",
+    "table": "fixture-table",
+    "row": "1",
+    "column": "State"
+   },
+   "experiment": {
+    "campaign_id": "fixture-campaign",
+    "platform": "orbital_iss",
+    "facility": "fixture facility"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1.0,
+     "unit": "ug",
+     "basis": "reported",
+     "si_value": 9.8e-06,
+     "si_unit": "m/s^2"
+    },
+    "o2_mole_fraction": {
+     "value": 21.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.21,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "table",
+    "tool": "fixture-tool@0",
+    "model": "none",
+    "extracted_at": "2026-01-01T00:00:00+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "fixture"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "fixture"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fix_0002",
+   "locator": {
+    "source_id": "test:fixture",
+    "page": 7,
+    "quote": "fixture quote value",
+    "figure": "fixture-fig 1",
+    "panel": "a",
+    "series": "fixture series A",
+    "point_index": 3
+   },
+   "experiment": {
+    "campaign_id": "fixture-campaign",
+    "platform": "orbital_iss",
+    "facility": "fixture facility"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1.0,
+     "unit": "ug",
+     "basis": "reported",
+     "si_value": 9.8e-06,
+     "si_unit": "m/s^2"
+    },
+    "o2_mole_fraction": {
+     "value": 13.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.13,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "fixture-tool@0",
+    "model": "none",
+    "extracted_at": "2026-01-01T00:00:00+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "fixture"
+    ],
+    "digitization": {
+     "image_sha256": "abababababababababababababababababababababababababababababababab",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 100,
+        "value": 1
+       },
+       {
+        "pixel": 400,
+        "value": 10
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "1",
+      "points": [
+       {
+        "pixel": 300,
+        "value": 0.1
+       },
+       {
+        "pixel": 50,
+        "value": 0.2
+       }
+      ]
+     },
+     "pixel": [
+      210.5,
+      122.0
+     ],
+     "marker": "circle",
+     "calibration_residual_px": 0.4,
+     "x_field": "conditions.stretch_rate"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "fixture"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fix_0003",
+   "locator": {
+    "source_id": "test:fixture",
+    "page": 7,
+    "quote": "fixture quote value",
+    "figure": "fixture-fig 1",
+    "panel": "b",
+    "series": "fixture series B",
+    "point_index": 0
+   },
+   "experiment": {
+    "campaign_id": "fixture-campaign",
+    "platform": "orbital_iss",
+    "facility": "fixture facility"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1.0,
+     "unit": "ug",
+     "basis": "reported",
+     "si_value": 9.8e-06,
+     "si_unit": "m/s^2"
+    },
+    "o2_mole_fraction": {
+     "value": 17.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.17,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "plot_digitized",
+    "tool": "fixture-tool@0",
+    "model": "none",
+    "extracted_at": "2026-01-01T00:00:00+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "fixture"
+    ],
+    "digitization": {
+     "image_sha256": "abababababababababababababababababababababababababababababababab",
+     "x_axis": {
+      "scale": "log10",
+      "unit": "1/s",
+      "points": [
+       {
+        "pixel": 100,
+        "value": 1
+       },
+       {
+        "pixel": 400,
+        "value": 10
+       }
+      ]
+     },
+     "y_axis": {
+      "scale": "linear",
+      "unit": "1",
+      "points": [
+       {
+        "pixel": 300,
+        "value": 0.1
+       },
+       {
+        "pixel": 50,
+        "value": 0.2
+       }
+      ]
+     },
+     "pixel": [
+      333.0,
+      88.0
+     ],
+     "marker": "circle",
+     "calibration_residual_px": 0.4,
+     "x_field": "conditions.stretch_rate"
+    }
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "fixture"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fix_0004",
+   "locator": {
+    "source_id": "test:fixture",
+    "page": 7,
+    "quote": "fixture quote value",
+    "table": "fixture-table",
+    "row": "4",
+    "column": "State"
+   },
+   "experiment": {
+    "campaign_id": "fixture-campaign",
+    "platform": "orbital_iss",
+    "facility": "fixture facility"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 1.0,
+     "unit": "ug",
+     "basis": "reported",
+     "si_value": 9.8e-06,
+     "si_unit": "m/s^2"
+    },
+    "o2_mole_fraction": {
+     "value": 15.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.15,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "table",
+    "tool": "fixture-tool@0",
+    "model": "none",
+    "extracted_at": "2026-01-01T00:00:00+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "fixture"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "fixture"
+    ]
+   }
+  }
+ ]
+}

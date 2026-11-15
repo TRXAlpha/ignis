@@ -1,0 +1,252 @@
+{
+ "model_id": "ignis-boundary",
+ "model_version": "0.0.0-fixture",
+ "material_id": "pmma",
+ "description": "FIXTURE. Values invented for layout tests, not NASA data.",
+ "x": {
+  "name": "stretch_rate",
+  "label": "Stretch rate a",
+  "unit": "1/s",
+  "scale": "log"
+ },
+ "y": {
+  "name": "o2_mole_fraction",
+  "label": "O2 mole fraction",
+  "unit": "1"
+ },
+ "grid": {
+  "x": [
+   0.5,
+   1,
+   2,
+   5,
+   10,
+   20,
+   50
+  ],
+  "y": [
+   0.1,
+   0.12,
+   0.14,
+   0.16,
+   0.18,
+   0.21
+  ],
+  "p_burns": [
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.018,
+    0.123,
+    0.346,
+    0.5,
+    0.411,
+    0.191,
+    0.018
+   ],
+   [
+    0.982,
+    0.998,
+    0.999,
+    1.0,
+    1.0,
+    0.999,
+    0.982
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  ],
+  "p_sd": [
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   [
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ]
+  ]
+ },
+ "boundary": {
+  "x": [
+   0.5,
+   1,
+   2,
+   5,
+   10,
+   20,
+   50
+  ],
+  "o2_p50": [
+   0.16,
+   0.15,
+   0.14,
+   0.14,
+   0.145,
+   0.155,
+   0.17
+  ],
+  "o2_p05": [
+   0.155,
+   0.145,
+   0.135,
+   0.135,
+   0.14,
+   0.15,
+   0.165
+  ],
+  "o2_p95": [
+   0.165,
+   0.155,
+   0.145,
+   0.145,
+   0.15,
+   0.16,
+   0.175
+  ]
+ },
+ "points": [
+  {
+   "id": "obs_fix_0001",
+   "x": 1.0,
+   "y": 0.21,
+   "state": "burns_sustained",
+   "series": "fixture series A"
+  },
+  {
+   "id": "obs_fix_0002",
+   "x": 5.0,
+   "y": 0.13,
+   "state": "quench_extinction",
+   "series": "fixture series A"
+  },
+  {
+   "id": "obs_fix_0003",
+   "x": 20.0,
+   "y": 0.17,
+   "state": "blowoff_extinction",
+   "series": "fixture series B"
+  },
+  {
+   "id": "obs_fix_0004",
+   "x": 10.0,
+   "y": 0.15,
+   "state": "self_extinguished",
+   "series": "fixture series B"
+  }
+ ],
+ "min_o2": {
+  "p50": 0.14,
+  "p05": 0.135,
+  "p95": 0.145,
+  "at_x": 5.0
+ },
+ "baselines": [
+  {
+   "id": "fixture-1g-limit",
+   "label": "FIXTURE 1g upward limit",
+   "o2": 0.16,
+   "ref": {
+    "source_id": "test:fixture",
+    "page": 3,
+    "table": "fixture-table",
+    "row": "1",
+    "quote": "fixture quote 1g"
+   }
+  },
+  {
+   "id": "fixture-air",
+   "label": "FIXTURE air (21%)",
+   "o2": 0.21,
+   "ref": {
+    "source_id": "test:fixture",
+    "page": 4,
+    "table": "fixture-table",
+    "row": "1",
+    "quote": "fixture quote air"
+   }
+  }
+ ],
+ "flow_conversion": {
+  "note": "FIXTURE conversion, not physical.",
+  "u_m_s_per_x": 0.00212
+ }
+}

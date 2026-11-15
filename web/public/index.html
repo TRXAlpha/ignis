@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IGNIS: microgravity flammability</title>
+  <meta name="description" content="Microgravity flammability of thin PMMA from NASA BASS-II flight data, with per-point provenance.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+</head>
+<body>
+  <div id="fixtureBanner" class="banner" hidden>FIXTURE MODE (dev only). Every value shown is fake, not NASA data.</div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <h1>IGNIS — microgravity flammability from NASA flight data</h1>
+      <p class="lede">Every point links back to its source page in the NASA report.</p>
+      <nav aria-label="Sections">
+        <a href="#envelope">Envelope</a>
+        <a href="#provenance">Provenance</a>
+        <a href="#validation">Validation</a>
+        <a href="#experiments">Next experiments</a>
+        <a href="#habitats">Habitat risk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="envelope" class="panel">
+      <h2>Flammability envelope</h2>
+      <div id="envelopeStatus"></div>
+      <div id="envelopeBody" hidden>
+        <div class="toggle" role="group" aria-label="View">
+          <button type="button" data-view="3d" aria-pressed="true">3D surface</button>
+          <button type="button" data-view="2d" aria-pressed="false">2D boundary</button>
+        </div>
+        <div id="minO2" class="callout"></div>
+        <div id="plot3d" class="plot"></div>
+        <div id="plot2d" class="plot" hidden></div>
+        <p id="envelopeCaption" class="caption"></p>
+      </div>
+    </section>
+
+    <section id="provenance" class="panel">
+      <h2>Provenance</h2>
+      <p class="caption">Click a point on the 2D boundary or a row below to see its source, page, quote and extraction record.</p>
+      <div id="provPanel" class="prov" hidden></div>
+      <div id="obsStatus"></div>
+      <div id="obsTable" class="table-wrap" hidden></div>
+    </section>
+
+    <section id="validation" class="panel">
+      <h2>Validation</h2>
+      <div id="validationBody"></div>
+    </section>
+
+    <section id="experiments" class="panel">
+      <h2>Next experiments</h2>
+      <div id="experimentsBody"></div>
+    </section>
+
+    <section id="habitats" class="panel">
+      <h2>Habitat risk</h2>
+      <div id="habitatsBody"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Data contract v1.0.0 · <span id="footerModel">model: n/a</span> · <a href="#repo">GitHub repo</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

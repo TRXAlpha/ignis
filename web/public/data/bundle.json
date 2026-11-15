@@ -1,0 +1,365 @@
+{
+ "schema_version": "1.0.0",
+ "generated_at": "2026-11-15T08:53:18+00:00",
+ "sources": [
+  {
+   "id": "ntrs:20210011385",
+   "kind": "ntrs",
+   "title": "Burning and Suppression of Solids–II  (BASS-II) Summary Report",
+   "authors": [
+    "Sandra L. Olson",
+    "Paul V. Ferkul",
+    "Subrata Bhattacharjee",
+    "Fletcher J. Miller",
+    "Carlos Fernandez-Pello",
+    "Shmuel Link",
+    "James S. T'ien",
+    "Indrek Wichman"
+   ],
+   "year": 2021,
+   "url": "https://ntrs.nasa.gov/citations/20210011385",
+   "ntrs_id": "20210011385",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf",
+   "sha256": "5ffa911fd9b6356f204646003fb9342e341810dcdfdf5cb15756e7f01ec5f770",
+   "retrieved_at": "2026-11-14T20:37:09.036446+00:00",
+   "campaign_ids": [
+    "bass-ii"
+   ]
+  },
+  {
+   "id": "ntrs:20030067701",
+   "kind": "ntrs",
+   "title": "International Space Station Increment-4/5 Microgravity Environment Summary Report",
+   "authors": [
+    "Jules, Kenol",
+    "Hrovat, Kenneth",
+    "Kelly, Eric",
+    "McPherson, Kevin",
+    "Reckart, Timothy"
+   ],
+   "year": 2003,
+   "url": "https://ntrs.nasa.gov/citations/20030067701",
+   "ntrs_id": "20030067701",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20030067701/downloads/20030067701.pdf",
+   "sha256": "eac01b78e4df65f61e822df62e642606d5d7fec19ac8e95400f55feeee381d6c",
+   "retrieved_at": "2026-11-14T21:12:55.607683+00:00"
+  },
+  {
+   "id": "ntrs:20210011521",
+   "kind": "ntrs",
+   "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires",
+   "authors": [
+    "David L. Urban",
+    "Gary A. Ruff",
+    "Paul Ferkul",
+    "John Easton",
+    "Jay Owens",
+    "Sandra Olson",
+    "Marit Meyer",
+    "Claire Fortenberry",
+    "John Brooker",
+    "John Graf",
+    "Michael Casteel",
+    "Balazs Toth",
+    "Florian Meyer",
+    "Christian Eigenbrod",
+    "James S. T’ien",
+    "Ya-Ting T. Liao",
+    "A. Carlos Fernandez-Pello",
+    "Guillaume Legros",
+    "Augustin Guibaud",
+    "Nickolay Smirnov",
+    "Osamu Fujita",
+    "Grunde Jomaas"
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20210011521",
+   "ntrs_id": "20210011521",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+   "sha256": "d25b394f43774ee79a3223b53e90571be299c8996d1cff2512c76e3308e107f5",
+   "retrieved_at": "2026-11-14T21:12:07.471900+00:00",
+   "year": 2021,
+   "campaign_ids": [
+    "bass"
+   ]
+  },
+  {
+   "id": "ntrs:20150021491",
+   "kind": "ntrs",
+   "title": "Evidence Report: Risk of Hypobaric Hypoxia from the Exploration Atmosphere",
+   "authors": [
+    "Norcross, Jason R.",
+    "Conkin, Johnny",
+    "Wessel, James H., III",
+    "Norsk, Peter",
+    "Law, Jennifer",
+    "Arias, Diana",
+    "Goodwin, Tom",
+    "Crucian, Brian",
+    "Whitmire, Alexandra",
+    "Bloomberg, Jacob",
+    "Platts, Steve",
+    "Ploutz-Snyder, Lori",
+    "Douglas, Grace"
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20150021491",
+   "ntrs_id": "20150021491",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20150021491/downloads/20150021491.pdf",
+   "sha256": "4defa6b98de32ea3f5972afc1a4c3c60eaba26bc842259d9946615c4b1c1bc60",
+   "year": 2015
+  },
+  {
+   "id": "ntrs:20150010425",
+   "kind": "ntrs",
+   "title": "Report on ISS O2 Production, Gas Supply and Partial Pressure Management",
+   "authors": [
+    "Schaezler, Ryan N.",
+    "Cook, Anthony J."
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20150010425",
+   "ntrs_id": "20150010425",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20150010425/downloads/20150010425.pdf",
+   "sha256": "23281e159632dd3f67b53aa797938ad26e4f75def94758ee39e30c3aa90008e1",
+   "year": 2015
+  },
+  {
+   "id": "web:nssdc-planetary-factsheet",
+   "kind": "web_page",
+   "title": "Planetary Fact Sheet (NASA NSSDCA)",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "retrieved_at": "2026-11-15T09:30:00+00:00"
+  }
+ ],
+ "campaigns": [
+  {
+   "id": "bass-ii",
+   "name": "Burning and Suppression of Solids-II (BASS-II)",
+   "agency": "NASA",
+   "platform": "orbital_iss",
+   "facility": "Microgravity Science Glovebox (MSG)",
+   "refs": [
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 9,
+     "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+    }
+   ]
+  },
+  {
+   "id": "bass",
+   "name": "Burning and Suppression of Solids (BASS)",
+   "agency": "NASA",
+   "platform": "orbital_iss",
+   "facility": "Microgravity Science Glovebox (MSG)",
+   "refs": [
+    {
+     "source_id": "ntrs:20210011385",
+     "page": 9,
+     "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+    }
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "id": "pmma",
+   "name": "Polymethylmethacrylate (PMMA)",
+   "aliases": [
+    "PMMA",
+    "acrylic",
+    "Plexiglas",
+    "cast PMMA"
+   ],
+   "phase": "solid",
+   "material_class": "polymer",
+   "formula": "(C5O2H8)n"
+  },
+  {
+   "id": "sibal",
+   "name": "SIBAL cotton-fiberglass fabric",
+   "aliases": [
+    "SIBAL",
+    "Solid Inflammability Boundary at Low Speeds fabric"
+   ],
+   "phase": "solid",
+   "material_class": "fabric"
+  }
+ ],
+ "observations": [
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_02730a57b0ebdc76",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 36,
+    "table": "2.1",
+    "row": "21",
+    "column": "Experiment",
+    "quote": "COMPARISON OF EXTINCTION VELOCITY Vg,cr FOR THIN POLYMETHYLMETHACRYLATE AT 1 atm | O2 21 percent | Experiment 10±5 mm/s"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 21.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.21,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "extinction_flow_velocity",
+    "value": {
+     "value": 10.0,
+     "unit": "mm/s",
+     "basis": "reported",
+     "si_value": 0.01,
+     "si_unit": "m/s",
+     "uncertainty": {
+      "kind": "half_width",
+      "lower_si": 0.005,
+      "upper_si": 0.015,
+      "reported_text": "10±5"
+     }
+    },
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "table",
+    "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
+    "model": "claude-opus-5-5",
+    "extracted_at": "2026-11-15T08:53:18+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "value, row label and caption matched verbatim in PDF text layer"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_a88ff4ab4ed21a42",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 36,
+    "table": "2.1",
+    "row": "16",
+    "column": "Experiment",
+    "quote": "COMPARISON OF EXTINCTION VELOCITY Vg,cr FOR THIN POLYMETHYLMETHACRYLATE AT 1 atm | O2 16 percent | Experiment 30±5 mm/s"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.0,
+     "unit": "percent",
+     "basis": "reported",
+     "si_value": 0.16,
+     "si_unit": "dimensionless"
+    },
+    "pressure": {
+     "value": 1.0,
+     "unit": "atm",
+     "basis": "reported",
+     "si_value": 101325.0,
+     "si_unit": "Pa"
+    },
+    "flow_direction": "opposed",
+    "buoyancy_orientation": "not_applicable"
+   },
+   "outcome": {
+    "quantity": "extinction_flow_velocity",
+    "value": {
+     "value": 30.0,
+     "unit": "mm/s",
+     "basis": "reported",
+     "si_value": 0.03,
+     "si_unit": "m/s",
+     "uncertainty": {
+      "kind": "half_width",
+      "lower_si": 0.025,
+      "upper_si": 0.035,
+      "reported_text": "30±5"
+     }
+    },
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "table",
+    "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
+    "model": "claude-opus-5-5",
+    "extracted_at": "2026-11-15T08:53:18+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "value, row label and caption matched verbatim in PDF text layer"
+    ]
+   }
+  }
+ ]
+}
