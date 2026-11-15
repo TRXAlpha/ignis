@@ -24,8 +24,26 @@ NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combusti
 - **How:** read numbers from report tables and points from report graphs, check every value against the PDF, fit the
   known shape of the burn / goes-out boundary to the flight data with an uncertainty band, score it against the Earth rule
   of thumb, suggest the most informative next experiments, and say "not enough data" for habitats outside what was tested.
-- **Result so far:** from 49 ISS points the lowest oxygen level at which acrylic (PMMA) keeps burning is 13.7 % (90 % band
-  13.5-14.0 %), well below the 15.4 % the Earth test implies. The report itself says ~13.5 %.
+- **Result so far:** from 71 ISS and drop-tower points, the lowest oxygen level at which acrylic (PMMA) keeps burning in
+  microgravity is 13.6 % (90 % band 13.4-13.9 %), well below the 15.4 % the Earth test implies. The report itself says
+  ~13.5 %. Trained on one platform, the model predicts the other better than the Earth rule (leave-one-campaign-out).
+
+Submission texts (video script, deck outline, project page, key numbers): [`docs/DELIVERABLES.md`](docs/DELIVERABLES.md).
+
+## Spec coverage
+
+| Component | Status |
+|---|---|
+| Ingestion: NTRS | Done: `ingest.ntrs` search/fetch, `ingest.fetch_sources` (sha256-checked), verbatim-checked table transcription |
+| Ingestion: plot digitization | Done: `ingest.autodigitize` (ticks + markers -> WPD 4 project + overlay), human WPD path also supported |
+| Ingestion: PSI pages, FLARE | Not ingested: scope narrowed to thin solids / flammability boundary (BASS, BASS-II, Saffire) on 2026-11-14 |
+| Knowledge graph + contradiction detector | Contradiction detector done (`model/contradictions.py`, site "Consistency checks"); graph = the contract's source / campaign / observation links, no separate graph store |
+| Physics-informed surrogate | Done: physics-shaped Bayesian boundary (`model/boundary.py`). Multi-fidelity cut (spec cut order); platforms are tested against each other instead |
+| Leave-one-experiment-out validation in app | Done: leave-one-campaign-out ISS <-> drop tower + 5-fold CV, vs the 1g rule |
+| Bayesian experiment recommender | Done: BALD information gain inside the sourced BASS-II envelope |
+| Habitat risk engine | Done: ISS, exploration 8.2/34, lunar and Mars landers, all sourced; out-of-domain -> INSUFFICIENT DATA |
+| LLM analyst, tool calls only | Done as local CLI (`analyst/`, Ollama), numeric guard refuses numbers not in tool output. Not on the static site (no server, no keys) |
+| Frontend + deploy | Done: https://ignis-flame-one.vercel.app (envelope 3D/2D, provenance, validation, experiments, habitats, checks, timeline) |
 
 ## Scope (decided 2026-11-14)
 

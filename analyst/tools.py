@@ -53,7 +53,9 @@ def min_o2() -> dict:
     if m.get("status") != "ok":
         return {"status": "insufficient_data", "reason": "no model fitted yet"}
     mo = m["min_o2"]
-    return {"min_o2_percent_p50": round(mo["p50"] * 100, 2), "band_percent": [round(mo["p05"] * 100, 2), round(mo["p95"] * 100, 2)],
+    return {"median_estimate_min_o2_percent": round(mo["p50"] * 100, 2),
+            "uncertainty_band_level_percent": 90,
+            "uncertainty_band_min_o2_percent": [round(mo["p05"] * 100, 2), round(mo["p95"] * 100, 2)],
             "at_stretch_rate_per_s": round(mo["at_x"], 2),
             "baselines": [{"label": b["label"], "o2_percent": round(b["o2"] * 100, 2), "source": b["ref"]} for b in m["baselines"]]}
 
