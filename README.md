@@ -5,8 +5,7 @@ IGNIS is an AI system: language-model agents read NASA's reports and raw data, m
 burning in orbit, computer vision re-measures flames from flight imagery, and a tool-calling AI analyst answers questions
 without being able to invent numbers. Every claim traces back to its NASA source page.
 
-**Live site:** https://ignis-ai.study · **Demo video (27 s):** https://youtu.be/V2qWEVosrpI · **Code:** https://github.com/TRXAlpha/ignis
-
+**Live site:** https://ignis-ai.study · **Demo video (27 s):** https://youtu.be/V2qWEVosrpI 
 [![IGNIS demo video: 13.6% O2 in orbit vs 15.4% on Earth](docs/img/demo-thumb.jpg)](https://youtu.be/V2qWEVosrpI)
 
 | Piece | Where |
