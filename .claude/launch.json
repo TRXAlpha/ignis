@@ -1,6 +1,0 @@
-{
-  "version": "0.0.1",
-  "configurations": [
-    {"name": "ignis-web", "runtimeExecutable": ".venv/Scripts/python.exe", "runtimeArgs": ["-m", "http.server", "8790", "--directory", "web/public"], "port": 8790}
-  ]
-}

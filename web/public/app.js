@@ -9,13 +9,13 @@ const $ = (id) => document.getElementById(id);
 
 const COL = {
   bg: '#0b0e14', paper: '#0e1320', grid: '#26304a', text: '#e7ecf4', muted: '#9aa6bb',
-  accent: '#7aa2f7', ok: '#3ddc84', bad: '#ff5d5d', star: '#ffd166', other: '#9aa3b2',
+  accent: '#7aa2f7', ok: '#3ddc84', bad: '#ff6b6b', star: '#ffd166', other: '#9aa6bb',
 };
 const CS = 'YlOrRd';
 const STATE_STYLE = {
-  burns_sustained: { color: '#3ddc84', symbol: 'circle', label: 'burns sustained' },
+  burns_sustained: { color: COL.ok, symbol: 'circle', label: 'burns sustained' },
   blowoff_extinction: { color: '#000000', symbol: 'x', label: 'blowoff extinction' },
-  quench_extinction: { color: '#ff5d5d', symbol: 'circle', label: 'quench extinction' },
+  quench_extinction: { color: COL.bad, symbol: 'circle', label: 'quench extinction' },
 };
 const DEFAULT_STYLE = { color: COL.other, symbol: 'circle' };
 const PLOT_CFG = { responsive: true, displaylogo: false };
@@ -591,7 +591,7 @@ function renderVideo() {
   const cc = v.claim_check;
   const cards = v.rows.map((r) => r.ok ? `<article class="card">
       <h3>Test ${esc(r.test_id)} · ${esc(r.thickness_um)} µm PMMA, ${esc(r.sample_width_cm)} cm wide · ${esc(r.view)}</h3>
-      <img src="${esc(r.figure)}" alt="Tracked flame front for test ${esc(r.test_id)}" style="max-width:100%;border-radius:8px">
+      <img src="${esc(r.figure)}" alt="Tracked flame front for test ${esc(r.test_id)}" style="max-width:100%;border-radius:10px">
       <dl><dt>Spread rate</dt><dd><strong>${fmt(r.spread_mm_s, 2)} ± ${fmt(r.spread_mm_s_sd, 2)} mm/s</strong>
         <span class="muted">(mask sensitivity ${fmt(r.spread_mm_s_scale_range[0], 2)}-${fmt(r.spread_mm_s_scale_range[1], 2)})</span></dd>
       <dt>Front</dt><dd>${fmt(r.front_px_s, 2)} ± ${fmt(r.front_px_s_se, 2)} px/s over ${esc(r.n_stills)} stills</dd>
