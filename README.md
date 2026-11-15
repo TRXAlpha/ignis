@@ -2,7 +2,7 @@
 
 NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combustion results into one cited, queryable model.
 
-**Live:** https://ignis-flame-one.vercel.app
+**Live:** https://ignis-flame-one.vercel.app · **Code:** https://github.com/TRXAlpha/ignis
 
 | Piece | Where |
 |---|---|
