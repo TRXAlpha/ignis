@@ -4,7 +4,7 @@
 
 NASA Space Apps Challenge 2026 · *Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data*
 
-**[Live site](https://ignis-ai.study)** · **[Demo video (27 s)](https://youtu.be/V2qWEVosrpI)** · **[Code](https://github.com/TRXAlpha/ignis)**
+**[Live site](https://ignis-ai.study)** · **[Demo video (27 s)](https://youtu.be/V2qWEVosrpI)**
 
 [![IGNIS demo video: 13.6% O2 in orbit vs 15.4% on Earth](docs/img/demo-thumb.jpg)](https://youtu.be/V2qWEVosrpI)
 
