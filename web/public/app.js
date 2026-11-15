@@ -795,4 +795,30 @@ function renderFooter() {
   $('footerModel').textContent = m ? `model ${m.model_id} ${m.model_version}` : 'model: no data yet';
 }
 
-boot().then(initReveal);
+// ---------- presentation mode: ?demo=1, number keys glide to each talking point ----------
+function initDemoMode() {
+  if (new URLSearchParams(location.search).get('demo') !== '1') return;
+  const stops = {
+    1: { sel: '#top' },                       // intro + challenge: hero with the flight flame
+    2: { sel: '#ai' },                        // name + tagline: How the AI Works
+    3: { sel: '#stats' },                     // key insight: 13.6 % vs 15.4 %
+    4: { sel: '#envelope', view: '2d' },      // the learned boundary, 2D with the 15.4 % line
+    5: { sel: '#analyst' },                   // the AI analyst
+    6: { sel: '#habitats' },                  // impact: Moon and Mars air, no data yet
+    7: { sel: '#experiments' },               // future: next experiments
+  };
+  document.querySelectorAll('.reveal').forEach((e) => e.classList.add('in'));   // no fade-ins mid-recording
+  addEventListener('keydown', (ev) => {
+    const stop = stops[ev.key];
+    if (!stop || (ev.target instanceof Element && ev.target.closest('input, select, textarea'))) return;
+    ev.preventDefault();
+    if (stop.view) {
+      const b = document.querySelector(`.toggle button[data-view="${stop.view}"]`);
+      if (b && b.getAttribute('aria-pressed') !== 'true') b.click();
+    }
+    const el = document.querySelector(stop.sel);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
+boot().then(() => { initReveal(); initDemoMode(); });
