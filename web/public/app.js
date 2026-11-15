@@ -111,6 +111,92 @@ async function boot() {
   }
 }
 
+// 2D boundary. group = model.json groups entry (material/geometry subgroup), or null for the primary fit.
+function draw2D(group) {
+  const m = D.model;
+  const recItems = D.recommendations?.items || [];
+  const isGroup = !!group;
+  const pts = isGroup ? group.points : m.points;
+  const bnd = isGroup ? group.boundary : m.boundary;
+  const xs = bnd.x;
+  const xUnit = isGroup ? (group.key.x_var === 'flow_velocity' ? 'cm/s' : '1/s') : '1/s';
+  const xLabel = isGroup ? (group.key.x_var === 'flow_velocity' ? 'Flow velocity' : 'Stretch rate a') : 'Stretch rate a';
+  const baselines = isGroup ? [] : (m.baselines || []);
+  const cs = { bg: COL.bg, paper: COL.paper, text: COL.text, grid: COL.grid };
+
+  const traces = [];
+  // 90% band: p05 (no fill) then p95 filled back to p05
+  if (bnd && bnd.x) {
+    traces.push({ type: 'scatter', mode: 'lines', x: xs, y: bnd.o2_p05.map((v) => v * 100), line: { width: 0 }, hoverinfo: 'skip', showlegend: false });
+    traces.push({ type: 'scatter', mode: 'lines', x: xs, y: bnd.o2_p95.map((v) => v * 100), line: { width: 0 }, fill: 'tonexty', fillcolor: 'rgba(122,162,247,0.22)', name: '90% band (p05 to p95)', hoverinfo: 'skip' });
+    traces.push({ type: 'scatter', mode: 'lines', x: xs, y: bnd.o2_p50.map((v) => v * 100), line: { color: COL.accent, width: 3 }, name: 'O2 boundary (p50)', hovertemplate: `x=%{x:.3g} ${xUnit}<br>p50 O2=%{y:.1f}%<extra></extra>` });
+  }
+  // observation points, grouped by state
+  const byState = new Map();
+  for (const p of pts) {
+    if (!byState.has(p.state)) byState.set(p.state, []);
+    byState.get(p.state).push(p);
+  }
+  for (const [state, list] of byState) {
+    const st = STATE_STYLE[state] || { ...DEFAULT_STYLE, label: state };
+    if (state === 'blowoff_extinction') {
+      // white disc behind the black X so it stays visible on the heatmap
+      traces.push({ type: 'scatter', mode: 'markers', x: list.map((p) => p.x), y: list.map((p) => p.y * 100), marker: { symbol: 'circle', size: 16, color: '#ffffff', opacity: 0.55 }, hoverinfo: 'skip', showlegend: false });
+    }
+    traces.push({
+      type: 'scatter', mode: 'markers', name: st.label || state,
+      x: list.map((p) => p.x), y: list.map((p) => p.y * 100),
+      customdata: list.map((p) => p.id),
+      text: list.map((p) => `${p.id}<br>${p.series || p.campaign || ''}`),
+      marker: state === 'blowoff_extinction'
+        ? { symbol: 'x', size: 13, color: '#000000', line: { color: '#000000', width: 3 } }
+        : { symbol: st.symbol, size: 11, color: st.color, line: { color: '#000', width: 1 } },
+      hovertemplate: `%{text}<br>${esc(st.label || state)}<br>x=%{x:.3g} ${xUnit}, O2=%{y:.1f}%<br><i>click for provenance</i><extra></extra>`,
+    });
+  }
+  // next-experiment stars (primary fit only; recommendations are per primary constraint set)
+  if (!isGroup && recItems.length) {
+    traces.push({
+      type: 'scatter', mode: 'markers', name: 'Next experiments',
+      x: recItems.map((r) => r.x), y: recItems.map((r) => (r.conditions?.o2_mole_fraction ?? NaN) * 100),
+      customdata: recItems.map((r) => `rec:${r.rank}`),
+      text: recItems.map((r) => `Rank ${r.rank}<br>p_burns ${pct(r.p_burns, 0)}<br>EIG ${fmt(r.expected_information_gain_nats, 2)} nats`),
+      marker: { symbol: 'star', size: 18, color: COL.star, line: { color: '#000', width: 1 } },
+      hovertemplate: '%{text}<br>a=%{x:.3g} 1/s, O2=%{y:.1f}%<extra></extra>',
+    });
+  }
+  // baselines
+  const shapesText = [];
+  const xMin = Math.min(...xs), xMax = Math.max(...xs);
+  for (const bl of baselines) {
+    const y = bl.o2 * 100;
+    traces.push({ type: 'scatter', mode: 'lines', x: [xMin, xMax], y: [y, y], line: { color: COL.muted, width: 1.5, dash: 'dash' }, showlegend: false, hoverinfo: 'skip' });
+    shapesText.push({ x: xMax, y, xref: 'x', yref: 'y', text: `${bl.label} (${fmt(y, 1)}%)`, showarrow: false, xanchor: 'right', yanchor: 'bottom', font: { color: COL.muted, size: 11 } });
+  }
+  const allY = pts.map((p) => p.y * 100).concat(bnd ? bnd.o2_p05.map((v) => v * 100) : [], bnd ? bnd.o2_p95.map((v) => v * 100) : []);
+  const yLo = Math.min(...allY) - 0.5, yHi = Math.max(...allY) + 0.5;
+
+  const layout2d = {
+    paper_bgcolor: cs.paper, plot_bgcolor: cs.paper, font: { color: cs.text },
+    margin: { l: 56, r: 10, t: 10, b: 50 }, height: 500,
+    xaxis: {
+      type: 'log', title: `${xLabel} (${xUnit})`, color: cs.text, gridcolor: cs.grid, zerolinecolor: cs.grid,
+      range: [Math.log10(xMin) - 0.05, Math.log10(xMax) + 0.05], autorange: false,
+    },
+    yaxis: { title: 'O2 (%)', range: [yLo, yHi], color: cs.text, gridcolor: cs.grid },
+    legend: { orientation: 'h', x: 0, y: -0.2, font: { color: cs.text, size: 11 } },
+    annotations: shapesText,
+    hovermode: 'closest',
+  };
+  Plotly.react('plot2d', traces, layout2d, PLOT_CFG).then((el) => {
+    el.removeAllListeners && el.removeAllListeners('plotly_click');
+    el.on('plotly_click', (ev) => {
+      const id = ev.points?.[0]?.customdata;
+      if (typeof id === 'string' && !id.startsWith('rec:')) openProvenance(id);
+    });
+  });
+}
+
 // ---------- 2. envelope ----------
 let envelopeReady = false;
 function renderEnvelope() {
@@ -159,85 +245,29 @@ function renderEnvelope() {
     },
   }, PLOT_CFG);
 
-  // 2D boundary
-  const traces = [];
-  // heatmap
-  traces.push({
-    type: 'heatmap', x: xs, y: ysPct, z: m.grid.p_burns, zmin: 0, zmax: 1, colorscale: CS,
-    colorbar: { title: 'P(burns)', tickformat: '.0%', tickfont: { color: cs.text }, titlefont: { color: cs.text } },
-    hovertemplate: 'a=%{x:.3g} 1/s<br>O2=%{y:.1f}%<br>P(burns)=%{z:.2f}<extra></extra>',
-    name: 'P(burns) grid', showlegend: false,
-  });
-  // 90% band: p05 (no fill) then p95 filled back to p05
-  const b = m.boundary;
-  if (b && b.x) {
-    traces.push({ type: 'scatter', mode: 'lines', x: b.x, y: b.o2_p05.map((v) => v * 100), line: { width: 0 }, hoverinfo: 'skip', showlegend: false });
-    traces.push({ type: 'scatter', mode: 'lines', x: b.x, y: b.o2_p95.map((v) => v * 100), line: { width: 0 }, fill: 'tonexty', fillcolor: 'rgba(122,162,247,0.22)', name: '90% band (p05 to p95)', hoverinfo: 'skip' });
-    traces.push({ type: 'scatter', mode: 'lines', x: b.x, y: b.o2_p50.map((v) => v * 100), line: { color: COL.accent, width: 3 }, name: 'O2 boundary (p50)', hovertemplate: 'a=%{x:.3g} 1/s<br>p50 O2=%{y:.1f}%<extra></extra>' });
+  // 2D boundary (primary fit or selected group)
+  const groups = m.groups || [];
+  const sel = $('groupSelect');
+  if (groups.length) {
+    $('groupPicker').hidden = false;
+    sel.innerHTML = '<option value="">Primary fit (PMMA rods, stretch rate)</option>'
+      + groups.map((g, i) => `<option value="${i}">${esc(g.label)}</option>`).join('');
+    $('groupInfo').textContent = `${(m.points || []).length} points`;
+    sel.onchange = () => {
+      const g = sel.value === '' ? null : groups[Number(sel.value)];
+      draw2D(g);
+      if (g) {
+        const nc = Object.keys(g.n_by_campaign).length;
+        $('groupInfo').textContent = `${g.n} points, ${nc} campaign${nc === 1 ? '' : 's'}`
+          + (g.min_o2 ? ` · min O2 p50 ${pct(g.min_o2.p50)}${g.min_o2.min_at_edge ? ' (at edge of data range)' : ''}` : '');
+      } else {
+        $('groupInfo').textContent = `${(m.points || []).length} points`;
+      }
+    };
+  } else {
+    $('groupPicker').hidden = true;
   }
-  // observation points, grouped by state
-  const byState = new Map();
-  for (const p of m.points) {
-    if (!byState.has(p.state)) byState.set(p.state, []);
-    byState.get(p.state).push(p);
-  }
-  for (const [state, list] of byState) {
-    const st = STATE_STYLE[state] || { ...DEFAULT_STYLE, label: state };
-    if (state === 'blowoff_extinction') {
-      // white disc behind the black X so it stays visible on the heatmap
-      traces.push({ type: 'scatter', mode: 'markers', x: list.map((p) => p.x), y: list.map((p) => p.y * 100), marker: { symbol: 'circle', size: 16, color: '#ffffff', opacity: 0.55 }, hoverinfo: 'skip', showlegend: false });
-    }
-    traces.push({
-      type: 'scatter', mode: 'markers', name: st.label || state,
-      x: list.map((p) => p.x), y: list.map((p) => p.y * 100),
-      customdata: list.map((p) => p.id),
-      text: list.map((p) => `${p.id}<br>${p.series || ''}`),
-      marker: state === 'blowoff_extinction'
-        ? { symbol: 'x', size: 13, color: '#000000', line: { color: '#000000', width: 3 } }
-        : { symbol: st.symbol, size: 11, color: st.color, line: { color: '#000', width: 1 } },
-      hovertemplate: `%{text}<br>${esc(st.label || state)}<br>a=%{x:.3g} 1/s, O2=%{y:.1f}%<br><i>click for provenance</i><extra></extra>`,
-    });
-  }
-  // next-experiment stars
-  if (recItems.length) {
-    traces.push({
-      type: 'scatter', mode: 'markers', name: 'Next experiments',
-      x: recItems.map((r) => r.x), y: recItems.map((r) => (r.conditions?.o2_mole_fraction ?? NaN) * 100),
-      customdata: recItems.map((r) => `rec:${r.rank}`),
-      text: recItems.map((r) => `Rank ${r.rank}<br>p_burns ${pct(r.p_burns, 0)}<br>EIG ${fmt(r.expected_information_gain_nats, 2)} nats`),
-      marker: { symbol: 'star', size: 18, color: COL.star, line: { color: '#000', width: 1 } },
-      hovertemplate: '%{text}<br>a=%{x:.3g} 1/s, O2=%{y:.1f}%<extra></extra>',
-    });
-  }
-  // baselines
-  const shapesText = [];
-  const xMin = Math.min(...xs), xMax = Math.max(...xs);
-  for (const bl of m.baselines || []) {
-    const y = bl.o2 * 100;
-    traces.push({ type: 'scatter', mode: 'lines', x: [xMin, xMax], y: [y, y], line: { color: COL.muted, width: 1.5, dash: 'dash' }, showlegend: false, hoverinfo: 'skip' });
-    shapesText.push({ x: xMax, y, xref: 'x', yref: 'y', text: `${bl.label} (${fmt(y, 1)}%)`, showarrow: false, xanchor: 'right', yanchor: 'bottom', font: { color: COL.muted, size: 11 } });
-  }
-  const allY = ysPct.concat(m.points.map((p) => p.y * 100));
-  const yLo = Math.min(...allY) - 0.5, yHi = Math.max(...allY) + 0.5;
-
-  const layout2d = {
-    paper_bgcolor: cs.paper, plot_bgcolor: cs.paper, font: { color: cs.text },
-    margin: { l: 56, r: 10, t: 10, b: 50 }, height: 500,
-    xaxis: {
-      type: 'log', title: 'Stretch rate a (1/s)', color: cs.text, gridcolor: cs.grid, zerolinecolor: cs.grid,
-      range: [Math.log10(xMin) - 0.05, Math.log10(xMax) + 0.05], autorange: false,
-    },
-    yaxis: { title: 'O2 (%)', range: [yLo, yHi], color: cs.text, gridcolor: cs.grid },
-    legend: { orientation: 'h', x: 0, y: -0.2, font: { color: cs.text, size: 11 } },
-    annotations: shapesText,
-    hovermode: 'closest',
-  };
-  Plotly.newPlot('plot2d', traces, layout2d, PLOT_CFG).then((el) => {
-    el.on('plotly_click', (ev) => {
-      const id = ev.points?.[0]?.customdata;
-      if (typeof id === 'string' && !id.startsWith('rec:')) openProvenance(id);
-    });
-  });
+  draw2D(null);
   envelopeReady = true;
 
   document.querySelectorAll('.toggle button').forEach((btn) => {

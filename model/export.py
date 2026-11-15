@@ -46,19 +46,40 @@ def loc(key: str) -> dict:
     return {"source_id": BASS2, "page": page, "quote": " ".join(snips)}
 
 
-def boundary_points(bundle: dict):
+def x_of(o: dict):
+    """(x_var, x value) for a flame-state row: stretch rate (1/s) or flow velocity (cm/s), else None."""
+    extra = {e["name"]: e["quantity"]["si_value"] for e in o["conditions"].get("extra", [])}
+    if "stretch_rate" in extra:
+        return "stretch_rate", extra["stretch_rate"]
+    if "flow_velocity" in extra:
+        return "flow_velocity", extra["flow_velocity"] * 100  # SI m/s -> cm/s
+    return None, None
+
+
+def flame_rows(bundle: dict) -> list[dict]:
+    """All usable flame-state rows with their group key (material_id, geometry, flow_direction, x_var)."""
     rows = []
     for o in bundle["observations"]:
         if o["qa"]["status"] not in ("accepted", "human_verified") or o["outcome"]["quantity"] != "flame_state":
             continue
         st = o["outcome"]["state"]
-        extra = {e["name"]: e["quantity"]["si_value"] for e in o["conditions"].get("extra", [])}
-        if st not in STATES_BURN | STATES_EXT or "stretch_rate" not in extra or "o2_mole_fraction" not in o["conditions"]:
+        if st not in STATES_BURN | STATES_EXT or "o2_mole_fraction" not in o["conditions"]:
             continue
+        xv, xval = x_of(o)
+        if xv is None:
+            continue
+        mat = o["fuel"].get("material_id")
+        geo = o["fuel"].get("geometry")
+        flow = o["conditions"].get("flow_direction")
         rows.append({"id": o["id"], "campaign": o["experiment"]["campaign_id"], "series": o["locator"].get("series"),
-                     "state": st, "a": extra["stretch_rate"], "x": o["conditions"]["o2_mole_fraction"]["si_value"],
-                     "y": 1.0 if st in STATES_BURN else 0.0, "material": o["fuel"]["material_id"]})
+                     "state": st, "a": xval, "x": o["conditions"]["o2_mole_fraction"]["si_value"],
+                     "y": 1.0 if st in STATES_BURN else 0.0, "material": mat,
+                     "key": (mat, geo, flow, xv)})
     return rows
+
+
+def boundary_points(bundle: dict):
+    return [r for r in flame_rows(bundle) if r["key"][3] == "stretch_rate"]
 
 
 def _arr(rows, k):
@@ -92,6 +113,55 @@ def _scores(f, te):
 
 
 SCHEMA_METRICS = ("median_abs_rel_error", "brier")
+
+
+def fit_group(rows: list[dict]) -> dict | None:
+    """Fit one group; returns the model.json['groups'] entry or None with (reason) if it does not qualify."""
+    n_ext, n_burn = sum(r["y"] == 0 for r in rows), sum(r["y"] == 1 for r in rows)
+    mat, geo, flow, xv = rows[0]["key"]
+    key = {"material_id": mat, "geometry": geo, "flow_direction": flow, "x_var": xv}
+    if len(rows) < 6 or n_ext < 2 or n_burn < 1:
+        return None
+    f = bm.fit(_arr(rows, "a"), _arr(rows, "x") * 100, _arr(rows, "y"))
+    a_lo, a_hi = float(_arr(rows, "a").min()), float(_arr(rows, "a").max())
+    gx = np.logspace(np.log10(a_lo), np.log10(a_hi), 60)
+    band = bm.boundary_band(f, gx)
+    mo = bm.min_o2(f, gx)
+    at_edge = not (gx[1] < mo["at_x"] < gx[-2])  # argmin at the first/last grid point -> edge of data range
+    by_camp = {}
+    for r in rows:
+        by_camp[r["campaign"]] = by_camp.get(r["campaign"], 0) + 1
+    return {"key": key, "n": len(rows), "n_by_campaign": by_camp,
+            "min_o2": {**{k: round(v / 100, 5) for k, v in mo.items() if k != "at_x"},
+                       "at_x": round(mo["at_x"], 4), "min_at_edge": at_edge},
+            "boundary": {"x": [round(v, 5) for v in gx],
+                         **{f"o2_{k}": [round(float(v) / 100, 5) for v in vals] for k, vals in band.items()}},
+            "points": [{"id": r["id"], "x": round(float(r["a"]), 5), "y": round(float(r["x"]), 5),
+                        "state": r["state"], "campaign": r["campaign"]} for r in rows],
+            "laplace_ok": bool(f.converged)}
+
+
+def group_folds(bundle: dict, folds: list) -> None:
+    """Leave-one-campaign-out per qualifying group (>= 2 campaigns), appended to validation folds."""
+    groups = {}
+    for r in flame_rows(bundle):
+        groups.setdefault(r["key"], []).append(r)
+    for key, rows in sorted(groups.items(), key=lambda kv: [str(v) for v in kv[0]]):
+        camps = sorted({r["campaign"] for r in rows})
+        if len(camps) < 2:
+            continue
+        mat, geo, flow, xv = key
+        label = "-".join(str(v) for v in key)
+        for c in camps:
+            tr, te = [r for r in rows if r["campaign"] != c], [r for r in rows if r["campaign"] == c]
+            if len(tr) < 8 or not te:
+                continue
+            f = bm.fit(_arr(tr, "a"), _arr(tr, "x") * 100, _arr(tr, "y"))
+            m, b, _, _ = _scores(f, te)
+            folds.append({"model_id": MODEL_ID, "model_version": VERSION, "fold_id": f"loco-{label}-{c}",
+                          "held_out_campaign_id": c, "outcome_quantity": "flame_state", "n_train": len(tr),
+                          "n_test": len(te), "metrics": {k: m[k] for k in SCHEMA_METRICS if k in m},
+                          "baseline": {k: b[k] for k in SCHEMA_METRICS if k in b}})
 
 
 def validate(rows, sources):
@@ -261,6 +331,26 @@ def main() -> int:
                      boundary={"x": gx.tolist(), **{f"o2_{k}": (v / 100).round(5).tolist() for k, v in band.items()}},
                      min_o2={k: (v / 100 if k != "at_x" else v) for k, v in mo.items()})
         val = validate(rows, sources)
+        # multi-group fits: (material, geometry, flow_direction, x_var) with >= 6 rows, 2 ext, 1 burn
+        all_rows = flame_rows(bundle)
+        model["groups"], groups_skipped = [], []
+        for key, grows in sorted(((k, [r for r in all_rows if r["key"] == k]) for k in {r["key"] for r in all_rows}),
+                                 key=lambda kv: [str(v) for v in kv[0]]):
+            g = fit_group(grows)
+            if g is None:
+                n_ext, n_burn = sum(r["y"] == 0 for r in grows), sum(r["y"] == 1 for r in grows)
+                why = (f"only {len(grows)} rows (need >= 6)" if len(grows) < 6
+                       else f"only {n_ext} extinction rows (need >= 2)" if n_ext < 2
+                       else f"only {n_burn} burning rows (need >= 1)")
+                groups_skipped.append({**{f"key_{k}": v for k, v in dict(zip(("material_id", "geometry", "flow_direction", "x_var"), key)).items()},
+                                       "n": len(grows), "reason": why})
+                continue
+            g["label"] = " / ".join(str(v) for v in key if v is not None)
+            model["groups"].append(g)
+        model["groups_skipped"] = groups_skipped
+        group_folds(bundle, val["folds"])
+        for fold in val["folds"]:
+            assert not schema_errors(fold, "ValidationFold"), schema_errors(fold, "ValidationFold")
         by = {}
         for r in rows:
             by[r["campaign"]] = by.get(r["campaign"], 0) + 1

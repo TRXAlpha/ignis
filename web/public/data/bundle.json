@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T09:37:07+00:00",
+ "generated_at": "2026-11-15T10:59:40+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -154,6 +154,56 @@
    "ntrs_id": "20000017932",
    "pdf_url": "https://ntrs.nasa.gov/api/citations/20000017932/downloads/20000017932.pdf",
    "sha256": "0277ec326ebfb6309114dfefaa294f3ca3402364266a83bcc671802337df47f6"
+  },
+  {
+   "id": "psi:PSI-25",
+   "kind": "psi_dataset",
+   "title": "Burning and Suppression of Solids - II",
+   "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+   "doi": "10.60555/4qc4-de67",
+   "license": "CC0-1.0",
+   "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+   "retrieved_at": "2026-11-15T10:33:20.487184+00:00"
+  },
+  {
+   "id": "psi:PSI-26",
+   "kind": "psi_dataset",
+   "title": "Burning and Suppression of Solids",
+   "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+   "doi": "10.60555/58h4-dy80",
+   "license": "CC0-1.0",
+   "sha256": "ccfc3c54d948b64a1c5d2596a63c7c8019e51df0c91a1d62f039f48fa28c300f",
+   "retrieved_at": "2026-11-15T10:34:17.619967+00:00"
+  },
+  {
+   "id": "psi:PSI-98",
+   "kind": "psi_dataset",
+   "title": "Spacecraft Fire Safety Experiment-I",
+   "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+   "doi": "10.60555/0t15-1z43",
+   "license": "CC0-1.0",
+   "sha256": "c01f29c62455f0a3b512290ab85e5687ecded326733189f002f580368402308d",
+   "retrieved_at": "2026-11-15T10:34:23.580052+00:00"
+  },
+  {
+   "id": "psi:PSI-99",
+   "kind": "psi_dataset",
+   "title": "Spacecraft Fire Experiment-II",
+   "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+   "doi": "10.60555/2chp-m469",
+   "license": "CC0-1.0",
+   "sha256": "3c24390b9ef86f3d1ebaab911a1a3cc95a8759aebf42062371370e6d4b31b8ac",
+   "retrieved_at": "2026-11-15T10:34:28.373171+00:00"
+  },
+  {
+   "id": "psi:PSI-100",
+   "kind": "psi_dataset",
+   "title": "Spacecraft Fire Experiment-III",
+   "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+   "doi": "10.60555/040q-4h36",
+   "license": "CC0-1.0",
+   "sha256": "4d3c717ec20dd0247db670b2784a9fd7d746788bc54a936f80693e48eb8cd117",
+   "retrieved_at": "2026-11-15T10:34:33.926086+00:00"
   }
  ],
  "campaigns": [
@@ -322,7 +372,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -410,7 +460,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -492,7 +542,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -613,7 +663,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -734,7 +784,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -855,7 +905,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -976,7 +1026,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1097,7 +1147,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1218,7 +1268,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1339,7 +1389,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1460,7 +1510,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1581,7 +1631,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1702,7 +1752,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1823,7 +1873,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1944,7 +1994,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2065,7 +2115,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2186,7 +2236,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2307,7 +2357,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2428,7 +2478,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2549,7 +2599,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2670,7 +2720,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2791,7 +2841,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2912,7 +2962,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3033,7 +3083,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3154,7 +3204,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3275,7 +3325,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3396,7 +3446,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3517,7 +3567,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3638,7 +3688,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3759,7 +3809,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3880,7 +3930,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4001,7 +4051,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4122,7 +4172,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4243,7 +4293,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4364,7 +4414,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4485,7 +4535,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4606,7 +4656,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4727,7 +4777,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4848,7 +4898,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4969,7 +5019,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5090,7 +5140,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5211,7 +5261,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5332,7 +5382,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5453,7 +5503,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5574,7 +5624,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5695,7 +5745,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5816,7 +5866,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5937,7 +5987,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6058,7 +6108,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6179,7 +6229,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6300,7 +6350,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6421,7 +6471,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6542,7 +6592,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6663,7 +6713,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6784,7 +6834,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6905,7 +6955,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7026,7 +7076,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7147,7 +7197,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7268,7 +7318,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7389,7 +7439,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7510,7 +7560,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7632,7 +7682,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7754,7 +7804,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7876,7 +7926,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7998,7 +8048,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8120,7 +8170,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8242,7 +8292,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8364,7 +8414,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8486,7 +8536,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8608,7 +8658,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8730,7 +8780,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8852,7 +8902,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8974,7 +9024,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:05+00:00",
+    "extracted_at": "2026-11-15T10:59:38+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9095,7 +9145,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9214,7 +9264,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9333,7 +9383,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9452,7 +9502,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9571,7 +9621,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9690,7 +9740,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9809,7 +9859,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9928,7 +9978,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10047,7 +10097,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10166,7 +10216,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10285,7 +10335,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10404,7 +10454,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10523,7 +10573,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10642,7 +10692,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10761,7 +10811,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10880,7 +10930,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T09:37:07+00:00",
+    "extracted_at": "2026-11-15T10:59:40+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"

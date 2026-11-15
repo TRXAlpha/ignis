@@ -48,6 +48,36 @@
     ]
   },
   {
+    "id": "saffire-ii",
+    "name": "Spacecraft Fire Experiment-II (Saffire-II, Cygnus OA-6)",
+    "agency": "NASA",
+    "platform": "orbital_spacecraft",
+    "facility": "Saffire flow duct aboard an unoccupied Cygnus resupply vehicle",
+    "refs": [
+      {
+        "source_id": "psi:PSI-99",
+        "dataset_path": "PSI-99.csv",
+        "row": "2-1",
+        "column": "Sample Number"
+      }
+    ]
+  },
+  {
+    "id": "saffire-ii-1g-ref",
+    "name": "Saffire-II 1g ground reference tests",
+    "agency": "NASA",
+    "platform": "ground_1g",
+    "parent_id": "saffire-ii",
+    "refs": [
+      {
+        "source_id": "psi:PSI-99",
+        "dataset_path": "PSI-99.csv",
+        "row": "2-1",
+        "column": "1-g Burn Length"
+      }
+    ]
+  },
+  {
     "id": "bass-ii-zgrf",
     "name": "BASS-II complementary drop tests (NASA GRC Zero Gravity Research Facility, 5.18 s)",
     "agency": "NASA",

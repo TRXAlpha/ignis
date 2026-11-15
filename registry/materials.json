@@ -21,5 +21,24 @@
     ],
     "phase": "solid",
     "material_class": "fabric"
+  },
+  {
+    "id": "nomex",
+    "name": "Nomex (meta-aramid fabric)",
+    "aliases": [
+      "Nomex",
+      "meta-aramid"
+    ],
+    "phase": "solid",
+    "material_class": "fabric"
+  },
+  {
+    "id": "silicone",
+    "name": "Silicone (Saffire-II sample material)",
+    "aliases": [
+      "Silicone"
+    ],
+    "phase": "solid",
+    "material_class": "polymer"
   }
 ]
