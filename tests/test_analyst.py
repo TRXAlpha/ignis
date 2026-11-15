@@ -27,3 +27,11 @@ def test_tool_then_answer_and_fabrication_caught(monkeypatch):
     assert ok["ok"] and ok["calls"][0]["result"] == {"min_o2_percent_p50": 13.62}
     bad = ask("q", chat=_fake_llm([call, {"content": "About 11.8 % O2."}]))
     assert not bad["ok"] and "11.8" in bad["reason"]
+
+
+def test_numbers_from_tool_descriptions_are_not_flagged(monkeypatch):
+    import analyst.tools as t
+    monkeypatch.setitem(t.TOOLS, "p_burns", lambda **k: {"status": "insufficient_data"})
+    call = {"tool_calls": [{"id": "1", "function": {"name": "p_burns", "arguments": '{"o2_percent": 34}'}}]}
+    r = ask("q", chat=_fake_llm([call, {"content": "Give a flow for the 6.35-mm rod first."}]))
+    assert r["ok"], r

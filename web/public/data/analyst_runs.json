@@ -1,0 +1,97 @@
+{
+ "recorded_at": "2026-11-15T13:44:33+00:00",
+ "runtime": "Ollama on a local machine (no cloud API, no keys)",
+ "guard": "Any number in an answer that is not in a tool result gets the answer refused.",
+ "runs": [
+  {
+   "model": "gemmaclaude:latest",
+   "question": "What is the lowest oxygen level at which PMMA keeps burning in microgravity, and how does it compare to the normal-gravity limit?",
+   "ok": true,
+   "answer": "The lowest oxygen level at which PMMA keeps burning in microgravity is estimated to be **13.62%** (median estimate), with an uncertainty band between **13.4% and 13.85%**.\n\nThis compares to:\n*   **Normal-gravity upward-spread limit:** The reported upward flame spread limit was **15.4% O2** at 1g, which was cited as \"significantly lower than the observed upward flame spread limit\" (ntrs:20210011385, page 84).\n*   **BASS-II reported minimum:** A previous report indicated a minimum of **~13.5% O2** (ntrs:20210011385, page 83).",
+   "reason": null,
+   "review": "The numbers are right. The quoted phrase is misattributed: in the report it says the microgravity minimum is significantly lower than the 15.4 % upward limit, not that the limit itself is lower.",
+   "calls": [
+    {
+     "tool": "min_o2",
+     "args": "{}",
+     "result": "{\"median_estimate_min_o2_percent\": 13.62, \"uncertainty_band_level_percent\": 90, \"uncertainty_band_min_o2_percent\": [13.4, 13.85], \"at_stretch_rate_per_s\": 9.94, \"baselines\": [{\"label\": \"1g upward-spread limit (15.4 % O2)\", \"o2_percent\": 15.4, \"source\": {\"source_id\": \"ntrs:20210011385\", \"page\": 84, \"quote\": \"significantly lower than the observed upward flame spread limit of 15.4 percent O2\"}}, {\"la…"
+    }
+   ]
+  },
+  {
+   "model": "gemmaclaude:latest",
+   "question": "Is the 8.2 psia, 34 percent oxygen exploration atmosphere safe for PMMA?",
+   "ok": true,
+   "answer": "The `p_burns` tool requires either a stretch rate ($\\text{1/s}$) or a flow rate ($\\text{cm/s}$, $\\text{6.35-mm rod}$) to run, in addition to the oxygen percentage you provided (O2 = 34%).\n\nPlease provide one of those two parameters so I can determine if PMMA is safe for that specific environment.",
+   "reason": null,
+   "review": "Safe but unhelpful: the model asked for a flow instead of using the habitats tool, which reports INSUFFICIENT DATA for this atmosphere (see the next run).",
+   "calls": [
+    {
+     "tool": "p_burns",
+     "args": "{\"o2_percent\":34}",
+     "result": "{\"error\": \"give stretch_rate_per_s or flow_cm_s\"}"
+    }
+   ]
+  },
+  {
+   "model": "gemmaclaude:latest",
+   "question": "Which experiment should be run next, and why?",
+   "ok": true,
+   "answer": "The next recommended experiment is to test PMMA rods at an oxygen concentration of **15.7%** and a flow rate of **0.23 cm/s**.\n\nThis experiment has the highest expected information gain (0.2169 nats) according to the model, meaning it will most effectively reduce uncertainty in our current understanding of PMMA rod burning behavior under microgravity conditions. The tool indicates that this boundary is \"most uncertain here: P(burns) = 0.54 +/- 0.30 for the 6.35-mm rod (a = 1.1 1/s).\"\n\n**Key parameters:**\n*   **O₂ concentration:** 15.7%\n*   **Flow rate:** 0.23 cm/s\n*   **P(sustained burning):** 0.5377",
+   "reason": null,
+   "review": null,
+   "calls": [
+    {
+     "tool": "recommendations",
+     "args": "{}",
+     "result": "{\"constraint_set\": \"BASS-II flow duct in the ISS Microgravity Science Glovebox (rods)\", \"items\": [{\"rank\": 1, \"o2_percent\": 15.7, \"flow_cm_s\": 0.23, \"p_burns\": 0.5377, \"info_gain_nats\": 0.2169, \"why\": \"Boundary most uncertain here: P(burns) = 0.54 +/- 0.30 for the 6.35-mm rod (a = 1.1 1/s).\"}, {\"rank\": 2, \"o2_percent\": 16.3, \"flow_cm_s\": 38.14, \"p_burns\": 0.4869, \"info_gain_nats\": 0.1945, \"why\": \"…"
+    },
+    {
+     "tool": "recommendations",
+     "args": "{}",
+     "result": "{\"constraint_set\": \"BASS-II flow duct in the ISS Microgravity Science Glovebox (rods)\", \"items\": [{\"rank\": 1, \"o2_percent\": 15.7, \"flow_cm_s\": 0.23, \"p_burns\": 0.5377, \"info_gain_nats\": 0.2169, \"why\": \"Boundary most uncertain here: P(burns) = 0.54 +/- 0.30 for the 6.35-mm rod (a = 1.1 1/s).\"}, {\"rank\": 2, \"o2_percent\": 16.3, \"flow_cm_s\": 38.14, \"p_burns\": 0.4869, \"info_gain_nats\": 0.1945, \"why\": \"…"
+    }
+   ]
+  },
+  {
+   "model": "gemmaclaude:latest",
+   "question": "Does silicone burn differently on Earth than in orbit? Give numbers.",
+   "ok": true,
+   "answer": "Yes, silicone burns differently in microgravity compared to Earth's gravity. The data shows that while silicone burned on Earth (g1_burn_length: Complete for samples 2-1, 2-2, and 2-4), it did not burn in microgravity under the tested conditions.\n\nSpecifically, for samples 2-1, 2-3, and 2-4:\n*   **On Earth (g1):** The material showed a visible burn length (Complete).\n*   **In Microgravity (ug):** The sample showed no measurable burn length (~ 0 cm) and was classified as \"self_extinguished.\"\n\nThis indicates that silicone's combustion characteristics are significantly altered in the microgravity environment tested.",
+   "reason": null,
+   "review": "Partly wrong, although every number is real. In PSI-99, sample 2-2 burned 7.6 cm on Earth (not 'Complete') and sample 2-3 did not burn on Earth or in orbit. The correct summary: 3 of 4 silicone samples (2-1, 2-2, 2-4) burned in the 1g test but self-extinguished in orbit. The number guard cannot catch wrong meaning; that is why answers are reviewed.",
+   "calls": [
+    {
+     "tool": "material_screen",
+     "args": "{}",
+     "result": "{\"source\": {\"id\": \"psi:PSI-99\", \"doi\": \"10.60555/2chp-m469\", \"url\": \"https://psi.nasa.gov/physci/repo/data/investigations/PSI-99\", \"title\": \"Spacecraft Fire Experiment-II\"}, \"rows\": [{\"material_id\": \"silicone\", \"sample\": \"2-1\", \"material_raw\": \"Silicone\", \"o2_text\": \"~ 21.5\", \"flow_cm_s\": \"20 cm/s\", \"flow_direction\": \"Concurrent\", \"ug_outcome\": \"self_extinguished\", \"ug_cell_raw\": \"~ 0\", \"ug_burn_l…"
+    }
+   ]
+  },
+  {
+   "model": "hf.co/empero-ai/Qwen3.8-4B-Distill-GGUF:Q4_K_M",
+   "question": "Is the 8.2 psia, 34 percent oxygen exploration atmosphere safe for PMMA?",
+   "ok": true,
+   "answer": "**No — there is no safety verdict available.** The 8.2 psia / 34% O2 exploration atmosphere falls outside the tested envelope (~101 kPa cabin pressure). Flammability limits shift with pressure, and no flight data exists here.",
+   "reason": null,
+   "review": null,
+   "calls": [
+    {
+     "tool": "habitats",
+     "args": "{}",
+     "result": "{\"presets\": [{\"id\": \"iss-cabin\", \"name\": \"ISS cabin (sea-level equivalent)\", \"o2_percent\": 21.0, \"pressure_kpa\": 101.4, \"status\": \"extrapolation\", \"p_burns\": 1.0, \"reason\": \"O2 21.0 % is outside the tested 13.5-18.0 %.\", \"refs\": [{\"source_id\": \"ntrs:20150021491\", \"page\": 5, \"quote\": \"have operated at an Earth-equivalent sea level atmosphere of 14.7 psia and 21% O2\"}, {\"source_id\": \"ntrs:2015001042…"
+    },
+    {
+     "tool": "p_burns",
+     "args": "{\"o2_percent\":34,\"flow_cm_s\":0,\"stretch_rate_per_s\":0}",
+     "result": "{\"status\": \"insufficient_data\", \"reason\": \"outside the model grid\", \"stretch_rate_per_s\": 0.0}"
+    },
+    {
+     "tool": "material_screen",
+     "args": "{}",
+     "result": "{\"source\": {\"id\": \"psi:PSI-99\", \"doi\": \"10.60555/2chp-m469\", \"url\": \"https://psi.nasa.gov/physci/repo/data/investigations/PSI-99\", \"title\": \"Spacecraft Fire Experiment-II\"}, \"rows\": [{\"material_id\": \"silicone\", \"sample\": \"2-1\", \"material_raw\": \"Silicone\", \"o2_text\": \"~ 21.5\", \"flow_cm_s\": \"20 cm/s\", \"flow_direction\": \"Concurrent\", \"ug_outcome\": \"self_extinguished\", \"ug_cell_raw\": \"~ 0\", \"ug_burn_l…"
+    }
+   ]
+  }
+ ]
+}

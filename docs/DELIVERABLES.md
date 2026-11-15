@@ -1,6 +1,6 @@
 # IGNIS: submission deliverables
 
-NASA Space Apps 2026, challenge "Flame in Freefall".
+NASA Space Apps 2026, challenge "Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data".
 **Live:** https://ignis-flame-one.vercel.app · **Code:** https://github.com/TRXAlpha/ignis
 
 All numbers below come from `web/public/data/*.json` (model `ignis-boundary` 0.1.0, export of 2026-11-15) or from a
@@ -34,46 +34,47 @@ The full script (30 s main cut, 75 s extended cut, shot list, recording checklis
 
 ## Deck outline (7 slides + 1 optional)
 
-1. **IGNIS: fire safety from NASA microgravity flight data.** Space Apps 2026, Flame in Freefall. Live URL, repo.
+1. **IGNIS: an AI that learns where flames stop burning in orbit.** Flame in Freefall: SI-Powered Fire Safety Insights. Live URL, repo.
 2. **Problem.** Flames in orbit get oxygen only from airflow. Weak ventilation keeps them alive where they die on
    Earth. Materials are still screened with 1g tests; Artemis-era cabins plan 8.2 psia / 34 % O2 with no flight fire data.
-3. **Data.** BASS-II on the ISS plus its 5.18 s drop-tower tests, Saffire V summary. 89 observations, each with PDF page,
-   figure, series, point index, image hash. Tables are verbatim-checked against PDF text; figures are machine-digitized
-   (ticks + markers) into WebPlotDigitizer projects anyone can reopen. Gravity levels sourced per platform.
-4. **Model.** Boundary with the physical shape (quench branch at low stretch, blowoff branch at high stretch). Extinctions
-   are boundary measurements, stable flames constrain the burning side. Bayesian (Laplace) band. Minimum O2 13.6 %
-   (13.4-13.9 %), matching the report's ~13.5 % independently.
+3. **The AI pipeline.** Eight stages: LLM agents read and extract (Read), a verbatim gate blocks hallucinated values
+   (Verify), Bayesian machine learning learns the boundary (Learn), cross-platform validation (Test), computer vision on
+   flight imagery (See), automated claim checking (Reason), active learning for experiments (Decide), and a tool-calling
+   AI analyst with a numeric guard (Ask).
+4. **What the AI learned.** From 158 traced observations (NASA reports + 5 PSI raw tables): PMMA keeps burning in orbit
+   down to 13.6 % O2 (13.4-13.9 %), below the 15.4 % Earth limit, matching the report's ~13.5 % independently.
 5. **Validation.** Leave-one-campaign-out both ways (ISS and drop tower) and 5-fold CV, always against the 1g rule.
    Boundary error 2.0 % vs 2.7 % and 4.3 % vs 6.2 %; Brier 0.05 vs 0.44 and 0.03 vs 0.64; 94 % coverage of a 90 % interval.
-6. **Consistency, experiments, habitats.** Contradiction detector: 1g limit CONFLICT (24 flames below it), Eq. 6.1 vs fit
+6. **AI reasoning, experiments, habitats.** Contradiction detector: 1g limit CONFLICT (24 flames below it), Eq. 6.1 vs fit
    TENSION, two NASA docs disagree 10x on drop-tower g. Recommender: 5 tests by information gain inside the sourced
    BASS-II envelope (0-55 cm/s, 13.6-22.2 % O2). Habitats: ISS P(burns) ~100 % (flagged extrapolation); exploration and lander atmospheres INSUFFICIENT DATA.
-7. **Raw NASA data.** PSI experimental tables (BASS, BASS-II, Saffire I-III) joined to the report's per-test notes: 66 flight
+7. **AI on raw NASA data.** LLM agents joined PSI experimental tables (BASS, BASS-II, Saffire I-III) to the report's per-test notes: 66 flight
    tests by material, and Saffire-II's orbit-vs-1g comparison, where the 1g test is conservative for silicone but not for PMMA.
-8. **Limits and next steps.** One material (PMMA), cabin pressure only, gravity as campaign nominal, at least 2 blowoff points
+8. **Ask the AI, and its limits.** Live analyst runs: answers only through tools; invented numbers are refused.
+   Limits: one material (PMMA), cabin pressure only, gravity as campaign nominal, at least 2 blowoff points
    hidden behind other markers not recovered. Next: more campaigns (Saffire VI, ACME), reduced-pressure tests, other materials.
 
 ## Project page text
 
-IGNIS turns NASA's published microgravity fire experiments into one model you can check. It answers a practical
-question for spacecraft fire safety: at a given oxygen level and airflow, does a solid material keep burning in
-weightlessness, and how sure are we?
+IGNIS is an AI system that turns NASA's microgravity fire experiments into fire-safety insight you can check. It answers
+a practical question for spacecraft: at a given oxygen level and airflow, does a material keep burning in weightlessness,
+and how sure are we?
 
 **Why it matters.** Without gravity, hot gas does not rise, so a flame lives on ventilation alone. Gentle airflow can keep
 a flame burning at oxygen levels where it would go out on Earth. Spacecraft materials are still screened with normal-gravity
 tests, and future exploration vehicles plan lower-pressure, oxygen-richer cabins where no flight fire data exists.
 
-**How it works.** IGNIS pulls NASA reports from the NASA Technical Reports Server, checks every table value against the
-PDF text, and machine-digitizes figures from hash-pinned renders, so each of its 89 observations links to a page, figure
-and pixel. A physics-shaped Bayesian model learns the burn / no-burn boundary from ISS and drop-tower data and reports an
-uncertainty band. It is validated leave-one-campaign-out against the 1g rule, which it beats in both directions. A
-contradiction detector tests the papers' own claims against the data, a recommender proposes the most informative next
-tests inside real hardware limits, and a habitat view says "insufficient data" where nobody has flown.
+**How the AI works.** Language-model agents read NASA reports and raw PSI datasets and extract every test result; a
+verification gate checks each value word for word against its source page, so nothing hallucinated survives. A
+physics-shaped Bayesian machine-learning model learns the burn / go-out boundary with an uncertainty band and is validated
+across platforms against the Earth rule. Computer vision re-measures flame spread from NASA's flight imagery, automated
+reasoning tests the reports' own claims, active learning proposes the most informative next experiments, and a
+tool-calling AI analyst answers questions without being able to invent numbers.
 
 **Finding.** PMMA rods burned in microgravity down to about 13.6 % O2, well below the 15.4 % normal-gravity upward
 limit: a 1g screen is not conservative for weakly ventilated spaces.
 
-**Tools.** Python (numpy, pint, jsonschema, PyMuPDF), JSON Schema data contract, WebPlotDigitizer 4 project format,
-Plotly, Vercel, a local LLM analyst (Ollama) that may only answer through tool calls.
+**Tools.** LLM agents (Claude, local models via Ollama), Python (numpy, pint, jsonschema, PyMuPDF, ffmpeg), JSON Schema data
+contract, WebPlotDigitizer 4 project format, Plotly, Vercel.
 
 **Limits.** One material, cabin pressure only, campaign-nominal gravity, digitized (not raw) data.

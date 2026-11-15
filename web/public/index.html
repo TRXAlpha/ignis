@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IGNIS: microgravity fire limits from NASA flight data</title>
-  <meta name="description" content="Where flames stop burning in microgravity, learned from NASA's ISS fire experiments, with every point traced to its source page.">
+  <title>IGNIS: SI-powered fire safety insights from microgravity data</title>
+  <meta name="description" content="IGNIS: AI agents and machine learning that learn where flames stop burning in microgravity from NASA flight data, with every claim traced to its source page.">
   <meta name="theme-color" content="#0b0e14">
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -21,6 +21,7 @@
     <div class="wrap topbar-inner">
       <a class="brand" href="#top" aria-label="IGNIS home" translate="no">IGNIS</a>
       <nav aria-label="Sections">
+        <a href="#ai">How the AI works</a>
         <a href="#envelope">Boundary</a>
         <a href="#provenance">Provenance</a>
         <a href="#validation">Validation</a>
@@ -30,6 +31,7 @@
         <a href="#tests">Flight tests</a>
         <a href="#video">Flight video</a>
         <a href="#checks">Checks</a>
+        <a href="#analyst">Ask the AI</a>
         <a href="#data">Data</a>
       </nav>
     </div>
@@ -38,11 +40,11 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">NASA Space Apps 2026 · Flame in Freefall</p>
-        <h1>Where Flames Stop Burning in Orbit, Traced to NASA's Own Pages.</h1>
-        <p class="hero-sub">A model of the oxygen and airflow limits for fire in microgravity, learned from ISS experiments and checked against Earth rules.</p>
+        <p class="eyebrow">Flame in Freefall · SI-Powered Fire Safety Insights</p>
+        <h1>An AI That Learns Where Flames Stop Burning in Orbit.</h1>
+        <p class="hero-sub">AI agents read NASA's flight data, machine learning finds the fire limit, and every claim traces to its source page.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#envelope">Explore the Boundary</a>
+          <a class="btn btn-primary" href="#ai">See How the AI Works</a>
           <a class="btn btn-ghost" href="https://github.com/TRXAlpha/ignis">Source Code</a>
         </div>
       </div>
@@ -57,6 +59,39 @@
   <section class="stats wrap" aria-label="Key results" id="stats"></section>
 
   <main class="wrap" id="main">
+    <section id="ai" class="panel ai-panel reveal">
+      <div class="section-head">
+        <h2>How the AI Works</h2>
+        <p>Eight AI stages turn NASA's reports, raw tables and flight imagery into fire-safety insight. Each card links to its output below.</p>
+      </div>
+      <div class="ai-grid">
+        <a class="ai-step s-read" href="#tests"><span class="ai-k">Read</span>
+          <h3>LLM agents extract the data</h3>
+          <p>Language-model agents read NASA reports and PSI datasets, classify each flight test's outcome and digitize published figures.</p></a>
+        <a class="ai-step s-verify" href="#provenance"><span class="ai-k">Verify</span>
+          <h3>Nothing unverified gets in</h3>
+          <p>Every extracted number is checked word for word against its source page and file hash. A hallucinated value fails the build.</p></a>
+        <a class="ai-step s-learn" href="#envelope"><span class="ai-k">Learn</span>
+          <h3>Bayesian machine learning</h3>
+          <p>A physics-shaped Bayesian model learns the boundary between burning and going out, and knows how sure it is.</p></a>
+        <a class="ai-step s-test" href="#validation"><span class="ai-k">Test</span>
+          <h3>Validated across platforms</h3>
+          <p>Trained on one platform, tested on the other, and scored against the Earth rule engineers use today.</p></a>
+        <a class="ai-step s-see" href="#video"><span class="ai-k">See</span>
+          <h3>Computer vision on flight imagery</h3>
+          <p>The flame front is tracked in NASA's own flight photos to re-measure how fast fire spread in orbit.</p></a>
+        <a class="ai-step s-reason" href="#checks"><span class="ai-k">Reason</span>
+          <h3>Checks the papers' own claims</h3>
+          <p>Automated reasoning tests published statements against the data and against each other, and flags conflicts.</p></a>
+        <a class="ai-step s-decide" href="#experiments"><span class="ai-k">Decide</span>
+          <h3>Active learning plans experiments</h3>
+          <p>It picks the next tests that would teach the model the most, inside what the ISS hardware can do.</p></a>
+        <a class="ai-step s-ask" href="#analyst"><span class="ai-k">Ask</span>
+          <h3>An analyst that cannot make numbers up</h3>
+          <p>A local language model answers questions only through tool calls. Any number not in a tool result is refused.</p></a>
+      </div>
+    </section>
+
     <section id="envelope" class="panel reveal">
       <div class="section-head">
         <h2>Flammability Boundary</h2>
@@ -154,6 +189,14 @@
         <p>Published claims tested against the data and against each other. Every quote is verified on its PDF page.</p>
       </div>
       <div id="checksBody"></div>
+    </section>
+
+    <section id="analyst" class="panel panel-tint reveal">
+      <div class="section-head">
+        <h2>Ask the AI Analyst</h2>
+        <p>Real questions answered by a local language model that may only use IGNIS's tools. Recorded runs, shown exactly as they happened. The guard blocks invented numbers; it cannot judge meaning, so each answer is also reviewed.</p>
+      </div>
+      <div id="analystBody"></div>
     </section>
 
     <section id="data" class="panel reveal">

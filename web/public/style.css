@@ -309,3 +309,36 @@ a, button, select, summary, input { touch-action: manipulation; }
   padding: 8px 14px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: top 0.2s var(--ease);
 }
 .skip-link:focus { top: 10px; }
+
+/* AI pipeline */
+.ai-panel { background: linear-gradient(150deg, rgba(255, 138, 91, 0.07), transparent 45%), linear-gradient(330deg, rgba(122, 162, 247, 0.08), transparent 50%), var(--surface); }
+.ai-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.ai-step {
+  display: block; text-decoration: none; color: var(--text); border-radius: 14px; padding: 16px 16px 18px;
+  border: 1px solid var(--border); background: var(--surface-2);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.ai-step:hover { border-color: var(--accent); color: var(--text); }
+.ai-step h3 { margin: 10px 0 6px; font-size: 1rem; }
+.ai-step p { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
+.ai-k { display: inline-block; font: 600 0.72rem/1 var(--mono); letter-spacing: 0.08em; padding: 5px 9px; border-radius: 999px; color: #0b0e14; }
+.s-read .ai-k, .s-verify .ai-k { background: #ffb08f; }
+.s-learn .ai-k, .s-test .ai-k { background: var(--accent); }
+.s-see .ai-k, .s-reason .ai-k { background: #c3a6ff; }
+.s-decide .ai-k, .s-ask .ai-k { background: var(--ok); }
+.s-read, .s-learn { background: linear-gradient(150deg, rgba(255, 138, 91, 0.10), transparent 60%), var(--surface-2); }
+.s-see, .s-ask { background: linear-gradient(150deg, rgba(122, 162, 247, 0.10), transparent 60%), var(--surface-2); }
+@media (prefers-reduced-motion: no-preference) { .ai-step:hover { transform: translateY(-2px); } }
+@media (max-width: 980px) { .ai-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .ai-grid { grid-template-columns: 1fr; } }
+
+/* analyst transcripts */
+.run { border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); padding: 16px; margin-top: 14px; }
+.run-q { font-weight: 600; margin: 0 0 4px; }
+.run-meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 10px; }
+.run-calls { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.run-call { font: 0.74rem var(--mono); border: 1px solid var(--border-strong); border-radius: 999px; padding: 3px 9px; color: var(--accent); }
+.run-a { white-space: pre-wrap; line-height: 1.55; background: rgba(255, 255, 255, 0.02); border-left: 3px solid var(--ok); border-radius: 0 10px 10px 0; padding: 10px 14px; margin: 8px 0 0; }
+.run-a.refused { border-left-color: var(--bad); }
+.run details { margin-top: 8px; color: var(--muted); font-size: 0.85rem; }
+.run pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 0.76rem var(--mono); color: var(--muted); margin: 6px 0 0; }

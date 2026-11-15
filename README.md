@@ -1,6 +1,9 @@
-# IGNIS: gravity-aware fire safety intelligence
+# IGNIS: SI-powered fire safety insights from microgravity combustion data
 
-NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combustion results into one cited, queryable model.
+NASA Space Apps 2026, challenge **"Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data"**.
+IGNIS is an AI system: language-model agents read NASA's reports and raw data, machine learning learns where flames stop
+burning in orbit, computer vision re-measures flames from flight imagery, and a tool-calling AI analyst answers questions
+without being able to invent numbers. Every claim traces back to its NASA source page.
 
 **Live:** https://ignis-flame-one.vercel.app · **Code:** https://github.com/TRXAlpha/ignis
 
@@ -24,12 +27,19 @@ Earth. Too much breeze blows it out. No breeze at all starves it.
 **The problem today.** Materials for spacecraft are still tested on Earth. An Earth test can say "safe" for a material that
 would actually keep burning in orbit.
 
-**What IGNIS does.**
-1. It collects the results of real fire experiments NASA ran on the International Space Station and in a drop tower.
-2. It checks every number against the exact page of the NASA report it came from, so nothing is made up.
-3. It learns the line between "keeps burning" and "goes out", and shows how sure it is.
-4. It compares that line with the Earth rule, tests the reports' own claims, suggests the next most useful experiments,
-   and says "not enough data" for future Moon and Mars air, where nobody has tested fire yet.
+**What IGNIS does (it is an AI that works like a careful research assistant).**
+1. **AI agents read the data.** They go through NASA's reports and raw tables about real fire experiments on the
+   International Space Station and in a drop tower, and pull out every result.
+2. **It double-checks everything.** Each number is matched against the exact page it came from, so the AI cannot make
+   anything up.
+3. **Machine learning finds the limit.** It learns the line between "keeps burning" and "goes out", and says how sure it is.
+4. **It looks at the flight photos itself.** Computer vision tracks the flame in NASA's pictures to measure how fast it spread.
+5. **It thinks critically.** It tests the reports' own claims, compares with the Earth rule, and suggests the most useful
+   next experiments.
+6. **You can ask it questions.** An AI analyst answers only from IGNIS's data. If it tries to say a number that is not in
+   the data, the answer is blocked.
+7. **It admits what it does not know.** For future Moon and Mars air, where nobody has tested fire yet, it says
+   "not enough data" instead of guessing.
 
 **The main finding.** In orbit, acrylic plastic kept burning down to about **13.6 % oxygen**. The Earth test draws the line
 at **15.4 %**. So the Earth test is not always on the safe side. For silicone it is the other way round: it burned on
@@ -39,6 +49,19 @@ Earth but went out in orbit. You have to check each material.
 cell.
 
 Demo video script: [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md). Deck outline, project page text and key numbers: [`docs/DELIVERABLES.md`](docs/DELIVERABLES.md).
+
+## How the AI works
+
+| Stage | AI technique | Where |
+|---|---|---|
+| Read | LLM agents extract per-test outcomes from report text, classify them, digitize figures | `ingest/`, `registry/bass2_test_outcomes.json` |
+| Verify | Every extracted value verbatim-checked against the hashed source page (anti-hallucination gate) | `ingest/curated/__init__.py` |
+| Learn | Physics-shaped Bayesian machine learning (Laplace posterior) for the burn / extinction boundary | `model/boundary.py` |
+| Test | Leave-one-campaign-out validation vs the normal-gravity rule | `model/export.py` |
+| See | Computer vision: flame-front tracking in NASA flight imagery | `model/video_spread.py` |
+| Reason | Automated claim checking (claims vs data, claims vs claims) | `model/contradictions.py` |
+| Decide | Bayesian active learning (expected information gain) for the next experiments | `model/export.py` |
+| Ask | Tool-calling LLM analyst (local, Ollama) with a numeric hallucination guard | `analyst/` |
 
 ## Spec coverage
 

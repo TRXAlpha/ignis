@@ -1,0 +1,14 @@
+{
+ "gemmaclaude:latest|What is the lowest oxygen level at which PMMA keeps burning in microgravity, and how does it compare to the normal-gravity limit?": {
+  "answer_starts": "The lowest oxygen level at which PMMA keeps burning in micro",
+  "note": "The numbers are right. The quoted phrase is misattributed: in the report it says the microgravity minimum is significantly lower than the 15.4 % upward limit, not that the limit itself is lower."
+ },
+ "gemmaclaude:latest|Is the 8.2 psia, 34 percent oxygen exploration atmosphere safe for PMMA?": {
+  "answer_starts": "The `p_burns` tool requires either a stretch rate ($\\text{1/",
+  "note": "Safe but unhelpful: the model asked for a flow instead of using the habitats tool, which reports INSUFFICIENT DATA for this atmosphere (see the next run)."
+ },
+ "gemmaclaude:latest|Does silicone burn differently on Earth than in orbit? Give numbers.": {
+  "answer_starts": "Yes, silicone burns differently in microgravity compared to ",
+  "note": "Partly wrong, although every number is real. In PSI-99, sample 2-2 burned 7.6 cm on Earth (not 'Complete') and sample 2-3 did not burn on Earth or in orbit. The correct summary: 3 of 4 silicone samples (2-1, 2-2, 2-4) burned in the 1g test but self-extinguished in orbit. The number guard cannot catch wrong meaning; that is why answers are reviewed."
+ }
+}

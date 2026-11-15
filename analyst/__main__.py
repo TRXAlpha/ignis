@@ -59,7 +59,8 @@ def _chat(messages: list[dict]) -> dict:
 
 def ask(question: str, chat=_chat, max_steps: int = 6) -> dict:
     messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": question}]
-    evidence, calls = [question], []
+    # the model also sees the tool descriptions (e.g. '6.35-mm rod'), so numbers from them are not invented
+    evidence, calls = [question] + [t["function"]["description"] or "" for t in SCHEMAS], []
     for _ in range(max_steps):
         msg = chat(messages)
         tcs = msg.get("tool_calls") or []

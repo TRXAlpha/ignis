@@ -3,7 +3,7 @@
 
 const FIXTURES = new URLSearchParams(location.search).get('fixtures') === '1';
 const BASE = FIXTURES ? '../dev-fixtures/' : 'data/';
-const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions', 'material_screen', 'video_spread', 'test_outcomes'];
+const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions', 'material_screen', 'video_spread', 'test_outcomes', 'analyst_runs'];
 
 const $ = (id) => document.getElementById(id);
 
@@ -103,13 +103,14 @@ async function boot() {
     ['data', renderData],
     ['video', renderVideo],
     ['checks', renderChecks],
+    ['analyst', renderAnalyst],
     ['stats', renderStats],
     ['footer', renderFooter],
   ];
   for (const [label, fn] of steps) {
     try { fn(); } catch (e) {
       console.error(`[ignis] ${label} failed`, e);
-      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', screen: 'screenBody', tests: 'testsBody', data: 'dataBody', checks: 'checksBody', video: 'videoBody', footer: null }[label];
+      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', screen: 'screenBody', tests: 'testsBody', data: 'dataBody', checks: 'checksBody', video: 'videoBody', analyst: 'analystBody', footer: null }[label];
       if (target) $(target).innerHTML = `<div class="empty"><strong>Render error</strong>${esc(e.message)}</div>`;
     }
   }
@@ -721,6 +722,26 @@ function renderChecks() {
 }
 
 // ---------- footer ----------
+// ---------- AI analyst: recorded real runs ----------
+function renderAnalyst() {
+  const a = D.analyst_runs;
+  const el = $('analystBody');
+  if (!a || !(a.runs || []).length) { el.innerHTML = noData('No recorded analyst runs yet.', ERR.analyst_runs); return; }
+  const runs = a.runs.map((r) => {
+    const calls = (r.calls || []).map((c) => `<span class="run-call">${esc(c.tool)}(${esc(c.args && c.args !== '{}' ? c.args : '')})</span>`).join('');
+    const body = r.ok
+      ? `<div class="run-a">${esc(r.answer)}</div>`
+      : `<div class="run-a refused"><span class="verdict conflict">REFUSED BY THE GUARD</span> ${esc(r.reason || '')}${r.answer ? `\n\nRejected draft: ${esc(r.answer)}` : ''}</div>`;
+    const raw = (r.calls || []).map((c) => `${c.tool} -> ${c.result}`).join('\n');
+    return `<article class="run"><p class="run-q">${esc(r.question)}</p>
+      <div class="run-meta">Model: <span class="mono">${esc(r.model)}</span> · ${(r.calls || []).length} tool call${(r.calls || []).length === 1 ? '' : 's'}</div>
+      <div class="run-calls">${calls}</div>${body}
+      ${r.review ? `<div class="warn"><strong>Team review:</strong> ${esc(r.review)}</div>` : ''}
+      ${raw ? `<details><summary>Tool results the answer had to use</summary><pre>${esc(raw)}</pre></details>` : ''}</article>`;
+  }).join('');
+  el.innerHTML = `<p class="caption">Runtime: ${esc(a.runtime)}. Guard: ${esc(a.guard)} Recorded ${esc(String(a.recorded_at).slice(0, 10))}.</p>${runs}`;
+}
+
 // ---------- key numbers (all from the exported data files) ----------
 function renderStats() {
   const el = $('stats');
