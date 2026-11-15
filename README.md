@@ -48,6 +48,7 @@ Submission texts (video script, deck outline, project page, key numbers): [`docs
 | Bayesian experiment recommender | Done: BALD information gain inside the sourced BASS-II envelope |
 | Habitat risk engine | Done: ISS, exploration 8.2/34, lunar and Mars landers, all sourced; out-of-domain -> INSUFFICIENT DATA |
 | LLM analyst, tool calls only | Done as local CLI (`analyst/`, Ollama), numeric guard refuses numbers not in tool output. Not on the static site (no server, no keys) |
+| Flight-imagery re-measurement (beta) | `model/video_spread.py`: tracks the flame front in NASA's public top-view stills (PSI-25, 1 still/s per the report), tests the report's 'about 2.2 mm/s'. B1 2.71 +/- 0.10 mm/s, B3 4.23 +/- 0.31 mm/s -> TENSION; length scale (flame width = 2 cm sample) is the dominant, unresolved uncertainty |
 | Frontend + deploy | Done: https://ignis-flame-one.vercel.app (envelope 3D/2D with material selector, provenance, validation, experiments, habitats, Earth-vs-orbit by material, per-test outcomes, checks, timeline) |
 
 ## Scope (decided 2026-11-14)
@@ -63,6 +64,7 @@ python -m venv .venv
 .venv/Scripts/python -m ignis_contract validate contract/examples/bundle.synthetic.json
 .venv/Scripts/python -m ingest.fetch_sources                       # every NTRS PDF in registry/, sha256-checked
 .venv/Scripts/python -m ingest.build_bundle                        # data/bundle.json (production-validated)
+.venv/Scripts/python -m model.video_spread                         # re-measure spread rate from PSI flight stills (needs ffmpeg)
 .venv/Scripts/python -m model.export                               # web/public/data/*.json
 .venv/Scripts/python -m http.server 8000 --directory web/public    # open http://localhost:8000
 ```

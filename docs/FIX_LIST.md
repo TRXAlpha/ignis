@@ -1,5 +1,15 @@
 # Fix list (for the final hours)
 
+## Status (2026-11-15 afternoon)
+- DONE 10 duplicate folds, 11 single-group selector (+ why), 12 flagged rows (explicit-extinction rule, 66/66 accepted),
+  13 tools cleanup, 14 wording; also fixed a T4 bug (flow read from conditions.extra only).
+- Video: DONE 2 (re-measured on the right view), 3 (B3 via its top-view stills), 6 (uncertainty-based, three-way verdict),
+  7 (synthetic tests; they exposed a 10 % lateral-extent bias, fixed), 8 (contradictions, analyst, README, deck table).
+  The v0 scale was wrong for a physical reason: the mp4 is the SIDE view (report p46); the stills are the top view.
+- OPEN 1 (sourced length scale: none visible in frame), 4 (side view timing only as px/s cross-check), 5 (thresholds
+  still fixed), 9 (video files recorded by sha256 in the output, not as registry sources; deliberate).
+
+
 Ordered by impact on credibility. Each item: what is wrong, how to see it, what done looks like.
 
 ## Flight-video re-measurement (`model/video_spread.py`, site section "Re-measured from NASA flight video", beta v0)

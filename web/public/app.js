@@ -566,17 +566,25 @@ function renderVideo() {
   const el = $('videoBody');
   if (!v || !(v.rows || []).length) { el.innerHTML = noData('No video measurements yet.', ERR.video_spread); return; }
   const cc = v.claim_check;
-  const rows = v.rows.map((r) => r.ok ? `<article class="card">
-      <h3>Test ${esc(r.test_id)} · ${esc(r.thickness_um)} µm PMMA, ${esc(r.sample_width_cm)} cm wide</h3>
+  const cards = v.rows.map((r) => r.ok ? `<article class="card">
+      <h3>Test ${esc(r.test_id)} · ${esc(r.thickness_um)} µm PMMA, ${esc(r.sample_width_cm)} cm wide · ${esc(r.view)}</h3>
       <img src="${esc(r.figure)}" alt="Tracked flame front for test ${esc(r.test_id)}" style="max-width:100%;border-radius:8px">
-      <dl><dt>Front speed</dt><dd>${fmt(r.spread_px_s, 2)} px/s (fit ${esc(r.fit_window_s.join('-'))} s, residual sd ${fmt(r.resid_px_sd, 2)} px)</dd>
-      <dt>Spread rate</dt><dd>${r.spread_mm_s != null ? fmt(r.spread_mm_s, 2) + ' mm/s' : '-'} <span class="muted">(confidence ${esc(r.confidence)})</span></dd>
-      <dt>Flags</dt><dd>${esc((r.flags || []).join(', '))}</dd>
-      <dt>Video</dt><dd class="mono">${esc(r.file)} · sha256 ${esc(r.sha256.slice(0, 12))}…</dd></dl>
+      <dl><dt>Spread rate</dt><dd><strong>${fmt(r.spread_mm_s, 2)} ± ${fmt(r.spread_mm_s_sd, 2)} mm/s</strong>
+        <span class="muted">(mask sensitivity ${fmt(r.spread_mm_s_scale_range[0], 2)}-${fmt(r.spread_mm_s_scale_range[1], 2)})</span></dd>
+      <dt>Front</dt><dd>${fmt(r.front_px_s, 2)} ± ${fmt(r.front_px_s_se, 2)} px/s over ${esc(r.n_stills)} stills</dd>
+      <dt>Scale</dt><dd>flame width ${fmt(r.lateral_extent_px, 1)} px = ${esc(r.sample_width_cm)} cm (assumption) → ${fmt(r.mm_per_px, 3)} mm/px</dd>
+      <dt>Flags</dt><dd>${esc((r.flags || []).join(', '))} · confidence ${esc(r.confidence)}</dd>
+      <dt>File</dt><dd class="mono">${esc(r.file)} · sha256 ${esc(r.sha256.slice(0, 12))}…</dd></dl>
     </article>` : `<article class="card"><h3>Test ${esc(r.test_id)}</h3><p class="muted">${esc(r.reason)}</p></article>`).join('');
-  const claim = cc ? `<div class="warn"><strong>Claim check: ${esc(cc.status.toUpperCase())}</strong> Report: ${refHTML(cc.claim)}
-      Max re-measured: ${fmt(cc.max_measured_mm_s, 2)} mm/s. ${esc(cc.note)}</div>` : '';
-  el.innerHTML = claim + `<div class="grid-cards">${rows}</div>`;
+  const side = (v.side_view || []).filter((x) => x.ok).map((x) => `<li>Side-view video ${esc(x.test_id)}: front ${fmt(x.front_px_s, 2)} px/s. ${esc(x.note)}</li>`).join('');
+  const st = cc ? cc.status : '';
+  const cls = st === 'consistent' ? 'consistent' : st === 'tension' ? 'conflict' : 'tension';
+  const claim = cc ? `<div class="card check" style="margin-bottom:12px"><span class="verdict ${cls}">${esc(st.toUpperCase())}</span>
+      <h3>Report: highest spread rate for 100-µm PMMA in microgravity "about 2.2 mm/s"</h3>
+      <p>Highest re-measured: <strong>${fmt(cc.max_measured_mm_s, 2)} ± ${fmt(cc.max_measured_sd, 2)} mm/s</strong> (test ${esc(cc.max_test)});
+      tolerance ±${fmt(cc.tolerance_mm_s, 2)}; scale range ${esc(cc.scale_range_mm_s.join('-'))} mm/s. ${esc(cc.note)}</p>
+      <div class="refs-title">Sources</div>${refHTML(cc.claim)}${refHTML(cc.timing_ref)}</div>` : '';
+  el.innerHTML = claim + `<div class="grid-cards">${cards}</div>` + (side ? `<ul class="muted">${side}</ul>` : '');
 }
 
 // ---------- consistency checks ----------

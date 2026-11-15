@@ -23,6 +23,7 @@ quoted NASA PDF page. Re-check after any re-export.
 | 5-fold CV, held-out boundary RMSE | 0.57 vs 1.00 O2 % points (1g rule) | validation.json |
 | 5-fold CV, held-out stable flames predicted burning | 90 % vs 40 % | validation.json |
 | 90 % interval coverage of held-out extinctions | 94 % | validation.json |
+| Spread rate re-measured from NASA flight stills (100-um PMMA) | B1 2.71 +/- 0.10, B3 4.23 +/- 0.31 mm/s vs report 'about 2.2' -> TENSION (scale unresolved) | video_spread.json |
 | ISS cabin (14.7 psia, 21 % O2) | P(burns) ~100 %, flagged extrapolation (above tested 13.5-18 % O2) | habitats.json |
 | Exploration 8.2 psia / 34 %, lunar and Mars lander 10.2 psia / 26.5 % | INSUFFICIENT DATA (pressure / partial gravity outside any flight data) | habitats.json |
 

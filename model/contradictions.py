@@ -5,6 +5,9 @@ Every claim's quote is verbatim-checked on its PDF page before it is used. Outpu
 """
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 import numpy as np
 
 from ingest.curated import require_text
@@ -129,4 +132,19 @@ def run(rows: list[dict], fit: bm.Fit, sources: dict) -> list[dict]:
                     "numbers": {"n_pairs": len(pairs)}, "refs": [{"source_id": BASS2, "page": 83,
                     "quote": "Along this boundary, the flame is sensitive to stochastic perturbations that can lead to extinguishment"}],
                     "observation_ids": sorted({x["id"] for pr in pairs for x in pr})})
+    vf = Path("web/public/data/video_spread.json")
+    if vf.exists():
+        v = json.loads(vf.read_text(encoding="utf-8"))
+        cc = v.get("claim_check")
+        if cc:
+            out.append({"id": "video-spread-vs-report", "kind": "claim_vs_data",
+                        "verdict": {"consistent": "consistent", "tension": "tension"}.get(cc["status"], "tension"),
+                        "title": "Report's highest 100-um PMMA spread rate vs re-measurement from NASA's flight stills",
+                        "detail": (f"Report: about 2.2 mm/s. Re-measured from the public PSI top-view stills: highest "
+                                   f"{cc['max_measured_mm_s']:.2f} +/- {cc['max_measured_sd']:.2f} mm/s (test {cc['max_test']}), "
+                                   f"scale range {cc['scale_range_mm_s'][0]:.2f}-{cc['scale_range_mm_s'][1]:.2f} mm/s. Status "
+                                   f"'{cc['status']}'. The length scale (flame width = 2 cm sample) is the dominant uncertainty."),
+                        "numbers": {"claim_mm_s": 2.2, "max_measured_mm_s": cc["max_measured_mm_s"],
+                                    "scale_range_mm_s": cc["scale_range_mm_s"]},
+                        "refs": [cc["claim"], cc["timing_ref"]], "observation_ids": []})
     return out

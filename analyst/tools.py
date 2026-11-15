@@ -117,6 +117,14 @@ def test_outcomes() -> dict:
     return {"source": t.get("source"), "o2_summary_basis": t.get("o2_summary_basis"), "groups": groups}
 
 
+def video_spread() -> dict:
+    """Spread rates re-measured from NASA's BASS-II flight stills (PSI), with uncertainty and the claim check."""
+    v = _load("video_spread")
+    return {"rows": [{k: r.get(k) for k in ("test_id", "spread_mm_s", "spread_mm_s_sd", "spread_mm_s_scale_range",
+                                            "confidence", "flags")} for r in v.get("rows", [])],
+            "claim_check": v.get("claim_check")}
+
+
 def data_summary() -> dict:
     """What data the model is built on: counts by campaign, outcome and QA status."""
     b = _load("bundle")
@@ -128,7 +136,7 @@ def data_summary() -> dict:
     return out
 
 
-TOOLS = {f.__name__: f for f in (p_burns, min_o2, habitats, recommendations, validation, observation, contradictions,
+TOOLS = {f.__name__: f for f in (p_burns, min_o2, habitats, recommendations, validation, observation, contradictions, video_spread,
                                   material_screen, test_outcomes, data_summary)}
 
 SCHEMAS = [
