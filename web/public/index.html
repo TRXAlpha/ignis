@@ -21,15 +21,15 @@
     <div class="wrap topbar-inner">
       <a class="brand" href="#top" aria-label="IGNIS home" translate="no">IGNIS</a>
       <nav aria-label="Sections">
-        <a href="#ai">How the AI works</a>
+        <a href="#ai">How the AI Works</a>
         <a href="#envelope">Boundary</a>
         <a href="#provenance">Provenance</a>
         <a href="#validation">Validation</a>
         <a href="#experiments">Experiments</a>
         <a href="#habitats">Habitats</a>
-        <a href="#screen">Earth vs orbit</a>
-        <a href="#tests">Flight tests</a>
-        <a href="#video">Flight video</a>
+        <a href="#screen">Earth vs Orbit</a>
+        <a href="#tests">Flight Tests</a>
+        <a href="#video">Flight Video</a>
         <a href="#checks">Checks</a>
         <a href="#analyst">Ask the AI</a>
         <a href="#data">Data</a>
@@ -62,32 +62,32 @@
     <section id="ai" class="panel ai-panel reveal">
       <div class="section-head">
         <h2>How the AI Works</h2>
-        <p>Eight AI stages turn NASA's reports, raw tables and flight imagery into fire-safety insight. Each card links to its output below.</p>
+        <p>8 AI stages turn NASA's reports, raw tables and flight imagery into fire-safety insight. Each card links to its output below.</p>
       </div>
       <div class="ai-grid">
         <a class="ai-step s-read" href="#tests"><span class="ai-k">Read</span>
-          <h3>LLM agents extract the data</h3>
+          <h3>LLM Agents Extract the Data</h3>
           <p>Language-model agents read NASA reports and PSI datasets, classify each flight test's outcome and digitize published figures.</p></a>
         <a class="ai-step s-verify" href="#provenance"><span class="ai-k">Verify</span>
-          <h3>Nothing unverified gets in</h3>
+          <h3>Nothing Unverified Gets In</h3>
           <p>Every extracted number is checked word for word against its source page and file hash. A hallucinated value fails the build.</p></a>
         <a class="ai-step s-learn" href="#envelope"><span class="ai-k">Learn</span>
-          <h3>Bayesian machine learning</h3>
+          <h3>Bayesian Machine Learning</h3>
           <p>A physics-shaped Bayesian model learns the boundary between burning and going out, and knows how sure it is.</p></a>
         <a class="ai-step s-test" href="#validation"><span class="ai-k">Test</span>
-          <h3>Validated across platforms</h3>
+          <h3>Validated Across Platforms</h3>
           <p>Trained on one platform, tested on the other, and scored against the Earth rule engineers use today.</p></a>
         <a class="ai-step s-see" href="#video"><span class="ai-k">See</span>
-          <h3>Computer vision on flight imagery</h3>
+          <h3>Computer Vision on Flight Imagery</h3>
           <p>The flame front is tracked in NASA's own flight photos to re-measure how fast fire spread in orbit.</p></a>
         <a class="ai-step s-reason" href="#checks"><span class="ai-k">Reason</span>
-          <h3>Checks the papers' own claims</h3>
+          <h3>Checks the Papers’ Own Claims</h3>
           <p>Automated reasoning tests published statements against the data and against each other, and flags conflicts.</p></a>
         <a class="ai-step s-decide" href="#experiments"><span class="ai-k">Decide</span>
-          <h3>Active learning plans experiments</h3>
+          <h3>Active Learning Plans Experiments</h3>
           <p>It picks the next tests that would teach the model the most, inside what the ISS hardware can do.</p></a>
         <a class="ai-step s-ask" href="#analyst"><span class="ai-k">Ask</span>
-          <h3>An analyst that cannot make numbers up</h3>
+          <h3>An Analyst That Cannot Make Numbers Up</h3>
           <p>A local language model answers questions only through tool calls. Any number not in a tool result is refused.</p></a>
       </div>
     </section>
@@ -101,8 +101,8 @@
       <div id="envelopeBody" hidden>
         <div class="controls">
           <div class="toggle" role="group" aria-label="View">
-            <button type="button" data-view="3d" aria-pressed="true">3D surface</button>
-            <button type="button" data-view="2d" aria-pressed="false">2D boundary</button>
+            <button type="button" data-view="3d" aria-pressed="true">3D Surface</button>
+            <button type="button" data-view="2d" aria-pressed="false">2D Boundary</button>
           </div>
           <div id="groupPicker" hidden>
             <label for="groupSelect">Material / geometry</label>
@@ -128,7 +128,7 @@
         <h2>Provenance</h2>
         <p>Click a point on the 2D boundary or a row below to see its source page, quote and extraction record.</p>
       </div>
-      <div id="provPanel" class="prov" hidden></div>
+      <div id="provPanel" class="prov" hidden aria-live="polite"></div>
       <div id="obsStatus"></div>
       <div id="obsTable" class="table-wrap" hidden></div>
     </section>

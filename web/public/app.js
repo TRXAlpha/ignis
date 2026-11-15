@@ -6,6 +6,7 @@ const BASE = FIXTURES ? '../dev-fixtures/' : 'data/';
 const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions', 'material_screen', 'video_spread', 'test_outcomes', 'analyst_runs'];
 
 const $ = (id) => document.getElementById(id);
+const fmtDate = (iso) => { const d = new Date(iso); return isNaN(d) ? String(iso) : new Intl.DateTimeFormat(undefined, { dateStyle: 'medium' }).format(d); };
 
 const COL = {
   bg: '#0b0e14', paper: '#0e1320', grid: '#26304a', text: '#e7ecf4', muted: '#9aa6bb',
@@ -332,7 +333,7 @@ function renderProvenance() {
   tools.className = 'table-tools';
   tools.innerHTML = `<label class="sr-only" for="obsFilter">Filter observations</label>
     <input id="obsFilter" name="obs-filter" type="search" placeholder="Filter by campaign, material, outcome…" autocomplete="off" spellcheck="false">
-    <button type="button" class="btn btn-ghost btn-sm" id="obsMore">Show all ${list.length}</button>`;
+    <button type="button" class="btn btn-ghost btn-sm" id="obsMore">Show All ${list.length}</button>`;
   wrap.before(tools);
   const trs = [...wrap.querySelectorAll('tbody tr')];
   $('obsFilter').addEventListener('input', (ev) => {
@@ -343,7 +344,7 @@ function renderProvenance() {
   $('obsMore').addEventListener('click', (ev) => {
     const open = ev.currentTarget.dataset.open === '1';
     ev.currentTarget.dataset.open = open ? '0' : '1';
-    ev.currentTarget.textContent = open ? `Show all ${list.length}` : 'Show fewer';
+    ev.currentTarget.textContent = open ? `Show All ${list.length}` : 'Show Fewer';
     wrap.classList.toggle('collapsed', open);
   });
   $('obsStatus').innerHTML = '';
@@ -485,7 +486,7 @@ function renderExperiments() {
     </tr>`;
   }).join('');
   el.innerHTML = `
-    <h3>Constraint set: ${esc(cs.name || cs.id || '-')}</h3>
+    <h3>Constraint Set: ${esc(cs.name || cs.id || '-')}</h3>
     <p class="caption">${esc(cs.platform || '')}${cs.facility ? ` · ${esc(cs.facility)}` : ''}${cs.max_burns ? ` · max ${esc(cs.max_burns)} burns` : ''}</p>
     <div class="table-wrap"><table><thead><tr><th>Parameter</th><th>Range</th></tr></thead><tbody>${rangeRows || '<tr><td colspan="2">No ranges</td></tr>'}</tbody></table></div>
     ${csRefs ? `<div class="refs-title">Range sources</div>${csRefs}` : ''}
@@ -591,7 +592,7 @@ function renderVideo() {
   const cc = v.claim_check;
   const cards = v.rows.map((r) => r.ok ? `<article class="card">
       <h3>Test ${esc(r.test_id)} · ${esc(r.thickness_um)} µm PMMA, ${esc(r.sample_width_cm)} cm wide · ${esc(r.view)}</h3>
-      <img src="${esc(r.figure)}" alt="Tracked flame front for test ${esc(r.test_id)}" style="max-width:100%;border-radius:10px">
+      <img src="${esc(r.figure)}" alt="Tracked flame front for test ${esc(r.test_id)}" width="800" height="500" loading="lazy" class="fig">
       <dl><dt>Spread rate</dt><dd><strong>${fmt(r.spread_mm_s, 2)} ± ${fmt(r.spread_mm_s_sd, 2)} mm/s</strong>
         <span class="muted">(mask sensitivity ${fmt(r.spread_mm_s_scale_range[0], 2)}-${fmt(r.spread_mm_s_scale_range[1], 2)})</span></dd>
       <dt>Front</dt><dd>${fmt(r.front_px_s, 2)} ± ${fmt(r.front_px_s_se, 2)} px/s over ${esc(r.n_stills)} stills</dd>
@@ -603,7 +604,7 @@ function renderVideo() {
   const st = cc ? cc.status : '';
   const cls = st === 'consistent' ? 'consistent' : st === 'tension' ? 'conflict' : 'tension';
   const claim = cc ? `<div class="card check" style="margin-bottom:12px"><span class="verdict ${cls}">${esc(st.toUpperCase())}</span>
-      <h3>Report: highest spread rate for 100-µm PMMA in microgravity "about 2.2 mm/s"</h3>
+      <h3>Report: highest spread rate for 100-µm PMMA in microgravity “about 2.2 mm/s”</h3>
       <p>Highest re-measured: <strong>${fmt(cc.max_measured_mm_s, 2)} ± ${fmt(cc.max_measured_sd, 2)} mm/s</strong> (test ${esc(cc.max_test)});
       tolerance ±${fmt(cc.tolerance_mm_s, 2)}; scale range ${esc(cc.scale_range_mm_s.join('-'))} mm/s. ${esc(cc.note)}</p>
       <div class="refs-title">Sources</div>${refHTML(cc.claim)}${refHTML(cc.timing_ref)}</div>` : '';
@@ -646,7 +647,7 @@ function renderScreen() {
       <thead><tr><th>Sample</th><th>Material</th><th>O2</th><th>Flow cm/s</th><th>Microgravity burn</th><th>1g burn</th><th>Verdict</th></tr></thead>
       <tbody>${body}</tbody>
     </table></div>
-    ${notes ? `<h3>Notes (verbatim from PSI-99)</h3><ul class="muted">${notes}</ul>` : ''}
+    ${notes ? `<h3>Notes (Verbatim from PSI-99)</h3><ul class="muted">${notes}</ul>` : ''}
     <p class="caption">Source: ${pageUrl ? `<a href="${pageUrl}" target="_blank" rel="noopener">${esc(src.title || src.id)}</a>` : esc(src.title || src.id || '-')}${doi ? ` · ${doi}` : ''}</p>`;
 }
 
@@ -739,7 +740,7 @@ function renderAnalyst() {
       ${r.review ? `<div class="warn"><strong>Team review:</strong> ${esc(r.review)}</div>` : ''}
       ${raw ? `<details><summary>Tool results the answer had to use</summary><pre>${esc(raw)}</pre></details>` : ''}</article>`;
   }).join('');
-  el.innerHTML = `<p class="caption">Runtime: ${esc(a.runtime)}. Guard: ${esc(a.guard)} Recorded ${esc(String(a.recorded_at).slice(0, 10))}.</p>${runs}`;
+  el.innerHTML = `<p class="caption">Runtime: ${esc(a.runtime)}. Guard: ${esc(a.guard)} Recorded ${esc(fmtDate(a.recorded_at))}.</p>${runs}`;
 }
 
 // ---------- key numbers (all from the exported data files) ----------
