@@ -130,3 +130,19 @@ def test_group_thresholds(n, ext, expect):
         r["state"] = "blowoff_extinction"
     g = ex.fit_group(rows)
     assert (g is not None) == expect
+
+
+
+def test_group_identical_to_primary_gets_no_duplicate_folds():
+    b = _bundle(_bundle_rows())
+    rod_ids = frozenset(r["id"] for r in ex.flame_rows(b) if r["key"][1] == "rod")
+    with_skip, without = [], []
+    ex.group_folds(b, with_skip, rod_ids)
+    ex.group_folds(b, without)
+    assert not any("-rod-" in f["fold_id"] for f in with_skip)
+    assert any("-rod-" in f["fold_id"] for f in without)
+
+
+def test_flow_velocity_read_from_contract_slot():
+    o = {"conditions": {"flow_velocity": {"si_value": 0.08}, "extra": []}}
+    assert ex.x_of(o) == ("flow_velocity", 8.0)

@@ -52,8 +52,11 @@ def x_of(o: dict):
     extra = {e["name"]: e["quantity"]["si_value"] for e in o["conditions"].get("extra", [])}
     if "stretch_rate" in extra:
         return "stretch_rate", extra["stretch_rate"]
+    fv = o["conditions"].get("flow_velocity")  # contract slot (Quantity); extra kept for older rows/tests
+    if fv is not None:
+        return "flow_velocity", fv["si_value"] * 100  # SI m/s -> cm/s
     if "flow_velocity" in extra:
-        return "flow_velocity", extra["flow_velocity"] * 100  # SI m/s -> cm/s
+        return "flow_velocity", extra["flow_velocity"] * 100
     return None, None
 
 
@@ -142,14 +145,15 @@ def fit_group(rows: list[dict]) -> dict | None:
             "laplace_ok": bool(f.converged)}
 
 
-def group_folds(bundle: dict, folds: list) -> None:
-    """Leave-one-campaign-out per qualifying group (>= 2 campaigns), appended to validation folds."""
+def group_folds(bundle: dict, folds: list, skip_ids: frozenset = frozenset()) -> None:
+    """Leave-one-campaign-out per qualifying group (>= 2 campaigns), appended to validation folds.
+    Groups whose rows are exactly the primary fit's rows are skipped (their folds already exist)."""
     groups = {}
     for r in flame_rows(bundle):
         groups.setdefault(r["key"], []).append(r)
     for key, rows in sorted(groups.items(), key=lambda kv: [str(v) for v in kv[0]]):
         camps = sorted({r["campaign"] for r in rows})
-        if len(camps) < 2:
+        if len(camps) < 2 or frozenset(r["id"] for r in rows) == skip_ids:
             continue
         mat, geo, flow, xv = key
         label = "-".join(str(v) for v in key)
@@ -372,8 +376,11 @@ def main() -> int:
         # multi-group fits: (material, geometry, flow_direction, x_var) with >= 6 rows, 2 ext, 1 burn
         all_rows = flame_rows(bundle)
         model["groups"], groups_skipped = [], []
+        primary_ids = frozenset(r["id"] for r in rows)
         for key, grows in sorted(((k, [r for r in all_rows if r["key"] == k]) for k in {r["key"] for r in all_rows}),
                                  key=lambda kv: [str(v) for v in kv[0]]):
+            if frozenset(r["id"] for r in grows) == primary_ids:
+                continue  # identical to the primary fit: shown as "Primary fit", not twice
             g = fit_group(grows)
             if g is None:
                 n_ext, n_burn = sum(r["y"] == 0 for r in grows), sum(r["y"] == 1 for r in grows)
@@ -386,7 +393,7 @@ def main() -> int:
             g["label"] = " / ".join(str(v) for v in key if v is not None)
             model["groups"].append(g)
         model["groups_skipped"] = groups_skipped
-        group_folds(bundle, val["folds"])
+        group_folds(bundle, val["folds"], primary_ids)
         for fold in val["folds"]:
             assert not schema_errors(fold, "ValidationFold"), schema_errors(fold, "ValidationFold")
         by = {}

@@ -10,7 +10,7 @@ quoted NASA PDF page. Re-check after any re-export.
 
 | Quantity | Value | Source |
 |---|---|---|
-| Observations in bundle | 158 (115 accepted, 43 flagged) from 13 sources: NTRS reports + 5 NASA PSI experimental tables (CC0, DOIs) | bundle.json |
+| Observations in bundle | 158 (all accepted; 66 per-test rows carry an explicit extinction or burn statement) from 13 sources: NTRS reports + 5 NASA PSI experimental tables (CC0, DOIs) | bundle.json |
 | BASS-II flight tests with recorded outcome | 66 (6 material/geometry groups); outcome quoted from the report, O2 from the PSI-25 table | test_outcomes.json |
 | Saffire-II, same material in orbit vs 1g | silicone: 3 of 4 samples burned in 1g but not in orbit (20 cm/s, ~22 % O2); SIBAL and PMMA burned in both | material_screen.json, PSI-99 |
 | Flame-state points | 49 ISS (27 stable, 8 quench, 14 blowoff) + 22 drop tower (13 stable, 9 blowoff) | BASS-II report Fig 6.10, p84 |
@@ -80,7 +80,7 @@ uncertainty band. It is validated leave-one-campaign-out against the 1g rule, wh
 contradiction detector tests the papers' own claims against the data, a recommender proposes the most informative next
 tests inside real hardware limits, and a habitat view says "insufficient data" where nobody has flown.
 
-**Finding.** Thin PMMA rods burned in microgravity down to about 13.6 % O2, well below the 15.4 % normal-gravity upward
+**Finding.** PMMA rods burned in microgravity down to about 13.6 % O2, well below the 15.4 % normal-gravity upward
 limit: a 1g screen is not conservative for weakly ventilated spaces.
 
 **Tools.** Python (numpy, pint, jsonschema, PyMuPDF), JSON Schema data contract, WebPlotDigitizer 4 project format,

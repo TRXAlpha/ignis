@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -30,6 +31,9 @@ CAMPAIGN = "bass-ii"
 EXTINCTION_STATES = {"blowoff_extinction", "quench_extinction", "self_extinguished"}
 # Extinction-mechanism calls that rest on wording interpretation (not an explicit "quench"/"blew out"): flagged for review.
 INTERPRETED = {"self_extinguished", "quench_extinction"}
+# The FACT of extinction is explicit when the quote says so; only the mechanism label is inferred. The boundary model
+# treats every extinction the same, so such rows are accepted with the caveat recorded; others stay flagged.
+EXPLICIT_EXTINCTION = re.compile(r"extinguish|extinction|quench|goes out|went out|flame (?:died|out)|died|blew out|blow ?off|flame-?out|out", re.I)
 
 
 def _psi_o2(rows: dict[str, dict], test_id: str) -> float | None:
@@ -94,6 +98,7 @@ def observations(sources: dict) -> list[dict]:
         if state in EXTINCTION_STATES:
             outcome["time_basis"] = "at_extinction"
         interpreted = state in INTERPRETED
+        explicit = interpreted and bool(EXPLICIT_EXTINCTION.search(t["quote"]))
         out.append({
             "schema_version": "1.0.0",
             "id": observation_id(locator, "flame_state", mat),
@@ -104,12 +109,14 @@ def observations(sources: dict) -> list[dict]:
             "conditions": conditions,
             "outcome": outcome,
             "extraction": {"method": "text", "tool": TOOL, "model": MODEL, "extracted_at": now,
-                           "confidence": 0.75 if interpreted else 0.9,
+                           "confidence": 0.9 if not interpreted else (0.8 if explicit else 0.75),
                            "flags": ["condition_from_campaign_nominal"]},
-            "qa": {"status": "flagged" if interpreted else "accepted",
+            "qa": {"status": "flagged" if interpreted and not explicit else "accepted",
                    "reasons": [t["rationale"], "quote verified on PDF page text",
                                "O2 from PSI-25.csv exact cell match"]
-                   + (["extinction mechanism inferred from wording, not an explicit quench/blowoff term"]
+                   + (["extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not "
+                       "used by the boundary model"] if explicit else
+                      ["extinction mechanism inferred from wording, not an explicit quench/blowoff term"]
                       if interpreted else [])},
         })
     return out

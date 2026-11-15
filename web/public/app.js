@@ -269,6 +269,14 @@ function renderEnvelope() {
     };
   } else {
     $('groupPicker').hidden = true;
+    const sk = m.groups_skipped || [];
+    if (sk.length) {
+      const note = document.createElement('p');
+      note.className = 'caption';
+      note.textContent = `Only PMMA rods have enough tests for a boundary fit. ${sk.length} other material/geometry group(s) `
+        + 'lack enough tests with a reported extinction flow; they are shown test by test under "BASS-II flight tests by material".';
+      $('envelopeCaption').after(note);
+    }
   }
   draw2D(null);
   envelopeReady = true;

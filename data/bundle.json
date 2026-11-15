@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T11:58:32+00:00",
+ "generated_at": "2026-11-15T12:41:26+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -431,7 +431,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -519,7 +519,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -625,7 +625,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -734,19 +734,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -844,19 +844,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -954,19 +954,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1064,19 +1064,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1174,19 +1174,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says quenched",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1284,7 +1284,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -1393,7 +1393,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -1501,7 +1501,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -1610,19 +1610,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow turned down slowly, then flame out",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1720,19 +1720,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow decreased in steps to flame out",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1799,19 +1799,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says low flow",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1878,19 +1878,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -1957,19 +1957,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow turned down to 0 to extinguish",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2036,19 +2036,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says quench",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2115,19 +2115,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2194,19 +2194,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at pot value, no low-flow wording",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2273,19 +2273,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down slowly to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2352,19 +2352,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down slowly to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2438,19 +2438,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "self-extinguished at explicit 5 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2517,19 +2517,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down slowly to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2596,19 +2596,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down slowly to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2674,7 +2674,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -2751,19 +2751,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow reduced in increments, flame extinguished",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2868,19 +2868,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "self-extinguished after flow set to explicit 14 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -2985,19 +2985,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at explicit 18 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3095,19 +3095,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down to extinguish",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3204,7 +3204,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -3313,19 +3313,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow turned down to extinguish",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3430,19 +3430,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flame died at explicit 14 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3547,19 +3547,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "self-extinguished at explicit 8 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3664,19 +3664,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished at explicit 12 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3774,19 +3774,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "pot turned down to extinguish",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -3884,19 +3884,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "fan pot turned to 0 to extinguish",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4001,19 +4001,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "went out on its own at explicit 5 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4118,19 +4118,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow stepped down, flame out at 8 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4197,19 +4197,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow turned down, extinguished",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4275,19 +4275,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow decreased, extinguished",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4354,7 +4354,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4431,7 +4431,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4508,7 +4508,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4585,19 +4585,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says quench",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -4663,7 +4663,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4740,7 +4740,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4818,7 +4818,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4895,7 +4895,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -4971,7 +4971,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -5049,19 +5049,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "self-extinguished, pot value only",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5128,19 +5128,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says quenching pot",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5206,19 +5206,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow decreased to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5284,19 +5284,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow decreased to extinction",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5361,7 +5361,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -5439,19 +5439,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "text says quenching pot",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5517,7 +5517,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -5594,7 +5594,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -5672,19 +5672,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished, no flow stated",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5751,19 +5751,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "extinguished, flow change not a stated low-flow value",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5830,19 +5830,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "flow reduced; 3 cm/s is a bound, not the extinction value",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -5908,7 +5908,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -5985,7 +5985,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -6070,19 +6070,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "air turned down, extinguished at explicit 3 cm/s",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -6149,7 +6149,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -6227,19 +6227,19 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
-    "confidence": 0.75,
+    "extracted_at": "2026-11-15T12:41:24+00:00",
+    "confidence": 0.8,
     "flags": [
      "condition_from_campaign_nominal"
     ]
    },
    "qa": {
-    "status": "flagged",
+    "status": "accepted",
     "reasons": [
      "turned down, extinguished; 5 has no cm/s unit",
      "quote verified on PDF page text",
      "O2 from PSI-25.csv exact cell match",
-     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+     "extinction explicit in the quote; mechanism (quench vs self) inferred from wording and not used by the boundary model"
     ]
    }
   },
@@ -6305,7 +6305,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -6382,7 +6382,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -6459,7 +6459,7 @@
     "method": "text",
     "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
     "model": "claude-haiku-5-5",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -6543,7 +6543,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6664,7 +6664,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6785,7 +6785,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6906,7 +6906,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7027,7 +7027,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7148,7 +7148,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7269,7 +7269,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7390,7 +7390,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7511,7 +7511,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7632,7 +7632,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7753,7 +7753,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7874,7 +7874,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7995,7 +7995,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8116,7 +8116,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8237,7 +8237,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8358,7 +8358,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8479,7 +8479,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8600,7 +8600,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8721,7 +8721,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8842,7 +8842,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8963,7 +8963,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9084,7 +9084,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9205,7 +9205,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9326,7 +9326,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9447,7 +9447,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9568,7 +9568,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9689,7 +9689,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9810,7 +9810,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9931,7 +9931,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10052,7 +10052,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10173,7 +10173,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10294,7 +10294,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10415,7 +10415,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10536,7 +10536,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10657,7 +10657,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10778,7 +10778,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -10899,7 +10899,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11020,7 +11020,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11141,7 +11141,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11262,7 +11262,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11383,7 +11383,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11504,7 +11504,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11625,7 +11625,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11746,7 +11746,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11867,7 +11867,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -11988,7 +11988,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12109,7 +12109,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12230,7 +12230,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12351,7 +12351,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12472,7 +12472,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12593,7 +12593,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12714,7 +12714,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12835,7 +12835,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -12956,7 +12956,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13077,7 +13077,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13198,7 +13198,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13319,7 +13319,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13440,7 +13440,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13561,7 +13561,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13683,7 +13683,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13805,7 +13805,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -13927,7 +13927,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14049,7 +14049,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14171,7 +14171,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14293,7 +14293,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14415,7 +14415,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14537,7 +14537,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14659,7 +14659,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14781,7 +14781,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -14903,7 +14903,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -15025,7 +15025,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "extracted_at": "2026-11-15T12:41:24+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -15146,7 +15146,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15265,7 +15265,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15384,7 +15384,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15503,7 +15503,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15622,7 +15622,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15741,7 +15741,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15860,7 +15860,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -15979,7 +15979,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16098,7 +16098,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16217,7 +16217,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16336,7 +16336,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16455,7 +16455,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16574,7 +16574,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16693,7 +16693,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16812,7 +16812,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -16931,7 +16931,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -17051,7 +17051,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -17132,7 +17132,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -17213,7 +17213,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:58:32+00:00",
+    "extracted_at": "2026-11-15T12:41:26+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
