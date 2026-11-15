@@ -158,7 +158,7 @@ def habitats(f, rows, sources=None):
             if sources is not None and r["source_id"].startswith("ntrs:"):
                 require_text(sources, r["source_id"], r["page"], r["quote"])
     xs = _arr(rows, "x")
-    a_grid = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(_arr(rows, "a").max()), 120)
+    a_grid = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(_arr(rows, "a").max()), 120) if rows else None
     out = []
     for h in presets:
         c = h["conditions"]
@@ -167,7 +167,11 @@ def habitats(f, rows, sources=None):
                 "conditions": c, "evidence_observation_ids": [r["id"] for r in rows][:50]}
         p_kpa = c.get("pressure_pa", 0) / 1000
         g = c.get("gravity_m_s2", 0)
-        if g > 1e-3:
+        if f is None:
+            pred = {**base, "status": "insufficient_data", "mean_si": None, "p_burns": None,
+                    "ood": {"in_domain": False, "score": 1.0, "method": "no model",
+                            "reason": "No flame-state observations digitized yet, so there is no model to query."}}
+        elif g > 1e-3:
             pred = {**base, "status": "insufficient_data", "mean_si": None, "p_burns": None,
                     "ood": {"in_domain": False, "score": 1.0, "method": "gravity/pressure domain check",
                             "reason": f"Partial gravity ({g:.2g} m/s2) at {p_kpa:.1f} kPa: buoyant flow returns and the "
@@ -216,7 +220,7 @@ def main() -> int:
     if len(rows) < 8 or len({r["y"] for r in rows}) < 2:
         print(f"only {len(rows)} usable flame-state points: writing no-data model files", file=sys.stderr)
         val = {"folds": [], "cv": [], "summary": "No flame-state data digitized yet.", "limitations": []}
-        rec, hab = {"constraint_set": None, "items": []}, {"presets": []}
+        rec, hab = {"constraint_set": None, "items": []}, habitats(None, rows, sources)
     else:
         f = bm.fit(_arr(rows, "a"), _arr(rows, "x") * 100, _arr(rows, "y"))
         gx = np.logspace(np.log10(_arr(rows, "a").min() / 1.5), np.log10(_arr(rows, "a").max() * 1.5), 80)

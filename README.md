@@ -2,6 +2,16 @@
 
 NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combustion results into one cited, queryable model.
 
+**Live:** https://ignis-flame-one.vercel.app
+
+| Piece | Where |
+|---|---|
+| Data contract + validator | `contract/`, `ignis_contract/` |
+| Ingestion (NTRS client, verbatim-checked tables, WPD plot digitization) | `ingest/`, `digitized/`, `registry/` |
+| Boundary model, validation, recommender, habitat risk | `model/` (`python -m model.export`) |
+| Analyst (local LLM, tool calls only, numeric guard) | `analyst/` |
+| Frontend (static, reads `web/public/data/*.json`) | `web/` |
+
 ## Scope (decided 2026-11-14)
 
 Data push is narrowed to **solid thin fuels**: opposed/concurrent **flame spread rate** and the **O2 x flow flammability boundary** (`flame_state`, `extinction_flow_velocity`, `limiting_oxygen_fraction`). Campaign cluster: BASS, BASS-II, Saffire IV-VI, plus drop-tower and 1g ground tests from the same papers. Reason: it is the only outcome where enough campaigns overlap to run leave-one-campaign-out validation. The contract still covers droplets, gas jets and smoke; they are just not being ingested.
@@ -13,7 +23,20 @@ python -m venv .venv
 .venv/Scripts/python -m pip install -e ".[dev]"     # Linux/macOS: .venv/bin/python
 .venv/Scripts/python -m pytest -q                   # first-run check
 .venv/Scripts/python -m ignis_contract validate contract/examples/bundle.synthetic.json
+.venv/Scripts/python -m ingest.ntrs fetch 20210011385 --download   # + 20030067701 20210011521 20150021491 20150010425
+.venv/Scripts/python -m ingest.build_bundle                        # data/bundle.json (production-validated)
+.venv/Scripts/python -m model.export                               # web/public/data/*.json
+.venv/Scripts/python -m http.server 8000 --directory web/public    # open http://localhost:8000
 ```
+
+Analyst (needs a local Ollama model with tool calling, default `gemmaclaude:latest`; set `IGNIS_LLM_MODEL` for another):
+
+```bash
+.venv/Scripts/python -m analyst "What is the minimum O2 for PMMA to burn in microgravity?"
+.venv/Scripts/python -m analyst --tool habitats                    # no LLM, raw tool output
+```
+
+Any number in the analyst's answer that is not in a tool result gets the answer refused (`analyst/__main__.py: unsupported_numbers`).
 
 ## Digitizing plots (WebPlotDigitizer 4)
 
