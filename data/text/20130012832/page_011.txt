@@ -1,3 +1,0 @@
-Fuel Sample Installed 
-Airflow 
-Experiment Operation: 

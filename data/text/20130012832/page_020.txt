@@ -1,3 +1,0 @@
-Video (edge view) of 2-cm-wide sample in concurrent flow.  Ignition is obtained 
-at an airflow speed of 10 cm/s and flow is then reduced to 5 cm/s. 
-Airflow 

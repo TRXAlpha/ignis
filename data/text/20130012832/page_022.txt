@@ -1,5 +1,0 @@
-10 cm/s Airflow 
-1 cm 
-Digital still camera images for 1-cm-wide fuel with concurrent airflow = 10 cm/s.  
-Images are taken every 1.125 sec (starting at bottom and moving from left to right).  
-The flame reaches steady state after about 10 seconds. 

@@ -1,9 +1,0 @@
- 
-NASA/TM-20210011385 
-78 
-Figure 6.12.—Flame standoff distance as function of stretch rate 
-a with power law fit. Forced-flow velocity (U). Rod radius (r).  
- 
- 
-Figure 6.13.—O2 consumed compared to CO2 generated. 
- 

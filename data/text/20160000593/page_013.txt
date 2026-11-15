@@ -1,7 +1,0 @@
-Residence Time Driven Flame Spread 
-Sequence of top views showing radiative quenching when 
-flow velocity goes below 2 cm/s.
-Flame nearing blow off extinction as the flow 
-velocity crosses 40 cm/s.
-Comparison of flame extinction at low opposing flow velocity (radiative quenching ) vs. at high 
-flow velocities (blow off extinction) for 0.1 mm thick sample. 

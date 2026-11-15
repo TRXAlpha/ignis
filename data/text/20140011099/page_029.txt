@@ -1,4 +1,0 @@
-Flame sequence of a burning 2-cm diameter PMMA sphere at 17% oxygen and 12 cm/s 
-flow.  The images are about 1.5 sec. apart. The high resolution images allow model  
-comparison of flame growth rate, flame-to-fuel distance, and the solid regression rate. 
-Flow 

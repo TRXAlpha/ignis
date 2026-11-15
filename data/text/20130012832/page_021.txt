@@ -1,3 +1,0 @@
-  10 cm/s Airflow 
-  5 cm/s Airflow 
-Effect of flow speed on 2-cm-wide sample in concurrent flow (top view) 

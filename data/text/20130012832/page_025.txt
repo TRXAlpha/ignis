@@ -1,7 +1,0 @@
-Digital still camera images for 2-cm-wide fuel with opposed airflow = 10 cm/s.  
-Images are taken every 1.25 sec (starting at top and moving from left to right). 
-Flame quickly reaches steady state and goes out when it runs out of fuel. 
-Note: Downward flame spread (opposed flow) in 1-g with this material is not 
-possible in normal air.  
-10 cm/s Airflow 
-2 cm 

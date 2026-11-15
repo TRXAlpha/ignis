@@ -1,4 +1,0 @@
-Mesh 
-Having 33930 points total, Using quad-core CPU (4 processors) with 16GB 
-memory, it takes 2.7 hours to compute one second in the computation (with 
-capability of shape change due to solid surface regression). 

@@ -1,6 +1,0 @@
-Top view image montage for a 1-cm wide flat acrylic sample burning in air at low flow speed 
-(around 9 cm/s).  Images progress from left to right then top to bottom (1.3 seconds between 
-images).  The air flow direction is from right to left.  The flame is about 1 cm in size and can 
-persist for a very long time at this low air flow speed.  The flame goes out only in the last two 
-frames when the air flow is completely shut off. 
-Flow 

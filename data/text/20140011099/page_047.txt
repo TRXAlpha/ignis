@@ -1,6 +1,0 @@
-Flame burning an acrylic sphere (top) from is compared to model computation (bottom).   
-The comprehensive model even includes solid phase shape change effects.   Adjusted 
-solid phase chemical kinetic parameters will improve the prediction of the flame standoff 
-distance. 
- 
-Fuel: Acrylic sphere; Atmosphere: 17% O2/N2; 1 atm; Flow speed: 12 cm/s (left to right) 
