@@ -34,14 +34,14 @@ function esc(v) {
 }
 function safeUrl(u) { return typeof u === 'string' && /^https?:\/\//.test(u) ? esc(u) : null; }
 function fmt(v, d = 3) {
-  if (v == null || v === '' || Number.isNaN(Number(v))) return '—';
+  if (v == null || v === '' || Number.isNaN(Number(v))) return '-';
   const n = Number(v);
   if (n !== 0 && (Math.abs(n) < 1e-3 || Math.abs(n) >= 1e6)) return n.toExponential(2);
   const s = n.toFixed(d);
   return s.includes('.') ? s.replace(/\.?0+$/, '') : s;
 }
-function pct(frac, d = 1) { return frac == null || Number.isNaN(Number(frac)) ? '—' : fmt(Number(frac) * 100, d) + '%'; }
-function shortId(id) { return id ? String(id).slice(0, 16) + (String(id).length > 16 ? '…' : '') : '—'; }
+function pct(frac, d = 1) { return frac == null || Number.isNaN(Number(frac)) ? '-' : fmt(Number(frac) * 100, d) + '%'; }
+function shortId(id) { return id ? String(id).slice(0, 16) + (String(id).length > 16 ? '…' : '') : '-'; }
 function noData(what, reason) {
   return `<div class="empty"><strong>No digitized data yet</strong>${esc(what)}${reason ? ` <span class="muted">(${esc(reason)})</span>` : ''}</div>`;
 }
@@ -257,23 +257,23 @@ function renderProvenance() {
     return;
   }
   const rows = list.map((o) => {
-    const qty = o.outcome?.quantity || '—';
+    const qty = o.outcome?.quantity || '-';
     let outcome;
     if (o.outcome?.state) outcome = esc(o.outcome.state);
     else if (o.outcome?.value) outcome = `${fmt(o.outcome.value.value)} ${esc(o.outcome.value.unit)}`;
-    else outcome = '—';
-    const o2 = o.conditions?.o2_mole_fraction ? pct(o.conditions.o2_mole_fraction.si_value) : '—';
+    else outcome = '-';
+    const o2 = o.conditions?.o2_mole_fraction ? pct(o.conditions.o2_mole_fraction.si_value) : '-';
     const camp = CAMP.get(o.experiment?.campaign_id);
     const mat = MAT.get(o.fuel?.material_id);
     return `<tr class="clickable" tabindex="0" data-id="${esc(o.id)}">
       <td class="mono" title="${esc(o.id)}">${esc(shortId(o.id))}</td>
-      <td>${esc(camp ? camp.name : o.experiment?.campaign_id || '—')}</td>
-      <td>${esc(o.experiment?.platform || '—')}</td>
-      <td>${esc(mat ? mat.name : o.fuel?.material_id || '—')}</td>
+      <td>${esc(camp ? camp.name : o.experiment?.campaign_id || '-')}</td>
+      <td>${esc(o.experiment?.platform || '-')}</td>
+      <td>${esc(mat ? mat.name : o.fuel?.material_id || '-')}</td>
       <td>${esc(qty)}<span class="sub">${outcome}</span></td>
       <td>${o2}</td>
-      <td>${esc(o.extraction?.method || '—')}</td>
-      <td>${esc(o.qa?.status || '—')}</td>
+      <td>${esc(o.extraction?.method || '-')}</td>
+      <td>${esc(o.qa?.status || '-')}</td>
     </tr>`;
   }).join('');
   $('obsTable').innerHTML = `<table>
@@ -329,7 +329,7 @@ function provHTML(o) {
   const ex = o.extraction || {};
   const dig = ex.digitization;
   const oc = o.outcome || {};
-  const outcome = oc.state ? esc(oc.state) : oc.value ? `${fmt(oc.value.value)} ${esc(oc.value.unit)} (SI ${fmt(oc.value.si_value, 4)} ${esc(oc.value.si_unit)})` : '—';
+  const outcome = oc.state ? esc(oc.state) : oc.value ? `${fmt(oc.value.value)} ${esc(oc.value.unit)} (SI ${fmt(oc.value.si_value, 4)} ${esc(oc.value.si_unit)})` : '-';
   const o2 = o.conditions?.o2_mole_fraction;
   const digHTML = dig ? `
     <dt>Digitized pixel</dt><dd class="mono">(${fmt(dig.pixel?.[0], 1)}, ${fmt(dig.pixel?.[1], 1)})${dig.marker ? ` · marker ${esc(dig.marker)}` : ''}</dd>
@@ -339,14 +339,14 @@ function provHTML(o) {
   return `<h3>${esc(o.id)}</h3>
     <dl>
       <dt>Source</dt><dd>${srcLink(loc.source_id)}${pdf}</dd>
-      <dt>Location</dt><dd>${esc(where || '—')}</dd>
-      <dt>Outcome</dt><dd>${esc(oc.quantity || '—')}: ${outcome}</dd>
-      <dt>O2</dt><dd>${o2 ? `${pct(o2.si_value)} (reported ${fmt(o2.value)} ${esc(o2.unit)})` : '—'}</dd>
-      <dt>Series</dt><dd>${esc(loc.series || '—')}</dd>
-      <dt>Extraction</dt><dd>${esc(ex.method || '—')} · ${esc(ex.tool || '—')}${ex.model ? ` · model ${esc(ex.model)}` : ''}</dd>
+      <dt>Location</dt><dd>${esc(where || '-')}</dd>
+      <dt>Outcome</dt><dd>${esc(oc.quantity || '-')}: ${outcome}</dd>
+      <dt>O2</dt><dd>${o2 ? `${pct(o2.si_value)} (reported ${fmt(o2.value)} ${esc(o2.unit)})` : '-'}</dd>
+      <dt>Series</dt><dd>${esc(loc.series || '-')}</dd>
+      <dt>Extraction</dt><dd>${esc(ex.method || '-')} · ${esc(ex.tool || '-')}${ex.model ? ` · model ${esc(ex.model)}` : ''}</dd>
       <dt>Confidence</dt><dd>${fmt(ex.confidence, 2)}</dd>
       <dt>Flags</dt><dd>${(ex.flags || []).map(esc).join(', ') || 'none'}</dd>
-      <dt>QA</dt><dd>${esc(o.qa?.status || '—')}${(o.qa?.reasons || []).length ? ` · ${(o.qa.reasons || []).map(esc).join('; ')}` : ''}</dd>
+      <dt>QA</dt><dd>${esc(o.qa?.status || '-')}${(o.qa?.reasons || []).length ? ` · ${(o.qa.reasons || []).map(esc).join('; ')}` : ''}</dd>
       ${digHTML}
     </dl>
     ${loc.quote ? `<blockquote>${esc(loc.quote)}</blockquote>` : ''}`;
@@ -366,10 +366,10 @@ function renderValidation() {
     const m = f.metrics || {};
     const b = f.baseline || {};
     const cells = metricKeys.map((k) => {
-      if (m[k] == null && b[k] == null) return '<td>—</td>';
+      if (m[k] == null && b[k] == null) return '<td>-</td>';
       return `<td><div>${fmt(m[k], 3)}</div><span class="sub">baseline ${fmt(b[k], 3)}</span></td>`;
     }).join('');
-    const cov = (m.coverage || []).map((c) => `${pct(c.nominal, 0)} → ${pct(c.empirical, 0)}`).join(', ') || '—';
+    const cov = (m.coverage || []).map((c) => `${pct(c.nominal, 0)} → ${pct(c.empirical, 0)}`).join(', ') || '-';
     return `<tr>
       <td class="mono">${esc(f.fold_id)}</td>
       <td>${esc(CAMP.get(f.held_out_campaign_id)?.name || f.held_out_campaign_id)}</td>
@@ -414,15 +414,15 @@ function renderExperiments() {
     const c = it.conditions || {};
     return `<tr>
       <td>${esc(it.rank)}</td>
-      <td>${c.flow_velocity_m_s != null ? fmt(c.flow_velocity_m_s * 100, 2) : '—'}</td>
-      <td>${c.o2_mole_fraction != null ? fmt(c.o2_mole_fraction * 100, 1) : '—'}</td>
+      <td>${c.flow_velocity_m_s != null ? fmt(c.flow_velocity_m_s * 100, 2) : '-'}</td>
+      <td>${c.o2_mole_fraction != null ? fmt(c.o2_mole_fraction * 100, 1) : '-'}</td>
       <td>${pct(it.p_burns, 0)}</td>
       <td>${fmt(it.expected_information_gain_nats, 3)}</td>
-      <td>${esc(it.gap?.description || '—')}${it.n_burns ? `<span class="sub">${esc(it.n_burns)} burn(s)</span>` : ''}</td>
+      <td>${esc(it.gap?.description || '-')}${it.n_burns ? `<span class="sub">${esc(it.n_burns)} burn(s)</span>` : ''}</td>
     </tr>`;
   }).join('');
   el.innerHTML = `
-    <h3>Constraint set: ${esc(cs.name || cs.id || '—')}</h3>
+    <h3>Constraint set: ${esc(cs.name || cs.id || '-')}</h3>
     <p class="caption">${esc(cs.platform || '')}${cs.facility ? ` · ${esc(cs.facility)}` : ''}${cs.max_burns ? ` · max ${esc(cs.max_burns)} burns` : ''}</p>
     <div class="table-wrap"><table><thead><tr><th>Parameter</th><th>Range</th></tr></thead><tbody>${rangeRows || '<tr><td colspan="2">No ranges</td></tr>'}</tbody></table></div>
     ${csRefs ? `<div class="refs-title">Range sources</div>${csRefs}` : ''}
@@ -464,9 +464,9 @@ function habitatCard(p) {
   return `<article class="card">
     <h3>${esc(p.name)}</h3>
     <dl>
-      <dt>O2</dt><dd>${c.o2_mole_fraction != null ? fmt(c.o2_mole_fraction * 100, 1) + '%' : '—'}</dd>
-      <dt>Pressure</dt><dd>${c.pressure_pa != null ? fmt(c.pressure_pa / 1000, 1) + ' kPa' : '—'}</dd>
-      <dt>Gravity</dt><dd>${c.gravity_m_s2 != null ? fmt(c.gravity_m_s2, 3) + ' m/s²' : '—'}</dd>
+      <dt>O2</dt><dd>${c.o2_mole_fraction != null ? fmt(c.o2_mole_fraction * 100, 1) + '%' : '-'}</dd>
+      <dt>Pressure</dt><dd>${c.pressure_pa != null ? fmt(c.pressure_pa / 1000, 1) + ' kPa' : '-'}</dd>
+      <dt>Gravity</dt><dd>${c.gravity_m_s2 != null ? fmt(c.gravity_m_s2, 3) + ' m/s²' : '-'}</dd>
     </dl>
     ${pred}
     ${p.notes ? `<p class="muted" style="font-size:0.88rem">${esc(p.notes)}</p>` : ''}
