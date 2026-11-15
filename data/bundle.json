@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T08:33:39+00:00",
+ "generated_at": "2026-11-15T08:53:18+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -81,6 +81,52 @@
    "campaign_ids": [
     "bass"
    ]
+  },
+  {
+   "id": "ntrs:20150021491",
+   "kind": "ntrs",
+   "title": "Evidence Report: Risk of Hypobaric Hypoxia from the Exploration Atmosphere",
+   "authors": [
+    "Norcross, Jason R.",
+    "Conkin, Johnny",
+    "Wessel, James H., III",
+    "Norsk, Peter",
+    "Law, Jennifer",
+    "Arias, Diana",
+    "Goodwin, Tom",
+    "Crucian, Brian",
+    "Whitmire, Alexandra",
+    "Bloomberg, Jacob",
+    "Platts, Steve",
+    "Ploutz-Snyder, Lori",
+    "Douglas, Grace"
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20150021491",
+   "ntrs_id": "20150021491",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20150021491/downloads/20150021491.pdf",
+   "sha256": "4defa6b98de32ea3f5972afc1a4c3c60eaba26bc842259d9946615c4b1c1bc60",
+   "year": 2015
+  },
+  {
+   "id": "ntrs:20150010425",
+   "kind": "ntrs",
+   "title": "Report on ISS O2 Production, Gas Supply and Partial Pressure Management",
+   "authors": [
+    "Schaezler, Ryan N.",
+    "Cook, Anthony J."
+   ],
+   "url": "https://ntrs.nasa.gov/citations/20150010425",
+   "ntrs_id": "20150010425",
+   "pdf_url": "https://ntrs.nasa.gov/api/citations/20150010425/downloads/20150010425.pdf",
+   "sha256": "23281e159632dd3f67b53aa797938ad26e4f75def94758ee39e30c3aa90008e1",
+   "year": 2015
+  },
+  {
+   "id": "web:nssdc-planetary-factsheet",
+   "kind": "web_page",
+   "title": "Planetary Fact Sheet (NASA NSSDCA)",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+   "retrieved_at": "2026-11-15T09:30:00+00:00"
   }
  ],
  "campaigns": [
@@ -214,7 +260,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T08:33:39+00:00",
+    "extracted_at": "2026-11-15T08:53:18+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -302,7 +348,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T08:33:39+00:00",
+    "extracted_at": "2026-11-15T08:53:18+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
