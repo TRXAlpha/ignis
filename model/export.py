@@ -19,6 +19,7 @@ from ingest.curated import require_text
 
 from . import boundary as bm
 from . import contradictions as cx
+from . import material_screen as ms
 
 BUNDLE = Path("data/bundle.json")
 OUT = Path("web/public/data")
@@ -288,6 +289,38 @@ def habitats(f, rows, sources=None):
     return {"presets": out}
 
 
+def test_outcomes(bundle: dict) -> dict:
+    """BASS-II per-test flame outcomes (ingest.curated.bass2_tests), grouped by material and geometry.
+    Independent of the boundary fit. O2 summaries use accepted rows only; flagged rows are listed but not summarised."""
+    mats = {m["id"]: m["name"] for m in bundle["materials"]}
+    groups: dict = {}
+    for o in bundle["observations"]:
+        ex, loc_ = o["experiment"], o["locator"]
+        if (loc_["source_id"] != BASS2 or o["extraction"]["method"] != "text" or ex["campaign_id"] != "bass-ii"
+                or "run_id" not in ex or o["outcome"]["quantity"] != "flame_state"):
+            continue
+        flow = o["conditions"].get("flow_velocity")
+        groups.setdefault((o["fuel"]["material_id"], o["fuel"]["geometry"]), []).append({
+            "obs_id": o["id"], "test_id": ex["run_id"], "state": o["outcome"]["state"],
+            "o2_pct": o["conditions"]["o2_mole_fraction"]["value"],
+            "flow_cm_s": round(flow["si_value"] * 100, 3) if flow else None,
+            "qa_status": o["qa"]["status"], "page": loc_["page"], "quote": loc_["quote"]})
+    out = []
+    for (mid, geom), tests in sorted(groups.items()):
+        acc = [t for t in tests if t["qa_status"] == "accepted"]
+        counts: dict = {}
+        for t in tests:
+            counts[t["state"]] = counts.get(t["state"], 0) + 1
+        ext = [t["o2_pct"] for t in acc if t["state"] in STATES_EXT]
+        out.append({"material_id": mid, "material_name": mats.get(mid, mid), "geometry": geom,
+                    "n": len(tests), "n_accepted": len(acc), "n_flagged": len(tests) - len(acc),
+                    "counts_by_state": dict(sorted(counts.items())),
+                    "burned_o2_pct": sorted(t["o2_pct"] for t in acc if t["state"] in STATES_BURN),
+                    "extinguished_o2_pct": [min(ext), max(ext)] if ext else None,
+                    "tests": sorted(tests, key=lambda t: t["test_id"])})
+    return {"source": {"report": BASS2, "table": "psi:PSI-25"}, "o2_summary_basis": "accepted rows only", "groups": out}
+
+
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     bundle = json.loads(BUNDLE.read_text(encoding="utf-8"))
@@ -299,6 +332,11 @@ def main() -> int:
         require_text(sources, BASS2, page, *snips)
     OUT.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(BUNDLE, OUT / "bundle.json")
+    src = next(s for s in bundle["sources"] if s["id"] == "psi:PSI-99")
+    screen = {"source": {k: src.get(k) for k in ("id", "doi", "url", "title")},
+              "rows": ms.table(bundle), "notes": ms.notes()}
+    (OUT / "material_screen.json").write_text(json.dumps(screen, ensure_ascii=False), encoding="utf-8")
+    (OUT / "test_outcomes.json").write_text(json.dumps(test_outcomes(bundle), ensure_ascii=False), encoding="utf-8")
     rows = boundary_points(bundle)
     baselines = [{"id": "1g-upward-limit", "label": "1g upward-spread limit (15.4 % O2)", "o2": 0.154, "ref": loc("upward_1g")},
                  {"id": "paper-min", "label": "BASS-II reported minimum (~13.5 % O2)", "o2": 0.135, "ref": loc("paper_min")}]

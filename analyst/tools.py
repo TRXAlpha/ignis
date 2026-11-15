@@ -101,6 +101,22 @@ def contradictions() -> dict:
                       for c in _load("contradictions").get("items", [])]}
 
 
+def material_screen() -> dict:
+    """Per-sample Saffire-II test table: Earth 1g burn vs microgravity burn (raw PSI cells) and the verdict, plus source."""
+    s = _load("material_screen")
+    return {"source": s.get("source"), "rows": s.get("rows", []), "notes": s.get("notes", [])}
+
+
+def test_outcomes() -> dict:
+    """BASS-II per-test flame outcomes by material and geometry: state counts, O2 where burned vs extinguished, QA split. No quotes."""
+    t = _load("test_outcomes")
+    groups = []
+    for g in t.get("groups", []):
+        groups.append({**{k: v for k, v in g.items() if k != "tests"},
+                       "tests": [{k: v for k, v in x.items() if k != "quote"} for x in g.get("tests", [])]})
+    return {"source": t.get("source"), "o2_summary_basis": t.get("o2_summary_basis"), "groups": groups}
+
+
 def data_summary() -> dict:
     """What data the model is built on: counts by campaign, outcome and QA status."""
     b = _load("bundle")
@@ -113,7 +129,7 @@ def data_summary() -> dict:
 
 
 TOOLS = {f.__name__: f for f in (p_burns, min_o2, habitats, recommendations, validation, observation, contradictions,
-                                  data_summary)}
+                                  material_screen, test_outcomes, data_summary)}
 
 SCHEMAS = [
     {"type": "function", "function": {"name": "p_burns", "description": p_burns.__doc__, "parameters": {
@@ -123,4 +139,4 @@ SCHEMAS = [
         "type": "object", "properties": {"obs_id": {"type": "string"}}, "required": ["obs_id"]}}},
 ] + [{"type": "function", "function": {"name": n, "description": TOOLS[n].__doc__,
                                        "parameters": {"type": "object", "properties": {}}}}
-     for n in ("min_o2", "habitats", "recommendations", "validation", "contradictions", "data_summary")]
+     for n in ("min_o2", "habitats", "recommendations", "validation", "contradictions", "material_screen", "test_outcomes", "data_summary")]

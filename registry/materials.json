@@ -40,5 +40,15 @@
     ],
     "phase": "solid",
     "material_class": "polymer"
+  },
+  {
+    "id": "candle_wax",
+    "name": "Japan wax candle (BASS-II F4 sample)",
+    "aliases": [
+      "Japan wax",
+      "JapanWax candle"
+    ],
+    "phase": "solid",
+    "material_class": "other"
   }
 ]

@@ -3,7 +3,7 @@
 
 const FIXTURES = new URLSearchParams(location.search).get('fixtures') === '1';
 const BASE = FIXTURES ? '../dev-fixtures/' : 'data/';
-const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions'];
+const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', 'contradictions', 'material_screen', 'test_outcomes'];
 
 const $ = (id) => document.getElementById(id);
 
@@ -98,6 +98,8 @@ async function boot() {
     ['validation', renderValidation],
     ['experiments', renderExperiments],
     ['habitats', renderHabitats],
+    ['screen', renderScreen],
+    ['tests', renderTests],
     ['data', renderData],
     ['checks', renderChecks],
     ['footer', renderFooter],
@@ -105,7 +107,7 @@ async function boot() {
   for (const [label, fn] of steps) {
     try { fn(); } catch (e) {
       console.error(`[ignis] ${label} failed`, e);
-      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', data: 'dataBody', checks: 'checksBody', footer: null }[label];
+      const target = { envelope: 'envelopeStatus', provenance: 'obsStatus', validation: 'validationBody', experiments: 'experimentsBody', habitats: 'habitatsBody', screen: 'screenBody', tests: 'testsBody', data: 'dataBody', checks: 'checksBody', footer: null }[label];
       if (target) $(target).innerHTML = `<div class="empty"><strong>Render error</strong>${esc(e.message)}</div>`;
     }
   }
@@ -550,6 +552,94 @@ function renderData() {
 }
 
 // ---------- consistency checks ----------
+// Per-sample ground (1g) test vs microgravity burn, from material_screen.json (read only).
+const SCREEN_BADGE = {
+  'both burned': ['ms-agree', 'agree'],
+  'neither burned': ['ms-agree', 'agree'],
+  '1g burned, ug did not': ['ms-blue', '1g conservative'],
+  'ug burned, 1g did not': ['ms-red', '1g NOT conservative'],
+};
+function renderScreen() {
+  const s = D.material_screen;
+  const el = $('screenBody');
+  const rows = s?.rows || [];
+  if (!rows.length) { el.innerHTML = noData('No material screen yet.', ERR.material_screen); return; }
+  const body = rows.map((r) => {
+    const [cls, label] = SCREEN_BADGE[r.verdict] || ['ms-grey', r.verdict];
+    const mat = r.material_id ? esc(MAT.get(r.material_id)?.name || r.material_id) : '<span class="muted">not stated</span>';
+    return `<tr>
+      <td>${esc(r.sample)}</td>
+      <td>${mat}</td>
+      <td>${esc(r.o2_text || '-')}</td>
+      <td>${esc(r.flow_cm_s || '-')} · ${esc(r.flow_direction || '-')}</td>
+      <td>${esc(r.ug_cell_raw ?? '-')}</td>
+      <td>${esc(r.g1_burn_length ?? '-')}</td>
+      <td><span class="ms-badge ${cls}" title="${esc(r.verdict)}">${esc(label)}</span></td>
+    </tr>`;
+  }).join('');
+  const src = s.source || {};
+  const doi = src.doi ? `<a href="https://doi.org/${esc(encodeURI(src.doi))}" target="_blank" rel="noopener">doi:${esc(src.doi)}</a>` : '';
+  const pageUrl = safeUrl(src.url);
+  const notes = (s.notes || []).map((n) => `<li>${esc(n)}</li>`).join('');
+  el.innerHTML = `
+    <p class="caption">Each row is one sample burned in a 1g Earth test and in microgravity on Saffire-II. Burn cells are the raw PSI table text; the verdict only compares whether each one burned.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Sample</th><th>Material</th><th>O2</th><th>Flow cm/s</th><th>Microgravity burn</th><th>1g burn</th><th>Verdict</th></tr></thead>
+      <tbody>${body}</tbody>
+    </table></div>
+    ${notes ? `<h3>Notes (verbatim from PSI-99)</h3><ul class="muted">${notes}</ul>` : ''}
+    <p class="caption">Source: ${pageUrl ? `<a href="${pageUrl}" target="_blank" rel="noopener">${esc(src.title || src.id)}</a>` : esc(src.title || src.id || '-')}${doi ? ` · ${doi}` : ''}</p>`;
+}
+
+// ---------- BASS-II per-test outcomes (test_outcomes.json, read only) ----------
+const TEST_BADGE = {
+  burns_sustained: ['ts-burn', 'burns'],
+  blowoff_extinction: ['ts-blow', 'blowoff'],
+  quench_extinction: ['ts-quench', 'quench'],
+  self_extinguished: ['ts-self', 'self-extinguished'],
+  no_ignition: ['ts-none', 'no ignition'],
+};
+function testBadge(state) {
+  const [cls, label] = TEST_BADGE[state] || ['ts-none', state];
+  return `<span class="ms-badge ${cls}">${esc(label)}</span>`;
+}
+function renderTests() {
+  const t = D.test_outcomes;
+  const el = $('testsBody');
+  const groups = t?.groups || [];
+  if (!groups.length) { el.innerHTML = noData('No per-test outcomes yet.', ERR.test_outcomes); return; }
+  const total = groups.reduce((a, g) => a + g.n, 0);
+  $('testsTitle').textContent = `BASS-II flight tests by material (${total} tests)`;
+  const o2 = (arr) => (arr && arr.length ? arr.map((v) => `${fmt(v, 2)}%`).join(', ') : 'none');
+  el.innerHTML = `<div class="grid-cards">${groups.map((g) => {
+    const counts = Object.entries(g.counts_by_state || {})
+      .map(([s, c]) => `${testBadge(s)} ${esc(c)}`).join(' &nbsp; ');
+    const ext = g.extinguished_o2_pct ? `${fmt(g.extinguished_o2_pct[0], 2)}–${fmt(g.extinguished_o2_pct[1], 2)}%` : 'none';
+    const rows = (g.tests || []).map((x) => `<tr class="${x.qa_status === 'flagged' ? 'muted' : ''}">
+      <td>${esc(x.test_id)}</td>
+      <td>${testBadge(x.state)}</td>
+      <td>${esc(fmt(x.o2_pct, 2))}</td>
+      <td>${x.flow_cm_s == null ? '-' : esc(fmt(x.flow_cm_s, 2))}</td>
+      <td>${x.qa_status === 'flagged' ? '<span class="ms-badge ts-flag">flagged</span>' : esc(x.qa_status)}</td>
+      <td class="ts-quote">${esc(x.quote)}</td>
+      <td><button type="button" class="chip" data-obs="${esc(x.obs_id)}">Provenance</button></td>
+    </tr>`).join('');
+    return `<article class="card">
+      <h3>${esc(g.material_name)} · ${esc(g.geometry)}</h3>
+      <p>${g.n} tests: ${g.n_accepted} accepted / ${g.n_flagged} flagged</p>
+      <p>${counts}</p>
+      <p class="muted">Burned to completion at O2: ${esc(o2(g.burned_o2_pct))}<br>Extinguished at O2: ${esc(ext)}</p>
+      <details><summary>Tests (${(g.tests || []).length})</summary>
+        <div class="table-wrap"><table class="ts-table">
+          <thead><tr><th>Test</th><th>State</th><th>O2 %</th><th>Flow cm/s</th><th>QA</th><th>Quote</th><th></th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table></div>
+      </details>
+    </article>`;
+  }).join('')}</div>`;
+  el.querySelectorAll('button[data-obs]').forEach((btn) => btn.addEventListener('click', () => openProvenance(btn.dataset.obs)));
+}
+
 function renderChecks() {
   const c = D.contradictions;
   const el = $('checksBody');

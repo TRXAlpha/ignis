@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_at": "2026-11-15T11:31:15+00:00",
+ "generated_at": "2026-11-15T11:58:32+00:00",
  "sources": [
   {
    "id": "ntrs:20210011385",
@@ -326,6 +326,16 @@
    "material_class": "fabric"
   },
   {
+   "id": "nomex",
+   "name": "Nomex (meta-aramid fabric)",
+   "aliases": [
+    "Nomex",
+    "meta-aramid"
+   ],
+   "phase": "solid",
+   "material_class": "fabric"
+  },
+  {
    "id": "silicone",
    "name": "Silicone (Saffire-II sample material)",
    "aliases": [
@@ -333,6 +343,16 @@
    ],
    "phase": "solid",
    "material_class": "polymer"
+  },
+  {
+   "id": "candle_wax",
+   "name": "Japan wax candle (BASS-II F4 sample)",
+   "aliases": [
+    "Japan wax",
+    "JapanWax candle"
+   ],
+   "phase": "solid",
+   "material_class": "other"
   }
  ],
  "observations": [
@@ -411,7 +431,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -499,7 +519,7 @@
     "method": "table",
     "tool": "curated-transcription@1 (pymupdf text layer, verbatim-checked)",
     "model": "claude-opus-5-5",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -509,6 +529,5948 @@
     "status": "accepted",
     "reasons": [
      "value, row label and caption matched verbatim in PDF text layer"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fcc2716921d2b700",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "complete burnout",
+    "table": "Appendix A test matrices",
+    "row": "B6"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B6"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.1,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B6",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm 0.1 mm PMMA film'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B6",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.9,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.209,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B6",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "sample burned out completely",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_90696d2ada5aa565",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "extinguished at 0.35",
+    "table": "Appendix A test matrices",
+    "row": "B9"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B9"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.1,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B9",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm   0.1 mm PMMA film'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B9",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.9,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.209,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B9",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_b1f964dc41a623bb",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 111,
+    "quote": "extinguished at pot 0.35",
+    "table": "Appendix A test matrices",
+    "row": "B10"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B10"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.2,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B10",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm   0.2 mm PMMA film'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B10",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.8,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.20800000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B10",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fd2b228cc6a4e884",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 111,
+    "quote": "extinguished at pot 0.35",
+    "table": "Appendix A test matrices",
+    "row": "B11"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B11"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.2,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B11",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm   0.2 mm PMMA film'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B11",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.7,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.207,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B11",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_d87551f07863d083",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 111,
+    "quote": "extinguished at pot 0.35",
+    "table": "Appendix A test matrices",
+    "row": "B13"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B13"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.4,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0004,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B13",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm   0.4 mm thick film'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B13",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.20500000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B13",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_99b922b946141b7f",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 111,
+    "quote": "flame quenched after prolonged burn",
+    "table": "Appendix A test matrices",
+    "row": "B16"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B16"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.1,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B16",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm 100 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B16",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.172,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B16",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says quenched",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_a48169d35431125c",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "flame blew out",
+    "table": "Appendix A test matrices",
+    "row": "B18"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B18"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.2,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B18",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide 200 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B18",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B18",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blew out at fan pot 7.0 (pot, not cm/s)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_0474c1271884794a",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "flame blew out at a pot of 6.0",
+    "table": "Appendix A test matrices",
+    "row": "B19"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B19"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.1,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B19",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm 100 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B19",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.172,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B19",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blew out at pot 6.0 (pot, not cm/s)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_077670202e5a98d2",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "flame burned entire sample",
+    "table": "Appendix A test matrices",
+    "row": "B20"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B20"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.1,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B20",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm 100 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B20",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B20",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "burned entire sample",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_07ade7a229087b61",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "fan pot turned down slowly after flame; spreads halfway; flame goes out",
+    "table": "Appendix A test matrices",
+    "row": "B21"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B21"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.2,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B21",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide 200 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B21",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.20600000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B21",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow turned down slowly, then flame out",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_1c666495f4343697",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 112,
+    "quote": "decreased flow in step, fan pot 1.7, 0.5, 0.4, 0.36 (flame out)",
+    "table": "Appendix A test matrices",
+    "row": "B22"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "B22"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 0.2,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.0002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B22",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide 200 micron thick PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B22",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.20500000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "B22",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow decreased in steps to flame out",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_771c69517039d9a1",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "extinction at pot 0.315 (finite low flow)",
+    "table": "Appendix A test matrices",
+    "row": "P1"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P1"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17500000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P1",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says low flow",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_c8076d185ea011a3",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 115,
+    "quote": "extinguished at 0.3 pot",
+    "table": "Appendix A test matrices",
+    "row": "P3a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P3a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P3a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_65c4f62bce1bbd43",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 115,
+    "quote": "finally turned down flow to 0 to extinguish",
+    "table": "Appendix A test matrices",
+    "row": "P5"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P5"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17600000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P5",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow turned down to 0 to extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_95eb32ef1a56c1f9",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "quench at pot 0.3",
+    "table": "Appendix A test matrices",
+    "row": "P10"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P10"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.16399999999999998,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P10",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says quench",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_d739336c0fa87c38",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "extinguished at 0.31",
+    "table": "Appendix A test matrices",
+    "row": "P14"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P14"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.18,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P14",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_9fcf3066184ff2dc",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "Extinguished at pot 0.32",
+    "table": "Appendix A test matrices",
+    "row": "P16"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P16"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P16",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at pot value, no low-flow wording",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_61cbebbed7c70f61",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "finally turned pot down slowly, extinction at fan pot 0.32",
+    "table": "Appendix A test matrices",
+    "row": "P18"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P18"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 19.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.19,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P18",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down slowly to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_cff8686c4cff4a37",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "finally turned pot down slowly, extinction at fan pot 0.335",
+    "table": "Appendix A test matrices",
+    "row": "P20"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P20"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.182,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P20",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down slowly to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_a0c88748aee2947d",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 114,
+    "quote": "self-extinguished at 5 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "P21a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P21a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.3,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.163,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P21a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 5.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.05,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "self-extinguished at explicit 5 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_cf2ac6a68dc12b4e",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 115,
+    "quote": "finally turned pot down slowly, extinction at fan pot 0.38",
+    "table": "Appendix A test matrices",
+    "row": "P23"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P23"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P23",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down slowly to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_13fb5a35491b811d",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 115,
+    "quote": "finally turned pot down slowly, extinction at fan pot 0.30",
+    "table": "Appendix A test matrices",
+    "row": "P24"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "P24"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17500000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "P24",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down slowly to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_54095a3e1e8cfc7e",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 113,
+    "quote": "flame would not sustain",
+    "table": "Appendix A test matrices",
+    "row": "F2"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "F2"
+   },
+   "fuel": {
+    "material_id": "nomex",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 21.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.21,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "F2",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "no_ignition"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "ignition did not sustain",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_e3513396d7034170",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 113,
+    "quote": "reduced flow in increments: potentiometers 0.6, 0.4, 0.35, 0.32, 0.31, 0.305 flame extinguished",
+    "table": "Appendix A test matrices",
+    "row": "F4"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "F4"
+   },
+   "fuel": {
+    "material_id": "candle_wax",
+    "phase": "solid",
+    "geometry": "candle"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "F4",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow reduced in increments, flame extinguished",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_645429bfb4164e32",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "increased flow to 14 cm/s, but it self- extinguished",
+    "table": "Appendix A test matrices",
+    "row": "M2"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M2"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 3.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.003,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M2",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '3 mm thick PMMA 1 sided    2 cm wide'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M2",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 21.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.212,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M2",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 14.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.14,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "self-extinguished after flow set to explicit 14 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_d54a90c61b6d90e1",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "Extinguished at 18 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "M3"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M3"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 5.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.005,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M3",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm wide   5 mm thick 1 sided PMMA'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M3",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 19.7,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.197,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M3",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 18.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.18,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at explicit 18 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_0c577fd08c29446d",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "extinguished by turning pot down to 0.3",
+    "table": "Appendix A test matrices",
+    "row": "M4"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M4"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 5.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.005,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M4",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '5 mm thick PMMA   2 cm wide'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M4",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 19.8,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.198,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M4",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down to extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_55d6b991cc4ae7e0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "burned entire sample",
+    "table": "Appendix A test matrices",
+    "row": "M7"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M7"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 1.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.001,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M7",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide PMMA 1 mm thick'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M7",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.184,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M7",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "burned entire sample",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_444728d62129956a",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "turned down flow to extinguish",
+    "table": "Appendix A test matrices",
+    "row": "M8"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M8"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 2.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M8",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide PMMA 2 mm thick'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M8",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.182,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M8",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow turned down to extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_8389754739a2822d",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "died after 15 min at 14 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "M9"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M9"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 3.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.003,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M9",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide PMMA 3 mm thick'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M9",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17600000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M9",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 14.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.14,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flame died at explicit 14 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_2736e07bf8b7d634",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 116,
+    "quote": "flame self-extinguished at 8 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "M10"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M10"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "slab",
+    "thickness": {
+     "value": 4.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.004,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M10",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '4 mm thick   1 cm wide PMMA slab'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M10",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.18600000000000003,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M10",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 8.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.08,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "self-extinguished at explicit 8 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_ca48cca12a5dd459",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 116,
+    "quote": "extinguished at 12 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "M11"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M11"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 5.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.005,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M11",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '1 cm wide PMMA 5 mm thick'; micron values converted to mm"
+    },
+    "width": {
+     "value": 1.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.01,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M11",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.185,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M11",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 12.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.12,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished at explicit 12 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_980f57283ecd0733",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 116,
+    "quote": "extinguished by turning pot down to 0.3",
+    "table": "Appendix A test matrices",
+    "row": "M13"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M13"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 4.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.004,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M13",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '4 mm thick PMMA   2 cm wide'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M13",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 19.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.19,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M13",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "pot turned down to extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_efbb98ad0479f1be",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 116,
+    "quote": "turned fan pot to 0 to extinguish",
+    "table": "Appendix A test matrices",
+    "row": "M17"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M17"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 2.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.002,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M17",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '2 cm wide PMMA 2 mm thick'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M17",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.1,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.171,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M17",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "fan pot turned to 0 to extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_765b7e0ff87458b0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "went out on its own at 5 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "M19"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M19"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "slab",
+    "thickness": {
+     "value": 4.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.004,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M19",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '4 mm thick   2 cm 2ide PMMA slab'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M19",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M19",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 5.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.05,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "went out on its own at explicit 5 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_bc955e05705a33de",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 117,
+    "quote": "flow down to 8 cm/s (flame out after 3 more minutes)",
+    "table": "Appendix A test matrices",
+    "row": "M20"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "M20"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "sheet",
+    "thickness": {
+     "value": 5.0,
+     "unit": "mm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.005,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M20",
+       "column": "Fuel Sample Material"
+      }
+     },
+     "note": "PSI-25 cell '5 mm thick PMMA   2 cm wide'; micron values converted to mm"
+    },
+    "width": {
+     "value": 2.0,
+     "unit": "cm",
+     "basis": "reported_elsewhere",
+     "si_value": 0.02,
+     "si_unit": "m",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M20",
+       "column": "Fuel Sample Material"
+      }
+     }
+    }
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.4,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.174,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "M20",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "opposed",
+    "flow_velocity": {
+     "value": 8.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.08,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow stepped down, flame out at 8 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_8b534870bc577155",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Flame extinguished as soon as he turned flow down",
+    "table": "Appendix A test matrices",
+    "row": "O3a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O3a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.18,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O3a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow turned down, extinguished",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_c369d59e634d5872",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "decreased flow, extinguished at 0.36",
+    "table": "Appendix A test matrices",
+    "row": "O4"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O4"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 13.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.136,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O4",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow decreased, extinguished",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_64f90ee18dc8210d",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "blew out with pot of 4.0",
+    "table": "Appendix A test matrices",
+    "row": "O5a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O5a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.142,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O5a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blew out (pot value)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_ab74de066c5db63b",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Would not sustain a flame without igniter on",
+    "table": "Appendix A test matrices",
+    "row": "O5b"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O5b"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.1,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.141,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O5b",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "no_ignition"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "flame not sustained",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_31714204a973da6a",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Blowoff fan 97",
+    "table": "Appendix A test matrices",
+    "row": "O7"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O7"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 15.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.155,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O7",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blowoff (fan value, not cm/s)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_f0da28967d10deae",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Quench at pot 0.31",
+    "table": "Appendix A test matrices",
+    "row": "O8a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O8a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 15.3,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.153,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O8a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says quench",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_3932f8a40fe5e1aa",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Blowoff fan 78",
+    "table": "Appendix A test matrices",
+    "row": "O8b"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O8b"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 15.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.152,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O8b",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blowoff (fan value, not cm/s)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_7b3ce7552b97faa5",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 119,
+    "quote": "Blowoff fan 68",
+    "table": "Appendix A test matrices",
+    "row": "O9"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O9"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.8,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.14800000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O9",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blowoff (fan value, not cm/s)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_410e06d17ec46552",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "blew out at fan 81",
+    "table": "Appendix A test matrices",
+    "row": "O10"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O10"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.1,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.161,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O10",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "leading edge blew out (fan value)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_738c1965b7afb19f",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "blowoff at pot of 6.0",
+    "table": "Appendix A test matrices",
+    "row": "O11"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O11"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.8,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.14800000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O11",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "blowoff (pot value)",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_93e379210ceec06c",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "No sustained flame at any flow",
+    "table": "Appendix A test matrices",
+    "row": "O12"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O12"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 13.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.135,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O12",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "no_ignition"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "no sustained flame at any flow",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_e1f89c853696d668",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "flame self-extinguished after 3+ min at pot 0.31",
+    "table": "Appendix A test matrices",
+    "row": "O13a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O13a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.146,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O13a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "self-extinguished, pot value only",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_8e263aa12ba7aabd",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "slow pot decreases to quenching pot",
+    "table": "Appendix A test matrices",
+    "row": "O14"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O14"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 15.3,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.153,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O14",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says quenching pot",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_45476178734656d0",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "Decrease flow to extinction at 0.32 pot",
+    "table": "Appendix A test matrices",
+    "row": "O15a"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O15a"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.7,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.167,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O15a",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow decreased to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_fb81529c6b8415f2",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "decreased flow to extinction at 0.27 pot",
+    "table": "Appendix A test matrices",
+    "row": "O15b"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O15b"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 15.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.156,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O15b",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow decreased to extinction",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_8aa761dd68be34b7",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "no joy on sustained flame",
+    "table": "Appendix A test matrices",
+    "row": "O16"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O16"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.145,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O16",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "no_ignition"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "no sustained flame",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_5ccde00cec17e988",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 118,
+    "quote": "slow pot decreases to quenching pot",
+    "table": "Appendix A test matrices",
+    "row": "O19"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "O19"
+   },
+   "fuel": {
+    "material_id": "pmma",
+    "phase": "solid",
+    "geometry": "rod"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 14.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.146,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "O19",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "text says quenching pot",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_46ed63fa65ea3987",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 121,
+    "quote": "still did not extinguish",
+    "table": "Appendix A test matrices",
+    "row": "T6"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T6"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.8,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.188,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T6",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "flame did not extinguish",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_b10450b868d3e84c",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Burned completely",
+    "table": "Appendix A test matrices",
+    "row": "T11"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T11"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T11",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "burned completely",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_e883178ef96bc7a5",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Extinguished quickly",
+    "table": "Appendix A test matrices",
+    "row": "T12"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T12"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.9,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.16899999999999998,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T12",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished, no flow stated",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_06b905c8574d8af8",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "flame extinguished quickly after flow change",
+    "table": "Appendix A test matrices",
+    "row": "T13"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T13"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17600000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T13",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "self_extinguished",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "extinguished, flow change not a stated low-flow value",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_65f00cbb291da1b1",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Extinguished as we reduced flow below 3 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "T14"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T14"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 16.9,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.16899999999999998,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T14",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "flow reduced; 3 cm/s is a bound, not the extinction value",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_42e28834245c2722",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "flame spread whole sample",
+    "table": "Appendix A test matrices",
+    "row": "T16"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T16"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.5,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17500000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T16",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "spread whole sample",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_2f48def2b43e08fa",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Steady burn",
+    "table": "Appendix A test matrices",
+    "row": "T19"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T19"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.172,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T19",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "steady burn",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_d5d916ebed4a1f98",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Quick extinction when we turned air down to 3 cm/s",
+    "table": "Appendix A test matrices",
+    "row": "T20"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T20"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.172,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T20",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent",
+    "flow_velocity": {
+     "value": 3.0,
+     "unit": "cm/s",
+     "basis": "reported",
+     "si_value": 0.03,
+     "si_unit": "m/s"
+    }
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "air turned down, extinguished at explicit 3 cm/s",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_9081c700afc5aef3",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Successful blowoff",
+    "table": "Appendix A test matrices",
+    "row": "T21"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T21"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.172,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T21",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "blowoff_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "text says blowoff",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_b41722d4c702e8a2",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Ignited at 11, turned down to 5 and extinguished",
+    "table": "Appendix A test matrices",
+    "row": "T22"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T22"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.0,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T22",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "quench_extinction",
+    "time_basis": "at_extinction"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.75,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "flagged",
+    "reasons": [
+     "turned down, extinguished; 5 has no cm/s unit",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match",
+     "extinction mechanism inferred from wording, not an explicit quench/blowoff term"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_67d395871a9d2add",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "Did not ignite with moved igniter",
+    "table": "Appendix A test matrices",
+    "row": "T23"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T23"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 17.3,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.17300000000000001,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T23",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "no_ignition"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "did not ignite",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_656ad25ca797ed68",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 120,
+    "quote": "steady spread of a one-sided flame",
+    "table": "Appendix A test matrices",
+    "row": "T24"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T24"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 18.2,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.182,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T24",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "steady spread",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
+    ]
+   }
+  },
+  {
+   "schema_version": "1.0.0",
+   "id": "obs_f1ed4c6cbdc99d90",
+   "locator": {
+    "source_id": "ntrs:20210011385",
+    "page": 121,
+    "quote": "fuel is burned out",
+    "table": "Appendix A test matrices",
+    "row": "T27"
+   },
+   "experiment": {
+    "campaign_id": "bass-ii",
+    "platform": "orbital_iss",
+    "facility": "Microgravity Science Glovebox (MSG)",
+    "run_id": "T27"
+   },
+   "fuel": {
+    "material_id": "sibal",
+    "phase": "solid",
+    "geometry": "fabric"
+   },
+   "conditions": {
+    "gravity": {
+     "value": 2.0,
+     "unit": "µg",
+     "basis": "campaign_nominal",
+     "si_value": 1.9613299999999997e-05,
+     "si_unit": "m/s^2",
+     "basis_ref": {
+      "locator": {
+       "source_id": "ntrs:20030067701",
+       "page": 45,
+       "quote": "magnitudes expected to be on the order of 2 µg or less"
+      }
+     },
+     "note": "Upper bound for the ISS quasi-steady environment (PIMS Increment-4/5, 2001-2002); BASS-II flew later, so treat as order of magnitude."
+    },
+    "o2_mole_fraction": {
+     "value": 20.6,
+     "unit": "percent",
+     "basis": "reported_elsewhere",
+     "si_value": 0.20600000000000002,
+     "si_unit": "dimensionless",
+     "basis_ref": {
+      "locator": {
+       "source_id": "psi:PSI-25",
+       "dataset_path": "PSI-25.csv",
+       "row": "T27",
+       "column": "Calibrated final O2 % by vol"
+      }
+     }
+    },
+    "flow_direction": "concurrent"
+   },
+   "outcome": {
+    "quantity": "flame_state",
+    "state": "burns_sustained"
+   },
+   "extraction": {
+    "method": "text",
+    "tool": "curated-transcription@1 (appendix text, verbatim-checked; PSI-25.csv exact cell match)",
+    "model": "claude-haiku-5-5",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
+    "confidence": 0.9,
+    "flags": [
+     "condition_from_campaign_nominal"
+    ]
+   },
+   "qa": {
+    "status": "accepted",
+    "reasons": [
+     "fuel burned out",
+     "quote verified on PDF page text",
+     "O2 from PSI-25.csv exact cell match"
     ]
    }
   },
@@ -581,7 +6543,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -702,7 +6664,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -823,7 +6785,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -944,7 +6906,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1065,7 +7027,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1186,7 +7148,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1307,7 +7269,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1428,7 +7390,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1549,7 +7511,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1670,7 +7632,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1791,7 +7753,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -1912,7 +7874,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2033,7 +7995,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2154,7 +8116,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2275,7 +8237,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2396,7 +8358,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2517,7 +8479,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2638,7 +8600,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2759,7 +8721,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -2880,7 +8842,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3001,7 +8963,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3122,7 +9084,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3243,7 +9205,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3364,7 +9326,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3485,7 +9447,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3606,7 +9568,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3727,7 +9689,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3848,7 +9810,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -3969,7 +9931,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4090,7 +10052,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4211,7 +10173,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4332,7 +10294,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4453,7 +10415,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4574,7 +10536,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4695,7 +10657,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4816,7 +10778,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -4937,7 +10899,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5058,7 +11020,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5179,7 +11141,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5300,7 +11262,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5421,7 +11383,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5542,7 +11504,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5663,7 +11625,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5784,7 +11746,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -5905,7 +11867,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6026,7 +11988,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6147,7 +12109,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6268,7 +12230,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6389,7 +12351,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6510,7 +12472,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6631,7 +12593,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6752,7 +12714,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6873,7 +12835,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -6994,7 +12956,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7115,7 +13077,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7236,7 +13198,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7357,7 +13319,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7478,7 +13440,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7599,7 +13561,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7721,7 +13683,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7843,7 +13805,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -7965,7 +13927,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8087,7 +14049,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8209,7 +14171,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8331,7 +14293,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8453,7 +14415,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8575,7 +14537,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8697,7 +14659,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8819,7 +14781,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -8941,7 +14903,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9063,7 +15025,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:13+00:00",
+    "extracted_at": "2026-11-15T11:58:30+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal",
@@ -9184,7 +15146,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9303,7 +15265,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9422,7 +15384,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9541,7 +15503,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9660,7 +15622,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9779,7 +15741,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -9898,7 +15860,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10017,7 +15979,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10136,7 +16098,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10255,7 +16217,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10374,7 +16336,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10493,7 +16455,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10612,7 +16574,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10731,7 +16693,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10850,7 +16812,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -10969,7 +16931,7 @@
    "extraction": {
     "method": "plot_digitized",
     "tool": "ingest.autodigitize@1 (colour/shape detection, no human clicks) + ingest.wpd@1",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.75,
     "flags": [
      "condition_from_campaign_nominal"
@@ -11089,7 +17051,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -11170,7 +17132,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"
@@ -11251,7 +17213,7 @@
     "method": "dataset_file",
     "tool": "curated-transcription@1 (PSI-99.csv exact cell match)",
     "model": "glm-5.3-flash",
-    "extracted_at": "2026-11-15T11:31:15+00:00",
+    "extracted_at": "2026-11-15T11:58:32+00:00",
     "confidence": 0.9,
     "flags": [
      "condition_from_campaign_nominal"

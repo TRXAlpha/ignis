@@ -28,6 +28,10 @@ NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combusti
   microgravity is 13.6 % (90 % band 13.4-13.9 %), well below the 15.4 % the Earth test implies. The report itself says
   ~13.5 %. Trained on one platform, the model predicts the other better than the Earth rule (leave-one-campaign-out).
 
+- **New from NASA's raw tables (PSI):** Saffire-II burned the same materials in orbit and in a 1g ground test.
+  3 of 4 silicone samples burned in the 1g test but self-extinguished in orbit at 20 cm/s and ~22 % O2: for that material the Earth test
+  is conservative, the opposite of the PMMA result. 66 BASS-II flight tests now carry their recorded outcome per material.
+
 Submission texts (video script, deck outline, project page, key numbers): [`docs/DELIVERABLES.md`](docs/DELIVERABLES.md).
 
 ## Spec coverage
@@ -36,14 +40,15 @@ Submission texts (video script, deck outline, project page, key numbers): [`docs
 |---|---|
 | Ingestion: NTRS | Done: `ingest.ntrs` search/fetch, `ingest.fetch_sources` (sha256-checked), verbatim-checked table transcription |
 | Ingestion: plot digitization | Done: `ingest.autodigitize` (ticks + markers -> WPD 4 project + overlay), human WPD path also supported |
-| Ingestion: PSI pages, FLARE | Not ingested: scope narrowed to thin solids / flammability boundary (BASS, BASS-II, Saffire) on 2026-11-14 |
+| Ingestion: PSI | Done: `ingest.psi` pulls the public CC0 experimental tables (PSI-25 BASS-II, PSI-26 BASS, PSI-98/99/100 Saffire I-III) with DOIs and sha256; BASS-II per-test outcomes joined from the report's test-matrix notes (`ingest/curated/bass2_tests.py`, 66 tests, every quote verified); Saffire-II 1g rows |
+| Ingestion: FLARE | Not ingested (JAXA project, no public table found) |
 | Knowledge graph + contradiction detector | Contradiction detector done (`model/contradictions.py`, site "Consistency checks"); graph = the contract's source / campaign / observation links, no separate graph store |
 | Physics-informed surrogate | Done: physics-shaped Bayesian boundary (`model/boundary.py`). Multi-fidelity cut (spec cut order); platforms are tested against each other instead |
 | Leave-one-experiment-out validation in app | Done: leave-one-campaign-out ISS <-> drop tower + 5-fold CV, vs the 1g rule |
 | Bayesian experiment recommender | Done: BALD information gain inside the sourced BASS-II envelope |
 | Habitat risk engine | Done: ISS, exploration 8.2/34, lunar and Mars landers, all sourced; out-of-domain -> INSUFFICIENT DATA |
 | LLM analyst, tool calls only | Done as local CLI (`analyst/`, Ollama), numeric guard refuses numbers not in tool output. Not on the static site (no server, no keys) |
-| Frontend + deploy | Done: https://ignis-flame-one.vercel.app (envelope 3D/2D, provenance, validation, experiments, habitats, checks, timeline) |
+| Frontend + deploy | Done: https://ignis-flame-one.vercel.app (envelope 3D/2D with material selector, provenance, validation, experiments, habitats, Earth-vs-orbit by material, per-test outcomes, checks, timeline) |
 
 ## Scope (decided 2026-11-14)
 

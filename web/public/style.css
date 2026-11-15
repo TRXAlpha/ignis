@@ -146,3 +146,21 @@ blockquote {
 .chip:hover { border-color: var(--ok); }
 .plot-short { height: auto; min-height: 140px; }
 .src-list { padding-left: 18px; line-height: 1.6; font-size: 0.92rem; }
+
+/* material screen badges */
+.ms-badge { display: inline-block; font-weight: 700; font-size: 0.78rem; padding: 3px 8px; border-radius: 6px; color: #000; white-space: nowrap; }
+.ms-agree { background: var(--ok); }
+.ms-blue { background: #7aa2f7; }
+.ms-red { background: var(--bad); }
+.ms-grey { background: #9aa3b2; }
+
+/* BASS-II per-test outcome badges */
+.ts-burn { background: var(--ok); }
+.ts-blow { background: #ffffff; border: 1px solid #000; }
+.ts-quench { background: var(--bad); }
+.ts-self { background: #ffd166; }
+.ts-none { background: #9aa3b2; }
+.ts-flag { background: transparent; border: 1px dashed #ffd166; color: #ffd166; }
+.ts-table { width: 100%; font-size: 0.85rem; }
+.ts-table td { vertical-align: top; }
+.ts-quote { color: var(--muted); font-size: 0.8rem; }

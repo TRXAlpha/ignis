@@ -1,0 +1,13 @@
+{
+  "found": false,
+  "ntrs_id": null,
+  "page": null,
+  "quote": null,
+  "value": null,
+  "unit": null,
+  "title": null,
+  "url": null,
+  "sha256": null,
+  "year": null,
+  "notes": "No NTRS PDF found that states a numeric residual acceleration or microgravity level for the Saffire (Cygnus) experiments. Searched 12 NTRS queries (Saffire, Spacecraft Fire Experiment, Cygnus + acceleration/quasi-steady/residual/accelerometer wording) and text-searched all 37 PDFs in data/raw/ntrs (4 newly fetched: 20150000894, 20150022123, 20210017838, 20240007488; 20240002981 and 20250002675 were already present) for micro-g, uG, 10^-n g, quasi-steady, residual acceleration, g-jitter and g-level, restricted to pages that also mention Saffire or Cygnus. Saffire pages describe the environment only qualitatively ('microgravity', 'low gravity'): e.g. 20200000557 (PMMA pressure study) compares to Saffire II flame spread data but gives no g-level; 20150022123 (Saffire silicone plan) and 20170000230 / 20170001636 (Saffire status) give no level. Non-Saffire g-level hits (not usable): 20170011213 (centrifuge, 10^-4 g minimum) and 20110011925 (ISS quasi-steady loads). Not checked: NASA Saffire flight reports or ICES papers not indexed by NTRS search; the Saffire acceleration data may exist only in the NASA data archive (not NTRS)."
+}
