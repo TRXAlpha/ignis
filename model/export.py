@@ -217,7 +217,8 @@ def recommend(f, rows, top=5):
           "platform": "orbital_iss", "facility": "Microgravity Science Glovebox (MSG)",
           "ranges": {"o2_mole_fraction": [0.136, 0.222], "flow_velocity_m_s": [0.0, 0.55]},
           "materials": ["pmma"], "refs": [loc("flow"), loc("o2")]}
-    a_c = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(0.55 / U_PER_A), 90)  # no extrapolation below data
+    a_hi = min(0.55 / U_PER_A, 1.2 * _arr(rows, "a").max())  # facility limit, but no far extrapolation past the data
+    a_c = np.logspace(np.log10(_arr(rows, "a").min()), np.log10(a_hi), 90)
     x_c = np.linspace(13.6, 22.2, 87)
     A, X = np.meshgrid(a_c, x_c)
     _, sd, ps = bm.predict(f, A.ravel(), X.ravel())
@@ -237,8 +238,10 @@ def recommend(f, rows, top=5):
                                      "flow_velocity_m_s": round(float(a * U_PER_A), 5), "flow_direction": "concurrent"},
                       "outcome_quantity": "flame_state", "expected_information_gain_nats": round(float(mi[i]), 4),
                       "n_burns": 1, "model_version": VERSION,
-                      "gap": {"description": f"Boundary most uncertain here: P(burns) = {pm[i]:.2f} +/- {sd[i]:.2f}"
-                                             f" for the 6.35-mm rod (a = {a:.2g} 1/s).",
+                      "gap": {"description": (f"Boundary most uncertain here: P(burns) = {pm[i]:.2f} +/- {sd[i]:.2f}"
+                                              f" for the 6.35-mm rod (a = {a:.1f} 1/s)." if a < 10 else
+                                              f"Boundary most uncertain here: P(burns) = {pm[i]:.2f} +/- {sd[i]:.2f}"
+                                              f" for the 6.35-mm rod (a = {a:.0f} 1/s)."),
                               "predictive_sd_before": round(float(sd[i]), 4), "nearest_observation_ids": near},
                       "x": float(a), "p_burns": round(float(pm[i]), 4)})
         if len(items) == top:

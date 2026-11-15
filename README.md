@@ -12,27 +12,33 @@ NASA Space Apps 2026, "Flame in Freefall". Turns published microgravity combusti
 | Analyst (local LLM, tool calls only, numeric guard) | `analyst/` |
 | Frontend (static, reads `web/public/data/*.json`) | `web/` |
 
-## In plain terms
+## What IGNIS does, in simple words
 
-- **What:** IGNIS turns the results of NASA's fire experiments on the International Space Station into a map that answers
-  "will this material keep burning at this much oxygen and airflow, in weightlessness?", with how sure we are, and a link
-  from every data point back to the page of the NASA report it came from.
-- **Why:** flames behave differently without gravity. Hot air does not rise, so a flame only gets oxygen from fans and air
-  currents. Gentle airflow keeps flames alive at oxygen levels where they would go out on Earth. Spacecraft materials are
-  still screened with Earth tests, and planned Moon/Mars vehicles use air (lower pressure, more oxygen) where nobody has
-  flown fire tests yet.
-- **How:** read numbers from report tables and points from report graphs, check every value against the PDF, fit the
-  known shape of the burn / goes-out boundary to the flight data with an uncertainty band, score it against the Earth rule
-  of thumb, suggest the most informative next experiments, and say "not enough data" for habitats outside what was tested.
-- **Result so far:** from 71 ISS and drop-tower points, the lowest oxygen level at which acrylic (PMMA) keeps burning in
-  microgravity is 13.6 % (90 % band 13.4-13.9 %), well below the 15.4 % the Earth test implies. The report itself says
-  ~13.5 %. Trained on one platform, the model predicts the other better than the Earth rule (leave-one-campaign-out).
+**The question.** Will a material keep burning in a spacecraft? That depends on how much oxygen is in the air and how
+fast the air moves past the flame.
 
-- **New from NASA's raw tables (PSI):** Saffire-II burned the same materials in orbit and in a 1g ground test.
-  3 of 4 silicone samples burned in the 1g test but self-extinguished in orbit at 20 cm/s and ~22 % O2: for that material the Earth test
-  is conservative, the opposite of the PMMA result. 66 BASS-II flight tests now carry their recorded outcome per material.
+**Why that is hard.** On Earth, hot air rises and feeds a fire with fresh oxygen. In space nothing rises, so a flame only
+gets oxygen from fans and air vents. A gentle breeze can keep a flame alive at an oxygen level where it would go out on
+Earth. Too much breeze blows it out. No breeze at all starves it.
 
-Submission texts (video script, deck outline, project page, key numbers): [`docs/DELIVERABLES.md`](docs/DELIVERABLES.md).
+**The problem today.** Materials for spacecraft are still tested on Earth. An Earth test can say "safe" for a material that
+would actually keep burning in orbit.
+
+**What IGNIS does.**
+1. It collects the results of real fire experiments NASA ran on the International Space Station and in a drop tower.
+2. It checks every number against the exact page of the NASA report it came from, so nothing is made up.
+3. It learns the line between "keeps burning" and "goes out", and shows how sure it is.
+4. It compares that line with the Earth rule, tests the reports' own claims, suggests the next most useful experiments,
+   and says "not enough data" for future Moon and Mars air, where nobody has tested fire yet.
+
+**The main finding.** In orbit, acrylic plastic kept burning down to about **13.6 % oxygen**. The Earth test draws the line
+at **15.4 %**. So the Earth test is not always on the safe side. For silicone it is the other way round: it burned on
+Earth but went out in orbit. You have to check each material.
+
+**Every number on the site links to its source**: the NASA report, the page, and the exact sentence, figure point or table
+cell.
+
+Demo video script: [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md). Deck outline, project page text and key numbers: [`docs/DELIVERABLES.md`](docs/DELIVERABLES.md).
 
 ## Spec coverage
 

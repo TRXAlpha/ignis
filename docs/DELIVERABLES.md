@@ -27,21 +27,10 @@ quoted NASA PDF page. Re-check after any re-export.
 | ISS cabin (14.7 psia, 21 % O2) | P(burns) ~100 %, flagged extrapolation (above tested 13.5-18 % O2) | habitats.json |
 | Exploration 8.2 psia / 34 %, lunar and Mars lander 10.2 psia / 26.5 % | INSUFFICIENT DATA (pressure / partial gravity outside any flight data) | habitats.json |
 
-## 30 s demo video
+## Demo video
 
-Voice-over (about 75 words):
-
-| Time | Voice-over | On screen |
-|---|---|---|
-| 0-4 s | "NASA has flown fire experiments on the Space Station. The results are locked in PDFs." | BASS-II report page with Fig 6.10 |
-| 4-9 s | "IGNIS reads them, and every point links back to its page." | Envelope 2D view; click a blowoff point; provenance panel shows PDF page 84, figure, pixel, image hash |
-| 9-15 s | "The model learns where flames go out, with a band, not a guess." | Boundary curve with 90 % band; callout: minimum 13.6 % O2 |
-| 15-20 s | "Earth tests say 15.4 % oxygen is safe. In orbit, 24 flames kept burning below that." | Dashed 15.4 % line; Consistency checks card marked CONFLICT |
-| 20-25 s | "Trained on the ISS, it predicts drop-tower tests better than the Earth rule." | Validation table, model vs 1g rule |
-| 25-30 s | "For Moon and Mars air, no flight data exists. IGNIS says so." | Habitat cards: INSUFFICIENT DATA; next-experiment stars on the envelope |
-
-Shot list: 1 report PDF (2 s), 2 envelope 3D rotating (2 s), 3 click point to provenance (5 s), 4 2D boundary + band
-(6 s), 5 consistency card (5 s), 6 validation table (5 s), 7 habitat cards + recommendations (5 s).
+The full script (30 s main cut, 75 s extended cut, shot list, recording checklist and number sources) is in
+[`DEMO_SCRIPT.md`](DEMO_SCRIPT.md).
 
 ## Deck outline (7 slides + 1 optional)
 

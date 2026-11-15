@@ -8,7 +8,7 @@ const FILES = ['bundle', 'model', 'validation', 'recommendations', 'habitats', '
 const $ = (id) => document.getElementById(id);
 
 const COL = {
-  bg: '#0b0e14', paper: '#131821', grid: '#283042', text: '#dfe5ee', muted: '#8d98ab',
+  bg: '#0b0e14', paper: '#0e1320', grid: '#26304a', text: '#e7ecf4', muted: '#9aa6bb',
   accent: '#7aa2f7', ok: '#3ddc84', bad: '#ff5d5d', star: '#ffd166', other: '#9aa3b2',
 };
 const CS = 'YlOrRd';
@@ -103,6 +103,7 @@ async function boot() {
     ['data', renderData],
     ['video', renderVideo],
     ['checks', renderChecks],
+    ['stats', renderStats],
     ['footer', renderFooter],
   ];
   for (const [label, fn] of steps) {
@@ -216,7 +217,7 @@ function renderEnvelope() {
   // min O2 callout
   const mo = m.min_o2;
   $('minO2').innerHTML = mo
-    ? `<strong>Minimum O2 (p50): ${pct(mo.p50)}</strong> at stretch rate a = ${fmt(mo.at_x, 3)} 1/s.
+    ? `<strong>Minimum O2 (p50): ${pct(mo.p50)}</strong> at stretch rate a = ${fmt(mo.at_x, 1)} 1/s.
        90% band (p05 to p95): ${pct(mo.p05)} to ${pct(mo.p95)}.`
     : '<span class="muted">No min_o2 in model.json.</span>';
 
@@ -323,6 +324,27 @@ function renderProvenance() {
     <thead><tr><th>ID</th><th>Campaign</th><th>Platform</th><th>Material</th><th>Outcome</th><th>O2</th><th>Method</th><th>QA</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
   $('obsTable').hidden = false;
+  // long list: filter + first 12 rows, expandable
+  const wrap = $('obsTable');
+  wrap.classList.add('collapsed');
+  const tools = document.createElement('div');
+  tools.className = 'table-tools';
+  tools.innerHTML = `<label class="sr-only" for="obsFilter">Filter observations</label>
+    <input id="obsFilter" name="obs-filter" type="search" placeholder="Filter by campaign, material, outcome…" autocomplete="off" spellcheck="false">
+    <button type="button" class="btn btn-ghost btn-sm" id="obsMore">Show all ${list.length}</button>`;
+  wrap.before(tools);
+  const trs = [...wrap.querySelectorAll('tbody tr')];
+  $('obsFilter').addEventListener('input', (ev) => {
+    const q = ev.target.value.trim().toLowerCase();
+    trs.forEach((tr) => { tr.hidden = q && !tr.textContent.toLowerCase().includes(q); });
+    wrap.classList.toggle('collapsed', !q && $('obsMore').dataset.open !== '1');
+  });
+  $('obsMore').addEventListener('click', (ev) => {
+    const open = ev.currentTarget.dataset.open === '1';
+    ev.currentTarget.dataset.open = open ? '0' : '1';
+    ev.currentTarget.textContent = open ? `Show all ${list.length}` : 'Show fewer';
+    wrap.classList.toggle('collapsed', open);
+  });
   $('obsStatus').innerHTML = '';
 
   $('obsTable').addEventListener('click', (ev) => {
@@ -645,12 +667,14 @@ function renderTests() {
   const groups = t?.groups || [];
   if (!groups.length) { el.innerHTML = noData('No per-test outcomes yet.', ERR.test_outcomes); return; }
   const total = groups.reduce((a, g) => a + g.n, 0);
-  $('testsTitle').textContent = `BASS-II flight tests by material (${total} tests)`;
+  $('testsTitle').textContent = `BASS-II Flight Tests by Material (${total} tests)`;
   const o2 = (arr) => (arr && arr.length ? arr.map((v) => `${fmt(v, 2)}%`).join(', ') : 'none');
   el.innerHTML = `<div class="grid-cards">${groups.map((g) => {
     const counts = Object.entries(g.counts_by_state || {})
       .map(([s, c]) => `${testBadge(s)} ${esc(c)}`).join(' &nbsp; ');
-    const ext = g.extinguished_o2_pct ? `${fmt(g.extinguished_o2_pct[0], 2)}–${fmt(g.extinguished_o2_pct[1], 2)}%` : 'none';
+    const ext = !g.extinguished_o2_pct ? 'none'
+      : g.extinguished_o2_pct[0] === g.extinguished_o2_pct[1] ? `${fmt(g.extinguished_o2_pct[0], 2)}%`
+      : `${fmt(g.extinguished_o2_pct[0], 2)}-${fmt(g.extinguished_o2_pct[1], 2)}%`;
     const rows = (g.tests || []).map((x) => `<tr class="${x.qa_status === 'flagged' ? 'muted' : ''}">
       <td>${esc(x.test_id)}</td>
       <td>${testBadge(x.state)}</td>
@@ -662,7 +686,7 @@ function renderTests() {
     </tr>`).join('');
     return `<article class="card">
       <h3>${esc(g.material_name)} · ${esc(g.geometry)}</h3>
-      <p>${g.n} tests: ${g.n_accepted} accepted / ${g.n_flagged} flagged</p>
+      <p>${g.n} test${g.n === 1 ? '' : 's'}${g.n_flagged ? `, ${g.n_flagged} flagged` : ''}</p>
       <p>${counts}</p>
       <p class="muted">Burned to completion at O2: ${esc(o2(g.burned_o2_pct))}<br>Extinguished at O2: ${esc(ext)}</p>
       <details><summary>Tests (${(g.tests || []).length})</summary>
@@ -697,9 +721,57 @@ function renderChecks() {
 }
 
 // ---------- footer ----------
+// ---------- key numbers (all from the exported data files) ----------
+function renderStats() {
+  const el = $('stats');
+  const m = D.model, b = D.bundle, v = D.validation, c = D.contradictions;
+  const tiles = [];
+  if (m && m.min_o2) {
+    const mo = m.min_o2;
+    tiles.push(`<div class="stat flame"><div class="stat-label">Lowest oxygen where PMMA keeps burning in orbit</div>
+      <div class="stat-value">${(mo.p50 * 100).toFixed(1)}%<span class="unit">O2</span></div>
+      <div class="stat-note">90 % band ${(mo.p05 * 100).toFixed(1)}-${(mo.p95 * 100).toFixed(1)}%. Earth screening uses <strong>15.4%</strong>.</div></div>`);
+  }
+  const g = (c && c.items || []).find((x) => x.id === '1g-limit-vs-flight');
+  if (g) {
+    tiles.push(`<div class="stat"><div class="stat-label">Flames that burned below the Earth limit</div>
+      <div class="stat-value">${esc(g.numbers.n_burning_below)}</div>
+      <div class="stat-note">lowest at <strong>${Number(g.numbers.lowest_burning_pct).toFixed(1)}% O2</strong> in ISS and drop-tower tests</div></div>`);
+  }
+  const f = (v && v.folds || []).find((x) => x.fold_id === 'loco-bass-ii-zgrf');
+  if (f && f.metrics && f.baseline) {
+    tiles.push(`<div class="stat blue"><div class="stat-label">Trained on the ISS, tested on the drop tower</div>
+      <div class="stat-value">${(f.metrics.median_abs_rel_error * 100).toFixed(1)}%</div>
+      <div class="stat-note">boundary error vs <strong>${(f.baseline.median_abs_rel_error * 100).toFixed(1)}%</strong> for the Earth rule</div></div>`);
+  }
+  if (b) {
+    const src = (b.sources || []).length;
+    tiles.push(`<div class="stat green"><div class="stat-label">Observations, each traced to a source</div>
+      <div class="stat-value">${esc((b.observations || []).length)}</div>
+      <div class="stat-note"><strong>${src}</strong> NASA documents and datasets, hash-checked</div></div>`);
+  }
+  el.innerHTML = tiles.join('');
+  el.hidden = !tiles.length;
+}
+
+function initReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach((e) => e.classList.add('in'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  }), { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  els.forEach((e) => io.observe(e));
+  // anything already on screen, or jumped to via #anchor, shows immediately
+  setTimeout(() => els.forEach((e) => { if (e.getBoundingClientRect().top < innerHeight) e.classList.add('in'); }), 50);
+  window.addEventListener('hashchange', () => els.forEach((e) => e.classList.add('in')), { once: true });
+}
+
 function renderFooter() {
   const m = D.model;
   $('footerModel').textContent = m ? `model ${m.model_id} ${m.model_version}` : 'model: no data yet';
 }
 
-boot();
+boot().then(initReveal);

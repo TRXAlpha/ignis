@@ -1,152 +1,175 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="color-scheme: dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IGNIS: microgravity flammability</title>
-  <meta name="description" content="Microgravity flammability of thin PMMA from NASA BASS-II flight data, with per-point provenance.">
+  <title>IGNIS: microgravity fire limits from NASA flight data</title>
+  <meta name="description" content="Where flames stop burning in microgravity, learned from NASA's ISS fire experiments, with every point traced to its source page.">
+  <meta name="theme-color" content="#0b0e14">
   <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/geist@5.1.0/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/geist-mono@5.1.0/index.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div id="fixtureBanner" class="banner" hidden>FIXTURE MODE (dev only). Every value shown is fake, not NASA data.</div>
 
-  <header class="site-header">
-    <div class="wrap">
-      <h1>IGNIS: microgravity flammability from NASA flight data</h1>
-      <p class="lede">Every point links back to its source page in the NASA report.</p>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="IGNIS home" translate="no">IGNIS</a>
       <nav aria-label="Sections">
-        <a href="#plain">In plain terms</a>
-        <a href="#envelope">Envelope</a>
+        <a href="#envelope">Boundary</a>
         <a href="#provenance">Provenance</a>
         <a href="#validation">Validation</a>
-        <a href="#experiments">Next experiments</a>
-        <a href="#habitats">Habitat risk</a>
-        <a href="#screen">Earth test vs orbit</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#habitats">Habitats</a>
+        <a href="#screen">Earth vs orbit</a>
         <a href="#tests">Flight tests</a>
-        <a href="#video">Flight video (beta)</a>
-        <a href="#checks">Consistency checks</a>
-        <a href="#data">Data &amp; timeline</a>
+        <a href="#video">Flight video</a>
+        <a href="#checks">Checks</a>
+        <a href="#data">Data</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section id="plain" class="panel plain">
-      <h2>In plain terms</h2>
-      <h3>What it does</h3>
-      <p>IGNIS takes the results of real fire experiments NASA ran on the International Space Station and turns them
-        into a map that answers one question: <strong>will this material keep burning at this much oxygen and this much
-        airflow, in weightlessness?</strong> Every answer comes with how sure we are, and every data point links back to
-        the exact page of the NASA report it came from.</p>
-      <h3>Why it matters</h3>
-      <ul>
-        <li><strong>Flames behave differently in space.</strong> Without gravity, hot air does not rise, so a flame only
-          gets fresh oxygen from fans and air currents. Gentle airflow can keep a flame alive at oxygen levels where it
-          would go out on Earth. Too much airflow blows it out. No airflow starves it.</li>
-        <li><strong>Spacecraft materials are still screened with Earth tests.</strong> An Earth test can say a material
-          is safe at an oxygen level where it would actually burn in orbit.</li>
-        <li><strong>Future Moon and Mars vehicles plan different air</strong> (lower pressure, more oxygen). Nobody has
-          flown fire tests in that air yet. IGNIS shows that gap instead of guessing.</li>
-      </ul>
-      <h3>How it works</h3>
-      <ol>
-        <li><strong>Collect.</strong> Numbers come from tables in NASA reports. Points are read off the reports' graphs
-          after pinning the exact image, so anyone can re-check them.</li>
-        <li><strong>Check.</strong> Each value is matched against the PDF text, converted to standard units, and anything
-          doubtful is flagged and kept out of the model.</li>
-        <li><strong>Learn the boundary.</strong> The model knows the general shape of the line between "burns" and "goes
-          out" (starved at low airflow, blown out at high airflow) and learns the exact curve from the flight data. It
-          reports a band, not a single line.</li>
-        <li><strong>Test it.</strong> It is scored against the Earth-based rule of thumb, so you can see whether it
-          actually does better.</li>
-        <li><strong>Suggest the next experiments</strong> that would shrink the uncertainty most, using only conditions
-          the real ISS hardware can produce.</li>
-        <li><strong>Check habitats.</strong> For the ISS and planned Moon and Mars atmospheres it gives a risk, or says
-          plainly that there is not enough data.</li>
-      </ol>
-      <h3>Limits</h3>
-      <p>So far: one material (PMMA, acrylic plastic), the boundary model is fitted for PMMA rods only (other
-        materials are shown test by test from NASA's raw tables), and only the cabin pressure those tests ran at. Graph points are read by software from the published figures, then checked; they are as good as the
-        figures they come from.</p>
-    </section>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">NASA Space Apps 2026 · Flame in Freefall</p>
+        <h1>Where Flames Stop Burning in Orbit, Traced to NASA's Own Pages.</h1>
+        <p class="hero-sub">A model of the oxygen and airflow limits for fire in microgravity, learned from ISS experiments and checked against Earth rules.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#envelope">Explore the Boundary</a>
+          <a class="btn btn-ghost" href="https://github.com/TRXAlpha/ignis">Source Code</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/flame-b1-side.jpg" width="1080" height="608" fetchpriority="high"
+             alt="Side view of a thin PMMA film burning aboard the International Space Station during BASS-II test B1">
+        <figcaption>BASS-II test B1 on the ISS, side view. NASA PSI-25 flight video (CC0).</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <section id="envelope" class="panel">
-      <h2>Flammability envelope</h2>
+  <section class="stats wrap" aria-label="Key results" id="stats"></section>
+
+  <main class="wrap" id="main">
+    <section id="envelope" class="panel reveal">
+      <div class="section-head">
+        <h2>Flammability Boundary</h2>
+        <p>Probability that PMMA keeps burning, by oxygen level and flow stretch rate, with a 90 % band around the limit.</p>
+      </div>
       <div id="envelopeStatus"></div>
       <div id="envelopeBody" hidden>
-        <div class="toggle" role="group" aria-label="View">
-          <button type="button" data-view="3d" aria-pressed="true">3D surface</button>
-          <button type="button" data-view="2d" aria-pressed="false">2D boundary</button>
+        <div class="controls">
+          <div class="toggle" role="group" aria-label="View">
+            <button type="button" data-view="3d" aria-pressed="true">3D surface</button>
+            <button type="button" data-view="2d" aria-pressed="false">2D boundary</button>
+          </div>
+          <div id="groupPicker" hidden>
+            <label for="groupSelect">Material / geometry</label>
+            <select id="groupSelect"></select>
+            <span id="groupInfo" class="muted"></span>
+          </div>
         </div>
         <div id="minO2" class="callout"></div>
-        <div id="groupPicker" hidden>
-          <label for="groupSelect">Material / geometry:</label>
-          <select id="groupSelect"></select>
-          <span id="groupInfo" class="muted"></span>
-        </div>
         <div id="plot3d" class="plot"></div>
         <div id="plot2d" class="plot" hidden></div>
         <p id="envelopeCaption" class="caption"></p>
+        <details class="source-fig">
+          <summary>The NASA Figure These Points Were Read From</summary>
+          <img src="assets/nasa-fig6-10.png" loading="lazy" width="1514" height="1292"
+               alt="BASS-II report Figure 6.10: flammability boundary of PMMA rods, O2 versus stretch rate, with ISS and drop tower points">
+          <p class="caption">BASS-II Summary Report (NASA/TM-20210011385), Figure 6.10, PDF page 84. Rendered at 300 dpi and hash-pinned before digitizing.</p>
+        </details>
       </div>
     </section>
 
-    <section id="provenance" class="panel">
-      <h2>Provenance</h2>
-      <p class="caption">Click a point on the 2D boundary or a row below to see its source, page, quote and extraction record.</p>
+    <section id="provenance" class="panel reveal">
+      <div class="section-head">
+        <h2>Provenance</h2>
+        <p>Click a point on the 2D boundary or a row below to see its source page, quote and extraction record.</p>
+      </div>
       <div id="provPanel" class="prov" hidden></div>
       <div id="obsStatus"></div>
       <div id="obsTable" class="table-wrap" hidden></div>
     </section>
 
-    <section id="validation" class="panel">
-      <h2>Validation</h2>
-      <div id="validationBody"></div>
-    </section>
+    <div class="duo">
+      <section id="validation" class="panel reveal">
+        <div class="section-head">
+          <h2>Validation</h2>
+          <p>Trained on one platform, tested on the other, and scored against the normal-gravity rule.</p>
+        </div>
+        <div id="validationBody"></div>
+      </section>
 
-    <section id="experiments" class="panel">
-      <h2>Next experiments</h2>
-      <div id="experimentsBody"></div>
-    </section>
+      <section id="experiments" class="panel reveal">
+        <div class="section-head">
+          <h2>Next Experiments</h2>
+          <p>Tests that would shrink the uncertainty most, inside what the ISS hardware can actually do.</p>
+        </div>
+        <div id="experimentsBody"></div>
+      </section>
+    </div>
 
-    <section id="habitats" class="panel">
-      <h2>Habitat risk</h2>
+    <section id="habitats" class="panel panel-tint reveal">
+      <div class="section-head">
+        <h2>Habitat Risk</h2>
+        <p>The ISS cabin and planned Moon and Mars atmospheres. Where no flight data exists, IGNIS says so.</p>
+      </div>
       <div id="habitatsBody"></div>
     </section>
 
-    <section id="screen" class="panel">
-      <h2>Earth test vs orbit, by material (Saffire-II)</h2>
+    <section id="screen" class="panel reveal">
+      <div class="section-head">
+        <h2>Earth Test vs Orbit, by Material</h2>
+        <p>Saffire-II burned the same samples in orbit and in a 1g ground test. NASA's raw table, compared row by row.</p>
+      </div>
       <div id="screenBody"></div>
     </section>
-    <section id="tests" class="panel">
-      <h2 id="testsTitle">BASS-II flight tests by material</h2>
-      <p class="caption">Outcomes come from the report's test-matrix notes; O2 from the PSI-25 table. Every outcome is stated in the quoted note; where the mechanism (quench vs self-extinguished) is inferred from wording, the record says so. Only tests with a reported flow can enter a boundary fit.</p>
+
+    <section id="tests" class="panel reveal">
+      <div class="section-head">
+        <h2 id="testsTitle">BASS-II Flight Tests by Material</h2>
+        <p>Outcomes quoted from the report's test notes, oxygen from NASA's PSI-25 table. Only tests with a reported flow enter a boundary fit.</p>
+      </div>
       <div id="testsBody"></div>
     </section>
-    <section id="video" class="panel">
-      <h2>Re-measured from NASA flight video <span class="ms-badge ms-grey">beta</span></h2>
-      <p class="caption">Flame front tracked frame by frame in NASA's public BASS-II flight video (PSI), then compared with the
-        spread rate the report states. Top-view stills (1 per second, per the report) are
-        tracked; the length scale assumes the flame spans the 2 cm sample, which is the dominant uncertainty.</p>
+
+    <section id="video" class="panel reveal">
+      <div class="section-head">
+        <h2>Re-measured from NASA Flight Imagery <span class="ms-badge ms-grey">beta</span></h2>
+        <p>The flame front tracked in NASA's top-view stills (1 per second), compared with the spread rate the report states. The length scale is the main uncertainty.</p>
+      </div>
       <div id="videoBody"></div>
     </section>
 
-    <section id="checks" class="panel">
-      <h2>Consistency checks</h2>
-      <p class="caption">Literature claims tested against the data, claims tested against each other, and observations that disagree. Every quoted claim is verified on its PDF page at export time.</p>
+    <section id="checks" class="panel reveal">
+      <div class="section-head">
+        <h2>Consistency Checks</h2>
+        <p>Published claims tested against the data and against each other. Every quote is verified on its PDF page.</p>
+      </div>
       <div id="checksBody"></div>
     </section>
 
-    <section id="data" class="panel">
-      <h2>Data &amp; timeline</h2>
+    <section id="data" class="panel reveal">
+      <div class="section-head">
+        <h2>Data and Timeline</h2>
+        <p>Campaigns, test years and every source document behind the numbers on this page.</p>
+      </div>
       <div id="dataBody"></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>Data contract v1.0.0 · <span id="footerModel">model: n/a</span> · <a href="https://github.com/TRXAlpha/ignis">GitHub repo</a></p>
+    <div class="wrap footer-inner">
+      <span>Data contract v1.0.0</span>
+      <span id="footerModel">model: n/a</span>
+      <a href="https://github.com/TRXAlpha/ignis">GitHub repository</a>
     </div>
   </footer>
 
